@@ -8,26 +8,29 @@ const parser = require('./lib/parser.js');
 const interpreter = require('./lib/interpreter.js');
 const futamura = require('./lib/futamura.js');
 
+let code = '';
+
 program
     .version('1.0.0')
     .usage('[options]')
-    .command('futamura-js')
-    .option('-p, --runParser <file>', 'Run parser on program in the provided file')
-    .option('-i, --runInterpreter <file>', 'Run interpreter on program in the provided file')
-    .option('-f, --runFutamura1 <file>', 'Apply the first Futamura projection on program in the provided file')
+    .description('Run the toy language with the provided options.')
+    .option('-p, --runParser', 'Run parser on program in the provided file')
+    .option('-i, --runInterpreter', 'Run interpreter on program in the provided file')
+    .option('-f, --runFutamura1', 'Apply the first Futamura projection on program in the provided file')
+    .action(function (file, options) {
+        code = fs.readFileSync(path.join(__dirname, file), 'utf8');
+    })
     .parse(process.argv);
 
 if (program.runParser) {
     console.log('The result of parsing the given file is: ');
-    const programToParse = fs.readFileSync(path.join(__dirname, program.runParser), 'utf8');
-    let result = parser.parse(programToParse);
+    let result = parser.parse(code);
     console.log(JSON.stringify(result));
 }
 
 if (program.runInterpreter) {
     console.log('The result of interpret the given file is:');
-    const programToInterpret = fs.readFileSync(path.join(__dirname, program.runInterpreter), 'utf8');
-    const programParseTree = parser.parse(programToInterpret);
+    const programParseTree = parser.parse(code);
     const functionApplicationParseTree = parser.parse('f()');
     let result = interpreter(programParseTree, functionApplicationParseTree);
     console.log(result);
@@ -35,8 +38,7 @@ if (program.runInterpreter) {
 
 if (program.runFutamura1) {
     console.log('The result of running the first Futamura prorjection on the given file is: ');
-    const programToRunFutamura = fs.readFileSync(path.join(__dirname, program.runFutamura1), 'utf8');
-    const programParseTree = parser.parse(programToRunFutamura);
+    const programParseTree = parser.parse(code);
     const functionApplicationParseTree = parser.parse('f()');
     let result = futamura.futamura1(programParseTree, functionApplicationParseTree, program.runFutamura1);
     console.log(JSON.stringify(result));
