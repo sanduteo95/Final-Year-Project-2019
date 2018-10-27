@@ -35,4 +35,4 @@ It ontains a lexer, parser, interpreter and a first application of the first Fut
 
 `node index.js -i <fileName.js>` - returns result of interpreter
 
-`node index.js -f1` - returns the result of applying the first Futamura projection
+`node index.js -f1 <fileName.js>` - returns the result of applying the first Futamura projection

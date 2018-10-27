@@ -31,7 +31,6 @@ if (program.runInterpreter) {
     console.log(result);
 }
 
-
 if (program.runFutamura1) {
     console.log('The result of running the first Futamura prorjection on the given file is: ');
     const programToRunFutamura = fs.readFileSync(path.join(__dirname, program.runFutamura1), 'utf8');
