@@ -20,7 +20,6 @@ For now the language allows the following:
 * `Object.keys()`
 * Switch statements (for now they do not allow multiliple cases per line)
 * Breaks
-* `module.export = { ... }` (for now the expectation is that the exported function is exported under its defined name)
 * multiline/single-line comments (for now it does not allow commented out code)
 
 ## What it does
