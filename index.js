@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#! /usr/bin/env node
 
 const program = require('commander');
 const fs = require('fs');
@@ -9,10 +9,12 @@ const interpreter = require('./lib/interpreter.js');
 const futamura = require('./lib/futamura.js');
 
 program
-    .version('0.0,1')
-    .option('-p, --runParser <file>', 'Run parser on given program [file]')
-    .option('-i, --runInterpreter <file>', 'Run interpreter on given program [file]')
-    .option('-f, --runFutamura1 <file>', 'Apply the first Futamura projection to program [file]')
+    .version('1.0.0')
+    .usage('[options]')
+    .command('futamura-js')
+    .option('-p, --runParser <file>', 'Run parser on program in the provided file')
+    .option('-i, --runInterpreter <file>', 'Run interpreter on program in the provided file')
+    .option('-f, --runFutamura1 <file>', 'Apply the first Futamura projection on program in the provided file')
     .parse(process.argv);
 
 if (program.runParser) {
