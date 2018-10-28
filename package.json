@@ -8,10 +8,10 @@
   },
   "preferGlobal": true,
   "bin": {
-    "futamura-js" : "./index.js"
+    "futamura-js": "./index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,9 @@
     "lex": "^1.7.9",
     "path": "^0.12.7",
     "prepack": "^0.2.54"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
   }
 }
