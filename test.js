@@ -119,7 +119,7 @@ describe('toyLambda', function () {
     
     describe('test first futamura projection', function () {
         // increase timeout
-        this.timeout(6000);
+        this.timeout(8000);
     
         it('should pass', function () {
             fs.readdirSync(input + '/toyLambda').forEach(function (file) {
