@@ -1,0 +1,2 @@
+define incr = λx.x+1;
+(λx. incr @ x) @ 3
