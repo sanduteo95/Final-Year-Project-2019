@@ -67,11 +67,11 @@ describe('toyJS', function () {
                 const programParseTree = parserJS.parse(code);
     
                 if (results[file] === 'error') {
-                    futamura.apply(programParseTree, file, false);
+                    futamura.apply(programParseTree, 'input/toyJS/' + file, false);
                     expect(true).equal(true);
                     // TODO: test error?
                 } else {
-                    let result = require(futamura.apply(programParseTree, file, false));
+                    let result = require(futamura.apply(programParseTree, 'input/toyJS/' + file, false));
                     expect(result).deep.equal(results[file]);
                 }
             });
@@ -130,11 +130,11 @@ describe('toyLambda', function () {
                 const programParseTree = parserLambda.parse(code);
     
                 if (typeof results[file] === 'string') {
-                    futamura.apply(programParseTree, file, true);
+                    futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
                     expect(true).equal(true);
                     // TODO: test error?
                 } else {
-                    let result = require(futamura.apply(programParseTree, file, true));
+                    let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file, true));
                     expect(result).deep.equal(results[file]);
                 }
             });

@@ -17,6 +17,6 @@
   var _0 = (__constructor.prototype = _$2, new __constructor());
 
   $$0.value = "Variable or named lambda x has not been defined", _$4(_0, "message", $$0);
-  $$0.value = "Error: Variable or named lambda x has not been defined\n    at interpretAbstraction (./toyLambda/interpreter.js:60:23)\n    at interpretTerm (./toyLambda/interpreter.js:40:24)\n    at interpretLambda (./toyLambda/interpreter.js:26:20)\n    at ./toyLambda/interpreter.js:7:21\n    at ./toyLambda/interpreter.js:1:18", _$4(_0, "stack", $$0);
+  $$0.value = "Error: Variable or named lambda x has not been defined\n    at interpretAbstraction (./toyLambda/interpreter.js:65:23)\n    at interpretTerm (./toyLambda/interpreter.js:40:24)\n    at interpretLambda (./toyLambda/interpreter.js:26:20)\n    at ./toyLambda/interpreter.js:7:21\n    at ./toyLambda/interpreter.js:1:18", _$4(_0, "stack", $$0);
   throw _0;
 }).call(this);
