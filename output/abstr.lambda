@@ -1,0 +1,26 @@
+(function () {
+  var $$0 = {
+    enumerable: false,
+    configurable: true,
+    writable: true
+  };
+
+  var _$0 = this;
+
+  var _$1 = _$0.Error;
+  var _$2 = _$1.prototype;
+  var _$3 = _$0.Object;
+  var _$4 = _$3.defineProperty;
+
+  var __constructor = function () {};
+
+  console.log(["x", ["Op", ["Plus", ["Deref", ["Identifier", "x"]], ["Const", 1]]]]);
+  console.log([]);
+  console.log([]);
+
+  var _J = (__constructor.prototype = _$2, new __constructor());
+
+  $$0.value = "Variable or named lambda x has not been defined", _$4(_J, "message", $$0);
+  $$0.value = "Error: Variable or named lambda x has not been defined\n    at interpretAbstraction (./toyLambda/interpreter.js:68:23)\n    at interpretTerm (./toyLambda/interpreter.js:40:24)\n    at interpretLambda (./toyLambda/interpreter.js:26:20)\n    at ./toyLambda/interpreter.js:7:21\n    at ./toyLambda/interpreter.js:1:18", _$4(_J, "stack", $$0);
+  throw _J;
+}).call(this);

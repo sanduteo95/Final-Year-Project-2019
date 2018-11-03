@@ -1,0 +1,15 @@
+(function () {
+  var _5 = ["y", ["Op", ["Plus", ["Deref", ["Identifier", "x"]], ["Deref", ["Identifier", "y"]]]]];
+  console.log(["x", ["Abstr", _5]]);
+  var _M = [];
+  _M.x = 2;
+  _M.y = 1;
+  console.log(_M);
+  var _Q = [,,];
+  _Q.length = 0;
+  console.log(_Q);
+  console.log(_5);
+  console.log(_M);
+  console.log(_Q);
+  module.exports = 5;
+})();

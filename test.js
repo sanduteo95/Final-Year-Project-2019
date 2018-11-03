@@ -67,11 +67,11 @@ describe('toyJS', function () {
                 const programParseTree = parserJS.parse(code);
     
                 if (results[file] === 'error') {
-                    futamura.futamura1(programParseTree, file, false);
+                    futamura.apply(programParseTree, file, false);
                     expect(true).equal(true);
                     // TODO: test error?
                 } else {
-                    let result = require(futamura.futamura1(programParseTree, file, false));
+                    let result = require(futamura.apply(programParseTree, file, false));
                     expect(result).deep.equal(results[file]);
                 }
             });
@@ -79,10 +79,21 @@ describe('toyJS', function () {
     });
 });
 
-describe.skip('toyLambda', function () {
+describe('toyLambda', function () {
 
     const parserLambda = require('./lib/toyLambda/parser.js');
     const interpreterLambda = require('./lib/toyLambda/interpreter.js');
+
+
+    const results = {
+        'simple.lambda': 3,
+        'nested.lambda': 7,
+        'definition.lambda': 4,
+        'function.lambda': 5,
+        'abstr.lambda': 'Variable or named lambda x has not been defined',
+        'separateArgs.lambda': 5,
+        'huge.lambda': 12
+    };
 
     describe('test interpret', function () {
         it('should pass', function () {
@@ -91,7 +102,7 @@ describe.skip('toyLambda', function () {
                 console.log('It should return ' + results[file]);
                 const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
                 const programParseTree = parserLambda.parse(code);
-                if (results[file] === 'error') {
+                if (typeof results[file] === 'string') {
                     try {
                         interpreterLambda(programParseTree);
                         expect(true).equal(false);
@@ -118,12 +129,12 @@ describe.skip('toyLambda', function () {
                 const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
                 const programParseTree = parserLambda.parse(code);
     
-                if (results[file] === 'error') {
-                    futamura.futamura1(programParseTree, file, true);
+                if (typeof results[file] === 'string') {
+                    futamura.apply(programParseTree, file, true);
                     expect(true).equal(true);
                     // TODO: test error?
                 } else {
-                    let result = require(futamura.futamura1(programParseTree, file, true));
+                    let result = require(futamura.apply(programParseTree, file, true));
                     expect(result).deep.equal(results[file]);
                 }
             });
