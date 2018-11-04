@@ -92,26 +92,35 @@ describe('toyLambda', function () {
         'function.lambda': 5,
         'abstr.lambda': 'Variable or named lambda x has not been defined',
         'separateArgs.lambda': 5,
-        'huge.lambda': 12
+        'huge.lambda': 12,
+        'print.lambda': 'I/O',
+        'read.lambda': 'I/O',
+        'readAndPrint.lambda': 'I/O',
+        'recursion.lambda': 'I/O'
     };
 
     describe('test interpret', function () {
         it('should pass', function () {
             fs.readdirSync(input + '/toyLambda').forEach(function (file) {
-                console.log('Testing ' + file);
-                console.log('It should return ' + results[file]);
-                const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
-                const programParseTree = parserLambda.parse(code);
-                if (typeof results[file] === 'string') {
-                    try {
-                        interpreterLambda(programParseTree);
-                        expect(true).equal(false);
-                    } catch (err) {
-                        expect(err.message).deep.equal(results[file]);
-                    }
-                } else {
-                    let result = interpreterLambda(programParseTree);
-                    expect(result).deep.equal(results[file]);
+                if (results[file] !== 'I/O') {
+                    console.log('Testing ' + file);
+                    console.log('It should return ' + results[file]);
+                    const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
+                    const programParseTree = parserLambda.parse(code);
+                    interpreterLambda(programParseTree, function (err, result) {
+                        if (err) {
+                            if (typeof results[file] === 'string') {
+                                expect(err.message).deep.equal(results[file]);
+                            } else {
+                                expect(err).equal(null);
+                            }
+                        }
+                        if (typeof results[file] === 'string') {
+                            expect(result).equal(null);
+                        } else {
+                            expect(result).deep.equal(results[file]);
+                        }
+                    });
                 }
             });
         })
@@ -119,7 +128,7 @@ describe('toyLambda', function () {
     
     describe('test first futamura projection', function () {
         // increase timeout
-        this.timeout(8000);
+        this.timeout(12000);
     
         it('should pass', function () {
             fs.readdirSync(input + '/toyLambda').forEach(function (file) {
@@ -128,14 +137,19 @@ describe('toyLambda', function () {
     
                 const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
                 const programParseTree = parserLambda.parse(code);
-    
-                if (typeof results[file] === 'string') {
-                    futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
-                    expect(true).equal(true);
-                    // TODO: test error?
+                if (results[file] !== 'I/O') {
+                    if (typeof results[file] === 'string') {
+                        futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
+                        expect(true).equal(true);
+                        // TODO: test error?
+                    } else {
+                        let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file, true));
+                        console.log(result)
+                        expect(result).deep.equal(results[file]);
+                    }
                 } else {
-                    let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file, true));
-                    expect(result).deep.equal(results[file]);
+                    // do not test
+                    futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
                 }
             });
         })
