@@ -40,13 +40,17 @@ if (program.runParser) {
 
 if (program.runInterpreter) {
     console.log('The result of interpret the given file is:');
-    let result;
     if (language === 'toyJS') {
-        result = interpreterJS(parserJS.parse(code));
+        console.log(interpreterJS(parserJS.parse(code)));
     } else {
-        result = interpreterLambda(parserLambda.parse(code));
+        interpreterLambda(parserLambda.parse(code), function (err, result) {
+            if (err) {
+                throw err;
+            }
+            console.log(result);
+            return;
+        });
     }
-    console.log(result);
 }
 
 if (program.runFutamura) {
