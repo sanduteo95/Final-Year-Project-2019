@@ -11,7 +11,9 @@
     "futamura-js": "./index.js"
   },
   "scripts": {
-    "test": "mocha test.js"
+    "test": "npm run test-lambda",
+    "test-js": "NODE_ENV=js mocha test.js",
+    "test-lambda": "NODE_ENV=lambda mocha test.js"
   },
   "repository": {
     "type": "git",
