@@ -87,13 +87,14 @@ describe('test', function () {
                 'nested.lambda': 7,
                 'definition.lambda': 4,
                 'function.lambda': 5,
-                'abstr.lambda': 'Variable or named lambda x has not been defined',
+                'abstr.lambda': ["Abstr", ["x", ["Op", ["Plus", ["Deref", ["Identifier", "x"]], ["Const", 1]]]]],
                 'separateArgs.lambda': 5,
                 'huge.lambda': 12,
                 'print.lambda': 'I/O',
                 'read.lambda': 'I/O',
                 'readAndPrint.lambda': 'I/O',
-                'recursion.lambda': 'I/O'
+                'recursion.lambda': 'I/O',
+                'church.lambda': 2
             };
     
             describe('test interpret', function () {
