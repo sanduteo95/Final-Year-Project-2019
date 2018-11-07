@@ -1,2 +1,2 @@
 console.log(2);
-module.exports = 2;
+module.exports = void 0;

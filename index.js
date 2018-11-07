@@ -20,12 +20,25 @@ program
     .option('-p, --runParser', 'Run parser on program in the provided file')
     .option('-i, --runInterpreter', 'Run interpreter on program in the provided file')
     .option('-f, --runFutamura', 'Apply the first Futamura projection on program in the provided file')
+    .option('-d, --debug', 'Allow some debug logs')
+    .option('-s, --stack [value]', 'The max stack value')
     .action(function (file, options) {
         fileName = file;
         language = (file.substring(file.lastIndexOf('.') + 1) === 'js' ? 'toyJS' : 'toyLambda');
         code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
     })
     .parse(process.argv);
+
+    if (program.debug) {
+        process.env.DEBUG = true;
+    } else {
+        process.env.DEBUG = false;
+    }
+    if (program.stack) {
+        process.env.NUM_CALLS = parseInt(program.maxStack);
+    } else {
+        process.env.NUM_CALLS = 75;
+    }
 
 if (program.runParser) {
     console.log('The result of parsing the given file is: ');
@@ -47,7 +60,7 @@ if (program.runInterpreter) {
             if (err) {
                 throw err;
             }
-            console.log(result);
+            console.log(JSON.stringify(result));
             return;
         });
     }
