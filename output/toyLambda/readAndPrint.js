@@ -1,4 +1,19 @@
 (function () {
+  function $_5_sub(__1) {
+    return $_3_root("Deref", __1);
+  }
+
+  function $_4_sub(__1) {
+    return $_3_root("Identifier", __1);
+  }
+
+  function $_3_root(__0, __1) {
+    return {
+      type: __0,
+      value: __1
+    };
+  }
+
   var __get_scope_binding_0_get_95scope_95binding = function (__selector) {
     var __captured;
 
@@ -14,7 +29,7 @@
 
   var __scope_0_main = new Array(1);
 
-  var _r_ = function (err, result) {
+  var _p_ = function (err, result) {
     if (err) {
       throw err;
     } else {
@@ -36,8 +51,8 @@
     });
   };
 
-  var _p_ = function (err, address) {
-    _r_(err, address > 1 && _1_[address]);
+  var _n_ = function (err, address) {
+    _p_(err, address > 1 && _1_[address]);
   };
 
   var $_0_factoryFunction = function (callback, __scope_1_, err, address) {
@@ -54,19 +69,19 @@
   };
 
   var _F_ = function (err, address) {
-    return $_0_factoryFunction.call(this, _O_, 0, err, address);
+    return $_0_factoryFunction.call(this, _P_, 0, err, address);
   };
 
-  var _Q_ = function (err, address) {
-    return $_0_factoryFunction.call(this, _Z_, 0, err, address);
+  var _R_ = function (err, address) {
+    return $_0_factoryFunction.call(this, _Y_, 0, err, address);
   };
 
-  var _a_ = function (err, address) {
+  var _Z_ = function (err, address) {
     return $_0_factoryFunction.call(this, _f_, 0, err, address);
   };
 
   var _g_ = function (err, address) {
-    return $_0_factoryFunction.call(this, _p_, 0, err, address);
+    return $_0_factoryFunction.call(this, _n_, 0, err, address);
   };
 
   var $_2_factoryFunction = function (callback, application, address, __scope_1_, err, newAddress) {
@@ -76,12 +91,18 @@
       callback(err);
     } else {
       // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
-      if ((!global.__isAbstract || !global.__isAbstract(_1_[newAddress])) && _1_[newAddress] && _1_[newAddress][0] === 'Deref') {
+      if ((!global.__isAbstract || !global.__isAbstract(_1_[newAddress])) && _1_[newAddress] && _1_[newAddress].type === 'Deref') {
         false;
 
-        if (application[0][0] === 'Deref' && application[0][1][1] === _1_[newAddress][1][1]) {
+        if (application.lhs.type === 'Deref' && application.lhs.value.value === _1_[newAddress].value.value) {
           false;
-          _1_[newAddress] = ['Apply', [_1_[newAddress], _1_[address]]];
+          _1_[newAddress] = {
+            type: 'Apply',
+            value: {
+              lhs: _1_[newAddress],
+              rhs: _1_[address]
+            }
+          };
         }
       } // clean up stack
 
@@ -96,8 +117,8 @@
     }
   };
 
-  var _O_ = function (err, newAddress) {
-    return $_2_factoryFunction.call(this, _Q_, _R_, 4, 0, err, newAddress);
+  var _P_ = function (err, newAddress) {
+    return $_2_factoryFunction.call(this, _R_, _S_, 4, 0, err, newAddress);
   };
 
   var _f_ = function (err, newAddress) {
@@ -115,10 +136,14 @@
         global.__residual("void", function (waitForInput, callback) {
           waitForInput(callback);
         }, _7_waitForInput, callback);
-      } else if (!true && _1_[address] && _1_[address][0] !== undefined) {
+      } else if (!true && _1_[address] && _1_[address].type !== undefined) {
         false; // if the result is not fully evaluated, can't risk leaving out the abstracted variable
 
-        _1_[++__captured__scope_1_[1]] = ['Abstr', [abstraction[0], _1_[address]]];
+        _1_[++__captured__scope_1_[1]] = {
+          type: 'Abstr',
+          binding: abstraction.binding,
+          value: _1_[address]
+        };
         address = __captured__scope_1_[1];
       }
     }
@@ -134,8 +159,8 @@
     return $_1_factoryFunction.call(this, _F_, _G_, 0, err, address);
   };
 
-  var _Z_ = function (err, address) {
-    return $_1_factoryFunction.call(this, _a_, _b_, 0, err, address);
+  var _Y_ = function (err, address) {
+    return $_1_factoryFunction.call(this, _Z_, _a_, 0, err, address);
   };
 
   var _6_ = function (waitForInput, console, stack, callback, emptyAddress) {
@@ -145,18 +170,45 @@
     });
   };
 
-  var _2_ = ["Deref", ["Identifier", "_read"]];
+  var _2_ = "";
   var _1_ = [, _2_, _2_, void 0, void 0];
-  var _K_ = ["Identifier", "_print"];
-  var _I_ = ["Deref", _K_];
-  var _G_ = ["_print", _I_];
-  var _S_ = ["Abstr", _G_];
-  var _W_ = ["Identifier", "x"];
-  var _U_ = ["Deref", _W_];
-  var _R_ = [_S_, _U_];
-  var _d_ = ["Apply", _R_];
-  var _b_ = ["x", _d_];
-  var _h_ = [["Abstr", _b_], ["Deref", ["Identifier", "_read"]]];
+
+  var _L_ = $_4_sub("_print");
+
+  var _J_ = $_5_sub(_L_);
+
+  var _G_ = {
+    type: "Abstr",
+    binding: "_print",
+    value: _J_
+  };
+
+  var _V_ = $_4_sub("x");
+
+  var _T_ = $_5_sub(_V_);
+
+  var _S_ = {
+    lhs: _G_,
+    rhs: _T_
+  };
+
+  var _d_ = $_3_root("Apply", _S_);
+
+  var _a_ = {
+    type: "Abstr",
+    binding: "x",
+    value: _d_
+  };
+  var _h_ = {
+    lhs: _a_,
+    rhs: {
+      type: "Deref",
+      value: {
+        type: "Identifier",
+        value: "_read"
+      }
+    }
+  };
 
   _6_(_7_waitForInput, console, _1_, _8_, 0);
 
