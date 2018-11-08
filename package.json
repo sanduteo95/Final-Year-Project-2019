@@ -1,7 +1,7 @@
 {
   "name": "futamura-js",
   "version": "1.0.0",
-  "description": "Application of the three Futamura Projections on a toy language",
+  "description": "Application of the first Futamura Projections on a toy lambda calculus language",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -11,9 +11,7 @@
     "futamura-js": "./index.js"
   },
   "scripts": {
-    "test": "npm run test-lambda",
-    "test-js": "NODE_ENV=js mocha test.js",
-    "test-lambda": "NODE_ENV=lambda mocha test.js"
+    "test": "mocha test.js"
   },
   "repository": {
     "type": "git",

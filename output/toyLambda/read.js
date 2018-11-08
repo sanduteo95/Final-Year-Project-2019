@@ -14,7 +14,7 @@
 
   var __scope_0_main = new Array(1);
 
-  var _U_ = function (err, result) {
+  var _T_ = function (err, result) {
     if (err) {
       throw err;
     } else {
@@ -36,8 +36,8 @@
     });
   };
 
-  var _S_ = function (err, address) {
-    _U_(err, address > 1 && _6_[address]);
+  var _R_ = function (err, address) {
+    _T_(err, address > 1 && _6_[address]);
   };
 
   var $_0_factoryFunction = function (callback, __scope_1_, err, address) {
@@ -54,7 +54,7 @@
   };
 
   var _C_ = function (err, address) {
-    return $_0_factoryFunction.call(this, _S_, 0, err, address);
+    return $_0_factoryFunction.call(this, _R_, 0, err, address);
   };
 
   var _A_ = function (err, newAddress) {
@@ -64,12 +64,18 @@
       _C_(err);
     } else {
       // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
-      if ((!global.__isAbstract || !global.__isAbstract(_6_[newAddress])) && _6_[newAddress] && _6_[newAddress][0] === 'Deref') {
+      if ((!global.__isAbstract || !global.__isAbstract(_6_[newAddress])) && _6_[newAddress] && _6_[newAddress].type === 'Deref') {
         false;
 
-        if (_D_[0][0] === 'Deref' && _D_[0][1][1] === _6_[newAddress][1][1]) {
+        if (_D_.lhs.type === 'Deref' && _D_.lhs.value.value === _6_[newAddress].value.value) {
           false;
-          _6_[newAddress] = ['Apply', [_6_[newAddress], _6_[3]]];
+          _6_[newAddress] = {
+            type: 'Apply',
+            value: {
+              lhs: _6_[newAddress],
+              rhs: _6_[3]
+            }
+          };
         }
       } // clean up stack
 
@@ -89,9 +95,28 @@
     waitForInput(callback);
   };
 
-  var _0_ = ["Deref", ["Identifier", "_read"]];
+  var _0_ = "";
   var _6_ = [,, _0_, _0_, _0_];
-  var _D_ = [["Abstr", ["x", ["Deref", ["Identifier", "x"]]]], ["Deref", ["Identifier", "_read"]]];
+  var _D_ = {
+    lhs: {
+      type: "Abstr",
+      binding: "x",
+      value: {
+        type: "Deref",
+        value: {
+          type: "Identifier",
+          value: "x"
+        }
+      }
+    },
+    rhs: {
+      type: "Deref",
+      value: {
+        type: "Identifier",
+        value: "_read"
+      }
+    }
+  };
 
   _2_(_3_waitForInput, _4_);
 
