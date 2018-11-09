@@ -1,0 +1,17 @@
+image: node:8.12.0
+
+stages:
+  - test
+  
+before_script:
+  - npm install
+ 
+stages:
+  - test
+
+test:
+  stage: test
+  script:
+    - npm t
+  only:
+    - master
