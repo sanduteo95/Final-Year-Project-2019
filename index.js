@@ -11,6 +11,7 @@ const futamura = require('./lib/futamura.js');
 let fileName = '';
 let code = '';
 let time = false;
+let maxTermCalls = 125;
 program
     .version('1.0.0')
     .usage('[options] <file>')
@@ -19,6 +20,7 @@ program
     .option('-i, --runInterpreter', 'Run interpreter on program in the provided file')
     .option('-f, --runFutamura', 'Apply the first Futamura projection on program in the provided file')
     .option('-d, --debug', 'Allow some debug logs')
+    .option('-s, --stack [number]', 'Specifiy the number of allowed nested calls (before timeouts are added)')
     .option('-t, --time', 'Allow testing runtime')
     .action(function (file) {
         fileName = file;
@@ -30,6 +32,11 @@ program
         process.env.DEBUG = true;
     } else {
         process.env.DEBUG = false;
+    }
+    try {
+        maxTermCalls = parseInt(program.stack);
+    } catch (err) {
+        throw new Error('Stack option must be a number');
     }
     if (program.time) {
         time = true;
@@ -53,11 +60,11 @@ if (program.runInterpreter) {
             console.log(JSON.stringify(result));
         }
         return;
-    }, time);
+    }, time, maxTermCalls);
 }
 
 if (program.runFutamura) {
     console.log('The result of running the first Futamura projection on the given file is stored in: ');
-    let result  = futamura.apply(parser.parse(code), fileName, time);
+    let result  = futamura.apply(parser.parse(code), fileName, time, maxTermCalls);
     console.log(JSON.stringify(result));
 }

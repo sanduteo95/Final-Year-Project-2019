@@ -20,9 +20,19 @@ Run `npm run install` and then run the program following the instructions bellow
 
 `node index.js -p <pathToFile>` - to print out the parse tree for the provided file
 
-`node index.js -i [-d] [-t] <pathToFile>` - to return the result of interpreter on the provided file (add the `-d` for debugging statements and `-t` to time the execution)
+`node index.js -i [-d] [-t] [-s number] <pathToFile>` - to return the result of interpreter on the provided file
 
-`node index.js -f [-d [-t] <pathToFile>` - to return the result of applying the first Futamura projection on the provided file (add the `-d` for debugging statements and `-t` to time the execution)
+`node index.js -f [-d] [-t] [-s number] <pathToFile>` - to return the result of applying the first Futamura projection on the provided file
+
+Optional flags are:
+* `-d`: to allow debugging log
+* `-t`: to get execution time
+* `-s number`: to set up the maximum number of consecutive recursive calls allowed
+
+In case of `RangeError: Maximum call stack size exceeded` errors, add a `--stack-size=<value>` to the command. 
+i.e. `node --stack-size=100000 index.js -i <pathToFile>`
+
+The results can be tested out with various `-s` options passed through and analysed by looking in the `output` folder.
 
 ## How to run it
 Install `futamura-js` by running `npm install -g futamura-js` and then type in `futamura-js --help` to see what options there are. 

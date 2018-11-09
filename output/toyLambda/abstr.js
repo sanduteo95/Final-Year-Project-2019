@@ -26,7 +26,7 @@
     time && console.time('interpret');
   };
 
-  var _Y_ = function (address) {
+  var _Z_ = function (address) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0] = __captured__scope_1_[0].slice(0, address + 1);
@@ -40,7 +40,7 @@
     return __captured__scope_1_[1];
   };
 
-  var _X_ = function (address, value) {
+  var _Y_ = function (address, value) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0][address] = value;
@@ -207,7 +207,7 @@
 
                 const rhs = _P_(rhsAddress);
 
-                _X_(lhsAddress, {
+                _Y_(lhsAddress, {
                   type: 'Apply',
                   value: {
                     lhs: lhs,
@@ -227,10 +227,10 @@
 
             if (rhsAddress !== lhsAddress) {
               // the new lhs might have changed
-              _X_(rhsAddress, lhs);
+              _Y_(rhsAddress, lhs);
             }
 
-            _Y_(rhsAddress);
+            _Z_(rhsAddress);
 
             false;
             callback(null, __captured__scope_1_[1]);
@@ -258,7 +258,7 @@
     rl.question('User input:\n', function (input) {
       rl.close();
 
-      _X_(2, parseInt(input));
+      _Y_(2, parseInt(input));
 
       callback(null, 2);
     });
@@ -275,14 +275,14 @@
     }
 
     if (identifier === '_print') {
-      _X_(1, _P_(address));
+      _Y_(1, _P_(address));
 
       callback(null, 1);
     } else if (identifier === '_read') {
       // prepack can save the variable as it is on the stack, to be evaluated later
       if (global.__residual) {
         // assign the read identifier to the stack as an abstract variable, to postpone the call
-        _X_(2, global.__abstract('object', '({type: "Deref", value: {type: "Identifier", value: "_read"}})'));
+        _Y_(2, global.__abstract('object', '({type: "Deref", value: {type: "Identifier", value: "_read"}})'));
 
         callback(null, 2);
       } else {
@@ -348,7 +348,7 @@
                 // the variable might not be evaluated
                 false;
 
-                _X_(address, {
+                _Y_(address, {
                   type: 'Deref',
                   value: newTerm
                 });
@@ -383,77 +383,77 @@
     if ((!lhs || lhs.type === undefined) && (!rhs || rhs.type === undefined)) {
       switch (operator) {
         case 'plus':
-          _X_(lhsAddress, lhs + rhs);
+          _Y_(lhsAddress, lhs + rhs);
 
           break;
 
         case 'minus':
-          _X_(lhsAddress, lhs - rhs);
+          _Y_(lhsAddress, lhs - rhs);
 
           break;
 
         case 'times':
-          _X_(lhsAddress, lhs * rhs);
+          _Y_(lhsAddress, lhs * rhs);
 
           break;
 
         case 'divide':
-          _X_(lhsAddress, lhs / rhs);
+          _Y_(lhsAddress, lhs / rhs);
 
           break;
 
         case 'modulus':
-          _X_(lhsAddress, lhs % rhs);
+          _Y_(lhsAddress, lhs % rhs);
 
           break;
 
         case 'eq':
-          _X_(lhsAddress, lhs === rhs);
+          _Y_(lhsAddress, lhs === rhs);
 
           break;
 
         case 'noteq':
-          _X_(lhsAddress, lhs !== rhs);
+          _Y_(lhsAddress, lhs !== rhs);
 
           break;
 
         case 'leq':
-          _X_(lhsAddress, lhs <= rhs);
+          _Y_(lhsAddress, lhs <= rhs);
 
           break;
 
         case 'less':
-          _X_(lhsAddress, lhs < rhs);
+          _Y_(lhsAddress, lhs < rhs);
 
           break;
 
         case 'geq':
-          _X_(lhsAddress, lhs >= rhs);
+          _Y_(lhsAddress, lhs >= rhs);
 
           break;
 
         case 'greater':
-          _X_(lhsAddress, lhs > rhs);
+          _Y_(lhsAddress, lhs > rhs);
 
           break;
 
         case 'and':
-          _X_(lhsAddress, lhs && rhs);
+          _Y_(lhsAddress, lhs && rhs);
 
           break;
 
         case 'or':
-          _X_(lhsAddress, lhs || rhs);
+          _Y_(lhsAddress, lhs || rhs);
 
           break;
 
         case 'negate':
-          _X_(lhsAddress, !lhs);
+          _Y_(lhsAddress, !lhs);
 
           break;
 
         case 'negative':
-          _X_(lhsAddress, -lhs);
+          _Y_(lhsAddress, -lhs);
 
           break;
 
@@ -462,7 +462,7 @@
       }
     } else {
       // if any of the two are not fully interpreted, make the otther one into a constant
-      _X_(lhsAddress, {
+      _Y_(lhsAddress, {
         type: 'Op',
         op: operator,
         lhs: lhs.type !== undefined ? lhs : {
@@ -489,7 +489,7 @@
       } // clean up stack
 
 
-      _Y_(lhsAddress);
+      _Z_(lhsAddress);
 
       const rhsOpCallback = function (err, rhsAddress) {
         if (err) {
