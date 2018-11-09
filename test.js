@@ -14,7 +14,7 @@ describe('test', function () {
             'nested.lambda': 7,
             'definition.lambda': 4,
             'function.lambda': 5,
-            'abstr.lambda': {type: 'Abstr'},
+            'abstr.lambda': 'function',
             'separateArgs.lambda': 5,
             'huge.lambda': 12,
             'print.lambda': 'I/O',
@@ -38,10 +38,10 @@ describe('test', function () {
                                     expect(err).equal(null);
                                 }
                             }
-                            if (typeof results[file] === 'string') {
+                            if (results[file] === 'function') {
+                                expect(typeof result).equal(results[file]);
+                            } else if (typeof results[file] === 'string') {
                                 expect(result).equal(undefined);
-                            } else if (typeof results[file] === 'object') {
-                                expect(result.type).equal(results[file].type);
                             } else {
                                 expect(result).deep.equal(results[file]);
                             }
@@ -59,21 +59,21 @@ describe('test', function () {
                 it(file + ' should pass with ' + results[file], function () {
                     const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
                     const programParseTree = parser.parse(code);
-                    if (results[file] !== 'I/O') {
+                    if (results[file] === 'function') {
+                        let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file));
+                        expect(typeof result).equal(results[file]);
+                    } else if (results[file] !== 'I/O') {
                         if (typeof results[file] === 'string') {
-                            futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
+                            futamura.apply(programParseTree, 'input/toyLambda/' + file);
                             expect(true).equal(true);
                             // TODO: test error?
-                        } else if (typeof results[file] === 'object') {
-                            let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file, true));
-                            expect(result.type).equal(results[file].type);
-                        } else {
-                            let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file, true));
+                        }  else {
+                            let result = require(futamura.apply(programParseTree, 'input/toyLambda/' + file));
                             expect(result).deep.equal(results[file]);
                         }
                     } else {
                         // do not test
-                        futamura.apply(programParseTree, 'input/toyLambda/' + file, true);
+                        futamura.apply(programParseTree, 'input/toyLambda/' + file);
                     }
                 })
             });

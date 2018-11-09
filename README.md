@@ -20,9 +20,9 @@ Run `npm run install` and then run the program following the instructions bellow
 
 `node index.js -p <pathToFile>` - to print out the parse tree for the provided file
 
-`node index.js -i [-d] [-s value] <pathToFile>` - to return the result of interpreter on the provided file (add the `-d` for debugging statements and `-m value` to use a custom value for the maximum stack)
+`node index.js -i [-d] [-t] <pathToFile>` - to return the result of interpreter on the provided file (add the `-d` for debugging statements and `-t` to time the execution)
 
-`node index.js -f [-d [-s value] <pathToFile>` - to return the result of applying the first Futamura projection on the provided file (add the `-d` for debugging statements and `-m value` to use a custom value for the maximum stack)
+`node index.js -f [-d [-t] <pathToFile>` - to return the result of applying the first Futamura projection on the provided file (add the `-d` for debugging statements and `-t` to time the execution)
 
 ## How to run it
 Install `futamura-js` by running `npm install -g futamura-js` and then type in `futamura-js --help` to see what options there are. 
