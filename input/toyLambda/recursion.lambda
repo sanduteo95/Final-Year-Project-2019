@@ -1,3 +1,3 @@
 let incr = λx.x+1 in
-let rec f = λx. (print @ x) || (x < 10 && (f @ (incr @ x))) in
+let rec f = λx. (print @ x) && (x < 10 && (f @ (incr @ x))) in
 f @ 1

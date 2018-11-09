@@ -10,6 +10,7 @@ const futamura = require('./lib/futamura.js');
 
 let fileName = '';
 let code = '';
+let time = false;
 program
     .version('1.0.0')
     .usage('[options] <file>')
@@ -18,7 +19,7 @@ program
     .option('-i, --runInterpreter', 'Run interpreter on program in the provided file')
     .option('-f, --runFutamura', 'Apply the first Futamura projection on program in the provided file')
     .option('-d, --debug', 'Allow some debug logs')
-    .option('-s, --stack [value]', 'The max stack value')
+    .option('-t, --time', 'Allow testing runtime')
     .action(function (file) {
         fileName = file;
         code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
@@ -30,10 +31,8 @@ program
     } else {
         process.env.DEBUG = false;
     }
-    if (program.stack) {
-        process.env.NUM_CALLS = parseInt(program.maxStack);
-    } else {
-        process.env.NUM_CALLS = 125;
+    if (program.time) {
+        time = true;
     }
 
 if (program.runParser) {
@@ -48,13 +47,17 @@ if (program.runInterpreter) {
         if (err) {
             throw err;
         }
-        console.log(JSON.stringify(result));
+        if (typeof result === 'function') {
+            console.log('an abstraction');
+        } else {
+            console.log(JSON.stringify(result));
+        }
         return;
-    });
+    }, time);
 }
 
 if (program.runFutamura) {
     console.log('The result of running the first Futamura projection on the given file is stored in: ');
-    let result  = futamura.apply(parser.parse(code), fileName, true);
+    let result  = futamura.apply(parser.parse(code), fileName, time);
     console.log(JSON.stringify(result));
 }
