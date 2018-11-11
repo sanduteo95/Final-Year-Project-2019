@@ -24,7 +24,8 @@ The toy language is an implementation of lambda calculus, allowing I/O and retur
 ```
 let rec f = λx. λsum. (x < 10 && (f @ (x + 1)) @ (sum + x)) || sum in
 (f @ 1) @ 0
-``` (evaluates to 45)
+``` 
+(evaluates to 45)
 
 
 ## Local development instructions
