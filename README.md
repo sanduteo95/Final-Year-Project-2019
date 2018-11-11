@@ -20,12 +20,7 @@ The toy language is an implementation of lambda calculus, allowing I/O and retur
 * Exporting abstractions: `let export = λx. x + 1 in export`
 * Printing: `(λx.print @ x) @ 1` (prints 1 but evaluates to `true`)
 * Reading: `(λx.x) @ read` (evaluates to whatever **number** the user has provided)
-* Recursion: 
-```
-let rec f = λx. λsum. (x < 10 && (f @ (x + 1)) @ (sum + x)) || sum in
-(f @ 1) @ 0
-``` 
-(evaluates to 45)
+* Recursion: `let rec f = λx. λsum. (x < 10 && (f @ (x + 1)) @ (sum + x)) || sum in (f @ 1) @ 0`  (evaluates to 45)
 
 
 ## Local development instructions
