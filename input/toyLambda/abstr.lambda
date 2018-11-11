@@ -1,1 +1,2 @@
-λx. x + 1
+let export = λx. x + 1 in
+export

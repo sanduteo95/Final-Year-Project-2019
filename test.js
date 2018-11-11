@@ -13,15 +13,15 @@ describe('test', function () {
             'simple.lambda': 3,
             'nested.lambda': 7,
             'definition.lambda': 4,
-            'function.lambda': 5,
+            'function.lambda': 5, //
             'abstr.lambda': 'function',
             'separateArgs.lambda': 5,
-            'huge.lambda': 12,
+            'huge.lambda': 12, //
             'print.lambda': 'I/O',
             'read.lambda': 'I/O',
             'readAndPrint.lambda': 'I/O',
-            'recursion.lambda': 'I/O',
-            'church.lambda': 2
+            'recursion.lambda': 45,
+            'church.lambda': 4
         };
 
         describe('test interpret', function () {
