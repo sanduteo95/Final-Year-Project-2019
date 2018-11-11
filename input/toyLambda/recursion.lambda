@@ -1,3 +1,2 @@
-let incr = λx.x+1 in
-let rec f = λx. (print @ x) && (x < 10 && (f @ (incr @ x))) in
-f @ 1
+let rec f = λx. λsum. (x < 10 && (f @ (x + 1)) @ (sum + x)) || sum in
+(f @ 1) @ 0

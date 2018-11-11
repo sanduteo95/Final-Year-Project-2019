@@ -1,6 +1,7 @@
-let inc = λz. z + 1 in
-let zero = λf. λy. y in
+let inc = λx. x + 1 in
+let zero = λf. λx. x in
 let next = λn. λf. λx. f @ ((n @ f) @ x) in
 let one = next @ zero in
+let two = next @ one in
 let add = λm.λn.λf.λx. (((m @ next) @ n) @ f) @ x in
-((add @ one) @ one) @ inc @ 0
+(((add @ two) @ two) @ inc) @ 0
