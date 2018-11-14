@@ -1,27 +1,21 @@
 const fs = require('fs');
 const path = require('path');
 const createHTML = require('create-html');
-const robot = require('robotjs');
+const exec = require('child_process').exec;
 
 const input = './input/';
-const boilerplate = require('./lib/boilerplate.js');
 
-const testInput = 1;
+// const testInput = 1;
 
-function roboInput (input) {
-    robot.typeString(input);
-    robot.keyTap('enter');
-}
-
- 
 let testResults = {};
 
 function createReport () {
     let body = '<table><tr><th>#</th><th>Test</th><th>Time </th><th>Time (Futamura)</th></tr>';
 
+    console.log(testResults)
     Object.keys(testResults).forEach((name, i) => {
         const formattedName = name.substring(0, name.indexOf('.'));
-        body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + testResults[name].timing + 'ms</td><td>' + testResults[name].futamuraTiming + 'ms</td></tr>';
+        body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + testResults[name].timing + '</td><td>' + testResults[name].futamuraTiming + '</td></tr>';
     });
     body += '</table>'
 
@@ -42,66 +36,73 @@ function createReport () {
     });
 }
 
-function runInterpreterBenchmark (files, callback) {
-    files.forEach(file => {
-        testResults[file] = {};
-        console.log('Running benchmark on ' + file);
-        const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
-        testResults[file].timing = new Date();
-        if (file.includes('read')) {
-            roboInput(testInput);
-            boilerplate.interpreterBoilerplateReport(code, function (err, result) {
-                if (err) {
-                    throw err;
-                 }
-            });
-            testResults[file].timing = new Date() - testResults[file].timing;
-        } else {
-            boilerplate.interpreterBoilerplateReport(code, function (err, result) {
-                if (err) {
-                   throw err;
-                }
-                testResults[file].timing = new Date() - testResults[file].timing;
-            });
-        }
-    });
-    callback();
-}
-
-function runFutamuraBenchmark (files, callback) {
-    files.forEach(file => {
-        console.log('Running benchmark on ' + file);
-        const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
-        boilerplate.futamuraBoilerplateReport(code, function (err, futamuraResult) {
-            if (err) {
-                throw err;
-            }
-            if (file.includes('read')) {
-                roboInput(testInput);
-                testResults[file].futamuraTiming = new Date();
-                require(futamuraResult);
-                testResults[file].futamuraTiming = (new Date() - testResults[file].futamuraTiming) - 1; // we have some extra tiing added because of the boilerplate
-            } else {
-                testResults[file].futamuraTiming = new Date();
-                require(futamuraResult)(function () {
-                    testResults[file].futamuraTiming = (new Date() - testResults[file].futamuraTiming) - 1; // we have some extra tiing added because of the boilerplate
-                });
-            }
-        })('input/toyLambda/' + file);
-    });
-    callback();
-}
-
-function runBenchmark () {
+function runInterpretBenchmark (callback) {
     const files = fs.readdirSync(input + '/toyLambda');
 
-    console.log('\n=== INTERPRETER ===');
-    runInterpreterBenchmark(files, function () {
-        console.log('\n=== FUTAMURA ===');
-        runFutamuraBenchmark(files, function () {
-            createReport();
-        });
+    files.forEach((file, index) => {
+        setTimeout(function () {
+            testResults[file] = {};
+            let input = '';
+            if(file.includes('read')) {
+                input = ' <<< 1';
+            }
+            exec('node index.js -i input/toyLambda/' + file + ' -t' + input, (err, stdout) => {
+                if (err) {
+                    callback(err);
+                }
+              
+                const indexOfTime = stdout.indexOf('Time');
+                const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
+                console.log(`interpreter ${file}: ${stdout.substring(indexOfTime + 6, indexOfNewline + 1)}`);
+                testResults[file].timing = stdout.substring(indexOfTime + 6, indexOfNewline + 1);
+            });
+        }, 1000 * index);  
     });
+    setTimeout(function () {
+        callback();
+    }, files.length * 1000);
 }
 
-runBenchmark();
+function runFutamuraBenchmark (callback) {
+    const files = fs.readdirSync(input + '/toyLambda');
+
+    files.forEach((file, index) => {
+        setTimeout(function () {
+            let input = '';
+            if(file.includes('read')) {
+                input = ' <<< 1';
+            }
+            exec('node --stack-size=100000 index.js -f input/toyLambda/' + file + ' -t -s 600', (err) => {    
+                if (err) {
+                    callback(err);
+                }
+              
+                exec('node output/toyLambda/' + file.substring(0, file.indexOf('.') + 1) + 'js' + input, (err, stdout) => {
+                    if (err) {
+                        callback(err);
+                    }
+            
+                    const indexOfTime = stdout.indexOf('Time');
+                    const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
+                    console.log(`futamura ${file}: ${stdout.substring(indexOfTime + 6, indexOfNewline + 1)}`);
+                    testResults[file].futamuraTiming = stdout.substring(indexOfTime + 6, indexOfNewline + 1);
+                });
+            });
+        }, 2000 * index);  
+    });
+    setTimeout(function () {
+        callback();
+    }, files.length * 2000);
+}
+
+runInterpretBenchmark(function (err) {
+    if (err) {
+        throw err;
+    }
+    runFutamuraBenchmark(function (err) {
+        if (err) {
+            throw err;
+        }
+        createReport();
+    })
+});

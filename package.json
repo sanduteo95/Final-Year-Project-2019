@@ -21,6 +21,7 @@
   "author": "Teodora Sandu",
   "license": "UNLICENSED",
   "dependencies": {
+    "child_process": "^1.0.2",
     "commander": "^2.19.0",
     "create-html": "^4.1.0",
     "fs": "0.0.1-security",
