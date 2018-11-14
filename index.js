@@ -4,13 +4,11 @@ const program = require('commander');
 const fs = require('fs');
 const path = require('path');
 
-const parser = require('./lib/toyLambda/parser.js');
-const interpreter = require('./lib/toyLambda/interpreter.js');
-const futamura = require('./lib/futamura.js');
+const boilerplate = require('./lib/boilerplate.js');
 
 let fileName = '';
 let code = '';
-let time = false;
+let addTiming = false;
 let maxTermCalls = 125;
 program
     .version('1.0.0')
@@ -39,32 +37,22 @@ program
         throw new Error('Stack option must be a number');
     }
     if (program.time) {
-        time = true;
+        addTiming = true;
     }
 
 if (program.runParser) {
     console.log('The result of parsing the given file is: ');
-    let result = parser.parse(code);
+    const result = boilerplate.parserBoilerplate(code);
     console.log(JSON.stringify(result));
 }
 
 if (program.runInterpreter) {
     console.log('The result of interpreting the given file is:');
-    interpreter(parser.parse(code), function (err, result) {
-        if (err) {
-            throw err;
-        }
-        if (typeof result === 'function') {
-            console.log('an abstraction');
-        } else {
-            console.log(JSON.stringify(result));
-        }
-        return;
-    }, time, maxTermCalls);
+    boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls);
 }
 
 if (program.runFutamura) {
     console.log('The result of running the first Futamura projection on the given file is stored in: ');
-    let result  = futamura.apply(parser.parse(code), fileName, time, maxTermCalls);
+    const result  =  boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(fileName);
     console.log(JSON.stringify(result));
 }
