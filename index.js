@@ -41,18 +41,15 @@ program
     }
 
 if (program.runParser) {
-    console.log('The result of parsing the given file is: ');
     const result = boilerplate.parserBoilerplate(code);
     console.log(JSON.stringify(result));
 }
 
 if (program.runInterpreter) {
-    console.log('The result of interpreting the given file is:');
     boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls);
 }
 
 if (program.runFutamura) {
-    console.log('The result of running the first Futamura projection on the given file is stored in: ');
-    const result  =  boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(fileName);
+    const result = boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(fileName);
     console.log(JSON.stringify(result));
 }
