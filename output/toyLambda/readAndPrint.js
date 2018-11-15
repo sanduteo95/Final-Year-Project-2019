@@ -1,5 +1,5 @@
 (function () {
-  var _6_ = function (err, result) {
+  var _5_ = function (err, result) {
     if (err) {
       throw err;
     }
@@ -7,15 +7,15 @@
     module.exports = result;
   };
 
-  var _A_ = function (address, value) {
-    _8_[address] = value;
+  var _9_ = function (address, value) {
+    _7_[address] = value;
   };
 
-  var _5_ = function (address) {
-    return _8_[address];
+  var _4_ = function (address) {
+    return _7_[address];
   };
 
-  var _4_ = function (callback) {
+  var _3_ = function (callback) {
     const readline = require('readline');
 
     const rl = readline.createInterface({
@@ -25,30 +25,30 @@
     rl.question('User input:\n', function (input) {
       rl.close();
 
-      _A_(2, parseInt(input));
+      _9_(2, parseInt(input));
 
       callback(null, 2);
     });
   };
 
-  var _3_ = function (console, waitForInput, toPrint, lookup, callback, timing) {
+  var _2_ = function (console, waitForInput, toPrint, lookup, callback) {
     waitForInput(function (err, address) {
       if (toPrint) {
         console.log(lookup(address));
       }
 
-      callback(err, address, timing);
+      callback(err, address);
     });
   };
 
-  var _9_ = {
+  var _8_ = {
     type: "Deref",
     value: {
       type: "Identifier",
       value: "_read"
     }
   };
-  var _8_ = [, _9_];
+  var _7_ = [, _8_];
 
-  _3_(console, _4_, true, _5_, _6_, void 0);
+  _2_(console, _3_, true, _4_, _5_);
 })();

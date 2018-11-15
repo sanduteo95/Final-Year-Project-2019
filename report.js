@@ -5,19 +5,24 @@ const exec = require('child_process').exec;
 
 const input = './input/';
 
-// const testInput = 1;
+const maxTermCalls = [50, 100, 125, 150, 200, 300, 600];
+const stackSize = 100000;
 
-let testResults = {};
+function createReport (testResults) {
+    let body = '';
 
-function createReport () {
-    let body = '<table><tr><th>#</th><th>Test</th><th>Time </th><th>Time (Futamura)</th></tr>';
-
-    console.log(testResults)
-    Object.keys(testResults).forEach((name, i) => {
-        const formattedName = name.substring(0, name.indexOf('.'));
-        body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + testResults[name].timing + '</td><td>' + testResults[name].futamuraTiming + '</td></tr>';
+    console.log(JSON.stringify(testResults));
+    testResults.forEach(bachmarkResult => {
+        const maxTermCall = Object.keys(bachmarkResult)[0];
+        body += `<h3>Number of recursive calls: ${maxTermCall}</h3>`;
+        body += '<table><tr><th>#</th><th>Test</th><th>Time </th><th>Time (Futamura)</th></tr>';
+        bachmarkResult[maxTermCall].forEach((fileResult, i) => {
+            const name = Object.keys(fileResult)[0];
+            const formattedName = name.substring(0, name.indexOf('.'));
+            body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + fileResult[name].timing + '</td><td>' + fileResult[name].futamuraTiming + '</td></tr>';
+        });
+        body += '</table>'
     });
-    body += '</table>'
 
     const reportDir = path.join(__dirname + '/report');
     
@@ -36,73 +41,106 @@ function createReport () {
     });
 }
 
-function runInterpretBenchmark (callback) {
-    const files = fs.readdirSync(input + '/toyLambda');
-
-    files.forEach((file, index) => {
-        setTimeout(function () {
-            testResults[file] = {};
-            let input = '';
-            if(file.includes('read')) {
-                input = ' <<< 1';
-            }
-            exec('node index.js -i input/toyLambda/' + file + ' -t' + input, (err, stdout) => {
-                if (err) {
-                    callback(err);
-                }
-              
-                const indexOfTime = stdout.indexOf('Time');
-                const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
-                console.log(`interpreter ${file}: ${stdout.substring(indexOfTime + 6, indexOfNewline + 1)}`);
-                testResults[file].timing = stdout.substring(indexOfTime + 6, indexOfNewline + 1);
-            });
-        }, 1000 * index);  
-    });
-    setTimeout(function () {
-        callback();
-    }, files.length * 1000);
+function getTime(stdout) {
+    const logString = 'time';
+    const indexOfTime = stdout.indexOf(logString);
+    const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
+    return stdout.substring(indexOfTime + logString.length + 2, indexOfNewline);
 }
 
-function runFutamuraBenchmark (callback) {
-    const files = fs.readdirSync(input + '/toyLambda');
-
-    files.forEach((file, index) => {
-        setTimeout(function () {
-            let input = '';
-            if(file.includes('read')) {
-                input = ' <<< 1';
-            }
-            exec('node --stack-size=100000 index.js -f input/toyLambda/' + file + ' -t -s 600', (err) => {    
-                if (err) {
-                    callback(err);
-                }
-              
-                exec('node output/toyLambda/' + file.substring(0, file.indexOf('.') + 1) + 'js' + input, (err, stdout) => {
-                    if (err) {
-                        callback(err);
-                    }
-            
-                    const indexOfTime = stdout.indexOf('Time');
-                    const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
-                    console.log(`futamura ${file}: ${stdout.substring(indexOfTime + 6, indexOfNewline + 1)}`);
-                    testResults[file].futamuraTiming = stdout.substring(indexOfTime + 6, indexOfNewline + 1);
-                });
-            });
-        }, 2000 * index);  
-    });
-    setTimeout(function () {
-        callback();
-    }, files.length * 2000);
-}
-
-runInterpretBenchmark(function (err) {
-    if (err) {
-        throw err;
-    }
-    runFutamuraBenchmark(function (err) {
-        if (err) {
-            throw err;
+function promiseToRunInterpreter (file, maxTermCall) {
+    console.log('interpreter')
+    return new Promise((resolve, reject) => {
+        let input = '';
+        if(file.includes('read')) {
+            input = ' <<< 1';
         }
-        createReport();
-    })
-});
+        exec(`node --stack-size=${stackSize} index.js -i input/toyLambda/${file} -t ${input} -s ${maxTermCall}`, (err, stdout) => {
+            if (err) {
+                return reject(err);
+            }
+        
+            return resolve(getTime(stdout));
+        });
+    });
+}
+
+function promiseToRunFutamura (file, maxTermCall) {
+    console.log('futamura')
+    return new Promise((resolve, reject) => {
+        let input = '';
+        if(file.includes('read')) {
+            input = ' <<< 1';
+        }
+
+        exec(`node --stack-size=${stackSize} index.js -f input/toyLambda/${file} -t -s ${maxTermCall}; node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js ${input}`, (err, stdout) => {
+            if (err) {
+                return reject(err);
+            }
+            return resolve(getTime(stdout));
+        });
+    });
+}
+
+function promiseToRun (file, maxTermCall) {
+    console.log('File: ' + file);
+    let timing, futamuraTiming;
+    return promiseToRunInterpreter(file, maxTermCall)
+        .then(response => {
+            timing = response;
+            return promiseToRunFutamura(file, maxTermCall);
+        }).then(response => {
+            futamuraTiming = response;
+            let result = {};
+            result[file] = {
+                timing: timing,
+                futamuraTiming: futamuraTiming
+            };
+            return result;
+        });
+}
+
+function promiseToRunBenchmark (maxTermCall) {
+    console.log('\n====Benchmark: ' + maxTermCall);
+    const files = fs.readdirSync(input + '/toyLambda');
+    return files
+        .map(file => Promise.resolve(file))
+        .reduce((promiseChain, currentPromise) => {
+            return promiseChain.then(chainResults =>
+                currentPromise.then(currentFile => {
+                    return promiseToRun (currentFile, maxTermCall).then(currentResult => (
+                        [ ...chainResults, currentResult ]
+                    ))
+                })
+            );
+        }, Promise.resolve([])).then(arrayOfResults => {
+            let result = {};
+            result[maxTermCall] = arrayOfResults;
+            return result;
+        });
+}
+
+function runBenchmarks () {
+    return maxTermCalls
+        .map(maxTermCall => Promise.resolve(maxTermCall))
+        .reduce((promiseChain, currentPromise) => {
+            return promiseChain.then(chainResults =>
+                currentPromise.then(currentMaxTermCall => {
+                    return promiseToRunBenchmark (currentMaxTermCall).then(currentResult => (
+                        [ ...chainResults, currentResult ]
+                    ))
+                })
+            );
+        }, Promise.resolve([])).then(arrayOfResults => {
+            createReport(arrayOfResults);
+            return;
+        }).catch(err => {
+            throw err;
+        });
+}
+runBenchmarks();
+// promiseToRunBenchmark(50)
+//     .then(response => {
+//         createReport([response]);
+//         return;
+//     });

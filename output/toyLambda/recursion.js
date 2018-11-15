@@ -70,7 +70,7 @@
 
   var __scope_0_main = new Array(4);
 
-  var _2E_ = function (err, result) {
+  var _2C_ = function (err, result) {
     if (err) {
       throw err;
     }
@@ -563,37 +563,35 @@
   };
 
   var _2A_ = function (err, address) {
-    const result = _L_(address);
-
-    let timing;
     ;
 
+    const result = _L_(address);
+
     if (global.__isAbstract && global.__isAbstract(result)) {
-      global.__residual("void", function (console, waitForInput, toPrint, lookup, callback, timing) {
+      global.__residual("void", function (console, waitForInput, toPrint, lookup, callback) {
         waitForInput(function (err, address) {
           if (toPrint) {
             console.log(lookup(address));
           }
 
-          callback(err, address, timing);
+          callback(err, address);
         });
-      }, _2D_, _1h_, address === 1, _L_, _2E_, timing);
+      }, _2B_, _1h_, address === 1, _L_, _2C_);
     } else {
       if (result !== undefined && result.type === 'Abstr') {
         _R_(2);
 
-        _2E_(null, function (arg) {
-          if (!arg) {
-            _P_(result, [], [], _2E_, true);
-          } else {
-            _Q_({
-              lhs: result,
-              rhs: arg
-            }, [], [], _2E_, true);
+        _2C_(null, function () {
+          let argumentAddresses = [];
+
+          for (let i = 0; i < arguments.length; i++) {
+            argumentAddresses.push(_1Y_(arguments[i]));
           }
-        }, timing);
+
+          _P_(result, [], argumentAddresses, _2A_, true);
+        });
       } else {
-        _2E_(err, address > 1 && _L_(address), timing);
+        _2C_(err, address > 1 && _L_(address));
       }
     }
   };
@@ -921,10 +919,7 @@
     sum: 4
   };
   var _D_ = [];
-
-  var _2B_ = new Date();
-
-  var _2D_ = console;
+  var _2B_ = console;
 
   var _1y_ = $_8_sub();
 
