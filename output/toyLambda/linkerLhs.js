@@ -4,7 +4,7 @@
 
     switch (__selector) {
       case 0:
-        __captured = [_H_, 2, 1];
+        __captured = [_B_, 2, 0];
         break;
     }
 
@@ -14,41 +14,45 @@
 
   var __scope_0_main = new Array(1);
 
-  var _U_ = function (err, result) {
+  var _Q_ = function (err, result) {
     if (err) {
       throw err;
     }
 
-    module.exports = result;
+    if (typeof result === 'function') {
+      module.exports = result;
+    } else {
+      console.log(result);
+    }
   };
 
-  var _V_ = function (address) {
+  var _R_ = function (address) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0] = __captured__scope_1_[0].slice(0, address + 1);
     __captured__scope_1_[1] = address;
   };
 
-  var _G_ = function (value) {
+  var _A_ = function (value) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0][++__captured__scope_1_[1]] = value;
     return __captured__scope_1_[1];
   };
 
-  var _Y_ = function (address, value) {
+  var _U_ = function (address, value) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0][address] = value;
   };
 
-  var _O_ = function (address) {
+  var _H_ = function (address) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     return __captured__scope_1_[0][address];
   };
 
-  var _P_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _I_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     // increase number of term calls
@@ -67,33 +71,33 @@
             setTimeout(function () {
               interpretTermLazy(term, boundVariables, addressesToBind, callback, isRhsApplication);
             }, 100);
-          }, global.setTimeout, _X_, term, boundVariables, addressesToBind, callback, isRhsApplication);
+          }, global.setTimeout, _T_, term, boundVariables, addressesToBind, callback, isRhsApplication);
         } else {
           // decrease now so that when we run the code termCalls is like it was never increased
           __captured__scope_1_[2]--;
 
           global.__residual("void", function (interpretTermLazy, term, boundVariables, addressesToBind, callback, isRhsApplication) {
             interpretTermLazy(term, boundVariables, addressesToBind, callback, isRhsApplication);
-          }, _X_, term, boundVariables, addressesToBind, callback, isRhsApplication);
+          }, _T_, term, boundVariables, addressesToBind, callback, isRhsApplication);
         }
       } else {
-        _X_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+        _T_(term, boundVariables, addressesToBind, callback, isRhsApplication);
       }
     } else {
       // otherwise, if we've reached the maximum number of calls in the interpreter
       if (__captured__scope_1_[2] > 125) {
         // call the function with a timeout
         setTimeout(function () {
-          _X_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+          _T_(term, boundVariables, addressesToBind, callback, isRhsApplication);
         }, 100);
       } else {
         // just call the function as it is
-        _X_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+        _T_(term, boundVariables, addressesToBind, callback, isRhsApplication);
       }
     }
   };
 
-  var _X_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _T_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     false;
@@ -107,27 +111,27 @@
 
     switch (term.type) {
       case 'Deref':
-        _Z_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _V_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
       case 'Const':
-        _a_(term.value, callback);
+        _W_(term.value, callback);
 
         break;
 
       case 'Op':
-        _b_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _X_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
       case 'Abstr':
-        _J_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _D_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
       case 'Apply':
-        _c_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _Y_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
@@ -136,7 +140,7 @@
     }
   };
 
-  var _J_ = function (abstraction, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _D_ = function (abstraction, boundVariables, addressesToBind, callback, isRhsApplication) {
     false;
     let newBoundVariables = Object.assign({}, boundVariables);
     let hasBeenBound = false; // bind variable if there is anything to bind
@@ -146,7 +150,7 @@
       newBoundVariables[abstraction.binding] = addressesToBind.pop();
       hasBeenBound = true;
     } else {
-      newBoundVariables[abstraction.binding] = _G_({
+      newBoundVariables[abstraction.binding] = _A_({
         type: 'Deref',
         value: {
           type: 'Identifier',
@@ -161,13 +165,13 @@
       if (err) {
         callback(err);
       } else {
-        const result = _O_(address); // if it's the rhs of an application, we are allowed to have unbound variables
+        const result = _H_(address); // if it's the rhs of an application, we are allowed to have unbound variables
 
 
         if ((!global.__isAbstract || !global.__isAbstract(result)) && isRhsApplication && !hasBeenBound && result && result.type !== undefined) {
           false; // if the result is not fully evaluated, can't risk leaving out the abstracted variable
 
-          address = _G_({
+          address = _A_({
             type: 'Abstr',
             binding: abstraction.binding,
             value: result
@@ -183,10 +187,10 @@
       callback(null, address);
     };
 
-    _P_(abstraction.value, newBoundVariables, addressesToBind, abstrCallback, true);
+    _I_(abstraction.value, newBoundVariables, addressesToBind, abstrCallback, true);
   };
 
-  var _c_ = function (application, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _Y_ = function (application, boundVariables, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     false;
@@ -204,7 +208,7 @@
           if (err) {
             callback(err);
           } else {
-            let lhs = _O_(lhsAddress); // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
+            let lhs = _H_(lhsAddress); // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
 
 
             if ((!global.__isAbstract || !global.__isAbstract(lhs)) && lhs && lhs.type === 'Deref') {
@@ -213,9 +217,9 @@
               if (application.lhs.type === 'Deref' && application.lhs.value.value === lhs.value.value) {
                 false;
 
-                const rhs = _O_(rhsAddress);
+                const rhs = _H_(rhsAddress);
 
-                _Y_(lhsAddress, {
+                _U_(lhsAddress, {
                   type: 'Apply',
                   value: {
                     lhs: lhs,
@@ -223,7 +227,7 @@
                   }
                 });
 
-                lhs = _O_(lhsAddress);
+                lhs = _H_(lhsAddress);
               }
             } else if (global.__isAbstract && global.__isAbstract(lhs)) {
               if (lhsAddress === 1) {
@@ -235,10 +239,10 @@
 
             if (rhsAddress !== lhsAddress) {
               // the new lhs might have changed
-              _Y_(rhsAddress, lhs);
+              _U_(rhsAddress, lhs);
             }
 
-            _V_(rhsAddress);
+            _R_(rhsAddress);
 
             false;
             callback(null, __captured__scope_1_[1]);
@@ -247,16 +251,16 @@
 
         false;
 
-        _P_(application.lhs, boundVariables, addressesToBind, lhsCallback, false);
+        _I_(application.lhs, boundVariables, addressesToBind, lhsCallback, false);
       }
     };
 
     false; // interpret the RHS term with an empty array of addresses to bind because it's a different scope
 
-    _P_(application.rhs, boundVariables, [], rhsCallback, true);
+    _I_(application.rhs, boundVariables, [], rhsCallback, true);
   };
 
-  var _T_ = function (callback) {
+  var _P_ = function (callback) {
     const readline = require('readline');
 
     const rl = readline.createInterface({
@@ -266,13 +270,13 @@
     rl.question('User input:\n', function (input) {
       rl.close();
 
-      _Y_(2, parseInt(input));
+      _U_(2, parseInt(input));
 
       callback(null, 2);
     });
   };
 
-  var _g_ = function (identifier, boundVariables, callback) {
+  var _c_ = function (identifier, boundVariables, callback) {
     false; // just get the address on the stack pointed at by the identifier
 
     const address = boundVariables[identifier];
@@ -283,25 +287,25 @@
     }
 
     if (identifier === '_print') {
-      _Y_(1, _O_(address));
+      _U_(1, _H_(address));
 
       callback(null, 1);
     } else if (identifier === '_read') {
       // prepack can save the variable as it is on the stack, to be evaluated later
       if (global.__residual) {
         // assign the read identifier to the stack as an abstract variable, to postpone the call
-        _Y_(2, global.__abstract('object', '({type: "Deref", value: {type: "Identifier", value: "_read"}})'));
+        _U_(2, global.__abstract('object', '({type: "Deref", value: {type: "Identifier", value: "_read"}})'));
 
         callback(null, 2);
       } else {
-        _T_(callback);
+        _P_(callback);
       }
     } else {
       callback(null, address);
     }
   };
 
-  var _Z_ = function (dereference, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _V_ = function (dereference, boundVariables, addressesToBind, callback, isRhsApplication) {
     false;
 
     if (dereference.type !== 'Identifier') {
@@ -315,24 +319,24 @@
       } else {
         // check if we are printing
         if (address === 1) {
-          if (global.__isAbstract && global.__isAbstract(_O_(address))) {
+          if (global.__isAbstract && global.__isAbstract(_H_(address))) {
             callback(null, 1);
           } else {
-            console.log(_O_(1));
-            callback(null, _G_(true));
+            console.log(_H_(1));
+            callback(null, _A_(true));
           }
         } else {
           // this could refer to unknown input (for now just reading)
-          if (global.__residual && global.__isAbstract(_O_(address))) {
-            callback(null, _G_(_O_(address)));
+          if (global.__residual && global.__isAbstract(_H_(address))) {
+            callback(null, _A_(_H_(address)));
           } else {
-            const newTerm = _O_(address); // if the variable stored is an application, then interpret that
+            const newTerm = _H_(address); // if the variable stored is an application, then interpret that
 
 
-            if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_d_[dereference.value])) {
+            if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_Z_[dereference.value])) {
               false;
 
-              _P_(newTerm, boundVariables, addressesToBind, callback, true);
+              _I_(newTerm, boundVariables, addressesToBind, callback, true);
             } else {
               false;
 
@@ -340,14 +344,14 @@
                 // the variable might not be evaluated
                 false;
 
-                _Y_(address, {
+                _U_(address, {
                   type: 'Deref',
                   value: newTerm
                 });
               } // look up the address again because it might have changed
 
 
-              callback(null, _G_(_O_(address)));
+              callback(null, _A_(_H_(address)));
             }
           }
         }
@@ -355,97 +359,97 @@
     }; // get address of the identifier on the stack
 
 
-    _g_(dereference.value, boundVariables, derefCallback);
+    _c_(dereference.value, boundVariables, derefCallback);
   };
 
-  var _a_ = function (constant, callback) {
+  var _W_ = function (constant, callback) {
     false; // just increment the address on the stack and assign it the constant value
 
-    callback(null, _G_(constant));
+    callback(null, _A_(constant));
   };
 
-  var _h_ = function (operator, lhsAddress, rhsAddress, callback) {
+  var _d_ = function (operator, lhsAddress, rhsAddress, callback) {
     let err = null;
 
-    const lhs = _O_(lhsAddress);
+    const lhs = _H_(lhsAddress);
 
-    const rhs = _O_(rhsAddress); // check if both the LHS and RHS are fully interpreted 
+    const rhs = _H_(rhsAddress); // check if both the LHS and RHS are fully interpreted 
 
 
     if ((!lhs || lhs.type === undefined) && (!rhs || rhs.type === undefined)) {
       switch (operator) {
         case 'plus':
-          _Y_(lhsAddress, lhs + rhs);
+          _U_(lhsAddress, lhs + rhs);
 
           break;
 
         case 'minus':
-          _Y_(lhsAddress, lhs - rhs);
+          _U_(lhsAddress, lhs - rhs);
 
           break;
 
         case 'times':
-          _Y_(lhsAddress, lhs * rhs);
+          _U_(lhsAddress, lhs * rhs);
 
           break;
 
         case 'divide':
-          _Y_(lhsAddress, lhs / rhs);
+          _U_(lhsAddress, lhs / rhs);
 
           break;
 
         case 'modulus':
-          _Y_(lhsAddress, lhs % rhs);
+          _U_(lhsAddress, lhs % rhs);
 
           break;
 
         case 'eq':
-          _Y_(lhsAddress, lhs === rhs);
+          _U_(lhsAddress, lhs === rhs);
 
           break;
 
         case 'noteq':
-          _Y_(lhsAddress, lhs !== rhs);
+          _U_(lhsAddress, lhs !== rhs);
 
           break;
 
         case 'leq':
-          _Y_(lhsAddress, lhs <= rhs);
+          _U_(lhsAddress, lhs <= rhs);
 
           break;
 
         case 'less':
-          _Y_(lhsAddress, lhs < rhs);
+          _U_(lhsAddress, lhs < rhs);
 
           break;
 
         case 'geq':
-          _Y_(lhsAddress, lhs >= rhs);
+          _U_(lhsAddress, lhs >= rhs);
 
           break;
 
         case 'greater':
-          _Y_(lhsAddress, lhs > rhs);
+          _U_(lhsAddress, lhs > rhs);
 
           break;
 
         case 'and':
-          _Y_(lhsAddress, lhs && rhs);
+          _U_(lhsAddress, lhs && rhs);
 
           break;
 
         case 'or':
-          _Y_(lhsAddress, lhs || rhs);
+          _U_(lhsAddress, lhs || rhs);
 
           break;
 
         case 'negate':
-          _Y_(lhsAddress, !lhs);
+          _U_(lhsAddress, !lhs);
 
           break;
 
         case 'negative':
-          _Y_(lhsAddress, -lhs);
+          _U_(lhsAddress, -lhs);
 
           break;
 
@@ -454,7 +458,7 @@
       }
     } else {
       // if any of the two are not fully interpreted, make the otther one into a constant
-      _Y_(lhsAddress, {
+      _U_(lhsAddress, {
         type: 'Op',
         op: operator,
         lhs: lhs.type !== undefined ? lhs : {
@@ -472,7 +476,7 @@
     callback(err, lhsAddress);
   };
 
-  var _b_ = function (operator, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _X_ = function (operator, boundVariables, addressesToBind, callback, isRhsApplication) {
     false;
 
     const lhsOpCallback = function (err, lhsAddress) {
@@ -481,63 +485,64 @@
       } // clean up stack
 
 
-      _V_(lhsAddress);
+      _R_(lhsAddress);
 
       const rhsOpCallback = function (err, rhsAddress) {
         if (err) {
           return callback(err, null);
         }
 
-        _h_(operator.op, lhsAddress, rhsAddress, callback);
+        _d_(operator.op, lhsAddress, rhsAddress, callback);
       };
 
       if (operator.op !== 'negate' && operator.op !== 'negative') {
         // don't interpret stuff if not needed to
-        if (operator.op === 'or' && _O_(lhsAddress) || operator.op === 'and' && !_O_(lhsAddress)) {
+        if (operator.op === 'or' && _H_(lhsAddress) || operator.op === 'and' && !_H_(lhsAddress)) {
           callback(null, lhsAddress);
-        } else if (operator.op === 'or' && !_O_(lhsAddress)) {
-          _P_(operator.rhs, boundVariables, addressesToBind, callback, isRhsApplication);
+        } else if (operator.op === 'or' && !_H_(lhsAddress)) {
+          _I_(operator.rhs, boundVariables, addressesToBind, callback, isRhsApplication);
         } else {
-          _P_(operator.rhs, boundVariables, addressesToBind, rhsOpCallback, isRhsApplication);
+          _I_(operator.rhs, boundVariables, addressesToBind, rhsOpCallback, isRhsApplication);
         }
       } else {
         rhsOpCallback(null, 0);
       }
     };
 
-    _P_(operator.lhs, boundVariables, addressesToBind, lhsOpCallback, isRhsApplication);
+    _I_(operator.lhs, boundVariables, addressesToBind, lhsOpCallback, isRhsApplication);
   };
 
-  var _K_ = function (err, address) {
+  var _E_ = function (err, address) {
+    const result = _H_(address);
+
+    let timing;
     ;
 
-    const result = _O_(address);
-
     if (global.__isAbstract && global.__isAbstract(result)) {
-      global.__residual("void", function (console, waitForInput, toPrint, lookup, callback) {
+      global.__residual("void", function (console, waitForInput, toPrint, lookup, callback, timing) {
         waitForInput(function (err, address) {
           if (toPrint) {
             console.log(lookup(address));
           }
 
-          callback(err, address);
+          callback(err, address, timing);
         });
-      }, _N_, _T_, address === 1, _O_, _U_);
+      }, _L_, _P_, address === 1, _H_, _Q_, timing);
     } else {
       if (result !== undefined && result.type === 'Abstr') {
-        _V_(2);
+        _R_(2);
 
-        _U_(null, function () {
+        _Q_(null, function () {
           let argumentAddresses = [];
 
           for (let i = 0; i < arguments.length; i++) {
-            argumentAddresses.push(_G_(arguments[i]));
+            argumentAddresses.push(_A_(arguments[i]));
           }
 
-          _J_(result, [], argumentAddresses, _K_, true);
-        });
+          _D_(result, [], argumentAddresses, _E_, true);
+        }, timing);
       } else {
-        _U_(err, address > 1 && _O_(address));
+        _Q_(err, address > 1 && _H_(address), timing);
       }
     }
   };
@@ -546,35 +551,30 @@
     let argumentAddresses = [];
 
     for (let i = 0; i < arguments.length; i++) {
-      argumentAddresses.push(_G_(arguments[i]));
+      argumentAddresses.push(_A_(arguments[i]));
     }
 
-    _J_(_3_, [], argumentAddresses, _K_, true);
+    _D_(_3_, [], argumentAddresses, _E_, true);
   };
 
-  var _H_ = [];
-  _H_.length = 3;
-  var _d_ = [];
-  _d_["export"] = true;
+  var _B_ = [];
+  _B_.length = 3;
+  var _Z_ = [];
+  _Z_.func = true;
   var _3_ = {
     type: "Abstr",
     binding: "x",
     value: {
-      type: "Op",
-      op: "plus",
-      lhs: {
-        type: "Deref",
-        value: {
-          type: "Identifier",
-          value: "x"
-        }
-      },
-      rhs: {
-        type: "Const",
-        value: 1
+      type: "Deref",
+      value: {
+        type: "Identifier",
+        value: "x"
       }
     }
   };
-  var _N_ = console;
+
+  var _J_ = new Date();
+
+  var _L_ = console;
   module.exports = _2_;
 })();
