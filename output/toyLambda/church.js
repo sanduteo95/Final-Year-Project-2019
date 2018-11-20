@@ -130,7 +130,7 @@
     return __captured__scope_1_[1][address];
   };
 
-  var _2u_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _2u_ = function (term, env, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     // increase number of term calls
@@ -145,35 +145,35 @@
             setTimeout(cb, time);
           });
 
-          global.__residual("void", function (setTimeout, interpretTermLazy, term, boundVariables, addressesToBind, callback, isRhsApplication) {
+          global.__residual("void", function (setTimeout, interpretTermLazy, term, env, addressesToBind, callback, isRhsApplication) {
             setTimeout(function () {
-              interpretTermLazy(term, boundVariables, addressesToBind, callback, isRhsApplication);
+              interpretTermLazy(term, env, addressesToBind, callback, isRhsApplication);
             }, 100);
-          }, global.setTimeout, _W_, term, boundVariables, addressesToBind, callback, isRhsApplication);
+          }, global.setTimeout, _W_, term, env, addressesToBind, callback, isRhsApplication);
         } else {
           // decrease now so that when we run the code termCalls is like it was never increased
           __captured__scope_1_[0]--;
 
-          global.__residual("void", _V_.bind(null), _W_, term, boundVariables, addressesToBind, callback, isRhsApplication);
+          global.__residual("void", _V_.bind(null), _W_, term, env, addressesToBind, callback, isRhsApplication);
         }
       } else {
-        _W_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+        _W_(term, env, addressesToBind, callback, isRhsApplication);
       }
     } else {
       // otherwise, if we've reached the maximum number of calls in the interpreter
       if (__captured__scope_1_[0] > 125) {
         // call the function with a timeout
         setTimeout(function () {
-          _W_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+          _W_(term, env, addressesToBind, callback, isRhsApplication);
         }, 100);
       } else {
         // just call the function as it is
-        _W_(term, boundVariables, addressesToBind, callback, isRhsApplication);
+        _W_(term, env, addressesToBind, callback, isRhsApplication);
       }
     }
   };
 
-  var _W_ = function (term, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _W_ = function (term, env, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     false;
@@ -187,7 +187,7 @@
 
     switch (term.type) {
       case 'Deref':
-        _b_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _b_(term.value, env, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
@@ -197,17 +197,17 @@
         break;
 
       case 'Op':
-        _d_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _d_(term, env, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
       case 'Abstr':
-        _e_(term, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _e_(term, env, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
       case 'Apply':
-        _f_(term.value, boundVariables, addressesToBind, termCallback, isRhsApplication);
+        _f_(term.value, env, addressesToBind, termCallback, isRhsApplication);
 
         break;
 
@@ -216,17 +216,17 @@
     }
   };
 
-  var _e_ = function (abstraction, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _e_ = function (abstraction, env, addressesToBind, callback, isRhsApplication) {
     false;
-    let newBoundVariables = Object.assign({}, boundVariables);
+    let newEnv = Object.assign({}, env);
     let hasBeenBound = false; // bind variable if there is anything to bind
 
     if (addressesToBind.length > 0) {
       false;
-      newBoundVariables[abstraction.binding] = addressesToBind.pop();
+      newEnv[abstraction.binding] = addressesToBind.pop();
       hasBeenBound = true;
     } else {
-      newBoundVariables[abstraction.binding] = _2t_({
+      newEnv[abstraction.binding] = _2t_({
         type: 'Deref',
         value: {
           type: 'Identifier',
@@ -263,10 +263,10 @@
       callback(null, address);
     };
 
-    _2u_(abstraction.value, newBoundVariables, addressesToBind, abstrCallback, true);
+    _2u_(abstraction.value, newEnv, addressesToBind, abstrCallback, true);
   };
 
-  var _f_ = function (application, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _f_ = function (application, env, addressesToBind, callback, isRhsApplication) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     false;
@@ -327,13 +327,13 @@
 
         false;
 
-        _2u_(application.lhs, boundVariables, addressesToBind, lhsCallback, false);
+        _2u_(application.lhs, env, addressesToBind, lhsCallback, false);
       }
     };
 
     false; // interpret the RHS term with an empty array of addresses to bind because it's a different scope
 
-    _2u_(application.rhs, boundVariables, [], rhsCallback, true);
+    _2u_(application.rhs, env, [], rhsCallback, true);
   };
 
   var _34_ = function (callback) {
@@ -352,10 +352,10 @@
     });
   };
 
-  var _2w_ = function (identifier, boundVariables, callback) {
+  var _2w_ = function (identifier, env, callback) {
     false; // just get the address on the stack pointed at by the identifier
 
-    const address = boundVariables[identifier];
+    const address = env[identifier];
 
     if (!address) {
       false;
@@ -381,7 +381,7 @@
     }
   };
 
-  var _b_ = function (dereference, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _b_ = function (dereference, env, addressesToBind, callback, isRhsApplication) {
     false;
 
     if (dereference.type !== 'Identifier') {
@@ -412,7 +412,7 @@
             if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_2q_[dereference.value])) {
               false;
 
-              _2u_(newTerm, boundVariables, addressesToBind, callback, true);
+              _2u_(newTerm, env, addressesToBind, callback, true);
             } else {
               false;
 
@@ -435,7 +435,7 @@
     }; // get address of the identifier on the stack
 
 
-    _2w_(dereference.value, boundVariables, derefCallback);
+    _2w_(dereference.value, env, derefCallback);
   };
 
   var _c_ = function (constant, callback) {
@@ -552,7 +552,7 @@
     callback(err, lhsAddress);
   };
 
-  var _d_ = function (operator, boundVariables, addressesToBind, callback, isRhsApplication) {
+  var _d_ = function (operator, env, addressesToBind, callback, isRhsApplication) {
     false;
 
     const lhsOpCallback = function (err, lhsAddress) {
@@ -576,16 +576,16 @@
         if (operator.op === 'or' && _a_(lhsAddress) || operator.op === 'and' && !_a_(lhsAddress)) {
           callback(null, lhsAddress);
         } else if (operator.op === 'or' && !_a_(lhsAddress)) {
-          _2u_(operator.rhs, boundVariables, addressesToBind, callback, isRhsApplication);
+          _2u_(operator.rhs, env, addressesToBind, callback, isRhsApplication);
         } else {
-          _2u_(operator.rhs, boundVariables, addressesToBind, rhsOpCallback, isRhsApplication);
+          _2u_(operator.rhs, env, addressesToBind, rhsOpCallback, isRhsApplication);
         }
       } else {
         rhsOpCallback(null, 0);
       }
     };
 
-    _2u_(operator.lhs, boundVariables, addressesToBind, lhsOpCallback, isRhsApplication);
+    _2u_(operator.lhs, env, addressesToBind, lhsOpCallback, isRhsApplication);
   };
 
   var _3u_ = function (err, address) {
@@ -842,8 +842,8 @@
     return $_2_factoryFunction.call(this, _3E_, _22_, err, address);
   };
 
-  var _V_ = function (interpretTermLazy, term, boundVariables, addressesToBind, callback, isRhsApplication) {
-    interpretTermLazy(term, boundVariables, addressesToBind, callback, isRhsApplication);
+  var _V_ = function (interpretTermLazy, term, env, addressesToBind, callback, isRhsApplication) {
+    interpretTermLazy(term, env, addressesToBind, callback, isRhsApplication);
   };
 
   var _8_ = $_4_sub();

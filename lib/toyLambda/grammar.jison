@@ -37,7 +37,7 @@
 				lhs: lhs,
 				rhs: rhs
 			}
-		}
+		};
 	}
 
 	function createOperation(op, lhs, rhs) {
@@ -102,7 +102,8 @@ term
 			} else {
 				value = parseInt(yytext);
 			}
-			$$ = createTerm('Const', value); }
+			$$ = createTerm('Const', value); 
+		}
 	| operation	
 		{ $$ = $operation; } 
 	| abstraction	
