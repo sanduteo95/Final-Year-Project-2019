@@ -4,7 +4,7 @@
 
     switch (__selector) {
       case 0:
-        __captured = [_H_, 2, 5];
+        __captured = [_H_, 2, 19];
         break;
     }
 
@@ -626,7 +626,8 @@
   var _H_ = [];
   _H_.length = 3;
   var _d_ = [];
-  _d_["export"] = true;
+  _d_.applyF = true;
+  _d_.addB = true;
   var _3_ = {
     type: "Abstr",
     binding: "x",
@@ -634,15 +635,15 @@
       type: "Op",
       op: "plus",
       lhs: {
+        type: "Const",
+        value: 3
+      },
+      rhs: {
         type: "Deref",
         value: {
           type: "Identifier",
           value: "x"
         }
-      },
-      rhs: {
-        type: "Const",
-        value: 1
       }
     }
   };

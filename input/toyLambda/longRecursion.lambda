@@ -1,0 +1,2 @@
+let rec f = λx. λsum. (x < 10000 && (f @ (x + 1)) @ (sum + x)) || sum in
+(f @ 1) @ 0

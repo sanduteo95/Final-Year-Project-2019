@@ -15,6 +15,12 @@
     return _7_[address];
   };
 
+  var _A_ = function (x) {
+    while (x && x.func) {
+      x = x.func.apply(null, x.args);
+    }
+  };
+
   var _3_ = function (callback) {
     const readline = require('readline');
 
@@ -22,13 +28,19 @@
       input: process.stdin,
       output: process.stdout
     });
-    rl.question('User input:\n', function (input) {
-      rl.close();
+    return {
+      func: (...args) => rl.question(...args),
+      args: ['User input:\n', function (input) {
+        rl.close();
 
-      _9_(2, parseInt(input));
+        _9_(2, parseInt(input));
 
-      callback(null, 2);
-    });
+        return _A_({
+          func: callback,
+          args: [null, 2]
+        });
+      }]
+    };
   };
 
   var _2_ = function (console, waitForInput, toPrint, lookup, callback) {
@@ -37,7 +49,10 @@
         console.log(lookup(address));
       }
 
-      callback(err, address);
+      return {
+        func: callback,
+        args: [err, address]
+      };
     });
   };
 
