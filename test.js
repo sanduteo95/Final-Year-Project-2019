@@ -20,6 +20,7 @@ describe('test', function () {
             'nested.lambda': 7,
             'definition.lambda': 4,
             'function.lambda': 5,
+            'addAbstr.lambda': 'function',
             'abstr.lambda': 'function',
             'separateArgs.lambda': 5,
             'huge.lambda': 12,
@@ -27,10 +28,13 @@ describe('test', function () {
             'read.lambda': testInput,
             'readAndPrint.lambda': true,
             'recursion.lambda': 45,
+            'longRecursion.lambda': 49995000,
             'church.lambda': 4
         };
 
         describe('test interpret', function () {
+            // increase timeout
+            this.timeout(30000);
             fs.readdirSync(input + '/toyLambda').forEach(function (file) {
                 it(file + ' should pass with ' + results[file], function () {
                     if (file.includes('read')) {
@@ -52,7 +56,7 @@ describe('test', function () {
         
         describe('test first futamura projection', function () {
             // increase timeout
-            this.timeout(12000);
+            this.timeout(30000);
         
             fs.readdirSync(input + '/toyLambda').forEach(function (file) {
                 it(file + ' should pass with ' + results[file], function () {

@@ -5,8 +5,14 @@ const exec = require('child_process').exec;
 
 const input = './input/';
 
-const maxTermCalls = [50, 100, 125, 150, 200, 300, 600];
+const maxTermCalls = [50, 100, 150, 200, 300, 600];
 const stackSize = 100000;
+
+function sleeper(ms) {
+    return function(x) {
+      return new Promise(resolve => setTimeout(() => resolve(x), ms));
+    };
+}
 
 function createReport (testResults) {
     let body = '';
@@ -15,11 +21,11 @@ function createReport (testResults) {
     testResults.forEach(bachmarkResult => {
         const maxTermCall = Object.keys(bachmarkResult)[0];
         body += `<h3>Number of recursive calls: ${maxTermCall}</h3>`;
-        body += '<table><tr><th>#</th><th>Test</th><th>Time </th><th>Time (Futamura)</th></tr>';
+        body += '<table><tr><th>#</th><th>Test</th<th>Delta</th></tr>';
         bachmarkResult[maxTermCall].forEach((fileResult, i) => {
             const name = Object.keys(fileResult)[0];
             const formattedName = name.substring(0, name.indexOf('.'));
-            body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + fileResult[name].timing + '</td><td>' + fileResult[name].futamuraTiming + '</td></tr>';
+            body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + fileResult[name].delta + '</td></tr>';
         });
         body += '</table>'
     });
@@ -45,7 +51,7 @@ function getTime(stdout) {
     const logString = 'time';
     const indexOfTime = stdout.indexOf(logString);
     const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
-    return stdout.substring(indexOfTime + logString.length + 2, indexOfNewline);
+    return parseFloat(stdout.substring(indexOfTime + logString.length + 2, indexOfNewline - 2));
 }
 
 function promiseToRunInterpreter (file, maxTermCall) {
@@ -82,23 +88,42 @@ function promiseToRunFutamura (file, maxTermCall) {
     });
 }
 
-function promiseToRun (file, maxTermCall) {
-    console.log('File: ' + file);
-    let timing, futamuraTiming;
+function promiseToRunBoth (file, maxTermCall, index) {
+    console.log(index + '. File: ' + file);
+    let delta;
+    setTimeout(function () {
+
+    }, 100);
     return promiseToRunInterpreter(file, maxTermCall)
         .then(response => {
-            timing = response;
+            delta = response;
             return promiseToRunFutamura(file, maxTermCall);
         }).then(response => {
-            futamuraTiming = response;
+            console.log('Finished with this run!');
+            return delta - response;
+        }).then(sleeper(1000));
+}
+
+function promiseToRunBoth5Times (file, maxTermCall) {
+    return [1]
+        .map(index => Promise.resolve(index))
+        .reduce((promiseChain, currentPromise) => {
+            return promiseChain.then(chainResults =>
+                currentPromise.then(currentIndex => {
+                    return promiseToRunBoth (file, maxTermCall, currentIndex).then(currentResult => (
+                        [ ...chainResults, currentResult ]
+                    ))
+                }) 
+            );
+        }, Promise.resolve([])).then(arrayOfResults => {
+            console.log(arrayOfResults)
             let result = {};
             result[file] = {
-                timing: timing,
-                futamuraTiming: futamuraTiming
+                delta: Math.round(arrayOfResults.reduce((total, result) => total + result, 0)/5 * 1000)/1000
             };
             return result;
-        });
-}
+        })
+}  
 
 function promiseToRunBenchmark (maxTermCall) {
     console.log('\n====Benchmark: ' + maxTermCall);
@@ -108,7 +133,7 @@ function promiseToRunBenchmark (maxTermCall) {
         .reduce((promiseChain, currentPromise) => {
             return promiseChain.then(chainResults =>
                 currentPromise.then(currentFile => {
-                    return promiseToRun (currentFile, maxTermCall).then(currentResult => (
+                    return promiseToRunBoth5Times (currentFile, maxTermCall).then(currentResult => (
                         [ ...chainResults, currentResult ]
                     ))
                 })
@@ -139,8 +164,3 @@ function runBenchmarks () {
         });
 }
 runBenchmarks();
-// promiseToRunBenchmark(50)
-//     .then(response => {
-//         createReport([response]);
-//         return;
-//     });
