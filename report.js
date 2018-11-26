@@ -21,7 +21,7 @@ function createReport (testResults) {
     testResults.forEach(bachmarkResult => {
         const maxTermCall = Object.keys(bachmarkResult)[0];
         body += `<h3>Number of recursive calls: ${maxTermCall}</h3>`;
-        body += '<table><tr><th>#</th><th>Test</th<th>Delta</th></tr>';
+        body += '<table><tr><th>#</th><th>Test</th><th>Delta</th></tr>';
         bachmarkResult[maxTermCall].forEach((fileResult, i) => {
             const name = Object.keys(fileResult)[0];
             const formattedName = name.substring(0, name.indexOf('.'));
