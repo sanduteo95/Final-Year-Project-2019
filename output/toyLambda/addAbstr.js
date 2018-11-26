@@ -14,94 +14,31 @@
 
   var __scope_0_main = new Array(1);
 
-  var _U_ = function (err, result) {
-    if (err) {
-      throw err;
-    }
+  var _H_ = [];
+  _H_.length = 3;
 
-    module.exports = result;
-  };
-
-  var _V_ = function (address) {
-    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
-
-    __captured__scope_1_[0] = __captured__scope_1_[0].slice(0, address + 1);
-    __captured__scope_1_[1] = address;
-  };
-
-  var _G_ = function (value) {
+  var _G_ = value => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0][++__captured__scope_1_[1]] = value;
     return __captured__scope_1_[1];
   };
 
-  var _Y_ = function (address, value) {
-    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
-
-    __captured__scope_1_[0][address] = value;
-  };
-
-  var _O_ = function (address) {
+  var _O_ = address => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     return __captured__scope_1_[0][address];
   };
 
-  var _W_ = function (x) {
-    while (x && x.func) {
-      x = x.func.apply(null, x.args);
+  var _W_ = res => {
+    while (res && res.fn) {
+      res = res.fn.apply(null, res.args);
     }
   };
 
-  var _P_ = function (term, env, addressesToBind, callback, isRhsApplication) {
-    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
+  var _d_ = [];
 
-    __captured__scope_1_[2]++;
-
-    if (global.__residual && __captured__scope_1_[2] > 125) {
-      global.__residual("void", function (trampoline, interpretTermLazy, term, env, addressesToBind, callback, isRhsApplication) {
-        return trampoline({
-          func: interpretTermLazy,
-          args: [term, env, addressesToBind, callback, isRhsApplication]
-        });
-      }, _W_, _X_, term, env, addressesToBind, callback, isRhsApplication);
-    } else {
-      return {
-        func: _X_,
-        args: [term, env, addressesToBind, callback, isRhsApplication]
-      };
-    }
-  };
-
-  var _X_ = function (term, env, addressesToBind, callback, isRhsApplication) {
-    false;
-
-    switch (term.type) {
-      case 'Deref':
-        return _Z_(term.value, env, addressesToBind, callback, isRhsApplication);
-
-      case 'Const':
-        return _a_(term.value, callback);
-
-      case 'Op':
-        return _b_(term, env, addressesToBind, callback, isRhsApplication);
-
-      case 'Abstr':
-        return _J_(term, env, addressesToBind, callback, isRhsApplication);
-
-      case 'Apply':
-        return _c_(term.value, env, addressesToBind, callback, isRhsApplication);
-
-      default:
-        return {
-          func: callback,
-          args: [new Error('Failed to interpret term for ' + term.type), null]
-        };
-    }
-  };
-
-  var _J_ = function (abstraction, env, addressesToBind, callback, isRhsApplication) {
+  var _J_ = (abstraction, env, addressesToBind, callback, isRhsApplication) => {
     false;
     let newEnv = Object.assign({}, env);
     let hasBeenBound = false; // bind variable if there is anything to bind
@@ -122,10 +59,10 @@
 
     false;
 
-    const abstrCallback = function (err, address) {
+    const abstrCallback = (err, address) => {
       if (err) {
         return {
-          func: callback,
+          fn: callback,
           args: [err]
         };
       } else {
@@ -149,26 +86,322 @@
 
 
       return {
-        func: callback,
+        fn: callback,
         args: [null, address]
       };
     };
 
     return {
-      func: _P_,
+      fn: _P_,
       args: [abstraction.value, newEnv, addressesToBind, abstrCallback, true]
     };
   };
 
-  var _c_ = function (application, env, addressesToBind, callback) {
+  var _2_ = () => {
+    let argumentAddresses = [];
+
+    for (let i = 0; i < arguments.length; i++) {
+      argumentAddresses.push(_G_(arguments[i]));
+    }
+
+    return _J_(_3_, [], argumentAddresses, _K_, true);
+  };
+
+  _d_.applyF = true;
+
+  var _P_ = (term, env, addressesToBind, callback, isRhsApplication) => {
+    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
+
+    __captured__scope_1_[2]++;
+
+    if (global.__residual && __captured__scope_1_[2] > 125) {
+      global.__residual("void", (trampoline, interpretTermLazy, term, env, addressesToBind, callback, isRhsApplication) => {
+        return trampoline({
+          fn: interpretTermLazy,
+          args: [term, env, addressesToBind, callback, isRhsApplication]
+        });
+      }, _W_, _X_, term, env, addressesToBind, callback, isRhsApplication);
+    } else {
+      return {
+        fn: _X_,
+        args: [term, env, addressesToBind, callback, isRhsApplication]
+      };
+    }
+  };
+
+  var _K_ = (err, address) => {
+    ;
+
+    const result = _O_(address);
+
+    if (global.__isAbstract && global.__isAbstract(result)) {
+      global.__residual("void", (console, waitForInput, toPrint, lookup, callback) => {
+        waitForInput((err, address) => {
+          if (toPrint) {
+            console.log(lookup(address));
+          }
+
+          return {
+            fn: callback,
+            args: [err, address]
+          };
+        });
+      }, _N_, _T_, address === 1, _O_, _U_);
+    } else {
+      if (result !== undefined && result.type === 'Abstr') {
+        _V_(2);
+
+        return {
+          fn: _U_,
+          args: [null, () => {
+            let argumentAddresses = [];
+
+            for (let i = 0; i < arguments.length; i++) {
+              argumentAddresses.push(_G_(arguments[i]));
+            }
+
+            return _J_(result, [], argumentAddresses, _K_, true);
+          }]
+        };
+      } else {
+        return {
+          fn: _U_,
+          args: [err, address > 1 && _O_(address)]
+        };
+      }
+    }
+  };
+
+  var _T_ = callback => {
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    return {
+      fn: (...args) => rl.question(...args),
+      args: ['User input:\n', input => {
+        rl.close();
+
+        _Y_(2, parseInt(input));
+
+        return _W_({
+          fn: callback,
+          args: [null, 2]
+        });
+      }]
+    };
+  };
+
+  var _V_ = address => {
+    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
+
+    __captured__scope_1_[0] = __captured__scope_1_[0].slice(0, address + 1);
+    __captured__scope_1_[1] = address;
+  };
+
+  _d_.addB = true;
+
+  var _U_ = (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    module.exports = result;
+  };
+
+  var _X_ = (term, env, addressesToBind, callback, isRhsApplication) => {
+    false;
+
+    switch (term.type) {
+      case 'Deref':
+        return _Z_(term.value, env, addressesToBind, callback, isRhsApplication);
+
+      case 'Const':
+        return _a_(term.value, callback);
+
+      case 'Op':
+        return _b_(term, env, addressesToBind, callback, isRhsApplication);
+
+      case 'Abstr':
+        return _J_(term, env, addressesToBind, callback, isRhsApplication);
+
+      case 'Apply':
+        return _c_(term.value, env, addressesToBind, callback, isRhsApplication);
+
+      default:
+        return {
+          fn: callback,
+          args: [new Error('Failed to interpret term for ' + term.type), null]
+        };
+    }
+  };
+
+  var _Y_ = (address, value) => {
+    var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
+
+    __captured__scope_1_[0][address] = value;
+  };
+
+  var _Z_ = (dereference, env, addressesToBind, callback, isRhsApplication) => {
+    false;
+
+    if (dereference.type !== 'Identifier') {
+      return {
+        fn: callback,
+        args: [new Error('Failed to interpreter dereference for ' + dereference.type)]
+      };
+    } // a dereference could return an abstraction or application, so we can try to evaluate that
+
+
+    const derefCallback = (err, address) => {
+      if (err) {
+        return {
+          fn: callback,
+          args: [err]
+        };
+      } else {
+        // check if we are printing
+        if (address === 1) {
+          if (global.__isAbstract && global.__isAbstract(_O_(address))) {
+            return {
+              fn: callback,
+              args: [null, 1]
+            };
+          } else {
+            console.log(_O_(1));
+            return {
+              fn: callback,
+              args: [null, _G_(true)]
+            };
+          }
+        } else {
+          // this could refer to unknown input (for now just reading)
+          if (global.__residual && global.__isAbstract(_O_(address))) {
+            return {
+              fn: callback,
+              args: [null, _G_(_O_(address))]
+            };
+          } else {
+            const newTerm = _O_(address); // if the variable stored is an application, then interpret that
+
+
+            if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_d_[dereference.value])) {
+              false;
+              return {
+                fn: _P_,
+                args: [newTerm, env, addressesToBind, callback, true]
+              };
+            } else {
+              false;
+
+              if (newTerm && newTerm.type === 'Identifier') {
+                // the variable might not be evaluated
+                false;
+
+                _Y_(address, {
+                  type: 'Deref',
+                  value: newTerm
+                });
+              } // look up the address again because it might have changed
+
+
+              return {
+                fn: callback,
+                args: [null, _G_(_O_(address))]
+              };
+            }
+          }
+        }
+      }
+    }; // get address of the identifier on the stack
+
+
+    return {
+      fn: _g_,
+      args: [dereference.value, env, derefCallback]
+    };
+  };
+
+  var _a_ = (constant, callback) => {
+    false; // just increment the address on the stack and assign it the constant value
+
+    return {
+      fn: callback,
+      args: [null, _G_(constant)]
+    };
+  };
+
+  var _b_ = (operator, env, addressesToBind, callback, isRhsApplication) => {
+    false;
+
+    const lhsOpCallback = (err, lhsAddress) => {
+      if (err) {
+        return {
+          fn: callback,
+          args: [err, null]
+        };
+      } // clean up stack
+
+
+      _V_(lhsAddress);
+
+      const rhsOpCallback = (err, rhsAddress) => {
+        if (err) {
+          return {
+            fn: callback,
+            args: [err, null]
+          };
+        }
+
+        return {
+          fn: _h_,
+          args: [operator.op, lhsAddress, rhsAddress, callback]
+        };
+      };
+
+      if (operator.op !== 'negate' && operator.op !== 'negative') {
+        // don't interpret stuff if not needed to
+        if (operator.op === 'or' && _O_(lhsAddress) || operator.op === 'and' && !_O_(lhsAddress)) {
+          return {
+            fn: callback,
+            args: [null, lhsAddress]
+          };
+        } else if (operator.op === 'or' && !_O_(lhsAddress)) {
+          return {
+            fn: _P_,
+            args: [operator.rhs, env, addressesToBind, callback, isRhsApplication]
+          };
+        } else {
+          return {
+            fn: _P_,
+            args: [operator.rhs, env, addressesToBind, rhsOpCallback, isRhsApplication]
+          };
+        }
+      } else {
+        return {
+          fn: rhsOpCallback,
+          args: [null, 0]
+        };
+      }
+    };
+
+    return {
+      fn: _P_,
+      args: [operator.lhs, env, addressesToBind, lhsOpCallback, isRhsApplication]
+    };
+  };
+
+  var _c_ = (application, env, addressesToBind, callback) => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     false;
 
-    const rhsCallback = function (err, rhsAddress) {
+    const rhsCallback = (err, rhsAddress) => {
       if (err) {
         return {
-          func: callback,
+          fn: callback,
           args: [err]
         };
       } else {
@@ -177,10 +410,10 @@
         false;
         false;
 
-        const lhsCallback = function (err, lhsAddress) {
+        const lhsCallback = (err, lhsAddress) => {
           if (err) {
             return {
-              func: callback,
+              fn: callback,
               args: [err]
             };
           } else {
@@ -222,7 +455,7 @@
 
             false;
             return {
-              func: callback,
+              fn: callback,
               args: [null, __captured__scope_1_[1]]
             };
           }
@@ -230,7 +463,7 @@
 
         false;
         return {
-          func: _P_,
+          fn: _P_,
           args: [application.lhs, env, addressesToBind, lhsCallback, false]
         };
       }
@@ -239,34 +472,12 @@
     false; // interpret the RHS term with an empty array of addresses to bind because it's a different scope
 
     return {
-      func: _P_,
+      fn: _P_,
       args: [application.rhs, env, [], rhsCallback, true]
     };
   };
 
-  var _T_ = function (callback) {
-    const readline = require('readline');
-
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-    return {
-      func: (...args) => rl.question(...args),
-      args: ['User input:\n', function (input) {
-        rl.close();
-
-        _Y_(2, parseInt(input));
-
-        return _W_({
-          func: callback,
-          args: [null, 2]
-        });
-      }]
-    };
-  };
-
-  var _g_ = function (identifier, env, callback) {
+  var _g_ = (identifier, env, callback) => {
     false; // just get the address on the stack pointed at by the identifier
 
     const address = env[identifier];
@@ -274,7 +485,7 @@
     if (!address) {
       false;
       return {
-        func: callback,
+        fn: callback,
         args: [new Error('Variable or named lambda ' + identifier + ' has not been defined')]
       };
     } else {
@@ -282,7 +493,7 @@
         _Y_(1, _O_(address));
 
         return {
-          func: callback,
+          fn: callback,
           args: [null, 1]
         };
       } else if (identifier === '_read') {
@@ -292,114 +503,25 @@
           _Y_(2, global.__abstract('object', '({type: "Deref", value: {type: "Identifier", value: "_read"}})'));
 
           return {
-            func: callback,
+            fn: callback,
             args: [null, 2]
           };
         } else {
           return {
-            func: _T_,
+            fn: _T_,
             args: [callback]
           };
         }
       } else {
         return {
-          func: callback,
+          fn: callback,
           args: [null, address]
         };
       }
     }
   };
 
-  var _Z_ = function (dereference, env, addressesToBind, callback, isRhsApplication) {
-    false;
-
-    if (dereference.type !== 'Identifier') {
-      return {
-        func: callback,
-        args: [new Error('Failed to interpreter dereference for ' + dereference.type)]
-      };
-    } // a dereference could return an abstraction or application, so we can try to evaluate that
-
-
-    const derefCallback = function (err, address) {
-      if (err) {
-        return {
-          func: callback,
-          args: [err]
-        };
-      } else {
-        // check if we are printing
-        if (address === 1) {
-          if (global.__isAbstract && global.__isAbstract(_O_(address))) {
-            return {
-              func: callback,
-              args: [null, 1]
-            };
-          } else {
-            console.log(_O_(1));
-            return {
-              func: callback,
-              args: [null, _G_(true)]
-            };
-          }
-        } else {
-          // this could refer to unknown input (for now just reading)
-          if (global.__residual && global.__isAbstract(_O_(address))) {
-            return {
-              func: callback,
-              args: [null, _G_(_O_(address))]
-            };
-          } else {
-            const newTerm = _O_(address); // if the variable stored is an application, then interpret that
-
-
-            if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_d_[dereference.value])) {
-              false;
-              return {
-                func: _P_,
-                args: [newTerm, env, addressesToBind, callback, true]
-              };
-            } else {
-              false;
-
-              if (newTerm && newTerm.type === 'Identifier') {
-                // the variable might not be evaluated
-                false;
-
-                _Y_(address, {
-                  type: 'Deref',
-                  value: newTerm
-                });
-              } // look up the address again because it might have changed
-
-
-              return {
-                func: callback,
-                args: [null, _G_(_O_(address))]
-              };
-            }
-          }
-        }
-      }
-    }; // get address of the identifier on the stack
-
-
-    return {
-      func: _g_,
-      args: [dereference.value, env, derefCallback]
-    };
-  };
-
-  var _a_ = function (constant, callback) {
-    false; // just increment the address on the stack and assign it the constant value
-
-    return {
-      func: callback,
-      args: [null, _G_(constant)]
-    };
-  };
-
-  var _h_ = function (operator, lhsAddress, rhsAddress, callback) {
+  var _h_ = (operator, lhsAddress, rhsAddress, callback) => {
     let err = null;
 
     const lhs = _O_(lhsAddress);
@@ -505,129 +627,11 @@
 
     ;
     return {
-      func: callback,
+      fn: callback,
       args: [err, lhsAddress]
     };
   };
 
-  var _b_ = function (operator, env, addressesToBind, callback, isRhsApplication) {
-    false;
-
-    const lhsOpCallback = function (err, lhsAddress) {
-      if (err) {
-        return {
-          func: callback,
-          args: [err, null]
-        };
-      } // clean up stack
-
-
-      _V_(lhsAddress);
-
-      const rhsOpCallback = function (err, rhsAddress) {
-        if (err) {
-          return {
-            func: callback,
-            args: [err, null]
-          };
-        }
-
-        return {
-          func: _h_,
-          args: [operator.op, lhsAddress, rhsAddress, callback]
-        };
-      };
-
-      if (operator.op !== 'negate' && operator.op !== 'negative') {
-        // don't interpret stuff if not needed to
-        if (operator.op === 'or' && _O_(lhsAddress) || operator.op === 'and' && !_O_(lhsAddress)) {
-          return {
-            func: callback,
-            args: [null, lhsAddress]
-          };
-        } else if (operator.op === 'or' && !_O_(lhsAddress)) {
-          return {
-            func: _P_,
-            args: [operator.rhs, env, addressesToBind, callback, isRhsApplication]
-          };
-        } else {
-          return {
-            func: _P_,
-            args: [operator.rhs, env, addressesToBind, rhsOpCallback, isRhsApplication]
-          };
-        }
-      } else {
-        return {
-          func: rhsOpCallback,
-          args: [null, 0]
-        };
-      }
-    };
-
-    return {
-      func: _P_,
-      args: [operator.lhs, env, addressesToBind, lhsOpCallback, isRhsApplication]
-    };
-  };
-
-  var _K_ = function (err, address) {
-    ;
-
-    const result = _O_(address);
-
-    if (global.__isAbstract && global.__isAbstract(result)) {
-      global.__residual("void", function (console, waitForInput, toPrint, lookup, callback) {
-        waitForInput(function (err, address) {
-          if (toPrint) {
-            console.log(lookup(address));
-          }
-
-          return {
-            func: callback,
-            args: [err, address]
-          };
-        });
-      }, _N_, _T_, address === 1, _O_, _U_);
-    } else {
-      if (result !== undefined && result.type === 'Abstr') {
-        _V_(2);
-
-        return {
-          func: _U_,
-          args: [null, function () {
-            let argumentAddresses = [];
-
-            for (let i = 0; i < arguments.length; i++) {
-              argumentAddresses.push(_G_(arguments[i]));
-            }
-
-            return _J_(result, [], argumentAddresses, _K_, true);
-          }]
-        };
-      } else {
-        return {
-          func: _U_,
-          args: [err, address > 1 && _O_(address)]
-        };
-      }
-    }
-  };
-
-  var _2_ = function () {
-    let argumentAddresses = [];
-
-    for (let i = 0; i < arguments.length; i++) {
-      argumentAddresses.push(_G_(arguments[i]));
-    }
-
-    return _J_(_3_, [], argumentAddresses, _K_, true);
-  };
-
-  var _H_ = [];
-  _H_.length = 3;
-  var _d_ = [];
-  _d_.applyF = true;
-  _d_.addB = true;
   var _3_ = {
     type: "Abstr",
     binding: "x",

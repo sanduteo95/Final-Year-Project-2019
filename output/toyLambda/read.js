@@ -1,56 +1,12 @@
 (function () {
-  var _5_ = function (err, result) {
-    if (err) {
-      throw err;
-    }
-
-    module.exports = result;
-  };
-
-  var _9_ = function (address, value) {
-    _7_[address] = value;
-  };
-
-  var _4_ = function (address) {
-    return _7_[address];
-  };
-
-  var _A_ = function (x) {
-    while (x && x.func) {
-      x = x.func.apply(null, x.args);
-    }
-  };
-
-  var _3_ = function (callback) {
-    const readline = require('readline');
-
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout
-    });
-    return {
-      func: (...args) => rl.question(...args),
-      args: ['User input:\n', function (input) {
-        rl.close();
-
-        _9_(2, parseInt(input));
-
-        return _A_({
-          func: callback,
-          args: [null, 2]
-        });
-      }]
-    };
-  };
-
-  var _2_ = function (console, waitForInput, toPrint, lookup, callback) {
-    waitForInput(function (err, address) {
+  var _2_ = (console, waitForInput, toPrint, lookup, callback) => {
+    waitForInput((err, address) => {
       if (toPrint) {
         console.log(lookup(address));
       }
 
       return {
-        func: callback,
+        fn: callback,
         args: [err, address]
       };
     });
@@ -64,6 +20,50 @@
     }
   };
   var _7_ = [,, _8_, _8_];
+
+  var _3_ = callback => {
+    const readline = require('readline');
+
+    const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+    });
+    return {
+      fn: (...args) => rl.question(...args),
+      args: ['User input:\n', input => {
+        rl.close();
+
+        _9_(2, parseInt(input));
+
+        return _A_({
+          fn: callback,
+          args: [null, 2]
+        });
+      }]
+    };
+  };
+
+  var _4_ = address => {
+    return _7_[address];
+  };
+
+  var _5_ = (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    module.exports = result;
+  };
+
+  var _9_ = (address, value) => {
+    _7_[address] = value;
+  };
+
+  var _A_ = res => {
+    while (res && res.fn) {
+      res = res.fn.apply(null, res.args);
+    }
+  };
 
   _2_(console, _3_, false, _4_, _5_);
 })();
