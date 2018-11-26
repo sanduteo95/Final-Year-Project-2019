@@ -8,13 +8,13 @@ const input = './input/';
 const maxTermCalls = [50, 100, 150, 200, 300, 600];
 const stackSize = 100000;
 
-function sleeper(ms) {
-    return function(x) {
-      return new Promise(resolve => setTimeout(() => resolve(x), ms));
+sleeper = time => {
+    return x => {
+      return new Promise(resolve => setTimeout(() => resolve(x), time));
     };
 }
 
-function createReport (testResults) {
+createReport = testResults => {
     let body = '';
 
     console.log(JSON.stringify(testResults));
@@ -47,14 +47,14 @@ function createReport (testResults) {
     });
 }
 
-function getTime(stdout) {
+getTime = stdout => {
     const logString = 'time';
     const indexOfTime = stdout.indexOf(logString);
     const indexOfNewline = indexOfTime + stdout.substring(indexOfTime).indexOf('\n');
     return parseFloat(stdout.substring(indexOfTime + logString.length + 2, indexOfNewline - 2));
 }
 
-function promiseToRunInterpreter (file, maxTermCall) {
+promiseToRunInterpreter = (file, maxTermCall) => {
     console.log('interpreter')
     return new Promise((resolve, reject) => {
         let input = '';
@@ -71,7 +71,7 @@ function promiseToRunInterpreter (file, maxTermCall) {
     });
 }
 
-function promiseToRunFutamura (file, maxTermCall) {
+promiseToRunFutamura = (file, maxTermCall) => {
     console.log('futamura')
     return new Promise((resolve, reject) => {
         let input = '';
@@ -88,7 +88,7 @@ function promiseToRunFutamura (file, maxTermCall) {
     });
 }
 
-function promiseToRunBoth (file, maxTermCall, index) {
+promiseToRunBoth = (file, maxTermCall, index) => {
     console.log(index + '. File: ' + file);
     let delta;
     setTimeout(function () {
@@ -104,8 +104,8 @@ function promiseToRunBoth (file, maxTermCall, index) {
         }).then(sleeper(1000));
 }
 
-function promiseToRunBoth5Times (file, maxTermCall) {
-    return [1]
+promiseToRunBoth5Times = (file, maxTermCall) => {
+    return [1, 2, 3, 4, 5]
         .map(index => Promise.resolve(index))
         .reduce((promiseChain, currentPromise) => {
             return promiseChain.then(chainResults =>
@@ -125,7 +125,7 @@ function promiseToRunBoth5Times (file, maxTermCall) {
         })
 }  
 
-function promiseToRunBenchmark (maxTermCall) {
+promiseToRunBenchmark = maxTermCall => {
     console.log('\n====Benchmark: ' + maxTermCall);
     const files = fs.readdirSync(input + '/toyLambda');
     return files
@@ -145,7 +145,7 @@ function promiseToRunBenchmark (maxTermCall) {
         });
 }
 
-function runBenchmarks () {
+runBenchmarks = () => {
     return maxTermCalls
         .map(maxTermCall => Promise.resolve(maxTermCall))
         .reduce((promiseChain, currentPromise) => {
@@ -163,4 +163,5 @@ function runBenchmarks () {
             throw err;
         });
 }
+
 runBenchmarks();
