@@ -14,7 +14,7 @@
     "test": "mocha test.js",
     "create-report": "node ./report.js",
     "build-goi-machine": "webpack --config webpack.config.js --display-error-details; node ./lib/goiMachine/futamura.js",
-    "prepack-goi-machine": "webpack --config lib/goiMachine/webpack.config.js --display-error-details"
+    "prepack-goi-machine": "webpack --config ./lib/goiMachine/webpack.config.js --display-error-details"
   },
   "repository": {
     "type": "git",
