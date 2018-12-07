@@ -2,6 +2,47 @@ To test out the various ways of applying the Futamura Projections on the GoI mac
 
 
 There are three ways this can be achieved:
-1. By running `npm run build-goi-machine`, which applies Webpack to the `goi-machine.js` file in the cloned repo. This returns a `umd` module with any `require.js` syntax replaced by normal, ES5 syntax. Haven't checked yet if this can be run in the browser via the UI written in `require.js`, but inituitively, I would say it won't work.
-2. By running `node lib/goiMachine/futamura.js`, which runs Prepack on the same `goi-machine.js` file but adds some Prepack specific code, to know how to deal with syntax like `define`. This, however, should be easy to use from the `require.js` module, however it is not as optimized yet as we would like.
-3. By running `npm run prepack-goi-machine`, which also applies Webpack to the `goi-machine.js` file but it includes the Webpack Prepack plugin. This returns an `amd` module, which should hopefully be able to be used by the initial `require.js` module.
+1. `npm run v1-goi-machine`: Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd), optimized with the Prepack Webpack plugin (i.e. `main.prepack.js`). Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+
+Problem with the following:
+```
+  var _$0 = this;
+
+  var _$1 = _$0.Object;
+  var _$2 = _$1.defineProperty;
+  var _$3 = _$1.setPrototypeOf;
+```
+
+`this` does not have the expected values in the browser, so it fails. Instead of pointing at the `window`, it points at something else. Probably could be fixed within the webpack. Changing the value of `this` inside `call(this)` in the Prepack generated file works (to `window`), so probably need to change Prepack configurations.
+
+Next error is: `TypeError: Machine is not a constructor`. Need to change the last line to `module.exports = _1_main;` from `global.main = _1_main`. But it's better fixed by adding `globalObject: 'window' libraryTarget: 'window'` to the `output` of the webpack configuration.
+
+Next: `TypeError: graph.addNode is not a function`. Because of this line `graph = this.graph; // cheating!`. Graph won't be defined at that point I don't think, because it was defined in a place it shouldn't be. Fix in the visualiser with: https://stackoverflow.com/questions/23476732/set-javascript-global-variables-across-multiple-pages. Or in Webpack with :
+```
+new webpack.DefinePlugin({
+    "graph": null
+})
+```
+
+However, next error is `TypeError: term.prin is undefined` which I think is because of the use of the Webpack fix (might mean graph doesn't change?)
+
+2. `npm run v2-goi-machine`: Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd) (i.e. `main.js`). Then runs Prepack separately on that file and returns an optimized file (i.e. `main.prepack.js`), which it then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+
+This one fails as well, but with a different error: `TypeError: Super expression must either be null or a function`. This is referring to when we try to create a `Thunk` from a `Term`. At first it might look like it could be because the Term is defined after the Thunk (look for `_W_Thunk` in `main.prepac.js`). However, even moving that before manually causes problems.
+
+Moving the following code before the `_W_Thunk` function works:
+```
+  var _1i_Term = class {
+    constructor(ctx) {
+      this.ctx = ctx;
+    }
+
+  };
+```
+But then the problem is with `_c_IntOp` (again that `_u_Op` is `undefined`). But can be fixed the same way by moving it inside Prepack. (need to figure out an automated way to do this)
+
+Next two errors are the ones from the first case.
+
+2. `npm run v3-goi-machine`: Runs Prepack directly o the `require.js` (amd) module defined in `goi-machine.js` and returns a new optimized module (i.e. `main.prepack.js`). This requires a bit of fiddling with the Prepack configuration and adding extra code. Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+
+This third one seems to suffer frm the same problems as the first one, but it is less optimized and also seems to export the machine as `require(<machine>)` instead of just `<machine>`. I think this one can be given up on.

@@ -13,8 +13,9 @@
   "scripts": {
     "test": "mocha test.js",
     "create-report": "node ./report.js",
-    "build-goi-machine": "webpack --config webpack.config.js --display-error-details; node ./lib/goiMachine/futamura.js",
-    "prepack-goi-machine": "webpack --config ./lib/goiMachine/webpack.config.js --display-error-details"
+    "v1-goi-machine": "webpack --config ./lib/goiMachine/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/goiMachine/webpack.config.js",
+    "v2-goi-machine": "webpack --config ./lib/goiMachine/v2/webpack.config.js --display-error-details; node ./lib/goiMachine/v2/index.js; webpack --env=v2 --config ./lib/goiMachine/webpack.config.js",
+    "v3-goi-machine": "node ./lib/goiMachine/v3/index.js; webpack --env=v3 --config ./lib/goiMachine/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
     "child_process": "^1.0.2",
     "commander": "^2.19.0",
     "create-html": "^4.1.0",
+    "expose-loader": "^0.7.5",
     "fs": "0.0.1-security",
     "jison": "^0.4.18",
     "lex": "^1.7.9",
