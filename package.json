@@ -15,7 +15,8 @@
     "create-report": "node ./report.js",
     "v1-goi-machine": "webpack --config ./lib/goiMachine/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/goiMachine/webpack.config.js",
     "v2-goi-machine": "webpack --config ./lib/goiMachine/v2/webpack.config.js --display-error-details; node ./lib/goiMachine/v2/index.js; webpack --env=v2 --config ./lib/goiMachine/webpack.config.js",
-    "v3-goi-machine": "node ./lib/goiMachine/v3/index.js; webpack --env=v3 --config ./lib/goiMachine/webpack.config.js"
+    "v3-goi-machine": "node ./lib/goiMachine/v3/index.js; webpack --env=v3 --config ./lib/goiMachine/webpack.config.js",
+    "v4-goi-machine": "webpack --config ./lib/goiMachine/v4/webpack.config.js --display-error-details"
   },
   "repository": {
     "type": "git",
@@ -27,9 +28,13 @@
     "child_process": "^1.0.2",
     "commander": "^2.19.0",
     "create-html": "^4.1.0",
+    "exports-loader": "^0.7.0",
     "expose-loader": "^0.7.5",
     "fs": "0.0.1-security",
+    "imports-loader": "^0.8.0",
     "jison": "^0.4.18",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.0.0",
     "lex": "^1.7.9",
     "path": "^0.12.7",
     "prepack": "^0.2.54",
