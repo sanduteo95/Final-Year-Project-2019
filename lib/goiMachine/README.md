@@ -1,4 +1,4 @@
-To test out the various ways of applying the Futamura Projections on the GoI machine, first clone the GoI machine outside of this repository (https://git.cs.bham.ac.uk/txw467/viz).
+To test out the various ways of applying the Futamura Projections on the GoI machine, first clone the GoI machine outside of this repository (https://git.cs.bham.ac.uk/txw467/viz or https://github.com/anonymousgithubaccount/EFSD-vis).
 
 
 There are three ways this can be achieved:
@@ -59,3 +59,8 @@ In the end, was able to modify the WebPack to fix the `window` and `GoIMachine` 
     ]
 }
 These went into the main WebPack config and have fixed the first and second version. We will give up on the third version as it's clearly not good enough.
+
+Changes that went into viz/EFSD-vis:
+- remove multiple module definitions from one file, and split them into files in folders, and remove require.js bundles configuration (which will not be necessary anymore): see https://requirejs.org/docs/api.html#define for why
+- use require.js define syntax (define(<name>, [<deps>], function(<deps class names>) { ... })): see https://requirejs.org/docs/api.html#funcmodule which explains how this syntax works and why the other syntax would work, but doesn't seem necessary in this case
+- replace "var graph" (cheating method) with "window.mainGraph"
