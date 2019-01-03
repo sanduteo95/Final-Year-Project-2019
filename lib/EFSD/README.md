@@ -1,8 +1,15 @@
-To test out the various ways of applying the Futamura Projections on the GoI machine, first clone the GoI machine outside of this repository (https://git.cs.bham.ac.uk/txw467/viz or https://github.com/anonymousgithubaccount/EFSD-vis).
+To test out the various ways of applying the Futamura Projections on the GoI machine which is used to implement the Dat Flow langauge, first clone the [GoI machine](https://github.com/anonymousgithubaccount/EFSD-vis) outside of this repository so that the folder structure is:
+```
+|-- tas458
+|-- EFSD-vis
+```
 
+Applying the First Futamura Projection on the GoI machine implies running Prepack on the JavaScript file containing the GoIMachine class i.e. `../EFSD-vis/js/goi-machine.js`. 
 
-There are three ways this can be achieved:
-1. `npm run v1-goi-machine`: Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd), optimized with the Prepack Webpack plugin (i.e. `main.prepack.js`). Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+There are three ways this can be achieved, with the help of the following scripts:
+1. `npm run v1-goi-machine`
+
+Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd), optimized with the Prepack Webpack plugin (i.e. `main.prepack.js`). Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
 
 Problem with the following:
 ```
@@ -17,6 +24,13 @@ Problem with the following:
 
 Next error is: `TypeError: Machine is not a constructor`. Need to change the last line to `module.exports = _1_main;` from `global.main = _1_main`. But it's better fixed by adding `globalObject: 'window' libraryTarget: 'window'` to the `output` of the webpack configuration.
 
+In the end, we were able to modify the WebPack to fix the `window` and `GoIMachine` problems above:
+{
+    test: require.resolve(basePath + '/goi-machine.js'),
+    use: [
+        'import-loader?this=>window'
+    ]
+}
 Next: `TypeError: graph.addNode is not a function`. Because of this line `graph = this.graph; // cheating!`. Graph won't be defined at that point I don't think, because it was defined in a place it shouldn't be. Fix in the visualiser with: https://stackoverflow.com/questions/23476732/set-javascript-global-variables-across-multiple-pages. Or in Webpack with :
 ```
 new webpack.DefinePlugin({
@@ -26,7 +40,9 @@ new webpack.DefinePlugin({
 
 However, next error is `TypeError: term.prin is undefined` which I think is because of the use of the Webpack fix (might mean graph doesn't change?)
 
-2. `npm run v2-goi-machine`: Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd) (i.e. `main.js`). Then runs Prepack separately on that file and returns an optimized file (i.e. `main.prepack.js`), which it then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+2. `npm run v2-goi-machine`
+
+Converts the `require.js` (amd) module defined in `goi-machine.js` into a plain JavaScript module (umd) (i.e. `main.js`). Then runs Prepack separately on that file and returns an optimized file (i.e. `main.prepack.js`), which it then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
 
 This one fails as well, but with a different error: `TypeError: Super expression must either be null or a function`. This is referring to when we try to create a `Thunk` from a `Term`. At first it might look like it could be because the Term is defined after the Thunk (look for `_W_Thunk` in `main.prepac.js`). However, even moving that before manually causes problems.
 
@@ -43,22 +59,11 @@ But then the problem is with `_c_IntOp` (again that `_u_Op` is `undefined`). But
 
 Next two errors are the ones from the first case.
 
-3. `npm run v3-goi-machine`: Runs Prepack directly o the `require.js` (amd) module defined in `goi-machine.js` and returns a new optimized module (i.e. `main.prepack.js`). This requires a bit of fiddling with the Prepack configuration and adding extra code. Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
+3. `npm run v3-goi-machine`
+
+Runs Prepack directly o the `require.js` (amd) module defined in `goi-machine.js` and returns a new optimized module (i.e. `main.prepack.js`). This requires a bit of fiddling with the Prepack configuration and adding extra code. Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
 
 This third one seems to suffer frm the same problems as the first one, but it is less optimized and also seems to export the machine as `require(<machine>)` instead of just `<machine>`. I think this one can be given up on.
-
-To run v1: change to `window` in prepack and run `webpack --env=v1 --config ./lib/goiMachine/webpack.config.js`.
-
-4. The same as the other ones, but working on the terminal version of the vizualiser.
-
-In the end, was able to modify the WebPack to fix the `window` and `GoIMachine` are undefined problem:
-{
-    test: require.resolve(basePath + '/goi-machine.js'),
-    use: [
-        'import-loader?this=>window'
-    ]
-}
-These went into the main WebPack config and have fixed the first and second version. We will give up on the third version as it's clearly not good enough.
 
 Changes that went into viz/EFSD-vis:
 - remove multiple module definitions from one file, and split them into files in folders, and remove require.js bundles configuration (which will not be necessary anymore): see https://requirejs.org/docs/api.html#define for why
