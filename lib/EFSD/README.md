@@ -63,7 +63,7 @@ Next two errors are the ones from the first case.
 
 Runs Prepack directly o the `require.js` (amd) module defined in `goi-machine.js` and returns a new optimized module (i.e. `main.prepack.js`). This requires a bit of fiddling with the Prepack configuration and adding extra code. Then converts this back to a `require.js` (amd) module (i.e. `main.require.js`).
 
-This third one seems to suffer frm the same problems as the first one, but it is less optimized and also seems to export the machine as `require(<machine>)` instead of just `<machine>`. I think this one can be given up on.
+This third version seems inefficient and too fiddly. Would need to make sure to require all dependencies and include them into the file, something that Webpack is able to do very easily. So this version will be forgotten.
 
 Changes that went into viz/EFSD-vis:
 - remove multiple module definitions from one file, and split them into files in folders, and remove require.js bundles configuration (which will not be necessary anymore): see https://requirejs.org/docs/api.html#define for why
