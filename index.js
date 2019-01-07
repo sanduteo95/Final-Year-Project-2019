@@ -26,30 +26,32 @@ program
 
 if (program.goiMachine) {
     // return an error if tried to run on the GoI Machine with incompatible options
-    if (program.runParser || program.debug || program.stack) {
-        console.error('Cannot run the GoI Machine with -p, -d, -s, or -t options.');
+    if (program.runParser || program.debug) {
+        console.error('Cannot run the GoI Machine with -p or -d options.');
         return;
     }
     // signify running on the GoI Machine
     isGoIMachine = true;
 } else {
-    // setup the global variables based on the options
-    if (program.debug) {
-        process.env.DEBUG = true;
-    } else {
-        process.env.DEBUG = false;
-    }
-
-    if (program.stack) {
-        if (!isNaN(program.stack) && program.stack != true) {
-            maxTermCalls = parseInt(program.stack);
-        } else {
-            console.error('Stack option must be provided and be a number.');
-            return;
-        }
-    }
     // signify NOT running on the GoI Machine
     isGoIMachine = false;
+}
+
+// setup the global variables based on the options
+if (program.debug) {
+    process.env.DEBUG = true;
+} else {
+    process.env.DEBUG = false;
+}
+
+// setup the stack options
+if (program.stack) {
+    if (!isNaN(program.stack) && program.stack != true) {
+        maxTermCalls = parseInt(program.stack);
+    } else {
+        console.error('Stack option must be provided and be a number.');
+        return;
+    }
 }
 
 if (program.time) {
@@ -64,15 +66,14 @@ if (program.runParser) {
 } else if (program.runInterpreter) {
     const code = fs.readFileSync(path.join(__dirname, program.runInterpreter), 'utf8');
     if (program.goiMachine) {
-        const result = efsd.interpreter(code, addTiming)
-        console.log(JSON.stringify(result));
+        efsd.interpreter(code, addTiming, maxTermCalls)
     } else {
         boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls);
     }
 } else if (program.runFutamura) {
     const code = fs.readFileSync(path.join(__dirname, program.runFutamura), 'utf8');
     if (program.goiMachine) {
-        const result = efsd.futamura(code, program.runFutamura, addTiming)
+        const result = efsd.futamura(code, program.runFutamura, addTiming, maxTermCalls)
         console.log(JSON.stringify(result));
     } else {
         const result = boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(program.runFutamura);
