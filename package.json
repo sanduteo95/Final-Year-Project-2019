@@ -16,7 +16,7 @@
     "v1-goi-machine": "webpack --config ./lib/EFSD/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/EFSD/webpack.config.js",
     "v2-goi-machine": "webpack --config ./lib/EFSD/v2/webpack.config.js --display-error-details; node ./lib/EFSD/v2/index.js; webpack --env=v2 --config ./lib/EFSD/webpack.config.js",
     "v3-goi-machine": "node ./lib/EFSD/v3/index.js; webpack --env=v3 --config ./lib/EFSD/webpack.config.js",
-    "v4-goi-machine": "webpack --config ./lib/EFSD/v4/webpack.config.js --display-error-details"
+    "term-goi-machine": "webpack --config ./lib/EFSD/term/webpack.config.js --display-error-details"
   },
   "repository": {
     "type": "git",
