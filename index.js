@@ -5,7 +5,6 @@ const fs = require('fs');
 const path = require('path');
 
 const boilerplate = require('./lib/boilerplate.js');
-const efsd = require('./lib/EFSD/term/index.js');
 
 let addTiming = false;
 let maxTermCalls = 125;
@@ -64,21 +63,32 @@ if (program.runParser) {
     const result = boilerplate.parserBoilerplate(code);
     console.log(JSON.stringify(result));
 } else if (program.runInterpreter) {
-    const code = fs.readFileSync(path.join(__dirname, program.runInterpreter), 'utf8');
-    if (program.goiMachine) {
-        efsd.interpreter(code, addTiming, maxTermCalls)
+    const fileName = program.runInterpreter;
+    const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
+    if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
+        console.error('The EFSD accepts files with extension .efsd.');
+        return;
+    } else if (!isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'lambda') {
+        console.error('The lambda calculus accepts fiels with extension .lambda.');
+        return;
+    }
+    if (isGoIMachine) {
+        boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
     } else {
-        boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls);
+        boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
     }
 } else if (program.runFutamura) {
-    const code = fs.readFileSync(path.join(__dirname, program.runFutamura), 'utf8');
-    if (program.goiMachine) {
-        const result = efsd.futamura(code, program.runFutamura, addTiming, maxTermCalls)
-        console.log(JSON.stringify(result));
-    } else {
-        const result = boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(program.runFutamura);
-        console.log(JSON.stringify(result));
+    const fileName = program.runFutamura;
+    const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
+    if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
+        console.error('The EFSD accepts files with extension .efsd.');
+        return;
+    } else if (!isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'lambda') {
+        console.error('The lambda calculus accepts fiels with extension .lambda.');
+        return;
     }
+    const result = boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(fileName);
+    console.log(JSON.stringify(result));
 } else if (program.debug || program.stack || program.time) {
     console.error('Cannot run the program with options -d, -s, or -t on their own.');
 }

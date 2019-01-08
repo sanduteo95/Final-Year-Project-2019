@@ -1121,32 +1121,38 @@
     const result = _1l_(address);
 
     if (global.__isAbstract && global.__isAbstract(result)) {
-      global.__residual("void", (console, waitForInput, toPrint, lookup, callback) => {
-        waitForInput((err, address) => {
-          if (toPrint) {
-            console.log(lookup(address));
-          }
+      global.__residual("void", (console, waitForInput, trampoline, toPrint, lookup, callback) => {
+        trampoline({
+          fn: waitForInput,
+          args: [(err, address) => {
+            if (toPrint) {
+              console.log(lookup(address));
+            }
 
-          return {
-            fn: callback,
-            args: [err, address]
-          };
+            return {
+              fn: callback,
+              args: [err, lookup(address)]
+            };
+          }]
         });
-      }, _3K_, _1u_, address === 1, _1l_, _3L_);
+      }, _3K_, _1u_, _O_, address === 1, _1l_, _3L_);
     } else {
       if (result !== undefined && result.type === 'Abstr') {
         _X_(2);
 
         return {
           fn: _3L_,
-          args: [null, () => {
+          args: [null, (...arguments) => {
             let argumentAddresses = [];
 
             for (let i = 0; i < arguments.length; i++) {
               argumentAddresses.push(_1p_(arguments[i]));
             }
 
-            return _V_(result, [], argumentAddresses, _3E_, true);
+            _O_({
+              fn: _V_,
+              args: [result, [], argumentAddresses, _3E_, true]
+            });
           }]
         };
       } else {
@@ -1163,6 +1169,7 @@
       throw err;
     }
 
+    console.log(result);
     module.exports = result;
   };
 

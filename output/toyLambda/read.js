@@ -1,25 +1,28 @@
 (function () {
-  var _2_ = (console, waitForInput, toPrint, lookup, callback) => {
-    waitForInput((err, address) => {
-      if (toPrint) {
-        console.log(lookup(address));
-      }
+  var _2_ = (console, waitForInput, trampoline, toPrint, lookup, callback) => {
+    trampoline({
+      fn: waitForInput,
+      args: [(err, address) => {
+        if (toPrint) {
+          console.log(lookup(address));
+        }
 
-      return {
-        fn: callback,
-        args: [err, address]
-      };
+        return {
+          fn: callback,
+          args: [err, lookup(address)]
+        };
+      }]
     });
   };
 
-  var _8_ = {
+  var _9_ = {
     type: "Deref",
     value: {
       type: "Identifier",
       value: "_read"
     }
   };
-  var _7_ = [,, _8_, _8_];
+  var _8_ = [,, _9_, _9_];
 
   var _3_ = callback => {
     const readline = require('readline');
@@ -33,9 +36,9 @@
       args: ['User input:\n', input => {
         rl.close();
 
-        _9_(2, parseInt(input));
+        _A_(2, parseInt(input));
 
-        return _A_({
+        return _4_({
           fn: callback,
           args: [null, 2]
         });
@@ -43,27 +46,28 @@
     };
   };
 
-  var _4_ = address => {
-    return _7_[address];
-  };
-
-  var _5_ = (err, result) => {
-    if (err) {
-      throw err;
-    }
-
-    module.exports = result;
-  };
-
-  var _9_ = (address, value) => {
-    _7_[address] = value;
-  };
-
-  var _A_ = res => {
+  var _4_ = res => {
     while (res && res.fn) {
       res = res.fn.apply(null, res.args);
     }
   };
 
-  _2_(console, _3_, false, _4_, _5_);
+  var _5_ = address => {
+    return _8_[address];
+  };
+
+  var _6_ = (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    console.log(result);
+    module.exports = result;
+  };
+
+  var _A_ = (address, value) => {
+    _8_[address] = value;
+  };
+
+  _2_(console, _3_, _4_, false, _5_, _6_);
 })();

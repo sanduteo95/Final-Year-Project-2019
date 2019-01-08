@@ -40,6 +40,7 @@ Optional flags are:
 * `-d`: to allow debugging log
 * `-t`: to get execution time
 * `-s value`: to set up the maximum number of consecutive recursive calls allowed
+* `-g`: to run on the GoIMachine at [EFSD-vis](https://github.com/sanduteo95/EFSD-vis)
 
 In case of `RangeError: Maximum call stack size exceeded` errors, add a `--stack-size=<value>` to the command. 
 i.e. `node --stack-size=100000 index.js -i <pathToFile>`
