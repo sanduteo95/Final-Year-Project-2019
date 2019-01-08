@@ -8,6 +8,8 @@ const input = './input/';
 const maxTermCalls = [50, 100, 150, 200, 300, 600];
 const stackSize = 100000;
 
+const language = process.env.LANG === 'lambda' ? 'toyLambda' : 'EFSD'
+
 sleeper = time => {
     return x => {
       return new Promise(resolve => setTimeout(() => resolve(x), time));
@@ -25,7 +27,7 @@ createReport = testResults => {
         bachmarkResult[maxTermCall].forEach((fileResult, i) => {
             const name = Object.keys(fileResult)[0];
             const formattedName = name.substring(0, name.indexOf('.'));
-            body += '<tr><td>' + i + '</td><td><a href="../output/toyLambda/' + formattedName + '.js">' + formattedName + '</a></td><td>' + fileResult[name].delta + '</td></tr>';
+            body += '<tr><td>' + i + '</td><td><a href="../output/' + language + '/' + formattedName + '.js">' + formattedName + '</a></td><td>' + fileResult[name].delta + '</td></tr>';
         });
         body += '</table>'
     });
@@ -36,13 +38,19 @@ createReport = testResults => {
         fs.mkdirSync(reportDir);
     }
 
+    const langDir = path.join(__dirname + '/report/' + langauge);
+
+    if (!fs.existsSync(langDir)) {
+        fs.mkdirSync(langDir);
+    }
+
     const html = createHTML({
         title: 'Report',
         css: 'index.css',
         body: body
     });
 
-    fs.writeFile(path.join(reportDir + '/index.html'), html, function (err) {
+    fs.writeFile(path.join(langDir + '/index.html'), html, function (err) {
         if (err) console.log(err)
     });
 }
@@ -61,7 +69,7 @@ promiseToRunInterpreter = (file, maxTermCall) => {
         if(file.includes('read')) {
             input = ' <<< 1';
         }
-        exec(`node --stack-size=${stackSize} index.js -i input/toyLambda/${file} -t ${input} -s ${maxTermCall}`, (err, stdout) => {
+        exec(`node --stack-size=${stackSize} index.js -i input/${language}/${file} -t ${input} -s ${maxTermCall}`, (err, stdout) => {
             if (err) {
                 return reject(err);
             }
@@ -79,7 +87,7 @@ promiseToRunFutamura = (file, maxTermCall) => {
             input = ' <<< 1';
         }
 
-        exec(`node --stack-size=${stackSize} index.js -f input/toyLambda/${file} -t -s ${maxTermCall}; node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js ${input}`, (err, stdout) => {
+        exec(`node --stack-size=${stackSize} index.js -f input/${language}/${file} -t -s ${maxTermCall}; node output/${language}/${file.substring(0, file.indexOf('.') + 1)}js ${input}`, (err, stdout) => {
             if (err) {
                 return reject(err);
             }
@@ -127,7 +135,7 @@ promiseToRunBoth5Times = (file, maxTermCall) => {
 
 promiseToRunBenchmark = maxTermCall => {
     console.log('\n====Benchmark: ' + maxTermCall);
-    const files = fs.readdirSync(input + '/toyLambda');
+    const files = fs.readdirSync(`${input}/${language}`);
     return files
         .map(file => Promise.resolve(file))
         .reduce((promiseChain, currentPromise) => {
