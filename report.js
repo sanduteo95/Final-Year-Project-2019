@@ -38,7 +38,7 @@ createReport = testResults => {
         fs.mkdirSync(reportDir);
     }
 
-    const langDir = path.join(__dirname + '/report/' + langauge);
+    const langDir = path.join(__dirname + '/report/' + language);
 
     if (!fs.existsSync(langDir)) {
         fs.mkdirSync(langDir);
@@ -46,7 +46,7 @@ createReport = testResults => {
 
     const html = createHTML({
         title: 'Report',
-        css: 'index.css',
+        css: '../index.css',
         body: body
     });
 
@@ -65,11 +65,14 @@ getTime = stdout => {
 promiseToRunInterpreter = (file, maxTermCall) => {
     console.log('interpreter')
     return new Promise((resolve, reject) => {
-        let input = '';
+        let input = '', flag = '';
         if(file.includes('read')) {
             input = ' <<< 1';
         }
-        exec(`node --stack-size=${stackSize} index.js -i input/${language}/${file} -t ${input} -s ${maxTermCall}`, (err, stdout) => {
+        if (language === 'EFSD') {
+            flag = '-g'
+        }
+        exec(`node --stack-size=${stackSize} index.js -i input/${language}/${file} ${flag} -t ${input} -s ${maxTermCall}`, (err, stdout) => {
             if (err) {
                 return reject(err);
             }
@@ -82,12 +85,16 @@ promiseToRunInterpreter = (file, maxTermCall) => {
 promiseToRunFutamura = (file, maxTermCall) => {
     console.log('futamura')
     return new Promise((resolve, reject) => {
-        let input = '';
+        let input = '', flag = '';
         if(file.includes('read')) {
             input = ' <<< 1';
         }
 
-        exec(`node --stack-size=${stackSize} index.js -f input/${language}/${file} -t -s ${maxTermCall}; node output/${language}/${file.substring(0, file.indexOf('.') + 1)}js ${input}`, (err, stdout) => {
+        if(language === 'EFSD') {
+            flag = '-g';
+        }
+
+        exec(`node --stack-size=${stackSize} index.js -f input/${language}/${file} ${flag} -t -s ${maxTermCall}; node output/${language}/${file.substring(0, file.indexOf('.') + 1)}js ${input}`, (err, stdout) => {
             if (err) {
                 return reject(err);
             }
