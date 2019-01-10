@@ -72,11 +72,7 @@ if (program.runParser) {
         console.error('The lambda calculus accepts fiels with extension .lambda.');
         return;
     }
-    if (isGoIMachine) {
-        boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
-    } else {
-        boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
-    }
+    boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
 } else if (program.runFutamura) {
     const fileName = program.runFutamura;
     const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
