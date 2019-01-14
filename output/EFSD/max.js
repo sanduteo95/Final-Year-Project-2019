@@ -4,83 +4,83 @@
 
     switch (__selector) {
       case 0:
-        __captured = [0];
+        __captured = [41];
         break;
 
       case 1:
-        __captured = [_JK__95get, _JK__95get];
+        __captured = [_JQ__95get, _JQ__95get];
         break;
 
       case 2:
-        __captured = [_Ku__95typeof, _Ku__95typeof, _JZ__95get, _JZ__95get];
+        __captured = [_L1__95typeof, _L1__95typeof, _Jf__95get, _Jf__95get];
         break;
 
       case 3:
-        __captured = [_Kp__95typeof, _Kp__95typeof];
+        __captured = [_Kw__95typeof, _Kw__95typeof];
         break;
 
       case 4:
-        __captured = [_Kq__95typeof, _Kq__95typeof];
+        __captured = [_Kx__95typeof, _Kx__95typeof];
         break;
 
       case 5:
-        __captured = [_Mi__95typeof, _Mi__95typeof, _MH__95getPrototypeOf, _MH__95getPrototypeOf];
+        __captured = [_Mp__95typeof, _Mp__95typeof, _MO__95getPrototypeOf, _MO__95getPrototypeOf];
         break;
 
       case 6:
-        __captured = [_Mk__95typeof, _Mk__95typeof, _MJ__95getPrototypeOf, _MJ__95getPrototypeOf];
+        __captured = [_Mr__95typeof, _Mr__95typeof, _MQ__95getPrototypeOf, _MQ__95getPrototypeOf];
         break;
 
       case 7:
-        __captured = [_Mm__95typeof, _Mm__95typeof, _ML__95getPrototypeOf, _ML__95getPrototypeOf];
+        __captured = [_Mt__95typeof, _Mt__95typeof, _MS__95getPrototypeOf, _MS__95getPrototypeOf];
         break;
 
       case 8:
-        __captured = [_Mo__95typeof, _Mo__95typeof, _MN__95getPrototypeOf, _MN__95getPrototypeOf];
+        __captured = [_Mv__95typeof, _Mv__95typeof, _MU__95getPrototypeOf, _MU__95getPrototypeOf];
         break;
 
       case 9:
-        __captured = [_LI__95typeof, _LI__95typeof];
+        __captured = [_LP__95typeof, _LP__95typeof];
         break;
 
       case 10:
-        __captured = [_LJ__95typeof, _LJ__95typeof];
+        __captured = [_LQ__95typeof, _LQ__95typeof];
         break;
 
       case 11:
-        __captured = [_LK__95typeof, _LK__95typeof];
+        __captured = [_LR__95typeof, _LR__95typeof];
         break;
 
       case 12:
-        __captured = [_LL__95typeof, _LL__95typeof];
+        __captured = [_LS__95typeof, _LS__95typeof];
         break;
 
       case 13:
-        __captured = [_LU__95typeof, _LU__95typeof];
-        break;
-
-      case 14:
-        __captured = [_LV__95typeof, _LV__95typeof];
-        break;
-
-      case 15:
-        __captured = [_LW__95typeof, _LW__95typeof];
-        break;
-
-      case 16:
-        __captured = [_LZ__95typeof, _LZ__95typeof];
-        break;
-
-      case 17:
-        __captured = [_La__95typeof, _La__95typeof];
-        break;
-
-      case 18:
         __captured = [_Lb__95typeof, _Lb__95typeof];
         break;
 
+      case 14:
+        __captured = [_Lc__95typeof, _Lc__95typeof];
+        break;
+
+      case 15:
+        __captured = [_Ld__95typeof, _Ld__95typeof];
+        break;
+
+      case 16:
+        __captured = [_Lg__95typeof, _Lg__95typeof];
+        break;
+
+      case 17:
+        __captured = [_Lh__95typeof, _Lh__95typeof];
+        break;
+
+      case 18:
+        __captured = [_Li__95typeof, _Li__95typeof];
+        break;
+
       case 19:
-        __captured = [_Mh__95typeof, _Mh__95typeof];
+        __captured = [_Mo__95typeof, _Mo__95typeof];
         break;
     }
 
@@ -96,89 +96,90 @@
     writable: true
   };
 
-  var _$0_global = this;
+  var _$1_global = this;
 
-  var _$1_Object = _$0_global.Object;
-  var _$2_Object_46getPrototypeOf = _$1_Object.getPrototypeOf;
-  var _$3_Map = _$0_global.Map;
-  var _$4_Object_46defineProperty = _$1_Object.defineProperty;
-  var _$5_Object_46setPrototypeOf = _$1_Object.setPrototypeOf;
-  var _$6_Reflect = _$0_global.Reflect;
-  var _$7_Reflect_46get = _$6_Reflect.get;
+  var _$2_Object = _$1_global.Object;
+  var _$3_Object_46getPrototypeOf = _$2_Object.getPrototypeOf;
+  var _$4_Map = _$1_global.Map;
+  var _$5_Object_46defineProperty = _$2_Object.defineProperty;
+  var _$6_Object_46setPrototypeOf = _$2_Object.setPrototypeOf;
+  var _$7_Reflect = _$1_global.Reflect;
+  var _$8_Reflect_46get = _$7_Reflect.get;
+  var _$9_global_46setTimeout = _$1_global.setTimeout;
 
-  var _K5__95classCallCheck = function (instance, Constructor) {
+  var _KC__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Kz__95classCallCheck = function (instance, Constructor) {
+  var _L6__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Jh_Abstraction = function (param, body) {
-    _Kz__95classCallCheck(this, _Jh_Abstraction);
+  var _Jo_Abstraction = function (param, body) {
+    _L6__95classCallCheck(this, _Jo_Abstraction);
 
     this.param = param;
     this.body = body;
   };
 
-  var _L0__95classCallCheck = function (instance, Constructor) {
+  var _L7__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Ji_Application = function (lhs, rhs) {
-    _L0__95classCallCheck(this, _Ji_Application);
+  var _Jp_Application = function (lhs, rhs) {
+    _L7__95classCallCheck(this, _Jp_Application);
 
     this.lhs = lhs;
     this.rhs = rhs;
   };
 
-  var _Ky__95classCallCheck = function (instance, Constructor) {
+  var _L5__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Jg_Identifier = function (value, name) {
-    _Ky__95classCallCheck(this, _Jg_Identifier);
+  var _Jn_Identifier = function (value, name) {
+    _L5__95classCallCheck(this, _Jn_Identifier);
 
     this.value = value;
     this.name = name;
   };
 
-  var _L1__95classCallCheck = function (instance, Constructor) {
+  var _L8__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Jj_Constant = function (value) {
-    _L1__95classCallCheck(this, _Jj_Constant);
+  var _Jq_Constant = function (value) {
+    _L8__95classCallCheck(this, _Jq_Constant);
 
     this.value = value;
   };
 
-  var _MD__95classCallCheck = function (instance, Constructor) {
+  var _MK__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Kb_Operation = function (type, name) {
-    _MD__95classCallCheck(this, _Kb_Operation);
+  var _Ki_Operation = function (type, name) {
+    _MK__95classCallCheck(this, _Ki_Operation);
 
     this.type = type;
     this.name = name;
   };
 
-  var _Jn_ = _Kb_Operation.prototype;
+  var _Ju_ = _Ki_Operation.prototype;
 
-  var _Mh__95typeof = function (obj) {
+  var _Mo__95typeof = function (obj) {
     var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -194,109 +195,70 @@
     return __captured__scope_K_[1](obj);
   };
 
-  var _L3__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _MF__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
-
-    if (call && (__captured__scope_K_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Mr__95assertThisInitialized(self);
-  };
-
-  var _Mr__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _Jo_UnaryOp = function (type, name, v1) {
-    var _this;
-
-    _L3__95classCallCheck(this, _Jo_UnaryOp);
-
-    _this = _MF__95possibleConstructorReturn(this, _JC_(_Jo_UnaryOp).call(this, type, name));
-    _this.v1 = v1;
-    return _this;
-  };
-
-  var _L2__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _ME__95possibleConstructorReturn = function (self, call) {
-    if (call && (_Mg_(call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Mq__95assertThisInitialized(self);
-  };
-
-  var _Mq__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _Jk_BinaryOp = function (type, name, v1, v2) {
-    var _this;
-
-    _L2__95classCallCheck(this, _Jk_BinaryOp);
-
-    _this = _ME__95possibleConstructorReturn(this, _JC_(_Jk_BinaryOp).call(this, type, name, v1));
-    _this.v2 = v2;
-    return _this;
-  };
-
-  var _L7__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Jr_IfThenElse = function (cond, t1, t2) {
-    _L7__95classCallCheck(this, _Jr_IfThenElse);
-
-    this.cond = cond;
-    this.t1 = t1;
-    this.t2 = t2;
-  };
-
-  var _L8__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Js_Recursion = function (param, body) {
-    _L8__95classCallCheck(this, _Js_Recursion);
-
-    this.param = param;
-    this.body = body;
-  };
-
   var _LA__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Jv_ProvisionalConstant = function (term) {
-    _LA__95classCallCheck(this, _Jv_ProvisionalConstant);
+  var _MM__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
 
-    this.term = term;
+    if (call && (__captured__scope_K_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _My__95assertThisInitialized(self);
+  };
+
+  var _My__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Jv_UnaryOp = function (type, name, v1) {
+    var _this;
+
+    _LA__95classCallCheck(this, _Jv_UnaryOp);
+
+    _this = _MM__95possibleConstructorReturn(this, _JI_(_Jv_UnaryOp).call(this, type, name));
+    _this.v1 = v1;
+    return _this;
+  };
+
+  var _L9__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _ML__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Mn_(call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _Mx__95assertThisInitialized(self);
+  };
+
+  var _Mx__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Jr_BinaryOp = function (type, name, v1, v2) {
+    var _this;
+
+    _L9__95classCallCheck(this, _Jr_BinaryOp);
+
+    _this = _ML__95possibleConstructorReturn(this, _JI_(_Jr_BinaryOp).call(this, type, name, v1));
+    _this.v2 = v2;
+    return _this;
   };
 
   var _LE__95classCallCheck = function (instance, Constructor) {
@@ -305,11 +267,12 @@
     }
   };
 
-  var _K0_Change = function (param, body) {
-    _LE__95classCallCheck(this, _K0_Change);
+  var _Jy_IfThenElse = function (cond, t1, t2) {
+    _LE__95classCallCheck(this, _Jy_IfThenElse);
 
-    this.param = param;
-    this.body = body;
+    this.cond = cond;
+    this.t1 = t1;
+    this.t2 = t2;
   };
 
   var _LF__95classCallCheck = function (instance, Constructor) {
@@ -318,8 +281,8 @@
     }
   };
 
-  var _K1_Assign = function (param, body) {
-    _LF__95classCallCheck(this, _K1_Assign);
+  var _Jz_Recursion = function (param, body) {
+    _LF__95classCallCheck(this, _Jz_Recursion);
 
     this.param = param;
     this.body = body;
@@ -331,56 +294,94 @@
     }
   };
 
-  var _K4_Propagation = function () {
-    _LH__95classCallCheck(this, _K4_Propagation);
-  };
-
-  var _LB__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Jw_Deprecation = function (term) {
-    _LB__95classCallCheck(this, _Jw_Deprecation);
+  var _K2_ProvisionalConstant = function (term) {
+    _LH__95classCallCheck(this, _K2_ProvisionalConstant);
 
     this.term = term;
   };
 
-  var _LD__95classCallCheck = function (instance, Constructor) {
+  var _LL__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Jz_Dereference = function (term) {
-    _LD__95classCallCheck(this, _Jz_Dereference);
+  var _K7_Change = function (param, body) {
+    _LL__95classCallCheck(this, _K7_Change);
+
+    this.param = param;
+    this.body = body;
+  };
+
+  var _LM__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _K8_Assign = function (param, body) {
+    _LM__95classCallCheck(this, _K8_Assign);
+
+    this.param = param;
+    this.body = body;
+  };
+
+  var _LO__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _KB_Propagation = function () {
+    _LO__95classCallCheck(this, _KB_Propagation);
+  };
+
+  var _LI__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _K3_Deprecation = function (term) {
+    _LI__95classCallCheck(this, _K3_Deprecation);
 
     this.term = term;
   };
 
-  var _Kw__95classCallCheck = function (instance, Constructor) {
+  var _LK__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Mf__95classCallCheck = function (instance, Constructor) {
+  var _K6_Dereference = function (term) {
+    _LK__95classCallCheck(this, _K6_Dereference);
+
+    this.term = term;
+  };
+
+  var _L3__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Le_Token = function (type, value, pred) {
-    _Mf__95classCallCheck(this, _Le_Token);
+  var _Mm__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Ll_Token = function (type, value, pred) {
+    _Mm__95classCallCheck(this, _Ll_Token);
 
     this.type = type;
     this.value = value;
     this.pred = pred;
   };
 
-  var _Jc_Lexer = function (input) {
-    _Kw__95classCallCheck(this, _Jc_Lexer);
+  var _Jj_Lexer = function (input) {
+    _L3__95classCallCheck(this, _Jj_Lexer);
 
     this._input = input;
     this._index = 0;
@@ -389,9 +390,9 @@
     this._nextToken();
   };
 
-  var _Jd_ = _Jc_Lexer.prototype;
+  var _Jk_ = _Jj_Lexer.prototype;
 
-  var _KN_ = function () {
+  var _KU_ = function () {
     if (this._index >= this._input.length) {
       return '\0';
     }
@@ -399,7 +400,7 @@
     return this._input[this._index++];
   };
 
-  var _KO_ = function () {
+  var _KV_ = function () {
     var c;
 
     do {
@@ -409,47 +410,47 @@
     switch (c) {
       case 'λ':
       case '\\':
-        this._token = new _Le_Token(_Le_Token.LAMBDA);
+        this._token = new _Ll_Token(_Ll_Token.LAMBDA);
         break;
 
       case '.':
-        this._token = new _Le_Token(_Le_Token.DOT);
+        this._token = new _Ll_Token(_Ll_Token.DOT);
         break;
 
       case ',':
-        this._token = new _Le_Token(_Le_Token.COMMA);
+        this._token = new _Ll_Token(_Ll_Token.COMMA);
         break;
 
       case ';':
-        this._token = new _Le_Token(_Le_Token.SEQ);
+        this._token = new _Ll_Token(_Ll_Token.SEQ);
         break;
 
       case '(':
-        this._token = new _Le_Token(_Le_Token.LPAREN);
+        this._token = new _Ll_Token(_Ll_Token.LPAREN);
         break;
 
       case ')':
-        this._token = new _Le_Token(_Le_Token.RPAREN);
+        this._token = new _Ll_Token(_Ll_Token.RPAREN);
         break;
 
       case '{':
-        this._token = new _Le_Token(_Le_Token.CLPAREN);
+        this._token = new _Ll_Token(_Ll_Token.CLPAREN);
         break;
 
       case '}':
-        this._token = new _Le_Token(_Le_Token.CRPAREN);
+        this._token = new _Ll_Token(_Ll_Token.CRPAREN);
         break;
 
       case '\0':
-        this._token = new _Le_Token(_Le_Token.EOF);
+        this._token = new _Ll_Token(_Ll_Token.EOF);
         break;
 
       case '~':
-        this._token = new _Le_Token(_Le_Token.NOT);
+        this._token = new _Ll_Token(_Ll_Token.NOT);
         break;
 
       case '&':
-        if (this._nextChar() == '&') this._token = new _Le_Token(_Le_Token.AND, null, 5);else {
+        if (this._nextChar() == '&') this._token = new _Ll_Token(_Ll_Token.AND, null, 5);else {
           this._index--;
           this.fail();
         }
@@ -458,37 +459,37 @@
       case '|':
         var c2 = this._nextChar();
 
-        if (c2 == '|') this._token = new _Le_Token(_Le_Token.OR, null, 4);else {
+        if (c2 == '|') this._token = new _Ll_Token(_Ll_Token.OR, null, 4);else {
           this._index--;
           this.fail();
         }
         break;
 
       case '+':
-        this._token = new _Le_Token(_Le_Token.PLUS, null, 12);
+        this._token = new _Ll_Token(_Ll_Token.PLUS, null, 12);
         break;
 
       case '-':
-        this._token = new _Le_Token(_Le_Token.SUB, null, 12);
+        this._token = new _Ll_Token(_Ll_Token.SUB, null, 12);
         break;
 
       case '*':
-        this._token = new _Le_Token(_Le_Token.MULT, null, 13);
+        this._token = new _Ll_Token(_Ll_Token.MULT, null, 13);
         break;
 
       case '/':
-        this._token = new _Le_Token(_Le_Token.DIV, null, 13);
+        this._token = new _Ll_Token(_Ll_Token.DIV, null, 13);
         break;
 
       case '<':
-        if (this._nextChar() == '=') this._token = new _Le_Token(_Le_Token.LTE, null, 10);else {
+        if (this._nextChar() == '=') this._token = new _Ll_Token(_Ll_Token.LTE, null, 10);else {
           this._index--;
           this.fail();
         }
         break;
 
       case '=':
-        this._token = new _Le_Token(_Le_Token.DEFINE);
+        this._token = new _Ll_Token(_Ll_Token.DEFINE);
         break;
 
       default:
@@ -503,7 +504,7 @@
 
 
           this._index--;
-          if (str == "let") this._token = new _Le_Token(_Le_Token.LET);else if (str == "in") this._token = new _Le_Token(_Le_Token.IN);else if (str == "rec") this._token = new _Le_Token(_Le_Token.REC);else if (str == "true") this._token = new _Le_Token(_Le_Token.TRUE);else if (str == "false") this._token = new _Le_Token(_Le_Token.FALSE);else if (str == "if") this._token = new _Le_Token(_Le_Token.IF);else if (str == "then") this._token = new _Le_Token(_Le_Token.THEN);else if (str == "else") this._token = new _Le_Token(_Le_Token.ELSE);else if (str == "link") this._token = new _Le_Token(_Le_Token.CHANGE);else if (str == "set") this._token = new _Le_Token(_Le_Token.SET);else if (str == "to") this._token = new _Le_Token(_Le_Token.TO);else if (str == "step") this._token = new _Le_Token(_Le_Token.PROP);else if (str == "peek") this._token = new _Le_Token(_Le_Token.DEP);else if (str == "deref") this._token = new _Le_Token(_Le_Token.DEREF);else this._token = new _Le_Token(_Le_Token.LCID, str);
+          if (str == "let") this._token = new _Ll_Token(_Ll_Token.LET);else if (str == "in") this._token = new _Ll_Token(_Ll_Token.IN);else if (str == "rec") this._token = new _Ll_Token(_Ll_Token.REC);else if (str == "true") this._token = new _Ll_Token(_Ll_Token.TRUE);else if (str == "false") this._token = new _Ll_Token(_Ll_Token.FALSE);else if (str == "if") this._token = new _Ll_Token(_Ll_Token.IF);else if (str == "then") this._token = new _Ll_Token(_Ll_Token.THEN);else if (str == "else") this._token = new _Ll_Token(_Ll_Token.ELSE);else if (str == "link") this._token = new _Ll_Token(_Ll_Token.CHANGE);else if (str == "set") this._token = new _Ll_Token(_Ll_Token.SET);else if (str == "to") this._token = new _Ll_Token(_Ll_Token.TO);else if (str == "step") this._token = new _Ll_Token(_Ll_Token.PROP);else if (str == "peek") this._token = new _Ll_Token(_Ll_Token.DEP);else if (str == "deref") this._token = new _Ll_Token(_Ll_Token.DEREF);else this._token = new _Ll_Token(_Ll_Token.LCID, str);
         } // text for numbers
         else if (/[0-9]/.test(c)) {
             var _str = '';
@@ -522,7 +523,7 @@
 
 
             this._index--;
-            this._token = new _Le_Token(_Le_Token.INT, parseFloat(_str));
+            this._token = new _Ll_Token(_Ll_Token.INT, parseFloat(_str));
           } else {
             this.fail();
           }
@@ -530,7 +531,7 @@
     }
   };
 
-  var _KP_ = function (type) {
+  var _KW_ = function (type) {
     if (!type) {
       return this._token.value;
     }
@@ -540,19 +541,19 @@
     return token.value;
   };
 
-  var _KQ_ = function () {
+  var _KX_ = function () {
     return this._token;
   };
 
-  var _KR_ = function () {
+  var _KY_ = function () {
     throw new Error("Unexpected token at offset ".concat(this._index));
   };
 
-  var _KS_ = function (type) {
+  var _KZ_ = function (type) {
     return this._token.type == type;
   };
 
-  var _KT_ = function (type) {
+  var _Ka_ = function (type) {
     if (this.next(type)) {
       this._nextToken();
 
@@ -563,7 +564,7 @@
     throw new Error('Parse Error');
   };
 
-  var _KU_ = function (type) {
+  var _Kb_ = function (type) {
     if (this.next(type)) {
       this._nextToken();
 
@@ -573,66 +574,66 @@
     return false;
   };
 
-  var _Kx__95classCallCheck = function (instance, Constructor) {
+  var _L4__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Je_Parser = function (lexer) {
-    _Kx__95classCallCheck(this, _Je_Parser);
+  var _Jl_Parser = function (lexer) {
+    _L4__95classCallCheck(this, _Jl_Parser);
 
     this.lexer = lexer;
   };
 
-  var _Jf_ = _Je_Parser.prototype;
+  var _Jm_ = _Jl_Parser.prototype;
 
-  var _KV_ = function () {
+  var _Kc_ = function () {
     var result = this.term([]); // make sure we consumed all the program, otherwise there was a syntax error
 
-    this.lexer.match(_Le_Token.EOF);
+    this.lexer.match(_Ll_Token.EOF);
     return result;
   };
 
-  var _KW_ = function (ctx) {
-    if (this.lexer.skip(_Le_Token.LAMBDA)) {
-      var id = this.lexer.token(_Le_Token.LCID);
-      this.lexer.match(_Le_Token.DOT);
+  var _Kd_ = function (ctx) {
+    if (this.lexer.skip(_Ll_Token.LAMBDA)) {
+      var id = this.lexer.token(_Ll_Token.LCID);
+      this.lexer.match(_Ll_Token.DOT);
       var term = this.term([id].concat(ctx));
-      return new _Jh_Abstraction(id, term);
-    } else if (this.lexer.skip(_Le_Token.LET)) {
-      var _id = this.lexer.token(_Le_Token.LCID);
+      return new _Jo_Abstraction(id, term);
+    } else if (this.lexer.skip(_Ll_Token.LET)) {
+      var _id = this.lexer.token(_Ll_Token.LCID);
 
-      this.lexer.match(_Le_Token.DEFINE);
+      this.lexer.match(_Ll_Token.DEFINE);
       var N = this.term(ctx);
-      this.lexer.match(_Le_Token.IN);
+      this.lexer.match(_Ll_Token.IN);
       var M = this.term([_id].concat(ctx));
-      return new _Ji_Application(new _Jh_Abstraction(_id, M), N);
-    } else if (this.lexer.skip(_Le_Token.REC)) {
-      var _id2 = this.lexer.token(_Le_Token.LCID);
+      return new _Jp_Application(new _Jo_Abstraction(_id, M), N);
+    } else if (this.lexer.skip(_Ll_Token.REC)) {
+      var _id2 = this.lexer.token(_Ll_Token.LCID);
 
-      this.lexer.match(_Le_Token.DOT);
+      this.lexer.match(_Ll_Token.DOT);
 
       var _term = this.term([_id2].concat(ctx));
 
-      return new _Js_Recursion(_id2, _term);
-    } else if (this.lexer.skip(_Le_Token.IF)) {
+      return new _Jz_Recursion(_id2, _term);
+    } else if (this.lexer.skip(_Ll_Token.IF)) {
       var cond = this.term(ctx);
-      this.lexer.match(_Le_Token.THEN);
+      this.lexer.match(_Ll_Token.THEN);
       var t1 = this.term(ctx);
-      this.lexer.match(_Le_Token.ELSE);
+      this.lexer.match(_Ll_Token.ELSE);
       var t2 = this.term(ctx);
-      return new _Jr_IfThenElse(cond, t1, t2);
+      return new _Jy_IfThenElse(cond, t1, t2);
     } else {
       return this.application(ctx);
     }
   };
 
-  var _KX_ = function (token) {
-    return token.type == _Le_Token.AND || token.type == _Le_Token.OR || token.type == _Le_Token.PLUS || token.type == _Le_Token.SUB || token.type == _Le_Token.MULT || token.type == _Le_Token.DIV || token.type == _Le_Token.LTE;
+  var _Ke_ = function (token) {
+    return token.type == _Ll_Token.AND || token.type == _Ll_Token.OR || token.type == _Ll_Token.PLUS || token.type == _Ll_Token.SUB || token.type == _Ll_Token.MULT || token.type == _Ll_Token.DIV || token.type == _Ll_Token.LTE;
   };
 
-  var _KY_ = function (ctx, lhs, pred) {
+  var _Kf_ = function (ctx, lhs, pred) {
     var nextToken = this.lexer.lookahead();
 
     while (this.isBinaryOp(nextToken) && nextToken.pred >= pred) {
@@ -649,27 +650,27 @@
         nextToken = this.lexer.lookahead();
       }
 
-      if (op.type == _Le_Token.AND) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.And, "&&", lhs, rhs);
-      } else if (op.type == _Le_Token.OR) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Or, "||", lhs, rhs);
-      } else if (op.type == _Le_Token.PLUS) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Plus, "+", lhs, rhs);
-      } else if (op.type == _Le_Token.SUB) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Sub, "-", lhs, rhs);
-      } else if (op.type == _Le_Token.MULT) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Mult, "*", lhs, rhs);
-      } else if (op.type == _Le_Token.DIV) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Div, "/", lhs, rhs);
-      } else if (op.type == _Le_Token.LTE) {
-        lhs = new _Jk_BinaryOp(_Iq_BinOpType.Lte, "<=", lhs, rhs);
+      if (op.type == _Ll_Token.AND) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.And, "&&", lhs, rhs);
+      } else if (op.type == _Ll_Token.OR) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Or, "||", lhs, rhs);
+      } else if (op.type == _Ll_Token.PLUS) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Plus, "+", lhs, rhs);
+      } else if (op.type == _Ll_Token.SUB) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Sub, "-", lhs, rhs);
+      } else if (op.type == _Ll_Token.MULT) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Mult, "*", lhs, rhs);
+      } else if (op.type == _Ll_Token.DIV) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Div, "/", lhs, rhs);
+      } else if (op.type == _Ll_Token.LTE) {
+        lhs = new _Jr_BinaryOp(_Iw_BinOpType.Lte, "<=", lhs, rhs);
       }
     }
 
     return lhs;
   };
 
-  var _KZ_ = function (ctx) {
+  var _Kg_ = function (ctx) {
     var lhs = this.atom(ctx);
 
     while (true) {
@@ -683,89 +684,89 @@
         if (!rhs) {
           return lhs;
         } else {
-          lhs = new _Ji_Application(lhs, rhs);
+          lhs = new _Jp_Application(lhs, rhs);
         }
       }
     }
   };
 
-  var _Ka_ = function (ctx) {
-    if (this.lexer.skip(_Le_Token.LPAREN)) {
+  var _Kh_ = function (ctx) {
+    if (this.lexer.skip(_Ll_Token.LPAREN)) {
       var _term2 = this.term(ctx);
 
-      this.lexer.match(_Le_Token.RPAREN);
+      this.lexer.match(_Ll_Token.RPAREN);
       return _term2;
-    } else if (this.lexer.next(_Le_Token.LCID)) {
-      var id = this.lexer.token(_Le_Token.LCID);
-      return new _Jg_Identifier(ctx.indexOf(id), id);
-    } else if (this.lexer.next(_Le_Token.INT)) {
-      var n = this.lexer.token(_Le_Token.INT);
-      return new _Jj_Constant(n);
-    } else if (this.lexer.skip(_Le_Token.TRUE)) {
-      return new _Jj_Constant(true);
-    } else if (this.lexer.skip(_Le_Token.FALSE)) {
-      return new _Jj_Constant(false);
-    } else if (this.lexer.skip(_Le_Token.NOT)) {
+    } else if (this.lexer.next(_Ll_Token.LCID)) {
+      var id = this.lexer.token(_Ll_Token.LCID);
+      return new _Jn_Identifier(ctx.indexOf(id), id);
+    } else if (this.lexer.next(_Ll_Token.INT)) {
+      var n = this.lexer.token(_Ll_Token.INT);
+      return new _Jq_Constant(n);
+    } else if (this.lexer.skip(_Ll_Token.TRUE)) {
+      return new _Jq_Constant(true);
+    } else if (this.lexer.skip(_Ll_Token.FALSE)) {
+      return new _Jq_Constant(false);
+    } else if (this.lexer.skip(_Ll_Token.NOT)) {
       var _term3 = this.term(ctx);
 
-      return new _Jo_UnaryOp(_L4_UnOpType.Not, "~", _term3);
-    } else if (this.lexer.skip(_Le_Token.PROP)) {
-      return new _K4_Propagation();
-    } else if (this.lexer.skip(_Le_Token.DEP)) {
+      return new _Jv_UnaryOp(_LB_UnOpType.Not, "~", _term3);
+    } else if (this.lexer.skip(_Ll_Token.PROP)) {
+      return new _KB_Propagation();
+    } else if (this.lexer.skip(_Ll_Token.DEP)) {
       var term = this.term(ctx);
-      return new _Jw_Deprecation(term);
-    } else if (this.lexer.skip(_Le_Token.DEREF)) {
+      return new _K3_Deprecation(term);
+    } else if (this.lexer.skip(_Ll_Token.DEREF)) {
       var term = this.term(ctx);
-      return new _Jz_Dereference(term);
-    } else if (this.lexer.skip(_Le_Token.CLPAREN)) {
+      return new _K6_Dereference(term);
+    } else if (this.lexer.skip(_Ll_Token.CLPAREN)) {
       var term = this.term(ctx);
-      this.lexer.match(_Le_Token.CRPAREN);
-      return new _Jv_ProvisionalConstant(term);
-    } else if (this.lexer.skip(_Le_Token.CHANGE)) {
-      var _id3 = this.lexer.token(_Le_Token.LCID);
+      this.lexer.match(_Ll_Token.CRPAREN);
+      return new _K2_ProvisionalConstant(term);
+    } else if (this.lexer.skip(_Ll_Token.CHANGE)) {
+      var _id3 = this.lexer.token(_Ll_Token.LCID);
 
-      this.lexer.match(_Le_Token.TO);
+      this.lexer.match(_Ll_Token.TO);
 
       var _term4 = this.term(ctx);
 
-      return new _K0_Change(_id3, _term4);
-    } else if (this.lexer.skip(_Le_Token.SET)) {
-      var _id4 = this.lexer.token(_Le_Token.LCID);
+      return new _K7_Change(_id3, _term4);
+    } else if (this.lexer.skip(_Ll_Token.SET)) {
+      var _id4 = this.lexer.token(_Ll_Token.LCID);
 
-      this.lexer.match(_Le_Token.TO);
+      this.lexer.match(_Ll_Token.TO);
 
       var _term5 = this.term(ctx);
 
-      return new _K1_Assign(_id4, _term5);
+      return new _K8_Assign(_id4, _term5);
     } else {
       return undefined;
     }
   };
 
-  var _Jb__95classCallCheck = function (instance, Constructor) {
+  var _Jh__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _IC_MachineToken = function (machine) {
-    _Jb__95classCallCheck(this, _IC_MachineToken);
+  var _IE_MachineToken = function (machine) {
+    _Jh__95classCallCheck(this, _IE_MachineToken);
 
     this.machine = machine;
     this.reset();
   };
 
-  var _GD_ = _IC_MachineToken.prototype;
+  var _GE_ = _IE_MachineToken.prototype;
 
-  var _Iz_ = function () {
-    return _IW_CompData;
+  var _J5_ = function () {
+    return _Ic_CompData;
   };
 
-  var _J0_ = function () {
-    return _Id_RewriteFlag;
+  var _J6_ = function () {
+    return _Ij_RewriteFlag;
   };
 
-  var _I9_ = function (link) {
+  var _IB_ = function (link) {
     if (this.link != null) {
       //this.link.tokens.splice(this.link.tokens.indexOf(this), 1);
       this.link.clearFocus();
@@ -779,33 +780,33 @@
     }
   };
 
-  var _IA_ = function () {
+  var _IC_ = function () {
     this.forward = true;
     this.rewrite = false;
     this.transited = false;
     this.link = null;
-    this.rewriteFlag = _Id_RewriteFlag.EMPTY;
-    this.dataStack = [_IW_CompData.PROMPT];
+    this.rewriteFlag = _Ij_RewriteFlag.EMPTY;
+    this.dataStack = [_Ic_CompData.PROMPT];
     this.boxStack = [];
   };
 
-  var _IB_ = function () {
+  var _ID_ = function () {
     this.setLink(null);
     this.machine.evalTokens.splice(this.machine.evalTokens.indexOf(this), 1);
   };
 
-  var _J2__95classCallCheck = function (instance, Constructor) {
+  var _J8__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _J3_isNumber = function (n) {
+  var _J9_isNumber = function (n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
   };
 
-  var _GW_Link = function (from, to, fromPort, toPort, reverse) {
-    _J2__95classCallCheck(this, _GW_Link);
+  var _GY_Link = function (from, to, fromPort, toPort, reverse) {
+    _J8__95classCallCheck(this, _GY_Link);
 
     this.from = from;
     this.to = to;
@@ -814,39 +815,39 @@
     this.reverse = reverse;
     this.colour = null;
     this.penWidth = null;
-    this.addToGraph(_IV_.graph); // cheating
+    this.addToGraph(_Ib_.graph); // cheating
 
     this.addToNode(); // cheating
   };
 
-  var _J_ = _GW_Link.prototype;
+  var _K_ = _GY_Link.prototype;
 
-  var _GM_ = function () {
+  var _GO_ = function () {
     var fromNode = this.graph.findNodeByKey(this.from);
     fromNode.links.push(this);
     var toNode = this.graph.findNodeByKey(this.to);
     toNode.links.push(this);
   };
 
-  var _GN_ = function (graph) {
+  var _GP_ = function (graph) {
     if (graph != null) graph.addLink(this);
     this.graph = graph;
     return this; // to provide chain operation
   };
 
-  var _GO_ = function (group) {
+  var _GQ_ = function (group) {
     group.addLink(this);
     this.group = group;
     return this; // to provide chain operation
   };
 
-  var _GP_ = function (group) {
+  var _GR_ = function (group) {
     this.group.removeLink(this);
     this.addToGroup(group);
     return this;
   };
 
-  var _GQ_ = function (key, port) {
+  var _GS_ = function (key, port) {
     var fromNode = this.graph.findNodeByKey(this.from);
     fromNode.links.splice(fromNode.links.indexOf(this), 1);
     this.from = key;
@@ -855,7 +856,7 @@
     fromNode.links.push(this);
   };
 
-  var _GR_ = function (key, port) {
+  var _GT_ = function (key, port) {
     var toNode = this.graph.findNodeByKey(this.to);
     toNode.links.splice(toNode.links.indexOf(this), 1);
     this.to = key;
@@ -864,17 +865,17 @@
     toNode.links.push(this);
   };
 
-  var _GS_ = function (colour) {
+  var _GU_ = function (colour) {
     this.colour = colour;
     this.penWidth = "20";
   };
 
-  var _GT_ = function () {
+  var _GV_ = function () {
     this.colour = null;
     this.penWidth = null;
   };
 
-  var _GU_ = function () {
+  var _GW_ = function () {
     var fromNode = this.graph.findNodeByKey(this.from);
     fromNode.links.splice(fromNode.links.indexOf(this), 1);
     var toNode = this.graph.findNodeByKey(this.to);
@@ -883,17 +884,17 @@
     this.graph.removeLink(this);
   };
 
-  var _GV_ = function () {
+  var _GX_ = function () {
     return this.from + "->" + this.to;
   };
 
-  var _Ja__95classCallCheck = function (instance, Constructor) {
+  var _Jg__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Kq__95typeof = function (obj) {
+  var _Kx__95typeof = function (obj) {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -909,23 +910,23 @@
     return __captured__scope_5_[1](obj);
   };
 
-  var _JF__95classCallCheck = function (instance, Constructor) {
+  var _JL__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _JG__95possibleConstructorReturn = function (self, call) {
+  var _JM__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
     if (call && (__captured__scope_5_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _LP__95assertThisInitialized(self);
+    return _LW__95assertThisInitialized(self);
   };
 
-  var _LP__95assertThisInitialized = function (self) {
+  var _LW__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -933,14 +934,14 @@
     return self;
   };
 
-  var _J5__95classCallCheck = function (instance, Constructor) {
+  var _JB__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Gk_Node = function (shape, text, colour, name) {
-    _J5__95classCallCheck(this, _Gk_Node);
+  var _Gm_Node = function (shape, text, colour, name) {
+    _JB__95classCallCheck(this, _Gm_Node);
 
     this.key = null;
     this.shape = shape;
@@ -953,34 +954,34 @@
     this.width = null;
     this.height = null;
     this.links = [];
-    this.addToGraph(_IV_.graph); // cheating!
+    this.addToGraph(_Ib_.graph); // cheating!
   };
 
-  var _1c_ = _Gk_Node.prototype;
+  var _1d_ = _Gm_Node.prototype;
 
-  var _Ga_ = function (graph) {
+  var _Gc_ = function (graph) {
     if (graph != null) graph.addNode(this);
     this.graph = graph;
     return this; // to provide chain operation
   };
 
-  var _Gb_ = function (group) {
+  var _Gd_ = function (group) {
     group.addNode(this);
     this.group = group;
     return this; // to provide chain operation
   };
 
-  var _Gc_ = function (group) {
+  var _Ge_ = function (group) {
     this.group.removeNode(this);
     this.addToGroup(group);
     return this;
   };
 
-  var _Gd_ = function () {
+  var _Gf_ = function () {
     return this.links;
   };
 
-  var _Ge_ = function (toPort) {
+  var _Gg_ = function (toPort) {
     var links = [];
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -1009,7 +1010,7 @@
     return links;
   };
 
-  var _Gf_ = function (fromPort) {
+  var _Gh_ = function (fromPort) {
     var links = [];
     var _iteratorNormalCompletion2 = true;
     var _didIteratorError2 = false;
@@ -1038,32 +1039,32 @@
     return links;
   };
 
-  var _Gg_ = function (graph) {
-    var newNode = new _Gk_Node(this.shape, this.text, this.name).addToGraph(graph);
+  var _Gi_ = function (graph) {
+    var newNode = new _Gm_Node(this.shape, this.text, this.name).addToGraph(graph);
     newNode.width = this.width;
     newNode.height = this.height;
   };
 
-  var _Gh_ = function () {
+  var _Gj_ = function () {
     this.group.removeNode(this);
     this.graph.removeNode(this);
   };
 
-  var _Gi_ = function (token, link) {
+  var _Gk_ = function (token, link) {
     return link;
   };
 
-  var _Gj_ = function (token, nextLink) {
+  var _Gl_ = function (token, nextLink) {
     token.rewrite = false;
     return nextLink;
   };
 
-  var _H8_Group = function () {
+  var _HA_Group = function () {
     var _this;
 
-    _JF__95classCallCheck(this, _H8_Group);
+    _JL__95classCallCheck(this, _HA_Group);
 
-    _this = _JG__95possibleConstructorReturn(this, _JC_(_H8_Group).call(this, null, null, null)); // shape, text, name
+    _this = _JM__95possibleConstructorReturn(this, _JI_(_HA_Group).call(this, null, null, null)); // shape, text, name
 
     _this.nodes = [];
     _this.links = []; // for copying
@@ -1071,24 +1072,24 @@
     return _this;
   };
 
-  var _H9_ = function (node) {
+  var _HB_ = function (node) {
     this.nodes.push(node);
   };
 
-  var _HA_ = function (node) {
+  var _HC_ = function (node) {
     return this.nodes.splice(this.nodes.indexOf(node), 1);
   };
 
-  var _HB_ = function (link) {
+  var _HD_ = function (link) {
     this.links.push(link);
   };
 
-  var _HC_ = function (link) {
+  var _HE_ = function (link) {
     var i = this.links.indexOf(link);
     if (i != -1) this.links.splice(i, 1);
   };
 
-  var _HD_ = function () {
+  var _HF_ = function () {
     var _arr = Array.from(this.nodes);
 
     for (var _i = 0; _i < _arr.length; _i++) {
@@ -1096,35 +1097,35 @@
       node.delete();
     }
 
-    _JD_(_JC_(_H8_Group.prototype), "delete", this).call(this);
+    _JJ_(_JI_(_HA_Group.prototype), "delete", this).call(this);
   };
 
-  var _I8_Graph = function (machine) {
-    _Ja__95classCallCheck(this, _I8_Graph);
+  var _IA_Graph = function (machine) {
+    _Jg__95classCallCheck(this, _IA_Graph);
 
     this.machine = machine;
     this.clear();
   };
 
-  var _G7_ = _I8_Graph.prototype;
+  var _G8_ = _IA_Graph.prototype;
 
-  var _I2_ = function () {
+  var _I4_ = function () {
     this.key = 0;
     this.linkKey = 0;
     this.allNodes = new Map(); // for efficiency searching
 
     this.allLinks = []; // for printing ONLY
 
-    this.child = new _H8_Group();
+    this.child = new _HA_Group();
   };
 
-  var _I3_ = function (node) {
+  var _I5_ = function (node) {
     node.key = 'nd' + this.key;
     this.allNodes.set(node.key, node);
     this.key++;
   };
 
-  var _I4_ = function (node) {
+  var _I6_ = function (node) {
     var _arr = Array.from(node.findLinksConnected());
 
     for (var _i = 0; _i < _arr.length; _i++) {
@@ -1135,33 +1136,33 @@
     return this.allNodes.delete(node.key);
   };
 
-  var _I5_ = function (key) {
+  var _I7_ = function (key) {
     return this.allNodes.get(key);
   };
 
-  var _I6_ = function (link) {
+  var _I8_ = function (link) {
     this.allLinks.push(link);
   };
 
-  var _I7_ = function (link) {
+  var _I9_ = function (link) {
     this.allLinks.splice(this.allLinks.indexOf(link), 1);
   };
 
-  var _JN__95classCallCheck = function (instance, Constructor) {
+  var _JT__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KD__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LT_(call) === "object" || typeof call === "function")) {
+  var _KK__95possibleConstructorReturn = function (self, call) {
+    if (call && (_La_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MV__95assertThisInitialized(self);
+    return _Mc__95assertThisInitialized(self);
   };
 
-  var _MV__95assertThisInitialized = function (self) {
+  var _Mc__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1169,21 +1170,21 @@
     return self;
   };
 
-  var _JI__95classCallCheck = function (instance, Constructor) {
+  var _JO__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _JJ__95possibleConstructorReturn = function (self, call) {
-    if (call && (_Kr_(call) === "object" || typeof call === "function")) {
+  var _JP__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Ky_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Ks__95assertThisInitialized(self);
+    return _Kz__95assertThisInitialized(self);
   };
 
-  var _Ks__95assertThisInitialized = function (self) {
+  var _Kz__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1191,14 +1192,14 @@
     return self;
   };
 
-  var _JK__95get = function (target, property, receiver) {
+  var _JQ__95get = function (target, property, receiver) {
     var __captured__scope_2_ = __scope_0_main[1] || __get_scope_binding_0_get_95scope_95binding(1);
 
     if (typeof Reflect !== "undefined" && Reflect.get) {
       __captured__scope_2_[1] = Reflect.get;
     } else {
       __captured__scope_2_[1] = function _get(target, property, receiver) {
-        var base = _LR__95superPropBase(target, property);
+        var base = _LY__95superPropBase(target, property);
 
         if (!base) return;
         var desc = Object.getOwnPropertyDescriptor(base, property);
@@ -1214,16 +1215,16 @@
     return __captured__scope_2_[1](target, property, receiver || target);
   };
 
-  var _LR__95superPropBase = function (object, property) {
+  var _LY__95superPropBase = function (object, property) {
     while (!Object.prototype.hasOwnProperty.call(object, property)) {
-      object = _JC_(object);
+      object = _JI_(object);
       if (object === null) break;
     }
 
     return object;
   };
 
-  var _Kp__95typeof = function (obj) {
+  var _Kw__95typeof = function (obj) {
     var __captured__scope_4_ = __scope_0_main[3] || __get_scope_binding_0_get_95scope_95binding(3);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -1239,23 +1240,23 @@
     return __captured__scope_4_[1](obj);
   };
 
-  var _JA__95classCallCheck = function (instance, Constructor) {
+  var _JG__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _JB__95possibleConstructorReturn = function (self, call) {
+  var _JH__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_4_ = __scope_0_main[3] || __get_scope_binding_0_get_95scope_95binding(3);
 
     if (call && (__captured__scope_4_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _LN__95assertThisInitialized(self);
+    return _LU__95assertThisInitialized(self);
   };
 
-  var _LN__95assertThisInitialized = function (self) {
+  var _LU__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1263,18 +1264,18 @@
     return self;
   };
 
-  var _H2_Expo = function (shape, text, name) {
+  var _H4_Expo = function (shape, text, name) {
     var _this;
 
-    _JA__95classCallCheck(this, _H2_Expo);
+    _JG__95classCallCheck(this, _H4_Expo);
 
-    _this = _JB__95possibleConstructorReturn(this, _JC_(_H2_Expo).call(this, shape, text, "cyan", name));
+    _this = _JH__95possibleConstructorReturn(this, _JI_(_H4_Expo).call(this, shape, text, "cyan", name));
     _this.width = ".3";
     _this.height = ".3";
     return _this;
   };
 
-  var _H3_ = function (token, link) {
+  var _H5_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
       return nextLink;
@@ -1284,7 +1285,7 @@
     }
   };
 
-  var _H4_ = function () {
+  var _H6_ = function () {
     var inLink = this.findLinksInto(null)[0];
     var outLink = this.findLinksOutOf(null)[0];
 
@@ -1292,10 +1293,10 @@
       inLink.changeTo(outLink.to, outLink.toPort);
     }
 
-    _JD_(_JC_(_H2_Expo.prototype), "delete", this).call(this);
+    _JJ_(_JI_(_H4_Expo.prototype), "delete", this).call(this);
   };
 
-  var _H5_ = function () {
+  var _H7_ = function () {
     var inLink = this.findLinksInto(null)[0];
     var outLink = this.findLinksOutOf(null)[0];
 
@@ -1303,42 +1304,42 @@
       outLink.changeFrom(inLink.from, inLink.fromPort);
     }
 
-    _JD_(_JC_(_H2_Expo.prototype), "delete", this).call(this);
+    _JJ_(_JI_(_H4_Expo.prototype), "delete", this).call(this);
   };
 
-  var _HI_Pax = function (name) {
-    _JI__95classCallCheck(this, _HI_Pax);
+  var _HK_Pax = function (name) {
+    _JO__95classCallCheck(this, _HK_Pax);
 
-    return _JJ__95possibleConstructorReturn(this, _JC_(_HI_Pax).call(this, null, "?", name));
+    return _JP__95possibleConstructorReturn(this, _JI_(_HK_Pax).call(this, null, "?", name));
   };
 
-  var _HJ_ = function () {
-    return new _HI_Pax(this.name);
+  var _HL_ = function () {
+    return new _HK_Pax(this.name);
   };
 
-  var _HK_ = function () {
+  var _HM_ = function () {
     var __captured__scope_2_ = __scope_0_main[1] || __get_scope_binding_0_get_95scope_95binding(1);
 
     this.group.auxs.splice(this.group.auxs.indexOf(this), 1);
 
-    __captured__scope_2_[1](_JC_(_HI_Pax.prototype), "delete", this).call(this);
+    __captured__scope_2_[1](_JI_(_HK_Pax.prototype), "delete", this).call(this);
   };
 
-  var _J9__95classCallCheck = function (instance, Constructor) {
+  var _JF__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KA__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LM_(call) === "object" || typeof call === "function")) {
+  var _KH__95possibleConstructorReturn = function (self, call) {
+    if (call && (_LT_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MS__95assertThisInitialized(self);
+    return _MZ__95assertThisInitialized(self);
   };
 
-  var _MS__95assertThisInitialized = function (self) {
+  var _MZ__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1346,17 +1347,17 @@
     return self;
   };
 
-  var _Gy_Contract = function (name) {
-    _J9__95classCallCheck(this, _Gy_Contract);
+  var _H0_Contract = function (name) {
+    _JF__95classCallCheck(this, _H0_Contract);
 
-    return _KA__95possibleConstructorReturn(this, _JC_(_Gy_Contract).call(this, null, "C", name));
+    return _KH__95possibleConstructorReturn(this, _JI_(_H0_Contract).call(this, null, "C", name));
   };
 
-  var _Gz_ = function (token, link) {
+  var _H1_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
       token.boxStack.push(link);
-      token.rewriteFlag = _Id_RewriteFlag.F_C;
+      token.rewriteFlag = _Ij_RewriteFlag.F_C;
       return nextLink;
     } else if (link.from == this.key && token.boxStack.length > 0) {
       var nextLink = token.boxStack.pop();
@@ -1364,9 +1365,9 @@
     }
   };
 
-  var _H0_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_C && nextLink.from == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _H2_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_C && nextLink.from == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
 
       if (this.findLinksInto(null).length == 1) {
         token.boxStack.pop();
@@ -1387,7 +1388,7 @@
         var i = token.boxStack[token.boxStack.length - 1];
         var prev = this.graph.findNodeByKey(i.from);
 
-        if (prev instanceof _Gy_Contract) {
+        if (prev instanceof _H0_Contract) {
           token.boxStack.pop();
           /*
                         for (let _token of Array.from(nextLink.tokens)) {
@@ -1425,43 +1426,43 @@
           }
 
           prev.delete();
-          token.rewriteFlag = _Id_RewriteFlag.F_C;
+          token.rewriteFlag = _Ij_RewriteFlag.F_C;
         }
       }
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _H1_ = function () {
-    var con = new _Gy_Contract(this.name);
+  var _H3_ = function () {
+    var con = new _H0_Contract(this.name);
     con.text = this.text;
     return con;
   };
 
-  var _HT_Term = function (prin, auxs) {
+  var _HV_Term = function (prin, auxs) {
     var _this;
 
-    _JN__95classCallCheck(this, _HT_Term);
+    _JT__95classCallCheck(this, _HV_Term);
 
-    _this = _KD__95possibleConstructorReturn(this, _JC_(_HT_Term).call(this));
+    _this = _KK__95possibleConstructorReturn(this, _JI_(_HV_Term).call(this));
 
     _this.set(prin, auxs);
 
     return _this;
   };
 
-  var _HU_ = function (prin, auxs) {
+  var _HW_ = function (prin, auxs) {
     this.prin = prin;
     this.auxs = auxs;
     return this;
   };
 
-  var _HV_ = function (auxs) {
+  var _HX_ = function (auxs) {
     var newPaxs = [];
     var _iteratorNormalCompletion = true;
     var _didIteratorError = false;
@@ -1470,10 +1471,10 @@
     try {
       for (var _iterator = auxs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
         var pax = _step.value;
-        var newPax = new _HI_Pax(pax.name).addToGroup(this);
-        if (pax.findLinksOutOf(null).length == 0) new _GW_Link(pax.key, newPax.key, "n", "s").addToGroup(this);else {
+        var newPax = new _HK_Pax(pax.name).addToGroup(this);
+        if (pax.findLinksOutOf(null).length == 0) new _GY_Link(pax.key, newPax.key, "n", "s").addToGroup(this);else {
           var outLink = pax.findLinksOutOf(null)[0];
-          new _GW_Link(newPax.key, outLink.to, "n", outLink.toPort).addToGroup(this.group);
+          new _GY_Link(newPax.key, outLink.to, "n", outLink.toPort).addToGroup(this.group);
           outLink.changeTo(newPax.key, "s");
           outLink.changeToGroup(this);
         }
@@ -1497,7 +1498,7 @@
     return newPaxs;
   };
 
-  var _Iy_ = function (leftAuxs, rightAuxs, group) {
+  var _J4_ = function (leftAuxs, rightAuxs, group) {
     var newAuxs = leftAuxs.concat(rightAuxs);
     var _iteratorNormalCompletion2 = true;
     var _didIteratorError2 = false;
@@ -1515,15 +1516,15 @@
             var rightAux = _step3.value;
 
             if (leftAux.name == rightAux.name) {
-              var con = new _Gy_Contract(leftAux.name).addToGroup(group);
+              var con = new _H0_Contract(leftAux.name).addToGroup(group);
               var outLink = leftAux.findLinksOutOf(null)[0];
 
               if (typeof outLink != 'undefined') {
                 outLink.changeFrom(con.key, outLink.fromPort);
               }
 
-              new _GW_Link(rightAux.key, con.key, "n", "s").addToGroup(group);
-              new _GW_Link(leftAux.key, con.key, "n", "s").addToGroup(group);
+              new _GY_Link(rightAux.key, con.key, "n", "s").addToGroup(group);
+              new _GY_Link(leftAux.key, con.key, "n", "s").addToGroup(group);
               newAuxs.splice(newAuxs.indexOf(leftAux), 1);
               newAuxs.splice(newAuxs.indexOf(rightAux), 1);
               newAuxs.push(con);
@@ -1563,21 +1564,21 @@
     return newAuxs;
   };
 
-  var _JL__95classCallCheck = function (instance, Constructor) {
+  var _JR__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _JM__95possibleConstructorReturn = function (self, call) {
-    if (call && (_Kt_(call) === "object" || typeof call === "function")) {
+  var _JS__95possibleConstructorReturn = function (self, call) {
+    if (call && (_L0_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _LS__95assertThisInitialized(self);
+    return _LZ__95assertThisInitialized(self);
   };
 
-  var _LS__95assertThisInitialized = function (self) {
+  var _LZ__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1585,72 +1586,14 @@
     return self;
   };
 
-  var _JE__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _KB__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LO_(call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _MT__95assertThisInitialized(self);
-  };
-
-  var _MT__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _H6_Box = function () {
-    var _this;
-
-    _JE__95classCallCheck(this, _H6_Box);
-
-    _this = _KB__95possibleConstructorReturn(this, _JC_(_H6_Box).call(this));
-    _this.nodes = [];
-    _this.links = [];
-    return _this;
-  };
-
-  var _H7_ = function (graph) {// this shouldnt be call, since every box should be inside a wrapper
-  };
-
-  var _JH__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _KC__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LQ_(call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _MU__95assertThisInitialized(self);
-  };
-
-  var _MU__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _JS__95classCallCheck = function (instance, Constructor) {
+  var _JK__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
   var _KI__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LY_(call) === "object" || typeof call === "function")) {
+    if (call && (_LV_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
@@ -1665,27 +1608,85 @@
     return self;
   };
 
-  var _Hi_Der = function (name) {
-    _JS__95classCallCheck(this, _Hi_Der);
+  var _H8_Box = function () {
+    var _this;
 
-    return _KI__95possibleConstructorReturn(this, _JC_(_Hi_Der).call(this, null, "D", name));
+    _JK__95classCallCheck(this, _H8_Box);
+
+    _this = _KI__95possibleConstructorReturn(this, _JI_(_H8_Box).call(this));
+    _this.nodes = [];
+    _this.links = [];
+    return _this;
   };
 
-  var _Hj_ = function () {
-    var der = new _Hi_Der(this.name);
+  var _H9_ = function (graph) {// this shouldnt be call, since every box should be inside a wrapper
+  };
+
+  var _JN__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _KJ__95possibleConstructorReturn = function (self, call) {
+    if (call && (_LX_(call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _Mb__95assertThisInitialized(self);
+  };
+
+  var _Mb__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _JY__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _KP__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Lf_(call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _Mh__95assertThisInitialized(self);
+  };
+
+  var _Mh__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Hk_Der = function (name) {
+    _JY__95classCallCheck(this, _Hk_Der);
+
+    return _KP__95possibleConstructorReturn(this, _JI_(_Hk_Der).call(this, null, "D", name));
+  };
+
+  var _Hl_ = function () {
+    var der = new _Hk_Der(this.name);
     return der;
   };
 
-  var _HE_Promo = function () {
-    _JH__95classCallCheck(this, _HE_Promo);
+  var _HG_Promo = function () {
+    _JN__95classCallCheck(this, _HG_Promo);
 
-    return _KC__95possibleConstructorReturn(this, _JC_(_HE_Promo).call(this, null, "!"));
+    return _KJ__95possibleConstructorReturn(this, _JI_(_HG_Promo).call(this, null, "!"));
   };
 
-  var _HF_ = function (token, link) {
+  var _HH_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
-      token.rewriteFlag = _Id_RewriteFlag.F_PROMO;
+      token.rewriteFlag = _Ij_RewriteFlag.F_PROMO;
       return nextLink;
     } else if (link.from == this.key) {
       var nextLink = this.findLinksInto(null)[0];
@@ -1693,12 +1694,12 @@
     }
   };
 
-  var _HG_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_PROMO) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _HI_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_PROMO) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var prev = this.graph.findNodeByKey(this.findLinksInto(null)[0].from);
 
-      if (prev instanceof _Hi_Der) {
+      if (prev instanceof _Hk_Der) {
         var oldGroup = this.group;
         oldGroup.moveOut(); // this.group is a box-wrapper
 
@@ -1708,7 +1709,7 @@
 
         token.rewrite = true;
         return newNextLink;
-      } else if (prev instanceof _Gy_Contract && token.boxStack.length >= 1) {
+      } else if (prev instanceof _H0_Contract && token.boxStack.length >= 1) {
         if (nextLink.from == this.key) {
           var link = token.boxStack.pop();
           var inLinks = prev.findLinksInto(null);
@@ -1717,14 +1718,14 @@
           } else {
             var newBoxWrapper = this.group.copy().addToGroup(this.group.group);
 
-            _HT_Term.joinAuxs(this.group.auxs, newBoxWrapper.auxs, newBoxWrapper.group);
+            _HV_Term.joinAuxs(this.group.auxs, newBoxWrapper.auxs, newBoxWrapper.group);
 
             var prevLink = prev.findLinksOutOf(null)[0];
             prevLink.changeTo(newBoxWrapper.prin.key, prev.findLinksOutOf(null)[0].toPort);
             link.changeTo(this.key, "s");
           }
 
-          token.rewriteFlag = _Id_RewriteFlag.F_PROMO;
+          token.rewriteFlag = _Ij_RewriteFlag.F_PROMO;
           token.rewrite = true;
           return nextLink;
         }
@@ -1732,38 +1733,38 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _HH_ = function () {
-    return new _HE_Promo();
+  var _HJ_ = function () {
+    return new _HG_Promo();
   };
 
-  var _HL_BoxWrapper = function (prin, box, auxs) {
+  var _HN_BoxWrapper = function (prin, box, auxs) {
     var _this;
 
-    _JL__95classCallCheck(this, _HL_BoxWrapper);
+    _JR__95classCallCheck(this, _HN_BoxWrapper);
 
-    _this = _JM__95possibleConstructorReturn(this, _JC_(_HL_BoxWrapper).call(this, prin, auxs));
+    _this = _JS__95possibleConstructorReturn(this, _JI_(_HN_BoxWrapper).call(this, prin, auxs));
     _this.box = box;
     return _this;
   };
 
-  var _HM_ = function (prin, box, auxs) {
-    _JD_(_JC_(_HL_BoxWrapper.prototype), "set", this).call(this, prin, auxs);
+  var _HO_ = function (prin, box, auxs) {
+    _JJ_(_JI_(_HN_BoxWrapper.prototype), "set", this).call(this, prin, auxs);
 
     this.box = box;
   };
 
-  var _HN_ = function (aux) {
+  var _HP_ = function (aux) {
     this.auxs.splice(this.auxs.indexOf(aux), 1);
     aux.deleteAndPreserveOutLink();
   };
 
-  var _HO_ = function () {
+  var _HQ_ = function () {
     var _arr = Array.from(this.box.links);
 
     for (var _i = 0; _i < _arr.length; _i++) {
@@ -1804,12 +1805,12 @@
     }
   };
 
-  var _HP_ = function (map) {
-    var newBoxWrapper = new _HL_BoxWrapper();
+  var _HR_ = function (map) {
+    var newBoxWrapper = new _HN_BoxWrapper();
     var newPrin = this.prin.copy().addToGroup(newBoxWrapper);
     newBoxWrapper.prin = newPrin;
     map.set(this.prin.key, newPrin.key);
-    var newBox = new _H6_Box().addToGroup(newBoxWrapper);
+    var newBox = new _H8_Box().addToGroup(newBoxWrapper);
     newBoxWrapper.box = newBox;
     newBoxWrapper.auxs = [];
     var _iteratorNormalCompletion = true;
@@ -1821,7 +1822,7 @@
         var node = _step.value;
         var newNode;
 
-        if (node instanceof _HL_BoxWrapper) {
+        if (node instanceof _HN_BoxWrapper) {
           newNode = node.copyBox(map).addToGroup(newBox);
         } else {
           var newNode = node.copy().addToGroup(newBox);
@@ -1876,7 +1877,7 @@
     try {
       for (var _iterator3 = this.box.links[Symbol.iterator](), _step3; !(_iteratorNormalCompletion3 = (_step3 = _iterator3.next()).done); _iteratorNormalCompletion3 = true) {
         var link = _step3.value;
-        var newLink = new _GW_Link(map.get(link.from), map.get(link.to), link.fromPort, link.toPort).addToGroup(newBox);
+        var newLink = new _GY_Link(map.get(link.from), map.get(link.to), link.fromPort, link.toPort).addToGroup(newBox);
         newLink.reverse = link.reverse;
       }
     } catch (err) {
@@ -1901,7 +1902,7 @@
     try {
       for (var _iterator4 = this.links[Symbol.iterator](), _step4; !(_iteratorNormalCompletion4 = (_step4 = _iterator4.next()).done); _iteratorNormalCompletion4 = true) {
         var _link2 = _step4.value;
-        var newLink = new _GW_Link(map.get(_link2.from), map.get(_link2.to), _link2.fromPort, _link2.toPort).addToGroup(newBoxWrapper);
+        var newLink = new _GY_Link(map.get(_link2.from), map.get(_link2.to), _link2.fromPort, _link2.toPort).addToGroup(newBoxWrapper);
         newLink.reverse = _link2.reverse;
       }
     } catch (err) {
@@ -1922,12 +1923,12 @@
     return newBoxWrapper;
   };
 
-  var _HQ_ = function () {
+  var _HS_ = function () {
     var map = new Map();
     return this.copyBox(map);
   };
 
-  var _HR_ = function () {
+  var _HT_ = function () {
     this.box.delete();
 
     var _arr6 = Array.from(this.auxs);
@@ -1939,10 +1940,10 @@
 
     this.prin.delete();
 
-    _JD_(_JC_(_HL_BoxWrapper.prototype), "delete", this).call(this);
+    _JJ_(_JI_(_HN_BoxWrapper.prototype), "delete", this).call(this);
   };
 
-  var _HS_ = function () {
+  var _HU_ = function () {
     this.box.delete();
 
     var _arr7 = Array.from(this.auxs);
@@ -1954,18 +1955,18 @@
 
     this.prin.deleteAndPreserveInLink(); //preserve inLink
 
-    _JD_(_JC_(_HL_BoxWrapper.prototype), "delete", this).call(this);
+    _JJ_(_JI_(_HN_BoxWrapper.prototype), "delete", this).call(this);
   };
 
-  var _Ix_ = function () {
-    var wrapper = new _HL_BoxWrapper();
-    var box = new _H6_Box().addToGroup(wrapper);
-    var promo = new _HE_Promo().addToGroup(wrapper);
+  var _J3_ = function () {
+    var wrapper = new _HN_BoxWrapper();
+    var box = new _H8_Box().addToGroup(wrapper);
+    var promo = new _HG_Promo().addToGroup(wrapper);
     wrapper.set(promo, box, []);
     return wrapper;
   };
 
-  var _LJ__95typeof = function (obj) {
+  var _LQ__95typeof = function (obj) {
     var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -1981,23 +1982,23 @@
     return __captured__scope_B_[1](obj);
   };
 
-  var _J6__95classCallCheck = function (instance, Constructor) {
+  var _JC__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _K7__95possibleConstructorReturn = function (self, call) {
+  var _KE__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     if (call && (__captured__scope_B_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MP__95assertThisInitialized(self);
+    return _MW__95assertThisInitialized(self);
   };
 
-  var _MP__95assertThisInitialized = function (self) {
+  var _MW__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2005,7 +2006,7 @@
     return self;
   };
 
-  var _LW__95typeof = function (obj) {
+  var _Ld__95typeof = function (obj) {
     var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2021,23 +2022,23 @@
     return __captured__scope_G_[1](obj);
   };
 
-  var _JQ__95classCallCheck = function (instance, Constructor) {
+  var _JW__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KG__95possibleConstructorReturn = function (self, call) {
+  var _KN__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
 
     if (call && (__captured__scope_G_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MY__95assertThisInitialized(self);
+    return _Mf__95assertThisInitialized(self);
   };
 
-  var _MY__95assertThisInitialized = function (self) {
+  var _Mf__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2045,60 +2046,60 @@
     return self;
   };
 
-  var _Hd_App = function () {
-    _JQ__95classCallCheck(this, _Hd_App);
+  var _Hf_App = function () {
+    _JW__95classCallCheck(this, _Hf_App);
 
-    return _KG__95possibleConstructorReturn(this, _JC_(_Hd_App).call(this, null, "@", "yellow"));
+    return _KN__95possibleConstructorReturn(this, _JI_(_Hf_App).call(this, null, "@", "yellow"));
   };
 
-  var _He_ = function (token, link) {
+  var _Hg_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key && link.fromPort == "e") {
       var nextLink = this.findLinksOutOf("w")[0];
       token.dataStack.pop();
-      token.dataStack.push(_IW_CompData.R);
+      token.dataStack.push(_Ic_CompData.R);
       token.forward = true;
       return nextLink;
     }
   };
 
-  var _Hf_ = function () {
-    return new _Hd_App();
+  var _Hh_ = function () {
+    return new _Hf_App();
   };
 
-  var _Gl_Abs = function () {
-    _J6__95classCallCheck(this, _Gl_Abs);
+  var _Gn_Abs = function () {
+    _JC__95classCallCheck(this, _Gn_Abs);
 
-    return _K7__95possibleConstructorReturn(this, _JC_(_Gl_Abs).call(this, null, "λ", "yellow"));
+    return _KE__95possibleConstructorReturn(this, _JI_(_Gn_Abs).call(this, null, "λ", "yellow"));
   };
 
-  var _Gm_ = function (token, link) {
+  var _Go_ = function (token, link) {
     if (link.to == this.key && link.toPort == "s") {
       var data = token.dataStack[token.dataStack.length - 1];
 
-      if (data == _IW_CompData.PROMPT) {
+      if (data == _Ic_CompData.PROMPT) {
         token.dataStack.pop();
-        token.dataStack.push([_IW_CompData.LAMBDA, _IW_CompData.EMPTY]);
+        token.dataStack.push([_Ic_CompData.LAMBDA, _Ic_CompData.EMPTY]);
         token.forward = false;
         return link;
-      } else if (data == _IW_CompData.R) {
+      } else if (data == _Ic_CompData.R) {
         var nextLink = this.findLinksOutOf(null)[0];
         token.dataStack.pop();
-        token.rewriteFlag = _Id_RewriteFlag.F_LAMBDA;
+        token.rewriteFlag = _Ij_RewriteFlag.F_LAMBDA;
         return nextLink;
       }
     }
   };
 
-  var _Gn_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_LAMBDA && nextLink.from == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Gp_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_LAMBDA && nextLink.from == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var prev = this.graph.findNodeByKey(this.findLinksInto("s")[0].from);
 
-      if (prev instanceof _Hd_App) {
+      if (prev instanceof _Hf_App) {
         // M rule
         var appLink = prev.findLinksInto(null)[0];
         var appOtherLink = prev.findLinksOutOf("e")[0];
@@ -2108,7 +2109,7 @@
         otherNextLink.changeTo(appOtherLink.to, appOtherLink.toPort);
         otherNextLink.reverse = false;
         var otherNode = this.graph.findNodeByKey(otherNextLink.from);
-        if (otherNode instanceof _H2_Expo) otherNextLink.fromPort = "n";
+        if (otherNode instanceof _H4_Expo) otherNextLink.fromPort = "n";
         otherNextLink.changeToGroup(appOtherLink.group);
         this.delete();
         prev.delete();
@@ -2116,17 +2117,17 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Go_ = function () {
-    return new _Gl_Abs();
+  var _Gq_ = function () {
+    return new _Gn_Abs();
   };
 
-  var _LL__95typeof = function (obj) {
+  var _LS__95typeof = function (obj) {
     var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2142,23 +2143,23 @@
     return __captured__scope_D_[1](obj);
   };
 
-  var _J8__95classCallCheck = function (instance, Constructor) {
+  var _JE__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _K9__95possibleConstructorReturn = function (self, call) {
+  var _KG__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
 
     if (call && (__captured__scope_D_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MR__95assertThisInitialized(self);
+    return _MY__95assertThisInitialized(self);
   };
 
-  var _MR__95assertThisInitialized = function (self) {
+  var _MY__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2166,7 +2167,7 @@
     return self;
   };
 
-  var _LU__95typeof = function (obj) {
+  var _Lb__95typeof = function (obj) {
     var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2182,23 +2183,23 @@
     return __captured__scope_E_[1](obj);
   };
 
-  var _JO__95classCallCheck = function (instance, Constructor) {
+  var _JU__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KE__95possibleConstructorReturn = function (self, call) {
+  var _KL__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
 
     if (call && (__captured__scope_E_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MW__95assertThisInitialized(self);
+    return _Md__95assertThisInitialized(self);
   };
 
-  var _MW__95assertThisInitialized = function (self) {
+  var _Md__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2206,70 +2207,70 @@
     return self;
   };
 
-  var _HW_Const = function (name) {
-    _JO__95classCallCheck(this, _HW_Const);
+  var _HY_Const = function (name) {
+    _JU__95classCallCheck(this, _HY_Const);
 
-    return _KE__95possibleConstructorReturn(this, _JC_(_HW_Const).call(this, null, name, "mediumpurple1", name));
+    return _KL__95possibleConstructorReturn(this, _JI_(_HY_Const).call(this, null, name, "mediumpurple1", name));
   };
 
-  var _HX_ = function (token, link) {
-    if (token.dataStack[token.dataStack.length - 1] == _IW_CompData.PROMPT) {
+  var _HZ_ = function (token, link) {
+    if (token.dataStack[token.dataStack.length - 1] == _Ic_CompData.PROMPT) {
       token.dataStack.pop();
-      token.dataStack.push([this.name, _IW_CompData.EMPTY]);
+      token.dataStack.push([this.name, _Ic_CompData.EMPTY]);
       token.forward = false;
       return link;
     }
   };
 
-  var _HY_ = function () {
-    return new _HW_Const(this.name);
+  var _Ha_ = function () {
+    return new _HY_Const(this.name);
   };
 
-  var _Gt_BinOp = function (text) {
+  var _Gv_BinOp = function (text) {
     var _this;
 
-    _J8__95classCallCheck(this, _Gt_BinOp);
+    _JE__95classCallCheck(this, _Gv_BinOp);
 
-    _this = _K9__95possibleConstructorReturn(this, _JC_(_Gt_BinOp).call(this, null, text, "mediumpurple1"));
+    _this = _KG__95possibleConstructorReturn(this, _JI_(_Gv_BinOp).call(this, null, text, "mediumpurple1"));
     _this.subType = null;
     return _this;
   };
 
-  var _Gu_ = function (token, link) {
+  var _Gw_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key && link.fromPort == "e") {
       var nextLink = this.findLinksOutOf("w")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       token.forward = true;
       return nextLink;
     } else if (link.from == this.key && link.fromPort == "w") {
-      if (token.dataStack[token.dataStack.length - 3] == _IW_CompData.PROMPT) {
+      if (token.dataStack[token.dataStack.length - 3] == _Ic_CompData.PROMPT) {
         var l = token.dataStack.pop();
         var r = token.dataStack.pop();
         token.dataStack.pop();
         var result = this.binOpApply(this.subType, l[0], r[0]);
-        token.dataStack.push([result, _IW_CompData.EMPTY]);
-        token.rewriteFlag = _Id_RewriteFlag.F_OP;
+        token.dataStack.push([result, _Ic_CompData.EMPTY]);
+        token.rewriteFlag = _Ij_RewriteFlag.F_OP;
         return this.findLinksInto(null)[0];
         ;
       }
     }
   };
 
-  var _Gv_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_OP && nextLink.to == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Gx_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_OP && nextLink.to == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
       var right = this.graph.findNodeByKey(this.findLinksOutOf("e")[0].to);
 
-      if (left instanceof _HE_Promo && right instanceof _HE_Promo) {
-        var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+      if (left instanceof _HG_Promo && right instanceof _HG_Promo) {
+        var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-        var newConst = new _HW_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
-        new _GW_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
+        var newConst = new _HY_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
+        new _GY_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
         nextLink.changeTo(wrapper.prin.key, "s");
         left.group.delete();
         right.group.delete();
@@ -2278,70 +2279,70 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Gw_ = function (type, v1, v2) {
+  var _Gy_ = function (type, v1, v2) {
     switch (type) {
-      case _Iq_BinOpType.And:
+      case _Iw_BinOpType.And:
         return v1 && v2;
 
-      case _Iq_BinOpType.Or:
+      case _Iw_BinOpType.Or:
         return v1 || v2;
 
-      case _Iq_BinOpType.Plus:
+      case _Iw_BinOpType.Plus:
         return parseFloat(v1) + parseFloat(v2);
 
-      case _Iq_BinOpType.Sub:
+      case _Iw_BinOpType.Sub:
         return parseFloat(v1) - parseFloat(v2);
 
-      case _Iq_BinOpType.Mult:
+      case _Iw_BinOpType.Mult:
         return parseFloat(v1) * parseFloat(v2);
 
-      case _Iq_BinOpType.Div:
+      case _Iw_BinOpType.Div:
         return parseFloat(v1) / parseFloat(v2);
 
-      case _Iq_BinOpType.Lte:
+      case _Iw_BinOpType.Lte:
         return parseFloat(v1) <= parseFloat(v2);
     }
   };
 
-  var _Gx_ = function () {
-    var newNode = new _Gt_BinOp(this.text);
+  var _Gz_ = function () {
+    var newNode = new _Gv_BinOp(this.text);
     newNode.subType = this.subType;
     return newNode;
   };
 
-  var _Io_ = function () {
-    var node = new _Gt_BinOp("+");
-    node.subType = _Iq_BinOpType.Plus;
+  var _Iu_ = function () {
+    var node = new _Gv_BinOp("+");
+    node.subType = _Iw_BinOpType.Plus;
     return node;
   };
 
-  var _Ip_ = function () {
-    var node = new _Gt_BinOp("*");
-    node.subType = _Iq_BinOpType.Mult;
+  var _Iv_ = function () {
+    var node = new _Gv_BinOp("*");
+    node.subType = _Iw_BinOpType.Mult;
     return node;
   };
 
-  var _JW__95classCallCheck = function (instance, Constructor) {
+  var _Jc__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KM__95possibleConstructorReturn = function (self, call) {
-    if (call && (_Lc_(call) === "object" || typeof call === "function")) {
+  var _KT__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Lj_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Me__95assertThisInitialized(self);
+    return _Ml__95assertThisInitialized(self);
   };
 
-  var _Me__95assertThisInitialized = function (self) {
+  var _Ml__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2349,29 +2350,29 @@
     return self;
   };
 
-  var _Hv_Var = function (name) {
+  var _Hx_Var = function (name) {
     var _this;
 
-    _JW__95classCallCheck(this, _Hv_Var);
+    _Jc__95classCallCheck(this, _Hx_Var);
 
-    _this = _KM__95possibleConstructorReturn(this, _JC_(_Hv_Var).call(this, name));
+    _this = _KT__95possibleConstructorReturn(this, _JI_(_Hx_Var).call(this, name));
     _this.text = "V";
     return _this;
   };
 
-  var _Hw_ = function () {
+  var _Hy_ = function () {
     var inLink = this.findLinksInto(null)[0];
     var outLink = this.findLinksOutOf(null)[0];
     var inNode = this.graph.findNodeByKey(inLink.from);
 
     if (inLink != null && outLink != null) {
-      if (this.graph.findNodeByKey(outLink.to) instanceof _Gl_Abs && inNode instanceof _H2_Expo) outLink.changeFrom(inLink.from, "nw");else outLink.changeFrom(inLink.from, inLink.fromPort);
+      if (this.graph.findNodeByKey(outLink.to) instanceof _Gn_Abs && inNode instanceof _H4_Expo) outLink.changeFrom(inLink.from, "nw");else outLink.changeFrom(inLink.from, inLink.fromPort);
     }
 
     this.delete();
   };
 
-  var _LK__95typeof = function (obj) {
+  var _LR__95typeof = function (obj) {
     var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2387,23 +2388,23 @@
     return __captured__scope_C_[1](obj);
   };
 
-  var _J7__95classCallCheck = function (instance, Constructor) {
+  var _JD__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _K8__95possibleConstructorReturn = function (self, call) {
+  var _KF__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
     if (call && (__captured__scope_C_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MQ__95assertThisInitialized(self);
+    return _MX__95assertThisInitialized(self);
   };
 
-  var _MQ__95assertThisInitialized = function (self) {
+  var _MX__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2411,21 +2412,21 @@
     return self;
   };
 
-  var _JR__95classCallCheck = function (instance, Constructor) {
+  var _JX__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KH__95possibleConstructorReturn = function (self, call) {
-    if (call && (_LX_(call) === "object" || typeof call === "function")) {
+  var _KO__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Le_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MZ__95assertThisInitialized(self);
+    return _Mg__95assertThisInitialized(self);
   };
 
-  var _MZ__95assertThisInitialized = function (self) {
+  var _Mg__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2433,41 +2434,41 @@
     return self;
   };
 
-  var _Hg_Weak = function () {
-    _JR__95classCallCheck(this, _Hg_Weak);
+  var _Hi_Weak = function () {
+    _JX__95classCallCheck(this, _Hi_Weak);
 
-    return _KH__95possibleConstructorReturn(this, _JC_(_Hg_Weak).call(this, null, 'C0'));
+    return _KO__95possibleConstructorReturn(this, _JI_(_Hi_Weak).call(this, null, 'C0'));
   };
 
-  var _Hh_ = function () {
-    return new _Hg_Weak();
+  var _Hj_ = function () {
+    return new _Hi_Weak();
   };
 
-  var _Gp_If = function () {
-    _J7__95classCallCheck(this, _Gp_If);
+  var _Gr_If = function () {
+    _JD__95classCallCheck(this, _Gr_If);
 
-    return _K8__95possibleConstructorReturn(this, _JC_(_Gp_If).call(this, null, "if", "mediumpurple1"));
+    return _KF__95possibleConstructorReturn(this, _JI_(_Gr_If).call(this, null, "if", "mediumpurple1"));
   };
 
-  var _Gq_ = function (token, link) {
+  var _Gs_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("w")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key && link.fromPort == "w") {
       var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
 
-      if (left instanceof _HE_Promo) {
+      if (left instanceof _HG_Promo) {
         if (token.dataStack[token.dataStack.length - 1][0] == true) {
           var nextLink = this.findLinksOutOf("n")[0];
           token.dataStack.pop();
-          token.rewriteFlag = _Id_RewriteFlag.F_IF;
+          token.rewriteFlag = _Ij_RewriteFlag.F_IF;
           token.forward = true;
           return nextLink;
         } else if (token.dataStack[token.dataStack.length - 1][0] == false) {
           var nextLink = this.findLinksOutOf("e")[0];
           token.dataStack.pop();
-          token.rewriteFlag = _Id_RewriteFlag.F_IF;
+          token.rewriteFlag = _Ij_RewriteFlag.F_IF;
           token.forward = true;
           return nextLink;
         }
@@ -2475,14 +2476,14 @@
         var nextLink = this.findLinksOutOf("n")[0];
         var data = token.dataStack.pop();
         token.dataStack.push(data[0]);
-        token.dataStack.push(_IW_CompData.PROMPT);
+        token.dataStack.push(_Ic_CompData.PROMPT);
         token.forward = true;
         return nextLink;
       }
     } else if (link.from == this.key) {
       if (link.fromPort == "n") {
         var nextLink = this.findLinksOutOf("e")[0];
-        token.dataStack.push(_IW_CompData.PROMPT);
+        token.dataStack.push(_Ic_CompData.PROMPT);
         token.forward = true;
         return nextLink;
       } else if (link.fromPort == "e") {
@@ -2500,16 +2501,16 @@
     }
   };
 
-  var _Gr_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_IF && nextLink.from == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Gt_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_IF && nextLink.from == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
 
-      if (left instanceof _HE_Promo) {
+      if (left instanceof _HG_Promo) {
         var downLink = this.findLinksInto(null)[0];
         var otherLink = this.findLinksOutOf(nextLink.fromPort == "n" ? "e" : "n")[0];
         nextLink.changeFrom(downLink.from, downLink.fromPort);
-        var weak = new _Hg_Weak(this.graph.findNodeByKey(otherLink.to).name).addToGroup(this.group);
+        var weak = new _Hi_Weak(this.graph.findNodeByKey(otherLink.to).name).addToGroup(this.group);
         otherLink.changeFrom(weak.key, "n");
         this.delete();
         left.group.delete();
@@ -2517,17 +2518,17 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Gs_ = function () {
-    return new _Gp_If();
+  var _Gu_ = function () {
+    return new _Gr_If();
   };
 
-  var _Mk__95typeof = function (obj) {
+  var _Mr__95typeof = function (obj) {
     var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2543,23 +2544,23 @@
     return __captured__scope_7_[1](obj);
   };
 
-  var _L9__95classCallCheck = function (instance, Constructor) {
+  var _LG__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _MI__95possibleConstructorReturn = function (self, call) {
+  var _MP__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
 
     if (call && (__captured__scope_7_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Ml__95assertThisInitialized(self);
+    return _Ms__95assertThisInitialized(self);
   };
 
-  var _Ml__95assertThisInitialized = function (self) {
+  var _Ms__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2567,7 +2568,7 @@
     return self;
   };
 
-  var _MJ__95getPrototypeOf = function (o) {
+  var _MQ__95getPrototypeOf = function (o) {
     var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
 
     __captured__scope_7_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
@@ -2576,28 +2577,28 @@
     return __captured__scope_7_[3](o);
   };
 
-  var _Jt_Recur = function () {
+  var _K0_Recur = function () {
     var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
 
-    _L9__95classCallCheck(this, _Jt_Recur);
+    _LG__95classCallCheck(this, _K0_Recur);
 
-    return _MI__95possibleConstructorReturn(this, __captured__scope_7_[3](_Jt_Recur).call(this, null, "μ", "mediumpurple1"));
+    return _MP__95possibleConstructorReturn(this, __captured__scope_7_[3](_K0_Recur).call(this, null, "μ", "mediumpurple1"));
   };
 
-  var _Kg_ = function (token, link) {
+  var _Kn_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.rewriteFlag = _Id_RewriteFlag.F_RECUR;
+      token.rewriteFlag = _Ij_RewriteFlag.F_RECUR;
       return nextLink;
     }
   };
 
-  var _Kh_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_RECUR && nextLink.from == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Ko_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_RECUR && nextLink.from == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var wrapper = this.group.copy().addToGroup(this.group);
 
-      _HT_Term.joinAuxs(this.group.auxs, wrapper.auxs, wrapper.group);
+      _HV_Term.joinAuxs(this.group.auxs, wrapper.auxs, wrapper.group);
 
       var oldGroup = this.group;
       var oldBox = this.group.box;
@@ -2612,17 +2613,17 @@
       oldGroup.deleteAndPreserveLink();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Ki_ = function () {
-    return new _Jt_Recur();
+  var _Kp_ = function () {
+    return new _K0_Recur();
   };
 
-  var _LI__95typeof = function (obj) {
+  var _LP__95typeof = function (obj) {
     var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2638,23 +2639,23 @@
     return __captured__scope_A_[1](obj);
   };
 
-  var _J4__95classCallCheck = function (instance, Constructor) {
+  var _JA__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _K6__95possibleConstructorReturn = function (self, call) {
+  var _KD__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
 
     if (call && (__captured__scope_A_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MO__95assertThisInitialized(self);
+    return _MV__95assertThisInitialized(self);
   };
 
-  var _MO__95assertThisInitialized = function (self) {
+  var _MV__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2662,25 +2663,25 @@
     return self;
   };
 
-  var _GX_Start = function () {
-    _J4__95classCallCheck(this, _GX_Start);
+  var _GZ_Start = function () {
+    _JA__95classCallCheck(this, _GZ_Start);
 
-    return _K6__95possibleConstructorReturn(this, _JC_(_GX_Start).call(this, "point", "", "black"));
+    return _KD__95possibleConstructorReturn(this, _JI_(_GZ_Start).call(this, "point", "", "black"));
   };
 
-  var _GY_ = function (token) {
-    if (token.link == null && token.dataStack[token.dataStack.length - 1] == _IW_CompData.PROMPT) {
+  var _Ga_ = function (token) {
+    if (token.link == null && token.dataStack[token.dataStack.length - 1] == _Ic_CompData.PROMPT) {
       var nextLink = this.findLinksOutOf(null)[0];
       token.forward = true;
       return nextLink;
     } else return null;
   };
 
-  var _GZ_ = function () {
-    return new _GX_Start();
+  var _Gb_ = function () {
+    return new _GZ_Start();
   };
 
-  var _Mi__95typeof = function (obj) {
+  var _Mp__95typeof = function (obj) {
     var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2696,23 +2697,23 @@
     return __captured__scope_6_[1](obj);
   };
 
-  var _L6__95classCallCheck = function (instance, Constructor) {
+  var _LD__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _MG__95possibleConstructorReturn = function (self, call) {
+  var _MN__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
 
     if (call && (__captured__scope_6_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Mj__95assertThisInitialized(self);
+    return _Mq__95assertThisInitialized(self);
   };
 
-  var _Mj__95assertThisInitialized = function (self) {
+  var _Mq__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2720,7 +2721,7 @@
     return self;
   };
 
-  var _MH__95getPrototypeOf = function (o) {
+  var _MO__95getPrototypeOf = function (o) {
     var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
 
     __captured__scope_6_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
@@ -2729,44 +2730,44 @@
     return __captured__scope_6_[3](o);
   };
 
-  var _Jp_UnOp = function (text) {
+  var _Jw_UnOp = function (text) {
     var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
 
     var _this;
 
-    _L6__95classCallCheck(this, _Jp_UnOp);
+    _LD__95classCallCheck(this, _Jw_UnOp);
 
-    _this = _MG__95possibleConstructorReturn(this, __captured__scope_6_[3](_Jp_UnOp).call(this, null, text, "mediumpurple1"));
+    _this = _MN__95possibleConstructorReturn(this, __captured__scope_6_[3](_Jw_UnOp).call(this, null, text, "mediumpurple1"));
     _this.subType = null;
     return _this;
   };
 
-  var _Kc_ = function (token, link) {
+  var _Kj_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key) {
-      if (token.dataStack[token.dataStack.length - 2] == _IW_CompData.PROMPT) {
+      if (token.dataStack[token.dataStack.length - 2] == _Ic_CompData.PROMPT) {
         var v1 = token.dataStack.pop();
         token.dataStack.pop();
-        token.dataStack.push([this.unOpApply(this.subType, v1[0]), _IW_CompData.EMPTY]);
-        token.rewriteFlag = _Id_RewriteFlag.F_OP;
+        token.dataStack.push([this.unOpApply(this.subType, v1[0]), _Ic_CompData.EMPTY]);
+        token.rewriteFlag = _Ij_RewriteFlag.F_OP;
         return this.findLinksInto(null)[0];
       }
     }
   };
 
-  var _Kd_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_OP && nextLink.to == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Kk_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_OP && nextLink.to == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var prev = this.graph.findNodeByKey(this.findLinksOutOf(null)[0].to);
 
-      if (prev instanceof _HE_Promo) {
-        var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+      if (prev instanceof _HG_Promo) {
+        var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-        var newConst = new _HW_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
-        new _GW_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
+        var newConst = new _HY_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
+        new _GY_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
         nextLink.changeTo(wrapper.prin.key, "s");
         prev.group.delete();
         this.delete();
@@ -2774,26 +2775,26 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Ke_ = function (type, v1) {
+  var _Kl_ = function (type, v1) {
     switch (type) {
-      case _L4_UnOpType.Not:
+      case _LB_UnOpType.Not:
         return !v1;
     }
   };
 
-  var _Kf_ = function () {
-    var newNode = new _Jp_UnOp(this.text);
+  var _Km_ = function () {
+    var newNode = new _Jw_UnOp(this.text);
     newNode.subType = this.subType;
     return newNode;
   };
 
-  var _La__95typeof = function (obj) {
+  var _Lh__95typeof = function (obj) {
     var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2809,23 +2810,23 @@
     return __captured__scope_I_[1](obj);
   };
 
-  var _JU__95classCallCheck = function (instance, Constructor) {
+  var _Ja__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KK__95possibleConstructorReturn = function (self, call) {
+  var _KR__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
 
     if (call && (__captured__scope_I_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Mc__95assertThisInitialized(self);
+    return _Mj__95assertThisInitialized(self);
   };
 
-  var _Mc__95assertThisInitialized = function (self) {
+  var _Mj__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2833,67 +2834,67 @@
     return self;
   };
 
-  var _Ho_Delta = function () {
-    _JU__95classCallCheck(this, _Ho_Delta);
+  var _Hq_Delta = function () {
+    _Ja__95classCallCheck(this, _Hq_Delta);
 
-    return _KK__95possibleConstructorReturn(this, _JC_(_Ho_Delta).call(this, null, "Δ", "indianred1"));
+    return _KR__95possibleConstructorReturn(this, _JI_(_Hq_Delta).call(this, null, "Δ", "indianred1"));
   };
 
-  var _Hp_ = function (token, link) {
+  var _Hr_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key) {
       if (link.fromPort == "e") {
         var nextLink = this.findLinksOutOf("w")[0];
         token.dataStack.pop();
-        token.dataStack.push(_IW_CompData.PROMPT);
+        token.dataStack.push(_Ic_CompData.PROMPT);
         token.forward = true;
         return nextLink;
       } else if (link.fromPort == "w") {
-        if (token.dataStack[token.dataStack.length - 2] == _IW_CompData.PROMPT) {
+        if (token.dataStack[token.dataStack.length - 2] == _Ic_CompData.PROMPT) {
           var data = token.dataStack.pop();
           token.dataStack.pop();
-          token.dataStack.push([_IW_CompData.UNIT, _IW_CompData.EMPTY]);
-          token.rewriteFlag = _Id_RewriteFlag.F_DELTA + data[1];
+          token.dataStack.push([_Ic_CompData.UNIT, _Ic_CompData.EMPTY]);
+          token.rewriteFlag = _Ij_RewriteFlag.F_DELTA + data[1];
           return this.findLinksInto(null)[0];
         }
       }
     }
   };
 
-  var _Hq_ = function (token, nextLink) {
-    if (token.rewriteFlag.substring(0, 3) == _Id_RewriteFlag.F_DELTA && nextLink.to == this.key) {
+  var _Hs_ = function (token, nextLink) {
+    if (token.rewriteFlag.substring(0, 3) == _Ij_RewriteFlag.F_DELTA && nextLink.to == this.key) {
       var key = token.rewriteFlag.substring(3, token.rewriteFlag.length);
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
-      var weak1 = new _Hg_Weak().addToGroup(this.group);
+      var weak1 = new _Hi_Weak().addToGroup(this.group);
       this.findLinksOutOf("w")[0].changeFrom(weak1.key, "n");
       var mod = this.graph.findNodeByKey(key);
-      var weak2 = new _Hg_Weak().addToGroup(this.group);
+      var weak2 = new _Hi_Weak().addToGroup(this.group);
       mod.findLinksOutOf('e')[0].changeFrom(weak2.key, 'n');
       this.findLinksOutOf("e")[0].changeFrom(mod.key, "e");
 
-      var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+      var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-      var con = new _HW_Const(data[0]).addToGroup(wrapper.box);
-      new _GW_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
+      var con = new _HY_Const(data[0]).addToGroup(wrapper.box);
+      new _GY_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
       this.findLinksInto(null)[0].changeTo(wrapper.prin.key, "s");
       this.delete();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Hr_ = function () {
-    return new _Ho_Delta();
+  var _Ht_ = function () {
+    return new _Hq_Delta();
   };
 
-  var _Mo__95typeof = function (obj) {
+  var _Mv__95typeof = function (obj) {
     var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2909,23 +2910,23 @@
     return __captured__scope_9_[1](obj);
   };
 
-  var _LG__95classCallCheck = function (instance, Constructor) {
+  var _LN__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _MM__95possibleConstructorReturn = function (self, call) {
+  var _MT__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
     if (call && (__captured__scope_9_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Mp__95assertThisInitialized(self);
+    return _Mw__95assertThisInitialized(self);
   };
 
-  var _Mp__95assertThisInitialized = function (self) {
+  var _Mw__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2933,7 +2934,7 @@
     return self;
   };
 
-  var _MN__95getPrototypeOf = function (o) {
+  var _MU__95getPrototypeOf = function (o) {
     var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
     __captured__scope_9_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
@@ -2942,74 +2943,74 @@
     return __captured__scope_9_[3](o);
   };
 
-  var _K2_Set = function () {
+  var _K9_Set = function () {
     var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
-    _LG__95classCallCheck(this, _K2_Set);
+    _LN__95classCallCheck(this, _K9_Set);
 
-    return _MM__95possibleConstructorReturn(this, __captured__scope_9_[3](_K2_Set).call(this, null, "<<~", "indianred1"));
+    return _MT__95possibleConstructorReturn(this, __captured__scope_9_[3](_K9_Set).call(this, null, "<<~", "indianred1"));
   };
 
-  var _Km_ = function (token, link) {
+  var _Kt_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key) {
       if (link.fromPort == "e") {
         var nextLink = this.findLinksOutOf("w")[0]; //token.dataStack.pop();
 
-        token.dataStack.push(_IW_CompData.PROMPT);
+        token.dataStack.push(_Ic_CompData.PROMPT);
         token.forward = true;
         return nextLink;
       } else if (link.fromPort == "w") {
-        if (token.dataStack[token.dataStack.length - 3] == _IW_CompData.PROMPT) {
+        if (token.dataStack[token.dataStack.length - 3] == _Ic_CompData.PROMPT) {
           var data = token.dataStack.pop();
           var new_v = token.dataStack.pop();
           token.dataStack.pop();
-          token.dataStack.push([_IW_CompData.UNIT, _IW_CompData.EMPTY]);
-          token.rewriteFlag = _Id_RewriteFlag.F_DELTA + data[1] + ';' + new_v[0];
+          token.dataStack.push([_Ic_CompData.UNIT, _Ic_CompData.EMPTY]);
+          token.rewriteFlag = _Ij_RewriteFlag.F_DELTA + data[1] + ';' + new_v[0];
           return this.findLinksInto(null)[0];
         }
       }
     }
   };
 
-  var _Kn_ = function (token, nextLink) {
-    if (token.rewriteFlag.substring(0, 3) == _Id_RewriteFlag.F_DELTA && nextLink.to == this.key) {
+  var _Ku_ = function (token, nextLink) {
+    if (token.rewriteFlag.substring(0, 3) == _Ij_RewriteFlag.F_DELTA && nextLink.to == this.key) {
       var string = token.rewriteFlag.substring(3, token.rewriteFlag.length);
       var s = string.split(";");
       var key = s[0];
       var data = s[1];
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
-      var weak1 = new _Hg_Weak().addToGroup(this.group);
+      var weak1 = new _Hi_Weak().addToGroup(this.group);
       this.findLinksOutOf("w")[0].changeFrom(weak1.key, "n");
       var mod = this.graph.findNodeByKey(key);
-      var weak2 = new _Hg_Weak().addToGroup(this.group);
+      var weak2 = new _Hi_Weak().addToGroup(this.group);
       mod.findLinksOutOf('e')[0].changeFrom(weak2.key, 'n');
       this.findLinksOutOf("e")[0].changeFrom(mod.key, "e");
       this.graph.findNodeByKey(mod.findLinksOutOf('e')[0].to).name = s[1];
 
-      var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+      var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-      var con = new _HW_Const(data[0]).addToGroup(wrapper.box);
-      new _GW_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
+      var con = new _HY_Const(data[0]).addToGroup(wrapper.box);
+      new _GY_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
       this.findLinksInto(null)[0].changeTo(wrapper.prin.key, "s");
       this.delete();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Ko_ = function () {
-    return new _K2_Set();
+  var _Kv_ = function () {
+    return new _K9_Set();
   };
 
-  var _Mm__95typeof = function (obj) {
+  var _Mt__95typeof = function (obj) {
     var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3025,23 +3026,23 @@
     return __captured__scope_8_[1](obj);
   };
 
-  var _LC__95classCallCheck = function (instance, Constructor) {
+  var _LJ__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _MK__95possibleConstructorReturn = function (self, call) {
+  var _MR__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
     if (call && (__captured__scope_8_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Mn__95assertThisInitialized(self);
+    return _Mu__95assertThisInitialized(self);
   };
 
-  var _Mn__95assertThisInitialized = function (self) {
+  var _Mu__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3049,7 +3050,7 @@
     return self;
   };
 
-  var _ML__95getPrototypeOf = function (o) {
+  var _MS__95getPrototypeOf = function (o) {
     var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
     __captured__scope_8_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
@@ -3058,61 +3059,61 @@
     return __captured__scope_8_[3](o);
   };
 
-  var _Jx_Dep = function () {
+  var _K4_Dep = function () {
     var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
-    _LC__95classCallCheck(this, _Jx_Dep);
+    _LJ__95classCallCheck(this, _K4_Dep);
 
-    return _MK__95possibleConstructorReturn(this, __captured__scope_8_[3](_Jx_Dep).call(this, null, 'p', "mediumpurple1"));
+    return _MR__95possibleConstructorReturn(this, __captured__scope_8_[3](_K4_Dep).call(this, null, 'p', "mediumpurple1"));
   };
 
-  var _Kj_ = function (token, link) {
+  var _Kq_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key) {
-      if (token.dataStack[token.dataStack.length - 2] == _IW_CompData.PROMPT) {
+      if (token.dataStack[token.dataStack.length - 2] == _Ic_CompData.PROMPT) {
         var data = token.dataStack.pop();
         token.dataStack.pop();
-        token.dataStack.push([data[0], _IW_CompData.EMPTY]);
-        token.rewriteFlag = _Id_RewriteFlag.F_DEP;
+        token.dataStack.push([data[0], _Ic_CompData.EMPTY]);
+        token.rewriteFlag = _Ij_RewriteFlag.F_DEP;
         return this.findLinksInto(null)[0];
       }
     }
   };
 
-  var _Kk_ = function (token, nextLink) {
-    if (nextLink.to == this.key && token.rewriteFlag == _Id_RewriteFlag.F_DEP) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Kr_ = function (token, nextLink) {
+    if (nextLink.to == this.key && token.rewriteFlag == _Ij_RewriteFlag.F_DEP) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
 
-      if (_IV_.isNumber(data[0]) || typeof data[0] === "boolean") {
+      if (_Ib_.isNumber(data[0]) || typeof data[0] === "boolean") {
         var outLink = this.findLinksOutOf(null)[0];
-        var weak = new _Hg_Weak(outLink.text).addToGroup(this.group);
+        var weak = new _Hi_Weak(outLink.text).addToGroup(this.group);
         outLink.changeFrom(weak.key, "n");
 
-        var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+        var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-        var newConst = new _HW_Const(data[0]).addToGroup(wrapper.box);
-        new _GW_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
+        var newConst = new _HY_Const(data[0]).addToGroup(wrapper.box);
+        new _GY_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
         nextLink.changeTo(wrapper.prin.key, "s");
         this.delete();
         token.rewrite = true;
       }
 
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Kl_ = function () {
-    return new _Jx_Dep();
+  var _Ks_ = function () {
+    return new _K4_Dep();
   };
 
-  var _Lb__95typeof = function (obj) {
+  var _Li__95typeof = function (obj) {
     var __captured__scope_J_ = __scope_0_main[18] || __get_scope_binding_0_get_95scope_95binding(18);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3128,23 +3129,23 @@
     return __captured__scope_J_[1](obj);
   };
 
-  var _JV__95classCallCheck = function (instance, Constructor) {
+  var _Jb__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KL__95possibleConstructorReturn = function (self, call) {
+  var _KS__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_J_ = __scope_0_main[18] || __get_scope_binding_0_get_95scope_95binding(18);
 
     if (call && (__captured__scope_J_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Md__95assertThisInitialized(self);
+    return _Mk__95assertThisInitialized(self);
   };
 
-  var _Md__95assertThisInitialized = function (self) {
+  var _Mk__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3152,21 +3153,21 @@
     return self;
   };
 
-  var _Hs_Deref = function () {
-    _JV__95classCallCheck(this, _Hs_Deref);
+  var _Hu_Deref = function () {
+    _Jb__95classCallCheck(this, _Hu_Deref);
 
-    return _KL__95possibleConstructorReturn(this, _JC_(_Hs_Deref).call(this, null, "d", "mediumpurple1"));
+    return _KS__95possibleConstructorReturn(this, _JI_(_Hu_Deref).call(this, null, "d", "mediumpurple1"));
   };
 
-  var _Ht_ = function (token, link) {
+  var _Hv_ = function (token, link) {
     if (link.to == this.key) return this.findLinksOutOf(null)[0];else if (link.from == this.key) return this.findLinksInto(null)[0];
   };
 
-  var _Hu_ = function () {
-    return new _Hs_Deref();
+  var _Hw_ = function () {
+    return new _Hu_Deref();
   };
 
-  var _LV__95typeof = function (obj) {
+  var _Lc__95typeof = function (obj) {
     var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3182,23 +3183,23 @@
     return __captured__scope_F_[1](obj);
   };
 
-  var _JP__95classCallCheck = function (instance, Constructor) {
+  var _JV__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KF__95possibleConstructorReturn = function (self, call) {
+  var _KM__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
     if (call && (__captured__scope_F_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _MX__95assertThisInitialized(self);
+    return _Me__95assertThisInitialized(self);
   };
 
-  var _MX__95assertThisInitialized = function (self) {
+  var _Me__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3206,19 +3207,19 @@
     return self;
   };
 
-  var _HZ_Mod = function () {
+  var _Hb_Mod = function () {
     var _this;
 
-    _JP__95classCallCheck(this, _HZ_Mod);
+    _JV__95classCallCheck(this, _Hb_Mod);
 
-    _this = _KF__95possibleConstructorReturn(this, _JC_(_HZ_Mod).call(this, null, "M", "indianred1"));
+    _this = _KM__95possibleConstructorReturn(this, _JI_(_Hb_Mod).call(this, null, "M", "indianred1"));
 
     _this.graph.machine.cells.push(_this.key);
 
     return _this;
   };
 
-  var _Ha_ = function (token, link) {
+  var _Hc_ = function (token, link) {
     if (link.to == this.key) {
       return this.findLinksOutOf("w")[0];
     } else if (link.from == this.key && link.fromPort == "w") {
@@ -3232,10 +3233,10 @@
     }
   };
 
-  var _Hb_ = function (data) {
+  var _Hd_ = function (data) {
     var leftLink = this.findLinksOutOf("w")[0];
 
-    if (_IV_.isNumber(data) || typeof data === "boolean") {
+    if (_Ib_.isNumber(data) || typeof data === "boolean") {
       var value = this.graph.findNodeByKey(leftLink.to);
       var oldData = value.name;
       value.text = data;
@@ -3244,12 +3245,12 @@
     }
   };
 
-  var _Hc_ = function () {
-    var mod = new _HZ_Mod();
+  var _He_ = function () {
+    var mod = new _Hb_Mod();
     return mod;
   };
 
-  var _LZ__95typeof = function (obj) {
+  var _Lg__95typeof = function (obj) {
     var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3265,23 +3266,23 @@
     return __captured__scope_H_[1](obj);
   };
 
-  var _JT__95classCallCheck = function (instance, Constructor) {
+  var _JZ__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _KJ__95possibleConstructorReturn = function (self, call) {
+  var _KQ__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
 
     if (call && (__captured__scope_H_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Mb__95assertThisInitialized(self);
+    return _Mi__95assertThisInitialized(self);
   };
 
-  var _Mb__95assertThisInitialized = function (self) {
+  var _Mi__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3289,18 +3290,18 @@
     return self;
   };
 
-  var _Hk_Prop = function () {
-    _JT__95classCallCheck(this, _Hk_Prop);
+  var _Hm_Prop = function () {
+    _JZ__95classCallCheck(this, _Hm_Prop);
 
-    return _KJ__95possibleConstructorReturn(this, _JC_(_Hk_Prop).call(this, null, "s", "indianred1"));
+    return _KQ__95possibleConstructorReturn(this, _JI_(_Hm_Prop).call(this, null, "s", "indianred1"));
   };
 
-  var _Hl_ = function (token, link) {
+  var _Hn_ = function (token, link) {
     if (link.to == this.key) {
-      if (token.dataStack[token.dataStack.length - 1] == _IW_CompData.PROMPT) {
+      if (token.dataStack[token.dataStack.length - 1] == _Ic_CompData.PROMPT) {
         token.dataStack.pop();
         token.dataStack.push(false);
-        token.rewriteFlag = _Id_RewriteFlag.F_PROP;
+        token.rewriteFlag = _Ij_RewriteFlag.F_PROP;
         token.forward = false;
         token.machine.startPropagation();
         return link;
@@ -3308,32 +3309,32 @@
     }
   };
 
-  var _Hm_ = function (token, nextLink) {
-    if (token.rewriteFlag == _Id_RewriteFlag.F_PROP && nextLink.to == this.key) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _Ho_ = function (token, nextLink) {
+    if (token.rewriteFlag == _Ij_RewriteFlag.F_PROP && nextLink.to == this.key) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var data = token.machine.hasUpdate;
       token.dataStack.pop();
-      token.dataStack.push([data, _IW_CompData.EMPTY]);
+      token.dataStack.push([data, _Ic_CompData.EMPTY]);
 
-      var wrapper = _HL_BoxWrapper.create().addToGroup(this.group);
+      var wrapper = _HN_BoxWrapper.create().addToGroup(this.group);
 
-      var con = new _HW_Const(data).addToGroup(wrapper.box);
-      new _GW_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
+      var con = new _HY_Const(data).addToGroup(wrapper.box);
+      new _GY_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
       nextLink.changeTo(wrapper.prin.key, "s");
       this.delete();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _Hn_ = function () {
-    return new _Hk_Prop();
+  var _Hp_ = function () {
+    return new _Hm_Prop();
   };
 
-  var _Ku__95typeof = function (obj) {
+  var _L1__95typeof = function (obj) {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3349,23 +3350,23 @@
     return __captured__scope_3_[1](obj);
   };
 
-  var _JX__95classCallCheck = function (instance, Constructor) {
+  var _Jd__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _JY__95possibleConstructorReturn = function (self, call) {
+  var _Je__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     if (call && (__captured__scope_3_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Kv__95assertThisInitialized(self);
+    return _L2__95assertThisInitialized(self);
   };
 
-  var _Kv__95assertThisInitialized = function (self) {
+  var _L2__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3373,14 +3374,14 @@
     return self;
   };
 
-  var _JZ__95get = function (target, property, receiver) {
+  var _Jf__95get = function (target, property, receiver) {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     if (typeof Reflect !== "undefined" && Reflect.get) {
       __captured__scope_3_[3] = Reflect.get;
     } else {
       __captured__scope_3_[3] = function _get(target, property, receiver) {
-        var base = _Ld__95superPropBase(target, property);
+        var base = _Lk__95superPropBase(target, property);
 
         if (!base) return;
         var desc = Object.getOwnPropertyDescriptor(base, property);
@@ -3396,49 +3397,49 @@
     return __captured__scope_3_[3](target, property, receiver || target);
   };
 
-  var _Ld__95superPropBase = function (object, property) {
+  var _Lk__95superPropBase = function (object, property) {
     while (!Object.prototype.hasOwnProperty.call(object, property)) {
-      object = _JC_(object);
+      object = _JI_(object);
       if (object === null) break;
     }
 
     return object;
   };
 
-  var _Hx_Prov = function () {
+  var _Hz_Prov = function () {
     var _this;
 
-    _JX__95classCallCheck(this, _Hx_Prov);
+    _Jd__95classCallCheck(this, _Hz_Prov);
 
-    _this = _JY__95possibleConstructorReturn(this, _JC_(_Hx_Prov).call(this, 'diamond', '', "indianred1"));
+    _this = _Je__95possibleConstructorReturn(this, _JI_(_Hz_Prov).call(this, 'diamond', '', "indianred1"));
     _this.width = ".3";
     _this.height = ".3";
     return _this;
   };
 
-  var _Hy_ = function (token, link) {
+  var _I0_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
-      token.dataStack.push(_IW_CompData.PROMPT);
+      token.dataStack.push(_Ic_CompData.PROMPT);
       return nextLink;
     } else if (link.from == this.key) {
       var data = token.dataStack.pop();
       token.dataStack.pop();
       token.dataStack.push(data);
-      token.rewriteFlag = _Id_RewriteFlag.F_MOD;
+      token.rewriteFlag = _Ij_RewriteFlag.F_MOD;
       return this.findLinksInto(null)[0];
     }
   };
 
-  var _Hz_ = function (token, nextLink) {
-    if (nextLink.to == this.key && token.rewriteFlag == _Id_RewriteFlag.F_MOD) {
-      token.rewriteFlag = _Id_RewriteFlag.EMPTY;
+  var _I1_ = function (token, nextLink) {
+    if (nextLink.to == this.key && token.rewriteFlag == _Ij_RewriteFlag.F_MOD) {
+      token.rewriteFlag = _Ij_RewriteFlag.EMPTY;
       var data = token.dataStack.pop();
 
-      if (_IV_.isNumber(data[0]) || typeof data[0] === "boolean") {
-        var mod = new _HZ_Mod().addToGroup(this.group);
-        var con = new _HW_Const(data[0]).addToGroup(this.group);
-        new _GW_Link(mod.key, con.key, "w", "s").addToGroup(this.group);
+      if (_Ib_.isNumber(data[0]) || typeof data[0] === "boolean") {
+        var mod = new _Hb_Mod().addToGroup(this.group);
+        var con = new _HY_Const(data[0]).addToGroup(this.group);
+        new _GY_Link(mod.key, con.key, "w", "s").addToGroup(this.group);
         var outLink = this.findLinksOutOf(null)[0];
         outLink.changeFrom(mod.key, "e");
         var inLink = this.findLinksInto(null)[0];
@@ -3449,13 +3450,13 @@
       }
 
       return nextLink;
-    } else if (token.rewriteFlag == _Id_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _Ij_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _I0_ = function () {
+  var _I2_ = function () {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     var inLink = this.findLinksInto(null)[0];
@@ -3465,20 +3466,121 @@
       inLink.changeTo(outLink.to, outLink.toPort);
     }
 
-    __captured__scope_3_[3](_JC_(_Hx_Prov.prototype), "delete", this).call(this);
+    __captured__scope_3_[3](_JI_(_Hz_Prov.prototype), "delete", this).call(this);
   };
 
-  var _I1_ = function () {
-    return new _Hx_Prov();
+  var _I3_ = function () {
+    return new _Hz_Prov();
   };
 
-  var _IS_GoIMachine = function () {
-    _K5__95classCallCheck(this, _IS_GoIMachine);
+  var _Ji__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
 
-    this.graph = new _I8_Graph(this);
-    _IV_.graph = this.graph; // cheating!
+  var _II_GC = function (graph) {
+    _Ji__95classCallCheck(this, _II_GC);
 
-    this.token = new _IC_MachineToken(this);
+    this.graph = graph;
+    this.noMore = false;
+  };
+
+  var _GG_ = _II_GC.prototype;
+
+  var _IF_ = function () {
+    /*
+            do {
+            	this.noMore = true;
+            	this.collectInGroup(this.graph.child);
+            } while (!this.noMore)
+            */
+  };
+
+  var _IG_ = function (group) {
+    var _arr = Array.from(group.nodes);
+
+    for (var _i = 0; _i < _arr.length; _i++) {
+      var node = _arr[_i];
+
+      if (node instanceof _Hi_Weak || node instanceof _H0_Contract && node.findLinksInto(null).length == 0) {
+        var link = node.findLinksOutOf(null)[0];
+        var nextNode = this.graph.findNodeByKey(link.to);
+
+        if (!(nextNode instanceof _Gn_Abs && link.toPort == "w")) {
+          this.noMore = false;
+          this.collectFromBottom(node);
+        }
+      } else if (node instanceof _HA_Group) {
+        this.collectInGroup(node);
+      }
+    }
+  };
+
+  var _IH_ = function (node) {
+    if (node instanceof _H0_Contract && node.findLinksInto(null).length != 0) {} else if (node instanceof _HG_Promo || node instanceof _K0_Recur) {
+      var _iteratorNormalCompletion = true;
+      var _didIteratorError = false;
+      var _iteratorError = undefined;
+
+      try {
+        for (var _iterator = node.group.auxs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+          var aux = _step.value;
+          this.collectFromBottom(aux);
+        }
+      } catch (err) {
+        _didIteratorError = true;
+        _iteratorError = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion && _iterator.return != null) {
+            _iterator.return();
+          }
+        } finally {
+          if (_didIteratorError) {
+            throw _iteratorError;
+          }
+        }
+      }
+
+      node.group.delete();
+    } else {
+      var _iteratorNormalCompletion2 = true;
+      var _didIteratorError2 = false;
+      var _iteratorError2 = undefined;
+
+      try {
+        for (var _iterator2 = node.findLinksOutOf(null)[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
+          var link = _step2.value;
+          this.collectFromBottom(this.graph.findNodeByKey(link.to));
+        }
+      } catch (err) {
+        _didIteratorError2 = true;
+        _iteratorError2 = err;
+      } finally {
+        try {
+          if (!_iteratorNormalCompletion2 && _iterator2.return != null) {
+            _iterator2.return();
+          }
+        } finally {
+          if (_didIteratorError2) {
+            throw _iteratorError2;
+          }
+        }
+      }
+
+      node.delete();
+    }
+  };
+
+  var _IY_GoIMachine = function () {
+    _KC__95classCallCheck(this, _IY_GoIMachine);
+
+    this.graph = new _IA_Graph(this);
+    _Ib_.graph = this.graph; // cheating!
+
+    this.token = new _IE_MachineToken(this);
+    this.gc = new _II_GC(this.graph);
     this.count = 0;
     this.token.isMain = true;
     this.evalTokens = [];
@@ -3491,35 +3593,35 @@
     this.finished = false;
   };
 
-  var _GJ_ = _IS_GoIMachine.prototype;
+  var _GM_ = _IY_GoIMachine.prototype;
 
-  var _ID_ = function () {
+  var _IJ_ = function () {
     return this.playing;
   };
 
-  var _IE_ = function (playValue) {
+  var _IK_ = function (playValue) {
     this.play = playValue;
   };
 
-  var _IF_ = function () {
+  var _IL_ = function () {
     return this.playing;
   };
 
-  var _IG_ = function (playingValue) {
+  var _IM_ = function (playingValue) {
     this.playing = playingValue;
   };
 
-  var _IH_ = function () {
+  var _IN_ = function () {
     return this.finished;
   };
 
-  var _II_ = function (finishedValue) {
+  var _IO_ = function (finishedValue) {
     this.finished = finishedValue;
   };
 
-  var _IJ_ = function (source) {
-    var lexer = new _Jc_Lexer(source + '\0');
-    var parser = new _Je_Parser(lexer);
+  var _IP_ = function (source) {
+    var lexer = new _Jj_Lexer(source + '\0');
+    var parser = new _Jl_Parser(lexer);
     var ast = parser.parse(); // init
 
     this.graph.clear();
@@ -3532,27 +3634,27 @@
     this.newValues.clear();
     this.hasUpdate = false; // create graph
 
-    var start = new _GX_Start().addToGroup(this.graph.child);
+    var start = new _GZ_Start().addToGroup(this.graph.child);
     var term = this.toGraph(ast, this.graph.child);
-    new _GW_Link(start.key, term.prin.key, "n", "s").addToGroup(this.graph.child);
+    new _GY_Link(start.key, term.prin.key, "n", "s").addToGroup(this.graph.child);
     this.deleteVarNode(this.graph.child);
   };
 
-  var _IK_ = function (ast, group) {
+  var _IQ_ = function (ast, group) {
     var graph = this.graph;
 
-    if (ast instanceof _Jg_Identifier) {
-      var v = new _Hv_Var(ast.name).addToGroup(group);
-      return new _HT_Term(v, [v]);
-    } else if (ast instanceof _Jh_Abstraction) {
+    if (ast instanceof _Jn_Identifier) {
+      var v = new _Hx_Var(ast.name).addToGroup(group);
+      return new _HV_Term(v, [v]);
+    } else if (ast instanceof _Jo_Abstraction) {
       var param = ast.param;
 
-      var wrapper = _HL_BoxWrapper.create().addToGroup(group);
+      var wrapper = _HN_BoxWrapper.create().addToGroup(group);
 
-      var abs = new _Gl_Abs().addToGroup(wrapper.box);
+      var abs = new _Gn_Abs().addToGroup(wrapper.box);
       var term = this.toGraph(ast.body, wrapper.box);
-      new _GW_Link(wrapper.prin.key, abs.key, "n", "s").addToGroup(wrapper);
-      new _GW_Link(abs.key, term.prin.key, "e", "s").addToGroup(abs.group);
+      new _GY_Link(wrapper.prin.key, abs.key, "n", "s").addToGroup(wrapper);
+      new _GY_Link(abs.key, term.prin.key, "e", "s").addToGroup(abs.group);
       var auxs = Array.from(term.auxs);
       var paramUsed = false;
       var auxNode;
@@ -3588,63 +3690,63 @@
       if (paramUsed) {
         auxs.splice(auxs.indexOf(auxNode), 1);
       } else {
-        auxNode = new _Hg_Weak(param).addToGroup(abs.group);
+        auxNode = new _Hi_Weak(param).addToGroup(abs.group);
       }
 
-      new _GW_Link(auxNode.key, abs.key, "nw", "w", true).addToGroup(abs.group);
+      new _GY_Link(auxNode.key, abs.key, "nw", "w", true).addToGroup(abs.group);
       wrapper.auxs = wrapper.createPaxsOnTopOf(auxs);
-      return new _HT_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _Ji_Application) {
-      var app = new _Hd_App().addToGroup(group); //lhs
+      return new _HV_Term(wrapper.prin, wrapper.auxs);
+    } else if (ast instanceof _Jp_Application) {
+      var app = new _Hf_App().addToGroup(group); //lhs
 
       var left = this.toGraph(ast.lhs, group);
-      var der = new _Hi_Der(left.prin.name).addToGroup(group);
-      new _GW_Link(der.key, left.prin.key, "n", "s").addToGroup(group); // rhs
+      var der = new _Hk_Der(left.prin.name).addToGroup(group);
+      new _GY_Link(der.key, left.prin.key, "n", "s").addToGroup(group); // rhs
 
       var right = this.toGraph(ast.rhs, group);
-      new _GW_Link(app.key, der.key, "w", "s").addToGroup(group);
-      new _GW_Link(app.key, right.prin.key, "e", "s").addToGroup(group);
-      return new _HT_Term(app, _HT_Term.joinAuxs(left.auxs, right.auxs, group));
-    } else if (ast instanceof _Jj_Constant) {
-      var wrapper = _HL_BoxWrapper.create().addToGroup(group);
+      new _GY_Link(app.key, der.key, "w", "s").addToGroup(group);
+      new _GY_Link(app.key, right.prin.key, "e", "s").addToGroup(group);
+      return new _HV_Term(app, _HV_Term.joinAuxs(left.auxs, right.auxs, group));
+    } else if (ast instanceof _Jq_Constant) {
+      var wrapper = _HN_BoxWrapper.create().addToGroup(group);
 
-      var constant = new _HW_Const(ast.value).addToGroup(wrapper.box);
-      new _GW_Link(wrapper.prin.key, constant.key, "n", "s").addToGroup(wrapper);
-      return new _HT_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _Jk_BinaryOp) {
-      var binop = new _Gt_BinOp(ast.name).addToGroup(group);
+      var constant = new _HY_Const(ast.value).addToGroup(wrapper.box);
+      new _GY_Link(wrapper.prin.key, constant.key, "n", "s").addToGroup(wrapper);
+      return new _HV_Term(wrapper.prin, wrapper.auxs);
+    } else if (ast instanceof _Jr_BinaryOp) {
+      var binop = new _Gv_BinOp(ast.name).addToGroup(group);
       binop.subType = ast.type;
       var left = this.toGraph(ast.v1, group);
       var right = this.toGraph(ast.v2, group);
-      new _GW_Link(binop.key, left.prin.key, "w", "s").addToGroup(group);
-      new _GW_Link(binop.key, right.prin.key, "e", "s").addToGroup(group);
-      return new _HT_Term(binop, _HT_Term.joinAuxs(left.auxs, right.auxs, group));
-    } else if (ast instanceof _Jo_UnaryOp) {
-      var unop = new _Jp_UnOp(ast.name).addToGroup(group);
+      new _GY_Link(binop.key, left.prin.key, "w", "s").addToGroup(group);
+      new _GY_Link(binop.key, right.prin.key, "e", "s").addToGroup(group);
+      return new _HV_Term(binop, _HV_Term.joinAuxs(left.auxs, right.auxs, group));
+    } else if (ast instanceof _Jv_UnaryOp) {
+      var unop = new _Jw_UnOp(ast.name).addToGroup(group);
       unop.subType = ast.type;
       var box = this.toGraph(ast.v1, group);
-      new _GW_Link(unop.key, box.prin.key, "n", "s").addToGroup(group);
-      return new _HT_Term(unop, box.auxs);
-    } else if (ast instanceof _Jr_IfThenElse) {
-      var ifnode = new _Gp_If().addToGroup(group);
+      new _GY_Link(unop.key, box.prin.key, "n", "s").addToGroup(group);
+      return new _HV_Term(unop, box.auxs);
+    } else if (ast instanceof _Jy_IfThenElse) {
+      var ifnode = new _Gr_If().addToGroup(group);
       var cond = this.toGraph(ast.cond, group);
       var t1 = this.toGraph(ast.t1, group);
       var t2 = this.toGraph(ast.t2, group);
-      new _GW_Link(ifnode.key, cond.prin.key, "w", "s").addToGroup(group);
-      new _GW_Link(ifnode.key, t1.prin.key, "n", "s").addToGroup(group);
-      new _GW_Link(ifnode.key, t2.prin.key, "e", "s").addToGroup(group);
-      return new _HT_Term(ifnode, _HT_Term.joinAuxs(_HT_Term.joinAuxs(t1.auxs, t2.auxs, group), cond.auxs, group));
-    } else if (ast instanceof _Js_Recursion) {
+      new _GY_Link(ifnode.key, cond.prin.key, "w", "s").addToGroup(group);
+      new _GY_Link(ifnode.key, t1.prin.key, "n", "s").addToGroup(group);
+      new _GY_Link(ifnode.key, t2.prin.key, "e", "s").addToGroup(group);
+      return new _HV_Term(ifnode, _HV_Term.joinAuxs(_HV_Term.joinAuxs(t1.auxs, t2.auxs, group), cond.auxs, group));
+    } else if (ast instanceof _Jz_Recursion) {
       var p1 = ast.param; // recur term
 
-      var wrapper = _HL_BoxWrapper.create().addToGroup(group);
+      var wrapper = _HN_BoxWrapper.create().addToGroup(group);
 
       wrapper.prin.delete();
-      var recur = new _Jt_Recur().addToGroup(wrapper);
+      var recur = new _K0_Recur().addToGroup(wrapper);
       wrapper.prin = recur;
       var box = this.toGraph(ast.body, wrapper.box);
       wrapper.auxs = wrapper.createPaxsOnTopOf(box.auxs);
-      new _GW_Link(recur.key, box.prin.key, "e", "s").addToGroup(wrapper);
+      new _GY_Link(recur.key, box.prin.key, "e", "s").addToGroup(wrapper);
       var p1Used = false;
       var auxNode1;
 
@@ -3661,33 +3763,33 @@
 
       if (p1Used) {// wrapper.auxs.splice(wrapper.auxs.indexOf(auxNode1), 1);
       } else {
-        auxNode1 = new _Hg_Weak(p1).addToGroup(wrapper.box);
+        auxNode1 = new _Hi_Weak(p1).addToGroup(wrapper.box);
       }
 
-      new _GW_Link(auxNode1.key, recur.key, "nw", "w", true).addToGroup(wrapper);
-      return new _HT_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _Jv_ProvisionalConstant) {
+      new _GY_Link(auxNode1.key, recur.key, "nw", "w", true).addToGroup(wrapper);
+      return new _HV_Term(wrapper.prin, wrapper.auxs);
+    } else if (ast instanceof _K2_ProvisionalConstant) {
       var term = this.toGraph(ast.term, group);
-      var prov = new _Hx_Prov().addToGroup(group);
-      new _GW_Link(prov.key, term.prin.key, "n", "s").addToGroup(group);
-      return new _HT_Term(prov, term.auxs);
-    } else if (ast instanceof _Jw_Deprecation) {
+      var prov = new _Hz_Prov().addToGroup(group);
+      new _GY_Link(prov.key, term.prin.key, "n", "s").addToGroup(group);
+      return new _HV_Term(prov, term.auxs);
+    } else if (ast instanceof _K3_Deprecation) {
       var term = this.toGraph(ast.term, group);
-      var dep = new _Jx_Dep().addToGroup(group);
-      new _GW_Link(dep.key, term.prin.key, "n", "s").addToGroup(group);
-      return new _HT_Term(dep, term.auxs);
-    } else if (ast instanceof _Jz_Dereference) {
+      var dep = new _K4_Dep().addToGroup(group);
+      new _GY_Link(dep.key, term.prin.key, "n", "s").addToGroup(group);
+      return new _HV_Term(dep, term.auxs);
+    } else if (ast instanceof _K6_Dereference) {
       var term = this.toGraph(ast.term, group);
-      var deref = new _Hs_Deref().addToGroup(group);
-      new _GW_Link(deref.key, term.prin.key, "n", "s").addToGroup(group);
-      return new _HT_Term(deref, term.auxs);
-    } else if (ast instanceof _K0_Change) {
+      var deref = new _Hu_Deref().addToGroup(group);
+      new _GY_Link(deref.key, term.prin.key, "n", "s").addToGroup(group);
+      return new _HV_Term(deref, term.auxs);
+    } else if (ast instanceof _K7_Change) {
       var param = ast.param;
-      var delta = new _Ho_Delta().addToGroup(group);
+      var delta = new _Hq_Delta().addToGroup(group);
       var term = this.toGraph(ast.body, group);
-      var v = new _Hv_Var(param).addToGroup(group);
-      new _GW_Link(delta.key, v.key, "w", "s").addToGroup(group);
-      new _GW_Link(delta.key, term.prin.key, "e", "s").addToGroup(group);
+      var v = new _Hx_Var(param).addToGroup(group);
+      new _GY_Link(delta.key, v.key, "w", "s").addToGroup(group);
+      new _GY_Link(delta.key, term.prin.key, "e", "s").addToGroup(group);
       var auxs = Array.from(term.auxs);
       var p1Used = false;
       var auxNode1;
@@ -3698,23 +3800,23 @@
         if (aux.name == param) {
           p1Used = true;
           auxs.splice(i, 1);
-          var con = new _Gy_Contract(aux.name).addToGroup(group);
-          new _GW_Link(aux.key, con.key, "n", "s").addToGroup(group);
-          new _GW_Link(v.key, con.key, "n", "s").addToGroup(group);
+          var con = new _H0_Contract(aux.name).addToGroup(group);
+          new _GY_Link(aux.key, con.key, "n", "s").addToGroup(group);
+          new _GY_Link(v.key, con.key, "n", "s").addToGroup(group);
           auxs.push(con);
           break;
         }
       }
 
       if (!p1Used) auxs.push(v);
-      return new _HT_Term(delta, auxs);
-    } else if (ast instanceof _K1_Assign) {
+      return new _HV_Term(delta, auxs);
+    } else if (ast instanceof _K8_Assign) {
       var param = ast.param;
-      var setn = new _K2_Set().addToGroup(group);
+      var setn = new _K9_Set().addToGroup(group);
       var term = this.toGraph(ast.body, group);
-      var v = new _Hv_Var(param).addToGroup(group);
-      new _GW_Link(setn.key, v.key, "w", "s").addToGroup(group);
-      new _GW_Link(setn.key, term.prin.key, "e", "s").addToGroup(group);
+      var v = new _Hx_Var(param).addToGroup(group);
+      new _GY_Link(setn.key, v.key, "w", "s").addToGroup(group);
+      new _GY_Link(setn.key, term.prin.key, "e", "s").addToGroup(group);
       var auxs = Array.from(term.auxs);
       var p1Used = false;
       var auxNode1;
@@ -3725,32 +3827,32 @@
         if (aux.name == param) {
           p1Used = true;
           auxs.splice(i, 1);
-          var con = new _Gy_Contract(aux.name).addToGroup(group);
-          new _GW_Link(aux.key, con.key, "n", "s").addToGroup(group);
-          new _GW_Link(v.key, con.key, "n", "s").addToGroup(group);
+          var con = new _H0_Contract(aux.name).addToGroup(group);
+          new _GY_Link(aux.key, con.key, "n", "s").addToGroup(group);
+          new _GY_Link(v.key, con.key, "n", "s").addToGroup(group);
           auxs.push(con);
           break;
         }
       }
 
       if (!p1Used) auxs.push(v);
-      return new _HT_Term(setn, auxs);
-    } else if (ast instanceof _K4_Propagation) {
-      var prop = new _Hk_Prop().addToGroup(group);
-      return new _HT_Term(prop, []);
+      return new _HV_Term(setn, auxs);
+    } else if (ast instanceof _KB_Propagation) {
+      var prop = new _Hm_Prop().addToGroup(group);
+      return new _HV_Term(prop, []);
     }
   };
 
-  var _IL_ = function (group) {
+  var _IR_ = function (group) {
     var _arr = Array.from(group.nodes);
 
     for (var _i = 0; _i < _arr.length; _i++) {
       var node = _arr[_i];
-      if (node instanceof _H8_Group) this.deleteVarNode(node);else if (node instanceof _Hv_Var) node.deleteAndPreserveOutLink();
+      if (node instanceof _HA_Group) this.deleteVarNode(node);else if (node instanceof _Hx_Var) node.deleteAndPreserveOutLink();
     }
   };
 
-  var _IM_ = function () {
+  var _IS_ = function () {
     this.evaluating = true;
     this.hasUpdate = false;
     var _iteratorNormalCompletion2 = true;
@@ -3761,7 +3863,7 @@
       for (var _iterator2 = this.cells[Symbol.iterator](), _step2; !(_iteratorNormalCompletion2 = (_step2 = _iterator2.next()).done); _iteratorNormalCompletion2 = true) {
         var key = _step2.value;
         var cell = this.graph.findNodeByKey(key);
-        var evalToken = new _IC_MachineToken(this);
+        var evalToken = new _IE_MachineToken(this);
         evalToken.isMain = false;
         evalToken.setLink(cell.findLinksOutOf('e')[0]);
         this.evalTokens.push(evalToken);
@@ -3782,7 +3884,7 @@
     }
   };
 
-  var _IN_ = function (a) {
+  var _IT_ = function (a) {
     var j, x, i;
 
     for (i = a.length - 1; i > 0; i--) {
@@ -3793,7 +3895,17 @@
     }
   };
 
-  var _IO_ = function (tokens) {
+  var _IU_ = function (tokens) {
+    // random	
+
+    /*	
+            var arr = Array.from(new Array(tokens.length),(val,index)=>index+1);	
+            this.shuffle(arr);	
+            for (var i=0; i<arr.length; i++) {	
+            	var token = arr_2[arr[i]-1];	
+            	this.tokenPass(token, flag, dataStack, boxStack, modStack);	
+            }	
+            */
     var arr_2 = Array.from(tokens); // all progress 1 step
 
     for (var i = 0; i < arr_2.length; i++) {
@@ -3802,8 +3914,15 @@
     }
   };
 
-  var _IP_ = function () {
+  var _IV_ = function () {
     if (!this.isFinished()) {
+      /*	
+                this.count++;	
+                if (this.count == 200) {	
+                	this.count = 0;	
+                	this.gc.collect();	
+                }	
+                */
       if (this.evaluating) {
         this.batchPass(this.evalTokens);
 
@@ -3824,7 +3943,7 @@
     return this.getData(this.token);
   };
 
-  var _IQ_ = function (token) {
+  var _IW_ = function (token) {
     var node;
 
     if (!token.transited) {
@@ -3840,11 +3959,16 @@
       if (nextLink != null) {
         token.setLink(nextLink);
         token.transited = true;
+
+        if (token.isMain) {// prints progress
+          // console.log(this.getData(token));
+        }
       } else {
         token.transited = false;
 
         if (token.isMain) {
-          token.setLink(null);
+          token.setLink(null); //this.gc.collect();
+
           this.setPlay(false);
           this.setPlaying(false);
           this.setFinished(true);
@@ -3864,87 +3988,163 @@
     }
   };
 
-  var _IR_ = function (token) {
-    return token.dataStack.length == 0 ? '□' : Array.from(token.dataStack).reverse().toString() + ',□';
+  var _IX_ = function (token) {
+    var dataStack = Array.from(token.dataStack).reverse();
+    dataStack.push('□'); // the latest value is stored in the first element in the dataStack
+
+    var data = dataStack[0]; // data consists of the last node and it's link
+
+    if (data[0] === 'λ') {
+      // abstraction
+      var machine = this; // this means it doesn't return a simple value
+
+      return function (source) {
+        // create AST of the future abstract arguments
+        var lexer = new _Jj_Lexer(source + '\0');
+        var parser = new _Jl_Parser(lexer);
+        var ast = parser.parse(); // init
+
+        machine.token.reset();
+        machine.count = 0;
+        machine.evalTokens = [];
+        machine.cells = [];
+        machine.readyEvalTokens = 0;
+        machine.evaluating = false;
+        machine.newValues.clear();
+        machine.hasUpdate = false; // get the start node
+
+        var start = machine.graph.findNodeByKey("nd1"); // the start node will point to the node that'll be the lhs of the application
+
+        var left = machine.graph.findNodeByKey(start.links[0].to);
+        var leftAuxs = left.group.auxs; // need to remove link out of start nodes
+
+        start.findLinksConnected().forEach(function (link) {
+          link.delete();
+        }); // follow the same steps from Application in toGraph
+
+        var der = new _Hk_Der(left.name).addToGroup(machine.graph.child);
+        new _GY_Link(der.key, left.key, "n", "s").addToGroup(machine.graph.child); // create the rhs from the source AST
+
+        var right = machine.toGraph(ast, machine.graph.child);
+        var app = new _Hf_App().addToGroup(machine.graph.child);
+        new _GY_Link(app.key, der.key, "w", "s").addToGroup(machine.graph.child);
+        new _GY_Link(app.key, right.prin.key, "e", "s").addToGroup(machine.graph.child);
+        var term = new _HV_Term(app, _HV_Term.joinAuxs(leftAuxs, right.auxs, machine.graph.child));
+        new _GY_Link(start.key, term.prin.key, "n", "s").addToGroup(machine.graph.child);
+        machine.deleteVarNode(machine.graph.child);
+      };
+    } else if (data[1] !== '-') {
+      var machine = Object.assign(Object.create(Object.getPrototypeOf(_IY_GoIMachine)), this);
+      return {
+        data: data[0],
+        machine: machine
+      };
+    } else {
+      if (data[0] === '•') {
+        // this represents the unit so it doesn't return anything
+        return undefined;
+      } else {
+        return data[0];
+      }
+    }
   };
 
-  var _1_autoPlay = function (callback) {
+  var _2_autoPlay = function (callback) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[0]++;
 
-    _4_.setPlaying(true);
+    _5_machine.setPlaying(true);
 
-    var data = "";
+    var result;
 
-    if (!_4_.isFinished()) {
-      data = _4_.pass();
+    if (!_5_machine.isFinished()) {
+      result = _5_machine.pass();
     }
 
-    if (_4_.isFinished()) {
-      callback(null, data);
+    if (_5_machine.isFinished()) {
+      if (typeof result === 'function') {
+        callback(null, function () {
+          _5_machine.setPlay(false);
+
+          _5_machine.setPlaying(false); // can only receive one argument at a time so this work
+
+
+          if (arguments.length !== 0) {
+            result(arguments[0]);
+          }
+
+          _5_machine.setPlay(true);
+
+          _5_machine.setFinished(false);
+
+          if (!_5_machine.isPlaying()) {
+            _2_autoPlay(callback);
+          }
+        });
+      } else {
+        callback(null, result);
+      }
     } else {
-      if (_4_.isPlay()) {
-        if (_IT_.__residual) {
+      if (_5_machine.isPlay()) {
+        if (_IZ_.__residual) {
           // if we're in Prepack, and weve reached its maximum nubmer of calls
           if (__captured__scope_1_[0] > 125 / 3) {
-            // set to 0 because up till now Prepack evaluated everything
-            __captured__scope_1_[0] = 0;
+            if (__captured__scope_1_[0] > 125) {
+              // set to 0 because up till now Prepack evaluated everything
+              __captured__scope_1_[0] = 0;
 
-            _IT_.__residual("void", _0_.bind(null), _1_autoPlay, callback);
+              _IZ_.__residual("void", function (autoPlay, callback) {
+                autoPlay(callback);
+              }, _2_autoPlay, callback);
+            } else {
+              // decrease now because we have already added a timeout
+              __captured__scope_1_[0]--;
+              setTimeout(function () {
+                _2_autoPlay(callback);
+              }, 0);
+            }
           } else {
             // just call the function as it is
-            _1_autoPlay(callback);
+            _2_autoPlay(callback);
           }
         } else {
           // otherwise, if we've reached the maximum number of calls on the stack
           if (__captured__scope_1_[0] > 125) {
             // call the function with a timeout
             setTimeout(function () {
-              _1_autoPlay(callback);
-            }, 100);
+              _2_autoPlay(callback);
+            }, 0);
           } else {
             // just call the function as it is
-            _1_autoPlay(callback);
+            _2_autoPlay(callback);
           }
         }
       } else {
-        _4_.setPlaying(false);
+        _5_machine.setPlaying(false);
       }
     }
   };
 
-  var _2_ = function (err, result) {
+  var _3_ = function (err, result) {
     ;
 
-    _J1_(err, result);
+    _J7_(err, result);
   };
 
-  var _Mg_ = function (obj) {
+  var _Mn_ = function (obj) {
     return typeof obj;
   };
 
-  var _LT_ = function (obj) {
+  var _La_ = function (obj) {
     return typeof obj;
   };
 
-  var _Kt_ = function (obj) {
+  var _L0_ = function (obj) {
     return typeof obj;
   };
 
-  var _LO_ = function (obj) {
-    return typeof obj;
-  };
-
-  var _LQ_ = function (obj) {
-    return typeof obj;
-  };
-
-  var _LY_ = function (obj) {
-    return typeof obj;
-  };
-
-  var _Lc_ = function (obj) {
+  var _LV_ = function (obj) {
     return typeof obj;
   };
 
@@ -3952,705 +4152,717 @@
     return typeof obj;
   };
 
-  var _Kr_ = function (obj) {
+  var _Lf_ = function (obj) {
     return typeof obj;
   };
 
-  var _LM_ = function (obj) {
+  var _Lj_ = function (obj) {
     return typeof obj;
   };
 
-  var _0_ = function (autoPlay, callback) {
-    autoPlay(callback);
+  var _Le_ = function (obj) {
+    return typeof obj;
+  };
+
+  var _Ky_ = function (obj) {
+    return typeof obj;
+  };
+
+  var _LT_ = function (obj) {
+    return typeof obj;
+  };
+
+  var _1_ = function () {
+    _2_autoPlay(_3_);
   };
 
   var __constructor = function () {};
 
-  var _JC_ = _$2_Object_46getPrototypeOf;
-
-  var _5_graph = (__constructor.prototype = _G7_, new __constructor());
-
-  _5_graph.key = 143;
-  _5_graph.linkKey = 0;
-
-  var _8_ = new _$3_Map();
-
-  _5_graph.allNodes = _8_;
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GM_, _$4_Object_46defineProperty(_J_, "addToNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GN_, _$4_Object_46defineProperty(_J_, "addToGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GO_, _$4_Object_46defineProperty(_J_, "addToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GP_, _$4_Object_46defineProperty(_J_, "changeToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GQ_, _$4_Object_46defineProperty(_J_, "changeFrom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GR_, _$4_Object_46defineProperty(_J_, "changeTo", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GS_, _$4_Object_46defineProperty(_J_, "focus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GT_, _$4_Object_46defineProperty(_J_, "clearFocus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GU_, _$4_Object_46defineProperty(_J_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GV_, _$4_Object_46defineProperty(_J_, "toString", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _77_ = (__constructor.prototype = _J_, new __constructor());
-
-  _77_.from = "nd35";
-  _77_.to = "nd36";
-  _77_.fromPort = "n";
-  _77_.toPort = "s";
-  _77_.reverse = void 0;
-  _77_.colour = null;
-  _77_.penWidth = null;
-  _77_.graph = _5_graph;
-
-  var _7I_ = (__constructor.prototype = _J_, new __constructor());
-
-  _7I_.from = "nd39";
-  _7I_.to = "nd36";
-  _7I_.fromPort = "nw";
-  _7I_.toPort = "w";
-  _7I_.reverse = true;
-  _7I_.colour = null;
-  _7I_.penWidth = null;
-  _7I_.graph = _5_graph;
-
-  var _7B_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _7B_outLink.from = "nd36";
-  _7B_outLink.to = "nd40";
-  _7B_outLink.fromPort = "e";
-  _7B_outLink.toPort = "s";
-  _7B_outLink.reverse = void 0;
-  _7B_outLink.colour = null;
-  _7B_outLink.penWidth = null;
-  _7B_outLink.graph = _5_graph;
-
-  var _6b_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6b_.from = "nd42";
-  _6b_.to = "nd35";
-  _6b_.fromPort = "n";
-  _6b_.toPort = "s";
-  _6b_.reverse = void 0;
-  _6b_.colour = null;
-  _6b_.penWidth = null;
-  _6b_.graph = _5_graph;
-
-  var _6g_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6g_.from = "nd32";
-  _6g_.to = "nd42";
-  _6g_.fromPort = "w";
-  _6g_.toPort = "s";
-  _6g_.reverse = void 0;
-  _6g_.colour = null;
-  _6g_.penWidth = null;
-  _6g_.graph = _5_graph;
-
-  var _6k_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6k_.from = "nd32";
-  _6k_.to = "nd43";
-  _6k_.fromPort = "e";
-  _6k_.toPort = "s";
-  _6k_.reverse = void 0;
-  _6k_.colour = null;
-  _6k_.penWidth = null;
-  _6k_.graph = _5_graph;
-
-  var _6P_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6P_.from = "nd30";
-  _6P_.to = "nd31";
-  _6P_.fromPort = "n";
-  _6P_.toPort = "s";
-  _6P_.reverse = void 0;
-  _6P_.colour = null;
-  _6P_.penWidth = null;
-  _6P_.graph = _5_graph;
-
-  var _6o_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6o_.from = "nd31";
-  _6o_.to = "nd32";
-  _6o_.fromPort = "e";
-  _6o_.toPort = "s";
-  _6o_.reverse = void 0;
-  _6o_.colour = null;
-  _6o_.penWidth = null;
-  _6o_.graph = _5_graph;
-
-  var _6r_ = (__constructor.prototype = _J_, new __constructor());
-
-  _6r_.from = "nd46";
-  _6r_.to = "nd31";
-  _6r_.fromPort = "nw";
-  _6r_.toPort = "w";
-  _6r_.reverse = true;
-  _6r_.colour = null;
-  _6r_.penWidth = null;
-  _6r_.graph = _5_graph;
-
-  var _6T_link = (__constructor.prototype = _J_, new __constructor());
-
-  _6T_link.from = "nd40";
-  _6T_link.to = "nd47";
-  _6T_link.fromPort = "n";
-  _6T_link.toPort = "s";
-  _6T_link.reverse = void 0;
-  _6T_link.colour = null;
-  _6T_link.penWidth = null;
-  _6T_link.graph = _5_graph;
-
-  var _5p_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5p_.from = "nd49";
-  _5p_.to = "nd30";
-  _5p_.fromPort = "n";
-  _5p_.toPort = "s";
-  _5p_.reverse = void 0;
-  _5p_.colour = null;
-  _5p_.penWidth = null;
-  _5p_.graph = _5_graph;
-
-  var _8Z_ = (__constructor.prototype = _J_, new __constructor());
-
-  _8Z_.from = "nd53";
-  _8Z_.to = "nd54";
-  _8Z_.fromPort = "n";
-  _8Z_.toPort = "s";
-  _8Z_.reverse = void 0;
-  _8Z_.colour = null;
-  _8Z_.penWidth = null;
-  _8Z_.graph = _5_graph;
-
-  var _5u_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5u_.from = "nd50";
-  _5u_.to = "nd53";
-  _5u_.fromPort = "e";
-  _5u_.toPort = "s";
-  _5u_.reverse = void 0;
-  _5u_.colour = null;
-  _5u_.penWidth = null;
-  _5u_.graph = _5_graph;
-
-  var _5y_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5y_.from = "nd27";
-  _5y_.to = "nd49";
-  _5y_.fromPort = "w";
-  _5y_.toPort = "s";
-  _5y_.reverse = void 0;
-  _5y_.colour = null;
-  _5y_.penWidth = null;
-  _5y_.graph = _5_graph;
-
-  var _62_ = (__constructor.prototype = _J_, new __constructor());
-
-  _62_.from = "nd27";
-  _62_.to = "nd50";
-  _62_.fromPort = "e";
-  _62_.toPort = "s";
-  _62_.reverse = void 0;
-  _62_.colour = null;
-  _62_.penWidth = null;
-  _62_.graph = _5_graph;
-
-  var _5Z_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5Z_.from = "nd25";
-  _5Z_.to = "nd26";
-  _5Z_.fromPort = "n";
-  _5Z_.toPort = "s";
-  _5Z_.reverse = void 0;
-  _5Z_.colour = null;
-  _5Z_.penWidth = null;
-  _5Z_.graph = _5_graph;
-
-  var _65_ = (__constructor.prototype = _J_, new __constructor());
-
-  _65_.from = "nd26";
-  _65_.to = "nd27";
-  _65_.fromPort = "e";
-  _65_.toPort = "s";
-  _65_.reverse = void 0;
-  _65_.colour = null;
-  _65_.penWidth = null;
-  _65_.graph = _5_graph;
-
-  var _68_ = (__constructor.prototype = _J_, new __constructor());
-
-  _68_.from = "nd59";
-  _68_.to = "nd26";
-  _68_.fromPort = "nw";
-  _68_.toPort = "w";
-  _68_.reverse = true;
-  _68_.colour = null;
-  _68_.penWidth = null;
-  _68_.graph = _5_graph;
-
-  var _5d_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5d_.from = "nd47";
-  _5d_.to = "nd60";
-  _5d_.fromPort = "n";
-  _5d_.toPort = "s";
-  _5d_.reverse = void 0;
-  _5d_.colour = null;
-  _5d_.penWidth = null;
-  _5d_.graph = _5_graph;
-
-  var _5h_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _5h_outLink.from = "nd50";
-  _5h_outLink.to = "nd61";
-  _5h_outLink.fromPort = "w";
-  _5h_outLink.toPort = "s";
-  _5h_outLink.reverse = void 0;
-  _5h_outLink.colour = null;
-  _5h_outLink.penWidth = null;
-  _5h_outLink.graph = _5_graph;
-
-  var _53_ = (__constructor.prototype = _J_, new __constructor());
-
-  _53_.from = "nd63";
-  _53_.to = "nd25";
-  _53_.fromPort = "n";
-  _53_.toPort = "s";
-  _53_.reverse = void 0;
-  _53_.colour = null;
-  _53_.penWidth = null;
-  _53_.graph = _5_graph;
-
-  var _58_ = (__constructor.prototype = _J_, new __constructor());
-
-  _58_.from = "nd22";
-  _58_.to = "nd63";
-  _58_.fromPort = "w";
-  _58_.toPort = "s";
-  _58_.reverse = void 0;
-  _58_.colour = null;
-  _58_.penWidth = null;
-  _58_.graph = _5_graph;
-
-  var _5C_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5C_.from = "nd22";
-  _5C_.to = "nd64";
-  _5C_.fromPort = "e";
-  _5C_.toPort = "s";
-  _5C_.reverse = void 0;
-  _5C_.colour = null;
-  _5C_.penWidth = null;
-  _5C_.graph = _5_graph;
-
-  var _4r_ = (__constructor.prototype = _J_, new __constructor());
-
-  _4r_.from = "nd20";
-  _4r_.to = "nd21";
-  _4r_.fromPort = "n";
-  _4r_.toPort = "s";
-  _4r_.reverse = void 0;
-  _4r_.colour = null;
-  _4r_.penWidth = null;
-  _4r_.graph = _5_graph;
-
-  var _5G_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5G_.from = "nd21";
-  _5G_.to = "nd22";
-  _5G_.fromPort = "e";
-  _5G_.toPort = "s";
-  _5G_.reverse = void 0;
-  _5G_.colour = null;
-  _5G_.penWidth = null;
-  _5G_.graph = _5_graph;
-
-  var _5J_ = (__constructor.prototype = _J_, new __constructor());
-
-  _5J_.from = "nd60";
-  _5J_.to = "nd21";
-  _5J_.fromPort = "nw";
-  _5J_.toPort = "w";
-  _5J_.reverse = true;
-  _5J_.colour = null;
-  _5J_.penWidth = null;
-  _5J_.graph = _5_graph;
-
-  var _4v_link = (__constructor.prototype = _J_, new __constructor());
-
-  _4v_link.from = "nd61";
-  _4v_link.to = "nd67";
-  _4v_link.fromPort = "n";
-  _4v_link.toPort = "s";
-  _4v_link.reverse = void 0;
-  _4v_link.colour = null;
-  _4v_link.penWidth = null;
-  _4v_link.graph = _5_graph;
-
-  var _h_link = (__constructor.prototype = _J_, new __constructor());
-
-  _h_link.from = "nd69";
-  _h_link.to = "nd20";
-  _h_link.fromPort = "n";
-  _h_link.toPort = "s";
-  _h_link.reverse = void 0;
-  _h_link.colour = null;
-  _h_link.penWidth = null;
-  _h_link.graph = _5_graph;
-
-  var _m_link = (__constructor.prototype = _J_, new __constructor());
-
-  _m_link.from = "nd71";
-  _m_link.to = "nd74";
-  _m_link.fromPort = "w";
-  _m_link.toPort = "s";
-  _m_link.reverse = void 0;
-  _m_link.colour = null;
-  _m_link.penWidth = null;
-  _m_link.graph = _5_graph;
-
-  var _q_link = (__constructor.prototype = _J_, new __constructor());
-
-  _q_link.from = "nd71";
-  _q_link.to = "nd77";
-  _q_link.fromPort = "e";
-  _q_link.toPort = "s";
-  _q_link.reverse = void 0;
-  _q_link.colour = null;
-  _q_link.penWidth = null;
-  _q_link.graph = _5_graph;
-
-  var _u_link = (__constructor.prototype = _J_, new __constructor());
-
-  _u_link.from = "nd80";
-  _u_link.to = "nd71";
-  _u_link.fromPort = "n";
-  _u_link.toPort = "s";
-  _u_link.reverse = void 0;
-  _u_link.colour = null;
-  _u_link.penWidth = null;
-  _u_link.graph = _5_graph;
-
-  var _y_link = (__constructor.prototype = _J_, new __constructor());
-
-  _y_link.from = "nd70";
-  _y_link.to = "nd80";
-  _y_link.fromPort = "w";
-  _y_link.toPort = "s";
-  _y_link.reverse = void 0;
-  _y_link.colour = null;
-  _y_link.penWidth = null;
-  _y_link.graph = _5_graph;
-
-  var _12_nextLink = (__constructor.prototype = _J_, new __constructor());
-
-  _12_nextLink.from = "nd70";
-  _12_nextLink.to = "nd83";
-  _12_nextLink.fromPort = "e";
-  _12_nextLink.toPort = "s";
-  _12_nextLink.reverse = void 0;
-  _12_nextLink.colour = "red";
-  _12_nextLink.penWidth = "20";
-  _12_nextLink.graph = _5_graph;
-
-  var _18_link = (__constructor.prototype = _J_, new __constructor());
-
-  _18_link.from = "nd17";
-  _18_link.to = "nd69";
-  _18_link.fromPort = "w";
-  _18_link.toPort = "s";
-  _18_link.reverse = void 0;
-  _18_link.colour = null;
-  _18_link.penWidth = null;
-  _18_link.graph = _5_graph;
-
-  var _1C_link = (__constructor.prototype = _J_, new __constructor());
-
-  _1C_link.from = "nd17";
-  _1C_link.to = "nd70";
-  _1C_link.fromPort = "e";
-  _1C_link.toPort = "s";
-  _1C_link.reverse = void 0;
-  _1C_link.colour = null;
-  _1C_link.penWidth = null;
-  _1C_link.graph = _5_graph;
-
-  var _1F_link = (__constructor.prototype = _J_, new __constructor());
-
-  _1F_link.from = "nd77";
-  _1F_link.to = "nd86";
-  _1F_link.fromPort = "n";
-  _1F_link.toPort = "s";
-  _1F_link.reverse = void 0;
-  _1F_link.colour = null;
-  _1F_link.penWidth = null;
-  _1F_link.graph = _5_graph;
-
-  var _1I_link = (__constructor.prototype = _J_, new __constructor());
-
-  _1I_link.from = "nd67";
-  _1I_link.to = "nd86";
-  _1I_link.fromPort = "n";
-  _1I_link.toPort = "s";
-  _1I_link.reverse = void 0;
-  _1I_link.colour = null;
-  _1I_link.penWidth = null;
-  _1I_link.graph = _5_graph;
-
-  var _1M_link = (__constructor.prototype = _J_, new __constructor());
-
-  _1M_link.from = "nd1";
-  _1M_link.to = "nd17";
-  _1M_link.fromPort = "n";
-  _1M_link.toPort = "s";
-  _1M_link.reverse = void 0;
-  _1M_link.colour = null;
-  _1M_link.penWidth = null;
-  _1M_link.graph = _5_graph;
-
-  var _1Q_otherNextLink = (__constructor.prototype = _J_, new __constructor());
-
-  _1Q_otherNextLink.from = "nd83";
-  _1Q_otherNextLink.to = "nd141";
-  _1Q_otherNextLink.fromPort = "n";
-  _1Q_otherNextLink.toPort = "s";
-  _1Q_otherNextLink.reverse = false;
-  _1Q_otherNextLink.colour = null;
-  _1Q_otherNextLink.penWidth = null;
-  _1Q_otherNextLink.graph = _5_graph;
-
-  var _4H_link = (__constructor.prototype = _J_, new __constructor());
-
-  _4H_link.from = "nd94";
-  _4H_link.to = "nd95";
-  _4H_link.fromPort = "n";
-  _4H_link.toPort = "s";
-  _4H_link.reverse = void 0;
-  _4H_link.colour = null;
-  _4H_link.penWidth = null;
-  _4H_link.graph = _5_graph;
-
-  var _U_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _U_outLink.from = "nd141";
-  _U_outLink.to = "nd94";
-  _U_outLink.fromPort = "e";
-  _U_outLink.toPort = "s";
-  _U_outLink.reverse = void 0;
-  _U_outLink.colour = null;
-  _U_outLink.penWidth = null;
-  _U_outLink.graph = _5_graph;
-
-  var _Z_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _Z_outLink.from = "nd86";
-  _Z_outLink.to = "nd139";
-  _Z_outLink.fromPort = "n";
-  _Z_outLink.toPort = "s";
-  _Z_outLink.reverse = false;
-  _Z_outLink.colour = null;
-  _Z_outLink.penWidth = null;
-  _Z_outLink.graph = _5_graph;
-
-  var _3k_link = (__constructor.prototype = _J_, new __constructor());
-
-  _3k_link.from = "nd105";
-  _3k_link.to = "nd106";
-  _3k_link.fromPort = "n";
-  _3k_link.toPort = "s";
-  _3k_link.reverse = void 0;
-  _3k_link.colour = null;
-  _3k_link.penWidth = null;
-  _3k_link.graph = _5_graph;
-
-  var _E_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _E_outLink.from = "nd139";
-  _E_outLink.to = "nd105";
-  _E_outLink.fromPort = "e";
-  _E_outLink.toPort = "s";
-  _E_outLink.reverse = void 0;
-  _E_outLink.colour = null;
-  _E_outLink.penWidth = null;
-  _E_outLink.graph = _5_graph;
-
-  var _K_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _K_outLink.from = "nd74";
-  _K_outLink.to = "nd115";
-  _K_outLink.fromPort = "n";
-  _K_outLink.toPort = "s";
-  _K_outLink.reverse = false;
-  _K_outLink.colour = null;
-  _K_outLink.penWidth = null;
-  _K_outLink.graph = _5_graph;
-
-  var _2I_ = (__constructor.prototype = _J_, new __constructor());
-
-  _2I_.from = "nd121";
-  _2I_.to = "nd122";
-  _2I_.fromPort = "w";
-  _2I_.toPort = "s";
-  _2I_.reverse = void 0;
-  _2I_.colour = null;
-  _2I_.penWidth = null;
-  _2I_.graph = _5_graph;
-
-  var _2N_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _2N_outLink.from = "nd122";
-  _2N_outLink.to = "nd132";
-  _2N_outLink.fromPort = "e";
-  _2N_outLink.toPort = "s";
-  _2N_outLink.reverse = void 0;
-  _2N_outLink.colour = null;
-  _2N_outLink.penWidth = null;
-  _2N_outLink.graph = _5_graph;
-
-  var _2R_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _2R_outLink.from = "nd121";
-  _2R_outLink.to = "nd132";
-  _2R_outLink.fromPort = "n";
-  _2R_outLink.toPort = "s";
-  _2R_outLink.reverse = void 0;
-  _2R_outLink.colour = null;
-  _2R_outLink.penWidth = null;
-  _2R_outLink.graph = _5_graph;
-
-  var _2U_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _2U_outLink.from = "nd122";
-  _2U_outLink.to = "nd133";
-  _2U_outLink.fromPort = "w";
-  _2U_outLink.toPort = "s";
-  _2U_outLink.reverse = void 0;
-  _2U_outLink.colour = null;
-  _2U_outLink.penWidth = null;
-  _2U_outLink.graph = _5_graph;
-
-  var _2X_outLink = (__constructor.prototype = _J_, new __constructor());
-
-  _2X_outLink.from = "nd121";
-  _2X_outLink.to = "nd133";
-  _2X_outLink.fromPort = "e";
-  _2X_outLink.toPort = "s";
-  _2X_outLink.reverse = void 0;
-  _2X_outLink.colour = null;
-  _2X_outLink.penWidth = null;
-  _2X_outLink.graph = _5_graph;
-
-  var _26_ = (__constructor.prototype = _J_, new __constructor());
-
-  _26_.from = "nd119";
-  _26_.to = "nd120";
-  _26_.fromPort = "n";
-  _26_.toPort = "s";
-  _26_.reverse = void 0;
-  _26_.colour = null;
-  _26_.penWidth = null;
-  _26_.graph = _5_graph;
-
-  var _2a_ = (__constructor.prototype = _J_, new __constructor());
-
-  _2a_.from = "nd120";
-  _2a_.to = "nd121";
-  _2a_.fromPort = "e";
-  _2a_.toPort = "s";
-  _2a_.reverse = void 0;
-  _2a_.colour = null;
-  _2a_.penWidth = null;
-  _2a_.graph = _5_graph;
-
-  var _2d_ = (__constructor.prototype = _J_, new __constructor());
-
-  _2d_.from = "nd132";
-  _2d_.to = "nd120";
-  _2d_.fromPort = "nw";
-  _2d_.toPort = "w";
-  _2d_.reverse = true;
-  _2d_.colour = null;
-  _2d_.penWidth = null;
-  _2d_.graph = _5_graph;
-
-  var _2A_ = (__constructor.prototype = _J_, new __constructor());
-
-  _2A_.from = "nd133";
-  _2A_.to = "nd135";
-  _2A_.fromPort = "n";
-  _2A_.toPort = "s";
-  _2A_.reverse = void 0;
-  _2A_.colour = null;
-  _2A_.penWidth = null;
-  _2A_.graph = _5_graph;
-
-  var _1g_link = (__constructor.prototype = _J_, new __constructor());
-
-  _1g_link.from = "nd115";
-  _1g_link.to = "nd116";
-  _1g_link.fromPort = "n";
-  _1g_link.toPort = "s";
-  _1g_link.reverse = void 0;
-  _1g_link.colour = null;
-  _1g_link.penWidth = null;
-  _1g_link.graph = _5_graph;
-
-  var _1o_ = (__constructor.prototype = _J_, new __constructor());
-
-  _1o_.from = "nd116";
-  _1o_.to = "nd119";
-  _1o_.fromPort = "e";
-  _1o_.toPort = "s";
-  _1o_.reverse = void 0;
-  _1o_.colour = null;
-  _1o_.penWidth = null;
-  _1o_.graph = _5_graph;
-
-  var _1s_ = (__constructor.prototype = _J_, new __constructor());
-
-  _1s_.from = "nd135";
-  _1s_.to = "nd116";
-  _1s_.fromPort = "nw";
-  _1s_.toPort = "w";
-  _1s_.reverse = true;
-  _1s_.colour = null;
-  _1s_.penWidth = null;
-  _1s_.graph = _5_graph;
-
-  var _Q_ = (__constructor.prototype = _J_, new __constructor());
-
-  _Q_.from = "nd139";
-  _Q_.to = "nd140";
-  _Q_.fromPort = "w";
-  _Q_.toPort = "s";
-  _Q_.reverse = void 0;
-  _Q_.colour = null;
-  _Q_.penWidth = null;
-  _Q_.graph = _5_graph;
-
-  var _d_ = (__constructor.prototype = _J_, new __constructor());
-
-  _d_.from = "nd141";
-  _d_.to = "nd142";
-  _d_.fromPort = "w";
-  _d_.toPort = "s";
-  _d_.reverse = void 0;
-  _d_.colour = null;
-  _d_.penWidth = null;
-  _d_.graph = _5_graph;
-  var _G5_ = [_77_, _7I_, _7B_outLink, _6b_, _6g_, _6k_, _6P_, _6o_, _6r_, _6T_link, _5p_, _8Z_, _5u_, _5y_, _62_, _5Z_, _65_, _68_, _5d_, _5h_outLink, _53_, _58_, _5C_, _4r_, _5G_, _5J_, _4v_link, _h_link, _m_link, _q_link, _u_link, _y_link, _12_nextLink, _18_link, _1C_link, _1F_link, _1I_link, _1M_link, _1Q_otherNextLink, _4H_link, _U_outLink, _Z_outLink, _3k_link, _E_outLink, _K_outLink, _2I_, _2N_outLink, _2R_outLink, _2U_outLink, _2X_outLink, _26_, _2a_, _2d_, _2A_, _1g_link, _1o_, _1s_, _Q_, _d_,,,,,,,,,,,,,,,,,,,,,,,,,,];
-  _G5_.length = 59;
-  _5_graph.allLinks = _G5_;
-  var _IV_ = {
-    isNumber: _J3_isNumber,
-    graph: _5_graph
+  var _JI_ = _$3_Object_46getPrototypeOf;
+
+  var _6_graph = (__constructor.prototype = _G8_, new __constructor());
+
+  _6_graph.key = 143;
+  _6_graph.linkKey = 0;
+
+  var _9_ = new _$4_Map();
+
+  _6_graph.allNodes = _9_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GO_, _$5_Object_46defineProperty(_K_, "addToNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GP_, _$5_Object_46defineProperty(_K_, "addToGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GQ_, _$5_Object_46defineProperty(_K_, "addToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GR_, _$5_Object_46defineProperty(_K_, "changeToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GS_, _$5_Object_46defineProperty(_K_, "changeFrom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GT_, _$5_Object_46defineProperty(_K_, "changeTo", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GU_, _$5_Object_46defineProperty(_K_, "focus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GV_, _$5_Object_46defineProperty(_K_, "clearFocus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GW_, _$5_Object_46defineProperty(_K_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GX_, _$5_Object_46defineProperty(_K_, "toString", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _78_ = (__constructor.prototype = _K_, new __constructor());
+
+  _78_.from = "nd35";
+  _78_.to = "nd36";
+  _78_.fromPort = "n";
+  _78_.toPort = "s";
+  _78_.reverse = void 0;
+  _78_.colour = null;
+  _78_.penWidth = null;
+  _78_.graph = _6_graph;
+
+  var _7J_ = (__constructor.prototype = _K_, new __constructor());
+
+  _7J_.from = "nd39";
+  _7J_.to = "nd36";
+  _7J_.fromPort = "nw";
+  _7J_.toPort = "w";
+  _7J_.reverse = true;
+  _7J_.colour = null;
+  _7J_.penWidth = null;
+  _7J_.graph = _6_graph;
+
+  var _7C_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _7C_outLink.from = "nd36";
+  _7C_outLink.to = "nd40";
+  _7C_outLink.fromPort = "e";
+  _7C_outLink.toPort = "s";
+  _7C_outLink.reverse = void 0;
+  _7C_outLink.colour = null;
+  _7C_outLink.penWidth = null;
+  _7C_outLink.graph = _6_graph;
+
+  var _6c_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6c_.from = "nd42";
+  _6c_.to = "nd35";
+  _6c_.fromPort = "n";
+  _6c_.toPort = "s";
+  _6c_.reverse = void 0;
+  _6c_.colour = null;
+  _6c_.penWidth = null;
+  _6c_.graph = _6_graph;
+
+  var _6h_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6h_.from = "nd32";
+  _6h_.to = "nd42";
+  _6h_.fromPort = "w";
+  _6h_.toPort = "s";
+  _6h_.reverse = void 0;
+  _6h_.colour = null;
+  _6h_.penWidth = null;
+  _6h_.graph = _6_graph;
+
+  var _6l_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6l_.from = "nd32";
+  _6l_.to = "nd43";
+  _6l_.fromPort = "e";
+  _6l_.toPort = "s";
+  _6l_.reverse = void 0;
+  _6l_.colour = null;
+  _6l_.penWidth = null;
+  _6l_.graph = _6_graph;
+
+  var _6Q_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6Q_.from = "nd30";
+  _6Q_.to = "nd31";
+  _6Q_.fromPort = "n";
+  _6Q_.toPort = "s";
+  _6Q_.reverse = void 0;
+  _6Q_.colour = null;
+  _6Q_.penWidth = null;
+  _6Q_.graph = _6_graph;
+
+  var _6p_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6p_.from = "nd31";
+  _6p_.to = "nd32";
+  _6p_.fromPort = "e";
+  _6p_.toPort = "s";
+  _6p_.reverse = void 0;
+  _6p_.colour = null;
+  _6p_.penWidth = null;
+  _6p_.graph = _6_graph;
+
+  var _6s_ = (__constructor.prototype = _K_, new __constructor());
+
+  _6s_.from = "nd46";
+  _6s_.to = "nd31";
+  _6s_.fromPort = "nw";
+  _6s_.toPort = "w";
+  _6s_.reverse = true;
+  _6s_.colour = null;
+  _6s_.penWidth = null;
+  _6s_.graph = _6_graph;
+
+  var _6U_link = (__constructor.prototype = _K_, new __constructor());
+
+  _6U_link.from = "nd40";
+  _6U_link.to = "nd47";
+  _6U_link.fromPort = "n";
+  _6U_link.toPort = "s";
+  _6U_link.reverse = void 0;
+  _6U_link.colour = null;
+  _6U_link.penWidth = null;
+  _6U_link.graph = _6_graph;
+
+  var _5q_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5q_.from = "nd49";
+  _5q_.to = "nd30";
+  _5q_.fromPort = "n";
+  _5q_.toPort = "s";
+  _5q_.reverse = void 0;
+  _5q_.colour = null;
+  _5q_.penWidth = null;
+  _5q_.graph = _6_graph;
+
+  var _8a_ = (__constructor.prototype = _K_, new __constructor());
+
+  _8a_.from = "nd53";
+  _8a_.to = "nd54";
+  _8a_.fromPort = "n";
+  _8a_.toPort = "s";
+  _8a_.reverse = void 0;
+  _8a_.colour = null;
+  _8a_.penWidth = null;
+  _8a_.graph = _6_graph;
+
+  var _5v_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5v_.from = "nd50";
+  _5v_.to = "nd53";
+  _5v_.fromPort = "e";
+  _5v_.toPort = "s";
+  _5v_.reverse = void 0;
+  _5v_.colour = null;
+  _5v_.penWidth = null;
+  _5v_.graph = _6_graph;
+
+  var _5z_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5z_.from = "nd27";
+  _5z_.to = "nd49";
+  _5z_.fromPort = "w";
+  _5z_.toPort = "s";
+  _5z_.reverse = void 0;
+  _5z_.colour = null;
+  _5z_.penWidth = null;
+  _5z_.graph = _6_graph;
+
+  var _63_ = (__constructor.prototype = _K_, new __constructor());
+
+  _63_.from = "nd27";
+  _63_.to = "nd50";
+  _63_.fromPort = "e";
+  _63_.toPort = "s";
+  _63_.reverse = void 0;
+  _63_.colour = null;
+  _63_.penWidth = null;
+  _63_.graph = _6_graph;
+
+  var _5a_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5a_.from = "nd25";
+  _5a_.to = "nd26";
+  _5a_.fromPort = "n";
+  _5a_.toPort = "s";
+  _5a_.reverse = void 0;
+  _5a_.colour = null;
+  _5a_.penWidth = null;
+  _5a_.graph = _6_graph;
+
+  var _66_ = (__constructor.prototype = _K_, new __constructor());
+
+  _66_.from = "nd26";
+  _66_.to = "nd27";
+  _66_.fromPort = "e";
+  _66_.toPort = "s";
+  _66_.reverse = void 0;
+  _66_.colour = null;
+  _66_.penWidth = null;
+  _66_.graph = _6_graph;
+
+  var _69_ = (__constructor.prototype = _K_, new __constructor());
+
+  _69_.from = "nd59";
+  _69_.to = "nd26";
+  _69_.fromPort = "nw";
+  _69_.toPort = "w";
+  _69_.reverse = true;
+  _69_.colour = null;
+  _69_.penWidth = null;
+  _69_.graph = _6_graph;
+
+  var _5e_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5e_.from = "nd47";
+  _5e_.to = "nd60";
+  _5e_.fromPort = "n";
+  _5e_.toPort = "s";
+  _5e_.reverse = void 0;
+  _5e_.colour = null;
+  _5e_.penWidth = null;
+  _5e_.graph = _6_graph;
+
+  var _5i_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _5i_outLink.from = "nd50";
+  _5i_outLink.to = "nd61";
+  _5i_outLink.fromPort = "w";
+  _5i_outLink.toPort = "s";
+  _5i_outLink.reverse = void 0;
+  _5i_outLink.colour = null;
+  _5i_outLink.penWidth = null;
+  _5i_outLink.graph = _6_graph;
+
+  var _54_ = (__constructor.prototype = _K_, new __constructor());
+
+  _54_.from = "nd63";
+  _54_.to = "nd25";
+  _54_.fromPort = "n";
+  _54_.toPort = "s";
+  _54_.reverse = void 0;
+  _54_.colour = null;
+  _54_.penWidth = null;
+  _54_.graph = _6_graph;
+
+  var _59_ = (__constructor.prototype = _K_, new __constructor());
+
+  _59_.from = "nd22";
+  _59_.to = "nd63";
+  _59_.fromPort = "w";
+  _59_.toPort = "s";
+  _59_.reverse = void 0;
+  _59_.colour = null;
+  _59_.penWidth = null;
+  _59_.graph = _6_graph;
+
+  var _5D_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5D_.from = "nd22";
+  _5D_.to = "nd64";
+  _5D_.fromPort = "e";
+  _5D_.toPort = "s";
+  _5D_.reverse = void 0;
+  _5D_.colour = null;
+  _5D_.penWidth = null;
+  _5D_.graph = _6_graph;
+
+  var _4s_ = (__constructor.prototype = _K_, new __constructor());
+
+  _4s_.from = "nd20";
+  _4s_.to = "nd21";
+  _4s_.fromPort = "n";
+  _4s_.toPort = "s";
+  _4s_.reverse = void 0;
+  _4s_.colour = null;
+  _4s_.penWidth = null;
+  _4s_.graph = _6_graph;
+
+  var _5H_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5H_.from = "nd21";
+  _5H_.to = "nd22";
+  _5H_.fromPort = "e";
+  _5H_.toPort = "s";
+  _5H_.reverse = void 0;
+  _5H_.colour = null;
+  _5H_.penWidth = null;
+  _5H_.graph = _6_graph;
+
+  var _5K_ = (__constructor.prototype = _K_, new __constructor());
+
+  _5K_.from = "nd60";
+  _5K_.to = "nd21";
+  _5K_.fromPort = "nw";
+  _5K_.toPort = "w";
+  _5K_.reverse = true;
+  _5K_.colour = null;
+  _5K_.penWidth = null;
+  _5K_.graph = _6_graph;
+
+  var _4w_link = (__constructor.prototype = _K_, new __constructor());
+
+  _4w_link.from = "nd61";
+  _4w_link.to = "nd67";
+  _4w_link.fromPort = "n";
+  _4w_link.toPort = "s";
+  _4w_link.reverse = void 0;
+  _4w_link.colour = null;
+  _4w_link.penWidth = null;
+  _4w_link.graph = _6_graph;
+
+  var _i_link = (__constructor.prototype = _K_, new __constructor());
+
+  _i_link.from = "nd69";
+  _i_link.to = "nd20";
+  _i_link.fromPort = "n";
+  _i_link.toPort = "s";
+  _i_link.reverse = void 0;
+  _i_link.colour = null;
+  _i_link.penWidth = null;
+  _i_link.graph = _6_graph;
+
+  var _n_link = (__constructor.prototype = _K_, new __constructor());
+
+  _n_link.from = "nd71";
+  _n_link.to = "nd74";
+  _n_link.fromPort = "w";
+  _n_link.toPort = "s";
+  _n_link.reverse = void 0;
+  _n_link.colour = null;
+  _n_link.penWidth = null;
+  _n_link.graph = _6_graph;
+
+  var _r_link = (__constructor.prototype = _K_, new __constructor());
+
+  _r_link.from = "nd71";
+  _r_link.to = "nd77";
+  _r_link.fromPort = "e";
+  _r_link.toPort = "s";
+  _r_link.reverse = void 0;
+  _r_link.colour = null;
+  _r_link.penWidth = null;
+  _r_link.graph = _6_graph;
+
+  var _v_link = (__constructor.prototype = _K_, new __constructor());
+
+  _v_link.from = "nd80";
+  _v_link.to = "nd71";
+  _v_link.fromPort = "n";
+  _v_link.toPort = "s";
+  _v_link.reverse = void 0;
+  _v_link.colour = null;
+  _v_link.penWidth = null;
+  _v_link.graph = _6_graph;
+
+  var _z_link = (__constructor.prototype = _K_, new __constructor());
+
+  _z_link.from = "nd70";
+  _z_link.to = "nd80";
+  _z_link.fromPort = "w";
+  _z_link.toPort = "s";
+  _z_link.reverse = void 0;
+  _z_link.colour = null;
+  _z_link.penWidth = null;
+  _z_link.graph = _6_graph;
+
+  var _13_nextLink = (__constructor.prototype = _K_, new __constructor());
+
+  _13_nextLink.from = "nd70";
+  _13_nextLink.to = "nd83";
+  _13_nextLink.fromPort = "e";
+  _13_nextLink.toPort = "s";
+  _13_nextLink.reverse = void 0;
+  _13_nextLink.colour = "red";
+  _13_nextLink.penWidth = "20";
+  _13_nextLink.graph = _6_graph;
+
+  var _19_link = (__constructor.prototype = _K_, new __constructor());
+
+  _19_link.from = "nd17";
+  _19_link.to = "nd69";
+  _19_link.fromPort = "w";
+  _19_link.toPort = "s";
+  _19_link.reverse = void 0;
+  _19_link.colour = null;
+  _19_link.penWidth = null;
+  _19_link.graph = _6_graph;
+
+  var _1D_link = (__constructor.prototype = _K_, new __constructor());
+
+  _1D_link.from = "nd17";
+  _1D_link.to = "nd70";
+  _1D_link.fromPort = "e";
+  _1D_link.toPort = "s";
+  _1D_link.reverse = void 0;
+  _1D_link.colour = null;
+  _1D_link.penWidth = null;
+  _1D_link.graph = _6_graph;
+
+  var _1G_link = (__constructor.prototype = _K_, new __constructor());
+
+  _1G_link.from = "nd77";
+  _1G_link.to = "nd86";
+  _1G_link.fromPort = "n";
+  _1G_link.toPort = "s";
+  _1G_link.reverse = void 0;
+  _1G_link.colour = null;
+  _1G_link.penWidth = null;
+  _1G_link.graph = _6_graph;
+
+  var _1J_link = (__constructor.prototype = _K_, new __constructor());
+
+  _1J_link.from = "nd67";
+  _1J_link.to = "nd86";
+  _1J_link.fromPort = "n";
+  _1J_link.toPort = "s";
+  _1J_link.reverse = void 0;
+  _1J_link.colour = null;
+  _1J_link.penWidth = null;
+  _1J_link.graph = _6_graph;
+
+  var _1N_link = (__constructor.prototype = _K_, new __constructor());
+
+  _1N_link.from = "nd1";
+  _1N_link.to = "nd17";
+  _1N_link.fromPort = "n";
+  _1N_link.toPort = "s";
+  _1N_link.reverse = void 0;
+  _1N_link.colour = null;
+  _1N_link.penWidth = null;
+  _1N_link.graph = _6_graph;
+
+  var _1R_otherNextLink = (__constructor.prototype = _K_, new __constructor());
+
+  _1R_otherNextLink.from = "nd83";
+  _1R_otherNextLink.to = "nd141";
+  _1R_otherNextLink.fromPort = "n";
+  _1R_otherNextLink.toPort = "s";
+  _1R_otherNextLink.reverse = false;
+  _1R_otherNextLink.colour = null;
+  _1R_otherNextLink.penWidth = null;
+  _1R_otherNextLink.graph = _6_graph;
+
+  var _4I_link = (__constructor.prototype = _K_, new __constructor());
+
+  _4I_link.from = "nd94";
+  _4I_link.to = "nd95";
+  _4I_link.fromPort = "n";
+  _4I_link.toPort = "s";
+  _4I_link.reverse = void 0;
+  _4I_link.colour = null;
+  _4I_link.penWidth = null;
+  _4I_link.graph = _6_graph;
+
+  var _V_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _V_outLink.from = "nd141";
+  _V_outLink.to = "nd94";
+  _V_outLink.fromPort = "e";
+  _V_outLink.toPort = "s";
+  _V_outLink.reverse = void 0;
+  _V_outLink.colour = null;
+  _V_outLink.penWidth = null;
+  _V_outLink.graph = _6_graph;
+
+  var _a_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _a_outLink.from = "nd86";
+  _a_outLink.to = "nd139";
+  _a_outLink.fromPort = "n";
+  _a_outLink.toPort = "s";
+  _a_outLink.reverse = false;
+  _a_outLink.colour = null;
+  _a_outLink.penWidth = null;
+  _a_outLink.graph = _6_graph;
+
+  var _3l_link = (__constructor.prototype = _K_, new __constructor());
+
+  _3l_link.from = "nd105";
+  _3l_link.to = "nd106";
+  _3l_link.fromPort = "n";
+  _3l_link.toPort = "s";
+  _3l_link.reverse = void 0;
+  _3l_link.colour = null;
+  _3l_link.penWidth = null;
+  _3l_link.graph = _6_graph;
+
+  var _F_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _F_outLink.from = "nd139";
+  _F_outLink.to = "nd105";
+  _F_outLink.fromPort = "e";
+  _F_outLink.toPort = "s";
+  _F_outLink.reverse = void 0;
+  _F_outLink.colour = null;
+  _F_outLink.penWidth = null;
+  _F_outLink.graph = _6_graph;
+
+  var _L_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _L_outLink.from = "nd74";
+  _L_outLink.to = "nd115";
+  _L_outLink.fromPort = "n";
+  _L_outLink.toPort = "s";
+  _L_outLink.reverse = false;
+  _L_outLink.colour = null;
+  _L_outLink.penWidth = null;
+  _L_outLink.graph = _6_graph;
+
+  var _2J_ = (__constructor.prototype = _K_, new __constructor());
+
+  _2J_.from = "nd121";
+  _2J_.to = "nd122";
+  _2J_.fromPort = "w";
+  _2J_.toPort = "s";
+  _2J_.reverse = void 0;
+  _2J_.colour = null;
+  _2J_.penWidth = null;
+  _2J_.graph = _6_graph;
+
+  var _2O_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _2O_outLink.from = "nd122";
+  _2O_outLink.to = "nd132";
+  _2O_outLink.fromPort = "e";
+  _2O_outLink.toPort = "s";
+  _2O_outLink.reverse = void 0;
+  _2O_outLink.colour = null;
+  _2O_outLink.penWidth = null;
+  _2O_outLink.graph = _6_graph;
+
+  var _2S_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _2S_outLink.from = "nd121";
+  _2S_outLink.to = "nd132";
+  _2S_outLink.fromPort = "n";
+  _2S_outLink.toPort = "s";
+  _2S_outLink.reverse = void 0;
+  _2S_outLink.colour = null;
+  _2S_outLink.penWidth = null;
+  _2S_outLink.graph = _6_graph;
+
+  var _2V_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _2V_outLink.from = "nd122";
+  _2V_outLink.to = "nd133";
+  _2V_outLink.fromPort = "w";
+  _2V_outLink.toPort = "s";
+  _2V_outLink.reverse = void 0;
+  _2V_outLink.colour = null;
+  _2V_outLink.penWidth = null;
+  _2V_outLink.graph = _6_graph;
+
+  var _2Y_outLink = (__constructor.prototype = _K_, new __constructor());
+
+  _2Y_outLink.from = "nd121";
+  _2Y_outLink.to = "nd133";
+  _2Y_outLink.fromPort = "e";
+  _2Y_outLink.toPort = "s";
+  _2Y_outLink.reverse = void 0;
+  _2Y_outLink.colour = null;
+  _2Y_outLink.penWidth = null;
+  _2Y_outLink.graph = _6_graph;
+
+  var _27_ = (__constructor.prototype = _K_, new __constructor());
+
+  _27_.from = "nd119";
+  _27_.to = "nd120";
+  _27_.fromPort = "n";
+  _27_.toPort = "s";
+  _27_.reverse = void 0;
+  _27_.colour = null;
+  _27_.penWidth = null;
+  _27_.graph = _6_graph;
+
+  var _2b_ = (__constructor.prototype = _K_, new __constructor());
+
+  _2b_.from = "nd120";
+  _2b_.to = "nd121";
+  _2b_.fromPort = "e";
+  _2b_.toPort = "s";
+  _2b_.reverse = void 0;
+  _2b_.colour = null;
+  _2b_.penWidth = null;
+  _2b_.graph = _6_graph;
+
+  var _2e_ = (__constructor.prototype = _K_, new __constructor());
+
+  _2e_.from = "nd132";
+  _2e_.to = "nd120";
+  _2e_.fromPort = "nw";
+  _2e_.toPort = "w";
+  _2e_.reverse = true;
+  _2e_.colour = null;
+  _2e_.penWidth = null;
+  _2e_.graph = _6_graph;
+
+  var _2B_ = (__constructor.prototype = _K_, new __constructor());
+
+  _2B_.from = "nd133";
+  _2B_.to = "nd135";
+  _2B_.fromPort = "n";
+  _2B_.toPort = "s";
+  _2B_.reverse = void 0;
+  _2B_.colour = null;
+  _2B_.penWidth = null;
+  _2B_.graph = _6_graph;
+
+  var _1h_link = (__constructor.prototype = _K_, new __constructor());
+
+  _1h_link.from = "nd115";
+  _1h_link.to = "nd116";
+  _1h_link.fromPort = "n";
+  _1h_link.toPort = "s";
+  _1h_link.reverse = void 0;
+  _1h_link.colour = null;
+  _1h_link.penWidth = null;
+  _1h_link.graph = _6_graph;
+
+  var _1p_ = (__constructor.prototype = _K_, new __constructor());
+
+  _1p_.from = "nd116";
+  _1p_.to = "nd119";
+  _1p_.fromPort = "e";
+  _1p_.toPort = "s";
+  _1p_.reverse = void 0;
+  _1p_.colour = null;
+  _1p_.penWidth = null;
+  _1p_.graph = _6_graph;
+
+  var _1t_ = (__constructor.prototype = _K_, new __constructor());
+
+  _1t_.from = "nd135";
+  _1t_.to = "nd116";
+  _1t_.fromPort = "nw";
+  _1t_.toPort = "w";
+  _1t_.reverse = true;
+  _1t_.colour = null;
+  _1t_.penWidth = null;
+  _1t_.graph = _6_graph;
+
+  var _R_ = (__constructor.prototype = _K_, new __constructor());
+
+  _R_.from = "nd139";
+  _R_.to = "nd140";
+  _R_.fromPort = "w";
+  _R_.toPort = "s";
+  _R_.reverse = void 0;
+  _R_.colour = null;
+  _R_.penWidth = null;
+  _R_.graph = _6_graph;
+
+  var _e_ = (__constructor.prototype = _K_, new __constructor());
+
+  _e_.from = "nd141";
+  _e_.to = "nd142";
+  _e_.fromPort = "w";
+  _e_.toPort = "s";
+  _e_.reverse = void 0;
+  _e_.colour = null;
+  _e_.penWidth = null;
+  _e_.graph = _6_graph;
+  var _G6_ = [_78_, _7J_, _7C_outLink, _6c_, _6h_, _6l_, _6Q_, _6p_, _6s_, _6U_link, _5q_, _8a_, _5v_, _5z_, _63_, _5a_, _66_, _69_, _5e_, _5i_outLink, _54_, _59_, _5D_, _4s_, _5H_, _5K_, _4w_link, _i_link, _n_link, _r_link, _v_link, _z_link, _13_nextLink, _19_link, _1D_link, _1G_link, _1J_link, _1N_link, _1R_otherNextLink, _4I_link, _V_outLink, _a_outLink, _3l_link, _F_outLink, _L_outLink, _2J_, _2O_outLink, _2S_outLink, _2V_outLink, _2Y_outLink, _27_, _2b_, _2e_, _2B_, _1h_link, _1p_, _1t_, _R_, _e_,,,,,,,,,,,,,,,,,,,,,,,,,,];
+  _G6_.length = 59;
+  _6_graph.allLinks = _G6_;
+  var _Ib_ = {
+    isNumber: _J9_isNumber,
+    graph: _6_graph
   };
 
-  var _1b_ = (__constructor.prototype = _1c_, new __constructor());
+  var _1c_ = (__constructor.prototype = _1d_, new __constructor());
 
-  _GX_Start.prototype = _1b_;
+  _GZ_Start.prototype = _1c_;
 
-  _$5_Object_46setPrototypeOf(_GX_Start, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_GZ_Start, _Gm_Node);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GX_Start, _$4_Object_46defineProperty(_1b_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _IW_CompData = {
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GZ_Start, _$5_Object_46defineProperty(_1c_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _Ic_CompData = {
     EMPTY: "-",
     PROMPT: "*",
     LAMBDA: "\u03BB",
@@ -4659,70 +4871,70 @@
     IF0: "if0",
     IF1: "if1"
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GY_, _$4_Object_46defineProperty(_1b_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _GZ_, _$4_Object_46defineProperty(_1b_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ga_, _$5_Object_46defineProperty(_1c_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gb_, _$5_Object_46defineProperty(_1c_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _1V_fromNode = (__constructor.prototype = _1b_, new __constructor());
+  var _1W_fromNode = (__constructor.prototype = _1c_, new __constructor());
 
-  _1V_fromNode.key = "nd1";
-  _1V_fromNode.shape = "point";
-  _1V_fromNode.text = "";
-  _1V_fromNode.colour = "black";
-  _1V_fromNode.name = void 0;
-  _1V_fromNode.graph = _5_graph;
-  _1V_fromNode.width = null;
-  _1V_fromNode.height = null;
-  var _1Z_ = [_1M_link,,];
-  _1Z_.length = 1;
-  _1V_fromNode.links = _1Z_;
+  _1W_fromNode.key = "nd1";
+  _1W_fromNode.shape = "point";
+  _1W_fromNode.text = "";
+  _1W_fromNode.colour = "black";
+  _1W_fromNode.name = void 0;
+  _1W_fromNode.graph = _6_graph;
+  _1W_fromNode.width = null;
+  _1W_fromNode.height = null;
+  var _1a_ = [_1N_link,,];
+  _1a_.length = 1;
+  _1W_fromNode.links = _1a_;
 
-  _8_.set("nd1", _1V_fromNode);
+  _9_.set("nd1", _1W_fromNode);
 
-  var _4n_ = (__constructor.prototype = _1c_, new __constructor());
+  var _4o_ = (__constructor.prototype = _1d_, new __constructor());
 
-  _Hd_App.prototype = _4n_;
+  _Hf_App.prototype = _4o_;
 
-  _$5_Object_46setPrototypeOf(_Hd_App, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_Hf_App, _Gm_Node);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hd_App, _$4_Object_46defineProperty(_4n_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _He_, _$4_Object_46defineProperty(_4n_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hf_, _$4_Object_46defineProperty(_4n_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hf_App, _$5_Object_46defineProperty(_4o_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hg_, _$5_Object_46defineProperty(_4o_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hh_, _$5_Object_46defineProperty(_4o_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _4j_node = (__constructor.prototype = _4n_, new __constructor());
+  var _4k_node = (__constructor.prototype = _4o_, new __constructor());
 
-  _4j_node.key = "nd17";
-  _4j_node.shape = null;
-  _4j_node.text = "@";
-  _4j_node.colour = "yellow";
-  _4j_node.name = void 0;
-  _4j_node.graph = _5_graph;
-  _4j_node.width = null;
-  _4j_node.height = null;
-  var _4m_ = [_18_link, _1C_link, _1M_link];
-  _4j_node.links = _4m_;
+  _4k_node.key = "nd17";
+  _4k_node.shape = null;
+  _4k_node.text = "@";
+  _4k_node.colour = "yellow";
+  _4k_node.name = void 0;
+  _4k_node.graph = _6_graph;
+  _4k_node.width = null;
+  _4k_node.height = null;
+  var _4n_ = [_19_link, _1D_link, _1N_link];
+  _4k_node.links = _4n_;
 
-  _8_.set("nd17", _4j_node);
+  _9_.set("nd17", _4k_node);
 
-  var _37_ = (__constructor.prototype = _1c_, new __constructor());
+  var _38_ = (__constructor.prototype = _1d_, new __constructor());
 
-  _H2_Expo.prototype = _37_;
+  _H4_Expo.prototype = _38_;
 
-  _$5_Object_46setPrototypeOf(_H2_Expo, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_H4_Expo, _Gm_Node);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H2_Expo, _$4_Object_46defineProperty(_37_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H3_, _$4_Object_46defineProperty(_37_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _JD_ = _$7_Reflect_46get;
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H4_, _$4_Object_46defineProperty(_37_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H5_, _$4_Object_46defineProperty(_37_, "deleteAndPreserveOutLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H4_Expo, _$5_Object_46defineProperty(_38_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H5_, _$5_Object_46defineProperty(_38_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _JJ_ = _$8_Reflect_46get;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H6_, _$5_Object_46defineProperty(_38_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H7_, _$5_Object_46defineProperty(_38_, "deleteAndPreserveOutLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _3O_ = (__constructor.prototype = _37_, new __constructor());
+  var _3P_ = (__constructor.prototype = _38_, new __constructor());
 
-  _HE_Promo.prototype = _3O_;
+  _HG_Promo.prototype = _3P_;
 
-  _$5_Object_46setPrototypeOf(_HE_Promo, _H2_Expo);
+  _$6_Object_46setPrototypeOf(_HG_Promo, _H4_Expo);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HE_Promo, _$4_Object_46defineProperty(_3O_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _Id_RewriteFlag = {
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HG_Promo, _$5_Object_46defineProperty(_3P_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _Ij_RewriteFlag = {
     EMPTY: "\u25A1",
     F_LAMBDA: "<\u03BB>",
     F_OP: "<$>",
@@ -4735,794 +4947,794 @@
     F_DELTA: "<\u0394>",
     F_PROP: "<s>"
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HF_, _$4_Object_46defineProperty(_3O_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HH_, _$5_Object_46defineProperty(_3P_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _7v_ = (__constructor.prototype = _37_, new __constructor());
+  var _7w_ = (__constructor.prototype = _38_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hi_Der, _$4_Object_46defineProperty(_7v_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hj_, _$4_Object_46defineProperty(_7v_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Hi_Der.prototype = _7v_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hk_Der, _$5_Object_46defineProperty(_7w_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hl_, _$5_Object_46defineProperty(_7w_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Hk_Der.prototype = _7w_;
 
-  _$5_Object_46setPrototypeOf(_Hi_Der, _H2_Expo);
-
-  var _36_ = (__constructor.prototype = _37_, new __constructor());
+  _$6_Object_46setPrototypeOf(_Hk_Der, _H4_Expo);
+
+  var _37_ = (__constructor.prototype = _38_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gy_Contract, _$4_Object_46defineProperty(_36_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gz_, _$4_Object_46defineProperty(_36_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H0_, _$4_Object_46defineProperty(_36_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H1_, _$4_Object_46defineProperty(_36_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Gy_Contract.prototype = _36_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H0_Contract, _$5_Object_46defineProperty(_37_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H1_, _$5_Object_46defineProperty(_37_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H2_, _$5_Object_46defineProperty(_37_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H3_, _$5_Object_46defineProperty(_37_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _H0_Contract.prototype = _37_;
 
-  _$5_Object_46setPrototypeOf(_Gy_Contract, _H2_Expo);
+  _$6_Object_46setPrototypeOf(_H0_Contract, _H4_Expo);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Iy_, _$4_Object_46defineProperty(_HT_Term, "joinAuxs", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  _$5_Object_46setPrototypeOf(_HT_Term, _H8_Group);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HG_, _$4_Object_46defineProperty(_3O_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HH_, _$4_Object_46defineProperty(_3O_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _9U_node = (__constructor.prototype = _3O_, new __constructor());
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _J4_, _$5_Object_46defineProperty(_HV_Term, "joinAuxs", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  _$6_Object_46setPrototypeOf(_HV_Term, _HA_Group);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HI_, _$5_Object_46defineProperty(_3P_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HJ_, _$5_Object_46defineProperty(_3P_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _9V_node = (__constructor.prototype = _3P_, new __constructor());
 
-  _9U_node.key = "nd20";
-  _9U_node.shape = null;
-  _9U_node.text = "!";
-  _9U_node.colour = "cyan";
-  _9U_node.name = void 0;
-  _9U_node.graph = _5_graph;
-  _9U_node.width = ".3";
-  _9U_node.height = ".3";
-  var _9Z_ = [_4r_, _h_link];
-  _9U_node.links = _9Z_;
-
-  _8_.set("nd20", _9U_node);
-
-  var _22_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Gl_Abs.prototype = _22_;
-
-  _$5_Object_46setPrototypeOf(_Gl_Abs, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gl_Abs, _$4_Object_46defineProperty(_22_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gm_, _$4_Object_46defineProperty(_22_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gn_, _$4_Object_46defineProperty(_22_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Go_, _$4_Object_46defineProperty(_22_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _5O_node = (__constructor.prototype = _22_, new __constructor());
-
-  _5O_node.key = "nd21";
-  _5O_node.shape = null;
-  _5O_node.text = "\u03BB";
-  _5O_node.colour = "yellow";
-  _5O_node.name = void 0;
-  _5O_node.graph = _5_graph;
-  _5O_node.width = null;
-  _5O_node.height = null;
-  var _5R_ = [_4r_, _5G_, _5J_];
-  _5O_node.links = _5R_;
-
-  _8_.set("nd21", _5O_node);
-
-  var _5S_node = (__constructor.prototype = _4n_, new __constructor());
-
-  _5S_node.key = "nd22";
-  _5S_node.shape = null;
-  _5S_node.text = "@";
-  _5S_node.colour = "yellow";
-  _5S_node.name = void 0;
-  _5S_node.graph = _5_graph;
-  _5S_node.width = null;
-  _5S_node.height = null;
-  var _5V_ = [_58_, _5C_, _5G_];
-  _5S_node.links = _5V_;
-
-  _8_.set("nd22", _5S_node);
-
-  var _90_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _90_node.key = "nd25";
-  _90_node.shape = null;
-  _90_node.text = "!";
-  _90_node.colour = "cyan";
-  _90_node.name = void 0;
-  _90_node.graph = _5_graph;
-  _90_node.width = ".3";
-  _90_node.height = ".3";
-  var _95_ = [_5Z_, _53_];
-  _90_node.links = _95_;
-
-  _8_.set("nd25", _90_node);
-
-  var _6E_node = (__constructor.prototype = _22_, new __constructor());
-
-  _6E_node.key = "nd26";
-  _6E_node.shape = null;
-  _6E_node.text = "\u03BB";
-  _6E_node.colour = "yellow";
-  _6E_node.name = void 0;
-  _6E_node.graph = _5_graph;
-  _6E_node.width = null;
-  _6E_node.height = null;
-  var _6H_ = [_5Z_, _65_, _68_];
-  _6E_node.links = _6H_;
-
-  _8_.set("nd26", _6E_node);
-
-  var _6I_node = (__constructor.prototype = _4n_, new __constructor());
-
-  _6I_node.key = "nd27";
-  _6I_node.shape = null;
-  _6I_node.text = "@";
-  _6I_node.colour = "yellow";
-  _6I_node.name = void 0;
-  _6I_node.graph = _5_graph;
-  _6I_node.width = null;
-  _6I_node.height = null;
-  var _6L_ = [_5y_, _62_, _65_];
-  _6I_node.links = _6L_;
-
-  _8_.set("nd27", _6I_node);
-
-  var _87_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _87_node.key = "nd30";
-  _87_node.shape = null;
-  _87_node.text = "!";
-  _87_node.colour = "cyan";
-  _87_node.name = void 0;
-  _87_node.graph = _5_graph;
-  _87_node.width = ".3";
-  _87_node.height = ".3";
-  var _8C_ = [_6P_, _5p_];
-  _87_node.links = _8C_;
-
-  _8_.set("nd30", _87_node);
-
-  var _6w_node = (__constructor.prototype = _22_, new __constructor());
-
-  _6w_node.key = "nd31";
-  _6w_node.shape = null;
-  _6w_node.text = "\u03BB";
-  _6w_node.colour = "yellow";
-  _6w_node.name = void 0;
-  _6w_node.graph = _5_graph;
-  _6w_node.width = null;
-  _6w_node.height = null;
-  var _6z_ = [_6P_, _6o_, _6r_];
-  _6w_node.links = _6z_;
-
-  _8_.set("nd31", _6w_node);
-
-  var _70_node = (__constructor.prototype = _4n_, new __constructor());
-
-  _70_node.key = "nd32";
-  _70_node.shape = null;
-  _70_node.text = "@";
-  _70_node.colour = "yellow";
-  _70_node.name = void 0;
-  _70_node.graph = _5_graph;
-  _70_node.width = null;
-  _70_node.height = null;
-  var _73_ = [_6g_, _6k_, _6o_];
-  _70_node.links = _73_;
-
-  _8_.set("nd32", _70_node);
-
-  var _7b_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _7b_node.key = "nd35";
-  _7b_node.shape = null;
-  _7b_node.text = "!";
-  _7b_node.colour = "cyan";
-  _7b_node.name = void 0;
-  _7b_node.graph = _5_graph;
-  _7b_node.width = ".3";
-  _7b_node.height = ".3";
-  var _7g_ = [_77_, _6b_];
-  _7b_node.links = _7g_;
-
-  _8_.set("nd35", _7b_node);
-
-  var _7O_fromNode = (__constructor.prototype = _22_, new __constructor());
-
-  _7O_fromNode.key = "nd36";
-  _7O_fromNode.shape = null;
-  _7O_fromNode.text = "\u03BB";
-  _7O_fromNode.colour = "yellow";
-  _7O_fromNode.name = void 0;
-  _7O_fromNode.graph = _5_graph;
-  _7O_fromNode.width = null;
-  _7O_fromNode.height = null;
-  var _7R_ = [_77_, _7I_, _7B_outLink,,];
-  _7R_.length = 3;
-  _7O_fromNode.links = _7R_;
-
-  _8_.set("nd36", _7O_fromNode);
-
-  var _7Z_ = (__constructor.prototype = _37_, new __constructor());
-
-  _Hg_Weak.prototype = _7Z_;
-
-  _$5_Object_46setPrototypeOf(_Hg_Weak, _H2_Expo);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hg_Weak, _$4_Object_46defineProperty(_7Z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hh_, _$4_Object_46defineProperty(_7Z_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _7T_node = (__constructor.prototype = _7Z_, new __constructor());
-
-  _7T_node.key = "nd39";
-  _7T_node.shape = null;
-  _7T_node.text = "C0";
-  _7T_node.colour = "cyan";
-  _7T_node.name = void 0;
-  _7T_node.graph = _5_graph;
-  _7T_node.width = ".3";
-  _7T_node.height = ".3";
-  var _7Y_ = [_7I_];
-  _7T_node.links = _7Y_;
-
-  _8_.set("nd39", _7T_node);
-
-  var _3V_ = (__constructor.prototype = _37_, new __constructor());
-
-  _HI_Pax.prototype = _3V_;
-
-  _$5_Object_46setPrototypeOf(_HI_Pax, _H2_Expo);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HI_Pax, _$4_Object_46defineProperty(_3V_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HJ_, _$4_Object_46defineProperty(_3V_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HK_, _$4_Object_46defineProperty(_3V_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _7h_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _7h_node.key = "nd40";
-  _7h_node.shape = null;
-  _7h_node.text = "?";
-  _7h_node.colour = "cyan";
-  _7h_node.name = "m";
-  _7h_node.graph = _5_graph;
-  _7h_node.width = ".3";
-  _7h_node.height = ".3";
-  var _7n_ = [_7B_outLink, _6T_link];
-  _7h_node.links = _7n_;
-
-  _8_.set("nd40", _7h_node);
-
-  var _7p_node = (__constructor.prototype = _7v_, new __constructor());
-
-  _7p_node.key = "nd42";
-  _7p_node.shape = null;
-  _7p_node.text = "D";
-  _7p_node.colour = "cyan";
-  _7p_node.name = void 0;
-  _7p_node.graph = _5_graph;
-  _7p_node.width = ".3";
-  _7p_node.height = ".3";
-  var _7u_ = [_6b_, _6g_];
-  _7p_node.links = _7u_;
-
-  _8_.set("nd42", _7p_node);
-
-  var _80_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Hk_Prop.prototype = _80_;
-
-  _$5_Object_46setPrototypeOf(_Hk_Prop, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hk_Prop, _$4_Object_46defineProperty(_80_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hl_, _$4_Object_46defineProperty(_80_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  _$5_Object_46setPrototypeOf(_H6_Box, _H8_Group);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ix_, _$4_Object_46defineProperty(_HL_BoxWrapper, "create", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  _$5_Object_46setPrototypeOf(_HL_BoxWrapper, _HT_Term);
-
-  var _3x_ = (__constructor.prototype = _1c_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HW_Const, _$4_Object_46defineProperty(_3x_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HX_, _$4_Object_46defineProperty(_3x_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HY_, _$4_Object_46defineProperty(_3x_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _HW_Const.prototype = _3x_;
-
-  _$5_Object_46setPrototypeOf(_HW_Const, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hm_, _$4_Object_46defineProperty(_80_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hn_, _$4_Object_46defineProperty(_80_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _7w_node = (__constructor.prototype = _80_, new __constructor());
-
-  _7w_node.key = "nd43";
-  _7w_node.shape = null;
-  _7w_node.text = "s";
-  _7w_node.colour = "indianred1";
-  _7w_node.name = void 0;
-  _7w_node.graph = _5_graph;
-  _7w_node.width = null;
-  _7w_node.height = null;
-  var _7z_ = [_6k_];
-  _7w_node.links = _7z_;
-
-  _8_.set("nd43", _7w_node);
-
-  var _81_node = (__constructor.prototype = _7Z_, new __constructor());
-
-  _81_node.key = "nd46";
-  _81_node.shape = null;
-  _81_node.text = "C0";
-  _81_node.colour = "cyan";
-  _81_node.name = void 0;
-  _81_node.graph = _5_graph;
-  _81_node.width = ".3";
-  _81_node.height = ".3";
-  var _86_ = [_6r_];
-  _81_node.links = _86_;
-
-  _8_.set("nd46", _81_node);
-
-  var _8D_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _8D_node.key = "nd47";
-  _8D_node.shape = null;
-  _8D_node.text = "?";
-  _8D_node.colour = "cyan";
-  _8D_node.name = "m";
-  _8D_node.graph = _5_graph;
-  _8D_node.width = ".3";
-  _8D_node.height = ".3";
-  var _8I_ = [_6T_link, _5d_];
-  _8D_node.links = _8I_;
-
-  _8_.set("nd47", _8D_node);
-
-  var _8K_node = (__constructor.prototype = _7v_, new __constructor());
-
-  _8K_node.key = "nd49";
-  _8K_node.shape = null;
-  _8K_node.text = "D";
-  _8K_node.colour = "cyan";
-  _8K_node.name = void 0;
-  _8K_node.graph = _5_graph;
-  _8K_node.width = ".3";
-  _8K_node.height = ".3";
-  var _8P_ = [_5p_, _5y_];
-  _8K_node.links = _8P_;
-
-  _8_.set("nd49", _8K_node);
-
-  var _8V_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Ho_Delta.prototype = _8V_;
-
-  _$5_Object_46setPrototypeOf(_Ho_Delta, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ho_Delta, _$4_Object_46defineProperty(_8V_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hp_, _$4_Object_46defineProperty(_8V_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hq_, _$4_Object_46defineProperty(_8V_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hr_, _$4_Object_46defineProperty(_8V_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _8Q_fromNode = (__constructor.prototype = _8V_, new __constructor());
-
-  _8Q_fromNode.key = "nd50";
-  _8Q_fromNode.shape = null;
-  _8Q_fromNode.text = "\u0394";
-  _8Q_fromNode.colour = "indianred1";
-  _8Q_fromNode.name = void 0;
-  _8Q_fromNode.graph = _5_graph;
-  _8Q_fromNode.width = null;
-  _8Q_fromNode.height = null;
-  var _8T_ = [_5u_, _62_, _5h_outLink,,];
-  _8T_.length = 3;
-  _8Q_fromNode.links = _8T_;
-
-  _8_.set("nd50", _8Q_fromNode);
-
-  var _8m_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _8m_node.key = "nd53";
-  _8m_node.shape = null;
-  _8m_node.text = "!";
-  _8m_node.colour = "cyan";
-  _8m_node.name = void 0;
-  _8m_node.graph = _5_graph;
-  _8m_node.width = ".3";
-  _8m_node.height = ".3";
-  var _8r_ = [_8Z_, _5u_];
-  _8m_node.links = _8r_;
-
-  _8_.set("nd53", _8m_node);
-
-  var _8i_node = (__constructor.prototype = _3x_, new __constructor());
-
-  _8i_node.key = "nd54";
-  _8i_node.shape = null;
-  _8i_node.text = 3;
-  _8i_node.colour = "mediumpurple1";
-  _8i_node.name = 3;
-  _8i_node.graph = _5_graph;
-  _8i_node.width = null;
-  _8i_node.height = null;
-  var _8l_ = [_8Z_];
-  _8i_node.links = _8l_;
-
-  _8_.set("nd54", _8i_node);
-
-  var _8t_node = (__constructor.prototype = _7Z_, new __constructor());
-
-  _8t_node.key = "nd59";
-  _8t_node.shape = null;
-  _8t_node.text = "C0";
-  _8t_node.colour = "cyan";
-  _8t_node.name = void 0;
-  _8t_node.graph = _5_graph;
-  _8t_node.width = ".3";
-  _8t_node.height = ".3";
-  var _8y_ = [_68_];
-  _8t_node.links = _8y_;
-
-  _8_.set("nd59", _8t_node);
-
-  var _96_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _96_node.key = "nd60";
-  _96_node.shape = null;
-  _96_node.text = "?";
-  _96_node.colour = "cyan";
-  _96_node.name = "m";
-  _96_node.graph = _5_graph;
-  _96_node.width = ".3";
-  _96_node.height = ".3";
-  var _9B_ = [_5d_, _5J_];
-  _96_node.links = _9B_;
-
-  _8_.set("nd60", _96_node);
-
-  var _9C_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _9C_node.key = "nd61";
-  _9C_node.shape = null;
-  _9C_node.text = "?";
-  _9C_node.colour = "cyan";
-  _9C_node.name = "x";
-  _9C_node.graph = _5_graph;
-  _9C_node.width = ".3";
-  _9C_node.height = ".3";
-  var _9I_ = [_5h_outLink, _4v_link];
-  _9C_node.links = _9I_;
-
-  _8_.set("nd61", _9C_node);
-
-  var _9K_node = (__constructor.prototype = _7v_, new __constructor());
-
-  _9K_node.key = "nd63";
-  _9K_node.shape = null;
-  _9K_node.text = "D";
-  _9K_node.colour = "cyan";
-  _9K_node.name = void 0;
-  _9K_node.graph = _5_graph;
-  _9K_node.width = ".3";
-  _9K_node.height = ".3";
-  var _9P_ = [_53_, _58_];
-  _9K_node.links = _9P_;
-
-  _8_.set("nd63", _9K_node);
-
-  var _9Q_node = (__constructor.prototype = _80_, new __constructor());
-
-  _9Q_node.key = "nd64";
-  _9Q_node.shape = null;
-  _9Q_node.text = "s";
-  _9Q_node.colour = "indianred1";
-  _9Q_node.name = void 0;
-  _9Q_node.graph = _5_graph;
-  _9Q_node.width = null;
-  _9Q_node.height = null;
-  var _9T_ = [_5C_];
-  _9Q_node.links = _9T_;
-
-  _8_.set("nd64", _9Q_node);
-
-  var _9a_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _9a_node.key = "nd67";
-  _9a_node.shape = null;
-  _9a_node.text = "?";
-  _9a_node.colour = "cyan";
-  _9a_node.name = "x";
-  _9a_node.graph = _5_graph;
-  _9a_node.width = ".3";
-  _9a_node.height = ".3";
-  var _9f_ = [_4v_link, _1I_link];
-  _9a_node.links = _9f_;
-
-  _8_.set("nd67", _9a_node);
-
-  var _9h_node = (__constructor.prototype = _7v_, new __constructor());
-
-  _9h_node.key = "nd69";
-  _9h_node.shape = null;
-  _9h_node.text = "D";
-  _9h_node.colour = "cyan";
-  _9h_node.name = void 0;
-  _9h_node.graph = _5_graph;
-  _9h_node.width = ".3";
-  _9h_node.height = ".3";
-  var _9m_ = [_h_link, _18_link];
-  _9h_node.links = _9m_;
-
-  _8_.set("nd69", _9h_node);
-
-  var _9n_node = (__constructor.prototype = _4n_, new __constructor());
-
-  _9n_node.key = "nd70";
-  _9n_node.shape = null;
-  _9n_node.text = "@";
-  _9n_node.colour = "yellow";
-  _9n_node.name = void 0;
-  _9n_node.graph = _5_graph;
-  _9n_node.width = null;
-  _9n_node.height = null;
-  var _9q_ = [_y_link, _12_nextLink, _1C_link];
-  _9n_node.links = _9q_;
-
-  _8_.set("nd70", _9n_node);
-
-  var _9r_node = (__constructor.prototype = _4n_, new __constructor());
-
-  _9r_node.key = "nd71";
-  _9r_node.shape = null;
-  _9r_node.text = "@";
-  _9r_node.colour = "yellow";
-  _9r_node.name = void 0;
-  _9r_node.graph = _5_graph;
-  _9r_node.width = null;
-  _9r_node.height = null;
-  var _9u_ = [_m_link, _q_link, _u_link];
-  _9r_node.links = _9u_;
-
-  _8_.set("nd71", _9r_node);
-
-  var _9v_fromNode = (__constructor.prototype = _7v_, new __constructor());
-
-  _9v_fromNode.key = "nd74";
-  _9v_fromNode.shape = null;
-  _9v_fromNode.text = "D";
-  _9v_fromNode.colour = "cyan";
-  _9v_fromNode.name = "max";
-  _9v_fromNode.graph = _5_graph;
-  _9v_fromNode.width = ".3";
-  _9v_fromNode.height = ".3";
-  var _A1_ = [_m_link, _K_outLink,,];
-  _A1_.length = 2;
-  _9v_fromNode.links = _A1_;
-
-  _8_.set("nd74", _9v_fromNode);
-
-  var _A8_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Hs_Deref.prototype = _A8_;
-
-  _$5_Object_46setPrototypeOf(_Hs_Deref, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hs_Deref, _$4_Object_46defineProperty(_A8_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ht_, _$4_Object_46defineProperty(_A8_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hu_, _$4_Object_46defineProperty(_A8_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _A3_node = (__constructor.prototype = _A8_, new __constructor());
-
-  _A3_node.key = "nd77";
-  _A3_node.shape = null;
-  _A3_node.text = "d";
-  _A3_node.colour = "mediumpurple1";
-  _A3_node.name = void 0;
-  _A3_node.graph = _5_graph;
-  _A3_node.width = null;
-  _A3_node.height = null;
-  var _A6_ = [_q_link, _1F_link,,];
-  _A6_.length = 2;
-  _A3_node.links = _A6_;
-
-  _8_.set("nd77", _A3_node);
-
-  var _A9_node = (__constructor.prototype = _7v_, new __constructor());
-
-  _A9_node.key = "nd80";
-  _A9_node.shape = null;
-  _A9_node.text = "D";
-  _A9_node.colour = "cyan";
-  _A9_node.name = void 0;
-  _A9_node.graph = _5_graph;
-  _A9_node.width = ".3";
-  _A9_node.height = ".3";
-  var _AE_ = [_u_link, _y_link];
-  _A9_node.links = _AE_;
-
-  _8_.set("nd80", _A9_node);
-
-  var _AF_otherNode = (__constructor.prototype = _A8_, new __constructor());
-
-  _AF_otherNode.key = "nd83";
-  _AF_otherNode.shape = null;
-  _AF_otherNode.text = "d";
-  _AF_otherNode.colour = "mediumpurple1";
-  _AF_otherNode.name = void 0;
-  _AF_otherNode.graph = _5_graph;
-  _AF_otherNode.width = null;
-  _AF_otherNode.height = null;
-  var _AI_ = [_12_nextLink, _1Q_otherNextLink,,];
-  _AI_.length = 2;
-  _AF_otherNode.links = _AI_;
-
-  _8_.set("nd83", _AF_otherNode);
-
-  var _AK_fromNode = (__constructor.prototype = _36_, new __constructor());
-
-  _AK_fromNode.key = "nd86";
-  _AK_fromNode.shape = null;
-  _AK_fromNode.text = "C";
-  _AK_fromNode.colour = "cyan";
-  _AK_fromNode.name = "x";
-  _AK_fromNode.graph = _5_graph;
-  _AK_fromNode.width = ".3";
-  _AK_fromNode.height = ".3";
-  var _AP_ = [_1F_link, _1I_link, _Z_outLink,,];
-  _AP_.length = 3;
-  _AK_fromNode.links = _AP_;
-
-  _8_.set("nd86", _AK_fromNode);
-
-  var _4U_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _4U_node.key = "nd94";
-  _4U_node.shape = null;
-  _4U_node.text = "!";
-  _4U_node.colour = "cyan";
-  _4U_node.name = void 0;
-  _4U_node.graph = _5_graph;
-  _4U_node.width = ".3";
-  _4U_node.height = ".3";
-  var _4Z_ = [_4H_link, _U_outLink];
-  _4U_node.links = _4Z_;
-
-  _8_.set("nd94", _4U_node);
-
-  var _4Q_node = (__constructor.prototype = _3x_, new __constructor());
-
-  _4Q_node.key = "nd95";
-  _4Q_node.shape = null;
-  _4Q_node.text = 2;
-  _4Q_node.colour = "mediumpurple1";
-  _4Q_node.name = 2;
-  _4Q_node.graph = _5_graph;
-  _4Q_node.width = null;
-  _4Q_node.height = null;
-  var _4T_ = [_4H_link];
-  _4Q_node.links = _4T_;
-
-  _8_.set("nd95", _4Q_node);
-
-  var _3y_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _3y_node.key = "nd105";
-  _3y_node.shape = null;
-  _3y_node.text = "!";
-  _3y_node.colour = "cyan";
-  _3y_node.name = void 0;
-  _3y_node.graph = _5_graph;
-  _3y_node.width = ".3";
-  _3y_node.height = ".3";
-  var _43_ = [_3k_link, _E_outLink];
-  _3y_node.links = _43_;
-
-  _8_.set("nd105", _3y_node);
-
-  var _3t_node = (__constructor.prototype = _3x_, new __constructor());
-
-  _3t_node.key = "nd106";
-  _3t_node.shape = null;
-  _3t_node.text = 1;
-  _3t_node.colour = "mediumpurple1";
-  _3t_node.name = 1;
-  _3t_node.graph = _5_graph;
-  _3t_node.width = null;
-  _3t_node.height = null;
-  var _3w_ = [_3k_link];
-  _3t_node.links = _3w_;
-
-  _8_.set("nd106", _3t_node);
-
-  var _3Z_toNode = (__constructor.prototype = _3O_, new __constructor());
-
-  _3Z_toNode.key = "nd115";
-  _3Z_toNode.shape = null;
-  _3Z_toNode.text = "!";
-  _3Z_toNode.colour = "cyan";
-  _3Z_toNode.name = void 0;
-  _3Z_toNode.graph = _5_graph;
-  _3Z_toNode.width = ".3";
-  _3Z_toNode.height = ".3";
-  var _3e_ = [_1g_link, _K_outLink,,];
-  _3e_.length = 2;
-  _3Z_toNode.links = _3e_;
-
-  _8_.set("nd115", _3Z_toNode);
-
-  var _1y_node = (__constructor.prototype = _22_, new __constructor());
-
-  _1y_node.key = "nd116";
-  _1y_node.shape = null;
-  _1y_node.text = "\u03BB";
-  _1y_node.colour = "yellow";
-  _1y_node.name = void 0;
-  _1y_node.graph = _5_graph;
-  _1y_node.width = null;
-  _1y_node.height = null;
-  var _21_ = [_1g_link, _1o_, _1s_];
-  _1y_node.links = _21_;
-
-  _8_.set("nd116", _1y_node);
-
-  var _3I_node = (__constructor.prototype = _3O_, new __constructor());
-
-  _3I_node.key = "nd119";
-  _3I_node.shape = null;
-  _3I_node.text = "!";
-  _3I_node.colour = "cyan";
-  _3I_node.name = void 0;
-  _3I_node.graph = _5_graph;
-  _3I_node.width = ".3";
-  _3I_node.height = ".3";
-  var _3N_ = [_26_, _1o_];
-  _3I_node.links = _3N_;
-
-  _8_.set("nd119", _3I_node);
-
-  var _2i_node = (__constructor.prototype = _22_, new __constructor());
-
-  _2i_node.key = "nd120";
-  _2i_node.shape = null;
-  _2i_node.text = "\u03BB";
-  _2i_node.colour = "yellow";
-  _2i_node.name = void 0;
-  _2i_node.graph = _5_graph;
-  _2i_node.width = null;
-  _2i_node.height = null;
-  var _2l_ = [_26_, _2a_, _2d_];
-  _2i_node.links = _2l_;
-
-  _8_.set("nd120", _2i_node);
-
-  var _2r_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Gp_If.prototype = _2r_;
-
-  _$5_Object_46setPrototypeOf(_Gp_If, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gp_If, _$4_Object_46defineProperty(_2r_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gq_, _$4_Object_46defineProperty(_2r_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gr_, _$4_Object_46defineProperty(_2r_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gs_, _$4_Object_46defineProperty(_2r_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _2m_fromNode = (__constructor.prototype = _2r_, new __constructor());
-
-  _2m_fromNode.key = "nd121";
-  _2m_fromNode.shape = null;
-  _2m_fromNode.text = "if";
-  _2m_fromNode.colour = "mediumpurple1";
-  _2m_fromNode.name = void 0;
-  _2m_fromNode.graph = _5_graph;
-  _2m_fromNode.width = null;
-  _2m_fromNode.height = null;
-  var _2p_ = [_2I_, _2a_, _2R_outLink, _2X_outLink,,];
-  _2p_.length = 4;
-  _2m_fromNode.links = _2p_;
-
-  _8_.set("nd121", _2m_fromNode);
-
-  var _2y_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _Gt_BinOp.prototype = _2y_;
-  var _Iq_BinOpType = {
+  _9V_node.key = "nd20";
+  _9V_node.shape = null;
+  _9V_node.text = "!";
+  _9V_node.colour = "cyan";
+  _9V_node.name = void 0;
+  _9V_node.graph = _6_graph;
+  _9V_node.width = ".3";
+  _9V_node.height = ".3";
+  var _9a_ = [_4s_, _i_link];
+  _9V_node.links = _9a_;
+
+  _9_.set("nd20", _9V_node);
+
+  var _23_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Gn_Abs.prototype = _23_;
+
+  _$6_Object_46setPrototypeOf(_Gn_Abs, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gn_Abs, _$5_Object_46defineProperty(_23_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Go_, _$5_Object_46defineProperty(_23_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gp_, _$5_Object_46defineProperty(_23_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gq_, _$5_Object_46defineProperty(_23_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _5P_node = (__constructor.prototype = _23_, new __constructor());
+
+  _5P_node.key = "nd21";
+  _5P_node.shape = null;
+  _5P_node.text = "\u03BB";
+  _5P_node.colour = "yellow";
+  _5P_node.name = void 0;
+  _5P_node.graph = _6_graph;
+  _5P_node.width = null;
+  _5P_node.height = null;
+  var _5S_ = [_4s_, _5H_, _5K_];
+  _5P_node.links = _5S_;
+
+  _9_.set("nd21", _5P_node);
+
+  var _5T_node = (__constructor.prototype = _4o_, new __constructor());
+
+  _5T_node.key = "nd22";
+  _5T_node.shape = null;
+  _5T_node.text = "@";
+  _5T_node.colour = "yellow";
+  _5T_node.name = void 0;
+  _5T_node.graph = _6_graph;
+  _5T_node.width = null;
+  _5T_node.height = null;
+  var _5W_ = [_59_, _5D_, _5H_];
+  _5T_node.links = _5W_;
+
+  _9_.set("nd22", _5T_node);
+
+  var _91_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _91_node.key = "nd25";
+  _91_node.shape = null;
+  _91_node.text = "!";
+  _91_node.colour = "cyan";
+  _91_node.name = void 0;
+  _91_node.graph = _6_graph;
+  _91_node.width = ".3";
+  _91_node.height = ".3";
+  var _96_ = [_5a_, _54_];
+  _91_node.links = _96_;
+
+  _9_.set("nd25", _91_node);
+
+  var _6F_node = (__constructor.prototype = _23_, new __constructor());
+
+  _6F_node.key = "nd26";
+  _6F_node.shape = null;
+  _6F_node.text = "\u03BB";
+  _6F_node.colour = "yellow";
+  _6F_node.name = void 0;
+  _6F_node.graph = _6_graph;
+  _6F_node.width = null;
+  _6F_node.height = null;
+  var _6I_ = [_5a_, _66_, _69_];
+  _6F_node.links = _6I_;
+
+  _9_.set("nd26", _6F_node);
+
+  var _6J_node = (__constructor.prototype = _4o_, new __constructor());
+
+  _6J_node.key = "nd27";
+  _6J_node.shape = null;
+  _6J_node.text = "@";
+  _6J_node.colour = "yellow";
+  _6J_node.name = void 0;
+  _6J_node.graph = _6_graph;
+  _6J_node.width = null;
+  _6J_node.height = null;
+  var _6M_ = [_5z_, _63_, _66_];
+  _6J_node.links = _6M_;
+
+  _9_.set("nd27", _6J_node);
+
+  var _88_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _88_node.key = "nd30";
+  _88_node.shape = null;
+  _88_node.text = "!";
+  _88_node.colour = "cyan";
+  _88_node.name = void 0;
+  _88_node.graph = _6_graph;
+  _88_node.width = ".3";
+  _88_node.height = ".3";
+  var _8D_ = [_6Q_, _5q_];
+  _88_node.links = _8D_;
+
+  _9_.set("nd30", _88_node);
+
+  var _6x_node = (__constructor.prototype = _23_, new __constructor());
+
+  _6x_node.key = "nd31";
+  _6x_node.shape = null;
+  _6x_node.text = "\u03BB";
+  _6x_node.colour = "yellow";
+  _6x_node.name = void 0;
+  _6x_node.graph = _6_graph;
+  _6x_node.width = null;
+  _6x_node.height = null;
+  var _70_ = [_6Q_, _6p_, _6s_];
+  _6x_node.links = _70_;
+
+  _9_.set("nd31", _6x_node);
+
+  var _71_node = (__constructor.prototype = _4o_, new __constructor());
+
+  _71_node.key = "nd32";
+  _71_node.shape = null;
+  _71_node.text = "@";
+  _71_node.colour = "yellow";
+  _71_node.name = void 0;
+  _71_node.graph = _6_graph;
+  _71_node.width = null;
+  _71_node.height = null;
+  var _74_ = [_6h_, _6l_, _6p_];
+  _71_node.links = _74_;
+
+  _9_.set("nd32", _71_node);
+
+  var _7c_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _7c_node.key = "nd35";
+  _7c_node.shape = null;
+  _7c_node.text = "!";
+  _7c_node.colour = "cyan";
+  _7c_node.name = void 0;
+  _7c_node.graph = _6_graph;
+  _7c_node.width = ".3";
+  _7c_node.height = ".3";
+  var _7h_ = [_78_, _6c_];
+  _7c_node.links = _7h_;
+
+  _9_.set("nd35", _7c_node);
+
+  var _7P_fromNode = (__constructor.prototype = _23_, new __constructor());
+
+  _7P_fromNode.key = "nd36";
+  _7P_fromNode.shape = null;
+  _7P_fromNode.text = "\u03BB";
+  _7P_fromNode.colour = "yellow";
+  _7P_fromNode.name = void 0;
+  _7P_fromNode.graph = _6_graph;
+  _7P_fromNode.width = null;
+  _7P_fromNode.height = null;
+  var _7S_ = [_78_, _7J_, _7C_outLink,,];
+  _7S_.length = 3;
+  _7P_fromNode.links = _7S_;
+
+  _9_.set("nd36", _7P_fromNode);
+
+  var _7a_ = (__constructor.prototype = _38_, new __constructor());
+
+  _Hi_Weak.prototype = _7a_;
+
+  _$6_Object_46setPrototypeOf(_Hi_Weak, _H4_Expo);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hi_Weak, _$5_Object_46defineProperty(_7a_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hj_, _$5_Object_46defineProperty(_7a_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _7U_node = (__constructor.prototype = _7a_, new __constructor());
+
+  _7U_node.key = "nd39";
+  _7U_node.shape = null;
+  _7U_node.text = "C0";
+  _7U_node.colour = "cyan";
+  _7U_node.name = void 0;
+  _7U_node.graph = _6_graph;
+  _7U_node.width = ".3";
+  _7U_node.height = ".3";
+  var _7Z_ = [_7J_];
+  _7U_node.links = _7Z_;
+
+  _9_.set("nd39", _7U_node);
+
+  var _3W_ = (__constructor.prototype = _38_, new __constructor());
+
+  _HK_Pax.prototype = _3W_;
+
+  _$6_Object_46setPrototypeOf(_HK_Pax, _H4_Expo);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HK_Pax, _$5_Object_46defineProperty(_3W_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HL_, _$5_Object_46defineProperty(_3W_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HM_, _$5_Object_46defineProperty(_3W_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _7i_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _7i_node.key = "nd40";
+  _7i_node.shape = null;
+  _7i_node.text = "?";
+  _7i_node.colour = "cyan";
+  _7i_node.name = "m";
+  _7i_node.graph = _6_graph;
+  _7i_node.width = ".3";
+  _7i_node.height = ".3";
+  var _7o_ = [_7C_outLink, _6U_link];
+  _7i_node.links = _7o_;
+
+  _9_.set("nd40", _7i_node);
+
+  var _7q_node = (__constructor.prototype = _7w_, new __constructor());
+
+  _7q_node.key = "nd42";
+  _7q_node.shape = null;
+  _7q_node.text = "D";
+  _7q_node.colour = "cyan";
+  _7q_node.name = void 0;
+  _7q_node.graph = _6_graph;
+  _7q_node.width = ".3";
+  _7q_node.height = ".3";
+  var _7v_ = [_6c_, _6h_];
+  _7q_node.links = _7v_;
+
+  _9_.set("nd42", _7q_node);
+
+  var _81_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Hm_Prop.prototype = _81_;
+
+  _$6_Object_46setPrototypeOf(_Hm_Prop, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hm_Prop, _$5_Object_46defineProperty(_81_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hn_, _$5_Object_46defineProperty(_81_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  _$6_Object_46setPrototypeOf(_H8_Box, _HA_Group);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _J3_, _$5_Object_46defineProperty(_HN_BoxWrapper, "create", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  _$6_Object_46setPrototypeOf(_HN_BoxWrapper, _HV_Term);
+
+  var _3y_ = (__constructor.prototype = _1d_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HY_Const, _$5_Object_46defineProperty(_3y_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HZ_, _$5_Object_46defineProperty(_3y_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ha_, _$5_Object_46defineProperty(_3y_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _HY_Const.prototype = _3y_;
+
+  _$6_Object_46setPrototypeOf(_HY_Const, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ho_, _$5_Object_46defineProperty(_81_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hp_, _$5_Object_46defineProperty(_81_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _7x_node = (__constructor.prototype = _81_, new __constructor());
+
+  _7x_node.key = "nd43";
+  _7x_node.shape = null;
+  _7x_node.text = "s";
+  _7x_node.colour = "indianred1";
+  _7x_node.name = void 0;
+  _7x_node.graph = _6_graph;
+  _7x_node.width = null;
+  _7x_node.height = null;
+  var _80_ = [_6l_];
+  _7x_node.links = _80_;
+
+  _9_.set("nd43", _7x_node);
+
+  var _82_node = (__constructor.prototype = _7a_, new __constructor());
+
+  _82_node.key = "nd46";
+  _82_node.shape = null;
+  _82_node.text = "C0";
+  _82_node.colour = "cyan";
+  _82_node.name = void 0;
+  _82_node.graph = _6_graph;
+  _82_node.width = ".3";
+  _82_node.height = ".3";
+  var _87_ = [_6s_];
+  _82_node.links = _87_;
+
+  _9_.set("nd46", _82_node);
+
+  var _8E_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _8E_node.key = "nd47";
+  _8E_node.shape = null;
+  _8E_node.text = "?";
+  _8E_node.colour = "cyan";
+  _8E_node.name = "m";
+  _8E_node.graph = _6_graph;
+  _8E_node.width = ".3";
+  _8E_node.height = ".3";
+  var _8J_ = [_6U_link, _5e_];
+  _8E_node.links = _8J_;
+
+  _9_.set("nd47", _8E_node);
+
+  var _8L_node = (__constructor.prototype = _7w_, new __constructor());
+
+  _8L_node.key = "nd49";
+  _8L_node.shape = null;
+  _8L_node.text = "D";
+  _8L_node.colour = "cyan";
+  _8L_node.name = void 0;
+  _8L_node.graph = _6_graph;
+  _8L_node.width = ".3";
+  _8L_node.height = ".3";
+  var _8Q_ = [_5q_, _5z_];
+  _8L_node.links = _8Q_;
+
+  _9_.set("nd49", _8L_node);
+
+  var _8W_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Hq_Delta.prototype = _8W_;
+
+  _$6_Object_46setPrototypeOf(_Hq_Delta, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hq_Delta, _$5_Object_46defineProperty(_8W_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hr_, _$5_Object_46defineProperty(_8W_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hs_, _$5_Object_46defineProperty(_8W_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ht_, _$5_Object_46defineProperty(_8W_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _8R_fromNode = (__constructor.prototype = _8W_, new __constructor());
+
+  _8R_fromNode.key = "nd50";
+  _8R_fromNode.shape = null;
+  _8R_fromNode.text = "\u0394";
+  _8R_fromNode.colour = "indianred1";
+  _8R_fromNode.name = void 0;
+  _8R_fromNode.graph = _6_graph;
+  _8R_fromNode.width = null;
+  _8R_fromNode.height = null;
+  var _8U_ = [_5v_, _63_, _5i_outLink,,];
+  _8U_.length = 3;
+  _8R_fromNode.links = _8U_;
+
+  _9_.set("nd50", _8R_fromNode);
+
+  var _8n_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _8n_node.key = "nd53";
+  _8n_node.shape = null;
+  _8n_node.text = "!";
+  _8n_node.colour = "cyan";
+  _8n_node.name = void 0;
+  _8n_node.graph = _6_graph;
+  _8n_node.width = ".3";
+  _8n_node.height = ".3";
+  var _8s_ = [_8a_, _5v_];
+  _8n_node.links = _8s_;
+
+  _9_.set("nd53", _8n_node);
+
+  var _8j_node = (__constructor.prototype = _3y_, new __constructor());
+
+  _8j_node.key = "nd54";
+  _8j_node.shape = null;
+  _8j_node.text = 3;
+  _8j_node.colour = "mediumpurple1";
+  _8j_node.name = 3;
+  _8j_node.graph = _6_graph;
+  _8j_node.width = null;
+  _8j_node.height = null;
+  var _8m_ = [_8a_];
+  _8j_node.links = _8m_;
+
+  _9_.set("nd54", _8j_node);
+
+  var _8u_node = (__constructor.prototype = _7a_, new __constructor());
+
+  _8u_node.key = "nd59";
+  _8u_node.shape = null;
+  _8u_node.text = "C0";
+  _8u_node.colour = "cyan";
+  _8u_node.name = void 0;
+  _8u_node.graph = _6_graph;
+  _8u_node.width = ".3";
+  _8u_node.height = ".3";
+  var _8z_ = [_69_];
+  _8u_node.links = _8z_;
+
+  _9_.set("nd59", _8u_node);
+
+  var _97_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _97_node.key = "nd60";
+  _97_node.shape = null;
+  _97_node.text = "?";
+  _97_node.colour = "cyan";
+  _97_node.name = "m";
+  _97_node.graph = _6_graph;
+  _97_node.width = ".3";
+  _97_node.height = ".3";
+  var _9C_ = [_5e_, _5K_];
+  _97_node.links = _9C_;
+
+  _9_.set("nd60", _97_node);
+
+  var _9D_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _9D_node.key = "nd61";
+  _9D_node.shape = null;
+  _9D_node.text = "?";
+  _9D_node.colour = "cyan";
+  _9D_node.name = "x";
+  _9D_node.graph = _6_graph;
+  _9D_node.width = ".3";
+  _9D_node.height = ".3";
+  var _9J_ = [_5i_outLink, _4w_link];
+  _9D_node.links = _9J_;
+
+  _9_.set("nd61", _9D_node);
+
+  var _9L_node = (__constructor.prototype = _7w_, new __constructor());
+
+  _9L_node.key = "nd63";
+  _9L_node.shape = null;
+  _9L_node.text = "D";
+  _9L_node.colour = "cyan";
+  _9L_node.name = void 0;
+  _9L_node.graph = _6_graph;
+  _9L_node.width = ".3";
+  _9L_node.height = ".3";
+  var _9Q_ = [_54_, _59_];
+  _9L_node.links = _9Q_;
+
+  _9_.set("nd63", _9L_node);
+
+  var _9R_node = (__constructor.prototype = _81_, new __constructor());
+
+  _9R_node.key = "nd64";
+  _9R_node.shape = null;
+  _9R_node.text = "s";
+  _9R_node.colour = "indianred1";
+  _9R_node.name = void 0;
+  _9R_node.graph = _6_graph;
+  _9R_node.width = null;
+  _9R_node.height = null;
+  var _9U_ = [_5D_];
+  _9R_node.links = _9U_;
+
+  _9_.set("nd64", _9R_node);
+
+  var _9b_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _9b_node.key = "nd67";
+  _9b_node.shape = null;
+  _9b_node.text = "?";
+  _9b_node.colour = "cyan";
+  _9b_node.name = "x";
+  _9b_node.graph = _6_graph;
+  _9b_node.width = ".3";
+  _9b_node.height = ".3";
+  var _9g_ = [_4w_link, _1J_link];
+  _9b_node.links = _9g_;
+
+  _9_.set("nd67", _9b_node);
+
+  var _9i_node = (__constructor.prototype = _7w_, new __constructor());
+
+  _9i_node.key = "nd69";
+  _9i_node.shape = null;
+  _9i_node.text = "D";
+  _9i_node.colour = "cyan";
+  _9i_node.name = void 0;
+  _9i_node.graph = _6_graph;
+  _9i_node.width = ".3";
+  _9i_node.height = ".3";
+  var _9n_ = [_i_link, _19_link];
+  _9i_node.links = _9n_;
+
+  _9_.set("nd69", _9i_node);
+
+  var _9o_node = (__constructor.prototype = _4o_, new __constructor());
+
+  _9o_node.key = "nd70";
+  _9o_node.shape = null;
+  _9o_node.text = "@";
+  _9o_node.colour = "yellow";
+  _9o_node.name = void 0;
+  _9o_node.graph = _6_graph;
+  _9o_node.width = null;
+  _9o_node.height = null;
+  var _9r_ = [_z_link, _13_nextLink, _1D_link];
+  _9o_node.links = _9r_;
+
+  _9_.set("nd70", _9o_node);
+
+  var _9s_node = (__constructor.prototype = _4o_, new __constructor());
+
+  _9s_node.key = "nd71";
+  _9s_node.shape = null;
+  _9s_node.text = "@";
+  _9s_node.colour = "yellow";
+  _9s_node.name = void 0;
+  _9s_node.graph = _6_graph;
+  _9s_node.width = null;
+  _9s_node.height = null;
+  var _9v_ = [_n_link, _r_link, _v_link];
+  _9s_node.links = _9v_;
+
+  _9_.set("nd71", _9s_node);
+
+  var _9w_fromNode = (__constructor.prototype = _7w_, new __constructor());
+
+  _9w_fromNode.key = "nd74";
+  _9w_fromNode.shape = null;
+  _9w_fromNode.text = "D";
+  _9w_fromNode.colour = "cyan";
+  _9w_fromNode.name = "max";
+  _9w_fromNode.graph = _6_graph;
+  _9w_fromNode.width = ".3";
+  _9w_fromNode.height = ".3";
+  var _A2_ = [_n_link, _L_outLink,,];
+  _A2_.length = 2;
+  _9w_fromNode.links = _A2_;
+
+  _9_.set("nd74", _9w_fromNode);
+
+  var _A9_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Hu_Deref.prototype = _A9_;
+
+  _$6_Object_46setPrototypeOf(_Hu_Deref, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hu_Deref, _$5_Object_46defineProperty(_A9_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hv_, _$5_Object_46defineProperty(_A9_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hw_, _$5_Object_46defineProperty(_A9_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _A4_node = (__constructor.prototype = _A9_, new __constructor());
+
+  _A4_node.key = "nd77";
+  _A4_node.shape = null;
+  _A4_node.text = "d";
+  _A4_node.colour = "mediumpurple1";
+  _A4_node.name = void 0;
+  _A4_node.graph = _6_graph;
+  _A4_node.width = null;
+  _A4_node.height = null;
+  var _A7_ = [_r_link, _1G_link,,];
+  _A7_.length = 2;
+  _A4_node.links = _A7_;
+
+  _9_.set("nd77", _A4_node);
+
+  var _AA_node = (__constructor.prototype = _7w_, new __constructor());
+
+  _AA_node.key = "nd80";
+  _AA_node.shape = null;
+  _AA_node.text = "D";
+  _AA_node.colour = "cyan";
+  _AA_node.name = void 0;
+  _AA_node.graph = _6_graph;
+  _AA_node.width = ".3";
+  _AA_node.height = ".3";
+  var _AF_ = [_v_link, _z_link];
+  _AA_node.links = _AF_;
+
+  _9_.set("nd80", _AA_node);
+
+  var _AG_otherNode = (__constructor.prototype = _A9_, new __constructor());
+
+  _AG_otherNode.key = "nd83";
+  _AG_otherNode.shape = null;
+  _AG_otherNode.text = "d";
+  _AG_otherNode.colour = "mediumpurple1";
+  _AG_otherNode.name = void 0;
+  _AG_otherNode.graph = _6_graph;
+  _AG_otherNode.width = null;
+  _AG_otherNode.height = null;
+  var _AJ_ = [_13_nextLink, _1R_otherNextLink,,];
+  _AJ_.length = 2;
+  _AG_otherNode.links = _AJ_;
+
+  _9_.set("nd83", _AG_otherNode);
+
+  var _AL_fromNode = (__constructor.prototype = _37_, new __constructor());
+
+  _AL_fromNode.key = "nd86";
+  _AL_fromNode.shape = null;
+  _AL_fromNode.text = "C";
+  _AL_fromNode.colour = "cyan";
+  _AL_fromNode.name = "x";
+  _AL_fromNode.graph = _6_graph;
+  _AL_fromNode.width = ".3";
+  _AL_fromNode.height = ".3";
+  var _AQ_ = [_1G_link, _1J_link, _a_outLink,,];
+  _AQ_.length = 3;
+  _AL_fromNode.links = _AQ_;
+
+  _9_.set("nd86", _AL_fromNode);
+
+  var _4V_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _4V_node.key = "nd94";
+  _4V_node.shape = null;
+  _4V_node.text = "!";
+  _4V_node.colour = "cyan";
+  _4V_node.name = void 0;
+  _4V_node.graph = _6_graph;
+  _4V_node.width = ".3";
+  _4V_node.height = ".3";
+  var _4a_ = [_4I_link, _V_outLink];
+  _4V_node.links = _4a_;
+
+  _9_.set("nd94", _4V_node);
+
+  var _4R_node = (__constructor.prototype = _3y_, new __constructor());
+
+  _4R_node.key = "nd95";
+  _4R_node.shape = null;
+  _4R_node.text = 2;
+  _4R_node.colour = "mediumpurple1";
+  _4R_node.name = 2;
+  _4R_node.graph = _6_graph;
+  _4R_node.width = null;
+  _4R_node.height = null;
+  var _4U_ = [_4I_link];
+  _4R_node.links = _4U_;
+
+  _9_.set("nd95", _4R_node);
+
+  var _3z_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _3z_node.key = "nd105";
+  _3z_node.shape = null;
+  _3z_node.text = "!";
+  _3z_node.colour = "cyan";
+  _3z_node.name = void 0;
+  _3z_node.graph = _6_graph;
+  _3z_node.width = ".3";
+  _3z_node.height = ".3";
+  var _44_ = [_3l_link, _F_outLink];
+  _3z_node.links = _44_;
+
+  _9_.set("nd105", _3z_node);
+
+  var _3u_node = (__constructor.prototype = _3y_, new __constructor());
+
+  _3u_node.key = "nd106";
+  _3u_node.shape = null;
+  _3u_node.text = 1;
+  _3u_node.colour = "mediumpurple1";
+  _3u_node.name = 1;
+  _3u_node.graph = _6_graph;
+  _3u_node.width = null;
+  _3u_node.height = null;
+  var _3x_ = [_3l_link];
+  _3u_node.links = _3x_;
+
+  _9_.set("nd106", _3u_node);
+
+  var _3a_toNode = (__constructor.prototype = _3P_, new __constructor());
+
+  _3a_toNode.key = "nd115";
+  _3a_toNode.shape = null;
+  _3a_toNode.text = "!";
+  _3a_toNode.colour = "cyan";
+  _3a_toNode.name = void 0;
+  _3a_toNode.graph = _6_graph;
+  _3a_toNode.width = ".3";
+  _3a_toNode.height = ".3";
+  var _3f_ = [_1h_link, _L_outLink,,];
+  _3f_.length = 2;
+  _3a_toNode.links = _3f_;
+
+  _9_.set("nd115", _3a_toNode);
+
+  var _1z_node = (__constructor.prototype = _23_, new __constructor());
+
+  _1z_node.key = "nd116";
+  _1z_node.shape = null;
+  _1z_node.text = "\u03BB";
+  _1z_node.colour = "yellow";
+  _1z_node.name = void 0;
+  _1z_node.graph = _6_graph;
+  _1z_node.width = null;
+  _1z_node.height = null;
+  var _22_ = [_1h_link, _1p_, _1t_];
+  _1z_node.links = _22_;
+
+  _9_.set("nd116", _1z_node);
+
+  var _3J_node = (__constructor.prototype = _3P_, new __constructor());
+
+  _3J_node.key = "nd119";
+  _3J_node.shape = null;
+  _3J_node.text = "!";
+  _3J_node.colour = "cyan";
+  _3J_node.name = void 0;
+  _3J_node.graph = _6_graph;
+  _3J_node.width = ".3";
+  _3J_node.height = ".3";
+  var _3O_ = [_27_, _1p_];
+  _3J_node.links = _3O_;
+
+  _9_.set("nd119", _3J_node);
+
+  var _2j_node = (__constructor.prototype = _23_, new __constructor());
+
+  _2j_node.key = "nd120";
+  _2j_node.shape = null;
+  _2j_node.text = "\u03BB";
+  _2j_node.colour = "yellow";
+  _2j_node.name = void 0;
+  _2j_node.graph = _6_graph;
+  _2j_node.width = null;
+  _2j_node.height = null;
+  var _2m_ = [_27_, _2b_, _2e_];
+  _2j_node.links = _2m_;
+
+  _9_.set("nd120", _2j_node);
+
+  var _2s_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Gr_If.prototype = _2s_;
+
+  _$6_Object_46setPrototypeOf(_Gr_If, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gr_If, _$5_Object_46defineProperty(_2s_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gs_, _$5_Object_46defineProperty(_2s_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gt_, _$5_Object_46defineProperty(_2s_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gu_, _$5_Object_46defineProperty(_2s_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _2n_fromNode = (__constructor.prototype = _2s_, new __constructor());
+
+  _2n_fromNode.key = "nd121";
+  _2n_fromNode.shape = null;
+  _2n_fromNode.text = "if";
+  _2n_fromNode.colour = "mediumpurple1";
+  _2n_fromNode.name = void 0;
+  _2n_fromNode.graph = _6_graph;
+  _2n_fromNode.width = null;
+  _2n_fromNode.height = null;
+  var _2q_ = [_2J_, _2b_, _2S_outLink, _2Y_outLink,,];
+  _2q_.length = 4;
+  _2n_fromNode.links = _2q_;
+
+  _9_.set("nd121", _2n_fromNode);
+
+  var _2z_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Gv_BinOp.prototype = _2z_;
+  var _Iw_BinOpType = {
     And: 0,
     Or: 1,
     Plus: 2,
@@ -5531,2003 +5743,2013 @@
     Div: 7,
     Lte: 5
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Io_, _$4_Object_46defineProperty(_Gt_BinOp, "createPlus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ip_, _$4_Object_46defineProperty(_Gt_BinOp, "createMult", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  _$5_Object_46setPrototypeOf(_Gt_BinOp, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gt_BinOp, _$4_Object_46defineProperty(_2y_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gu_, _$4_Object_46defineProperty(_2y_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gv_, _$4_Object_46defineProperty(_2y_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gw_, _$4_Object_46defineProperty(_2y_, "binOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gx_, _$4_Object_46defineProperty(_2y_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _2s_fromNode = (__constructor.prototype = _2y_, new __constructor());
-
-  _2s_fromNode.key = "nd122";
-  _2s_fromNode.shape = null;
-  _2s_fromNode.text = "<=";
-  _2s_fromNode.colour = "mediumpurple1";
-  _2s_fromNode.name = void 0;
-  _2s_fromNode.graph = _5_graph;
-  _2s_fromNode.width = null;
-  _2s_fromNode.height = null;
-  var _2v_ = [_2I_, _2U_outLink, _2N_outLink,,];
-  _2v_.length = 3;
-  _2s_fromNode.links = _2v_;
-  _2s_fromNode.subType = 5;
-
-  _8_.set("nd122", _2s_fromNode);
-
-  var _2z_node = (__constructor.prototype = _36_, new __constructor());
-
-  _2z_node.key = "nd132";
-  _2z_node.shape = null;
-  _2z_node.text = "C";
-  _2z_node.colour = "cyan";
-  _2z_node.name = "y";
-  _2z_node.graph = _5_graph;
-  _2z_node.width = ".3";
-  _2z_node.height = ".3";
-  var _35_ = [_2N_outLink, _2R_outLink, _2d_];
-  _2z_node.links = _35_;
-
-  _8_.set("nd132", _2z_node);
-
-  var _38_node = (__constructor.prototype = _36_, new __constructor());
-
-  _38_node.key = "nd133";
-  _38_node.shape = null;
-  _38_node.text = "C";
-  _38_node.colour = "cyan";
-  _38_node.name = "x";
-  _38_node.graph = _5_graph;
-  _38_node.width = ".3";
-  _38_node.height = ".3";
-  var _3E_ = [_2U_outLink, _2X_outLink, _2A_];
-  _38_node.links = _3E_;
-
-  _8_.set("nd133", _38_node);
-
-  var _3P_node = (__constructor.prototype = _3V_, new __constructor());
-
-  _3P_node.key = "nd135";
-  _3P_node.shape = null;
-  _3P_node.text = "?";
-  _3P_node.colour = "cyan";
-  _3P_node.name = "x";
-  _3P_node.graph = _5_graph;
-  _3P_node.width = ".3";
-  _3P_node.height = ".3";
-  var _3U_ = [_2A_, _1s_];
-  _3P_node.links = _3U_;
-
-  _8_.set("nd135", _3P_node);
-
-  var _4A_ = (__constructor.prototype = _1c_, new __constructor());
-
-  _HZ_Mod.prototype = _4A_;
-
-  _$5_Object_46setPrototypeOf(_HZ_Mod, _Gk_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HZ_Mod, _$4_Object_46defineProperty(_4A_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ha_, _$4_Object_46defineProperty(_4A_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hb_, _$4_Object_46defineProperty(_4A_, "update", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hc_, _$4_Object_46defineProperty(_4A_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _45_toNode = (__constructor.prototype = _4A_, new __constructor());
-
-  _45_toNode.key = "nd139";
-  _45_toNode.shape = null;
-  _45_toNode.text = "M";
-  _45_toNode.colour = "indianred1";
-  _45_toNode.name = void 0;
-  _45_toNode.graph = _5_graph;
-  _45_toNode.width = null;
-  _45_toNode.height = null;
-  var _48_ = [_Q_, _E_outLink, _Z_outLink,,];
-  _48_.length = 3;
-  _45_toNode.links = _48_;
-
-  _8_.set("nd139", _45_toNode);
-
-  var _4B_toNode = (__constructor.prototype = _3x_, new __constructor());
-
-  _4B_toNode.key = "nd140";
-  _4B_toNode.shape = null;
-  _4B_toNode.text = 1;
-  _4B_toNode.colour = "mediumpurple1";
-  _4B_toNode.name = 1;
-  _4B_toNode.graph = _5_graph;
-  _4B_toNode.width = null;
-  _4B_toNode.height = null;
-  var _4D_ = [_Q_];
-  _4B_toNode.links = _4D_;
-
-  _8_.set("nd140", _4B_toNode);
-
-  var _4b_toNode = (__constructor.prototype = _4A_, new __constructor());
-
-  _4b_toNode.key = "nd141";
-  _4b_toNode.shape = null;
-  _4b_toNode.text = "M";
-  _4b_toNode.colour = "indianred1";
-  _4b_toNode.name = void 0;
-  _4b_toNode.graph = _5_graph;
-  _4b_toNode.width = null;
-  _4b_toNode.height = null;
-  var _4e_ = [_d_, _U_outLink, _1Q_otherNextLink,,];
-  _4e_.length = 3;
-  _4b_toNode.links = _4e_;
-
-  _8_.set("nd141", _4b_toNode);
-
-  var _4g_toNode = (__constructor.prototype = _3x_, new __constructor());
-
-  _4g_toNode.key = "nd142";
-  _4g_toNode.shape = null;
-  _4g_toNode.text = 2;
-  _4g_toNode.colour = "mediumpurple1";
-  _4g_toNode.name = 2;
-  _4g_toNode.graph = _5_graph;
-  _4g_toNode.width = null;
-  _4g_toNode.height = null;
-  var _4i_ = [_d_];
-  _4g_toNode.links = _4i_;
-
-  _8_.set("nd142", _4g_toNode);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ga_, _$4_Object_46defineProperty(_1c_, "addToGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gb_, _$4_Object_46defineProperty(_1c_, "addToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gc_, _$4_Object_46defineProperty(_1c_, "changeToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gd_, _$4_Object_46defineProperty(_1c_, "findLinksConnected", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ge_, _$4_Object_46defineProperty(_1c_, "findLinksInto", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gf_, _$4_Object_46defineProperty(_1c_, "findLinksOutOf", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gg_, _$4_Object_46defineProperty(_1c_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gh_, _$4_Object_46defineProperty(_1c_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gi_, _$4_Object_46defineProperty(_1c_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gj_, _$4_Object_46defineProperty(_1c_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _3H_ = (__constructor.prototype = _1c_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H8_Group, _$4_Object_46defineProperty(_3H_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H9_, _$4_Object_46defineProperty(_3H_, "addNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HA_, _$4_Object_46defineProperty(_3H_, "removeNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HB_, _$4_Object_46defineProperty(_3H_, "addLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HC_, _$4_Object_46defineProperty(_3H_, "removeLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HD_, _$4_Object_46defineProperty(_3H_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _A_ = (__constructor.prototype = _3H_, new __constructor());
-
-  _A_.key = "nd0";
-  _A_.shape = null;
-  _A_.text = null;
-  _A_.colour = null;
-  _A_.name = void 0;
-  _A_.graph = _5_graph;
-  _A_.group = null;
-  _A_.width = null;
-  _A_.height = null;
-  var _D_ = [_E_outLink, _K_outLink, _Q_, _U_outLink, _Z_outLink, _d_, _h_link, _m_link, _q_link, _u_link, _y_link, _12_nextLink, _18_link, _1C_link, _1F_link, _1I_link, _1M_link, _1Q_otherNextLink,,,,,,,,];
-  _D_.length = 18;
-  _A_.links = _D_;
-
-  var _3Y_ = (__constructor.prototype = _3H_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HT_Term, _$4_Object_46defineProperty(_3Y_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HU_, _$4_Object_46defineProperty(_3Y_, "set", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HV_, _$4_Object_46defineProperty(_3Y_, "createPaxsOnTopOf", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _3X_ = (__constructor.prototype = _3Y_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HL_BoxWrapper, _$4_Object_46defineProperty(_3X_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HM_, _$4_Object_46defineProperty(_3X_, "set", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HN_, _$4_Object_46defineProperty(_3X_, "removeAux", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HO_, _$4_Object_46defineProperty(_3X_, "moveOut", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HP_, _$4_Object_46defineProperty(_3X_, "copyBox", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HQ_, _$4_Object_46defineProperty(_3X_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HR_, _$4_Object_46defineProperty(_3X_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HS_, _$4_Object_46defineProperty(_3X_, "deleteAndPreserveLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _1d_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _1d_node.key = "nd113";
-  _1d_node.shape = null;
-  _1d_node.text = null;
-  _1d_node.colour = null;
-  _1d_node.name = void 0;
-  _1d_node.graph = _5_graph;
-  _1d_node.group = _A_;
-  _1d_node.width = null;
-  _1d_node.height = null;
-  var _1f_ = [_1g_link];
-  _1d_node.links = _1f_;
-
-  var _3G_ = (__constructor.prototype = _3H_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H6_Box, _$4_Object_46defineProperty(_3G_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H7_, _$4_Object_46defineProperty(_3G_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _1l_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _1l_node.key = "nd114";
-  _1l_node.shape = null;
-  _1l_node.text = null;
-  _1l_node.colour = null;
-  _1l_node.name = void 0;
-  _1l_node.graph = _5_graph;
-  _1l_node.group = _1d_node;
-  _1l_node.width = null;
-  _1l_node.height = null;
-  var _1n_ = [_1o_, _1s_];
-  _1l_node.links = _1n_;
-
-  var _23_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _23_node.key = "nd117";
-  _23_node.shape = null;
-  _23_node.text = null;
-  _23_node.colour = null;
-  _23_node.name = void 0;
-  _23_node.graph = _5_graph;
-  _23_node.group = _1l_node;
-  _23_node.width = null;
-  _23_node.height = null;
-  var _25_ = [_26_, _2A_];
-  _23_node.links = _25_;
-
-  var _2F_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _2F_node.key = "nd118";
-  _2F_node.shape = null;
-  _2F_node.text = null;
-  _2F_node.colour = null;
-  _2F_node.name = void 0;
-  _2F_node.graph = _5_graph;
-  _2F_node.group = _23_node;
-  _2F_node.width = null;
-  _2F_node.height = null;
-  var _2H_ = [_2I_, _2N_outLink, _2R_outLink, _2U_outLink, _2X_outLink, _2a_, _2d_,,,,,];
-  _2H_.length = 7;
-  _2F_node.links = _2H_;
-  var _2h_ = [_2i_node, _2m_fromNode, _2s_fromNode, _2z_node, _38_node,,,,,];
-  _2h_.length = 5;
-  _2F_node.nodes = _2h_;
-  var _2E_ = [_2F_node, _3I_node, _3P_node];
-  _23_node.nodes = _2E_;
-  _23_node.prin = _3I_node;
-  var _3W_newPaxs = [_3P_node];
-  _23_node.auxs = _3W_newPaxs;
-  _23_node.box = _2F_node;
-  var _1x_ = [_1y_node, _23_node];
-  _1l_node.nodes = _1x_;
-  var _1k_ = [_1l_node, _3Z_toNode];
-  _1d_node.nodes = _1k_;
-  _1d_node.prin = _3Z_toNode;
-  var _3g_newPaxs = [];
-  _1d_node.auxs = _3g_newPaxs;
-  _1d_node.box = _1l_node;
-
-  var _3h_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _3h_node.key = "nd103";
-  _3h_node.shape = null;
-  _3h_node.text = null;
-  _3h_node.colour = null;
-  _3h_node.name = void 0;
-  _3h_node.graph = _5_graph;
-  _3h_node.group = _A_;
-  _3h_node.width = null;
-  _3h_node.height = null;
-  var _3j_ = [_3k_link];
-  _3h_node.links = _3j_;
-
-  var _3p_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _3p_node.key = "nd104";
-  _3p_node.shape = null;
-  _3p_node.text = null;
-  _3p_node.colour = null;
-  _3p_node.name = void 0;
-  _3p_node.graph = _5_graph;
-  _3p_node.group = _3h_node;
-  _3p_node.width = null;
-  _3p_node.height = null;
-  var _3r_ = [];
-  _3p_node.links = _3r_;
-  var _3s_ = [_3t_node];
-  _3p_node.nodes = _3s_;
-  var _3o_ = [_3p_node, _3y_node];
-  _3h_node.nodes = _3o_;
-  _3h_node.prin = _3y_node;
-  var _44_ = [];
-  _3h_node.auxs = _44_;
-  _3h_node.box = _3p_node;
-
-  var _4E_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _4E_node.key = "nd92";
-  _4E_node.shape = null;
-  _4E_node.text = null;
-  _4E_node.colour = null;
-  _4E_node.name = void 0;
-  _4E_node.graph = _5_graph;
-  _4E_node.group = _A_;
-  _4E_node.width = null;
-  _4E_node.height = null;
-  var _4G_ = [_4H_link];
-  _4E_node.links = _4G_;
-
-  var _4M_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _4M_node.key = "nd93";
-  _4M_node.shape = null;
-  _4M_node.text = null;
-  _4M_node.colour = null;
-  _4M_node.name = void 0;
-  _4M_node.graph = _5_graph;
-  _4M_node.group = _4E_node;
-  _4M_node.width = null;
-  _4M_node.height = null;
-  var _4O_ = [];
-  _4M_node.links = _4O_;
-  var _4P_ = [_4Q_node];
-  _4M_node.nodes = _4P_;
-  var _4L_ = [_4M_node, _4U_node];
-  _4E_node.nodes = _4L_;
-  _4E_node.prin = _4U_node;
-  var _4a_ = [];
-  _4E_node.auxs = _4a_;
-  _4E_node.box = _4M_node;
-
-  var _4o_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _4o_node.key = "nd18";
-  _4o_node.shape = null;
-  _4o_node.text = null;
-  _4o_node.colour = null;
-  _4o_node.name = void 0;
-  _4o_node.graph = _5_graph;
-  _4o_node.group = _A_;
-  _4o_node.width = null;
-  _4o_node.height = null;
-  var _4q_ = [_4r_, _4v_link];
-  _4o_node.links = _4q_;
-
-  var _50_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _50_node.key = "nd19";
-  _50_node.shape = null;
-  _50_node.text = null;
-  _50_node.colour = null;
-  _50_node.name = void 0;
-  _50_node.graph = _5_graph;
-  _50_node.group = _4o_node;
-  _50_node.width = null;
-  _50_node.height = null;
-  var _52_ = [_53_, _58_, _5C_, _5G_, _5J_];
-  _50_node.links = _52_;
-
-  var _5W_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _5W_node.key = "nd23";
-  _5W_node.shape = null;
-  _5W_node.text = null;
-  _5W_node.colour = null;
-  _5W_node.name = void 0;
-  _5W_node.graph = _5_graph;
-  _5W_node.group = _50_node;
-  _5W_node.width = null;
-  _5W_node.height = null;
-  var _5Y_ = [_5Z_, _5d_, _5h_outLink];
-  _5W_node.links = _5Y_;
-
-  var _5m_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _5m_node.key = "nd24";
-  _5m_node.shape = null;
-  _5m_node.text = null;
-  _5m_node.colour = null;
-  _5m_node.name = void 0;
-  _5m_node.graph = _5_graph;
-  _5m_node.group = _5W_node;
-  _5m_node.width = null;
-  _5m_node.height = null;
-  var _5o_ = [_5p_, _5u_, _5y_, _62_, _65_, _68_,,];
-  _5o_.length = 6;
-  _5m_node.links = _5o_;
-
-  var _6M_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _6M_node.key = "nd28";
-  _6M_node.shape = null;
-  _6M_node.text = null;
-  _6M_node.colour = null;
-  _6M_node.name = void 0;
-  _6M_node.graph = _5_graph;
-  _6M_node.group = _5m_node;
-  _6M_node.width = null;
-  _6M_node.height = null;
-  var _6O_ = [_6P_, _6T_link];
-  _6M_node.links = _6O_;
-
-  var _6Y_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _6Y_node.key = "nd29";
-  _6Y_node.shape = null;
-  _6Y_node.text = null;
-  _6Y_node.colour = null;
-  _6Y_node.name = void 0;
-  _6Y_node.graph = _5_graph;
-  _6Y_node.group = _6M_node;
-  _6Y_node.width = null;
-  _6Y_node.height = null;
-  var _6a_ = [_6b_, _6g_, _6k_, _6o_, _6r_];
-  _6Y_node.links = _6a_;
-
-  var _74_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _74_node.key = "nd33";
-  _74_node.shape = null;
-  _74_node.text = null;
-  _74_node.colour = null;
-  _74_node.name = void 0;
-  _74_node.graph = _5_graph;
-  _74_node.group = _6Y_node;
-  _74_node.width = null;
-  _74_node.height = null;
-  var _76_ = [_77_, _7B_outLink];
-  _74_node.links = _76_;
-
-  var _7F_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _7F_node.key = "nd34";
-  _7F_node.shape = null;
-  _7F_node.text = null;
-  _7F_node.colour = null;
-  _7F_node.name = void 0;
-  _7F_node.graph = _5_graph;
-  _7F_node.group = _74_node;
-  _7F_node.width = null;
-  _7F_node.height = null;
-  var _7H_ = [_7I_,,];
-  _7H_.length = 1;
-  _7F_node.links = _7H_;
-  var _7N_ = [_7O_fromNode, _7T_node,,];
-  _7N_.length = 2;
-  _7F_node.nodes = _7N_;
-  var _7E_ = [_7F_node, _7b_node, _7h_node];
-  _74_node.nodes = _7E_;
-  _74_node.prin = _7b_node;
-  var _7o_newPaxs = [_7h_node];
-  _74_node.auxs = _7o_newPaxs;
-  _74_node.box = _7F_node;
-  var _6v_ = [_6w_node, _70_node, _74_node, _7p_node, _7w_node, _81_node];
-  _6Y_node.nodes = _6v_;
-  var _6X_ = [_6Y_node, _87_node, _8D_node];
-  _6M_node.nodes = _6X_;
-  _6M_node.prin = _87_node;
-  var _8J_newPaxs = [_8D_node];
-  _6M_node.auxs = _8J_newPaxs;
-  _6M_node.box = _6Y_node;
-
-  var _8W_node = (__constructor.prototype = _3X_, new __constructor());
-
-  _8W_node.key = "nd51";
-  _8W_node.shape = null;
-  _8W_node.text = null;
-  _8W_node.colour = null;
-  _8W_node.name = void 0;
-  _8W_node.graph = _5_graph;
-  _8W_node.group = _5m_node;
-  _8W_node.width = null;
-  _8W_node.height = null;
-  var _8Y_ = [_8Z_];
-  _8W_node.links = _8Y_;
-
-  var _8e_node = (__constructor.prototype = _3G_, new __constructor());
-
-  _8e_node.key = "nd52";
-  _8e_node.shape = null;
-  _8e_node.text = null;
-  _8e_node.colour = null;
-  _8e_node.name = void 0;
-  _8e_node.graph = _5_graph;
-  _8e_node.group = _8W_node;
-  _8e_node.width = null;
-  _8e_node.height = null;
-  var _8g_ = [];
-  _8e_node.links = _8g_;
-  var _8h_ = [_8i_node];
-  _8e_node.nodes = _8h_;
-  var _8d_ = [_8e_node, _8m_node];
-  _8W_node.nodes = _8d_;
-  _8W_node.prin = _8m_node;
-  var _8s_ = [];
-  _8W_node.auxs = _8s_;
-  _8W_node.box = _8e_node;
-  var _6D_ = [_6E_node, _6I_node, _6M_node, _8K_node, _8Q_fromNode, _8W_node, _8t_node,,];
-  _6D_.length = 7;
-  _5m_node.nodes = _6D_;
-  var _5l_ = [_5m_node, _90_node, _96_node, _9C_node];
-  _5W_node.nodes = _5l_;
-  _5W_node.prin = _90_node;
-  var _9J_newPaxs = [_96_node, _9C_node];
-  _5W_node.auxs = _9J_newPaxs;
-  _5W_node.box = _5m_node;
-  var _5N_ = [_5O_node, _5S_node, _5W_node, _9K_node, _9Q_node];
-  _50_node.nodes = _5N_;
-  var _4z_ = [_50_node, _9U_node, _9a_node];
-  _4o_node.nodes = _4z_;
-  _4o_node.prin = _9U_node;
-  var _9g_newPaxs = [_9a_node];
-  _4o_node.auxs = _9g_newPaxs;
-  _4o_node.box = _50_node;
-  var _1U_ = [_1V_fromNode, _1d_node, _3h_node, _45_toNode, _4B_toNode, _4E_node, _4b_toNode, _4g_toNode, _4j_node, _4o_node, _9h_node, _9n_node, _9r_node, _9v_fromNode, _A3_node, _A9_node, _AF_otherNode, _AK_fromNode,,,,,,,,,];
-  _1U_.length = 18;
-  _A_.nodes = _1U_;
-  _5_graph.child = _A_;
-
-  _8_.set("nd0", _A_);
-
-  _8_.set("nd18", _4o_node);
-
-  _8_.set("nd19", _50_node);
-
-  _8_.set("nd23", _5W_node);
-
-  _8_.set("nd24", _5m_node);
-
-  _8_.set("nd28", _6M_node);
-
-  _8_.set("nd29", _6Y_node);
-
-  _8_.set("nd33", _74_node);
-
-  _8_.set("nd34", _7F_node);
-
-  var _AT_term = (__constructor.prototype = _3Y_, new __constructor());
-
-  _AT_term.key = "nd38";
-  _AT_term.shape = null;
-  _AT_term.text = null;
-  _AT_term.colour = null;
-  _AT_term.name = void 0;
-  _AT_term.graph = _5_graph;
-  _AT_term.group = null;
-  _AT_term.width = null;
-  _AT_term.height = null;
-  var _AU_ = [];
-  _AT_term.links = _AU_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Iu_, _$5_Object_46defineProperty(_Gv_BinOp, "createPlus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Iv_, _$5_Object_46defineProperty(_Gv_BinOp, "createMult", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  _$6_Object_46setPrototypeOf(_Gv_BinOp, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gv_BinOp, _$5_Object_46defineProperty(_2z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gw_, _$5_Object_46defineProperty(_2z_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gx_, _$5_Object_46defineProperty(_2z_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gy_, _$5_Object_46defineProperty(_2z_, "binOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gz_, _$5_Object_46defineProperty(_2z_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _2t_fromNode = (__constructor.prototype = _2z_, new __constructor());
+
+  _2t_fromNode.key = "nd122";
+  _2t_fromNode.shape = null;
+  _2t_fromNode.text = "<=";
+  _2t_fromNode.colour = "mediumpurple1";
+  _2t_fromNode.name = void 0;
+  _2t_fromNode.graph = _6_graph;
+  _2t_fromNode.width = null;
+  _2t_fromNode.height = null;
+  var _2w_ = [_2J_, _2V_outLink, _2O_outLink,,];
+  _2w_.length = 3;
+  _2t_fromNode.links = _2w_;
+  _2t_fromNode.subType = 5;
+
+  _9_.set("nd122", _2t_fromNode);
+
+  var _30_node = (__constructor.prototype = _37_, new __constructor());
+
+  _30_node.key = "nd132";
+  _30_node.shape = null;
+  _30_node.text = "C";
+  _30_node.colour = "cyan";
+  _30_node.name = "y";
+  _30_node.graph = _6_graph;
+  _30_node.width = ".3";
+  _30_node.height = ".3";
+  var _36_ = [_2O_outLink, _2S_outLink, _2e_];
+  _30_node.links = _36_;
+
+  _9_.set("nd132", _30_node);
+
+  var _39_node = (__constructor.prototype = _37_, new __constructor());
+
+  _39_node.key = "nd133";
+  _39_node.shape = null;
+  _39_node.text = "C";
+  _39_node.colour = "cyan";
+  _39_node.name = "x";
+  _39_node.graph = _6_graph;
+  _39_node.width = ".3";
+  _39_node.height = ".3";
+  var _3F_ = [_2V_outLink, _2Y_outLink, _2B_];
+  _39_node.links = _3F_;
+
+  _9_.set("nd133", _39_node);
+
+  var _3Q_node = (__constructor.prototype = _3W_, new __constructor());
+
+  _3Q_node.key = "nd135";
+  _3Q_node.shape = null;
+  _3Q_node.text = "?";
+  _3Q_node.colour = "cyan";
+  _3Q_node.name = "x";
+  _3Q_node.graph = _6_graph;
+  _3Q_node.width = ".3";
+  _3Q_node.height = ".3";
+  var _3V_ = [_2B_, _1t_];
+  _3Q_node.links = _3V_;
+
+  _9_.set("nd135", _3Q_node);
+
+  var _4B_ = (__constructor.prototype = _1d_, new __constructor());
+
+  _Hb_Mod.prototype = _4B_;
+
+  _$6_Object_46setPrototypeOf(_Hb_Mod, _Gm_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hb_Mod, _$5_Object_46defineProperty(_4B_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hc_, _$5_Object_46defineProperty(_4B_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hd_, _$5_Object_46defineProperty(_4B_, "update", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _He_, _$5_Object_46defineProperty(_4B_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _46_toNode = (__constructor.prototype = _4B_, new __constructor());
+
+  _46_toNode.key = "nd139";
+  _46_toNode.shape = null;
+  _46_toNode.text = "M";
+  _46_toNode.colour = "indianred1";
+  _46_toNode.name = void 0;
+  _46_toNode.graph = _6_graph;
+  _46_toNode.width = null;
+  _46_toNode.height = null;
+  var _49_ = [_R_, _F_outLink, _a_outLink,,];
+  _49_.length = 3;
+  _46_toNode.links = _49_;
+
+  _9_.set("nd139", _46_toNode);
+
+  var _4C_toNode = (__constructor.prototype = _3y_, new __constructor());
+
+  _4C_toNode.key = "nd140";
+  _4C_toNode.shape = null;
+  _4C_toNode.text = 1;
+  _4C_toNode.colour = "mediumpurple1";
+  _4C_toNode.name = 1;
+  _4C_toNode.graph = _6_graph;
+  _4C_toNode.width = null;
+  _4C_toNode.height = null;
+  var _4E_ = [_R_];
+  _4C_toNode.links = _4E_;
+
+  _9_.set("nd140", _4C_toNode);
+
+  var _4c_toNode = (__constructor.prototype = _4B_, new __constructor());
+
+  _4c_toNode.key = "nd141";
+  _4c_toNode.shape = null;
+  _4c_toNode.text = "M";
+  _4c_toNode.colour = "indianred1";
+  _4c_toNode.name = void 0;
+  _4c_toNode.graph = _6_graph;
+  _4c_toNode.width = null;
+  _4c_toNode.height = null;
+  var _4f_ = [_e_, _V_outLink, _1R_otherNextLink,,];
+  _4f_.length = 3;
+  _4c_toNode.links = _4f_;
+
+  _9_.set("nd141", _4c_toNode);
+
+  var _4h_toNode = (__constructor.prototype = _3y_, new __constructor());
+
+  _4h_toNode.key = "nd142";
+  _4h_toNode.shape = null;
+  _4h_toNode.text = 2;
+  _4h_toNode.colour = "mediumpurple1";
+  _4h_toNode.name = 2;
+  _4h_toNode.graph = _6_graph;
+  _4h_toNode.width = null;
+  _4h_toNode.height = null;
+  var _4j_ = [_e_];
+  _4h_toNode.links = _4j_;
+
+  _9_.set("nd142", _4h_toNode);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gc_, _$5_Object_46defineProperty(_1d_, "addToGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gd_, _$5_Object_46defineProperty(_1d_, "addToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ge_, _$5_Object_46defineProperty(_1d_, "changeToGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gf_, _$5_Object_46defineProperty(_1d_, "findLinksConnected", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gg_, _$5_Object_46defineProperty(_1d_, "findLinksInto", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gh_, _$5_Object_46defineProperty(_1d_, "findLinksOutOf", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gi_, _$5_Object_46defineProperty(_1d_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gj_, _$5_Object_46defineProperty(_1d_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gk_, _$5_Object_46defineProperty(_1d_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Gl_, _$5_Object_46defineProperty(_1d_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _3I_ = (__constructor.prototype = _1d_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HA_Group, _$5_Object_46defineProperty(_3I_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HB_, _$5_Object_46defineProperty(_3I_, "addNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HC_, _$5_Object_46defineProperty(_3I_, "removeNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HD_, _$5_Object_46defineProperty(_3I_, "addLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HE_, _$5_Object_46defineProperty(_3I_, "removeLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HF_, _$5_Object_46defineProperty(_3I_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _B_ = (__constructor.prototype = _3I_, new __constructor());
+
+  _B_.key = "nd0";
+  _B_.shape = null;
+  _B_.text = null;
+  _B_.colour = null;
+  _B_.name = void 0;
+  _B_.graph = _6_graph;
+  _B_.group = null;
+  _B_.width = null;
+  _B_.height = null;
+  var _E_ = [_F_outLink, _L_outLink, _R_, _V_outLink, _a_outLink, _e_, _i_link, _n_link, _r_link, _v_link, _z_link, _13_nextLink, _19_link, _1D_link, _1G_link, _1J_link, _1N_link, _1R_otherNextLink,,,,,,,,];
+  _E_.length = 18;
+  _B_.links = _E_;
+
+  var _3Z_ = (__constructor.prototype = _3I_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HV_Term, _$5_Object_46defineProperty(_3Z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HW_, _$5_Object_46defineProperty(_3Z_, "set", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HX_, _$5_Object_46defineProperty(_3Z_, "createPaxsOnTopOf", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _3Y_ = (__constructor.prototype = _3Z_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HN_BoxWrapper, _$5_Object_46defineProperty(_3Y_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HO_, _$5_Object_46defineProperty(_3Y_, "set", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HP_, _$5_Object_46defineProperty(_3Y_, "removeAux", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HQ_, _$5_Object_46defineProperty(_3Y_, "moveOut", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HR_, _$5_Object_46defineProperty(_3Y_, "copyBox", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HS_, _$5_Object_46defineProperty(_3Y_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HT_, _$5_Object_46defineProperty(_3Y_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _HU_, _$5_Object_46defineProperty(_3Y_, "deleteAndPreserveLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _1e_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _1e_node.key = "nd113";
+  _1e_node.shape = null;
+  _1e_node.text = null;
+  _1e_node.colour = null;
+  _1e_node.name = void 0;
+  _1e_node.graph = _6_graph;
+  _1e_node.group = _B_;
+  _1e_node.width = null;
+  _1e_node.height = null;
+  var _1g_ = [_1h_link];
+  _1e_node.links = _1g_;
+
+  var _3H_ = (__constructor.prototype = _3I_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H8_Box, _$5_Object_46defineProperty(_3H_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _H9_, _$5_Object_46defineProperty(_3H_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _1m_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _1m_node.key = "nd114";
+  _1m_node.shape = null;
+  _1m_node.text = null;
+  _1m_node.colour = null;
+  _1m_node.name = void 0;
+  _1m_node.graph = _6_graph;
+  _1m_node.group = _1e_node;
+  _1m_node.width = null;
+  _1m_node.height = null;
+  var _1o_ = [_1p_, _1t_];
+  _1m_node.links = _1o_;
+
+  var _24_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _24_node.key = "nd117";
+  _24_node.shape = null;
+  _24_node.text = null;
+  _24_node.colour = null;
+  _24_node.name = void 0;
+  _24_node.graph = _6_graph;
+  _24_node.group = _1m_node;
+  _24_node.width = null;
+  _24_node.height = null;
+  var _26_ = [_27_, _2B_];
+  _24_node.links = _26_;
+
+  var _2G_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _2G_node.key = "nd118";
+  _2G_node.shape = null;
+  _2G_node.text = null;
+  _2G_node.colour = null;
+  _2G_node.name = void 0;
+  _2G_node.graph = _6_graph;
+  _2G_node.group = _24_node;
+  _2G_node.width = null;
+  _2G_node.height = null;
+  var _2I_ = [_2J_, _2O_outLink, _2S_outLink, _2V_outLink, _2Y_outLink, _2b_, _2e_,,,,,];
+  _2I_.length = 7;
+  _2G_node.links = _2I_;
+  var _2i_ = [_2j_node, _2n_fromNode, _2t_fromNode, _30_node, _39_node,,,,,];
+  _2i_.length = 5;
+  _2G_node.nodes = _2i_;
+  var _2F_ = [_2G_node, _3J_node, _3Q_node];
+  _24_node.nodes = _2F_;
+  _24_node.prin = _3J_node;
+  var _3X_newPaxs = [_3Q_node];
+  _24_node.auxs = _3X_newPaxs;
+  _24_node.box = _2G_node;
+  var _1y_ = [_1z_node, _24_node];
+  _1m_node.nodes = _1y_;
+  var _1l_ = [_1m_node, _3a_toNode];
+  _1e_node.nodes = _1l_;
+  _1e_node.prin = _3a_toNode;
+  var _3h_newPaxs = [];
+  _1e_node.auxs = _3h_newPaxs;
+  _1e_node.box = _1m_node;
+
+  var _3i_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _3i_node.key = "nd103";
+  _3i_node.shape = null;
+  _3i_node.text = null;
+  _3i_node.colour = null;
+  _3i_node.name = void 0;
+  _3i_node.graph = _6_graph;
+  _3i_node.group = _B_;
+  _3i_node.width = null;
+  _3i_node.height = null;
+  var _3k_ = [_3l_link];
+  _3i_node.links = _3k_;
+
+  var _3q_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _3q_node.key = "nd104";
+  _3q_node.shape = null;
+  _3q_node.text = null;
+  _3q_node.colour = null;
+  _3q_node.name = void 0;
+  _3q_node.graph = _6_graph;
+  _3q_node.group = _3i_node;
+  _3q_node.width = null;
+  _3q_node.height = null;
+  var _3s_ = [];
+  _3q_node.links = _3s_;
+  var _3t_ = [_3u_node];
+  _3q_node.nodes = _3t_;
+  var _3p_ = [_3q_node, _3z_node];
+  _3i_node.nodes = _3p_;
+  _3i_node.prin = _3z_node;
+  var _45_ = [];
+  _3i_node.auxs = _45_;
+  _3i_node.box = _3q_node;
+
+  var _4F_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _4F_node.key = "nd92";
+  _4F_node.shape = null;
+  _4F_node.text = null;
+  _4F_node.colour = null;
+  _4F_node.name = void 0;
+  _4F_node.graph = _6_graph;
+  _4F_node.group = _B_;
+  _4F_node.width = null;
+  _4F_node.height = null;
+  var _4H_ = [_4I_link];
+  _4F_node.links = _4H_;
+
+  var _4N_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _4N_node.key = "nd93";
+  _4N_node.shape = null;
+  _4N_node.text = null;
+  _4N_node.colour = null;
+  _4N_node.name = void 0;
+  _4N_node.graph = _6_graph;
+  _4N_node.group = _4F_node;
+  _4N_node.width = null;
+  _4N_node.height = null;
+  var _4P_ = [];
+  _4N_node.links = _4P_;
+  var _4Q_ = [_4R_node];
+  _4N_node.nodes = _4Q_;
+  var _4M_ = [_4N_node, _4V_node];
+  _4F_node.nodes = _4M_;
+  _4F_node.prin = _4V_node;
+  var _4b_ = [];
+  _4F_node.auxs = _4b_;
+  _4F_node.box = _4N_node;
+
+  var _4p_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _4p_node.key = "nd18";
+  _4p_node.shape = null;
+  _4p_node.text = null;
+  _4p_node.colour = null;
+  _4p_node.name = void 0;
+  _4p_node.graph = _6_graph;
+  _4p_node.group = _B_;
+  _4p_node.width = null;
+  _4p_node.height = null;
+  var _4r_ = [_4s_, _4w_link];
+  _4p_node.links = _4r_;
+
+  var _51_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _51_node.key = "nd19";
+  _51_node.shape = null;
+  _51_node.text = null;
+  _51_node.colour = null;
+  _51_node.name = void 0;
+  _51_node.graph = _6_graph;
+  _51_node.group = _4p_node;
+  _51_node.width = null;
+  _51_node.height = null;
+  var _53_ = [_54_, _59_, _5D_, _5H_, _5K_];
+  _51_node.links = _53_;
+
+  var _5X_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _5X_node.key = "nd23";
+  _5X_node.shape = null;
+  _5X_node.text = null;
+  _5X_node.colour = null;
+  _5X_node.name = void 0;
+  _5X_node.graph = _6_graph;
+  _5X_node.group = _51_node;
+  _5X_node.width = null;
+  _5X_node.height = null;
+  var _5Z_ = [_5a_, _5e_, _5i_outLink];
+  _5X_node.links = _5Z_;
+
+  var _5n_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _5n_node.key = "nd24";
+  _5n_node.shape = null;
+  _5n_node.text = null;
+  _5n_node.colour = null;
+  _5n_node.name = void 0;
+  _5n_node.graph = _6_graph;
+  _5n_node.group = _5X_node;
+  _5n_node.width = null;
+  _5n_node.height = null;
+  var _5p_ = [_5q_, _5v_, _5z_, _63_, _66_, _69_,,];
+  _5p_.length = 6;
+  _5n_node.links = _5p_;
+
+  var _6N_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _6N_node.key = "nd28";
+  _6N_node.shape = null;
+  _6N_node.text = null;
+  _6N_node.colour = null;
+  _6N_node.name = void 0;
+  _6N_node.graph = _6_graph;
+  _6N_node.group = _5n_node;
+  _6N_node.width = null;
+  _6N_node.height = null;
+  var _6P_ = [_6Q_, _6U_link];
+  _6N_node.links = _6P_;
+
+  var _6Z_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _6Z_node.key = "nd29";
+  _6Z_node.shape = null;
+  _6Z_node.text = null;
+  _6Z_node.colour = null;
+  _6Z_node.name = void 0;
+  _6Z_node.graph = _6_graph;
+  _6Z_node.group = _6N_node;
+  _6Z_node.width = null;
+  _6Z_node.height = null;
+  var _6b_ = [_6c_, _6h_, _6l_, _6p_, _6s_];
+  _6Z_node.links = _6b_;
+
+  var _75_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _75_node.key = "nd33";
+  _75_node.shape = null;
+  _75_node.text = null;
+  _75_node.colour = null;
+  _75_node.name = void 0;
+  _75_node.graph = _6_graph;
+  _75_node.group = _6Z_node;
+  _75_node.width = null;
+  _75_node.height = null;
+  var _77_ = [_78_, _7C_outLink];
+  _75_node.links = _77_;
+
+  var _7G_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _7G_node.key = "nd34";
+  _7G_node.shape = null;
+  _7G_node.text = null;
+  _7G_node.colour = null;
+  _7G_node.name = void 0;
+  _7G_node.graph = _6_graph;
+  _7G_node.group = _75_node;
+  _7G_node.width = null;
+  _7G_node.height = null;
+  var _7I_ = [_7J_,,];
+  _7I_.length = 1;
+  _7G_node.links = _7I_;
+  var _7O_ = [_7P_fromNode, _7U_node,,];
+  _7O_.length = 2;
+  _7G_node.nodes = _7O_;
+  var _7F_ = [_7G_node, _7c_node, _7i_node];
+  _75_node.nodes = _7F_;
+  _75_node.prin = _7c_node;
+  var _7p_newPaxs = [_7i_node];
+  _75_node.auxs = _7p_newPaxs;
+  _75_node.box = _7G_node;
+  var _6w_ = [_6x_node, _71_node, _75_node, _7q_node, _7x_node, _82_node];
+  _6Z_node.nodes = _6w_;
+  var _6Y_ = [_6Z_node, _88_node, _8E_node];
+  _6N_node.nodes = _6Y_;
+  _6N_node.prin = _88_node;
+  var _8K_newPaxs = [_8E_node];
+  _6N_node.auxs = _8K_newPaxs;
+  _6N_node.box = _6Z_node;
+
+  var _8X_node = (__constructor.prototype = _3Y_, new __constructor());
+
+  _8X_node.key = "nd51";
+  _8X_node.shape = null;
+  _8X_node.text = null;
+  _8X_node.colour = null;
+  _8X_node.name = void 0;
+  _8X_node.graph = _6_graph;
+  _8X_node.group = _5n_node;
+  _8X_node.width = null;
+  _8X_node.height = null;
+  var _8Z_ = [_8a_];
+  _8X_node.links = _8Z_;
+
+  var _8f_node = (__constructor.prototype = _3H_, new __constructor());
+
+  _8f_node.key = "nd52";
+  _8f_node.shape = null;
+  _8f_node.text = null;
+  _8f_node.colour = null;
+  _8f_node.name = void 0;
+  _8f_node.graph = _6_graph;
+  _8f_node.group = _8X_node;
+  _8f_node.width = null;
+  _8f_node.height = null;
+  var _8h_ = [];
+  _8f_node.links = _8h_;
+  var _8i_ = [_8j_node];
+  _8f_node.nodes = _8i_;
+  var _8e_ = [_8f_node, _8n_node];
+  _8X_node.nodes = _8e_;
+  _8X_node.prin = _8n_node;
+  var _8t_ = [];
+  _8X_node.auxs = _8t_;
+  _8X_node.box = _8f_node;
+  var _6E_ = [_6F_node, _6J_node, _6N_node, _8L_node, _8R_fromNode, _8X_node, _8u_node,,];
+  _6E_.length = 7;
+  _5n_node.nodes = _6E_;
+  var _5m_ = [_5n_node, _91_node, _97_node, _9D_node];
+  _5X_node.nodes = _5m_;
+  _5X_node.prin = _91_node;
+  var _9K_newPaxs = [_97_node, _9D_node];
+  _5X_node.auxs = _9K_newPaxs;
+  _5X_node.box = _5n_node;
+  var _5O_ = [_5P_node, _5T_node, _5X_node, _9L_node, _9R_node];
+  _51_node.nodes = _5O_;
+  var _50_ = [_51_node, _9V_node, _9b_node];
+  _4p_node.nodes = _50_;
+  _4p_node.prin = _9V_node;
+  var _9h_newPaxs = [_9b_node];
+  _4p_node.auxs = _9h_newPaxs;
+  _4p_node.box = _51_node;
+  var _1V_ = [_1W_fromNode, _1e_node, _3i_node, _46_toNode, _4C_toNode, _4F_node, _4c_toNode, _4h_toNode, _4k_node, _4p_node, _9i_node, _9o_node, _9s_node, _9w_fromNode, _A4_node, _AA_node, _AG_otherNode, _AL_fromNode,,,,,,,,,];
+  _1V_.length = 18;
+  _B_.nodes = _1V_;
+  _6_graph.child = _B_;
+
+  _9_.set("nd0", _B_);
+
+  _9_.set("nd18", _4p_node);
+
+  _9_.set("nd19", _51_node);
+
+  _9_.set("nd23", _5X_node);
+
+  _9_.set("nd24", _5n_node);
+
+  _9_.set("nd28", _6N_node);
+
+  _9_.set("nd29", _6Z_node);
+
+  _9_.set("nd33", _75_node);
+
+  _9_.set("nd34", _7G_node);
+
+  var _AU_term = (__constructor.prototype = _3Z_, new __constructor());
+
+  _AU_term.key = "nd38";
+  _AU_term.shape = null;
+  _AU_term.text = null;
+  _AU_term.colour = null;
+  _AU_term.name = void 0;
+  _AU_term.graph = _6_graph;
+  _AU_term.group = null;
+  _AU_term.width = null;
+  _AU_term.height = null;
   var _AV_ = [];
-  _AT_term.nodes = _AV_;
+  _AU_term.links = _AV_;
+  var _AW_ = [];
+  _AU_term.nodes = _AW_;
 
-  var _Ae_ = (__constructor.prototype = _7v_, new __constructor());
+  var _Af_ = (__constructor.prototype = _7w_, new __constructor());
 
-  _Hv_Var.prototype = _Ae_;
+  _Hx_Var.prototype = _Af_;
 
-  _$5_Object_46setPrototypeOf(_Hv_Var, _Hi_Der);
+  _$6_Object_46setPrototypeOf(_Hx_Var, _Hk_Der);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hv_Var, _$4_Object_46defineProperty(_Ae_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hw_, _$4_Object_46defineProperty(_Ae_, "deleteAndPreserveOutLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hx_Var, _$5_Object_46defineProperty(_Af_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hy_, _$5_Object_46defineProperty(_Af_, "deleteAndPreserveOutLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _AW_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _AX_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _AW_toNode.key = "nd37";
-  _AW_toNode.shape = null;
-  _AW_toNode.text = "V";
-  _AW_toNode.colour = "cyan";
-  _AW_toNode.name = "m";
-  _AW_toNode.graph = _5_graph;
-  _AW_toNode.group = _7F_node;
-  _AW_toNode.width = ".3";
-  _AW_toNode.height = ".3";
-  var _Ac_ = [,,];
-  _Ac_.length = 0;
-  _AW_toNode.links = _Ac_;
-  _AT_term.prin = _AW_toNode;
-  var _Af_ = [_AW_toNode];
-  _AT_term.auxs = _Af_;
+  _AX_toNode.key = "nd37";
+  _AX_toNode.shape = null;
+  _AX_toNode.text = "V";
+  _AX_toNode.colour = "cyan";
+  _AX_toNode.name = "m";
+  _AX_toNode.graph = _6_graph;
+  _AX_toNode.group = _7G_node;
+  _AX_toNode.width = ".3";
+  _AX_toNode.height = ".3";
+  var _Ad_ = [,,];
+  _Ad_.length = 0;
+  _AX_toNode.links = _Ad_;
+  _AU_term.prin = _AX_toNode;
+  var _Ag_ = [_AX_toNode];
+  _AU_term.auxs = _Ag_;
 
-  _8_.set("nd38", _AT_term);
+  _9_.set("nd38", _AU_term);
 
-  var _Ah_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Ai_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Ah_left.key = "nd41";
-  _Ah_left.shape = null;
-  _Ah_left.text = null;
-  _Ah_left.colour = null;
-  _Ah_left.name = void 0;
-  _Ah_left.graph = _5_graph;
-  _Ah_left.group = null;
-  _Ah_left.width = null;
-  _Ah_left.height = null;
-  var _Ai_ = [];
-  _Ah_left.links = _Ai_;
+  _Ai_left.key = "nd41";
+  _Ai_left.shape = null;
+  _Ai_left.text = null;
+  _Ai_left.colour = null;
+  _Ai_left.name = void 0;
+  _Ai_left.graph = _6_graph;
+  _Ai_left.group = null;
+  _Ai_left.width = null;
+  _Ai_left.height = null;
   var _Aj_ = [];
-  _Ah_left.nodes = _Aj_;
-  _Ah_left.prin = _7b_node;
-  _Ah_left.auxs = _7o_newPaxs;
+  _Ai_left.links = _Aj_;
+  var _Ak_ = [];
+  _Ai_left.nodes = _Ak_;
+  _Ai_left.prin = _7c_node;
+  _Ai_left.auxs = _7p_newPaxs;
 
-  _8_.set("nd41", _Ah_left);
+  _9_.set("nd41", _Ai_left);
 
-  var _Al_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _Am_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Al_right.key = "nd44";
-  _Al_right.shape = null;
-  _Al_right.text = null;
-  _Al_right.colour = null;
-  _Al_right.name = void 0;
-  _Al_right.graph = _5_graph;
-  _Al_right.group = null;
-  _Al_right.width = null;
-  _Al_right.height = null;
-  var _Am_ = [];
-  _Al_right.links = _Am_;
+  _Am_right.key = "nd44";
+  _Am_right.shape = null;
+  _Am_right.text = null;
+  _Am_right.colour = null;
+  _Am_right.name = void 0;
+  _Am_right.graph = _6_graph;
+  _Am_right.group = null;
+  _Am_right.width = null;
+  _Am_right.height = null;
   var _An_ = [];
-  _Al_right.nodes = _An_;
-  _Al_right.prin = _7w_node;
+  _Am_right.links = _An_;
   var _Ao_ = [];
-  _Al_right.auxs = _Ao_;
+  _Am_right.nodes = _Ao_;
+  _Am_right.prin = _7x_node;
+  var _Ap_ = [];
+  _Am_right.auxs = _Ap_;
 
-  _8_.set("nd44", _Al_right);
+  _9_.set("nd44", _Am_right);
 
-  var _Aq_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Ar_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Aq_term.key = "nd45";
-  _Aq_term.shape = null;
-  _Aq_term.text = null;
-  _Aq_term.colour = null;
-  _Aq_term.name = void 0;
-  _Aq_term.graph = _5_graph;
-  _Aq_term.group = null;
-  _Aq_term.width = null;
-  _Aq_term.height = null;
-  var _Ar_ = [];
-  _Aq_term.links = _Ar_;
+  _Ar_term.key = "nd45";
+  _Ar_term.shape = null;
+  _Ar_term.text = null;
+  _Ar_term.colour = null;
+  _Ar_term.name = void 0;
+  _Ar_term.graph = _6_graph;
+  _Ar_term.group = null;
+  _Ar_term.width = null;
+  _Ar_term.height = null;
   var _As_ = [];
-  _Aq_term.nodes = _As_;
-  _Aq_term.prin = _70_node;
-  var _At_newAuxs = [_7h_node];
-  _Aq_term.auxs = _At_newAuxs;
+  _Ar_term.links = _As_;
+  var _At_ = [];
+  _Ar_term.nodes = _At_;
+  _Ar_term.prin = _71_node;
+  var _Au_newAuxs = [_7i_node];
+  _Ar_term.auxs = _Au_newAuxs;
 
-  _8_.set("nd45", _Aq_term);
+  _9_.set("nd45", _Ar_term);
 
-  var _Av_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Aw_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Av_left.key = "nd48";
-  _Av_left.shape = null;
-  _Av_left.text = null;
-  _Av_left.colour = null;
-  _Av_left.name = void 0;
-  _Av_left.graph = _5_graph;
-  _Av_left.group = null;
-  _Av_left.width = null;
-  _Av_left.height = null;
-  var _Aw_ = [];
-  _Av_left.links = _Aw_;
+  _Aw_left.key = "nd48";
+  _Aw_left.shape = null;
+  _Aw_left.text = null;
+  _Aw_left.colour = null;
+  _Aw_left.name = void 0;
+  _Aw_left.graph = _6_graph;
+  _Aw_left.group = null;
+  _Aw_left.width = null;
+  _Aw_left.height = null;
   var _Ax_ = [];
-  _Av_left.nodes = _Ax_;
-  _Av_left.prin = _87_node;
-  _Av_left.auxs = _8J_newPaxs;
+  _Aw_left.links = _Ax_;
+  var _Ay_ = [];
+  _Aw_left.nodes = _Ay_;
+  _Aw_left.prin = _88_node;
+  _Aw_left.auxs = _8K_newPaxs;
 
-  _8_.set("nd48", _Av_left);
+  _9_.set("nd48", _Aw_left);
 
-  _8_.set("nd51", _8W_node);
+  _9_.set("nd51", _8X_node);
 
-  _8_.set("nd52", _8e_node);
+  _9_.set("nd52", _8f_node);
 
-  var _Az_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _B0_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Az_term.key = "nd55";
-  _Az_term.shape = null;
-  _Az_term.text = null;
-  _Az_term.colour = null;
-  _Az_term.name = void 0;
-  _Az_term.graph = _5_graph;
-  _Az_term.group = null;
-  _Az_term.width = null;
-  _Az_term.height = null;
-  var _B0_ = [];
-  _Az_term.links = _B0_;
+  _B0_term.key = "nd55";
+  _B0_term.shape = null;
+  _B0_term.text = null;
+  _B0_term.colour = null;
+  _B0_term.name = void 0;
+  _B0_term.graph = _6_graph;
+  _B0_term.group = null;
+  _B0_term.width = null;
+  _B0_term.height = null;
   var _B1_ = [];
-  _Az_term.nodes = _B1_;
-  _Az_term.prin = _8m_node;
-  _Az_term.auxs = _8s_;
+  _B0_term.links = _B1_;
+  var _B2_ = [];
+  _B0_term.nodes = _B2_;
+  _B0_term.prin = _8n_node;
+  _B0_term.auxs = _8t_;
 
-  _8_.set("nd55", _Az_term);
+  _9_.set("nd55", _B0_term);
 
-  var _B3_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _B4_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _B3_right.key = "nd57";
-  _B3_right.shape = null;
-  _B3_right.text = null;
-  _B3_right.colour = null;
-  _B3_right.name = void 0;
-  _B3_right.graph = _5_graph;
-  _B3_right.group = null;
-  _B3_right.width = null;
-  _B3_right.height = null;
-  var _B4_ = [];
-  _B3_right.links = _B4_;
+  _B4_right.key = "nd57";
+  _B4_right.shape = null;
+  _B4_right.text = null;
+  _B4_right.colour = null;
+  _B4_right.name = void 0;
+  _B4_right.graph = _6_graph;
+  _B4_right.group = null;
+  _B4_right.width = null;
+  _B4_right.height = null;
   var _B5_ = [];
-  _B3_right.nodes = _B5_;
-  _B3_right.prin = _8Q_fromNode;
+  _B4_right.links = _B5_;
+  var _B6_ = [];
+  _B4_right.nodes = _B6_;
+  _B4_right.prin = _8R_fromNode;
 
-  var _B7_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _B8_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _B7_toNode.key = "nd56";
-  _B7_toNode.shape = null;
-  _B7_toNode.text = "V";
-  _B7_toNode.colour = "cyan";
-  _B7_toNode.name = "x";
-  _B7_toNode.graph = _5_graph;
-  _B7_toNode.group = _5m_node;
-  _B7_toNode.width = ".3";
-  _B7_toNode.height = ".3";
-  var _BD_ = [,,];
-  _BD_.length = 0;
-  _B7_toNode.links = _BD_;
-  var _B6_auxs = [_B7_toNode];
-  _B3_right.auxs = _B6_auxs;
+  _B8_toNode.key = "nd56";
+  _B8_toNode.shape = null;
+  _B8_toNode.text = "V";
+  _B8_toNode.colour = "cyan";
+  _B8_toNode.name = "x";
+  _B8_toNode.graph = _6_graph;
+  _B8_toNode.group = _5n_node;
+  _B8_toNode.width = ".3";
+  _B8_toNode.height = ".3";
+  var _BE_ = [,,];
+  _BE_.length = 0;
+  _B8_toNode.links = _BE_;
+  var _B7_auxs = [_B8_toNode];
+  _B4_right.auxs = _B7_auxs;
 
-  _8_.set("nd57", _B3_right);
+  _9_.set("nd57", _B4_right);
 
-  var _BG_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _BH_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _BG_term.key = "nd58";
-  _BG_term.shape = null;
-  _BG_term.text = null;
-  _BG_term.colour = null;
-  _BG_term.name = void 0;
-  _BG_term.graph = _5_graph;
-  _BG_term.group = null;
-  _BG_term.width = null;
-  _BG_term.height = null;
-  var _BH_ = [];
-  _BG_term.links = _BH_;
+  _BH_term.key = "nd58";
+  _BH_term.shape = null;
+  _BH_term.text = null;
+  _BH_term.colour = null;
+  _BH_term.name = void 0;
+  _BH_term.graph = _6_graph;
+  _BH_term.group = null;
+  _BH_term.width = null;
+  _BH_term.height = null;
   var _BI_ = [];
-  _BG_term.nodes = _BI_;
-  _BG_term.prin = _6I_node;
-  var _BJ_newAuxs = [_8D_node, _B7_toNode];
-  _BG_term.auxs = _BJ_newAuxs;
+  _BH_term.links = _BI_;
+  var _BJ_ = [];
+  _BH_term.nodes = _BJ_;
+  _BH_term.prin = _6J_node;
+  var _BK_newAuxs = [_8E_node, _B8_toNode];
+  _BH_term.auxs = _BK_newAuxs;
 
-  _8_.set("nd58", _BG_term);
+  _9_.set("nd58", _BH_term);
 
-  var _BL_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _BM_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _BL_left.key = "nd62";
-  _BL_left.shape = null;
-  _BL_left.text = null;
-  _BL_left.colour = null;
-  _BL_left.name = void 0;
-  _BL_left.graph = _5_graph;
-  _BL_left.group = null;
-  _BL_left.width = null;
-  _BL_left.height = null;
-  var _BM_ = [];
-  _BL_left.links = _BM_;
+  _BM_left.key = "nd62";
+  _BM_left.shape = null;
+  _BM_left.text = null;
+  _BM_left.colour = null;
+  _BM_left.name = void 0;
+  _BM_left.graph = _6_graph;
+  _BM_left.group = null;
+  _BM_left.width = null;
+  _BM_left.height = null;
   var _BN_ = [];
-  _BL_left.nodes = _BN_;
-  _BL_left.prin = _90_node;
-  _BL_left.auxs = _9J_newPaxs;
+  _BM_left.links = _BN_;
+  var _BO_ = [];
+  _BM_left.nodes = _BO_;
+  _BM_left.prin = _91_node;
+  _BM_left.auxs = _9K_newPaxs;
 
-  _8_.set("nd62", _BL_left);
+  _9_.set("nd62", _BM_left);
 
-  var _BP_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _BQ_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _BP_right.key = "nd65";
-  _BP_right.shape = null;
-  _BP_right.text = null;
-  _BP_right.colour = null;
-  _BP_right.name = void 0;
-  _BP_right.graph = _5_graph;
-  _BP_right.group = null;
-  _BP_right.width = null;
-  _BP_right.height = null;
-  var _BQ_ = [];
-  _BP_right.links = _BQ_;
+  _BQ_right.key = "nd65";
+  _BQ_right.shape = null;
+  _BQ_right.text = null;
+  _BQ_right.colour = null;
+  _BQ_right.name = void 0;
+  _BQ_right.graph = _6_graph;
+  _BQ_right.group = null;
+  _BQ_right.width = null;
+  _BQ_right.height = null;
   var _BR_ = [];
-  _BP_right.nodes = _BR_;
-  _BP_right.prin = _9Q_node;
+  _BQ_right.links = _BR_;
   var _BS_ = [];
-  _BP_right.auxs = _BS_;
+  _BQ_right.nodes = _BS_;
+  _BQ_right.prin = _9R_node;
+  var _BT_ = [];
+  _BQ_right.auxs = _BT_;
 
-  _8_.set("nd65", _BP_right);
+  _9_.set("nd65", _BQ_right);
 
-  var _BU_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _BV_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _BU_term.key = "nd66";
-  _BU_term.shape = null;
-  _BU_term.text = null;
-  _BU_term.colour = null;
-  _BU_term.name = void 0;
-  _BU_term.graph = _5_graph;
-  _BU_term.group = null;
-  _BU_term.width = null;
-  _BU_term.height = null;
-  var _BV_ = [];
-  _BU_term.links = _BV_;
+  _BV_term.key = "nd66";
+  _BV_term.shape = null;
+  _BV_term.text = null;
+  _BV_term.colour = null;
+  _BV_term.name = void 0;
+  _BV_term.graph = _6_graph;
+  _BV_term.group = null;
+  _BV_term.width = null;
+  _BV_term.height = null;
   var _BW_ = [];
-  _BU_term.nodes = _BW_;
-  _BU_term.prin = _5S_node;
-  var _BX_newAuxs = [_96_node, _9C_node];
-  _BU_term.auxs = _BX_newAuxs;
+  _BV_term.links = _BW_;
+  var _BX_ = [];
+  _BV_term.nodes = _BX_;
+  _BV_term.prin = _5T_node;
+  var _BY_newAuxs = [_97_node, _9D_node];
+  _BV_term.auxs = _BY_newAuxs;
 
-  _8_.set("nd66", _BU_term);
+  _9_.set("nd66", _BV_term);
 
-  var _BZ_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Ba_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _BZ_left.key = "nd68";
-  _BZ_left.shape = null;
-  _BZ_left.text = null;
-  _BZ_left.colour = null;
-  _BZ_left.name = void 0;
-  _BZ_left.graph = _5_graph;
-  _BZ_left.group = null;
-  _BZ_left.width = null;
-  _BZ_left.height = null;
-  var _Ba_ = [];
-  _BZ_left.links = _Ba_;
+  _Ba_left.key = "nd68";
+  _Ba_left.shape = null;
+  _Ba_left.text = null;
+  _Ba_left.colour = null;
+  _Ba_left.name = void 0;
+  _Ba_left.graph = _6_graph;
+  _Ba_left.group = null;
+  _Ba_left.width = null;
+  _Ba_left.height = null;
   var _Bb_ = [];
-  _BZ_left.nodes = _Bb_;
-  _BZ_left.prin = _9U_node;
-  _BZ_left.auxs = _9g_newPaxs;
+  _Ba_left.links = _Bb_;
+  var _Bc_ = [];
+  _Ba_left.nodes = _Bc_;
+  _Ba_left.prin = _9V_node;
+  _Ba_left.auxs = _9h_newPaxs;
 
-  _8_.set("nd68", _BZ_left);
+  _9_.set("nd68", _Ba_left);
 
-  var _Bd_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Be_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Bd_left.key = "nd73";
-  _Bd_left.shape = null;
-  _Bd_left.text = null;
-  _Bd_left.colour = null;
-  _Bd_left.name = void 0;
-  _Bd_left.graph = _5_graph;
-  _Bd_left.group = null;
-  _Bd_left.width = null;
-  _Bd_left.height = null;
-  var _Be_ = [];
-  _Bd_left.links = _Be_;
+  _Be_left.key = "nd73";
+  _Be_left.shape = null;
+  _Be_left.text = null;
+  _Be_left.colour = null;
+  _Be_left.name = void 0;
+  _Be_left.graph = _6_graph;
+  _Be_left.group = null;
+  _Be_left.width = null;
+  _Be_left.height = null;
   var _Bf_ = [];
-  _Bd_left.nodes = _Bf_;
+  _Be_left.links = _Bf_;
+  var _Bg_ = [];
+  _Be_left.nodes = _Bg_;
 
-  var _Bg_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _Bh_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _Bg_toNode.key = "nd72";
-  _Bg_toNode.shape = null;
-  _Bg_toNode.text = "V";
-  _Bg_toNode.colour = "cyan";
-  _Bg_toNode.name = "max";
-  _Bg_toNode.graph = _5_graph;
+  _Bh_toNode.key = "nd72";
+  _Bh_toNode.shape = null;
+  _Bh_toNode.text = "V";
+  _Bh_toNode.colour = "cyan";
+  _Bh_toNode.name = "max";
+  _Bh_toNode.graph = _6_graph;
 
-  var _Bk__95node = (__constructor.prototype = _3G_, new __constructor());
+  var _Bl__95node = (__constructor.prototype = _3H_, new __constructor());
 
-  _Bk__95node.key = "nd14";
-  _Bk__95node.shape = null;
-  _Bk__95node.text = null;
-  _Bk__95node.colour = null;
-  _Bk__95node.name = void 0;
-  _Bk__95node.graph = _5_graph;
-  _Bk__95node.group = _A_;
-  _Bk__95node.width = null;
-  _Bk__95node.height = null;
-  var _Bm_ = [,,,,,,,,,,,,,,,];
-  _Bm_.length = 0;
-  _Bk__95node.links = _Bm_;
-  var _Bo_ = [,,,,,,,,,,,,,,];
-  _Bo_.length = 0;
-  _Bk__95node.nodes = _Bo_;
-  _Bg_toNode.group = _Bk__95node;
-  _Bg_toNode.width = ".3";
-  _Bg_toNode.height = ".3";
-  var _Bs_ = [,,];
-  _Bs_.length = 0;
-  _Bg_toNode.links = _Bs_;
-  _Bd_left.prin = _Bg_toNode;
-  var _Bu_ = [_Bg_toNode];
-  _Bd_left.auxs = _Bu_;
+  _Bl__95node.key = "nd14";
+  _Bl__95node.shape = null;
+  _Bl__95node.text = null;
+  _Bl__95node.colour = null;
+  _Bl__95node.name = void 0;
+  _Bl__95node.graph = _6_graph;
+  _Bl__95node.group = _B_;
+  _Bl__95node.width = null;
+  _Bl__95node.height = null;
+  var _Bn_ = [,,,,,,,,,,,,,,,];
+  _Bn_.length = 0;
+  _Bl__95node.links = _Bn_;
+  var _Bp_ = [,,,,,,,,,,,,,,];
+  _Bp_.length = 0;
+  _Bl__95node.nodes = _Bp_;
+  _Bh_toNode.group = _Bl__95node;
+  _Bh_toNode.width = ".3";
+  _Bh_toNode.height = ".3";
+  var _Bt_ = [,,];
+  _Bt_.length = 0;
+  _Bh_toNode.links = _Bt_;
+  _Be_left.prin = _Bh_toNode;
+  var _Bv_ = [_Bh_toNode];
+  _Be_left.auxs = _Bv_;
 
-  _8_.set("nd73", _Bd_left);
+  _9_.set("nd73", _Be_left);
 
-  var _Bw_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Bx_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Bw_term.key = "nd76";
-  _Bw_term.shape = null;
-  _Bw_term.text = null;
-  _Bw_term.colour = null;
-  _Bw_term.name = void 0;
-  _Bw_term.graph = _5_graph;
-  _Bw_term.group = null;
-  _Bw_term.width = null;
-  _Bw_term.height = null;
-  var _Bx_ = [];
-  _Bw_term.links = _Bx_;
+  _Bx_term.key = "nd76";
+  _Bx_term.shape = null;
+  _Bx_term.text = null;
+  _Bx_term.colour = null;
+  _Bx_term.name = void 0;
+  _Bx_term.graph = _6_graph;
+  _Bx_term.group = null;
+  _Bx_term.width = null;
+  _Bx_term.height = null;
   var _By_ = [];
-  _Bw_term.nodes = _By_;
+  _Bx_term.links = _By_;
+  var _Bz_ = [];
+  _Bx_term.nodes = _Bz_;
 
-  var _Bz_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _C0_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _Bz_toNode.key = "nd75";
-  _Bz_toNode.shape = null;
-  _Bz_toNode.text = "V";
-  _Bz_toNode.colour = "cyan";
-  _Bz_toNode.name = "x";
-  _Bz_toNode.graph = _5_graph;
-  _Bz_toNode.group = _Bk__95node;
-  _Bz_toNode.width = ".3";
-  _Bz_toNode.height = ".3";
-  var _C6_ = [,,];
-  _C6_.length = 0;
-  _Bz_toNode.links = _C6_;
-  _Bw_term.prin = _Bz_toNode;
-  var _C8_ = [_Bz_toNode];
-  _Bw_term.auxs = _C8_;
+  _C0_toNode.key = "nd75";
+  _C0_toNode.shape = null;
+  _C0_toNode.text = "V";
+  _C0_toNode.colour = "cyan";
+  _C0_toNode.name = "x";
+  _C0_toNode.graph = _6_graph;
+  _C0_toNode.group = _Bl__95node;
+  _C0_toNode.width = ".3";
+  _C0_toNode.height = ".3";
+  var _C7_ = [,,];
+  _C7_.length = 0;
+  _C0_toNode.links = _C7_;
+  _Bx_term.prin = _C0_toNode;
+  var _C9_ = [_C0_toNode];
+  _Bx_term.auxs = _C9_;
 
-  _8_.set("nd76", _Bw_term);
+  _9_.set("nd76", _Bx_term);
 
-  var _CA_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _CB_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _CA_right.key = "nd78";
-  _CA_right.shape = null;
-  _CA_right.text = null;
-  _CA_right.colour = null;
-  _CA_right.name = void 0;
-  _CA_right.graph = _5_graph;
-  _CA_right.group = null;
-  _CA_right.width = null;
-  _CA_right.height = null;
-  var _CB_ = [];
-  _CA_right.links = _CB_;
+  _CB_right.key = "nd78";
+  _CB_right.shape = null;
+  _CB_right.text = null;
+  _CB_right.colour = null;
+  _CB_right.name = void 0;
+  _CB_right.graph = _6_graph;
+  _CB_right.group = null;
+  _CB_right.width = null;
+  _CB_right.height = null;
   var _CC_ = [];
-  _CA_right.nodes = _CC_;
-  _CA_right.prin = _A3_node;
-  _CA_right.auxs = _C8_;
+  _CB_right.links = _CC_;
+  var _CD_ = [];
+  _CB_right.nodes = _CD_;
+  _CB_right.prin = _A4_node;
+  _CB_right.auxs = _C9_;
 
-  _8_.set("nd78", _CA_right);
+  _9_.set("nd78", _CB_right);
 
-  var _CE_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _CF_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _CE_left.key = "nd79";
-  _CE_left.shape = null;
-  _CE_left.text = null;
-  _CE_left.colour = null;
-  _CE_left.name = void 0;
-  _CE_left.graph = _5_graph;
-  _CE_left.group = null;
-  _CE_left.width = null;
-  _CE_left.height = null;
-  var _CF_ = [];
-  _CE_left.links = _CF_;
+  _CF_left.key = "nd79";
+  _CF_left.shape = null;
+  _CF_left.text = null;
+  _CF_left.colour = null;
+  _CF_left.name = void 0;
+  _CF_left.graph = _6_graph;
+  _CF_left.group = null;
+  _CF_left.width = null;
+  _CF_left.height = null;
   var _CG_ = [];
-  _CE_left.nodes = _CG_;
-  _CE_left.prin = _9r_node;
-  var _CH_newAuxs = [_Bg_toNode, _Bz_toNode];
-  _CE_left.auxs = _CH_newAuxs;
+  _CF_left.links = _CG_;
+  var _CH_ = [];
+  _CF_left.nodes = _CH_;
+  _CF_left.prin = _9s_node;
+  var _CI_newAuxs = [_Bh_toNode, _C0_toNode];
+  _CF_left.auxs = _CI_newAuxs;
 
-  _8_.set("nd79", _CE_left);
+  _9_.set("nd79", _CF_left);
 
-  var _CJ_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _CK_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _CJ_term.key = "nd82";
-  _CJ_term.shape = null;
-  _CJ_term.text = null;
-  _CJ_term.colour = null;
-  _CJ_term.name = void 0;
-  _CJ_term.graph = _5_graph;
-  _CJ_term.group = null;
-  _CJ_term.width = null;
-  _CJ_term.height = null;
-  var _CK_ = [];
-  _CJ_term.links = _CK_;
+  _CK_term.key = "nd82";
+  _CK_term.shape = null;
+  _CK_term.text = null;
+  _CK_term.colour = null;
+  _CK_term.name = void 0;
+  _CK_term.graph = _6_graph;
+  _CK_term.group = null;
+  _CK_term.width = null;
+  _CK_term.height = null;
   var _CL_ = [];
-  _CJ_term.nodes = _CL_;
+  _CK_term.links = _CL_;
+  var _CM_ = [];
+  _CK_term.nodes = _CM_;
 
-  var _CM_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _CN_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _CM_toNode.key = "nd81";
-  _CM_toNode.shape = null;
-  _CM_toNode.text = "V";
-  _CM_toNode.colour = "cyan";
-  _CM_toNode.name = "y";
-  _CM_toNode.graph = _5_graph;
-  _CM_toNode.group = _Bk__95node;
-  _CM_toNode.width = ".3";
-  _CM_toNode.height = ".3";
-  var _CT_ = [,,];
-  _CT_.length = 0;
-  _CM_toNode.links = _CT_;
-  _CJ_term.prin = _CM_toNode;
-  var _CV_ = [_CM_toNode];
-  _CJ_term.auxs = _CV_;
+  _CN_toNode.key = "nd81";
+  _CN_toNode.shape = null;
+  _CN_toNode.text = "V";
+  _CN_toNode.colour = "cyan";
+  _CN_toNode.name = "y";
+  _CN_toNode.graph = _6_graph;
+  _CN_toNode.group = _Bl__95node;
+  _CN_toNode.width = ".3";
+  _CN_toNode.height = ".3";
+  var _CU_ = [,,];
+  _CU_.length = 0;
+  _CN_toNode.links = _CU_;
+  _CK_term.prin = _CN_toNode;
+  var _CW_ = [_CN_toNode];
+  _CK_term.auxs = _CW_;
 
-  _8_.set("nd82", _CJ_term);
+  _9_.set("nd82", _CK_term);
 
-  var _CX_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _CY_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _CX_right.key = "nd84";
-  _CX_right.shape = null;
-  _CX_right.text = null;
-  _CX_right.colour = null;
-  _CX_right.name = void 0;
-  _CX_right.graph = _5_graph;
-  _CX_right.group = null;
-  _CX_right.width = null;
-  _CX_right.height = null;
-  var _CY_ = [];
-  _CX_right.links = _CY_;
+  _CY_right.key = "nd84";
+  _CY_right.shape = null;
+  _CY_right.text = null;
+  _CY_right.colour = null;
+  _CY_right.name = void 0;
+  _CY_right.graph = _6_graph;
+  _CY_right.group = null;
+  _CY_right.width = null;
+  _CY_right.height = null;
   var _CZ_ = [];
-  _CX_right.nodes = _CZ_;
-  _CX_right.prin = _AF_otherNode;
-  _CX_right.auxs = _CV_;
+  _CY_right.links = _CZ_;
+  var _Ca_ = [];
+  _CY_right.nodes = _Ca_;
+  _CY_right.prin = _AG_otherNode;
+  _CY_right.auxs = _CW_;
 
-  _8_.set("nd84", _CX_right);
+  _9_.set("nd84", _CY_right);
 
-  var _Cb_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _Cc_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Cb_right.key = "nd85";
-  _Cb_right.shape = null;
-  _Cb_right.text = null;
-  _Cb_right.colour = null;
-  _Cb_right.name = void 0;
-  _Cb_right.graph = _5_graph;
-  _Cb_right.group = null;
-  _Cb_right.width = null;
-  _Cb_right.height = null;
-  var _Cc_ = [];
-  _Cb_right.links = _Cc_;
+  _Cc_right.key = "nd85";
+  _Cc_right.shape = null;
+  _Cc_right.text = null;
+  _Cc_right.colour = null;
+  _Cc_right.name = void 0;
+  _Cc_right.graph = _6_graph;
+  _Cc_right.group = null;
+  _Cc_right.width = null;
+  _Cc_right.height = null;
   var _Cd_ = [];
-  _Cb_right.nodes = _Cd_;
-  _Cb_right.prin = _9n_node;
-  var _Ce_newAuxs = [_Bg_toNode, _Bz_toNode, _CM_toNode];
-  _Cb_right.auxs = _Ce_newAuxs;
+  _Cc_right.links = _Cd_;
+  var _Ce_ = [];
+  _Cc_right.nodes = _Ce_;
+  _Cc_right.prin = _9o_node;
+  var _Cf_newAuxs = [_Bh_toNode, _C0_toNode, _CN_toNode];
+  _Cc_right.auxs = _Cf_newAuxs;
 
-  _8_.set("nd85", _Cb_right);
+  _9_.set("nd85", _Cc_right);
 
-  var _Cg_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Ch_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Cg_term.key = "nd87";
-  _Cg_term.shape = null;
-  _Cg_term.text = null;
-  _Cg_term.colour = null;
-  _Cg_term.name = void 0;
-  _Cg_term.graph = _5_graph;
-  _Cg_term.group = null;
-  _Cg_term.width = null;
-  _Cg_term.height = null;
-  var _Ch_ = [];
-  _Cg_term.links = _Ch_;
+  _Ch_term.key = "nd87";
+  _Ch_term.shape = null;
+  _Ch_term.text = null;
+  _Ch_term.colour = null;
+  _Ch_term.name = void 0;
+  _Ch_term.graph = _6_graph;
+  _Ch_term.group = null;
+  _Ch_term.width = null;
+  _Ch_term.height = null;
   var _Ci_ = [];
-  _Cg_term.nodes = _Ci_;
-  _Cg_term.prin = _4j_node;
-  var _Cj_newAuxs = [_Bg_toNode, _CM_toNode, _AK_fromNode,,];
-  _Cj_newAuxs.length = 3;
-  _Cg_term.auxs = _Cj_newAuxs;
+  _Ch_term.links = _Ci_;
+  var _Cj_ = [];
+  _Ch_term.nodes = _Cj_;
+  _Ch_term.prin = _4k_node;
+  var _Ck_newAuxs = [_Bh_toNode, _CN_toNode, _AL_fromNode,,];
+  _Ck_newAuxs.length = 3;
+  _Ch_term.auxs = _Ck_newAuxs;
 
-  _8_.set("nd87", _Cg_term);
+  _9_.set("nd87", _Ch_term);
 
-  var _Cm_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Cn_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Cm_left.key = "nd90";
-  _Cm_left.shape = null;
-  _Cm_left.text = null;
-  _Cm_left.colour = null;
-  _Cm_left.name = void 0;
-  _Cm_left.graph = _5_graph;
-  _Cm_left.group = null;
-  _Cm_left.width = null;
-  _Cm_left.height = null;
-  var _Cn_ = [];
-  _Cm_left.links = _Cn_;
+  _Cn_left.key = "nd90";
+  _Cn_left.shape = null;
+  _Cn_left.text = null;
+  _Cn_left.colour = null;
+  _Cn_left.name = void 0;
+  _Cn_left.graph = _6_graph;
+  _Cn_left.group = null;
+  _Cn_left.width = null;
+  _Cn_left.height = null;
   var _Co_ = [];
-  _Cm_left.nodes = _Co_;
+  _Cn_left.links = _Co_;
+  var _Cp_ = [];
+  _Cn_left.nodes = _Cp_;
 
-  var _Cp_fromNode = (__constructor.prototype = _3O_, new __constructor());
+  var _Cq_fromNode = (__constructor.prototype = _3P_, new __constructor());
 
-  _Cp_fromNode.key = "nd15";
-  _Cp_fromNode.shape = null;
-  _Cp_fromNode.text = "!";
-  _Cp_fromNode.colour = "cyan";
-  _Cp_fromNode.name = void 0;
-  _Cp_fromNode.graph = _5_graph;
-  _Cp_fromNode.group = _A_;
-  _Cp_fromNode.width = ".3";
-  _Cp_fromNode.height = ".3";
-  var _Cv_ = [,,];
-  _Cv_.length = 0;
-  _Cp_fromNode.links = _Cv_;
-  _Cm_left.prin = _Cp_fromNode;
-  var _Cx_newPaxs = [,,];
-  _Cx_newPaxs.length = 0;
-  _Cm_left.auxs = _Cx_newPaxs;
+  _Cq_fromNode.key = "nd15";
+  _Cq_fromNode.shape = null;
+  _Cq_fromNode.text = "!";
+  _Cq_fromNode.colour = "cyan";
+  _Cq_fromNode.name = void 0;
+  _Cq_fromNode.graph = _6_graph;
+  _Cq_fromNode.group = _B_;
+  _Cq_fromNode.width = ".3";
+  _Cq_fromNode.height = ".3";
+  var _Cw_ = [,,];
+  _Cw_.length = 0;
+  _Cq_fromNode.links = _Cw_;
+  _Cn_left.prin = _Cq_fromNode;
+  var _Cy_newPaxs = [,,];
+  _Cy_newPaxs.length = 0;
+  _Cn_left.auxs = _Cy_newPaxs;
 
-  _8_.set("nd90", _Cm_left);
+  _9_.set("nd90", _Cn_left);
 
-  _8_.set("nd92", _4E_node);
+  _9_.set("nd92", _4F_node);
 
-  _8_.set("nd93", _4M_node);
+  _9_.set("nd93", _4N_node);
 
-  var _D0_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _D1_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _D0_term.key = "nd96";
-  _D0_term.shape = null;
-  _D0_term.text = null;
-  _D0_term.colour = null;
-  _D0_term.name = void 0;
-  _D0_term.graph = _5_graph;
-  _D0_term.group = null;
-  _D0_term.width = null;
-  _D0_term.height = null;
-  var _D1_ = [];
-  _D0_term.links = _D1_;
+  _D1_term.key = "nd96";
+  _D1_term.shape = null;
+  _D1_term.text = null;
+  _D1_term.colour = null;
+  _D1_term.name = void 0;
+  _D1_term.graph = _6_graph;
+  _D1_term.group = null;
+  _D1_term.width = null;
+  _D1_term.height = null;
   var _D2_ = [];
-  _D0_term.nodes = _D2_;
-  _D0_term.prin = _4U_node;
-  _D0_term.auxs = _4a_;
+  _D1_term.links = _D2_;
+  var _D3_ = [];
+  _D1_term.nodes = _D3_;
+  _D1_term.prin = _4V_node;
+  _D1_term.auxs = _4b_;
 
-  _8_.set("nd96", _D0_term);
+  _9_.set("nd96", _D1_term);
 
-  var _D4_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _D5_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _D4_right.key = "nd98";
-  _D4_right.shape = null;
-  _D4_right.text = null;
-  _D4_right.colour = null;
-  _D4_right.name = void 0;
-  _D4_right.graph = _5_graph;
-  _D4_right.group = null;
-  _D4_right.width = null;
-  _D4_right.height = null;
-  var _D5_ = [];
-  _D4_right.links = _D5_;
+  _D5_right.key = "nd98";
+  _D5_right.shape = null;
+  _D5_right.text = null;
+  _D5_right.colour = null;
+  _D5_right.name = void 0;
+  _D5_right.graph = _6_graph;
+  _D5_right.group = null;
+  _D5_right.width = null;
+  _D5_right.height = null;
   var _D6_ = [];
-  _D4_right.nodes = _D6_;
+  _D5_right.links = _D6_;
+  var _D7_ = [];
+  _D5_right.nodes = _D7_;
 
-  var _DG_ = (__constructor.prototype = _1c_, new __constructor());
+  var _DH_ = (__constructor.prototype = _1d_, new __constructor());
 
-  _Hx_Prov.prototype = _DG_;
+  _Hz_Prov.prototype = _DH_;
 
-  _$5_Object_46setPrototypeOf(_Hx_Prov, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_Hz_Prov, _Gm_Node);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hx_Prov, _$4_Object_46defineProperty(_DG_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hy_, _$4_Object_46defineProperty(_DG_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hz_, _$4_Object_46defineProperty(_DG_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I0_, _$4_Object_46defineProperty(_DG_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I1_, _$4_Object_46defineProperty(_DG_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Hz_Prov, _$5_Object_46defineProperty(_DH_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I0_, _$5_Object_46defineProperty(_DH_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I1_, _$5_Object_46defineProperty(_DH_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I2_, _$5_Object_46defineProperty(_DH_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I3_, _$5_Object_46defineProperty(_DH_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _D7_toNode = (__constructor.prototype = _DG_, new __constructor());
+  var _D8_toNode = (__constructor.prototype = _DH_, new __constructor());
 
-  _D7_toNode.key = "nd97";
-  _D7_toNode.shape = "diamond";
-  _D7_toNode.text = "";
-  _D7_toNode.colour = "indianred1";
-  _D7_toNode.name = void 0;
-  _D7_toNode.graph = _5_graph;
-  _D7_toNode.group = _A_;
-  _D7_toNode.width = ".3";
-  _D7_toNode.height = ".3";
-  var _DE_ = [,,];
-  _DE_.length = 0;
-  _D7_toNode.links = _DE_;
-  _D4_right.prin = _D7_toNode;
-  _D4_right.auxs = _4a_;
+  _D8_toNode.key = "nd97";
+  _D8_toNode.shape = "diamond";
+  _D8_toNode.text = "";
+  _D8_toNode.colour = "indianred1";
+  _D8_toNode.name = void 0;
+  _D8_toNode.graph = _6_graph;
+  _D8_toNode.group = _B_;
+  _D8_toNode.width = ".3";
+  _D8_toNode.height = ".3";
+  var _DF_ = [,,];
+  _DF_.length = 0;
+  _D8_toNode.links = _DF_;
+  _D5_right.prin = _D8_toNode;
+  _D5_right.auxs = _4b_;
 
-  _8_.set("nd98", _D4_right);
+  _9_.set("nd98", _D5_right);
 
-  var _DI_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _DJ_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _DI_term.key = "nd99";
-  _DI_term.shape = null;
-  _DI_term.text = null;
-  _DI_term.colour = null;
-  _DI_term.name = void 0;
-  _DI_term.graph = _5_graph;
-  _DI_term.group = null;
-  _DI_term.width = null;
-  _DI_term.height = null;
-  var _DJ_ = [];
-  _DI_term.links = _DJ_;
+  _DJ_term.key = "nd99";
+  _DJ_term.shape = null;
+  _DJ_term.text = null;
+  _DJ_term.colour = null;
+  _DJ_term.name = void 0;
+  _DJ_term.graph = _6_graph;
+  _DJ_term.group = null;
+  _DJ_term.width = null;
+  _DJ_term.height = null;
   var _DK_ = [];
-  _DI_term.nodes = _DK_;
+  _DJ_term.links = _DK_;
+  var _DL_ = [];
+  _DJ_term.nodes = _DL_;
 
-  var _DL_toNode = (__constructor.prototype = _4n_, new __constructor());
+  var _DM_toNode = (__constructor.prototype = _4o_, new __constructor());
 
-  _DL_toNode.key = "nd12";
-  _DL_toNode.shape = null;
-  _DL_toNode.text = "@";
-  _DL_toNode.colour = "yellow";
-  _DL_toNode.name = void 0;
-  _DL_toNode.graph = _5_graph;
-  _DL_toNode.group = _A_;
-  _DL_toNode.width = null;
-  _DL_toNode.height = null;
-  var _DP_ = [,,,];
-  _DP_.length = 0;
-  _DL_toNode.links = _DP_;
-  _DI_term.prin = _DL_toNode;
+  _DM_toNode.key = "nd12";
+  _DM_toNode.shape = null;
+  _DM_toNode.text = "@";
+  _DM_toNode.colour = "yellow";
+  _DM_toNode.name = void 0;
+  _DM_toNode.graph = _6_graph;
+  _DM_toNode.group = _B_;
+  _DM_toNode.width = null;
+  _DM_toNode.height = null;
+  var _DQ_ = [,,,];
+  _DQ_.length = 0;
+  _DM_toNode.links = _DQ_;
+  _DJ_term.prin = _DM_toNode;
 
-  var _DS_toNode = (__constructor.prototype = _3V_, new __constructor());
+  var _DT_toNode = (__constructor.prototype = _3W_, new __constructor());
 
-  _DS_toNode.key = "nd88";
-  _DS_toNode.shape = null;
-  _DS_toNode.text = "?";
-  _DS_toNode.colour = "cyan";
-  _DS_toNode.name = "max";
-  _DS_toNode.graph = _5_graph;
-  _DS_toNode.group = _A_;
-  _DS_toNode.width = ".3";
-  _DS_toNode.height = ".3";
-  var _DY_ = [,,,];
-  _DY_.length = 0;
-  _DS_toNode.links = _DY_;
+  _DT_toNode.key = "nd88";
+  _DT_toNode.shape = null;
+  _DT_toNode.text = "?";
+  _DT_toNode.colour = "cyan";
+  _DT_toNode.name = "max";
+  _DT_toNode.graph = _6_graph;
+  _DT_toNode.group = _B_;
+  _DT_toNode.width = ".3";
+  _DT_toNode.height = ".3";
+  var _DZ_ = [,,,];
+  _DZ_.length = 0;
+  _DT_toNode.links = _DZ_;
 
-  var _Da_toNode = (__constructor.prototype = _3V_, new __constructor());
+  var _Db_toNode = (__constructor.prototype = _3W_, new __constructor());
 
-  _Da_toNode.key = "nd89";
-  _Da_toNode.shape = null;
-  _Da_toNode.text = "?";
-  _Da_toNode.colour = "cyan";
-  _Da_toNode.name = "x";
-  _Da_toNode.graph = _5_graph;
-  _Da_toNode.group = _A_;
-  _Da_toNode.width = ".3";
-  _Da_toNode.height = ".3";
-  var _Dg_ = [,,];
-  _Dg_.length = 0;
-  _Da_toNode.links = _Dg_;
-  var _DR_newAuxs = [_DS_toNode, _Da_toNode];
-  _DI_term.auxs = _DR_newAuxs;
+  _Db_toNode.key = "nd89";
+  _Db_toNode.shape = null;
+  _Db_toNode.text = "?";
+  _Db_toNode.colour = "cyan";
+  _Db_toNode.name = "x";
+  _Db_toNode.graph = _6_graph;
+  _Db_toNode.group = _B_;
+  _Db_toNode.width = ".3";
+  _Db_toNode.height = ".3";
+  var _Dh_ = [,,];
+  _Dh_.length = 0;
+  _Db_toNode.links = _Dh_;
+  var _DS_newAuxs = [_DT_toNode, _Db_toNode];
+  _DJ_term.auxs = _DS_newAuxs;
 
-  _8_.set("nd99", _DI_term);
+  _9_.set("nd99", _DJ_term);
 
-  var _Dj_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _Dk_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Dj_left.key = "nd101";
-  _Dj_left.shape = null;
-  _Dj_left.text = null;
-  _Dj_left.colour = null;
-  _Dj_left.name = void 0;
-  _Dj_left.graph = _5_graph;
-  _Dj_left.group = null;
-  _Dj_left.width = null;
-  _Dj_left.height = null;
-  var _Dk_ = [];
-  _Dj_left.links = _Dk_;
+  _Dk_left.key = "nd101";
+  _Dk_left.shape = null;
+  _Dk_left.text = null;
+  _Dk_left.colour = null;
+  _Dk_left.name = void 0;
+  _Dk_left.graph = _6_graph;
+  _Dk_left.group = null;
+  _Dk_left.width = null;
+  _Dk_left.height = null;
   var _Dl_ = [];
-  _Dj_left.nodes = _Dl_;
+  _Dk_left.links = _Dl_;
+  var _Dm_ = [];
+  _Dk_left.nodes = _Dm_;
 
-  var _Dm_fromNode = (__constructor.prototype = _3O_, new __constructor());
+  var _Dn_fromNode = (__constructor.prototype = _3P_, new __constructor());
 
-  _Dm_fromNode.key = "nd10";
-  _Dm_fromNode.shape = null;
-  _Dm_fromNode.text = "!";
-  _Dm_fromNode.colour = "cyan";
-  _Dm_fromNode.name = void 0;
-  _Dm_fromNode.graph = _5_graph;
-  _Dm_fromNode.group = _A_;
-  _Dm_fromNode.width = ".3";
-  _Dm_fromNode.height = ".3";
-  var _Ds_ = [,,];
-  _Ds_.length = 0;
-  _Dm_fromNode.links = _Ds_;
-  _Dj_left.prin = _Dm_fromNode;
-  var _Du_newPaxs = [,];
-  _Du_newPaxs.length = 0;
-  _Dj_left.auxs = _Du_newPaxs;
+  _Dn_fromNode.key = "nd10";
+  _Dn_fromNode.shape = null;
+  _Dn_fromNode.text = "!";
+  _Dn_fromNode.colour = "cyan";
+  _Dn_fromNode.name = void 0;
+  _Dn_fromNode.graph = _6_graph;
+  _Dn_fromNode.group = _B_;
+  _Dn_fromNode.width = ".3";
+  _Dn_fromNode.height = ".3";
+  var _Dt_ = [,,];
+  _Dt_.length = 0;
+  _Dn_fromNode.links = _Dt_;
+  _Dk_left.prin = _Dn_fromNode;
+  var _Dv_newPaxs = [,];
+  _Dv_newPaxs.length = 0;
+  _Dk_left.auxs = _Dv_newPaxs;
 
-  _8_.set("nd101", _Dj_left);
+  _9_.set("nd101", _Dk_left);
 
-  _8_.set("nd103", _3h_node);
+  _9_.set("nd103", _3i_node);
 
-  _8_.set("nd104", _3p_node);
+  _9_.set("nd104", _3q_node);
 
-  var _Dx_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Dy_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Dx_term.key = "nd107";
-  _Dx_term.shape = null;
-  _Dx_term.text = null;
-  _Dx_term.colour = null;
-  _Dx_term.name = void 0;
-  _Dx_term.graph = _5_graph;
-  _Dx_term.group = null;
-  _Dx_term.width = null;
-  _Dx_term.height = null;
-  var _Dy_ = [];
-  _Dx_term.links = _Dy_;
+  _Dy_term.key = "nd107";
+  _Dy_term.shape = null;
+  _Dy_term.text = null;
+  _Dy_term.colour = null;
+  _Dy_term.name = void 0;
+  _Dy_term.graph = _6_graph;
+  _Dy_term.group = null;
+  _Dy_term.width = null;
+  _Dy_term.height = null;
   var _Dz_ = [];
-  _Dx_term.nodes = _Dz_;
-  _Dx_term.prin = _3y_node;
-  _Dx_term.auxs = _44_;
+  _Dy_term.links = _Dz_;
+  var _E0_ = [];
+  _Dy_term.nodes = _E0_;
+  _Dy_term.prin = _3z_node;
+  _Dy_term.auxs = _45_;
 
-  _8_.set("nd107", _Dx_term);
+  _9_.set("nd107", _Dy_term);
 
-  var _E1_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _E2_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _E1_right.key = "nd109";
-  _E1_right.shape = null;
-  _E1_right.text = null;
-  _E1_right.colour = null;
-  _E1_right.name = void 0;
-  _E1_right.graph = _5_graph;
-  _E1_right.group = null;
-  _E1_right.width = null;
-  _E1_right.height = null;
-  var _E2_ = [];
-  _E1_right.links = _E2_;
+  _E2_right.key = "nd109";
+  _E2_right.shape = null;
+  _E2_right.text = null;
+  _E2_right.colour = null;
+  _E2_right.name = void 0;
+  _E2_right.graph = _6_graph;
+  _E2_right.group = null;
+  _E2_right.width = null;
+  _E2_right.height = null;
   var _E3_ = [];
-  _E1_right.nodes = _E3_;
+  _E2_right.links = _E3_;
+  var _E4_ = [];
+  _E2_right.nodes = _E4_;
 
-  var _E4_toNode = (__constructor.prototype = _DG_, new __constructor());
+  var _E5_toNode = (__constructor.prototype = _DH_, new __constructor());
 
-  _E4_toNode.key = "nd108";
-  _E4_toNode.shape = "diamond";
-  _E4_toNode.text = "";
-  _E4_toNode.colour = "indianred1";
-  _E4_toNode.name = void 0;
-  _E4_toNode.graph = _5_graph;
-  _E4_toNode.group = _A_;
-  _E4_toNode.width = ".3";
-  _E4_toNode.height = ".3";
-  var _EB_ = [,,];
-  _EB_.length = 0;
-  _E4_toNode.links = _EB_;
-  _E1_right.prin = _E4_toNode;
-  _E1_right.auxs = _44_;
+  _E5_toNode.key = "nd108";
+  _E5_toNode.shape = "diamond";
+  _E5_toNode.text = "";
+  _E5_toNode.colour = "indianred1";
+  _E5_toNode.name = void 0;
+  _E5_toNode.graph = _6_graph;
+  _E5_toNode.group = _B_;
+  _E5_toNode.width = ".3";
+  _E5_toNode.height = ".3";
+  var _EC_ = [,,];
+  _EC_.length = 0;
+  _E5_toNode.links = _EC_;
+  _E2_right.prin = _E5_toNode;
+  _E2_right.auxs = _45_;
 
-  _8_.set("nd109", _E1_right);
+  _9_.set("nd109", _E2_right);
 
-  var _EE_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _EF_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _EE_term.key = "nd110";
-  _EE_term.shape = null;
-  _EE_term.text = null;
-  _EE_term.colour = null;
-  _EE_term.name = void 0;
-  _EE_term.graph = _5_graph;
-  _EE_term.group = null;
-  _EE_term.width = null;
-  _EE_term.height = null;
-  var _EF_ = [];
-  _EE_term.links = _EF_;
+  _EF_term.key = "nd110";
+  _EF_term.shape = null;
+  _EF_term.text = null;
+  _EF_term.colour = null;
+  _EF_term.name = void 0;
+  _EF_term.graph = _6_graph;
+  _EF_term.group = null;
+  _EF_term.width = null;
+  _EF_term.height = null;
   var _EG_ = [];
-  _EE_term.nodes = _EG_;
+  _EF_term.links = _EG_;
+  var _EH_ = [];
+  _EF_term.nodes = _EH_;
 
-  var _EH_toNode = (__constructor.prototype = _4n_, new __constructor());
+  var _EI_toNode = (__constructor.prototype = _4o_, new __constructor());
 
-  _EH_toNode.key = "nd7";
-  _EH_toNode.shape = null;
-  _EH_toNode.text = "@";
-  _EH_toNode.colour = "yellow";
-  _EH_toNode.name = void 0;
-  _EH_toNode.graph = _5_graph;
-  _EH_toNode.group = _A_;
-  _EH_toNode.width = null;
-  _EH_toNode.height = null;
-  var _EL_ = [,,,];
-  _EL_.length = 0;
-  _EH_toNode.links = _EL_;
-  _EE_term.prin = _EH_toNode;
+  _EI_toNode.key = "nd7";
+  _EI_toNode.shape = null;
+  _EI_toNode.text = "@";
+  _EI_toNode.colour = "yellow";
+  _EI_toNode.name = void 0;
+  _EI_toNode.graph = _6_graph;
+  _EI_toNode.group = _B_;
+  _EI_toNode.width = null;
+  _EI_toNode.height = null;
+  var _EM_ = [,,,];
+  _EM_.length = 0;
+  _EI_toNode.links = _EM_;
+  _EF_term.prin = _EI_toNode;
 
-  var _EO_toNode = (__constructor.prototype = _3V_, new __constructor());
+  var _EP_toNode = (__constructor.prototype = _3W_, new __constructor());
 
-  _EO_toNode.key = "nd100";
-  _EO_toNode.shape = null;
-  _EO_toNode.text = "?";
-  _EO_toNode.colour = "cyan";
-  _EO_toNode.name = "max";
-  _EO_toNode.graph = _5_graph;
-  _EO_toNode.group = _A_;
-  _EO_toNode.width = ".3";
-  _EO_toNode.height = ".3";
-  var _EU_ = [,,];
-  _EU_.length = 0;
-  _EO_toNode.links = _EU_;
-  var _EN_newAuxs = [_EO_toNode];
-  _EE_term.auxs = _EN_newAuxs;
+  _EP_toNode.key = "nd100";
+  _EP_toNode.shape = null;
+  _EP_toNode.text = "?";
+  _EP_toNode.colour = "cyan";
+  _EP_toNode.name = "max";
+  _EP_toNode.graph = _6_graph;
+  _EP_toNode.group = _B_;
+  _EP_toNode.width = ".3";
+  _EP_toNode.height = ".3";
+  var _EV_ = [,,];
+  _EV_.length = 0;
+  _EP_toNode.links = _EV_;
+  var _EO_newAuxs = [_EP_toNode];
+  _EF_term.auxs = _EO_newAuxs;
 
-  _8_.set("nd110", _EE_term);
+  _9_.set("nd110", _EF_term);
 
-  var _EX_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _EY_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _EX_left.key = "nd111";
-  _EX_left.shape = null;
-  _EX_left.text = null;
-  _EX_left.colour = null;
-  _EX_left.name = void 0;
-  _EX_left.graph = _5_graph;
-  _EX_left.group = null;
-  _EX_left.width = null;
-  _EX_left.height = null;
-  var _EY_ = [];
-  _EX_left.links = _EY_;
+  _EY_left.key = "nd111";
+  _EY_left.shape = null;
+  _EY_left.text = null;
+  _EY_left.colour = null;
+  _EY_left.name = void 0;
+  _EY_left.graph = _6_graph;
+  _EY_left.group = null;
+  _EY_left.width = null;
+  _EY_left.height = null;
   var _EZ_ = [];
-  _EX_left.nodes = _EZ_;
+  _EY_left.links = _EZ_;
+  var _Ea_ = [];
+  _EY_left.nodes = _Ea_;
 
-  var _Ea_fromNode = (__constructor.prototype = _3O_, new __constructor());
+  var _Eb_fromNode = (__constructor.prototype = _3P_, new __constructor());
 
-  _Ea_fromNode.key = "nd5";
-  _Ea_fromNode.shape = null;
-  _Ea_fromNode.text = "!";
-  _Ea_fromNode.colour = "cyan";
-  _Ea_fromNode.name = void 0;
-  _Ea_fromNode.graph = _5_graph;
-  _Ea_fromNode.group = _A_;
-  _Ea_fromNode.width = ".3";
-  _Ea_fromNode.height = ".3";
-  var _Eg_ = [,,];
-  _Eg_.length = 0;
-  _Ea_fromNode.links = _Eg_;
-  _EX_left.prin = _Ea_fromNode;
-  var _Ei_newPaxs = [];
-  _EX_left.auxs = _Ei_newPaxs;
+  _Eb_fromNode.key = "nd5";
+  _Eb_fromNode.shape = null;
+  _Eb_fromNode.text = "!";
+  _Eb_fromNode.colour = "cyan";
+  _Eb_fromNode.name = void 0;
+  _Eb_fromNode.graph = _6_graph;
+  _Eb_fromNode.group = _B_;
+  _Eb_fromNode.width = ".3";
+  _Eb_fromNode.height = ".3";
+  var _Eh_ = [,,];
+  _Eh_.length = 0;
+  _Eb_fromNode.links = _Eh_;
+  _EY_left.prin = _Eb_fromNode;
+  var _Ej_newPaxs = [];
+  _EY_left.auxs = _Ej_newPaxs;
 
-  _8_.set("nd111", _EX_left);
+  _9_.set("nd111", _EY_left);
 
-  _8_.set("nd113", _1d_node);
+  _9_.set("nd113", _1e_node);
 
-  _8_.set("nd114", _1l_node);
+  _9_.set("nd114", _1m_node);
 
-  _8_.set("nd117", _23_node);
+  _9_.set("nd117", _24_node);
 
-  _8_.set("nd118", _2F_node);
+  _9_.set("nd118", _2G_node);
 
-  var _Ek_left = (__constructor.prototype = _3Y_, new __constructor());
+  var _El_left = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Ek_left.key = "nd124";
-  _Ek_left.shape = null;
-  _Ek_left.text = null;
-  _Ek_left.colour = null;
-  _Ek_left.name = void 0;
-  _Ek_left.graph = _5_graph;
-  _Ek_left.group = null;
-  _Ek_left.width = null;
-  _Ek_left.height = null;
-  var _El_ = [];
-  _Ek_left.links = _El_;
+  _El_left.key = "nd124";
+  _El_left.shape = null;
+  _El_left.text = null;
+  _El_left.colour = null;
+  _El_left.name = void 0;
+  _El_left.graph = _6_graph;
+  _El_left.group = null;
+  _El_left.width = null;
+  _El_left.height = null;
   var _Em_ = [];
-  _Ek_left.nodes = _Em_;
+  _El_left.links = _Em_;
+  var _En_ = [];
+  _El_left.nodes = _En_;
 
-  var _En_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _Eo_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _En_toNode.key = "nd123";
-  _En_toNode.shape = null;
-  _En_toNode.text = "V";
-  _En_toNode.colour = "cyan";
-  _En_toNode.name = "x";
-  _En_toNode.graph = _5_graph;
-  _En_toNode.group = _2F_node;
-  _En_toNode.width = ".3";
-  _En_toNode.height = ".3";
-  var _Eu_ = [,,];
-  _Eu_.length = 0;
-  _En_toNode.links = _Eu_;
-  _Ek_left.prin = _En_toNode;
-  var _Ew_ = [_En_toNode];
-  _Ek_left.auxs = _Ew_;
+  _Eo_toNode.key = "nd123";
+  _Eo_toNode.shape = null;
+  _Eo_toNode.text = "V";
+  _Eo_toNode.colour = "cyan";
+  _Eo_toNode.name = "x";
+  _Eo_toNode.graph = _6_graph;
+  _Eo_toNode.group = _2G_node;
+  _Eo_toNode.width = ".3";
+  _Eo_toNode.height = ".3";
+  var _Ev_ = [,,];
+  _Ev_.length = 0;
+  _Eo_toNode.links = _Ev_;
+  _El_left.prin = _Eo_toNode;
+  var _Ex_ = [_Eo_toNode];
+  _El_left.auxs = _Ex_;
 
-  _8_.set("nd124", _Ek_left);
+  _9_.set("nd124", _El_left);
 
-  var _Ey_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _Ez_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Ey_right.key = "nd126";
-  _Ey_right.shape = null;
-  _Ey_right.text = null;
-  _Ey_right.colour = null;
-  _Ey_right.name = void 0;
-  _Ey_right.graph = _5_graph;
-  _Ey_right.group = null;
-  _Ey_right.width = null;
-  _Ey_right.height = null;
-  var _Ez_ = [];
-  _Ey_right.links = _Ez_;
+  _Ez_right.key = "nd126";
+  _Ez_right.shape = null;
+  _Ez_right.text = null;
+  _Ez_right.colour = null;
+  _Ez_right.name = void 0;
+  _Ez_right.graph = _6_graph;
+  _Ez_right.group = null;
+  _Ez_right.width = null;
+  _Ez_right.height = null;
   var _F0_ = [];
-  _Ey_right.nodes = _F0_;
+  _Ez_right.links = _F0_;
+  var _F1_ = [];
+  _Ez_right.nodes = _F1_;
 
-  var _F1_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _F2_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _F1_toNode.key = "nd125";
-  _F1_toNode.shape = null;
-  _F1_toNode.text = "V";
-  _F1_toNode.colour = "cyan";
-  _F1_toNode.name = "y";
-  _F1_toNode.graph = _5_graph;
-  _F1_toNode.group = _2F_node;
-  _F1_toNode.width = ".3";
-  _F1_toNode.height = ".3";
-  var _F8_ = [,,];
-  _F8_.length = 0;
-  _F1_toNode.links = _F8_;
-  _Ey_right.prin = _F1_toNode;
-  var _FA_ = [_F1_toNode];
-  _Ey_right.auxs = _FA_;
+  _F2_toNode.key = "nd125";
+  _F2_toNode.shape = null;
+  _F2_toNode.text = "V";
+  _F2_toNode.colour = "cyan";
+  _F2_toNode.name = "y";
+  _F2_toNode.graph = _6_graph;
+  _F2_toNode.group = _2G_node;
+  _F2_toNode.width = ".3";
+  _F2_toNode.height = ".3";
+  var _F9_ = [,,];
+  _F9_.length = 0;
+  _F2_toNode.links = _F9_;
+  _Ez_right.prin = _F2_toNode;
+  var _FB_ = [_F2_toNode];
+  _Ez_right.auxs = _FB_;
 
-  _8_.set("nd126", _Ey_right);
+  _9_.set("nd126", _Ez_right);
 
-  var _FC_cond = (__constructor.prototype = _3Y_, new __constructor());
+  var _FD_cond = (__constructor.prototype = _3Z_, new __constructor());
 
-  _FC_cond.key = "nd127";
-  _FC_cond.shape = null;
-  _FC_cond.text = null;
-  _FC_cond.colour = null;
-  _FC_cond.name = void 0;
-  _FC_cond.graph = _5_graph;
-  _FC_cond.group = null;
-  _FC_cond.width = null;
-  _FC_cond.height = null;
-  var _FD_ = [];
-  _FC_cond.links = _FD_;
+  _FD_cond.key = "nd127";
+  _FD_cond.shape = null;
+  _FD_cond.text = null;
+  _FD_cond.colour = null;
+  _FD_cond.name = void 0;
+  _FD_cond.graph = _6_graph;
+  _FD_cond.group = null;
+  _FD_cond.width = null;
+  _FD_cond.height = null;
   var _FE_ = [];
-  _FC_cond.nodes = _FE_;
-  _FC_cond.prin = _2s_fromNode;
-  var _FF_newAuxs = [_En_toNode, _F1_toNode];
-  _FC_cond.auxs = _FF_newAuxs;
+  _FD_cond.links = _FE_;
+  var _FF_ = [];
+  _FD_cond.nodes = _FF_;
+  _FD_cond.prin = _2t_fromNode;
+  var _FG_newAuxs = [_Eo_toNode, _F2_toNode];
+  _FD_cond.auxs = _FG_newAuxs;
 
-  _8_.set("nd127", _FC_cond);
+  _9_.set("nd127", _FD_cond);
 
-  var _FH_t1 = (__constructor.prototype = _3Y_, new __constructor());
+  var _FI_t1 = (__constructor.prototype = _3Z_, new __constructor());
 
-  _FH_t1.key = "nd129";
-  _FH_t1.shape = null;
-  _FH_t1.text = null;
-  _FH_t1.colour = null;
-  _FH_t1.name = void 0;
-  _FH_t1.graph = _5_graph;
-  _FH_t1.group = null;
-  _FH_t1.width = null;
-  _FH_t1.height = null;
-  var _FI_ = [];
-  _FH_t1.links = _FI_;
+  _FI_t1.key = "nd129";
+  _FI_t1.shape = null;
+  _FI_t1.text = null;
+  _FI_t1.colour = null;
+  _FI_t1.name = void 0;
+  _FI_t1.graph = _6_graph;
+  _FI_t1.group = null;
+  _FI_t1.width = null;
+  _FI_t1.height = null;
   var _FJ_ = [];
-  _FH_t1.nodes = _FJ_;
+  _FI_t1.links = _FJ_;
+  var _FK_ = [];
+  _FI_t1.nodes = _FK_;
 
-  var _FK_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _FL_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _FK_toNode.key = "nd128";
-  _FK_toNode.shape = null;
-  _FK_toNode.text = "V";
-  _FK_toNode.colour = "cyan";
-  _FK_toNode.name = "y";
-  _FK_toNode.graph = _5_graph;
-  _FK_toNode.group = _2F_node;
-  _FK_toNode.width = ".3";
-  _FK_toNode.height = ".3";
-  var _FQ_ = [,,];
-  _FQ_.length = 0;
-  _FK_toNode.links = _FQ_;
-  _FH_t1.prin = _FK_toNode;
-  var _FS_ = [_FK_toNode];
-  _FH_t1.auxs = _FS_;
+  _FL_toNode.key = "nd128";
+  _FL_toNode.shape = null;
+  _FL_toNode.text = "V";
+  _FL_toNode.colour = "cyan";
+  _FL_toNode.name = "y";
+  _FL_toNode.graph = _6_graph;
+  _FL_toNode.group = _2G_node;
+  _FL_toNode.width = ".3";
+  _FL_toNode.height = ".3";
+  var _FR_ = [,,];
+  _FR_.length = 0;
+  _FL_toNode.links = _FR_;
+  _FI_t1.prin = _FL_toNode;
+  var _FT_ = [_FL_toNode];
+  _FI_t1.auxs = _FT_;
 
-  _8_.set("nd129", _FH_t1);
+  _9_.set("nd129", _FI_t1);
 
-  var _FU_t2 = (__constructor.prototype = _3Y_, new __constructor());
+  var _FV_t2 = (__constructor.prototype = _3Z_, new __constructor());
 
-  _FU_t2.key = "nd131";
-  _FU_t2.shape = null;
-  _FU_t2.text = null;
-  _FU_t2.colour = null;
-  _FU_t2.name = void 0;
-  _FU_t2.graph = _5_graph;
-  _FU_t2.group = null;
-  _FU_t2.width = null;
-  _FU_t2.height = null;
-  var _FV_ = [];
-  _FU_t2.links = _FV_;
+  _FV_t2.key = "nd131";
+  _FV_t2.shape = null;
+  _FV_t2.text = null;
+  _FV_t2.colour = null;
+  _FV_t2.name = void 0;
+  _FV_t2.graph = _6_graph;
+  _FV_t2.group = null;
+  _FV_t2.width = null;
+  _FV_t2.height = null;
   var _FW_ = [];
-  _FU_t2.nodes = _FW_;
+  _FV_t2.links = _FW_;
+  var _FX_ = [];
+  _FV_t2.nodes = _FX_;
 
-  var _FX_toNode = (__constructor.prototype = _Ae_, new __constructor());
+  var _FY_toNode = (__constructor.prototype = _Af_, new __constructor());
 
-  _FX_toNode.key = "nd130";
-  _FX_toNode.shape = null;
-  _FX_toNode.text = "V";
-  _FX_toNode.colour = "cyan";
-  _FX_toNode.name = "x";
-  _FX_toNode.graph = _5_graph;
-  _FX_toNode.group = _2F_node;
-  _FX_toNode.width = ".3";
-  _FX_toNode.height = ".3";
-  var _Fd_ = [,,];
-  _Fd_.length = 0;
-  _FX_toNode.links = _Fd_;
-  _FU_t2.prin = _FX_toNode;
-  var _Ff_ = [_FX_toNode];
-  _FU_t2.auxs = _Ff_;
+  _FY_toNode.key = "nd130";
+  _FY_toNode.shape = null;
+  _FY_toNode.text = "V";
+  _FY_toNode.colour = "cyan";
+  _FY_toNode.name = "x";
+  _FY_toNode.graph = _6_graph;
+  _FY_toNode.group = _2G_node;
+  _FY_toNode.width = ".3";
+  _FY_toNode.height = ".3";
+  var _Fe_ = [,,];
+  _Fe_.length = 0;
+  _FY_toNode.links = _Fe_;
+  _FV_t2.prin = _FY_toNode;
+  var _Fg_ = [_FY_toNode];
+  _FV_t2.auxs = _Fg_;
 
-  _8_.set("nd131", _FU_t2);
+  _9_.set("nd131", _FV_t2);
 
-  var _Fh_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Fi_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Fh_term.key = "nd134";
-  _Fh_term.shape = null;
-  _Fh_term.text = null;
-  _Fh_term.colour = null;
-  _Fh_term.name = void 0;
-  _Fh_term.graph = _5_graph;
-  _Fh_term.group = null;
-  _Fh_term.width = null;
-  _Fh_term.height = null;
-  var _Fi_ = [];
-  _Fh_term.links = _Fi_;
+  _Fi_term.key = "nd134";
+  _Fi_term.shape = null;
+  _Fi_term.text = null;
+  _Fi_term.colour = null;
+  _Fi_term.name = void 0;
+  _Fi_term.graph = _6_graph;
+  _Fi_term.group = null;
+  _Fi_term.width = null;
+  _Fi_term.height = null;
   var _Fj_ = [];
-  _Fh_term.nodes = _Fj_;
-  _Fh_term.prin = _2m_fromNode;
-  var _Fk_newAuxs = [_2z_node, _38_node,,,];
-  _Fk_newAuxs.length = 2;
-  _Fh_term.auxs = _Fk_newAuxs;
+  _Fi_term.links = _Fj_;
+  var _Fk_ = [];
+  _Fi_term.nodes = _Fk_;
+  _Fi_term.prin = _2n_fromNode;
+  var _Fl_newAuxs = [_30_node, _39_node,,,];
+  _Fl_newAuxs.length = 2;
+  _Fi_term.auxs = _Fl_newAuxs;
 
-  _8_.set("nd134", _Fh_term);
+  _9_.set("nd134", _Fi_term);
 
-  var _Fn_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Fo_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Fn_term.key = "nd136";
-  _Fn_term.shape = null;
-  _Fn_term.text = null;
-  _Fn_term.colour = null;
-  _Fn_term.name = void 0;
-  _Fn_term.graph = _5_graph;
-  _Fn_term.group = null;
-  _Fn_term.width = null;
-  _Fn_term.height = null;
-  var _Fo_ = [];
-  _Fn_term.links = _Fo_;
+  _Fo_term.key = "nd136";
+  _Fo_term.shape = null;
+  _Fo_term.text = null;
+  _Fo_term.colour = null;
+  _Fo_term.name = void 0;
+  _Fo_term.graph = _6_graph;
+  _Fo_term.group = null;
+  _Fo_term.width = null;
+  _Fo_term.height = null;
   var _Fp_ = [];
-  _Fn_term.nodes = _Fp_;
-  _Fn_term.prin = _3I_node;
-  _Fn_term.auxs = _3W_newPaxs;
+  _Fo_term.links = _Fp_;
+  var _Fq_ = [];
+  _Fo_term.nodes = _Fq_;
+  _Fo_term.prin = _3J_node;
+  _Fo_term.auxs = _3X_newPaxs;
 
-  _8_.set("nd136", _Fn_term);
+  _9_.set("nd136", _Fo_term);
 
-  var _Fr_right = (__constructor.prototype = _3Y_, new __constructor());
+  var _Fs_right = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Fr_right.key = "nd137";
-  _Fr_right.shape = null;
-  _Fr_right.text = null;
-  _Fr_right.colour = null;
-  _Fr_right.name = void 0;
-  _Fr_right.graph = _5_graph;
-  _Fr_right.group = null;
-  _Fr_right.width = null;
-  _Fr_right.height = null;
-  var _Fs_ = [];
-  _Fr_right.links = _Fs_;
+  _Fs_right.key = "nd137";
+  _Fs_right.shape = null;
+  _Fs_right.text = null;
+  _Fs_right.colour = null;
+  _Fs_right.name = void 0;
+  _Fs_right.graph = _6_graph;
+  _Fs_right.group = null;
+  _Fs_right.width = null;
+  _Fs_right.height = null;
   var _Ft_ = [];
-  _Fr_right.nodes = _Ft_;
-  _Fr_right.prin = _3Z_toNode;
-  _Fr_right.auxs = _3g_newPaxs;
+  _Fs_right.links = _Ft_;
+  var _Fu_ = [];
+  _Fs_right.nodes = _Fu_;
+  _Fs_right.prin = _3a_toNode;
+  _Fs_right.auxs = _3h_newPaxs;
 
-  _8_.set("nd137", _Fr_right);
+  _9_.set("nd137", _Fs_right);
 
-  var _Fv_term = (__constructor.prototype = _3Y_, new __constructor());
+  var _Fw_term = (__constructor.prototype = _3Z_, new __constructor());
 
-  _Fv_term.key = "nd138";
-  _Fv_term.shape = null;
-  _Fv_term.text = null;
-  _Fv_term.colour = null;
-  _Fv_term.name = void 0;
-  _Fv_term.graph = _5_graph;
-  _Fv_term.group = null;
-  _Fv_term.width = null;
-  _Fv_term.height = null;
-  var _Fw_ = [];
-  _Fv_term.links = _Fw_;
+  _Fw_term.key = "nd138";
+  _Fw_term.shape = null;
+  _Fw_term.text = null;
+  _Fw_term.colour = null;
+  _Fw_term.name = void 0;
+  _Fw_term.graph = _6_graph;
+  _Fw_term.group = null;
+  _Fw_term.width = null;
+  _Fw_term.height = null;
   var _Fx_ = [];
-  _Fv_term.nodes = _Fx_;
+  _Fw_term.links = _Fx_;
+  var _Fy_ = [];
+  _Fw_term.nodes = _Fy_;
 
-  var _Fy_toNode = (__constructor.prototype = _4n_, new __constructor());
+  var _Fz_toNode = (__constructor.prototype = _4o_, new __constructor());
 
-  _Fy_toNode.key = "nd2";
-  _Fy_toNode.shape = null;
-  _Fy_toNode.text = "@";
-  _Fy_toNode.colour = "yellow";
-  _Fy_toNode.name = void 0;
-  _Fy_toNode.graph = _5_graph;
-  _Fy_toNode.group = _A_;
-  _Fy_toNode.width = null;
-  _Fy_toNode.height = null;
-  var _G2_ = [,,,];
-  _G2_.length = 0;
-  _Fy_toNode.links = _G2_;
-  _Fv_term.prin = _Fy_toNode;
-  var _G4_newAuxs = [];
-  _Fv_term.auxs = _G4_newAuxs;
+  _Fz_toNode.key = "nd2";
+  _Fz_toNode.shape = null;
+  _Fz_toNode.text = "@";
+  _Fz_toNode.colour = "yellow";
+  _Fz_toNode.name = void 0;
+  _Fz_toNode.graph = _6_graph;
+  _Fz_toNode.group = _B_;
+  _Fz_toNode.width = null;
+  _Fz_toNode.height = null;
+  var _G3_ = [,,,];
+  _G3_.length = 0;
+  _Fz_toNode.links = _G3_;
+  _Fw_term.prin = _Fz_toNode;
+  var _G5_newAuxs = [];
+  _Fw_term.auxs = _G5_newAuxs;
 
-  _8_.set("nd138", _Fv_term);
+  _9_.set("nd138", _Fw_term);
 
-  _77_.group = _74_node;
-  _7I_.group = _7F_node;
-  _7B_outLink.group = _74_node;
-  _6b_.group = _6Y_node;
-  _6g_.group = _6Y_node;
-  _6k_.group = _6Y_node;
-  _6P_.group = _6M_node;
-  _6o_.group = _6Y_node;
-  _6r_.group = _6Y_node;
-  _6T_link.group = _6M_node;
-  _5p_.group = _5m_node;
-  _8Z_.group = _8W_node;
-  _5u_.group = _5m_node;
-  _5y_.group = _5m_node;
-  _62_.group = _5m_node;
-  _5Z_.group = _5W_node;
-  _65_.group = _5m_node;
-  _68_.group = _5m_node;
-  _5d_.group = _5W_node;
-  _5h_outLink.group = _5W_node;
-  _53_.group = _50_node;
-  _58_.group = _50_node;
-  _5C_.group = _50_node;
-  _4r_.group = _4o_node;
-  _5G_.group = _50_node;
-  _5J_.group = _50_node;
-  _4v_link.group = _4o_node;
-  _h_link.group = _A_;
-  _m_link.group = _A_;
-  _q_link.group = _A_;
-  _u_link.group = _A_;
-  _y_link.group = _A_;
-  _12_nextLink.group = _A_;
-  _18_link.group = _A_;
-  _1C_link.group = _A_;
-  _1F_link.group = _A_;
-  _1I_link.group = _A_;
-  _1M_link.group = _A_;
-  _1Q_otherNextLink.group = _A_;
-  _4H_link.group = _4E_node;
-  _U_outLink.group = _A_;
-  _Z_outLink.group = _A_;
-  _3k_link.group = _3h_node;
-  _E_outLink.group = _A_;
-  _K_outLink.group = _A_;
-  _2I_.group = _2F_node;
-  _2N_outLink.group = _2F_node;
-  _2R_outLink.group = _2F_node;
-  _2U_outLink.group = _2F_node;
-  _2X_outLink.group = _2F_node;
-  _26_.group = _23_node;
-  _2a_.group = _2F_node;
-  _2d_.group = _2F_node;
-  _2A_.group = _23_node;
-  _1g_link.group = _1d_node;
-  _1o_.group = _1l_node;
-  _1s_.group = _1l_node;
-  _Q_.group = _A_;
-  _d_.group = _A_;
-  _1V_fromNode.group = _A_;
-  _4j_node.group = _A_;
-  _9U_node.group = _4o_node;
-  _HT_Term.prototype = _3Y_;
-  _5O_node.group = _50_node;
-  _5S_node.group = _50_node;
-  _90_node.group = _5W_node;
-  _6E_node.group = _5m_node;
-  _6I_node.group = _5m_node;
-  _87_node.group = _6M_node;
-  _6w_node.group = _6Y_node;
-  _70_node.group = _6Y_node;
-  _7b_node.group = _74_node;
-  _7O_fromNode.group = _7F_node;
-  _7T_node.group = _7F_node;
-  _7h_node.group = _74_node;
-  _7p_node.group = _6Y_node;
-  _7w_node.group = _6Y_node;
-  _HL_BoxWrapper.prototype = _3X_;
-  _H6_Box.prototype = _3G_;
-  _81_node.group = _6Y_node;
-  _8D_node.group = _6M_node;
-  _8K_node.group = _5m_node;
-  _8Q_fromNode.group = _5m_node;
-  _8m_node.group = _8W_node;
-  _8i_node.group = _8e_node;
-  _8t_node.group = _5m_node;
-  _96_node.group = _5W_node;
-  _9C_node.group = _5W_node;
-  _9K_node.group = _50_node;
-  _9Q_node.group = _50_node;
-  _9a_node.group = _4o_node;
-  _9h_node.group = _A_;
-  _9n_node.group = _A_;
-  _9r_node.group = _A_;
-  _9v_fromNode.group = _A_;
-  _A3_node.group = _A_;
-  _A9_node.group = _A_;
-  _AF_otherNode.group = _A_;
-  _AK_fromNode.group = _A_;
-  _4U_node.group = _4E_node;
-  _4Q_node.group = _4M_node;
-  _3y_node.group = _3h_node;
-  _3t_node.group = _3p_node;
-  _3Z_toNode.group = _1d_node;
-  _1y_node.group = _1l_node;
-  _3I_node.group = _23_node;
-  _2i_node.group = _2F_node;
-  _2m_fromNode.group = _2F_node;
-  _2s_fromNode.group = _2F_node;
-  _2z_node.group = _2F_node;
-  _38_node.group = _2F_node;
-  _3P_node.group = _23_node;
-  _45_toNode.group = _A_;
-  _4B_toNode.group = _A_;
-  _4b_toNode.group = _A_;
-  _4g_toNode.group = _A_;
-  _H8_Group.prototype = _3H_;
+  _78_.group = _75_node;
+  _7J_.group = _7G_node;
+  _7C_outLink.group = _75_node;
+  _6c_.group = _6Z_node;
+  _6h_.group = _6Z_node;
+  _6l_.group = _6Z_node;
+  _6Q_.group = _6N_node;
+  _6p_.group = _6Z_node;
+  _6s_.group = _6Z_node;
+  _6U_link.group = _6N_node;
+  _5q_.group = _5n_node;
+  _8a_.group = _8X_node;
+  _5v_.group = _5n_node;
+  _5z_.group = _5n_node;
+  _63_.group = _5n_node;
+  _5a_.group = _5X_node;
+  _66_.group = _5n_node;
+  _69_.group = _5n_node;
+  _5e_.group = _5X_node;
+  _5i_outLink.group = _5X_node;
+  _54_.group = _51_node;
+  _59_.group = _51_node;
+  _5D_.group = _51_node;
+  _4s_.group = _4p_node;
+  _5H_.group = _51_node;
+  _5K_.group = _51_node;
+  _4w_link.group = _4p_node;
+  _i_link.group = _B_;
+  _n_link.group = _B_;
+  _r_link.group = _B_;
+  _v_link.group = _B_;
+  _z_link.group = _B_;
+  _13_nextLink.group = _B_;
+  _19_link.group = _B_;
+  _1D_link.group = _B_;
+  _1G_link.group = _B_;
+  _1J_link.group = _B_;
+  _1N_link.group = _B_;
+  _1R_otherNextLink.group = _B_;
+  _4I_link.group = _4F_node;
+  _V_outLink.group = _B_;
+  _a_outLink.group = _B_;
+  _3l_link.group = _3i_node;
+  _F_outLink.group = _B_;
+  _L_outLink.group = _B_;
+  _2J_.group = _2G_node;
+  _2O_outLink.group = _2G_node;
+  _2S_outLink.group = _2G_node;
+  _2V_outLink.group = _2G_node;
+  _2Y_outLink.group = _2G_node;
+  _27_.group = _24_node;
+  _2b_.group = _2G_node;
+  _2e_.group = _2G_node;
+  _2B_.group = _24_node;
+  _1h_link.group = _1e_node;
+  _1p_.group = _1m_node;
+  _1t_.group = _1m_node;
+  _R_.group = _B_;
+  _e_.group = _B_;
+  _1W_fromNode.group = _B_;
+  _4k_node.group = _B_;
+  _9V_node.group = _4p_node;
+  _HV_Term.prototype = _3Z_;
+  _5P_node.group = _51_node;
+  _5T_node.group = _51_node;
+  _91_node.group = _5X_node;
+  _6F_node.group = _5n_node;
+  _6J_node.group = _5n_node;
+  _88_node.group = _6N_node;
+  _6x_node.group = _6Z_node;
+  _71_node.group = _6Z_node;
+  _7c_node.group = _75_node;
+  _7P_fromNode.group = _7G_node;
+  _7U_node.group = _7G_node;
+  _7i_node.group = _75_node;
+  _7q_node.group = _6Z_node;
+  _7x_node.group = _6Z_node;
+  _HN_BoxWrapper.prototype = _3Y_;
+  _H8_Box.prototype = _3H_;
+  _82_node.group = _6Z_node;
+  _8E_node.group = _6N_node;
+  _8L_node.group = _5n_node;
+  _8R_fromNode.group = _5n_node;
+  _8n_node.group = _8X_node;
+  _8j_node.group = _8f_node;
+  _8u_node.group = _5n_node;
+  _97_node.group = _5X_node;
+  _9D_node.group = _5X_node;
+  _9L_node.group = _51_node;
+  _9R_node.group = _51_node;
+  _9b_node.group = _4p_node;
+  _9i_node.group = _B_;
+  _9o_node.group = _B_;
+  _9s_node.group = _B_;
+  _9w_fromNode.group = _B_;
+  _A4_node.group = _B_;
+  _AA_node.group = _B_;
+  _AG_otherNode.group = _B_;
+  _AL_fromNode.group = _B_;
+  _4V_node.group = _4F_node;
+  _4R_node.group = _4N_node;
+  _3z_node.group = _3i_node;
+  _3u_node.group = _3q_node;
+  _3a_toNode.group = _1e_node;
+  _1z_node.group = _1m_node;
+  _3J_node.group = _24_node;
+  _2j_node.group = _2G_node;
+  _2n_fromNode.group = _2G_node;
+  _2t_fromNode.group = _2G_node;
+  _30_node.group = _2G_node;
+  _39_node.group = _2G_node;
+  _3Q_node.group = _24_node;
+  _46_toNode.group = _B_;
+  _4C_toNode.group = _B_;
+  _4c_toNode.group = _B_;
+  _4h_toNode.group = _B_;
+  _HA_Group.prototype = _3I_;
 
-  _$5_Object_46setPrototypeOf(_H8_Group, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_HA_Group, _Gm_Node);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I2_, _$4_Object_46defineProperty(_G7_, "clear", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I3_, _$4_Object_46defineProperty(_G7_, "addNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I4_, _$4_Object_46defineProperty(_G7_, "removeNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I5_, _$4_Object_46defineProperty(_G7_, "findNodeByKey", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I6_, _$4_Object_46defineProperty(_G7_, "addLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I7_, _$4_Object_46defineProperty(_G7_, "removeLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Iz_, _$4_Object_46defineProperty(_IC_MachineToken, "CompData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _J0_, _$4_Object_46defineProperty(_IC_MachineToken, "RewriteFlag", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I9_, _$4_Object_46defineProperty(_GD_, "setLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IA_, _$4_Object_46defineProperty(_GD_, "reset", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IB_, _$4_Object_46defineProperty(_GD_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _ID_, _$4_Object_46defineProperty(_GJ_, "isPlay", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IE_, _$4_Object_46defineProperty(_GJ_, "setPlay", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IF_, _$4_Object_46defineProperty(_GJ_, "isPlaying", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IG_, _$4_Object_46defineProperty(_GJ_, "setPlaying", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IH_, _$4_Object_46defineProperty(_GJ_, "isFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _II_, _$4_Object_46defineProperty(_GJ_, "setFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KN_, _$4_Object_46defineProperty(_Jd_, "_nextChar", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Le_Token.EOF = "EOF";
-  _Le_Token.LAMBDA = "LAMBDA";
-  _Le_Token.LPAREN = "LPAREN";
-  _Le_Token.RPAREN = "RPAREN";
-  _Le_Token.CLPAREN = "CLPAREN";
-  _Le_Token.CRPAREN = "CRPAREN";
-  _Le_Token.LCID = "LCID";
-  _Le_Token.DOT = "DOT";
-  _Le_Token.COMMA = "COMMA";
-  _Le_Token.APP = "APP";
-  _Le_Token.LET = "LET";
-  _Le_Token.DEFINE = "DEFINE";
-  _Le_Token.IN = "IN";
-  _Le_Token.REC = "REC";
-  _Le_Token.INT = "INT";
-  _Le_Token.TRUE = "TRUE";
-  _Le_Token.FALSE = "FALSE";
-  _Le_Token.NOT = "NOT";
-  _Le_Token.AND = "AND";
-  _Le_Token.OR = "OR";
-  _Le_Token.PLUS = "PLUS";
-  _Le_Token.SUB = "SUB";
-  _Le_Token.MULT = "MULT";
-  _Le_Token.DIV = "DIV";
-  _Le_Token.LTE = "LTE";
-  _Le_Token.IF = "IF";
-  _Le_Token.THEN = "THEN";
-  _Le_Token.ELSE = "ELSE";
-  _Le_Token.SET = "SET";
-  _Le_Token.CHANGE = "CHANGE";
-  _Le_Token.TO = "TO";
-  _Le_Token.PROP = "PROP";
-  _Le_Token.DEP = "DEP";
-  _Le_Token.DEREF = "DEREF";
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KO_, _$4_Object_46defineProperty(_Jd_, "_nextToken", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KP_, _$4_Object_46defineProperty(_Jd_, "token", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KQ_, _$4_Object_46defineProperty(_Jd_, "lookahead", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KR_, _$4_Object_46defineProperty(_Jd_, "fail", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KS_, _$4_Object_46defineProperty(_Jd_, "next", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KT_, _$4_Object_46defineProperty(_Jd_, "match", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KU_, _$4_Object_46defineProperty(_Jd_, "skip", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KV_, _$4_Object_46defineProperty(_Jf_, "parse", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KW_, _$4_Object_46defineProperty(_Jf_, "term", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KX_, _$4_Object_46defineProperty(_Jf_, "isBinaryOp", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I4_, _$5_Object_46defineProperty(_G8_, "clear", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I5_, _$5_Object_46defineProperty(_G8_, "addNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I6_, _$5_Object_46defineProperty(_G8_, "removeNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I7_, _$5_Object_46defineProperty(_G8_, "findNodeByKey", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I8_, _$5_Object_46defineProperty(_G8_, "addLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _I9_, _$5_Object_46defineProperty(_G8_, "removeLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _J5_, _$5_Object_46defineProperty(_IE_MachineToken, "CompData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _J6_, _$5_Object_46defineProperty(_IE_MachineToken, "RewriteFlag", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IB_, _$5_Object_46defineProperty(_GE_, "setLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IC_, _$5_Object_46defineProperty(_GE_, "reset", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _ID_, _$5_Object_46defineProperty(_GE_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IF_, _$5_Object_46defineProperty(_GG_, "collect", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IG_, _$5_Object_46defineProperty(_GG_, "collectInGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _Jm_ = (__constructor.prototype = _Jn_, new __constructor());
+  var _K1_ = (__constructor.prototype = _38_, new __constructor());
 
-  _Jo_UnaryOp.prototype = _Jm_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _K0_Recur, _$5_Object_46defineProperty(_K1_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kn_, _$5_Object_46defineProperty(_K1_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ko_, _$5_Object_46defineProperty(_K1_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kp_, _$5_Object_46defineProperty(_K1_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _K0_Recur.prototype = _K1_;
 
-  _$5_Object_46setPrototypeOf(_Jo_UnaryOp, _Kb_Operation);
+  _$6_Object_46setPrototypeOf(_K0_Recur, _H4_Expo);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jo_UnaryOp, _$4_Object_46defineProperty(_Jm_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IH_, _$5_Object_46defineProperty(_GG_, "collectFromBottom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IJ_, _$5_Object_46defineProperty(_GM_, "isPlay", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IK_, _$5_Object_46defineProperty(_GM_, "setPlay", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IL_, _$5_Object_46defineProperty(_GM_, "isPlaying", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IM_, _$5_Object_46defineProperty(_GM_, "setPlaying", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IN_, _$5_Object_46defineProperty(_GM_, "isFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IO_, _$5_Object_46defineProperty(_GM_, "setFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KU_, _$5_Object_46defineProperty(_Jk_, "_nextChar", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Ll_Token.EOF = "EOF";
+  _Ll_Token.LAMBDA = "LAMBDA";
+  _Ll_Token.LPAREN = "LPAREN";
+  _Ll_Token.RPAREN = "RPAREN";
+  _Ll_Token.CLPAREN = "CLPAREN";
+  _Ll_Token.CRPAREN = "CRPAREN";
+  _Ll_Token.LCID = "LCID";
+  _Ll_Token.DOT = "DOT";
+  _Ll_Token.COMMA = "COMMA";
+  _Ll_Token.APP = "APP";
+  _Ll_Token.LET = "LET";
+  _Ll_Token.DEFINE = "DEFINE";
+  _Ll_Token.IN = "IN";
+  _Ll_Token.REC = "REC";
+  _Ll_Token.INT = "INT";
+  _Ll_Token.TRUE = "TRUE";
+  _Ll_Token.FALSE = "FALSE";
+  _Ll_Token.NOT = "NOT";
+  _Ll_Token.AND = "AND";
+  _Ll_Token.OR = "OR";
+  _Ll_Token.PLUS = "PLUS";
+  _Ll_Token.SUB = "SUB";
+  _Ll_Token.MULT = "MULT";
+  _Ll_Token.DIV = "DIV";
+  _Ll_Token.LTE = "LTE";
+  _Ll_Token.IF = "IF";
+  _Ll_Token.THEN = "THEN";
+  _Ll_Token.ELSE = "ELSE";
+  _Ll_Token.SET = "SET";
+  _Ll_Token.CHANGE = "CHANGE";
+  _Ll_Token.TO = "TO";
+  _Ll_Token.PROP = "PROP";
+  _Ll_Token.DEP = "DEP";
+  _Ll_Token.DEREF = "DEREF";
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KV_, _$5_Object_46defineProperty(_Jk_, "_nextToken", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KW_, _$5_Object_46defineProperty(_Jk_, "token", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KX_, _$5_Object_46defineProperty(_Jk_, "lookahead", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KY_, _$5_Object_46defineProperty(_Jk_, "fail", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KZ_, _$5_Object_46defineProperty(_Jk_, "next", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ka_, _$5_Object_46defineProperty(_Jk_, "match", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kb_, _$5_Object_46defineProperty(_Jk_, "skip", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kc_, _$5_Object_46defineProperty(_Jm_, "parse", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kd_, _$5_Object_46defineProperty(_Jm_, "term", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ke_, _$5_Object_46defineProperty(_Jm_, "isBinaryOp", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _Jl_ = (__constructor.prototype = _Jm_, new __constructor());
+  var _Jt_ = (__constructor.prototype = _Ju_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jk_BinaryOp, _$4_Object_46defineProperty(_Jl_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Jk_BinaryOp.prototype = _Jl_;
+  _Jv_UnaryOp.prototype = _Jt_;
 
-  _$5_Object_46setPrototypeOf(_Jk_BinaryOp, _Jo_UnaryOp);
+  _$6_Object_46setPrototypeOf(_Jv_UnaryOp, _Ki_Operation);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KY_, _$4_Object_46defineProperty(_Jf_, "parseBinop", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _KZ_, _$4_Object_46defineProperty(_Jf_, "application", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _L4_UnOpType = {
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jv_UnaryOp, _$5_Object_46defineProperty(_Jt_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+
+  var _Js_ = (__constructor.prototype = _Jt_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jr_BinaryOp, _$5_Object_46defineProperty(_Js_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Jr_BinaryOp.prototype = _Js_;
+
+  _$6_Object_46setPrototypeOf(_Jr_BinaryOp, _Jv_UnaryOp);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kf_, _$5_Object_46defineProperty(_Jm_, "parseBinop", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kg_, _$5_Object_46defineProperty(_Jm_, "application", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _LB_UnOpType = {
     Not: 0
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ka_, _$4_Object_46defineProperty(_Jf_, "atom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IJ_, _$4_Object_46defineProperty(_GJ_, "compile", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kh_, _$5_Object_46defineProperty(_Jm_, "atom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IP_, _$5_Object_46defineProperty(_GM_, "compile", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _Jq_ = (__constructor.prototype = _1c_, new __constructor());
+  var _Jx_ = (__constructor.prototype = _1d_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jp_UnOp, _$4_Object_46defineProperty(_Jq_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kc_, _$4_Object_46defineProperty(_Jq_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kd_, _$4_Object_46defineProperty(_Jq_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ke_, _$4_Object_46defineProperty(_Jq_, "unOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kf_, _$4_Object_46defineProperty(_Jq_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Jp_UnOp.prototype = _Jq_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jw_UnOp, _$5_Object_46defineProperty(_Jx_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kj_, _$5_Object_46defineProperty(_Jx_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kk_, _$5_Object_46defineProperty(_Jx_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kl_, _$5_Object_46defineProperty(_Jx_, "unOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Km_, _$5_Object_46defineProperty(_Jx_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Jw_UnOp.prototype = _Jx_;
 
-  _$5_Object_46setPrototypeOf(_Jp_UnOp, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_Jw_UnOp, _Gm_Node);
 
-  var _Ju_ = (__constructor.prototype = _37_, new __constructor());
+  var _K5_ = (__constructor.prototype = _1d_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jt_Recur, _$4_Object_46defineProperty(_Ju_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kg_, _$4_Object_46defineProperty(_Ju_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kh_, _$4_Object_46defineProperty(_Ju_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ki_, _$4_Object_46defineProperty(_Ju_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Jt_Recur.prototype = _Ju_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _K4_Dep, _$5_Object_46defineProperty(_K5_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kq_, _$5_Object_46defineProperty(_K5_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kr_, _$5_Object_46defineProperty(_K5_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ks_, _$5_Object_46defineProperty(_K5_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _K4_Dep.prototype = _K5_;
 
-  _$5_Object_46setPrototypeOf(_Jt_Recur, _H2_Expo);
+  _$6_Object_46setPrototypeOf(_K4_Dep, _Gm_Node);
 
-  var _Jy_ = (__constructor.prototype = _1c_, new __constructor());
+  var _KA_ = (__constructor.prototype = _1d_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Jx_Dep, _$4_Object_46defineProperty(_Jy_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kj_, _$4_Object_46defineProperty(_Jy_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kk_, _$4_Object_46defineProperty(_Jy_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kl_, _$4_Object_46defineProperty(_Jy_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _Jx_Dep.prototype = _Jy_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _K9_Set, _$5_Object_46defineProperty(_KA_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kt_, _$5_Object_46defineProperty(_KA_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ku_, _$5_Object_46defineProperty(_KA_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kv_, _$5_Object_46defineProperty(_KA_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _K9_Set.prototype = _KA_;
 
-  _$5_Object_46setPrototypeOf(_Jx_Dep, _Gk_Node);
+  _$6_Object_46setPrototypeOf(_K9_Set, _Gm_Node);
 
-  var _K3_ = (__constructor.prototype = _1c_, new __constructor());
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IQ_, _$5_Object_46defineProperty(_GM_, "toGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IR_, _$5_Object_46defineProperty(_GM_, "deleteVarNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IS_, _$5_Object_46defineProperty(_GM_, "startPropagation", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IT_, _$5_Object_46defineProperty(_GM_, "shuffle", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IU_, _$5_Object_46defineProperty(_GM_, "batchPass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IV_, _$5_Object_46defineProperty(_GM_, "pass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IW_, _$5_Object_46defineProperty(_GM_, "tokenPass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IX_, _$5_Object_46defineProperty(_GM_, "getData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _K2_Set, _$4_Object_46defineProperty(_K3_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Km_, _$4_Object_46defineProperty(_K3_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Kn_, _$4_Object_46defineProperty(_K3_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ko_, _$4_Object_46defineProperty(_K3_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _K2_Set.prototype = _K3_;
+  var _5_machine = (__constructor.prototype = _GM_, new __constructor());
 
-  _$5_Object_46setPrototypeOf(_K2_Set, _Gk_Node);
+  _5_machine.graph = _6_graph;
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IK_, _$4_Object_46defineProperty(_GJ_, "toGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IL_, _$4_Object_46defineProperty(_GJ_, "deleteVarNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IM_, _$4_Object_46defineProperty(_GJ_, "startPropagation", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IN_, _$4_Object_46defineProperty(_GJ_, "shuffle", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IO_, _$4_Object_46defineProperty(_GJ_, "batchPass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IP_, _$4_Object_46defineProperty(_GJ_, "pass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IQ_, _$4_Object_46defineProperty(_GJ_, "tokenPass", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _IR_, _$4_Object_46defineProperty(_GJ_, "getData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _G9_ = (__constructor.prototype = _GE_, new __constructor());
 
-  var _4_ = (__constructor.prototype = _GJ_, new __constructor());
+  _G9_.machine = _5_machine;
+  _G9_.forward = true;
+  _G9_.rewrite = false;
+  _G9_.transited = true;
+  _G9_.link = _13_nextLink;
+  _G9_.rewriteFlag = "\u25A1";
+  var _GB_ = ["*", "*", "*"];
+  _G9_.dataStack = _GB_;
+  var _GD_ = [];
+  _G9_.boxStack = _GD_;
+  _G9_.isMain = true;
+  _5_machine.token = _G9_;
 
-  _4_.graph = _5_graph;
+  var _GF_ = (__constructor.prototype = _GG_, new __constructor());
 
-  var _G8_ = (__constructor.prototype = _GD_, new __constructor());
+  _GF_.graph = _6_graph;
+  _GF_.noMore = false;
+  _5_machine.gc = _GF_;
+  _5_machine.count = 0;
+  var _GI_ = [];
+  _5_machine.evalTokens = _GI_;
+  var _GJ_ = ["nd139", "nd141"];
+  _5_machine.cells = _GJ_;
+  _5_machine.evaluating = false;
 
-  _G8_.machine = _4_;
-  _G8_.forward = true;
-  _G8_.rewrite = false;
-  _G8_.transited = true;
-  _G8_.link = _12_nextLink;
-  _G8_.rewriteFlag = "\u25A1";
-  var _GA_ = ["*", "*", "*"];
-  _G8_.dataStack = _GA_;
-  var _GC_ = [];
-  _G8_.boxStack = _GC_;
-  _G8_.isMain = true;
-  _4_.token = _G8_;
-  _4_.count = 0;
-  var _GF_ = [];
-  _4_.evalTokens = _GF_;
-  var _GG_ = ["nd139", "nd141"];
-  _4_.cells = _GG_;
-  _4_.evaluating = false;
+  var _GK_ = new _$4_Map();
 
-  var _GH_ = new _$3_Map();
+  _5_machine.newValues = _GK_;
+  _5_machine.hasUpdate = false;
+  _5_machine.play = true;
+  _5_machine.playing = true;
+  _5_machine.finished = false;
+  _5_machine.readyEvalTokens = 0;
+  _6_graph.machine = _5_machine;
+  var _IZ_ = _$1_global;
+  var _Ia_ = console;
 
-  _4_.newValues = _GH_;
-  _4_.hasUpdate = false;
-  _4_.play = true;
-  _4_.playing = true;
-  _4_.finished = false;
-  _4_.readyEvalTokens = 0;
-  _5_graph.machine = _4_;
-  var _IT_ = _$0_global;
-  var _IU_ = console;
-
-  var _J1_ = (err, result) => {
+  var _J7_ = (err, result) => {
     if (err) {
       throw err;
     }
@@ -7536,5 +7758,5 @@
     module.exports = result;
   };
 
-  _0_(_1_autoPlay, _2_);
+  var _$0_derived = _$9_global_46setTimeout(_1_, 0);
 }).call(global);
