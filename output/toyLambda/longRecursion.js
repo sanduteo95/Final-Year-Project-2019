@@ -1116,8 +1116,6 @@
   var _3K_ = console;
 
   var _3E_ = (err, address) => {
-    ;
-
     const result = _1l_(address);
 
     if (global.__isAbstract && global.__isAbstract(result)) {

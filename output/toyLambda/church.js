@@ -1214,8 +1214,6 @@
   var _5Q_ = console;
 
   var _5K_ = (err, address) => {
-    ;
-
     const result = _48_(address);
 
     if (global.__isAbstract && global.__isAbstract(result)) {

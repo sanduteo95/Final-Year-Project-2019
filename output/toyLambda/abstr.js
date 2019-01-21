@@ -40,7 +40,7 @@
     }
   };
 
-  var _R_ = address => {
+  var _Q_ = address => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     return __captured__scope_1_[0][address];
@@ -89,7 +89,7 @@
           args: [err]
         };
       } else {
-        const result = _R_(address); // if it's the rhs of an application, we are allowed to have unbound variables
+        const result = _Q_(address); // if it's the rhs of an application, we are allowed to have unbound variables
 
 
         if ((!global.__isAbstract || !global.__isAbstract(result)) && isRhsApplication && !hasBeenBound && result && result.type !== undefined) {
@@ -115,14 +115,14 @@
     };
 
     return {
-      fn: _S_,
+      fn: _R_,
       args: [abstraction.value, newEnv, addressesToBind, abstrCallback, true]
     };
   };
 
   _f_["export"] = true;
 
-  var _S_ = (term, env, addressesToBind, callback, isRhsApplication) => {
+  var _R_ = (term, env, addressesToBind, callback, isRhsApplication) => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     __captured__scope_1_[2]++;
@@ -143,9 +143,7 @@
   };
 
   var _N_ = (err, address) => {
-    ;
-
-    const result = _R_(address);
+    const result = _Q_(address);
 
     if (global.__isAbstract && global.__isAbstract(result)) {
       global.__residual("void", (console, waitForInput, trampoline, toPrint, lookup, callback) => {
@@ -162,13 +160,13 @@
             };
           }]
         });
-      }, _Q_, _W_, _L_, address === 1, _R_, _X_);
+      }, _S_, _X_, _L_, address === 1, _Q_, _U_);
     } else {
       if (result !== undefined && result.type === 'Abstr') {
         _Y_(2);
 
         return {
-          fn: _X_,
+          fn: _U_,
           args: [null, (...arguments) => {
             let argumentAddresses = [];
 
@@ -184,14 +182,14 @@
         };
       } else {
         return {
-          fn: _X_,
-          args: [err, address > 1 && _R_(address)]
+          fn: _U_,
+          args: [err, address > 1 && _Q_(address)]
         };
       }
     }
   };
 
-  var _W_ = callback => {
+  var _X_ = callback => {
     const readline = require('readline');
 
     const rl = readline.createInterface({
@@ -218,6 +216,15 @@
 
     __captured__scope_1_[0] = __captured__scope_1_[0].slice(0, address + 1);
     __captured__scope_1_[1] = address;
+  };
+
+  var _U_ = (err, result) => {
+    if (err) {
+      throw err;
+    }
+
+    console.log(result);
+    module.exports = result;
   };
 
   var _Z_ = (term, env, addressesToBind, callback, isRhsApplication) => {
@@ -247,15 +254,6 @@
     }
   };
 
-  var _X_ = (err, result) => {
-    if (err) {
-      throw err;
-    }
-
-    console.log(result);
-    module.exports = result;
-  };
-
   var _a_ = (address, value) => {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
@@ -282,13 +280,13 @@
       } else {
         // check if we are printing
         if (address === 1) {
-          if (global.__isAbstract && global.__isAbstract(_R_(address))) {
+          if (global.__isAbstract && global.__isAbstract(_Q_(address))) {
             return {
               fn: callback,
               args: [null, 1]
             };
           } else {
-            console.log(_R_(1));
+            console.log(_Q_(1));
             return {
               fn: callback,
               args: [null, _I_(true)]
@@ -296,19 +294,19 @@
           }
         } else {
           // this could refer to unknown input (for now just reading)
-          if (global.__residual && global.__isAbstract(_R_(address))) {
+          if (global.__residual && global.__isAbstract(_Q_(address))) {
             return {
               fn: callback,
-              args: [null, _I_(_R_(address))]
+              args: [null, _I_(_Q_(address))]
             };
           } else {
-            const newTerm = _R_(address); // if the variable stored is an application, then interpret that
+            const newTerm = _Q_(address); // if the variable stored is an application, then interpret that
 
 
             if (newTerm && (newTerm.type === 'Abstr' || newTerm.type === 'Apply') && (!isRhsApplication || !_f_[dereference.value])) {
               false;
               return {
-                fn: _S_,
+                fn: _R_,
                 args: [newTerm, env, addressesToBind, callback, true]
               };
             } else {
@@ -327,7 +325,7 @@
 
               return {
                 fn: callback,
-                args: [null, _I_(_R_(address))]
+                args: [null, _I_(_Q_(address))]
               };
             }
           }
@@ -381,19 +379,19 @@
 
       if (operator.op !== 'negate' && operator.op !== 'negative') {
         // don't interpret stuff if not needed to
-        if (operator.op === 'or' && _R_(lhsAddress) || operator.op === 'and' && !_R_(lhsAddress)) {
+        if (operator.op === 'or' && _Q_(lhsAddress) || operator.op === 'and' && !_Q_(lhsAddress)) {
           return {
             fn: callback,
             args: [null, lhsAddress]
           };
-        } else if (operator.op === 'or' && !_R_(lhsAddress)) {
+        } else if (operator.op === 'or' && !_Q_(lhsAddress)) {
           return {
-            fn: _S_,
+            fn: _R_,
             args: [operator.rhs, env, addressesToBind, callback, isRhsApplication]
           };
         } else {
           return {
-            fn: _S_,
+            fn: _R_,
             args: [operator.rhs, env, addressesToBind, rhsOpCallback, isRhsApplication]
           };
         }
@@ -406,7 +404,7 @@
     };
 
     return {
-      fn: _S_,
+      fn: _R_,
       args: [operator.lhs, env, addressesToBind, lhsOpCallback, isRhsApplication]
     };
   };
@@ -435,7 +433,7 @@
               args: [err]
             };
           } else {
-            let lhs = _R_(lhsAddress); // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
+            let lhs = _Q_(lhsAddress); // we might have to keep the appication as it is if the RHS wasn't replaced in the LHS
 
 
             if ((!global.__isAbstract || !global.__isAbstract(lhs)) && lhs && lhs.type === 'Deref') {
@@ -444,7 +442,7 @@
               if (application.lhs.type === 'Deref' && application.lhs.value.value === lhs.value.value) {
                 false;
 
-                const rhs = _R_(rhsAddress);
+                const rhs = _Q_(rhsAddress);
 
                 _a_(lhsAddress, {
                   type: 'Apply',
@@ -454,7 +452,7 @@
                   }
                 });
 
-                lhs = _R_(lhsAddress);
+                lhs = _Q_(lhsAddress);
               }
             } else if (global.__isAbstract && global.__isAbstract(lhs)) {
               if (lhsAddress === 1) {
@@ -481,7 +479,7 @@
 
         false;
         return {
-          fn: _S_,
+          fn: _R_,
           args: [application.lhs, env, addressesToBind, lhsCallback, false]
         };
       }
@@ -490,7 +488,7 @@
     false; // interpret the RHS term with an empty array of addresses to bind because it's a different scope
 
     return {
-      fn: _S_,
+      fn: _R_,
       args: [application.rhs, env, [], rhsCallback, true]
     };
   };
@@ -508,7 +506,7 @@
       };
     } else {
       if (identifier === '_print') {
-        _a_(1, _R_(address));
+        _a_(1, _Q_(address));
 
         return {
           fn: callback,
@@ -526,7 +524,7 @@
           };
         } else {
           return {
-            fn: _W_,
+            fn: _X_,
             args: [callback]
           };
         }
@@ -542,9 +540,9 @@
   var _j_ = (operator, lhsAddress, rhsAddress, callback) => {
     let err = null;
 
-    const lhs = _R_(lhsAddress);
+    const lhs = _Q_(lhsAddress);
 
-    const rhs = _R_(rhsAddress); // check if both the LHS and RHS are fully interpreted 
+    const rhs = _Q_(rhsAddress); // check if both the LHS and RHS are fully interpreted 
 
 
     if ((!lhs || lhs.type === undefined) && (!rhs || rhs.type === undefined)) {
@@ -669,7 +667,7 @@
       }
     }
   };
-  var _Q_ = console;
+  var _S_ = console;
   $$0_enumerable_58false_44configurable_58true_44writable_58false.value = 1, _$2_Object_46defineProperty(_2_, "length", $$0_enumerable_58false_44configurable_58true_44writable_58false);
   console.log(_2_);
   module.exports = _2_;
