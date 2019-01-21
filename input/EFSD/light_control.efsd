@@ -1,0 +1,69 @@
+let pair = λx.λy.λp.p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let unit = false in
+
+let seed = {1} in 
+
+let getModulus = rec f. λnumber. λdivider.
+	if divider <= number 
+	then 
+		f (number - divider) divider
+	else number
+in
+
+let generateRandomNumber = λmin. λmax.
+	let seedValue = peek seed in 
+	let seedValue = getModulus (7 * seedValue) 101 in
+	let _ = set seed to {seedValue} in
+	let _ = step in
+	let randomNumber = ((getModulus (seedValue - 1) 10) + 1)/10 in
+	randomNumber * (max - min) + min
+in
+
+let generateRandomBool = λ_.
+	generateRandomNumber 0 100 <= 50
+in
+
+let create_transducer = λinit. λinput. λtransition. λoutF.
+	let state = {init} in 
+	let _ = link state to (transition state input) in 
+ 	pair input (outF state)
+in
+
+let on = 1 in
+let off = 0 in
+
+let switchOn = true in
+let switchOff = false in
+
+let run = rec g. λtransducer. λf. λn. 
+	let input = fst transducer in
+	let out = snd transducer in 
+	if (n <= 0 && 0 <= n) 
+	then
+		unit
+	else
+		let _ = set input to (if (generateRandomBool unit) then switchOn else switchOff) in
+		let _ = step in 
+		let _ = f (peek out) in
+		g (pair input out) f (n - 1)
+in
+
+let transition = λstate. λinput.
+	if (state <= on && on <= state) && (input <= switchOff && switchOff <= input)
+	then
+		off
+	else
+		if (state <= off && off <= state) && (input <= switchOn && switchOn <= input) 
+		then 
+			on
+		else
+			state
+in
+
+let n = 100 in 
+let input = {switchOn} in
+let transducer = create_transducer off input transition (λx.x) in
+run transducer (λx.unit) n

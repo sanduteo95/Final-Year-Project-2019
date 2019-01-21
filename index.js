@@ -6,7 +6,6 @@ const path = require('path');
 
 const boilerplate = require('./lib/boilerplate.js');
 
-let addTiming = false;
 let maxTermCalls = 125;
 let isGoIMachine = false;
 
@@ -20,7 +19,6 @@ program
     .option('-f, --runFutamura <file>', 'Apply the first Futamura projection on program in the provided file')
     .option('-d, --debug', 'Allow some debug logs')
     .option('-s, --stack [number]', 'Specifiy the number of allowed nested calls (before timeouts are added)')
-    .option('-t, --time', 'Allow testing runtime')
     .parse(process.argv);
 
 if (program.goiMachine) {
@@ -53,10 +51,6 @@ if (program.stack) {
     }
 }
 
-if (program.time) {
-    addTiming = true;
-}
-
 // check main options
 if (program.runParser) {
     const code = fs.readFileSync(path.join(__dirname, program.runParser), 'utf8');
@@ -72,7 +66,7 @@ if (program.runParser) {
         console.error('The lambda calculus accepts fiels with extension .lambda.');
         return;
     }
-    boilerplate.interpreterBoilerplate(code, addTiming, maxTermCalls)(fileName);
+    boilerplate.interpreterBoilerplate(code, maxTermCalls)(fileName);
 } else if (program.runFutamura) {
     const fileName = program.runFutamura;
     const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
@@ -83,9 +77,9 @@ if (program.runParser) {
         console.error('The lambda calculus accepts fiels with extension .lambda.');
         return;
     }
-    const result = boilerplate.futamuraBoilerplate(code, addTiming, maxTermCalls)(fileName);
+    const result = boilerplate.futamuraBoilerplate(code, maxTermCalls)(fileName);
     console.log(JSON.stringify(result));
 } else if (program.debug || program.stack || program.time) {
-    console.error('Cannot run the program with options -d, -s, or -t on their own.');
+    console.error('Cannot run the program with options -d or -s on their own.');
 }
 

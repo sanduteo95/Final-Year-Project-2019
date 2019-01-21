@@ -25,3 +25,12 @@ th {
 a {
     color: black;
 }
+
+/* comment these out for a nice table */
+.badMinDifference, .badMaxDelta {
+    background-color: #ff00374a !important;
+}
+
+.goodMinDifference, .goodMaxDelta {
+    background-color: #0080215e !important;
+}
