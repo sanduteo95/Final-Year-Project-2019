@@ -1,0 +1,113 @@
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let nil = pair true true in
+let isnil = fst2 in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
+
+let data =  in
+
+let sublist b e l = rec f. λb. λe. λl.
+    if isnil l 
+    then
+        unit
+    else
+        let tl = if e <= 0 0 <= e then nil else f (b-1) (e-1) (tail l) in
+        if ~(b <= 0) then tl  else const (head l) tl
+in
+
+
+let pick_slices = λfirst_model_losses. λsecond_model_losses. λdata.
+	let pick_slices' = rec f. λfirst_model_losses. λsecond_model_losses. λdata. λfirst_slice second_slice. 
+		if isnil first_model_losses && isnil second_model_losses && isnil data 
+        then
+            pair first_slice second_slice
+        else
+            if ~ (isnil first_model_losses) && ~(isnil second_model_losses) && ~(isnil data)
+            then
+                let l1 = head first_model_losses in
+                let l2 = head second_model_losses in
+                if l1 - l2 < 0 
+                then
+                    f (tail first_model_losses) (tail second_model_losses) (tail data) (append first_slice (cons d nil)) second_slize
+                else 
+                    f tail first_model_losses) (tail second_model_losses) (tail data) first_slice (append second_slice (cons d nil))
+            else
+                unit
+    in
+	pick_slices' first_model_losses second_model_losses data nil nil
+in
+
+let report_total_loss = λfirst_model_losses. λsecond_model_losses. λstep_number.
+	let compute_total_loss = rec f. λfirst_model_losses. λsecond_model_losses. λsum.
+		if isnil first_model_losses && isnil second_model_losses
+        then 
+            sum
+        else
+            if ~(isnil first_model_losses) && ~(isnil second_model_losses)
+            then
+                let l1 = head first_model_losses in 
+                let l2 = head second_model_losses on 
+                if l1 - l2 < 0
+                then
+                    f (tail first_model_losses) (tail second_model_losses) (sum + l1)
+                else 
+                    f (tail first_model_losses) (tail second_model_losses) (sum + l2)
+            else
+                unit
+	in
+	compute_total_loss first_model_losses second_model_losses 0
+in
+
+let fit_lines = rec f. λl1_model. λl1_params. λl2_model. λl2_params. λl1_slice. λl2_slice. λstep_number. λmeta_steps
+	let learning_rate = 1/100000 in
+	let epochs = 1000 in
+	let l1_updated_params = gradient_descent l1_model l1_params mse_loss_function l1_slice learning_rate epochs in
+	let l2_updated_params = gradient_descent l2_model l2_params mse_loss_function l2_slice learning_rate epochs in
+
+	let first_model_losses = map (mse_datapoint_loss (l1_model l1_updated_params)) data in
+	let second_model_losses = map (mse_datapoint_loss (l2_model l2_updated_params)) data in
+
+	let updated_first_slice, updated_second_slice = pick_slices first_model_losses second_model_losses data in
+	let _ = report_total_loss first_model_losses second_model_losses step_number in
+
+	if step_number == meta_steps 
+    then 
+        pair (pair l1_model l1_updated_params) (pair l2_model l2_updated_params)
+	else 
+        fit_lines l1_model l1_updated_params l2_model l2_updated_params updated_first_slice updated_second_slice (step_number + 1) meta_steps
+in
+
+let optimise_params = λl1. λl2. 
+	let l1_model = fst l1 in 
+    let l1_params = snd l1 in
+	let l2_model = fst l2 in
+    let l2_params = snd l2 in
+
+	let n = length data in
+	let first_data_slice = sublist 0 (n/2) data in
+	let second_data_slice = sublist (n/2 + 1) (n-1) data in
+	
+	let meta_steps = 500 in
+	fit_lines l1_model l1_params l2_model l2_params first_data_slice second_data_slice 0 meta_steps
+in
+
+let a_1 = 0 in
+let a_2 = 0 in
+let b_1 = 0 in
+let b_2 = 0 in
+
+let l1 = λx. (a_1 * x + b_1)] in
+let p1 = cons a_1 (cons b_1 nil) in
+let l2 = λx. (a_2 * x + b_2)] in
+let p2 = cons a_2 (cons b_2 nil) in
+
+let opt_l = optimise_params (pair l1 p1) (pair l2 p2) in
+let opt_l1 = fst opt_l in
+let opt_l2 = snd opt_l in 
+let f = λx. pair (opt_l1 x) (opt_l2 x) in
+let p = cons a_1 (cons a_2 (cons b_1 (cons b_2 nil))) in 
+f p

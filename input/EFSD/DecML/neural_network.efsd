@@ -1,0 +1,42 @@
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let nil = pair true true in
+let isnil = fst2 in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
+
+let data = 
+	let processed_data =  
+    in
+	standardize_data processed_data
+in
+
+let dot = dot_product_vector_matrix in
+let add = add_vectors in
+let sigmoid = sigmoid in
+let softmax = softmax in
+
+let input_size = 31 in
+let hidden_size = 30 in
+let output_size = 2 in
+
+let w_1 = pair 31 30 in
+let w_2 = pair 30 2 in
+
+let f = λx. 
+    let z_1 = dot x w_1 in
+    let a1 = sigmoid z_1 in
+    let z2 = dot a1 w_2 in
+    softmax z2 
+in
+
+let p = cons w_1 (cons w_2 nil)
+in
+
+let learning_rate = 1/10000 in
+let epochs = 5000 in
+let updated_params = gradient_descent f p cross_entropy_loss_function data learning_rate epochss in
+f updated_params
