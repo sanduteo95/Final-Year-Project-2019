@@ -21,11 +21,22 @@ let fir = rec g. λx. λl.
     pair s (f s + (snd result))
 in 
 
+let w = λx. x / 3 in
+
 let avg3 = λx. 
-   let w = λx. x / 3 in 
    let l = cons w (cons w (cons w nil)) in
    snd (fir x l)
 in
 
-let inp = {0} in 
-avg3 inp
+let input = 
+  let s = {0} in
+  let _ = link s to (s + 1) in
+  s
+in
+
+let out = avg3 input in
+
+let _ = step in
+let _ = step in
+let _ = step in
+peek out

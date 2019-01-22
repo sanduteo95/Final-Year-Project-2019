@@ -14,8 +14,8 @@
     "test": "npm run test-lambda; npm run test-efsd",
     "test-lambda": "export LANG=lambda; mocha test.js",
     "test-efsd": "export LANG=efsd; mocha test.js",
-    "create-lambda-report": "export LANG=lambda; node ./report.js",
-    "create-efsd-report": "export LANG=efsd; node ./report.js",
+    "create-lambda-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r 5",
+    "create-efsd-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r 5 -g",
     "v1-goi-machine": "webpack --config ./lib/EFSD/UI/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/EFSD/UI/webpack.config.js",
     "v2-goi-machine": "webpack --config ./lib/EFSD/UI/v2/webpack.config.js --display-error-details; node ./lib/EFSD/UI/v2/index.js; webpack --env=v2 --config ./lib/EFSD/UI/webpack.config.js",
     "v3-goi-machine": "node ./lib/EFSD/UI/v3/index.js; webpack --env=v3 --config ./lib/EFSD/UI/webpack.config.js",
@@ -28,6 +28,7 @@
   "author": "Teodora Sandu",
   "license": "UNLICENSED",
   "dependencies": {
+    "benchmark": "^2.1.4",
     "child_process": "^1.0.2",
     "commander": "^2.19.0",
     "create-html": "^4.1.0",
@@ -36,6 +37,7 @@
     "jquery": "^3.3.1",
     "jsdom": "^13.0.0",
     "lex": "^1.7.9",
+    "microtime": "^2.1.8",
     "path": "^0.12.7",
     "prepack": "^0.2.54",
     "readline": "^1.3.0"

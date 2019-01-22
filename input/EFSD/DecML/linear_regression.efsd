@@ -1,0 +1,23 @@
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let nil = pair true true in
+let isnil = fst2 in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
+
+let data = cons (pair 2 7) (cons (pair 2 7) (cons (pair 3 9) (cons (pair 4 6) nil)))
+
+let a = 0 in
+let b = 0 in
+
+let f = λx. a * x + 2 in 
+let p = cons a (cons b nil) in
+
+let learning_rate = 1/10000 in
+let epochs = 5000 in
+let updated_params = gradient_descent f p mse_loss_function data learning_rate epochs in
+
+f updated_params

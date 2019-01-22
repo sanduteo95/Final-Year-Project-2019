@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 const boilerplate = require('./lib/boilerplate.js');
-
+const report = require('./lib/report.js');
 let maxTermCalls = 125;
 let isGoIMachine = false;
 
@@ -19,12 +19,16 @@ program
     .option('-f, --runFutamura <file>', 'Apply the first Futamura projection on program in the provided file')
     .option('-d, --debug', 'Allow some debug logs')
     .option('-s, --stack [number]', 'Specifiy the number of allowed nested calls (before timeouts are added)')
+    .option('-r, --createReport', 'Create report by running tests a number of times')
     .parse(process.argv);
 
 if (program.goiMachine) {
     // return an error if tried to run on the GoI Machine with incompatible options
     if (program.runParser || program.debug) {
-        console.error('Cannot run the GoI Machine with -p or -d options.');
+        console.error('Incorrect usage. Cannot run the GoI Machine with -p or -d options.');
+        console.error('Correct usage is:');
+        console.log('  $ [command] -i <pathToFile> -g [-s value]');
+        console.log('  $ [command] -f <pathToFile> -g [-s value]');
         return;
     }
     // signify running on the GoI Machine
@@ -32,6 +36,13 @@ if (program.goiMachine) {
 } else {
     // signify NOT running on the GoI Machine
     isGoIMachine = false;
+}
+
+if (program.createReport && (program.runParser || program.runInterpreter || program.runFutamura || program.debug || program.stack )) {
+    console.error('Incorrect usage. Cannot run benchmarks with -p, -i, -f, -d or -s options.');
+    console.error('Correct usage is:');
+    console.log('  $ [command] -r <number> [-g]');
+    return;
 }
 
 // setup the global variables based on the options
@@ -43,7 +54,7 @@ if (program.debug) {
 
 // setup the stack options
 if (program.stack) {
-    if (!isNaN(program.stack) && program.stack != true) {
+    if (!isNaN(program.stack) && (program.createReport === '1' || program.stack != true)) {
         maxTermCalls = parseInt(program.stack);
     } else {
         console.error('Stack option must be provided and be a number.');
@@ -60,10 +71,10 @@ if (program.runParser) {
     const fileName = program.runInterpreter;
     const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
     if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
-        console.error('The EFSD accepts files with extension .efsd.');
+        console.error('The EFSD paradigm only accepts files with extension .efsd.');
         return;
     } else if (!isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'lambda') {
-        console.error('The lambda calculus accepts fiels with extension .lambda.');
+        console.error('The toy lambda calculus only accepts fiels with extension .lambda.');
         return;
     }
     boilerplate.interpreterBoilerplate(code, maxTermCalls)(fileName);
@@ -71,15 +82,25 @@ if (program.runParser) {
     const fileName = program.runFutamura;
     const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
     if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
-        console.error('The EFSD accepts files with extension .efsd.');
+        console.error('The EFSD paradigm only accepts files with extension .efsd.');
         return;
     } else if (!isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'lambda') {
-        console.error('The lambda calculus accepts fiels with extension .lambda.');
+        console.error('The toy lambda calculus only accepts fiels with extension .lambda.');
         return;
     }
     const result = boilerplate.futamuraBoilerplate(code, maxTermCalls)(fileName);
     console.log(JSON.stringify(result));
+} else if (program.createReport) {    
+    return report.runBenchmarks(isGoIMachine)
+        .catch(err => {
+           throw err;
+        });
 } else if (program.debug || program.stack || program.time) {
-    console.error('Cannot run the program with options -d or -s on their own.');
+    console.error('Incorrect usage. Cannot run the program with options -d or -s on their own.');
+    console.error('Correct usage is:');
+    console.log('  $ [command] -i <pathToFile> [-g] [-d] [-s value]');
+    console.log('  $ [command] -f <pathToFile> [-g] [-d] [-s value]');
+    console.log('  $ [command] -r [-g]');
+    return;
 }
 
