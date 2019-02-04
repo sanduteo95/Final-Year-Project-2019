@@ -36,7 +36,7 @@ Bundles the online visualiser implemented [here](https://github.com/sanduteo95/E
 ### About the language
 For a description of the language syntax read [this README](https://github.com/anonymousgithubaccount/EFSD-vis/blob/master/README.md). Modifications have been made to the original visualiser to allow linking between compiled abstractions and constants, as well as the addition of trampolines to speed up the interpreter and avoid stack overflows.
 
-To be able to run the EFSD, clone the [EFSD-vis](https://github.com/sanduteo95/EFSD-vis) repository in the same folder you have cloned this repository. You may also need [EFSD](https://github.com/anonymousgithubaccount/EFSD), the OCaml implementation of the Event-free Synchronous Dataflow language, if you plan on running the benchmarks. Make sure to follow the instructions in that repo and run `make` in the cloned folder to build the library if so.
+To be able to run the EFSD, clone the [EFSD-vis](https://github.com/sanduteo95/EFSD-vis) repository in the same folder you have cloned this repository. You may also need [EFSD](https://github.com/sanduteo95/EFSD), the OCaml implementation of the Event-free Synchronous Dataflow language [ITF-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl), if you plan on running the benchmarks. Make sure to follow the instructions in those repos and run `make` in the cloned folders to build the library if so.
 
 ## Local development instructions
 Run `npm install` and then run the program following the instructions bellow:
@@ -49,7 +49,7 @@ Run `npm install` and then run the program following the instructions bellow:
 
 `node index.js -i [-d] [-s value] <pathToFile> [-g]` - to return the result of the interpreter on the provided file
 
-`node index.js -f [-d] [-s value] <pathToFile> [-g]` - to return the result of applying the First Futamura projection on the provided file
+`node index.js -f [-d] [-s value] <pathToFile> [-g] [-c number]` - to return the result of applying the First Futamura projection on the provided file
 
 `node index.js -r [-g]` - to run the benchmarks and generate a report of execution times (keep in mind that if your laptop goes to sleep, the tests won't be accurate; use `npm run create-<>-report` bellow if running on MacOS and have `caffeinate` installed)
 
@@ -57,6 +57,12 @@ Optional flags are:
 * `-d`: to allow debugging log
 * `-s value`: to set up the maximum number of consecutive recursive calls allowed
 * `-g`: to run on the GoI Machine used by the Event-free Synchronous Dataflow paradigm
+* `-c number`: to run the Futamura Projections using Closure, using startegy number:
+    * `1`: just the Closure Compiler
+    * `2`: the Closure Compiler, followed by Prepack
+    * `3`: Prepack, follwed by the Closure Compiler
+    * `4`: the Closure Compiler, follwed by Prepack, followed by the Closure Compiler
+    * `5`: Prepack, followed by the Closure Compiler, followed by Prepack
 
 **NB**
 In case of `RangeError: Maximum call stack size exceeded` errors, add a `--stack-size=<value>` to the command. 
@@ -71,6 +77,8 @@ i.e. `node --max-old-space-size=120000 index.js -<i|f> <pathToFile> [-g]`
 `npm run test-lambda`: tests the toy lambda interpreter
 
 `npm run test-efsd`: tests the EFSD interpreter
+
+`npm create-report`: runs the benchmarks on both interpreters
 
 `npm run create-lambda-report`: runs the benchmarks on the toy lambda interpreter (gets the average of 5 tests)
 
