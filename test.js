@@ -75,37 +75,37 @@ describe('test', function () {
                     if (results[file]) {
                         it(file + ' should pass with ' + results[file], function (done) {
                             const code = fs.readFileSync(path.join(__dirname, 'input/toyLambda/' + file), 'utf8');
-        
-                            boilerplate.futamuraBoilerplateTest(code, function (err, futamuraResult) {
-                                expect(err).equal(null);
-        
-                                if (results[file] === 'function') {
-                                    const result = require(futamuraResult);
-                                    expect(typeof result).equal(results[file]);
-                                    done();
-                                }
-                                else if (file === 'read.lambda') {
-                                    // cannot test this properly without executing the script 
-                                    // because it needs to wait for user input
-                                    exec(`node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js <<< ${testInput}`, function (err, stdout) {
-                                        expect(err).equal(null);
-                                        expect(stdout).equal('User input:\n' + testInput + '\n');
+                            boilerplate.futamuraBoilerplate(code, 125, 0)('input/toyLambda/' + file)
+                                .then(futamuraResult => {  
+                                    if (results[file] === 'function') {
+                                        const result = require(futamuraResult);
+                                        expect(typeof result).equal(results[file]);
                                         done();
-                                    });
-                                } else if (file === 'readAndPrint.lambda') {
-                                    // cannot test this properly without executing the script 
-                                    // because it needs to wait for user input
-                                    exec(`node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js <<< ${testInput}`, function (err, stdout) {
-                                        expect(err).equal(null);
-                                        expect(stdout).equal('User input:\n' + testInput + '\n' + testInput + '\n');
+                                    }
+                                    else if (file === 'read.lambda') {
+                                        // cannot test this properly without executing the script 
+                                        // because it needs to wait for user input
+                                        exec(`node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js <<< ${testInput}`, function (err, stdout) {
+                                            expect(err).equal(null);
+                                            expect(stdout).equal('User input:\n' + testInput + '\n');
+                                            done();
+                                        });
+                                    } else if (file === 'readAndPrint.lambda') {
+                                        // cannot test this properly without executing the script 
+                                        // because it needs to wait for user input
+                                        exec(`node output/toyLambda/${file.substring(0, file.indexOf('.') + 1)}js <<< ${testInput}`, function (err, stdout) {
+                                            expect(err).equal(null);
+                                            expect(stdout).equal('User input:\n' + testInput + '\n' + testInput + '\n');
+                                            done();
+                                        });
+                                    } else {
+                                        const result = require(futamuraResult);
+                                        expect(result).deep.equal(results[file]);
                                         done();
-                                    });
-                                } else {
-                                    const result = require(futamuraResult);
-                                    expect(result).deep.equal(results[file]);
-                                    done();
-                                }
-                            })('input/toyLambda/' + file);
+                                    }
+                                }).catch(err => {
+                                    done(err);
+                                });
                         });
                     }
                 });
@@ -117,7 +117,7 @@ describe('test', function () {
                 'alt.efsd': 2,
                 'basic.efsd': 5,
                 'dfg.efsd': 4,
-                'fir.efsd': 0,
+                'fir.efsd': 1,
                 'link.efsd': undefined,
                 'max.efsd': 3,
                 'rsum.efsd': 21
@@ -150,23 +150,24 @@ describe('test', function () {
                         it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
                             const code = fs.readFileSync(path.join(__dirname, 'input/EFSD/' + file), 'utf8');
         
-                            boilerplate.futamuraBoilerplateTest(code, function (err, futamuraResult) {
-                                expect(err).equal(null);
-        
-                                if (file === 'alt.efsd' || file === 'fir.efsd' || file === 'max.efsd' || file === 'rsum.efsd' || file === 'dfg.efsd' || file === 'link.efsd') {
-                                    // cannot test properly without executing the script
-                                    // because it may have timeouts (contains residual code)
-                                    exec(`node output/EFSD/${file.substring(0, file.indexOf('.') + 1)}js`, function (err, stdout) {
-                                        expect(err).equal(null);
-                                        expect(stdout).equal(results[file] + '\n');
+                            boilerplate.futamuraBoilerplate(code, 125, false)('input/EFSD/' + file)
+                                .then(futamuraResult => {
+                                    if (file === 'alt.efsd' || file === 'fir.efsd' || file === 'max.efsd' || file === 'rsum.efsd' || file === 'dfg.efsd' || file === 'link.efsd') {
+                                        // cannot test properly without executing the script
+                                        // because it may have timeouts (contains residual code)
+                                        exec(`node output/EFSD/${file.substring(0, file.indexOf('.') + 1)}js`, function (err, stdout) {
+                                            expect(err).equal(null);
+                                            expect(stdout).equal(results[file] + '\n');
+                                            done();
+                                        });
+                                    } else {
+                                        const result = require(futamuraResult);
+                                        expect(result).equal(results[file]);
                                         done();
-                                    });
-                                } else {
-                                    const result = require(futamuraResult);
-                                    expect(result).equal(results[file]);
-                                    done();
-                                }
-                            })('input/EFSD/' + file);
+                                    }
+                                }).catch(err => {
+                                    done(err);
+                                });
                         });
                     }
                 });

@@ -25,17 +25,13 @@ a {
     color: black;
 }
 
-/* comment these out for a nice table */
-.badMinDifference-ocaml, 
-/* .badMinDifference-haskell,  */
-/* .badMinDifference-agda,  */
+.badMinDifference-futamura,
 .badMaxDelta {
     background-color: #ff00374a !important;
 }
 
-.goodMinDifference-ocaml, 
-/* .goodMinDifference-haskell,  */
-/* .goodMinDifference-agda,  */
+.minValue,
+.goodMinDifference-futamura, 
 .goodMaxDelta {
     background-color: #0080215e !important;
 }
