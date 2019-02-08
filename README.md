@@ -1,10 +1,10 @@
 # Application of the First Futamura Projection and comparison of execution times
 
-This project explores the application of the First Futamura Projection (see [here](https://arxiv.org/abs/1611.09906) for an explanation) on a toy lambda calculus language and then on the Event-free Synchronous Dataflow programming paradigm implemented [here](https://github.com/anonymousgithubaccount/EFSD) and visualised [here](https://github.com/anonymousgithubaccount/EFSD-vis).
+This project explores the application of the First Futamura Projection (see [here](https://arxiv.org/abs/1611.09906) for an explanation) on a toy lambda calculus language and then on the Event-free Synchronous Dataflow programming paradigm implemented [here](https://git.cs.bham.ac.uk/wtc488/itf-impl) and explained in more detail [here](https://dl.acm.org/citation.cfm?id=3209127).
 
-Thus, the first half of this project contains a JavaScript interpreter implemented with the help of [Jison](https://github.com/zaach/jison) and [Lex](https://github.com/aaditmshah/lexer) and it demonstrated the application of the first of three Futamura Projections with the help of [Prepack](https://github.com/facebook/prepack). Finally, it contains a tool to run a set of benchmarks tests and compare the execution time of the interpreter versus the execution time of the result of the First Futamura Projection. For an attempt at the Second Futamura Projection, see [this branch](https://git-teaching.cs.bham.ac.uk/mod-ug-proj-2018/tas458/tree/secondProj). The interpreter is implemented recursively and uses trampolines to avoid stack overflows. For the non tail-recursive intepreter, see [this branch](https://git-teaching.cs.bham.ac.uk/mod-ug-proj-2018/tas458/tree/recursiveInterpreter).
+Thus, the first half of this project contains a JavaScript interpreter implemented with the help of [Jison](https://github.com/zaach/jison) and [Lex](https://github.com/aaditmshah/lexer) and demonstrates the application of the first of three Futamura Projections with the help of [Prepack](https://github.com/facebook/prepack). Finally, it contains a tool to run a set of benchmarks tests and compare the execution time of the interpreter versus the execution time of the result of the First Futamura Projection. For an attempt at the Second Futamura Projection, see [this branch](https://git-teaching.cs.bham.ac.uk/mod-ug-proj-2018/tas458/tree/secondProj). Due to Prepack limitations (i.e. unrolls all loops without the ability to stop early and inlines all function calls), the attempt failed. The interpreter is implemented recursively and uses trampolines to avoid stack overflows. For the non tail-recursive intepreter, see [this branch](https://git-teaching.cs.bham.ac.uk/mod-ug-proj-2018/tas458/tree/recursiveInterpreter).
 
-The second half of the project is an application of the First Projection on an Event-free Synchronous Dataflow programming paradigm defined [here](https://github.com/anonymousgithubaccount/EFSD) and visualised [here](https://github.com/anonymousgithubaccount/EFSD-vis). To run the language in a terminal, some changes were made in [this fork](https://github.com/sanduteo95/EFSD-vis) of the original visualiser project. The resulting code is an interpreter for a language which is defined in the original repository, which can be specialised to its input with the help of the First Futamura Projection.
+The second half of the project is an application of the First Projection on an Event-free Synchronous Dataflow programming paradigm implemented [here](https://git.cs.bham.ac.uk/wtc488/itf-impl) in various languages and forms. One of these is as a JavaScript visualiser, which simulates the behaviour via graph visualisations and provides a step by step run through various examples. To run the language in a terminal, some changes had to be made to the code in the `Visualiser` folder and pushed to a separate branch, [vis-term](https://git.cs.bham.ac.uk/wtc488/itf-impl/tree/vis-term/Visualiser) so that all UI functionality was removed and we could call the resulting interpeter from `Node.js`. The resulting code is an interpreter for a language which is defined in the original repository, which is then specialised to its input with the help of the First Futamura Projection in this repo.
 
 For more information on each project, continue reading.
 
@@ -31,12 +31,14 @@ The result of the First Futamura Projection is a much quicker run of the origina
 
 ## Event-free Synchronous Dataflow 
 ### What it does
-Bundles the online visualiser implemented [here](https://github.com/sanduteo95/EFSD-vis), which is the simplified, non-UI version of [EFSD-vis](https://github.com/anonymousgithubaccount/EFSD-vis). Takes in the `Require.js` framework used to implement the visualiser of the Event-free Synchronous Dataflow paradigm and uses `Webpack` to convert it into `UMD` compatible code, which can be run from a terminal.
+Bundles the online visualiser implemented [here](https://git.cs.bham.ac.uk/wtc488/itf-impl/tree/vis-term/Visualiser), which is the simplified, non-UI version of [EFSD-vis](https://git.cs.bham.ac.uk/wtc488/itf-impl/tree/master/Visualiser). Takes in the `Require.js` framework used to implement the visualiser of the Event-free Synchronous Dataflow paradigm and uses `Webpack` to convert it into `commonjs2` compatible code, which can be run from a terminal.
 
 ### About the language
-For a description of the language syntax read [this README](https://github.com/anonymousgithubaccount/EFSD-vis/blob/master/README.md). Modifications have been made to the original visualiser to allow linking between compiled abstractions and constants, as well as the addition of trampolines to speed up the interpreter and avoid stack overflows.
+For a description of the language syntax read [this README](https://git.cs.bham.ac.uk/wtc488/itf-impl/tree/master/Visualiser/README.md). Modifications have been made to the original visualiser to allow linking between compiled abstractions and constants, as well as the addition of trampolines to speed up the interpreter and avoid stack overflows.
 
-To be able to run the EFSD, clone the [EFSD-vis](https://github.com/sanduteo95/EFSD-vis) repository in the same folder you have cloned this repository. You may also need [EFSD](https://github.com/sanduteo95/EFSD), the OCaml implementation of the Event-free Synchronous Dataflow language [ITF-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl), if you plan on running the benchmarks. Make sure to follow the instructions in those repos and run `make` in the cloned folders to build the library if so.
+To be able to run the EFSD, clone the mentioned repository in the same folder you have cloned this repository. You may also need [EFSD](https://github.com/sanduteo95/EFSD), the OCaml implementation of the Event-free Synchronous Dataflow language [ITF-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl), if you plan on running the benchmarks. Make sure to follow the instructions in those repos and run `make` in the cloned folders to build the library if so.
+
+Amongst the examples available in the `./input/EFSD` folder there are eleven "simple" programs displaying the capabilities of the EFSD paradigm, as well as a reimplementation of the examples available in [this](https://github.com/DecML/decml-ppx) repo. The latter set of examples can be found in folder `./input/EFSD/DecML` and display the capabilities of the graph abstraction functionality of the EFSD framework. The neural networks implemented in that folder train on the datasets found in `./util/data`.
 
 ## Local development instructions
 Run `npm install` and then run the program following the instructions bellow:
@@ -51,7 +53,7 @@ Run `npm install` and then run the program following the instructions bellow:
 
 `node index.js -f [-d] [-s value] <pathToFile> [-g] [-c number]` - to return the result of applying the First Futamura projection on the provided file
 
-`node index.js -r [-g]` - to run the benchmarks and generate a report of execution times (keep in mind that if your laptop goes to sleep, the tests won't be accurate; use `npm run create-<>-report` bellow if running on MacOS and have `caffeinate` installed)
+`node index.js -r [-c] [-g]` - to run the benchmarks and generate a report of execution times (keep in mind that if your laptop goes to sleep, the tests won't be accurate; use `npm run create-<>-report` bellow if running on MacOS and have `caffeinate` installed)
 
 Optional flags are:
 * `-d`: to allow debugging log
@@ -84,7 +86,7 @@ i.e. `node --max-old-space-size=120000 index.js -<i|f> <pathToFile> [-g]`
 
 `npm run create-efsd-report`: runs the benchmarks on the EFSD interpreter (gets the average of 5 tests)
 
-`npm run term-goi-machine`: re-bundles the EFSD interpreter (use it if you have made changes to `EFSD-vis`)
+`npm run term-goi-machine`: re-bundles the EFSD interpreter (use it if you have made changes to `itf-impl/Visualiser` in b branch `vis-term`)
 
 ## How to get the execution time
 There is a script used to calculate execution time of individual files. To run it, open a terminal and type:
@@ -102,4 +104,50 @@ To generate a report comparing the execution time of the interpreter versus the 
 The two available reports are:
 - [Toy Lambda Calculus](./report/toyLambda/index.html),
 - [Event-free Synchronous Dataflow](./report/EFSD/index.html).
+
 Open them in a browser to view results.
+
+In addition, the combination of [Prepack](https://github.com/facebook/prepack) with the [Closure Compiler](https://github.com/google/closure-compiler) was explored, in various forms and orders. As a result, the First Futamura Projection can be applied by combining the two optimisation tools (the former focusing on shortening execution time, and the latter on minimising the size of the code). To run the benchmarks and compare the various executions times of the various combination strategies, run `npm run create-strategy-report` and, once again, a report will be generated inside `./report/strategy`. 
+
+The available report is:
+- [Strategy report](./report/strategy/index.html).
+
+### Repo structure
+```
+.
++-- _input
+|   +-- _EFSD // where to place EFSD examples
+|   |   +-- _DecML
+|   |   |   +-- *.efsd
+|   |   +-- *.efsd
+|   +-- _toyLambda // where to place toyLambda examples
+|   |   +-- *.lambda
++-- _lib
+|   +-- _EFSD
+|   |   +-- _term // the EFSD interpreter
+|   |   +-- _UI // tests with Prepack and the visualiser
+|   +-- _report // code for generating benchmark reports
+|   +-- _toyLambda // the toy lambda calculus interpreter
++-- _output // generated JavaScript code of the examples in _input
+|   +-- _EFSD
+|   |   +-- *.js
+|   +-- _toyLambda
+|   |   +-- *.js
++-- _report
+|   +-- _EFSD
+|   +-- _strategy
+|   +-- _toyLambda
++-- _scripts // scripts used for running tests before committing code and timing individual commands
+|   +-- *.bash 
++-- _test
+|   +-- EFSD.js
+|   +-- toyLambda.js
++-- _util
+|   +-- _data // contains datasets for DecML examples
+|   +-- _linker // contains two examples of how a linker would be implemented for the two languages
+|   |   +-- EFSD.js
+|   |   +-- toyLambda.js
+|   +-- common.efsd // contains some common functions used throughout the EFSD examples
+|   +-- convertCSV.js // script to convert CSV datasets to EFSD syntax
++-- index.js
+```

@@ -1,0 +1,439 @@
+let unit = false in
+
+let prev = {0} in
+
+let a = 8121 in
+let c = 28411 in
+
+let getModulus = rec f. λnumber. λdivider.
+	if divider <= number
+	then
+		f (number - divider) divider
+	else number
+in
+
+let generateRandomNumber = λmax.
+	let prevValue = peek prev in
+	let prevValue = getModulus (a * prevValue + c) max in
+	let _ = set prev to {prevValue} in
+	let _ = step in
+	prevValue
+in
+
+let generateRandomFloat = λmax.
+  let value1 = (generateRandomNumber max) / max in
+  let value2 = (generateRandomNumber max) / max in
+  value1/value2 * max/2
+in
+
+let generateRandomBool = λ_.
+    generateRandomNumber 100 <= 50
+in
+
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let nil = pair true true in
+let isnil = fst in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
+
+let make = rec f. λlen. λval.
+    if len <= 0 && 0 <= len 
+    then 
+        nil
+    else
+        cons val (f (len - 1) val)
+in
+
+let append = rec f. λv1. λv2.
+    if isnil v1
+    then
+        v2
+    else
+        if isnil v2
+        then
+            v1
+        else
+            let hd = head v1 in
+            let tl = tail v1 in
+            cons hd (f tl v2)
+in
+
+let getNth =  λn. λx.
+	let aux = rec g. λi. λx.
+		if i <= n && n <= i 
+		then 
+			head x
+		else
+			g (i + 1) (tail x)
+	in
+	aux 0  x
+in
+
+let setNth =  λn. λx. λval.
+	let aux = rec g. λi. λx.
+		if i <= n && n <= i 
+		then 
+			cons val (tail x)
+		else
+			cons (head x) (g (i + 1) (tail x))
+	in
+	aux 0 x
+in
+
+let length = λx.
+	let aux = rec g. λacc. λx.
+		if isnil x
+		then 
+			acc
+		else
+			g (acc + 1) (tail x)
+	in aux 0 x
+in
+
+let for_loop = λtotal_step.
+	let aux = rec f. λi.
+		if (i <= total_step + 1 && total_step + 1 <= i)
+		then 
+			unit 
+		else 
+			let _ = step in 
+			f (i + 1)
+	in
+	aux 1
+in
+
+let fold = rec g. λf. λacc. λx.
+  if isnil x 
+  then
+    acc
+  else
+    g f (f acc (head x)) (tail x)
+in
+
+let map = λf. λx.
+    let aux = rec g. λx.
+        if isnil x 
+        then
+            nil
+        else
+            cons (f (head x)) (g (tail x))
+    in aux x
+in
+
+let mapi = λf. λx.
+    let aux = rec g. λi. λx.
+        if isnil x 
+        then
+            nil
+        else
+            cons (f i (head x)) (g (i + 1) (tail x))
+    in aux 0 x
+in
+
+let map2 = λf. λx. λy.
+    let aux =  rec g. λx. λy.
+        if (isnil x) && (isnil y)
+        then
+            nil
+        else
+            cons (f (head x) (head y)) (g (tail x) (tail y))
+    in aux x y
+in
+
+let init = λsize. λf.
+	let aux = rec g. λi.
+		if i <= size && size <= i 
+		then 
+			nil
+		else
+			cons (f i) (g (i + 1))
+	in
+	aux 0
+in
+
+let iter = λf. λx.
+	let aux = rec g. λx.
+		if isnil x 
+		then 
+			nil
+		else
+            cons (f (head x)) (g (tail x))
+	in
+	aux x
+in
+
+let iteri = λf. λx.
+	let aux = rec g. λi. λx.
+		if isnil x 
+		then 
+			nil
+		else
+            cons (f i (head x)) (g (i + 1) (tail x))
+	in
+	aux 0 x
+in
+
+let square = λx. x * x in
+
+let sqrt = λn. 
+    let e = 0.0001 in
+    let aux = rec g. λguess. λr.
+        if ~((guess * guess - n) <= e)
+        then
+            let r = n/guess in
+            g ((guess + r)/2) r
+        else 
+            guess
+    in
+    aux (n/2) 0
+in
+
+let absolute = λnumber. 
+    if number <= 0 then
+        0 - number
+    else
+        number
+in
+
+let pow = λx. λn. 
+    let aux = rec f. λp. λacc.
+        if (p <= n && n <= p)
+        then
+            acc
+        else 
+            f (p + 1) (x * acc)
+    in
+    aux 0 1
+in
+
+let log = λn. 
+    let e = 2.71828 in
+    let aux = rec f. λx. λacc. 
+        if (x <= e && x + 1 <= e)
+        then 
+            acc
+        else   
+            f (x/e) (acc + (1 - 0.71828))
+    in
+    aux n (0.71828/2)
+in
+
+let find_max = λv.
+    let aux = rec f. λmax. λv'.
+        if isnil v'
+        then 
+            max
+        else 
+            if max <= (head v') 
+            then 
+                f (head v') (tail v')
+            else 
+                f max (tail v')
+    in
+    aux (0 - 1) v    
+in
+
+let mse_datapoint_loss = λfunc. λdatapoint.
+    let (x , y) = datapoint in
+    let error = y - (func x) in
+    square error
+in
+
+let mse_loss_function = λfunc. λdata.
+    let data_length = length data in    
+    if data_length <= 0 && 0 <= data_length
+    then
+        0
+    else
+        let sum_terms = map (mse_datapoint_loss func) data in
+        let sum = fold (λa. λb. a + b) 0 sum_terms in
+        let n = length data in
+        (1 / (2 * n)) * sum
+in
+
+let cross_entropy_loss_function = λfunc. λdata.
+    let compute_datapoint_loss = λdatapoint.
+        let (x , y) = datapoint in
+        let probabilities = func x in
+        let y_hat = find_max probabilities in
+        (y * log y_hat) + ((1 - y) * log (1 - y_hat))  
+    in
+    let sum_terms = map compute_datapoint_loss data in
+    let sum = fold (λa. λb. a + b) 0 sum_terms in
+    let n = length data in
+    0 - (sum / n)
+in
+
+let smaller_than = λx. λy.
+    x <= y && x + 1 <= y
+in
+
+let tuple_smaller_than = λx. λy.
+    let (fstX , sndX) = x in
+    let (fstY , sndY) = y in
+    (fstX <= fstY && fstX + 1 <= fstY) || 
+        ((fstX <= fstY && fstY <= fstX) && (sndX <= sndY && sndX + 1 <= sndY))
+in
+
+let insert = rec f. λcompare. λelem. λls.
+    if isnil ls
+    then 
+        cons elem nil
+    else
+        let x = head ls in
+        let l = tail ls in 
+        if compare elem x
+        then
+            cons elem ls
+        else
+            cons x (f compare elem l)
+in
+
+let add = rec f. λi. λelem. λls.
+    if isnil ls
+    then 
+        cons elem nil
+    else
+        if i <= 0 && 0 <= i 
+        then 
+            cons elem ls 
+        else
+            cons (head ls) (f (i - 1) elem (tail ls))
+in
+
+let sort = rec f. λcompare. λls.
+    if isnil ls 
+    then
+        nil
+    else 
+        let sols = f compare (tail ls) in
+        insert compare (head ls) sols
+in
+
+let shuffle = λls.
+    let len = length ls in
+    let nd = map (λc. (generateRandomNumber len) , c) ls in
+    let sond = sort tuple_smaller_than nd in
+    map (λp. let (_ , rhs) = p in rhs) sond
+in
+
+let compute_partial_derivative = λmodel. λparameters. λloss_function. λk. λvalue. λdatapoint.
+    let h = 0.00001 in
+    let params_plus = add k (value + h) parameters in
+    let params_minus = add k (value - h) parameters in
+    let cost_function_value_plus = loss_function (model params_plus) (cons datapoint nil) in
+    let cost_function_value_minus = loss_function (model params_minus) (cons datapoint nil) in
+    (cost_function_value_plus - cost_function_value_minus) / (2 * h)
+in
+
+let update_parameters = λmodel. λparameters. λloss_function. λdatapoint. λlearning_rate.
+    let update_parameter = λk. λvalue.
+        value - (learning_rate * (compute_partial_derivative model parameters loss_function k value datapoint))
+    in
+    mapi update_parameter parameters
+in
+
+let gradient_descent = λmodel. λparameters. λloss_function. λdata. λlearning_rate. λepochs.
+    let data = shuffle data in
+    let len = length data in
+    let gradient_descent_step = rec f. λmodel. λparameters. λloss_function. λshuffled_data. λlearning_rate. λcurr_epoch. λepochs.
+        let current_loss = loss_function (model parameters) data in
+        let datapoint = head shuffled_data in
+        let updated_parameters = update_parameters model parameters loss_function datapoint learning_rate in
+        if (curr_epoch <= epochs && epochs <= curr_epoch) 
+        then 
+            updated_parameters
+        else 
+            if (curr_epoch <= len && len <= curr_epoch) 
+            then 
+                f model updated_parameters loss_function (tail shuffled_data) learning_rate (curr_epoch + 1) epochs
+            else 
+                f model updated_parameters loss_function data learning_rate (curr_epoch + 1) epochs
+    in
+    gradient_descent_step model parameters loss_function data learning_rate 0 epochs
+in
+
+let dot_product_vectors = λv1. λv2.
+    let dot_product' = rec f. λv1'. λv2'. λacc.
+        if (isnil v1') || (isnil v2')
+        then
+            acc
+        else    
+            let v1h = head v1' in
+            let v1tl = tail v1' in
+            let v2h = head v2' in
+            let v2tl = tail v2' in
+            f v1tl v2tl ((v1h * v2h) + acc)
+    in
+    dot_product' v1 v2 0
+in
+
+let dot_product_vector_matrix = λv. λm.
+    map (λx. dot_product_vectors v x) m
+in
+
+let add_vectors = λv1. λv2.
+    map2 (λa. λb. a + b) v1 v2
+in
+
+let exp = λx.
+    let b = 2.71828 in
+    pow b x
+in
+
+let sigmoid = λv.
+    let sigmoid' = λx. 
+        if ~ (x <= 500.0)
+        then
+            1.0
+        else
+            (exp x) / (exp x + 1.0)
+    in
+    map sigmoid' v
+in
+
+let softmax = λv.
+    let exponents = map exp v in
+    let sum = fold (λa. λb. a + b) 0.0 exponents in
+    let softmaxes = map (λx. x / sum) exponents in
+    softmaxes
+in
+
+let standardize_data = λdata.
+    let dataElem = getNth 0 data in
+    let (lhs , _) = dataElem in
+    let len = length lhs in
+
+    let mins = make len infinity in
+    let maxs = make len neg_infinity in
+
+    let compute_ranges = λdatapoint.
+        let update_for_datapoint = λi. λvalue.
+            let _ = if (value <= getNth i mins && value + 1 <= getNth i mins) then let mins = setNth i mins value in unit else unit
+            in
+            if ~(value <= getNth i maxs) then let maxs = setNth i maxs value in unit else unit
+        in
+        let (lhs , _) = datapoint in
+        iteri update_for_datapoint lhs
+    in
+
+    let _ = iter compute_ranges data in
+
+    let standardize_entry = λi. λvalue.
+        let min = getNth i mins in
+        let max = getNth i maxs in
+        if max <= min && min <= max 
+        then 
+            max / min
+        else
+            (value - min) / (max - min)
+    in
+    let standardize_row = λrow.
+        mapi standardize_entry row
+    in
+    map (λcell. let (x , y) = cell in (standardize_row x , y)) data
+in

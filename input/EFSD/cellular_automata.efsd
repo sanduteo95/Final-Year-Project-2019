@@ -1,17 +1,12 @@
-let pair2 = λx.λy.λp. p x y in
-let fst2 = λp.p (λx.λy.x) in
-let snd2 = λp.p (λx.λy.y) in
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
 
-let pair3 = λx.λy.λz.λp. p x y z in
-let fst3 = λp.p (λx.λy.λz.x) in
-let snd3 = λp.p (λx.λy.λz.y) in
-let trd3 = λp.p (λx.λy.λz.z) in
-
-let nil = pair2 true true in
-let isnil = fst2 in
-let cons = λh.λt. pair2 false (pair2 h t) in
-let head = λz. fst2 (snd2 z) in
-let tail = λz. snd2 (snd2 z) in
+let nil = pair true true in
+let isnil = fst in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
 
 let unit = false in
 
@@ -67,24 +62,23 @@ let get_neighbour = λi. λcell_array.
 	then
 		if i<= len && len <= i 
 		then
-			pair3 zero (getNth i cell_array) zero
+			zero , (getNth i cell_array) , zero
 		else
-			pair3 zero (getNth i cell_array) (getNth (i + 1) cell_array)
+			zero , (getNth i cell_array) , (getNth (i + 1) cell_array)
 	else
 		if i<= len && len <= i 
 		then
-			pair3 (getNth (i - 1) cell_array) (getNth i cell_array) zero
+			(getNth (i - 1) cell_array) , (getNth i cell_array) , zero
 		else
-			pair3 (getNth (i - 1) cell_array) (getNth i cell_array) (getNth (i + 1) cell_array)
+			(getNth (i - 1) cell_array) , (getNth i cell_array) , (getNth (i + 1) cell_array)
 in
 
 let create_automata = λsize. λinit_array. λtransition.
 	let cell_array = init size (λi. {getNth i init_array}) in
 	iteri (λi. λcell. 
 		let neighbour = get_neighbour i cell_array in
-		let a = fst3 neighbour in 
-		let b = snd3 neighbour in 
-		let c = trd3 neighbour in
+		let (a , c) = neighbour in 
+		let (a , b) = a in
 		let _ = link cell to (transition a b c) in
 		cell) cell_array
 in

@@ -5,8 +5,8 @@ const fs = require('fs');
 const path = require('path');
 
 const boilerplate = require('./lib/boilerplate.js');
-const report = require('./lib/report.js');
-const strategyReport = require('./lib/strategyReport.js');
+const report = require('./lib/report/report.js');
+const strategyReport = require('./lib/report/strategyReport.js');
 
 let maxTermCalls = 125;
 let isGoIMachine = false;
@@ -126,11 +126,11 @@ if (program.runParser) {
     }
     return boilerplate.futamuraBoilerplate(code, maxTermCalls, addClosure, closureStrategy)(fileName)
         .then(result => {
-            console.log(JSON.stringify(result));
+            console.log(result);
         }).catch(err => {
             console.error('Failed with: ' + err.message);
         });
-} else if (program.createReport) {    
+} else if (program.createReport) {
     if (program.addClosure) {
         return strategyReport.runStrategyBenchmarks()
             .catch(err => {
