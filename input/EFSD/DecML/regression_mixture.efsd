@@ -1,3 +1,17 @@
+
+let smaller_than = λx. λy.
+    x <= y && x + 1 <= y
+in
+
+let tuple_smaller_than = λx. λy.
+    let (fstX , sndX) = x in
+    let (fstY , sndY) = y in
+    (fstX <= fstY && fstX + 1 <= fstY) || 
+        ((fstX <= fstY && fstY <= fstX) && (sndX <= sndY && sndX + 1 <= sndY))
+in
+
+let unit = false in
+
 let pair = λx.λy.λp. p x y in
 let fst = λp.p (λx.λy.x) in
 let snd = λp.p (λx.λy.y) in
@@ -8,33 +22,127 @@ let cons = λh.λt. pair false (pair h t) in
 let head = λz. fst (snd z) in
 let tail = λz. snd (snd z) in
 
-let data =  in
+let append = rec f. λv1. λv2.
+    if isnil v1
+    then
+        v2
+    else
+        if isnil v2
+        then
+            v1
+        else
+            let hd = head v1 in
+            let tl = tail v1 in
+            cons hd (f tl v2)
+in
 
-let sublist b e l = rec f. λb. λe. λl.
+let length = λx.
+	let aux = rec g. λacc. λx.
+		if isnil x
+		then 
+			acc
+		else
+			g (acc + 1) (tail x)
+	in aux 0 x
+in
+
+let fold = rec g. λf. λacc. λx.
+  if isnil x 
+  then
+    acc
+  else
+    g f (f acc (head x)) (tail x)
+in
+
+let map = λf. λx.
+    let aux =  rec g. λx.
+        if isnil x 
+        then
+            nil
+        else
+            cons (f (head x)) (g (tail x))
+    in aux x
+in
+
+let mapi = λf. λx.
+    let aux = rec g. λi. λx.
+        if isnil x 
+        then
+            nil
+        else
+            cons (f i (head x)) (g (i + 1) (tail x))
+    in aux 0 x
+in
+
+let add = rec f. λi. λelem. λls.
+    if isnil ls
+    then 
+        cons elem nil
+    else
+        if i <= 0 && 0 <= i 
+        then 
+            cons elem ls 
+        else
+            cons (head ls) (f (i - 1) elem (tail ls))
+in
+
+let insert = rec f. λcompare. λelem. λls.
+    if isnil ls
+    then 
+        cons elem nil
+    else
+        let x = head ls in
+        let l = tail ls in 
+        if compare elem x
+        then
+            cons elem ls
+        else
+            cons x (f compare elem l)
+in
+
+let sort = rec f. λcompare. λls.
+    if isnil ls 
+    then
+        nil
+    else 
+        let sols = f compare (tail ls) in
+        insert compare (head ls) sols
+in
+
+let shuffle = λls. ls
+in
+
+let data = cons (0 - 5  ,  0 - 4.04441266351276) (cons (0 - 4.9  ,  0 - 5.83883116280154) (cons (0 - 4.8  ,  0 - 5.57127051890193) (cons (0 - 4.7  ,  0 - 6.30347877193981) (cons (0 - 4.6  ,  0 - 3.74289247088942) (cons (0 - 4.5  ,  0 - 3.78973735961256) (cons (0 - 4.4  ,  0 - 5.57432889724265) (cons (0 - 4.3  ,  0 - 3.49584959612195) (cons (0 - 4.2  ,  0 - 4.77364999991775) (cons (0 - 4.1  ,  0 - 3.4708970442915) (cons (0 - 4  ,  0 - 3.43302622941447) (cons (0 - 3.9  ,  0 - 4.32975378372408) (cons (0 - 3.8  ,  0 - 5.16126780074361) (cons (0 - 3.7  ,  0 - 4.42289440001652) (cons (0 - 3.6  ,  0 - 3.61799401152423) (cons (0 - 3.5  ,  0 - 3.35644371279225) (cons (0 - 3.4  ,  0 - 4.46359153388125) (cons (0 - 3.3  ,  0 - 3.55995040534351) (cons (0 - 3.2  ,  0 - 3.61594790651716) (cons (0 - 3.1  ,  0 - 3.71061601336696) (cons (0 - 3  ,  0 - 3.64743619179886) (cons (0 - 2.9  ,  0 - 2.46479885588038) (cons (0 - 2.8  ,  0 - 3.08039799970334) (cons (0 - 2.7  ,  0 - 3.63540500432246) (cons (0 - 2.6  ,  0 - 2.18801840849848) (cons (0 - 2.5  ,  0 - 2.76928911823737) (cons (0 - 2.4  ,  0 - 0.776535504923195) (cons (0 - 2.3  ,  0 - 1.94355390725162) (cons (0 - 2.2  ,  0 - 2.86711572723253) (cons (0 - 2.1  ,  0 - 0.249005937806363) (cons (0 - 2  ,  0.27944755576811) (cons (0 - 1.9  ,  0 - 0.33157034931379) (cons (0 - 1.8  ,  0 - 1.60732852004889) (cons (0 - 1.7  ,  0.0388988376074446) (cons (0 - 1.6  ,  0 - 2.11431684178734) (cons (0 - 1.5  ,  0 - 1.64085050099113) (cons (0 - 1.4  ,  0 - 0.316019452192091) (cons (0 - 1.3  ,  0 - 0.441286097172189) (cons (0 - 1.2  ,  0 - 0.580130712970245) (cons (0 - 1.1  ,  0 - 1.62176438014643) (cons (0 - 1  ,  0 - 2.49193697559918) (cons (0 - 0.899999999999999  ,  0 - 1.77326579691209) (cons (0 - 0.8  ,  0 - 0.712554717825147) (cons (0 - 0.7  ,  0 - 0.455315144852788) (cons (0 - 0.6  ,  0 - 0.332614127645284) (cons (0 - 0.5  ,  0 - 2.11201265207721) (cons (0 - 0.399999999999999  ,  0.151620231118879) (cons (0 - 0.3  ,  0 - 1.67196162151504) (cons (0 - 0.199999999999999  ,  1.00546105499071) (cons (0 - 0.0999999999999996  ,  1.81397655457944) (cons (0  ,  0 - 1.34200508467196) (cons (0.100000000000001  ,  0.953269069244085) (cons (0.2  ,  0.0244064901045504) (cons (0.300000000000001  ,  0 - 0.59237999468315) (cons (0.4  ,  1.76782915894601) (cons (0.5  ,  0 - 0.51453224542149) (cons (0.600000000000001  ,  0.0968166744505941) (cons (0.7  ,  2.35890383682673) (cons (0.800000000000001  ,  0.68228817979048) (cons (0.9  ,  0 - 0.534707578479304) (cons (1  ,  1.10631041057843) (cons (1.1  ,  0 - 0.684754381373853) (cons (1.2  ,  2.33581423512638) (cons (1.3  ,  1.248737148559) (cons (1.4  ,  1.45282892186289) (cons (1.5  ,  0.482710822261788) (cons (1.6  ,  2.22888090894357) (cons (1.7  ,  2.06225735172968) (cons (1.8  ,  1.97738385631598) (cons (1.9  ,  2.84407983211043) (cons (2  ,  1.75609698245895) (cons (2.1  ,  3.30831973970923) (cons (2.2  ,  2.31985824687608) (cons (2.3  ,  2.60222197803442) (cons (2.4  ,  3.27693427038859) (cons (2.5  ,  3.20057123004333) (cons (2.6  ,  3.39169971815942) (cons (2.7  ,  2.81074341863761) (cons (2.8  ,  0.738186372627835) (cons (2.9  ,  1.89165017018196) (cons (3  ,  2.35343610390303) (cons (3.1  ,  1.57737228198488) (cons (3.2  ,  3.1425013058415) (cons (3.3  ,  3.79427055555171) (cons (3.4  ,  0.939841042076198) (cons (3.5  ,  3.69553372824609) (cons (3.6  ,  4.25335674872693) (cons (3.7  ,  3.52141412508101) (cons (3.8  ,  4.66242876324695) (cons (3.9  ,  5.08803458080525) (cons (4  ,  4.69584980838656) (cons (4.1  ,  4.8786627493056) (cons (4.2  ,  5.37935974800428) (cons (4.3  ,  4.5111599691513) (cons (4.4  ,  4.80131043313684) (cons (4.5  ,  1.82561276012115) (cons (4.6  ,  5.59469335978878) (cons (4.7  ,  5.66963171812111) (cons (4.8  ,  3.67580529076841) (cons (4.9  ,  4.41775903094051) (cons (0 - 5  ,  4.12434926781643) (cons (0 - 4.9  ,  4.84602253356127) (cons (0 - 4.8  ,  5.26760369860248) (cons (0 - 4.7  ,  3.14548089271933) (cons (0 - 4.6  ,  5.13303400532867) (cons (0 - 4.5  ,  1.52128036374602) (cons (0 - 4.4  ,  4.13140526042827) (cons (0 - 4.3  ,  3.49609420501083) (cons (0 - 4.2  ,  2.24792561503993) (cons (0 - 4.1  ,  3.86152618163237) (cons (0 - 4  ,  4.73051065819972) (cons (0 - 3.9  ,  1.98642093655695) (cons (0 - 3.8  ,  3.57009241395135) (cons (0 - 3.7  ,  2.20039331350177) (cons (0 - 3.6  ,  4.70866169976785) (cons (0 - 3.5  ,  4.25884633979544) (cons (0 - 3.4  ,  4.28061772746102) (cons (0 - 3.3  ,  5.23275631575196) (cons (0 - 3.2  ,  3.795991715034) (cons (0 - 3.1  ,  3.21893840322741) (cons (0 - 3  ,  2.11714696919179) (cons (0 - 2.9  ,  1.54075834333343) (cons (0 - 2.8  ,  1.76518318466714) (cons (0 - 2.7  ,  4.22259590308169) (cons (0 - 2.6  ,  2.30731744236907) (cons (0 - 2.5  ,  3.19424363320944) (cons (0 - 2.4  ,  3.08382259544037) (cons (0 - 2.3  ,  2.82858769636657) (cons (0 - 2.2  ,  2.49761919923156) (cons (0 - 2.1  ,  2.20363897619228) (cons (0 - 2  ,  1.10394894850963) (cons (0 - 1.9  ,  1.4363988647546) (cons (0 - 1.8  ,  2.56637217241686) (cons (0 - 1.7  ,  1.93492929405999) (cons (0 - 1.6  ,  2.68385217983973) (cons (0 - 1.5  ,  0.0260200171374667) (cons (0 - 1.4  ,  0.765560663435742) (cons (0 - 1.3  ,  1.16895098935139) (cons (0 - 1.2  ,  1.75312492682965) (cons (0 - 1.1  ,  1.15684313552327) (cons (0 - 1  ,  0.795598088689995) (cons (0 - 0.899999999999999  ,  2.92274760769012) (cons (0 - 0.8  ,  0 - 0.198970897326355) (cons (0 - 0.7  ,  1.03302779800183) (cons (0 - 0.6  ,  0.186194798140127) (cons (0 - 0.5  ,  0 - 0.777918151821292) (cons (0 - 0.399999999999999  ,  0 - 0.602709714615544) (cons (0 - 0.3  ,  1.00020611597057) (cons (0 - 0.199999999999999  ,  0 - 1.07208813838634) (cons (0 - 0.0999999999999996  ,  0.858578715697122) (cons (0  ,  0.247896255239368) (cons (0.100000000000001  ,  0 - 2.14883543186545) (cons (0.2  ,  0 - 1.27571875926958) (cons (0.300000000000001  ,  0.831371908947911) (cons (0.4  ,  0.191559874352832) (cons (0.5  ,  0 - 0.718127864140636) (cons (0.600000000000001  ,  0 - 0.679103460240612) (cons (0.7  ,  0.24425887198934) (cons (0.800000000000001  ,  0 - 0.458781423796733) (cons (0.9  ,  0 - 1.31457093738457) (cons (1  ,  0 - 1.97616005064114) (cons (1.1  ,  0 - 3.04754522422715) (cons (1.2  ,  0 - 3.06511994944259) (cons (1.3  ,  0.838187515466869) (cons (1.4  ,  0 - 1.52498227304376) (cons (1.5  ,  0 - 1.83268461140395) (cons (1.6  ,  0 - 3.39394073355487) (cons (1.7  ,  0 - 2.06765148105103) (cons (1.8  ,  0 - 2.1228673186752) (cons (1.9  ,  0 - 3.71725231534912) (cons (2  ,  0 - 0.441912771335008) (cons (2.1  ,  0 - 2.7447811784798) (cons (2.2  ,  0 - 3.83012064121715) (cons (2.3  ,  0 - 1.34169442429425) (cons (2.4  ,  0 - 2.07035658566248) (cons (2.5  ,  0 - 3.1176694558939) (cons (2.6  ,  0 - 2.61737655411356) (cons (2.7  ,  0 - 2.53632572960435) (cons (2.8  ,  0 - 3.11782764099751) (cons (2.9  ,  0 - 4.28116737080879) (cons (3  ,  0 - 2.78127134165472) (cons (3.1  ,  0 - 4.46714033258335) (cons (3.2  ,  0 - 5.16706724897949) (cons (3.3  ,  0 - 1.91432669893466) (cons (3.4  ,  0 - 3.53695155466173) (cons (3.5  ,  0 - 2.33151567709513) (cons (3.6  ,  0 - 3.28099142302961) (cons (3.7  ,  0 - 3.02470535485151) (cons (3.8  ,  0 - 4.14813182424685) (cons (3.9  ,  0 - 1.95436175695851) (cons (4  ,  0 - 3.38374406450937) (cons (4.1  ,  0 - 4.33150370977285) (cons (4.2  ,  0 - 3.4861031516503) (cons (4.3  ,  0 - 3.48344552367956) (cons (4.4  ,  0 - 3.55366933297268) (cons (4.5  ,  0 - 3.50202430670383) (cons (4.6  ,  0 - 5.80422801229819) (cons (4.7  ,  0 - 4.97532263234286) (cons (4.8  ,  0 - 4.47065688714262) (cons (4.9  ,  0 - 4.74612067496265) nil)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+in
+
+let sublist = rec f. λb. λe. λl.
     if isnil l 
     then
         unit
     else
-        let tl = if e <= 0 0 <= e then nil else f (b-1) (e-1) (tail l) in
-        if ~(b <= 0) then tl  else const (head l) tl
+        let tl = if e <= 0 && 0 <= e then nil else f (b - 1) (e - 1) (tail l) in
+        if ~(b <= 0) 
+        then 
+            tl 
+        else 
+            cons (head l) tl
 in
 
-
 let pick_slices = λfirst_model_losses. λsecond_model_losses. λdata.
-	let pick_slices' = rec f. λfirst_model_losses. λsecond_model_losses. λdata. λfirst_slice second_slice. 
+	let pick_slices' = rec f. λfirst_model_losses. λsecond_model_losses. λdata. λfirst_slice. λsecond_slice. 
 		if isnil first_model_losses && isnil second_model_losses && isnil data 
         then
-            pair first_slice second_slice
+            first_slice , second_slice
         else
-            if ~ (isnil first_model_losses) && ~(isnil second_model_losses) && ~(isnil data)
+            if ~(isnil first_model_losses) && ~(isnil second_model_losses) && ~(isnil data)
             then
                 let l1 = head first_model_losses in
                 let l2 = head second_model_losses in
-                if l1 - l2 < 0 
+                if smaller_than (l1 - l2) 0 
                 then
-                    f (tail first_model_losses) (tail second_model_losses) (tail data) (append first_slice (cons d nil)) second_slize
+                    f (tail first_model_losses) (tail second_model_losses) (tail data) (append first_slice (cons d nil)) second_slice
                 else 
-                    f tail first_model_losses) (tail second_model_losses) (tail data) first_slice (append second_slice (cons d nil))
+                    f (tail first_model_losses) (tail second_model_losses) (tail data) first_slice (append second_slice (cons d nil))
             else
                 unit
     in
@@ -47,11 +155,11 @@ let report_total_loss = λfirst_model_losses. λsecond_model_losses. λstep_numb
         then 
             sum
         else
-            if ~(isnil first_model_losses) && ~(isnil second_model_losses)
+            if ~ (isnil first_model_losses) && ~ (isnil second_model_losses)
             then
                 let l1 = head first_model_losses in 
-                let l2 = head second_model_losses on 
-                if l1 - l2 < 0
+                let l2 = head second_model_losses in 
+                if smaller_than (l1 - l2) 0 
                 then
                     f (tail first_model_losses) (tail second_model_losses) (sum + l1)
                 else 
@@ -62,8 +170,62 @@ let report_total_loss = λfirst_model_losses. λsecond_model_losses. λstep_numb
 	compute_total_loss first_model_losses second_model_losses 0
 in
 
-let fit_lines = rec f. λl1_model. λl1_params. λl2_model. λl2_params. λl1_slice. λl2_slice. λstep_number. λmeta_steps
-	let learning_rate = 1/100000 in
+let compute_partial_derivative = λmodel. λparameters. λloss_function. λk. λvalue. λdatapoint.
+    let h = 0.00001 in
+    let params_plus = add k (value + h) parameters in
+    let params_minus = add k (value - h) parameters in
+    let cost_function_value_plus = loss_function (model params_plus) (cons datapoint nil) in
+    let cost_function_value_minus = loss_function (model params_minus) (cons datapoint nil) in
+    (cost_function_value_plus - cost_function_value_minus) / (2 * h)
+in
+
+let update_parameters = λmodel. λparameters. λloss_function. λdatapoint. λlearning_rate.
+    let update_parameter = λk. λvalue.
+        value - (learning_rate * (compute_partial_derivative model parameters loss_function k value datapoint))
+    in
+    mapi update_parameter parameters
+in
+
+let gradient_descent = λmodel. λparameters. λloss_function. λdata. λlearning_rate. λepochs.
+    let data = shuffle data in
+    let len = length data in
+    let gradient_descent_step = rec f. λmodel. λparameters. λloss_function. λshuffled_data. λlearning_rate. λcurr_epoch. λepochs.
+        let current_loss = loss_function (model parameters) data in
+        let datapoint = head shuffled_data in
+        let updated_parameters = update_parameters model parameters loss_function datapoint learning_rate in
+        if (curr_epoch <= epochs && epochs <= curr_epoch) 
+        then 
+            updated_parameters
+        else 
+            if (curr_epoch <= len && len <= curr_epoch) 
+            then 
+                f model updated_parameters loss_function (tail shuffled_data) learning_rate (curr_epoch + 1) epochs
+            else 
+                f model updated_parameters loss_function data learning_rate (curr_epoch + 1) epochs
+    in
+    gradient_descent_step model parameters loss_function data learning_rate 0 epochs
+in
+
+let mse_datapoint_loss = λfunc. λdatapoint.
+    let (x , y) = datapoint in
+    let error = y - (func x) in
+    square error
+in
+
+let mse_loss_function = λfunc. λdata.
+    let data_length = length data in    
+    if data_length <= 0 && 0 <= data_length
+    then
+        0
+    else
+        let sum_terms = map (mse_datapoint_loss func) data in
+        let sum = fold (λa. λb. a + b) 0 sum_terms in
+        let n = length data in
+        (1 / (2 * n)) * sum
+in
+
+let fit_lines = rec f. λl1_model. λl1_params. λl2_model. λl2_params. λl1_slice. λl2_slice. λstep_number. λmeta_steps.
+	let learning_rate = 0.000001 in
 	let epochs = 1000 in
 	let l1_updated_params = gradient_descent l1_model l1_params mse_loss_function l1_slice learning_rate epochs in
 	let l2_updated_params = gradient_descent l2_model l2_params mse_loss_function l2_slice learning_rate epochs in
@@ -71,21 +233,19 @@ let fit_lines = rec f. λl1_model. λl1_params. λl2_model. λl2_params. λl1_sl
 	let first_model_losses = map (mse_datapoint_loss (l1_model l1_updated_params)) data in
 	let second_model_losses = map (mse_datapoint_loss (l2_model l2_updated_params)) data in
 
-	let updated_first_slice, updated_second_slice = pick_slices first_model_losses second_model_losses data in
+	let (updated_first_slice, updated_second_slice) = pick_slices first_model_losses second_model_losses data in
 	let _ = report_total_loss first_model_losses second_model_losses step_number in
 
-	if step_number == meta_steps 
+	if step_number <= meta_steps && meta_steps <= step_number
     then 
-        pair (pair l1_model l1_updated_params) (pair l2_model l2_updated_params)
+        ((l1_model , l1_updated_params) , (l2_model , l2_updated_params))
 	else 
-        fit_lines l1_model l1_updated_params l2_model l2_updated_params updated_first_slice updated_second_slice (step_number + 1) meta_steps
+        f l1_model l1_updated_params l2_model l2_updated_params updated_first_slice updated_second_slice (step_number + 1) meta_steps
 in
 
 let optimise_params = λl1. λl2. 
-	let l1_model = fst l1 in 
-    let l1_params = snd l1 in
-	let l2_model = fst l2 in
-    let l2_params = snd l2 in
+	let (l1_model , l1_params) = l1 in 
+	let (l2_model , l2_params) = l2 in
 
 	let n = length data in
 	let first_data_slice = sublist 0 (n/2) data in
@@ -95,19 +255,17 @@ let optimise_params = λl1. λl2.
 	fit_lines l1_model l1_params l2_model l2_params first_data_slice second_data_slice 0 meta_steps
 in
 
-let a_1 = 0 in
-let a_2 = 0 in
-let b_1 = 0 in
-let b_2 = 0 in
+let a_1 = {0} in
+let a_2 = {0} in
+let b_1 = {0} in
+let b_2 = {0} in
 
-let l1 = λx. (a_1 * x + b_1)] in
-let p1 = cons a_1 (cons b_1 nil) in
-let l2 = λx. (a_2 * x + b_2)] in
-let p2 = cons a_2 (cons b_2 nil) in
+let l1 = abs (λx. (a_1 * x + b_1)) in
+let l2 = abs (λx. (a_2 * x + b_2)) in
 
-let opt_l = optimise_params (pair l1 p1) (pair l2 p2) in
-let opt_l1 = fst opt_l in
-let opt_l2 = snd opt_l in 
-let f = λx. pair (opt_l1 x) (opt_l2 x) in
-let p = cons a_1 (cons a_2 (cons b_1 (cons b_2 nil))) in 
+let opt_l = optimise_params (l1 , p1) (l2 , p2) in
+let (opt_l1 , opt_l2) = opt_l in
+
+let (f , p) = abs (λx. (opt_l1 x) , (opt_l2 x)) in
+
 f p

@@ -11,21 +11,22 @@ let tail = λz. snd (snd z) in
 let fir = rec g. λx. λl.
   if isnil l 
   then 
-    pair x 0
+    x , 0
   else 
     let f = head l in 
     let fs = tail l in 
-    let result = g x fs in 
+    let (out , sum) = g x fs in 
     let s = {0} in 
-    let _ = link s to deref (fst result) in 
-    pair s (f s + (snd result))
+    let _ = link s to deref out in 
+    s , (f s + sum)
 in 
 
 let w = λx. x / 3 in
 
 let avg3 = λx. 
-   let l = cons w (cons w (cons w nil)) in
-   snd (fir x l)
+   let weights = cons w (cons w (cons w nil)) in
+   let (out , sum) = fir x weights in
+   sum
 in
 
 let input = 

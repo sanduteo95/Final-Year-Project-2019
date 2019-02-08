@@ -1,10 +1,12 @@
-To test out the various ways of applying the Futamura Projections on the GoI machine which is used to implement the Dat Flow langauge, first clone the [GoI machine](https://github.com/anonymousgithubaccount/EFSD-vis) outside of this repository so that the folder structure is:
+To test out the various ways of applying the Futamura Projections on the GoI machine which is used to implement the Dat Flow langauge, first clone the [GoI machine](https://git.cs.bham.ac.uk/wtc488/itf-impl) outside of this repository so that the folder structure is:
 ```
 |-- tas458
-|-- EFSD-vis
+|-- itf-impl
+    |-- Visualiser
 ```
+Then switch from `master` branch to `vis-term`.
 
-Applying the First Futamura Projection on the GoI machine implies running Prepack on the JavaScript file containing the GoIMachine class i.e. `../EFSD-vis/js/goi-machine.js`. 
+Applying the First Futamura Projection on the GoI machine implies running Prepack on the JavaScript file containing the GoIMachine class i.e. `../itf-impl/Visualiser/js/goi-machine.js`. 
 
 There are three ways this can be achieved, with the help of the following scripts:
 1. `npm run v1-goi-machine`
@@ -65,7 +67,7 @@ Runs Prepack directly o the `require.js` (amd) module defined in `goi-machine.js
 
 This third version seems inefficient and too fiddly. Would need to make sure to require all dependencies and include them into the file, something that Webpack is able to do very easily. So this version will be forgotten.
 
-Changes that went into viz/EFSD-vis:
+Changes that went into itf-impl/Visualiser:
 - remove multiple module definitions from one file, and split them into files in folders, and remove require.js bundles configuration (which will not be necessary anymore): see https://requirejs.org/docs/api.html#define for why
 - use require.js define syntax (define(<name>, [<deps>], function(<deps class names>) { ... })): see https://requirejs.org/docs/api.html#funcmodule which explains how this syntax works and why the other syntax would work, but doesn't seem necessary in this case
 - replace "var graph" (cheating method) with "window.mainGraph"
@@ -73,14 +75,14 @@ Changes that went into viz/EFSD-vis:
 To run the GoI Machine in terminal we tried two methods:
 
 1. Try to compile `goi-machine.js` inside `Node.js` and convert `app.js` into a `Node.js` function (see `webpack.config.js`)
-- Webpack `goi-machine.js` in `EFSD-vis` into an `commonjs2` module, so that we can require it in `Node.js`
+- Webpack `goi-machine.js` in `Visualiser` into an `commonjs2` module, so that we can require it in `Node.js`
 - The result will be `goi-machine.js`, which we can test it works by requiring the GoI Machine as `const machine = require('./goi-machine.js');`
 - We can test that works by running `node index.js -i input/EFSD/basic.efsd -g` and seeing the result `"5,-,□"`
 - Then we need to run Prepack on the `interpret` function, which is basically the interpreter for the GoI Machine
 - The problem is we will need to require the GoIMachine and Prepack can't deal with that very well from experience, so we'll try now to create the ineterpreter inside the GoIMachine directly
 
 2. Try to compile `app.js` directly (see `webpack2.config.js`)
-- Webpack `app.js` in `EFSD-vis` into a `commonjs2` or `var` module, so that we can run the interpreter and  apply Prepack to it by reading the file into the prepack source and doing `app.interpret(...)`, respectively
+- Webpack `app.js` in `Visualiser` into a `commonjs2` or `var` module, so that we can run the interpreter and  apply Prepack to it by reading the file into the prepack source and doing `app.interpret(...)`, respectively
 - The result will be `app.js`, which we can test it works by running `node index.js -i input/EFSD/basic.efsd -g` and seeing the result `"5,-,□"` (make sure to change `libraryTarget` to `commonjs2` or add `module.exports = app` at the end of the generated file)
 - Needed to change `app.js` so it doesn't require anything and it exports the `interpret` function.
 

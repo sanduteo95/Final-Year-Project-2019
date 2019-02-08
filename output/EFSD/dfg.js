@@ -1,2 +1,2 @@
-console.log(4);
+console.log("4");
 module.exports = 4;
