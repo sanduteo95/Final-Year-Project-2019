@@ -169,7 +169,7 @@ Or, if that doesn't work, follow the steps below:
 5. Change directory into the folder above this one.
 6. Clone the following two repos: [EFSD](https://github.com/sanduteo95/EFSD) and [itf-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl) so that the folder structure is:
 ```
-+-- _EFD
++-- _EFSD
 +-- _itf-impl
 +-- _tas458
 ```
