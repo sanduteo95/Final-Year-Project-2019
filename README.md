@@ -91,12 +91,13 @@ i.e. `node --max-old-space-size=120000 index.js -<i|f> <pathToFile> [-g]`
 ## How to get the execution time
 There is a script used to calculate execution time of individual files. To run it, open a terminal and type:
 ```
-$ sh ./scripts/time.bash <mode> <file> <stackValue>
+$ chmod +x ./scripts/time.bash
+$ ./scripts/time.bash <mode> <file> [stackValue]
 ```
 where:
-- `<mode>` can be either `-i` (for intepreter), `-f` (for the First Futamura Projection) or `-o` (for the ocaml EFSD)
+- `<mode>` can be either `-i` (for intepreter), `-f` (for the First Futamura Projection), `-o` (for the OCaml implementation), or `-a` (for the Agda implementation)
 - `<file>` needs to be the whole name (including extension) in folders `./input/toyLambda` or `./input/EFSD`
-- `<stackValue>` represents the value normally given to the tool
+- `[stackValue]` represents the value normally given to the tool when running the interpreter or the first Futamura Projection (125 by default)
 
 ## How to run benchmarks and generate report
 To generate a report comparing the execution time of the interpreter versus the execution time of the First Futamura Projection run either: `npm run create-lambda-report` or `npm run create-efsd-report` and a HTML report will be generated inside `./report/toyLambda` and `./report/EFSD` respectively.
@@ -151,3 +152,39 @@ The available report is:
 |   +-- convertCSV.js // script to convert CSV datasets to EFSD syntax
 +-- index.js
 ```
+
+### How to install
+There is a script provided in `./scripts/setup.bash`. Run the following in a terminal:
+
+```
+$ chmod +x ./scripts/setup.bash
+$ ./scripts/setup.bash
+``` 
+
+Or, if that doesn't work, follow the steps below: 
+1. Clone this repo.
+2. Install Node.js `v8.15.0` following instructions [here](https://nodejs.org/en/download/package-manager).
+3. Change directory into this repo.
+4. Run `npm install`.
+5. Change directory into the folder above this one.
+6. Clone the following two repos: [EFSD](https://github.com/sanduteo95/EFSD) and [itf-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl) so that the folder structure is:
++-- _EFD
++-- _itf-impl
++-- _tas458
+7. Change directory into `EFSD`.
+8. Install Ocaml `4.05.0` using OPAM following instructions [here](http://www.ocaml.org/docs/install.html).
+9. Run `opam depext conf-m4.1` to install `m4`(https://www.gnu.org/software/m4/).
+10. Install the following dependencies using `opam`:
+- `utop` 
+- `core`
+- `ppx_tools`
+- `js_of_ocaml`
+- `js_of_ocaml-ppx`
+- `js_of_ocaml-lwt`
+11. Run make inside `EFSD`.
+12. Change directory into `itf-impl`.
+13. Install Agda `2.5.4.2` and the standard library following instructions [here](https://agda.readthedocs.io/en/v2.5.4.2/getting-started/installation.html).
+14. Run make inside `itf-impl/Agda`.
+15. Change directory into this repo: `cd ../../tas458`.
+
+Now you can run the benchmarks and time the visualiser, OCaml implementation and Agda implementation using the `./scripts/time.bash` script.

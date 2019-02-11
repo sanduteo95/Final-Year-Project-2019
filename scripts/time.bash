@@ -3,6 +3,7 @@
 # Global variables
 STACK_SIZE=100000
 HEAP_SIZE=120000
+
 # Default langauge and extension
 LANGUAGE="toyLambda"
 EXT="lambda"
@@ -10,17 +11,23 @@ INPUT=1
 
 # Check the numberof parameters
 if [ "$#" -ne 3 ]; then
-    echo "Illegal number of parameters"
-    exit 1
+    if [ "$#" -ne 2 ]; then
+        echo "Illegal number of parameters"
+        exit 1
+    fi
 fi
 
 # Assign the parameters
 MODE="$1"
 FILE="$2"
-STACK="$3"  
+if [ "$#" -ne 3 ]; then
+    STACK=125  
+else
+    STACK="$3"  
+fi
 
 # Get the language and extension
-if [[ $FILE == *"efsd"* ]]; then
+if [ "$FILE" == *"efsd"* ]; then
     LANGUAGE="EFSD"
     EXT="efsd"
 fi
@@ -58,11 +65,11 @@ case "$MODE" in
         ;;
     "-o")
         if [[ $FILE == *"lambda"* ]]; then
-            echo $"The -o mode only works on the EFSD."
+            echo $"The OCaml mode only works on the EFSD."
             exit 1
         fi
         FILE=${FILE/.efsd/}
-        $(cd ../EFSD; sh build_example.sh ${FILE/.efsd/} -js > /dev/null)
+        cd ../EFSD; sh build_example.sh $FILE -js > /dev/null
         
         case "$FILE" in
             "incremental")
@@ -86,8 +93,20 @@ case "$MODE" in
         exit 1
         ;;
     "-a")
-        echo "Not implemented yet."
-        exit 1
+        if [[ $FILE == *"lambda"* ]]; then
+            echo $"The Agda mode only works on the EFSD."
+            exit 1
+        fi
+        FILE=${FILE/.efsd/}
+        cd ../itf-impl/Agda; sh build_example.sh $FILE > /dev/null
+        
+        # capitalize first letter
+        FILE="$(tr '[:lower:]' '[:upper:]' <<< ${FILE:0:1})${FILE:1}"
+
+        # kebab case to camel case
+        FILE="$(echo $FILE | perl -pe 's/(^|_)([a-z])/\U\2/g')"
+
+        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../itf-impl/Agda/Build/$FILE/jAgda.$FILE.js)
         ;;
     *)
 esac
