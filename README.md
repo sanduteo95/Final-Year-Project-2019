@@ -168,11 +168,11 @@ Or, if that doesn't work, follow the steps below:
 4. Run `npm install`.
 5. Change directory into the folder above this one.
 6. Clone the following two repos: [EFSD](https://github.com/sanduteo95/EFSD) and [itf-impl](https://git.cs.bham.ac.uk/wtc488/itf-impl) so that the folder structure is:
-
+```
 +-- _EFD
 +-- _itf-impl
 +-- _tas458
-
+```
 7. Change directory into `EFSD`.
 8. Install Ocaml `4.05.0` using OPAM following instructions [here](http://www.ocaml.org/docs/install.html).
 9. Run `opam depext conf-m4.1` to install [m4](https://www.gnu.org/software/m4/).
