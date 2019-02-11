@@ -178,6 +178,7 @@ Or, if that doesn't work, follow the steps below:
 - `utop` 
 - `core`
 - `ppx_tools`
+- `incremental`
 - `js_of_ocaml`
 - `js_of_ocaml-ppx`
 - `js_of_ocaml-lwt`

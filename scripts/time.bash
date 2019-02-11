@@ -27,7 +27,7 @@ else
 fi
 
 # Get the language and extension
-if [ "$FILE" == *"efsd"* ]; then
+if [[ $FILE == *"efsd"* ]]; then
     LANGUAGE="EFSD"
     EXT="efsd"
 fi
@@ -98,7 +98,7 @@ case "$MODE" in
             exit 1
         fi
         FILE=${FILE/.efsd/}
-        cd ../itf-impl/Agda; sh build_example.sh $FILE > /dev/null
+        cd ../itf-impl/Agda; sh build_example.sh $FILE
         
         # capitalize first letter
         FILE="$(tr '[:lower:]' '[:upper:]' <<< ${FILE:0:1})${FILE:1}"
@@ -106,7 +106,7 @@ case "$MODE" in
         # kebab case to camel case
         FILE="$(echo $FILE | perl -pe 's/(^|_)([a-z])/\U\2/g')"
 
-        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../itf-impl/Agda/Build/$FILE/jAgda.Examples.$FILE.js)
+        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../Agda/Build/$FILE/jAgda.Examples.$FILE.js)
         ;;
     *)
 esac

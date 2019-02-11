@@ -53,9 +53,14 @@ else
 fi
 
 # install Node.js dependencies if they aren't already installed
-if [ ! -d "node_modules" || $UPDATED ]; then
+if [ ! -d "node_modules" ]; then
     printf "\nInstalling Node.js dependecies...\n"
     npm install
+else
+    if [ "$UPDATED" = true ]; then
+        printf "\nInstalling Node.js dependecies...\n"
+        npm install
+    fi
 fi
 
 # move in parent directory to clone the other repos needed
@@ -88,8 +93,8 @@ if [ "$(which opam)" != "" ]; then
     printf "OPAM is installed!\n"
 
     # check version of OCaml
-    if [[ "$(ocaml -version)" != *"v4.05.0"* ]]; then
-        printf "You have a different version of OCaml than the one tested with (4.05.1).\nWill keep going since it might work.\n"
+    if [[ "$(ocaml -version)" != *"4.05.0"* ]]; then
+        printf "You have a different version of OCaml than the one tested with (4.05.0).\nWill keep going since it might work.\n"
     fi
 else  
     printf "Installing Opam and OCaml...\n"
@@ -108,13 +113,14 @@ fi
 # install OCaml packages
 opam install utop core
 opam install ppx_tools
+opam install incremental
 opam install js_of_ocaml
 opam install js_of_ocaml-ppx
 opam install js_of_ocaml-lwt
 
 # run make
 printf "\nBuilding OCaml project...\n"
-make clean > /dev/null ; make
+(make clean && make) || make
 
 printf "\nChanging directory to itf-impl.\nSwitching to branch vis-term.\n"
 cd ../itf-impl
@@ -131,7 +137,7 @@ fi
 printf "\nInstalling Agda and the standard library...\n"
 # make sure Agda and stdlib are installed, if not, install them
 
-if [ "$(which agda)" == "/usr/local/bin/agda"]; then
+if [ "$(which agda)" != "" ]; then
     printf "Agda is installed!\n"
 else   
     $PCKG install agda
@@ -147,7 +153,7 @@ fi
 # change girectory to itf-impl/Agda and run make
 printf "\nBuilding Agda project...\n"
 cd Agda
-make clean > /dev/null ; make
+(make clean && make) || make
 
 # change directory to this repo
 cd ../../tas458
