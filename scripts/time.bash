@@ -106,7 +106,7 @@ case "$MODE" in
         # kebab case to camel case
         FILE="$(echo $FILE | perl -pe 's/(^|_)([a-z])/\U\2/g')"
 
-        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../itf-impl/Agda/Build/$FILE/jAgda.$FILE.js)
+        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../itf-impl/Agda/Build/$FILE/jAgda.Examples.$FILE.js)
         ;;
     *)
 esac
