@@ -40,10 +40,10 @@ if [[ "$(which node)" != "" ]]; then
 else
     printf "\nInstalling Node.js...\n"
     # install Node.js
-    if [[ "$PKG" == "brew" ]]; then
+    if [[ "$PCKG" == "brew" ]]; then
         $PCKG install node@8.15.0
     else
-        if [[ "$PKG" == "sudo apt-get" ]]; then
+        if [[ "$PCKG" == "sudo apt-get" ]]; then
             curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
         else
             curl -sL https://deb.nodesource.com/setup_8.x | bash -
@@ -93,8 +93,8 @@ if [ "$(which opam)" != "" ]; then
     fi
 else  
     printf "Installing Opam and OCaml...\n"
-    if [[ "$PKG" == "brew" ]]; then
-        $PKG install gpatch
+    if [[ "$PCKG" == "brew" ]]; then
+        $PCKG install gpatch
     fi
     $PCKG install opam
     opam init
