@@ -69,7 +69,12 @@ case "$MODE" in
             exit 1
         fi
         FILE=${FILE/.efsd/}
-        cd ../EFSD; sh build_example.sh $FILE -js > /dev/null
+        # if running in Ubuntu/Debian, we cannot use sh
+        if [[ "$OSTYPE" == "linux-gnu" ]]; then
+            cd ../EFSD; ./build_example.sh $FILE -js
+        else
+            cd ../EFSD; sh build_example.sh $FILE -js
+        fi
         
         case "$FILE" in
             "incremental")
@@ -98,7 +103,12 @@ case "$MODE" in
             exit 1
         fi
         FILE=${FILE/.efsd/}
-        cd ../itf-impl/Agda; sh build_example.sh $FILE
+        # if running in Ubuntu/Debian, we cannot use sh
+        if [[ "$OSTYPE" == "linux-gnu" ]]; then
+            cd ../itf-impl/Agda; ./build_example.sh $FILE
+        else
+            cd ../itf-impl/Agda; sh build_example.sh $FILE
+        fi
         
         # capitalize first letter
         FILE="$(tr '[:lower:]' '[:upper:]' <<< ${FILE:0:1})${FILE:1}"

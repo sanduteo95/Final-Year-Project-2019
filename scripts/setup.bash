@@ -84,6 +84,11 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # pull the latest version of the EFSD repo
     git pull
+
+    if [[ "$PCKG" != "brew" ]]; then
+        # if running in Ubuntu/Debian, we cannot use sh
+        chmod +x ./build_example.sh
+    fi
 fi
 
 # make sure OCaml is installed, if not, install it with Opam
@@ -132,6 +137,11 @@ if [[ $REPLY =~ ^[Yy]$ ]]
 then
     # pull the latest version of this repo
     git pull
+
+    if [[ "$PCKG" != "brew" ]]; then
+        # if running in Ubuntu/Debian, we cannot use sh
+        chmod +x ./Agda/build_example.sh
+    fi
 fi
 
 printf "\nInstalling Agda and the standard library...\n"
