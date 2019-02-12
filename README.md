@@ -187,5 +187,5 @@ Or, if that doesn't work, follow the steps below:
 13. Install Agda `2.5.4.2` and the standard library following instructions [here](https://agda.readthedocs.io/en/v2.5.4.2/getting-started/installation.html).
 14. Run make inside `itf-impl/Agda`.
 15. Change directory into this repo: `cd ../../tas458`.
-
-Now you can run the benchmarks and time the visualiser, OCaml implementation and Agda implementation using the `./scripts/time.bash` script.
+16. Install [jq](https://stedolan.github.io/jq/).
+Now you can run the benchmarks and time the visualiser, OCaml implementation and Agda implementation using the `./scripts/time.bash` and `./scripts/profile.bash` scripts.

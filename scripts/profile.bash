@@ -32,9 +32,6 @@ if [[ $FILE == *"efsd"* ]]; then
     EXT="efsd"
 fi
 
-# Only get the real time
-TIMEFORMAT=%R
-
 case "$MODE" in
     "-i")
         # Get the location
@@ -42,11 +39,7 @@ case "$MODE" in
         if [[ "$EXT" = "efsd" ]]; then
             LOCATION="$LOCATION -g"
         fi
-        if [[ $FILE == *"read"* ]]; then
-            TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE index.js -i $LOCATION -s $STACK <<< $INPUT > /dev/null)
-        else
-            TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE index.js -i $LOCATION -s $STACK > /dev/null)
-        fi
+        # todo
         ;;
     "-f")
         # Get the location
@@ -57,11 +50,7 @@ case "$MODE" in
             LOCATION="$LOCATION -g"
         fi
         node --max-old-space-size=120000 --stack-size=$STACK_SIZE index.js -f $LOCATION -s $STACK > /dev/null
-        if [[ $FILE == *"read"* ]]; then
-            TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE $OUTPUT_LOCATION <<< $INPUT > /dev/null)
-        else
-            TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE $OUTPUT_LOCATION > /dev/null)
-        fi
+        # todo
         ;;
     "-o")
         if [[ $FILE == *"lambda"* ]]; then
@@ -71,11 +60,12 @@ case "$MODE" in
         FILE=${FILE/.efsd/}
         # if running in Ubuntu/Debian, we cannot use sh
         if [[ "$OSTYPE" == "linux-gnu" ]]; then
-            cd ../EFSD; ./build_example.sh $FILE -js
+            cd ../EFSD; ./build_example.sh $FILE
         else
-            cd ../EFSD; sh build_example.sh $FILE -js
+            cd ../EFSD; sh build_example.sh $FILE
         fi
-        
+        ocamlfind ocamlopt -p -thread -I ../EFSD/lib/ -I ../EFSD/lib/plain -w -10 -linkpkg -package lwt,lwt.unix -o ../EFSD/example_build/"$FILE".o ../EFSD/lib/heterolist.ml ../EFSD/lib/plain/syncdf.ml ../EFSD/example_build/"$FILE"_syncdf.ml
+
         case "$FILE" in
             "incremental")
                 INPUT="100"
@@ -91,7 +81,8 @@ case "$MODE" in
                 ;;
             *)
         esac
-        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../EFSD/example_build/js/$FILE.js $INPUT)
+        # RESULT=$(ocamlprof ../EFSD/ocamlprof.dump)
+        # rm ../EFSD/ocamlprof.dump
         ;;
     "-h")
         echo "Not implemented yet."
@@ -103,17 +94,10 @@ case "$MODE" in
             exit 1
         fi
         FILE=${FILE/.efsd/}
-        # if running in Ubuntu/Debian, we cannot use sh
-        if [[ "$OSTYPE" == "linux-gnu" ]]; then
-            cd ../itf-impl/Agda
-            GEN_FILE=$(./build_example.sh $FILE | tail -1)
-        else
-            cd ../itf-impl/Agda
-            GEN_FILE=$(sh build_example.sh $FILE | tail -1)
-        fi
-
-        TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE ../Agda/$GEN_FILE)
+        cd ../itf-impl/Agda 
+        FILE=`echo ${FILE:0:1} | tr '[a-z]' '[A-Z]'`${FILE:1}
+        RESULT=$(agda -v profile:8 ../Agda/Examples/$FILE.agda)
         ;;
     *)
 esac
-echo $TIME
+echo "$RESULT"
