@@ -1,34 +1,5 @@
 let square = λx. x * x in
 
-let tuple_smaller_than = λx. λy.
-    let (fstX , sndX) = x in
-    let (fstY , sndY) = y in
-    (fstX <= fstY && fstX + 1 <= fstY) || 
-        ((fstX <= fstY && fstY <= fstX) && (sndX <= sndY && sndX + 1 <= sndY))
-in
-
-let unit = false in
-
-let prev = {0} in
-
-let a = 8121 in
-let c = 28411 in
-
-let getModulus = rec f. λnumber. λdivider.
-	if divider <= number
-	then
-		f (number - divider) divider
-	else number
-in
-
-let generateRandomNumber = λmax.
-	let prevValue = peek prev in
-	let prevValue = getModulus (a * prevValue + c) max in
-	let _ = set prev to {prevValue} in
-	let _ = step in
-	prevValue
-in
-
 let pair = λx.λy.λp. p x y in
 let fst = λp.p (λx.λy.x) in
 let snd = λp.p (λx.λy.y) in
@@ -57,129 +28,76 @@ let fold = rec g. λf. λacc. λx.
     g f (f acc (head x)) (tail x)
 in
 
-let map = λf. λx.
-    let aux = rec g. λx.
-        if isnil x 
-        then
-            nil
-        else
-            cons (f (head x)) (g (tail x))
-    in aux x
-in
-
-let mapi = λf. λx.
-    let aux = rec g. λi. λx.
-        if isnil x 
-        then
-            nil
-        else
-            cons (f i (head x)) (g (i + 1) (tail x))
-    in aux 0 x
-in
-
-let add = rec f. λi. λelem. λls.
-    if isnil ls
+let nSteps = rec f. λn.
+    if n <= 0 && 0 <= n
     then 
-        cons elem nil
-    else
-        if i <= 0 && 0 <= i 
-        then 
-            cons elem ls 
-        else
-            cons (head ls) (f (i - 1) elem (tail ls))
-in
-
-let insert = rec f. λcompare. λelem. λls.
-    if isnil ls
-    then 
-        cons elem nil
-    else
-        let x = head ls in
-        let l = tail ls in 
-        if compare elem x
-        then
-            cons elem ls
-        else
-            cons x (f compare elem l)
-in
-
-let sort = rec f. λcompare. λls.
-    if isnil ls 
-    then
-        nil
+        _ 
     else 
-        let sols = f compare (tail ls) in
-        insert compare (head ls) sols
+        let _ = step in 
+        f (n - 1)
 in
 
-let shuffle = λls. ls
+let least_square_loss = λy. λy'.
+    square (y - y')
 in
 
-let data = cons (2  ,  6.5) (cons (2  ,  6.5) (cons (2.1  ,  10.1) (cons (2.2  ,  7.2) (cons (2.2  ,  7.6) (cons (2.2  ,  7.9) (cons (2.2  ,  8.5) (cons (2.2  ,  9.1) (cons (2.2  ,  9.6) (cons (2.2  ,  9.6) (cons (2.2  ,  10.7) (cons (2.3  ,  9.6) (cons (2.4  ,  7.3) (cons (2.4  ,  7.9) (cons (2.4  ,  7.9) (cons (2.4  ,  9.1) (cons (2.4  ,  9.3) (cons (2.5  ,  7.9) (cons (2.5  ,  8.6) (cons (2.5  ,  8.8) (cons (2.5  ,  8.8) (cons (2.5  ,  9.3) (cons (2.5  ,  11) (cons (2.5  ,  12.7) (cons (2.5  ,  12.7) (cons (2.6  ,  7.7) (cons (2.6  ,  8.3) (cons (2.6  ,  9.4) (cons (2.6  ,  9.4) (cons (2.6  ,  10.5) (cons (2.6  ,  11.5) (cons (2.7  ,  8) (cons (2.7  ,  9) (cons (2.7  ,  9.6) (cons (2.7  ,  9.6) (cons (2.7  ,  9.8) (cons (2.7  ,  10.4) (cons (2.7  ,  11.1) (cons (2.7  ,  12) (cons (2.7  ,  12.5) (cons (2.8  ,  9.1) (cons (2.8  ,  10) (cons (2.8  ,  10.2) (cons (2.8  ,  11.4) (cons (2.8  ,  12) (cons (2.8  ,  13.3) (cons (2.8  ,  13.5) (cons (2.9  ,  9.4) (cons (2.9  ,  10.1) (cons (2.9  ,  10.6) (cons (2.9  ,  11.3) (cons (2.9  ,  11.8) (cons (3  ,  10) (cons (3  ,  10.4) (cons (3  ,  10.6) (cons (3  ,  11.6) (cons (3  ,  12.2) (cons (3  ,  12.4) (cons (3  ,  12.7) (cons (3  ,  13.3) (cons (3  ,  13.8) (cons (3.1  ,  9.9) (cons (3.1  ,  11.5) (cons (3.1  ,  12.1) (cons (3.1  ,  12.5) (cons (3.1  ,  13) (cons (3.1  ,  14.3) (cons (3.2  ,  11.6) (cons (3.2  ,  11.9) (cons (3.2  ,  12.3) (cons (3.2  ,  13) (cons (3.2  ,  13.5) (cons (3.2  ,  13.6) (cons (3.3  ,  11.5) (cons (3.3  ,  12) (cons (3.3  ,  14.1) (cons (3.3  ,  14.9) (cons (3.3  ,  15.4) (cons (3.4  ,  11.2) (cons (3.4  ,  12.2) (cons (3.4  ,  12.4) (cons (3.4  ,  12.8) (cons (3.4  ,  14.4) (cons (3.5  ,  11.7) (cons (3.5  ,  12.9) (cons (3.5  ,  15.6) (cons (3.5  ,  15.7) (cons (3.5  ,  17.2) (cons (3.6  ,  11.8) (cons (3.6  ,  13.3) (cons (3.6  ,  14.8) (cons (3.6  ,  15) (cons (3.7  ,  11) (cons (3.8  ,  14.8) (cons (3.8  ,  16.8) (cons (3.9  ,  14.4) (cons (3.9  ,  20.5) nil))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
-in
-
-let a = {0} in
-let b = {0} in
-
-let (f , p) = abs(λx. a * x + b) in 
-
-let learning_rate = 0.00001 in
-let epochs = 5000 in
-
-let compute_partial_derivative = λmodel. λparameters. λloss_function. λk. λvalue. λdatapoint.
-    let h = 0.00001 in
-    let params_plus = add k (value + h) parameters in
-    let params_minus = add k (value - h) parameters in
-    let cost_function_value_plus = loss_function (model params_plus) (cons datapoint nil) in
-    let cost_function_value_minus = loss_function (model params_minus) (cons datapoint nil) in
-    (cost_function_value_plus - cost_function_value_minus) / (2 * h)
-in
-
-let update_parameters = λmodel. λparameters. λloss_function. λdatapoint. λlearning_rate.
-    let update_parameter = λk. λvalue.
-        value - (learning_rate * (compute_partial_derivative model parameters loss_function k value datapoint))
+let gradient_descent = rec gradient_descent. λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
+    let calculate_loss = λdata.
+        let len = length data in
+        let calculate_loss' = rec calculate_loss'. λacc. λdata.
+            if isnil data 
+                acc / len
+            else
+                let (x , y) = head data in
+                let _ = set input to x in
+                let _ = nSteps num_layers in 
+                let y' = peek output in
+                calculate_loss' (acc + loss_function y y') (tail data)
+        in
+        calculate_loss' 0 data
     in
-    mapi update_parameter parameters
-in
-
-let gradient_descent = λmodel. λparameters. λloss_function. λdata. λlearning_rate. λepochs.
-    let data = shuffle data in
-    let len = length data in
-    let gradient_descent_step = rec f. λmodel. λparameters. λloss_function. λshuffled_data. λlearning_rate. λcurr_epoch. λepochs.
-        let current_loss = loss_function (model parameters) data in
-        let datapoint = head shuffled_data in
-        let updated_parameters = update_parameters model parameters loss_function datapoint learning_rate in
-        if (curr_epoch <= epochs && epochs <= curr_epoch) 
-        then 
-            updated_parameters
-        else 
-            if (curr_epoch <= len && len <= curr_epoch) 
-            then 
-                f model updated_parameters loss_function (tail shuffled_data) learning_rate (curr_epoch + 1) epochs
-            else 
-                f model updated_parameters loss_function data learning_rate (curr_epoch + 1) epochs
+    let gradient_descent' = rec gradient_descent'. λepochs.
+        if epochs <= 0 && 0 <= epochs
+        then
+            false
+        else
+            let d = 0.001 in
+            let g = λe.
+                let old = calculate_loss data in
+                let _ = setp parameters to (parameters ⊞ (d ⊠ e)) in
+                let new = calculate_loss data in
+                ((old - new) / d) ⊠ e
+            in
+            let updated_parameters = fold (λe. λps. (0 - learning_rate * (g e)) ⊞ ps) parameters in
+            let _ = setp parameters to updated_parameters in
+            gradient_descent' (epochs - 1)
     in
-    gradient_descent_step model parameters loss_function data learning_rate 0 epochs
+    gradient_descent' epochs
 in
 
-let mse_datapoint_loss = λfunc. λdatapoint.
-    let (x , y) = datapoint in
-    let error = y - (func x) in
-    square error
+let linear_regression = λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
+    let _ = gradient_descent input output parameters loss_function data learning_rate epochs num_layers in
+    let calculate_output =  λinput. λoutput. λnum_layers. λvalue.
+        let _ = set input to value in
+        let _ = nSteps num_layers in 
+        peek output
+    in
+    calculate_output input output num_layers
 in
 
-let mse_loss_function = λfunc. λdata.
-    let data_length = length data in    
-    if data_length <= 0 && 0 <= data_length
-    then
-        0
-    else
-        let sum_terms = map (mse_datapoint_loss func) data in
-        let sum = fold (λa. λb. a + b) 0 sum_terms in
-        let n = length data in
-        (1 / (2 * n)) * sum
-in
+let x = cell 0 in
+let w = pc 1 in
+let b = pc 0 in
 
-let updated_params = gradient_descent f p mse_loss_function data learning_rate epochs in
+let y = w * x + b in
+let ps = abs y in 
 
-f updated_params
+let dataset = cons (10.0 , 0.0) (cons (12.0 , 1.0) (cons (14.0 , 2.0) (cons (16.0 , 3.0) (cons (18.0 , 4.0) (cons (20.0 , 5.0) nil))))) in
+
+let learning_rate = 0.001 in
+let epochs = 100 in
+let num_layers = 0 in
+
+let f = linear_regression x y ps least_square_loss dataset learning_rate epochs num_layers in
+f 16
+
