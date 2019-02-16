@@ -4,7 +4,7 @@
 
     switch (__selector) {
       case 0:
-        __captured = [_8n__95get, _8n__95get];
+        __captured = [_8u__95get, _8u__95get];
         break;
 
       case 1:
@@ -12,79 +12,91 @@
         break;
 
       case 2:
-        __captured = [_AV__95typeof, _AV__95typeof];
+        __captured = [_Ar__95typeof, _Ar__95typeof];
         break;
 
       case 3:
-        __captured = [_AW__95typeof, _AW__95typeof];
+        __captured = [_As__95typeof, _As__95typeof];
         break;
 
       case 4:
-        __captured = [_CS__95typeof, _CS__95typeof, _BJ__95getPrototypeOf, _BJ__95getPrototypeOf];
+        __captured = [_D0__95typeof, _D0__95typeof, _Bj__95getPrototypeOf, _Bj__95getPrototypeOf];
         break;
 
       case 5:
-        __captured = [_CX__95typeof, _CX__95typeof, _Bx__95getPrototypeOf, _Bx__95getPrototypeOf];
+        __captured = [_D4__95typeof, _D4__95typeof, _CM__95getPrototypeOf, _CM__95getPrototypeOf];
         break;
 
       case 6:
-        __captured = [_CZ__95typeof, _CZ__95typeof, _Bz__95getPrototypeOf, _Bz__95getPrototypeOf];
+        __captured = [_D8__95typeof, _D8__95typeof, _CR__95getPrototypeOf, _CR__95getPrototypeOf];
         break;
 
       case 7:
-        __captured = [_Cb__95typeof, _Cb__95typeof, _C1__95getPrototypeOf, _C1__95getPrototypeOf];
+        __captured = [_DA__95typeof, _DA__95typeof, _CT__95getPrototypeOf, _CT__95getPrototypeOf];
         break;
 
       case 8:
-        __captured = [_Cg__95typeof, _Cg__95typeof, _C3__95getPrototypeOf, _C3__95getPrototypeOf, _C4__95get, _C4__95get];
+        __captured = [_DC__95typeof, _DC__95typeof, _CV__95getPrototypeOf, _CV__95getPrototypeOf];
         break;
 
       case 9:
-        __captured = [_Ci__95typeof, _Ci__95typeof, _C6__95getPrototypeOf, _C6__95getPrototypeOf];
+        __captured = [_DE__95typeof, _DE__95typeof, _CX__95getPrototypeOf, _CX__95getPrototypeOf];
         break;
 
       case 10:
-        __captured = [_Ck__95typeof, _Ck__95typeof, _C8__95getPrototypeOf, _C8__95getPrototypeOf];
+        __captured = [_DJ__95typeof, _DJ__95typeof, _CZ__95getPrototypeOf, _CZ__95getPrototypeOf, _Ca__95get, _Ca__95get];
         break;
 
       case 11:
-        __captured = [_Cm__95typeof, _Cm__95typeof, _CA__95getPrototypeOf, _CA__95getPrototypeOf];
+        __captured = [_DL__95typeof, _DL__95typeof, _Cc__95getPrototypeOf, _Cc__95getPrototypeOf];
         break;
 
       case 12:
-        __captured = [_Co__95typeof, _Co__95typeof, _CC__95getPrototypeOf, _CC__95getPrototypeOf];
+        __captured = [_DN__95typeof, _DN__95typeof, _Ce__95getPrototypeOf, _Ce__95getPrototypeOf];
         break;
 
       case 13:
-        __captured = [_Cq__95typeof, _Cq__95typeof, _CE__95getPrototypeOf, _CE__95getPrototypeOf];
+        __captured = [_DP__95typeof, _DP__95typeof, _Cg__95getPrototypeOf, _Cg__95getPrototypeOf];
         break;
 
       case 14:
-        __captured = [_B3__95typeof, _B3__95typeof];
+        __captured = [_DR__95typeof, _DR__95typeof, _Ci__95getPrototypeOf, _Ci__95getPrototypeOf];
         break;
 
       case 15:
-        __captured = [_B4__95typeof, _B4__95typeof];
+        __captured = [_DT__95typeof, _DT__95typeof, _Ck__95getPrototypeOf, _Ck__95getPrototypeOf];
         break;
 
       case 16:
-        __captured = [_B5__95typeof, _B5__95typeof];
+        __captured = [_DV__95typeof, _DV__95typeof, _Cm__95getPrototypeOf, _Cm__95getPrototypeOf];
         break;
 
       case 17:
-        __captured = [_B6__95typeof, _B6__95typeof];
+        __captured = [_BT__95typeof, _BT__95typeof];
         break;
 
       case 18:
-        __captured = [_BD__95typeof, _BD__95typeof];
+        __captured = [_BU__95typeof, _BU__95typeof];
         break;
 
       case 19:
-        __captured = [_CW__95typeof, _CW__95typeof];
+        __captured = [_BV__95typeof, _BV__95typeof];
         break;
 
       case 20:
-        __captured = [_Cy__95typeof, _Cy__95typeof, _Cx__95getPrototypeOf, _Cx__95getPrototypeOf];
+        __captured = [_BW__95typeof, _BW__95typeof];
+        break;
+
+      case 21:
+        __captured = [_Bd__95typeof, _Bd__95typeof];
+        break;
+
+      case 22:
+        __captured = [_D7__95typeof, _D7__95typeof];
+        break;
+
+      case 23:
+        __captured = [_Dd__95typeof, _Dd__95typeof, _Dc__95getPrototypeOf, _Dc__95getPrototypeOf];
         break;
     }
 
@@ -92,7 +104,7 @@
     return __captured;
   };
 
-  var __scope_0_main = new Array(21);
+  var __scope_0_main = new Array(24);
 
   var $$0_enumerable_58false_44configurable_58true_44writable_58true = {
     enumerable: false,
@@ -110,223 +122,24 @@
   var _$6_Reflect = _$0_global.Reflect;
   var _$7_Reflect_46get = _$6_Reflect.get;
 
-  var _9X__95classCallCheck = function (instance, Constructor) {
+  var _9m__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _Ae__95classCallCheck = function (instance, Constructor) {
+  var _D3__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8z_Abstraction = function (param, body) {
-    _Ae__95classCallCheck(this, _8z_Abstraction);
-
-    this.param = param;
-    this.body = body;
-  };
-
-  var _Af__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _90_Application = function (lhs, rhs) {
-    _Af__95classCallCheck(this, _90_Application);
-
-    this.lhs = lhs;
-    this.rhs = rhs;
-  };
-
-  var _Ad__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _8y_Identifier = function (value, name) {
-    _Ad__95classCallCheck(this, _8y_Identifier);
-
-    this.value = value;
-    this.name = name;
-  };
-
-  var _Ag__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _91_Constant = function (value) {
-    _Ag__95classCallCheck(this, _91_Constant);
-
-    this.value = value;
-  };
-
-  var _Bt__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _A1_Operation = function (type, name) {
-    _Bt__95classCallCheck(this, _A1_Operation);
+  var _CK_Pattern = function (type, id1, id2) {
+    _D3__95classCallCheck(this, _CK_Pattern);
 
     this.type = type;
-    this.name = name;
-  };
-
-  var _95_ = _A1_Operation.prototype;
-
-  var _CW__95typeof = function (obj) {
-    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_K_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_K_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_K_[1](obj);
-  };
-
-  var _Ai__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Bv__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
-
-    if (call && (__captured__scope_K_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Ct__95assertThisInitialized(self);
-  };
-
-  var _Ct__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _96_UnaryOp = function (type, name, v1) {
-    var _this;
-
-    _Ai__95classCallCheck(this, _96_UnaryOp);
-
-    _this = _Bv__95possibleConstructorReturn(this, _8a_(_96_UnaryOp).call(this, type, name));
-    _this.v1 = v1;
-    return _this;
-  };
-
-  var _Ah__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Bu__95possibleConstructorReturn = function (self, call) {
-    if (call && (_CV_(call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Cs__95assertThisInitialized(self);
-  };
-
-  var _Cs__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _92_BinaryOp = function (type, name, v1, v2) {
-    var _this;
-
-    _Ah__95classCallCheck(this, _92_BinaryOp);
-
-    _this = _Bu__95possibleConstructorReturn(this, _8a_(_92_BinaryOp).call(this, type, name, v1));
-    _this.v2 = v2;
-    return _this;
-  };
-
-  var _Am__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _99_IfThenElse = function (cond, t1, t2) {
-    _Am__95classCallCheck(this, _99_IfThenElse);
-
-    this.cond = cond;
-    this.t1 = t1;
-    this.t2 = t2;
-  };
-
-  var _Ao__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _9C_Recursion = function (param, body) {
-    _Ao__95classCallCheck(this, _9C_Recursion);
-
-    this.param = param;
-    this.body = body;
-  };
-
-  var _Aq__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _9F_ProvisionalConstant = function (term) {
-    _Aq__95classCallCheck(this, _9F_ProvisionalConstant);
-
-    this.term = term;
-  };
-
-  var _Aw__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _9O_Change = function (param, body) {
-    _Aw__95classCallCheck(this, _9O_Change);
-
-    this.param = param;
-    this.body = body;
-  };
-
-  var _Ay__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _9R_Assign = function (param, body) {
-    _Ay__95classCallCheck(this, _9R_Assign);
-
-    this.param = param;
-    this.body = body;
+    this.id1 = id1;
+    this.id2 = id2;
   };
 
   var _B0__95classCallCheck = function (instance, Constructor) {
@@ -335,56 +148,294 @@
     }
   };
 
-  var _9U_Propagation = function () {
-    _B0__95classCallCheck(this, _9U_Propagation);
+  var _96_Abstraction = function (pattern, body) {
+    _B0__95classCallCheck(this, _96_Abstraction);
+
+    this.pattern = pattern;
+    this.body = body;
   };
 
-  var _As__95classCallCheck = function (instance, Constructor) {
+  var _B2__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9I_Deprecation = function (term) {
-    _As__95classCallCheck(this, _9I_Deprecation);
+  var _99_Application = function (lhs, rhs) {
+    _B2__95classCallCheck(this, _99_Application);
+
+    this.lhs = lhs;
+    this.rhs = rhs;
+  };
+
+  var _Az__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _95_Identifier = function (value, name) {
+    _Az__95classCallCheck(this, _95_Identifier);
+
+    this.value = value;
+    this.name = name;
+  };
+
+  var _B3__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9A_Constant = function (value) {
+    _B3__95classCallCheck(this, _9A_Constant);
+
+    this.value = value;
+  };
+
+  var _CN__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _AG_Operation = function (type, name) {
+    _CN__95classCallCheck(this, _AG_Operation);
+
+    this.type = type;
+    this.name = name;
+  };
+
+  var _9E_ = _AG_Operation.prototype;
+
+  var _D7__95typeof = function (obj) {
+    var __captured__scope_N_ = __scope_0_main[22] || __get_scope_binding_0_get_95scope_95binding(22);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_N_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_N_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_N_[1](obj);
+  };
+
+  var _B5__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _CP__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_N_ = __scope_0_main[22] || __get_scope_binding_0_get_95scope_95binding(22);
+
+    if (call && (__captured__scope_N_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DY__95assertThisInitialized(self);
+  };
+
+  var _DY__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _9F_UnaryOp = function (type, name, v1) {
+    var _this;
+
+    _B5__95classCallCheck(this, _9F_UnaryOp);
+
+    _this = _CP__95possibleConstructorReturn(this, _8h_(_9F_UnaryOp).call(this, type, name));
+    _this.v1 = v1;
+    return _this;
+  };
+
+  var _B4__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _CO__95possibleConstructorReturn = function (self, call) {
+    if (call && (_D6_(call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DX__95assertThisInitialized(self);
+  };
+
+  var _DX__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _9B_BinaryOp = function (type, name, v1, v2) {
+    var _this;
+
+    _B4__95classCallCheck(this, _9B_BinaryOp);
+
+    _this = _CO__95possibleConstructorReturn(this, _8h_(_9B_BinaryOp).call(this, type, name, v1));
+    _this.v2 = v2;
+    return _this;
+  };
+
+  var _B9__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9I_IfThenElse = function (cond, t1, t2) {
+    _B9__95classCallCheck(this, _9I_IfThenElse);
+
+    this.cond = cond;
+    this.t1 = t1;
+    this.t2 = t2;
+  };
+
+  var _BB__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9L_Recursion = function (param, body) {
+    _BB__95classCallCheck(this, _9L_Recursion);
+
+    this.param = param;
+    this.body = body;
+  };
+
+  var _BD__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9O_Tuple = function (lhs, rhs) {
+    _BD__95classCallCheck(this, _9O_Tuple);
+
+    this.lhs = lhs;
+    this.rhs = rhs;
+  };
+
+  var _BF__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9R_ProvisionalConstant = function (term) {
+    _BF__95classCallCheck(this, _9R_ProvisionalConstant);
 
     this.term = term;
   };
 
-  var _Au__95classCallCheck = function (instance, Constructor) {
+  var _BL__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9L_Dereference = function (term) {
-    _Au__95classCallCheck(this, _9L_Dereference);
+  var _9a_Change = function (param, body) {
+    _BL__95classCallCheck(this, _9a_Change);
+
+    this.param = param;
+    this.body = body;
+  };
+
+  var _BN__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9d_Assign = function (param, body) {
+    _BN__95classCallCheck(this, _9d_Assign);
+
+    this.param = param;
+    this.body = body;
+  };
+
+  var _BP__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9g_Propagation = function () {
+    _BP__95classCallCheck(this, _9g_Propagation);
+  };
+
+  var _BH__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9U_Deprecation = function (term) {
+    _BH__95classCallCheck(this, _9U_Deprecation);
 
     this.term = term;
   };
 
-  var _Ab__95classCallCheck = function (instance, Constructor) {
+  var _BJ__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _CU__95classCallCheck = function (instance, Constructor) {
+  var _9X_Dereference = function (term) {
+    _BJ__95classCallCheck(this, _9X_Dereference);
+
+    this.term = term;
+  };
+
+  var _BR__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _BK_Token = function (type, value, pred) {
-    _CU__95classCallCheck(this, _BK_Token);
+  var _9j_GraphAbstraction = function (term) {
+    _BR__95classCallCheck(this, _9j_GraphAbstraction);
+
+    this.term = term;
+  };
+
+  var _Ax__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _D2__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Bk_Token = function (type, value, pred) {
+    _D2__95classCallCheck(this, _Bk_Token);
 
     this.type = type;
     this.value = value;
     this.pred = pred;
   };
 
-  var _8u_Lexer = function (input) {
-    _Ab__95classCallCheck(this, _8u_Lexer);
+  var _91_Lexer = function (input) {
+    _Ax__95classCallCheck(this, _91_Lexer);
 
     this._input = input;
     this._index = 0;
@@ -393,9 +444,9 @@
     this._nextToken();
   };
 
-  var _8v_ = _8u_Lexer.prototype;
+  var _92_ = _91_Lexer.prototype;
 
-  var _9n_ = function () {
+  var _A0_ = function () {
     if (this._index >= this._input.length) {
       return '\0';
     }
@@ -403,7 +454,7 @@
     return this._input[this._index++];
   };
 
-  var _9o_ = function () {
+  var _A1_ = function () {
     var c;
 
     do {
@@ -413,47 +464,47 @@
     switch (c) {
       case 'λ':
       case '\\':
-        this._token = new _BK_Token(_BK_Token.LAMBDA);
+        this._token = new _Bk_Token(_Bk_Token.LAMBDA);
         break;
 
       case '.':
-        this._token = new _BK_Token(_BK_Token.DOT);
+        this._token = new _Bk_Token(_Bk_Token.DOT);
         break;
 
       case ',':
-        this._token = new _BK_Token(_BK_Token.COMMA);
+        this._token = new _Bk_Token(_Bk_Token.COMMA, null, 1);
         break;
 
       case ';':
-        this._token = new _BK_Token(_BK_Token.SEQ);
+        this._token = new _Bk_Token(_Bk_Token.SEQ);
         break;
 
       case '(':
-        this._token = new _BK_Token(_BK_Token.LPAREN);
+        this._token = new _Bk_Token(_Bk_Token.LPAREN);
         break;
 
       case ')':
-        this._token = new _BK_Token(_BK_Token.RPAREN);
+        this._token = new _Bk_Token(_Bk_Token.RPAREN);
         break;
 
       case '{':
-        this._token = new _BK_Token(_BK_Token.CLPAREN);
+        this._token = new _Bk_Token(_Bk_Token.CLPAREN);
         break;
 
       case '}':
-        this._token = new _BK_Token(_BK_Token.CRPAREN);
+        this._token = new _Bk_Token(_Bk_Token.CRPAREN);
         break;
 
       case '\0':
-        this._token = new _BK_Token(_BK_Token.EOF);
+        this._token = new _Bk_Token(_Bk_Token.EOF);
         break;
 
       case '~':
-        this._token = new _BK_Token(_BK_Token.NOT);
+        this._token = new _Bk_Token(_Bk_Token.NOT);
         break;
 
       case '&':
-        if (this._nextChar() == '&') this._token = new _BK_Token(_BK_Token.AND, null, 5);else {
+        if (this._nextChar() == '&') this._token = new _Bk_Token(_Bk_Token.AND, null, 5);else {
           this._index--;
           this.fail();
         }
@@ -462,37 +513,37 @@
       case '|':
         var c2 = this._nextChar();
 
-        if (c2 == '|') this._token = new _BK_Token(_BK_Token.OR, null, 4);else {
+        if (c2 == '|') this._token = new _Bk_Token(_Bk_Token.OR, null, 4);else {
           this._index--;
           this.fail();
         }
         break;
 
       case '+':
-        this._token = new _BK_Token(_BK_Token.PLUS, null, 12);
+        this._token = new _Bk_Token(_Bk_Token.PLUS, null, 12);
         break;
 
       case '-':
-        this._token = new _BK_Token(_BK_Token.SUB, null, 12);
+        this._token = new _Bk_Token(_Bk_Token.SUB, null, 12);
         break;
 
       case '*':
-        this._token = new _BK_Token(_BK_Token.MULT, null, 13);
+        this._token = new _Bk_Token(_Bk_Token.MULT, null, 13);
         break;
 
       case '/':
-        this._token = new _BK_Token(_BK_Token.DIV, null, 13);
+        this._token = new _Bk_Token(_Bk_Token.DIV, null, 13);
         break;
 
       case '<':
-        if (this._nextChar() == '=') this._token = new _BK_Token(_BK_Token.LTE, null, 10);else {
+        if (this._nextChar() == '=') this._token = new _Bk_Token(_Bk_Token.LTE, null, 10);else {
           this._index--;
           this.fail();
         }
         break;
 
       case '=':
-        this._token = new _BK_Token(_BK_Token.DEFINE);
+        this._token = new _Bk_Token(_Bk_Token.DEFINE);
         break;
 
       default:
@@ -507,7 +558,7 @@
 
 
           this._index--;
-          if (str == "let") this._token = new _BK_Token(_BK_Token.LET);else if (str == "in") this._token = new _BK_Token(_BK_Token.IN);else if (str == "rec") this._token = new _BK_Token(_BK_Token.REC);else if (str == "true") this._token = new _BK_Token(_BK_Token.TRUE);else if (str == "false") this._token = new _BK_Token(_BK_Token.FALSE);else if (str == "if") this._token = new _BK_Token(_BK_Token.IF);else if (str == "then") this._token = new _BK_Token(_BK_Token.THEN);else if (str == "else") this._token = new _BK_Token(_BK_Token.ELSE);else if (str == "link") this._token = new _BK_Token(_BK_Token.CHANGE);else if (str == "set") this._token = new _BK_Token(_BK_Token.SET);else if (str == "to") this._token = new _BK_Token(_BK_Token.TO);else if (str == "step") this._token = new _BK_Token(_BK_Token.PROP);else if (str == "peek") this._token = new _BK_Token(_BK_Token.DEP);else if (str == "deref") this._token = new _BK_Token(_BK_Token.DEREF);else this._token = new _BK_Token(_BK_Token.LCID, str);
+          if (str == "let") this._token = new _Bk_Token(_Bk_Token.LET);else if (str == "in") this._token = new _Bk_Token(_Bk_Token.IN);else if (str == "rec") this._token = new _Bk_Token(_Bk_Token.REC);else if (str == "true") this._token = new _Bk_Token(_Bk_Token.TRUE);else if (str == "false") this._token = new _Bk_Token(_Bk_Token.FALSE);else if (str == "if") this._token = new _Bk_Token(_Bk_Token.IF);else if (str == "then") this._token = new _Bk_Token(_Bk_Token.THEN);else if (str == "else") this._token = new _Bk_Token(_Bk_Token.ELSE);else if (str == "link") this._token = new _Bk_Token(_Bk_Token.CHANGE);else if (str == "set") this._token = new _Bk_Token(_Bk_Token.SET);else if (str == "to") this._token = new _Bk_Token(_Bk_Token.TO);else if (str == "step") this._token = new _Bk_Token(_Bk_Token.PROP);else if (str == "peek") this._token = new _Bk_Token(_Bk_Token.DEP);else if (str == "deref") this._token = new _Bk_Token(_Bk_Token.DEREF);else if (str == "abs") this._token = new _Bk_Token(_Bk_Token.ABS);else this._token = new _Bk_Token(_Bk_Token.LCID, str);
         } // text for numbers
         else if (/[0-9]/.test(c)) {
             var _str = '';
@@ -526,7 +577,7 @@
 
 
             this._index--;
-            this._token = new _BK_Token(_BK_Token.INT, parseFloat(_str));
+            this._token = new _Bk_Token(_Bk_Token.INT, parseFloat(_str));
           } else {
             this.fail();
           }
@@ -534,7 +585,7 @@
     }
   };
 
-  var _9p_ = function (type) {
+  var _A2_ = function (type) {
     if (!type) {
       return this._token.value;
     }
@@ -544,19 +595,19 @@
     return token.value;
   };
 
-  var _9q_ = function () {
+  var _A3_ = function () {
     return this._token;
   };
 
-  var _9r_ = function () {
+  var _A4_ = function () {
     throw new Error("Unexpected token at offset ".concat(this._index));
   };
 
-  var _9s_ = function (type) {
+  var _A5_ = function (type) {
     return this._token.type == type;
   };
 
-  var _9t_ = function (type) {
+  var _A6_ = function (type) {
     if (this.next(type)) {
       this._nextToken();
 
@@ -567,7 +618,7 @@
     throw new Error('Parse Error');
   };
 
-  var _9u_ = function (type) {
+  var _A7_ = function (type) {
     if (this.next(type)) {
       this._nextToken();
 
@@ -577,66 +628,82 @@
     return false;
   };
 
-  var _Ac__95classCallCheck = function (instance, Constructor) {
+  var _Ay__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8w_Parser = function (lexer) {
-    _Ac__95classCallCheck(this, _8w_Parser);
+  var _93_Parser = function (lexer) {
+    _Ay__95classCallCheck(this, _93_Parser);
 
     this.lexer = lexer;
   };
 
-  var _8x_ = _8w_Parser.prototype;
+  var _94_ = _93_Parser.prototype;
 
-  var _9v_ = function () {
+  var _A8_ = function () {
     var result = this.term([]); // make sure we consumed all the program, otherwise there was a syntax error
 
-    this.lexer.match(_BK_Token.EOF);
+    this.lexer.match(_Bk_Token.EOF);
     return result;
   };
 
-  var _9w_ = function (ctx) {
-    if (this.lexer.skip(_BK_Token.LAMBDA)) {
-      var id = this.lexer.token(_BK_Token.LCID);
-      this.lexer.match(_BK_Token.DOT);
-      var term = this.term([id].concat(ctx));
-      return new _8z_Abstraction(id, term);
-    } else if (this.lexer.skip(_BK_Token.LET)) {
-      var _id = this.lexer.token(_BK_Token.LCID);
+  var _A9_ = function (ctx) {
+    if (this.lexer.skip(_Bk_Token.LAMBDA)) {
+      var _id = this.lexer.token(_Bk_Token.LCID);
 
-      this.lexer.match(_BK_Token.DEFINE);
-      var N = this.term(ctx);
-      this.lexer.match(_BK_Token.IN);
-      var M = this.term([_id].concat(ctx));
-      return new _90_Application(new _8z_Abstraction(_id, M), N);
-    } else if (this.lexer.skip(_BK_Token.REC)) {
-      var _id2 = this.lexer.token(_BK_Token.LCID);
+      this.lexer.match(_Bk_Token.DOT);
+      var term = this.term([_id].concat(ctx));
+      return new _96_Abstraction(new _CK_Pattern(_8S_PatternType.Id, _id), term);
+    } else if (this.lexer.skip(_Bk_Token.LET)) {
+      if (this.lexer.skip(_Bk_Token.LPAREN)) {
+        var id1 = this.lexer.token(_Bk_Token.LCID);
+        this.lexer.match(_Bk_Token.COMMA);
+        var id2 = this.lexer.token(_Bk_Token.LCID);
+        this.lexer.match(_Bk_Token.RPAREN);
+        var pattern = new _CK_Pattern(_8S_PatternType.Tuple, id1, id2);
+        this.lexer.match(_Bk_Token.DEFINE);
+        var N = this.term(ctx);
+        this.lexer.match(_Bk_Token.IN);
+        var M = this.term([id1, id2].concat(ctx));
+        return new _99_Application(new _96_Abstraction(pattern, M), N);
+      } else {
+        var id = this.lexer.token(_Bk_Token.LCID);
+        var pattern = new _CK_Pattern(_8S_PatternType.Id, id);
+        this.lexer.match(_Bk_Token.DEFINE);
+        var N = this.term(ctx);
+        this.lexer.match(_Bk_Token.IN);
 
-      this.lexer.match(_BK_Token.DOT);
+        var _M = this.term([id].concat(ctx));
+
+        return new _99_Application(new _96_Abstraction(pattern, _M), N);
+      }
+    } else if (this.lexer.skip(_Bk_Token.REC)) {
+      var _id2 = this.lexer.token(_Bk_Token.LCID);
+
+      this.lexer.match(_Bk_Token.DOT);
 
       var _term = this.term([_id2].concat(ctx));
 
-      return new _9C_Recursion(_id2, _term);
-    } else if (this.lexer.skip(_BK_Token.IF)) {
+      return new _9L_Recursion(_id2, _term);
+    } else if (this.lexer.skip(_Bk_Token.IF)) {
       var cond = this.term(ctx);
-      this.lexer.match(_BK_Token.THEN);
+      this.lexer.match(_Bk_Token.THEN);
       var t1 = this.term(ctx);
-      this.lexer.match(_BK_Token.ELSE);
+      this.lexer.match(_Bk_Token.ELSE);
       var t2 = this.term(ctx);
-      return new _99_IfThenElse(cond, t1, t2);
+      return new _9I_IfThenElse(cond, t1, t2);
     } else {
       return this.application(ctx);
     }
   };
 
-  var _9x_ = function (token) {
-    return token.type == _BK_Token.AND || token.type == _BK_Token.OR || token.type == _BK_Token.PLUS || token.type == _BK_Token.SUB || token.type == _BK_Token.MULT || token.type == _BK_Token.DIV || token.type == _BK_Token.LTE;
+  var _AA_ = function (token) {
+    return token.type == _Bk_Token.AND || token.type == _Bk_Token.OR || token.type == _Bk_Token.PLUS || token.type == _Bk_Token.SUB || token.type == _Bk_Token.MULT || token.type == _Bk_Token.DIV || token.type == _Bk_Token.LTE || token.type == _Bk_Token.COMMA;
   };
 
-  var _9y_ = function (ctx, lhs, pred) {
+  var _AB_ = function (ctx, lhs, pred) {
     var nextToken = this.lexer.lookahead();
 
     while (this.isBinaryOp(nextToken) && nextToken.pred >= pred) {
@@ -653,27 +720,29 @@
         nextToken = this.lexer.lookahead();
       }
 
-      if (op.type == _BK_Token.AND) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.And, "&&", lhs, rhs);
-      } else if (op.type == _BK_Token.OR) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Or, "||", lhs, rhs);
-      } else if (op.type == _BK_Token.PLUS) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Plus, "+", lhs, rhs);
-      } else if (op.type == _BK_Token.SUB) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Sub, "-", lhs, rhs);
-      } else if (op.type == _BK_Token.MULT) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Mult, "*", lhs, rhs);
-      } else if (op.type == _BK_Token.DIV) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Div, "/", lhs, rhs);
-      } else if (op.type == _BK_Token.LTE) {
-        lhs = new _92_BinaryOp(_8D_BinOpType.Lte, "<=", lhs, rhs);
+      if (op.type == _Bk_Token.AND) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.And, "&&", lhs, rhs);
+      } else if (op.type == _Bk_Token.OR) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Or, "||", lhs, rhs);
+      } else if (op.type == _Bk_Token.PLUS) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Plus, "+", lhs, rhs);
+      } else if (op.type == _Bk_Token.SUB) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Sub, "-", lhs, rhs);
+      } else if (op.type == _Bk_Token.MULT) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Mult, "*", lhs, rhs);
+      } else if (op.type == _Bk_Token.DIV) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Div, "/", lhs, rhs);
+      } else if (op.type == _Bk_Token.LTE) {
+        lhs = new _9B_BinaryOp(_8H_BinOpType.Lte, "<=", lhs, rhs);
+      } else if (op.type == _Bk_Token.COMMA) {
+        lhs = new _9O_Tuple(lhs, rhs);
       }
     }
 
     return lhs;
   };
 
-  var _9z_ = function (ctx) {
+  var _AC_ = function (ctx) {
     var lhs = this.atom(ctx);
 
     while (true) {
@@ -687,73 +756,77 @@
         if (!rhs) {
           return lhs;
         } else {
-          lhs = new _90_Application(lhs, rhs);
+          lhs = new _99_Application(lhs, rhs);
         }
       }
     }
   };
 
-  var _A0_ = function (ctx) {
-    if (this.lexer.skip(_BK_Token.LPAREN)) {
+  var _AD_ = function (ctx) {
+    if (this.lexer.skip(_Bk_Token.LPAREN)) {
       var _term2 = this.term(ctx);
 
-      this.lexer.match(_BK_Token.RPAREN);
+      this.lexer.match(_Bk_Token.RPAREN);
       return _term2;
-    } else if (this.lexer.next(_BK_Token.LCID)) {
-      var id = this.lexer.token(_BK_Token.LCID);
-      return new _8y_Identifier(ctx.indexOf(id), id);
-    } else if (this.lexer.next(_BK_Token.INT)) {
-      var n = this.lexer.token(_BK_Token.INT);
-      return new _91_Constant(n);
-    } else if (this.lexer.skip(_BK_Token.TRUE)) {
-      return new _91_Constant(true);
-    } else if (this.lexer.skip(_BK_Token.FALSE)) {
-      return new _91_Constant(false);
-    } else if (this.lexer.skip(_BK_Token.NOT)) {
+    } else if (this.lexer.next(_Bk_Token.LCID)) {
+      var id = this.lexer.token(_Bk_Token.LCID);
+      return new _95_Identifier(ctx.indexOf(id), id);
+    } else if (this.lexer.next(_Bk_Token.INT)) {
+      var n = this.lexer.token(_Bk_Token.INT);
+      return new _9A_Constant(n);
+    } else if (this.lexer.skip(_Bk_Token.TRUE)) {
+      return new _9A_Constant(true);
+    } else if (this.lexer.skip(_Bk_Token.FALSE)) {
+      return new _9A_Constant(false);
+    } else if (this.lexer.skip(_Bk_Token.NOT)) {
       var _term3 = this.term(ctx);
 
-      return new _96_UnaryOp(_Aj_UnOpType.Not, "~", _term3);
-    } else if (this.lexer.skip(_BK_Token.PROP)) {
-      return new _9U_Propagation();
-    } else if (this.lexer.skip(_BK_Token.DEP)) {
+      return new _9F_UnaryOp(_B6_UnOpType.Not, "~", _term3);
+    } else if (this.lexer.skip(_Bk_Token.PROP)) {
+      return new _9g_Propagation();
+    } else if (this.lexer.skip(_Bk_Token.DEP)) {
       var term = this.term(ctx);
-      return new _9I_Deprecation(term);
-    } else if (this.lexer.skip(_BK_Token.DEREF)) {
+      return new _9U_Deprecation(term);
+    } else if (this.lexer.skip(_Bk_Token.DEREF)) {
       var term = this.term(ctx);
-      return new _9L_Dereference(term);
-    } else if (this.lexer.skip(_BK_Token.CLPAREN)) {
+      return new _9X_Dereference(term);
+    } else if (this.lexer.skip(_Bk_Token.CLPAREN)) {
       var term = this.term(ctx);
-      this.lexer.match(_BK_Token.CRPAREN);
-      return new _9F_ProvisionalConstant(term);
-    } else if (this.lexer.skip(_BK_Token.CHANGE)) {
-      var _id3 = this.lexer.token(_BK_Token.LCID);
+      this.lexer.match(_Bk_Token.CRPAREN);
+      return new _9R_ProvisionalConstant(term);
+    } else if (this.lexer.skip(_Bk_Token.CHANGE)) {
+      var _id3 = this.lexer.token(_Bk_Token.LCID);
 
-      this.lexer.match(_BK_Token.TO);
+      this.lexer.match(_Bk_Token.TO);
 
       var _term4 = this.term(ctx);
 
-      return new _9O_Change(_id3, _term4);
-    } else if (this.lexer.skip(_BK_Token.SET)) {
-      var _id4 = this.lexer.token(_BK_Token.LCID);
+      return new _9a_Change(_id3, _term4);
+    } else if (this.lexer.skip(_Bk_Token.SET)) {
+      var _id4 = this.lexer.token(_Bk_Token.LCID);
 
-      this.lexer.match(_BK_Token.TO);
+      this.lexer.match(_Bk_Token.TO);
 
       var _term5 = this.term(ctx);
 
-      return new _9R_Assign(_id4, _term5);
+      return new _9d_Assign(_id4, _term5);
+    } else if (this.lexer.skip(_Bk_Token.ABS)) {
+      var _term6 = this.term(ctx);
+
+      return new _9j_GraphAbstraction(_term6);
     } else {
       return undefined;
     }
   };
 
-  var _8q__95classCallCheck = function (instance, Constructor) {
+  var _8x__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
   var _7W_MachineToken = function (machine) {
-    _8q__95classCallCheck(this, _7W_MachineToken);
+    _8x__95classCallCheck(this, _7W_MachineToken);
 
     this.machine = machine;
     this.reset();
@@ -761,12 +834,12 @@
 
   var _5x_ = _7W_MachineToken.prototype;
 
-  var _8M_ = function () {
+  var _8Q_ = function () {
     return _7u_CompData;
   };
 
-  var _8N_ = function () {
-    return _80_RewriteFlag;
+  var _8R_ = function () {
+    return _83_RewriteFlag;
   };
 
   var _7T_ = function (link) {
@@ -788,7 +861,7 @@
     this.rewrite = false;
     this.transited = false;
     this.link = null;
-    this.rewriteFlag = _80_RewriteFlag.EMPTY;
+    this.rewriteFlag = _83_RewriteFlag.EMPTY;
     this.dataStack = [_7u_CompData.PROMPT];
     this.boxStack = [];
   };
@@ -798,18 +871,18 @@
     this.machine.evalTokens.splice(this.machine.evalTokens.indexOf(this), 1);
   };
 
-  var _8Q__95classCallCheck = function (instance, Constructor) {
+  var _8X__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8R_isNumber = function (n) {
+  var _8Y_isNumber = function (n) {
     return !isNaN(parseFloat(n)) && isFinite(n);
   };
 
   var _6G_Link = function (from, to, fromPort, toPort, reverse) {
-    _8Q__95classCallCheck(this, _6G_Link);
+    _8X__95classCallCheck(this, _6G_Link);
 
     this.from = from;
     this.to = to;
@@ -891,13 +964,13 @@
     return this.from + "->" + this.to;
   };
 
-  var _8p__95classCallCheck = function (instance, Constructor) {
+  var _8w__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _AV__95typeof = function (obj) {
+  var _Ar__95typeof = function (obj) {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -913,23 +986,23 @@
     return __captured__scope_3_[1](obj);
   };
 
-  var _8Y__95classCallCheck = function (instance, Constructor) {
+  var _8f__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8Z__95possibleConstructorReturn = function (self, call) {
+  var _8g__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_3_ = __scope_0_main[2] || __get_scope_binding_0_get_95scope_95binding(2);
 
     if (call && (__captured__scope_3_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _B8__95assertThisInitialized(self);
+    return _BY__95assertThisInitialized(self);
   };
 
-  var _B8__95assertThisInitialized = function (self) {
+  var _BY__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -937,14 +1010,14 @@
     return self;
   };
 
-  var _8T__95classCallCheck = function (instance, Constructor) {
+  var _8a__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
   var _6U_Node = function (shape, text, colour, name) {
-    _8T__95classCallCheck(this, _6U_Node);
+    _8a__95classCallCheck(this, _6U_Node);
 
     this.key = null;
     this.shape = shape;
@@ -1065,9 +1138,9 @@
   var _6j_Group = function () {
     var _this;
 
-    _8Y__95classCallCheck(this, _6j_Group);
+    _8f__95classCallCheck(this, _6j_Group);
 
-    _this = _8Z__95possibleConstructorReturn(this, _8a_(_6j_Group).call(this, null, null, null)); // shape, text, name
+    _this = _8g__95possibleConstructorReturn(this, _8h_(_6j_Group).call(this, null, null, null)); // shape, text, name
 
     _this.nodes = [];
     _this.links = []; // for copying
@@ -1100,11 +1173,11 @@
       node.delete();
     }
 
-    _8b_(_8a_(_6j_Group.prototype), "delete", this).call(this);
+    _8i_(_8h_(_6j_Group.prototype), "delete", this).call(this);
   };
 
   var _7S_Graph = function (machine) {
-    _8p__95classCallCheck(this, _7S_Graph);
+    _8w__95classCallCheck(this, _7S_Graph);
 
     this.machine = machine;
     this.clear();
@@ -1151,21 +1224,21 @@
     this.allLinks.splice(this.allLinks.indexOf(link), 1);
   };
 
-  var _8h__95classCallCheck = function (instance, Constructor) {
+  var _8o__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9h__95possibleConstructorReturn = function (self, call) {
-    if (call && (_BC_(call) === "object" || typeof call === "function")) {
+  var _9u__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Bc_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CL__95assertThisInitialized(self);
+    return _Ct__95assertThisInitialized(self);
   };
 
-  var _CL__95assertThisInitialized = function (self) {
+  var _Ct__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1173,21 +1246,21 @@
     return self;
   };
 
-  var _8l__95classCallCheck = function (instance, Constructor) {
+  var _8s__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8m__95possibleConstructorReturn = function (self, call) {
-    if (call && (_AY_(call) === "object" || typeof call === "function")) {
+  var _8t__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Au_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _AZ__95assertThisInitialized(self);
+    return _Av__95assertThisInitialized(self);
   };
 
-  var _AZ__95assertThisInitialized = function (self) {
+  var _Av__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1195,14 +1268,14 @@
     return self;
   };
 
-  var _8n__95get = function (target, property, receiver) {
+  var _8u__95get = function (target, property, receiver) {
     var __captured__scope_1_ = __scope_0_main[0] || __get_scope_binding_0_get_95scope_95binding(0);
 
     if (typeof Reflect !== "undefined" && Reflect.get) {
       __captured__scope_1_[1] = Reflect.get;
     } else {
       __captured__scope_1_[1] = function _get(target, property, receiver) {
-        var base = _BG__95superPropBase(target, property);
+        var base = _Bg__95superPropBase(target, property);
 
         if (!base) return;
         var desc = Object.getOwnPropertyDescriptor(base, property);
@@ -1218,16 +1291,16 @@
     return __captured__scope_1_[1](target, property, receiver || target);
   };
 
-  var _BG__95superPropBase = function (object, property) {
+  var _Bg__95superPropBase = function (object, property) {
     while (!Object.prototype.hasOwnProperty.call(object, property)) {
-      object = _8a_(object);
+      object = _8h_(object);
       if (object === null) break;
     }
 
     return object;
   };
 
-  var _AW__95typeof = function (obj) {
+  var _As__95typeof = function (obj) {
     var __captured__scope_4_ = __scope_0_main[3] || __get_scope_binding_0_get_95scope_95binding(3);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -1243,23 +1316,23 @@
     return __captured__scope_4_[1](obj);
   };
 
-  var _8d__95classCallCheck = function (instance, Constructor) {
+  var _8k__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8e__95possibleConstructorReturn = function (self, call) {
+  var _8l__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_4_ = __scope_0_main[3] || __get_scope_binding_0_get_95scope_95binding(3);
 
     if (call && (__captured__scope_4_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _BA__95assertThisInitialized(self);
+    return _Ba__95assertThisInitialized(self);
   };
 
-  var _BA__95assertThisInitialized = function (self) {
+  var _Ba__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1270,9 +1343,9 @@
   var _6t_Expo = function (shape, text, name) {
     var _this;
 
-    _8d__95classCallCheck(this, _6t_Expo);
+    _8k__95classCallCheck(this, _6t_Expo);
 
-    _this = _8e__95possibleConstructorReturn(this, _8a_(_6t_Expo).call(this, shape, text, "cyan", name));
+    _this = _8l__95possibleConstructorReturn(this, _8h_(_6t_Expo).call(this, shape, text, "cyan", name));
     _this.width = ".3";
     _this.height = ".3";
     return _this;
@@ -1296,7 +1369,7 @@
       inLink.changeTo(outLink.to, outLink.toPort);
     }
 
-    _8b_(_8a_(_6t_Expo.prototype), "delete", this).call(this);
+    _8i_(_8h_(_6t_Expo.prototype), "delete", this).call(this);
   };
 
   var _6w_ = function () {
@@ -1307,13 +1380,13 @@
       outLink.changeFrom(inLink.from, inLink.fromPort);
     }
 
-    _8b_(_8a_(_6t_Expo.prototype), "delete", this).call(this);
+    _8i_(_8h_(_6t_Expo.prototype), "delete", this).call(this);
   };
 
   var _7H_Pax = function (name) {
-    _8l__95classCallCheck(this, _7H_Pax);
+    _8s__95classCallCheck(this, _7H_Pax);
 
-    return _8m__95possibleConstructorReturn(this, _8a_(_7H_Pax).call(this, null, "?", name));
+    return _8t__95possibleConstructorReturn(this, _8h_(_7H_Pax).call(this, null, "?", name));
   };
 
   var _7I_ = function () {
@@ -1325,24 +1398,24 @@
 
     this.group.auxs.splice(this.group.auxs.indexOf(this), 1);
 
-    __captured__scope_1_[1](_8a_(_7H_Pax.prototype), "delete", this).call(this);
+    __captured__scope_1_[1](_8h_(_7H_Pax.prototype), "delete", this).call(this);
   };
 
-  var _8k__95classCallCheck = function (instance, Constructor) {
+  var _8r__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9k__95possibleConstructorReturn = function (self, call) {
-    if (call && (_BF_(call) === "object" || typeof call === "function")) {
+  var _9x__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Bf_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CO__95assertThisInitialized(self);
+    return _Cw__95assertThisInitialized(self);
   };
 
-  var _CO__95assertThisInitialized = function (self) {
+  var _Cw__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1351,16 +1424,16 @@
   };
 
   var _7D_Contract = function (name) {
-    _8k__95classCallCheck(this, _7D_Contract);
+    _8r__95classCallCheck(this, _7D_Contract);
 
-    return _9k__95possibleConstructorReturn(this, _8a_(_7D_Contract).call(this, null, "C", name));
+    return _9x__95possibleConstructorReturn(this, _8h_(_7D_Contract).call(this, null, "C", name));
   };
 
   var _7E_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
       token.boxStack.push(link);
-      token.rewriteFlag = _80_RewriteFlag.F_C;
+      token.rewriteFlag = _83_RewriteFlag.F_C;
       return nextLink;
     } else if (link.from == this.key && token.boxStack.length > 0) {
       var nextLink = token.boxStack.pop();
@@ -1369,8 +1442,8 @@
   };
 
   var _7F_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_C && nextLink.from == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+    if (token.rewriteFlag == _83_RewriteFlag.F_C && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
 
       if (this.findLinksInto(null).length == 1) {
         token.boxStack.pop();
@@ -1429,13 +1502,13 @@
           }
 
           prev.delete();
-          token.rewriteFlag = _80_RewriteFlag.F_C;
+          token.rewriteFlag = _83_RewriteFlag.F_C;
         }
       }
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
@@ -1450,9 +1523,9 @@
   var _75_Term = function (prin, auxs) {
     var _this;
 
-    _8h__95classCallCheck(this, _75_Term);
+    _8o__95classCallCheck(this, _75_Term);
 
-    _this = _9h__95possibleConstructorReturn(this, _8a_(_75_Term).call(this));
+    _this = _9u__95possibleConstructorReturn(this, _8h_(_75_Term).call(this));
 
     _this.set(prin, auxs);
 
@@ -1501,7 +1574,7 @@
     return newPaxs;
   };
 
-  var _8L_ = function (leftAuxs, rightAuxs, group) {
+  var _8P_ = function (leftAuxs, rightAuxs, group) {
     var newAuxs = leftAuxs.concat(rightAuxs);
     var _iteratorNormalCompletion2 = true;
     var _didIteratorError2 = false;
@@ -1567,21 +1640,21 @@
     return newAuxs;
   };
 
-  var _8f__95classCallCheck = function (instance, Constructor) {
+  var _8m__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _8g__95possibleConstructorReturn = function (self, call) {
-    if (call && (_AX_(call) === "object" || typeof call === "function")) {
+  var _8n__95possibleConstructorReturn = function (self, call) {
+    if (call && (_At_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _BB__95assertThisInitialized(self);
+    return _Bb__95assertThisInitialized(self);
   };
 
-  var _BB__95assertThisInitialized = function (self) {
+  var _Bb__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1589,21 +1662,21 @@
     return self;
   };
 
-  var _8X__95classCallCheck = function (instance, Constructor) {
+  var _8e__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9f__95possibleConstructorReturn = function (self, call) {
-    if (call && (_B7_(call) === "object" || typeof call === "function")) {
+  var _9s__95possibleConstructorReturn = function (self, call) {
+    if (call && (_BX_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CJ__95assertThisInitialized(self);
+    return _Cr__95assertThisInitialized(self);
   };
 
-  var _CJ__95assertThisInitialized = function (self) {
+  var _Cr__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1614,9 +1687,9 @@
   var _6h_Box = function () {
     var _this;
 
-    _8X__95classCallCheck(this, _6h_Box);
+    _8e__95classCallCheck(this, _6h_Box);
 
-    _this = _9f__95possibleConstructorReturn(this, _8a_(_6h_Box).call(this));
+    _this = _9s__95possibleConstructorReturn(this, _8h_(_6h_Box).call(this));
     _this.nodes = [];
     _this.links = [];
     return _this;
@@ -1625,21 +1698,21 @@
   var _6i_ = function (graph) {// this shouldnt be call, since every box should be inside a wrapper
   };
 
-  var _8c__95classCallCheck = function (instance, Constructor) {
+  var _8j__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9g__95possibleConstructorReturn = function (self, call) {
-    if (call && (_B9_(call) === "object" || typeof call === "function")) {
+  var _9t__95possibleConstructorReturn = function (self, call) {
+    if (call && (_BZ_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CK__95assertThisInitialized(self);
+    return _Cs__95assertThisInitialized(self);
   };
 
-  var _CK__95assertThisInitialized = function (self) {
+  var _Cs__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1647,21 +1720,21 @@
     return self;
   };
 
-  var _8j__95classCallCheck = function (instance, Constructor) {
+  var _8q__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9j__95possibleConstructorReturn = function (self, call) {
-    if (call && (_BE_(call) === "object" || typeof call === "function")) {
+  var _9w__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Be_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CN__95assertThisInitialized(self);
+    return _Cv__95assertThisInitialized(self);
   };
 
-  var _CN__95assertThisInitialized = function (self) {
+  var _Cv__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -1670,9 +1743,9 @@
   };
 
   var _7B_Der = function (name) {
-    _8j__95classCallCheck(this, _7B_Der);
+    _8q__95classCallCheck(this, _7B_Der);
 
-    return _9j__95possibleConstructorReturn(this, _8a_(_7B_Der).call(this, null, "D", name));
+    return _9w__95possibleConstructorReturn(this, _8h_(_7B_Der).call(this, null, "D", name));
   };
 
   var _7C_ = function () {
@@ -1681,15 +1754,15 @@
   };
 
   var _6p_Promo = function () {
-    _8c__95classCallCheck(this, _6p_Promo);
+    _8j__95classCallCheck(this, _6p_Promo);
 
-    return _9g__95possibleConstructorReturn(this, _8a_(_6p_Promo).call(this, null, "!"));
+    return _9t__95possibleConstructorReturn(this, _8h_(_6p_Promo).call(this, null, "!"));
   };
 
   var _6q_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
-      token.rewriteFlag = _80_RewriteFlag.F_PROMO;
+      token.rewriteFlag = _83_RewriteFlag.F_PROMO;
       return nextLink;
     } else if (link.from == this.key) {
       var nextLink = this.findLinksInto(null)[0];
@@ -1698,8 +1771,8 @@
   };
 
   var _6r_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_PROMO) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+    if (token.rewriteFlag == _83_RewriteFlag.F_PROMO) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var prev = this.graph.findNodeByKey(this.findLinksInto(null)[0].from);
 
       if (prev instanceof _7B_Der) {
@@ -1728,7 +1801,7 @@
             link.changeTo(this.key, "s");
           }
 
-          token.rewriteFlag = _80_RewriteFlag.F_PROMO;
+          token.rewriteFlag = _83_RewriteFlag.F_PROMO;
           token.rewrite = true;
           return nextLink;
         }
@@ -1736,7 +1809,7 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
@@ -1749,15 +1822,15 @@
   var _6x_BoxWrapper = function (prin, box, auxs) {
     var _this;
 
-    _8f__95classCallCheck(this, _6x_BoxWrapper);
+    _8m__95classCallCheck(this, _6x_BoxWrapper);
 
-    _this = _8g__95possibleConstructorReturn(this, _8a_(_6x_BoxWrapper).call(this, prin, auxs));
+    _this = _8n__95possibleConstructorReturn(this, _8h_(_6x_BoxWrapper).call(this, prin, auxs));
     _this.box = box;
     return _this;
   };
 
   var _6y_ = function (prin, box, auxs) {
-    _8b_(_8a_(_6x_BoxWrapper.prototype), "set", this).call(this, prin, auxs);
+    _8i_(_8h_(_6x_BoxWrapper.prototype), "set", this).call(this, prin, auxs);
 
     this.box = box;
   };
@@ -1943,7 +2016,7 @@
 
     this.prin.delete();
 
-    _8b_(_8a_(_6x_BoxWrapper.prototype), "delete", this).call(this);
+    _8i_(_8h_(_6x_BoxWrapper.prototype), "delete", this).call(this);
   };
 
   var _74_ = function () {
@@ -1958,10 +2031,10 @@
 
     this.prin.deleteAndPreserveInLink(); //preserve inLink
 
-    _8b_(_8a_(_6x_BoxWrapper.prototype), "delete", this).call(this);
+    _8i_(_8h_(_6x_BoxWrapper.prototype), "delete", this).call(this);
   };
 
-  var _8K_ = function () {
+  var _8O_ = function () {
     var wrapper = new _6x_BoxWrapper();
     var box = new _6h_Box().addToGroup(wrapper);
     var promo = new _6p_Promo().addToGroup(wrapper);
@@ -1969,47 +2042,7 @@
     return wrapper;
   };
 
-  var _B4__95typeof = function (obj) {
-    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_G_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_G_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_G_[1](obj);
-  };
-
-  var _8U__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _9c__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
-
-    if (call && (__captured__scope_G_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _CG__95assertThisInitialized(self);
-  };
-
-  var _CG__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _BD__95typeof = function (obj) {
+  var _BU__95typeof = function (obj) {
     var __captured__scope_J_ = __scope_0_main[18] || __get_scope_binding_0_get_95scope_95binding(18);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2025,23 +2058,63 @@
     return __captured__scope_J_[1](obj);
   };
 
-  var _8i__95classCallCheck = function (instance, Constructor) {
+  var _8b__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9i__95possibleConstructorReturn = function (self, call) {
+  var _9p__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_J_ = __scope_0_main[18] || __get_scope_binding_0_get_95scope_95binding(18);
 
     if (call && (__captured__scope_J_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CM__95assertThisInitialized(self);
+    return _Co__95assertThisInitialized(self);
   };
 
-  var _CM__95assertThisInitialized = function (self) {
+  var _Co__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Bd__95typeof = function (obj) {
+    var __captured__scope_M_ = __scope_0_main[21] || __get_scope_binding_0_get_95scope_95binding(21);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_M_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_M_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_M_[1](obj);
+  };
+
+  var _8p__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _9v__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_M_ = __scope_0_main[21] || __get_scope_binding_0_get_95scope_95binding(21);
+
+    if (call && (__captured__scope_M_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _Cu__95assertThisInitialized(self);
+  };
+
+  var _Cu__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2050,9 +2123,9 @@
   };
 
   var _78_App = function () {
-    _8i__95classCallCheck(this, _78_App);
+    _8p__95classCallCheck(this, _78_App);
 
-    return _9i__95possibleConstructorReturn(this, _8a_(_78_App).call(this, null, "@", "yellow"));
+    return _9v__95possibleConstructorReturn(this, _8h_(_78_App).call(this, null, "@", "yellow"));
   };
 
   var _79_ = function (token, link) {
@@ -2073,10 +2146,84 @@
     return new _78_App();
   };
 
-  var _6V_Abs = function () {
-    _8U__95classCallCheck(this, _6V_Abs);
+  var _D4__95typeof = function (obj) {
+    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
 
-    return _9c__95possibleConstructorReturn(this, _8a_(_6V_Abs).call(this, null, "λ", "yellow"));
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_6_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_6_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_6_[1](obj);
+  };
+
+  var _B1__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _CL__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
+
+    if (call && (__captured__scope_6_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _D5__95assertThisInitialized(self);
+  };
+
+  var _D5__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _CM__95getPrototypeOf = function (o) {
+    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
+
+    __captured__scope_6_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_6_[3](o);
+  };
+
+  var _97_PatTuple = function () {
+    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
+
+    _B1__95classCallCheck(this, _97_PatTuple);
+
+    return _CL__95possibleConstructorReturn(this, __captured__scope_6_[3](_97_PatTuple).call(this, null, "'", "mediumpurple1"));
+  };
+
+  var _AE_ = function (token, link) {
+    if (link.to == this.key) {
+      var nextLink = this.findLinksOutOf("n")[0];
+      if (link.toPort == "e") token.dataStack.push(_7u_CompData.PR);else if (link.toPort == "w") token.dataStack.push(_7u_CompData.PL);
+      return nextLink;
+    } else if (link.from == this.key) {
+      var nextLink;
+      var direction = token.dataStack.pop();
+      if (direction == _7u_CompData.PR) nextLink = this.findLinksInto("e")[0];else if (direction == _7u_CompData.PL) nextLink = this.findLinksInto("w")[0];
+      return nextLink;
+    }
+  };
+
+  var _AF_ = function () {
+    return new _97_PatTuple();
+  };
+
+  var _6V_Abs = function () {
+    _8b__95classCallCheck(this, _6V_Abs);
+
+    return _9p__95possibleConstructorReturn(this, _8h_(_6V_Abs).call(this, null, "λ", "yellow"));
   };
 
   var _6W_ = function (token, link) {
@@ -2091,15 +2238,15 @@
       } else if (data == _7u_CompData.R) {
         var nextLink = this.findLinksOutOf(null)[0];
         token.dataStack.pop();
-        token.rewriteFlag = _80_RewriteFlag.F_LAMBDA;
+        token.rewriteFlag = _83_RewriteFlag.F_LAMBDA;
         return nextLink;
       }
     }
   };
 
   var _6X_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_LAMBDA && nextLink.from == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+    if (token.rewriteFlag == _83_RewriteFlag.F_LAMBDA && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var prev = this.graph.findNodeByKey(this.findLinksInto("s")[0].from);
 
       if (prev instanceof _78_App) {
@@ -2112,7 +2259,7 @@
         otherNextLink.changeTo(appOtherLink.to, appOtherLink.toPort);
         otherNextLink.reverse = false;
         var otherNode = this.graph.findNodeByKey(otherNextLink.from);
-        if (otherNode instanceof _6t_Expo) otherNextLink.fromPort = "n";
+        if (otherNode instanceof _6t_Expo || otherNode instanceof _97_PatTuple) otherNextLink.fromPort = "n";
         otherNextLink.changeToGroup(appOtherLink.group);
         this.delete();
         prev.delete();
@@ -2120,7 +2267,7 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
@@ -2130,39 +2277,39 @@
     return new _6V_Abs();
   };
 
-  var _B5__95typeof = function (obj) {
-    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+  var _BV__95typeof = function (obj) {
+    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_H_[1] = function _typeof(obj) {
+      __captured__scope_K_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_H_[1] = function _typeof(obj) {
+      __captured__scope_K_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_H_[1](obj);
+    return __captured__scope_K_[1](obj);
   };
 
-  var _8V__95classCallCheck = function (instance, Constructor) {
+  var _8c__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9d__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+  var _9q__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_K_ = __scope_0_main[19] || __get_scope_binding_0_get_95scope_95binding(19);
 
-    if (call && (__captured__scope_H_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_K_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CH__95assertThisInitialized(self);
+    return _Cp__95assertThisInitialized(self);
   };
 
-  var _CH__95assertThisInitialized = function (self) {
+  var _Cp__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2170,39 +2317,39 @@
     return self;
   };
 
-  var _B6__95typeof = function (obj) {
-    var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
+  var _BW__95typeof = function (obj) {
+    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_I_[1] = function _typeof(obj) {
+      __captured__scope_L_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_I_[1] = function _typeof(obj) {
+      __captured__scope_L_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_I_[1](obj);
+    return __captured__scope_L_[1](obj);
   };
 
-  var _8W__95classCallCheck = function (instance, Constructor) {
+  var _8d__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9e__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
+  var _9r__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
 
-    if (call && (__captured__scope_I_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_L_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CI__95assertThisInitialized(self);
+    return _Cq__95assertThisInitialized(self);
   };
 
-  var _CI__95assertThisInitialized = function (self) {
+  var _Cq__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2211,9 +2358,9 @@
   };
 
   var _6e_Const = function (name) {
-    _8W__95classCallCheck(this, _6e_Const);
+    _8d__95classCallCheck(this, _6e_Const);
 
-    return _9e__95possibleConstructorReturn(this, _8a_(_6e_Const).call(this, null, name, "mediumpurple1", name));
+    return _9r__95possibleConstructorReturn(this, _8h_(_6e_Const).call(this, null, name, "mediumpurple1", name));
   };
 
   var _6f_ = function (token, link) {
@@ -2232,9 +2379,9 @@
   var _6Z_BinOp = function (text) {
     var _this;
 
-    _8V__95classCallCheck(this, _6Z_BinOp);
+    _8c__95classCallCheck(this, _6Z_BinOp);
 
-    _this = _9d__95possibleConstructorReturn(this, _8a_(_6Z_BinOp).call(this, null, text, "mediumpurple1"));
+    _this = _9q__95possibleConstructorReturn(this, _8h_(_6Z_BinOp).call(this, null, text, "mediumpurple1"));
     _this.subType = null;
     return _this;
   };
@@ -2256,7 +2403,7 @@
         token.dataStack.pop();
         var result = this.binOpApply(this.subType, l[0], r[0]);
         token.dataStack.push([result, _7u_CompData.EMPTY]);
-        token.rewriteFlag = _80_RewriteFlag.F_OP;
+        token.rewriteFlag = _83_RewriteFlag.F_OP;
         return this.findLinksInto(null)[0];
         ;
       }
@@ -2264,8 +2411,8 @@
   };
 
   var _6b_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_OP && nextLink.to == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+    if (token.rewriteFlag == _83_RewriteFlag.F_OP && nextLink.to == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
       var right = this.graph.findNodeByKey(this.findLinksOutOf("e")[0].to);
 
@@ -2282,7 +2429,7 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
@@ -2290,25 +2437,25 @@
 
   var _6c_ = function (type, v1, v2) {
     switch (type) {
-      case _8D_BinOpType.And:
+      case _8H_BinOpType.And:
         return v1 && v2;
 
-      case _8D_BinOpType.Or:
+      case _8H_BinOpType.Or:
         return v1 || v2;
 
-      case _8D_BinOpType.Plus:
+      case _8H_BinOpType.Plus:
         return parseFloat(v1) + parseFloat(v2);
 
-      case _8D_BinOpType.Sub:
+      case _8H_BinOpType.Sub:
         return parseFloat(v1) - parseFloat(v2);
 
-      case _8D_BinOpType.Mult:
+      case _8H_BinOpType.Mult:
         return parseFloat(v1) * parseFloat(v2);
 
-      case _8D_BinOpType.Div:
+      case _8H_BinOpType.Div:
         return parseFloat(v1) / parseFloat(v2);
 
-      case _8D_BinOpType.Lte:
+      case _8H_BinOpType.Lte:
         return parseFloat(v1) <= parseFloat(v2);
     }
   };
@@ -2319,33 +2466,33 @@
     return newNode;
   };
 
-  var _8B_ = function () {
+  var _8F_ = function () {
     var node = new _6Z_BinOp("+");
-    node.subType = _8D_BinOpType.Plus;
+    node.subType = _8H_BinOpType.Plus;
     return node;
   };
 
-  var _8C_ = function () {
+  var _8G_ = function () {
     var node = new _6Z_BinOp("*");
-    node.subType = _8D_BinOpType.Mult;
+    node.subType = _8H_BinOpType.Mult;
     return node;
   };
 
-  var _8o__95classCallCheck = function (instance, Constructor) {
+  var _8v__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9l__95possibleConstructorReturn = function (self, call) {
-    if (call && (_BH_(call) === "object" || typeof call === "function")) {
+  var _9y__95possibleConstructorReturn = function (self, call) {
+    if (call && (_Bh_(call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CP__95assertThisInitialized(self);
+    return _Cx__95assertThisInitialized(self);
   };
 
-  var _CP__95assertThisInitialized = function (self) {
+  var _Cx__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2356,9 +2503,9 @@
   var _7K_Var = function (name) {
     var _this;
 
-    _8o__95classCallCheck(this, _7K_Var);
+    _8v__95classCallCheck(this, _7K_Var);
 
-    _this = _9l__95possibleConstructorReturn(this, _8a_(_7K_Var).call(this, name));
+    _this = _9y__95possibleConstructorReturn(this, _8h_(_7K_Var).call(this, name));
     _this.text = "V";
     return _this;
   };
@@ -2375,39 +2522,39 @@
     this.delete();
   };
 
-  var _CZ__95typeof = function (obj) {
-    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+  var _DA__95typeof = function (obj) {
+    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_7_[1] = function _typeof(obj) {
+      __captured__scope_8_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_7_[1] = function _typeof(obj) {
+      __captured__scope_8_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_7_[1](obj);
+    return __captured__scope_8_[1](obj);
   };
 
-  var _An__95classCallCheck = function (instance, Constructor) {
+  var _BA__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _By__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+  var _CS__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
-    if (call && (__captured__scope_7_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_8_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Ca__95assertThisInitialized(self);
+    return _DB__95assertThisInitialized(self);
   };
 
-  var _Ca__95assertThisInitialized = function (self) {
+  var _DB__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2415,16 +2562,16 @@
     return self;
   };
 
-  var _Bz__95getPrototypeOf = function (o) {
-    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+  var _CT__95getPrototypeOf = function (o) {
+    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
-    __captured__scope_7_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    __captured__scope_8_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_7_[3](o);
+    return __captured__scope_8_[3](o);
   };
 
-  var _CS__95typeof = function (obj) {
+  var _D0__95typeof = function (obj) {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -2440,23 +2587,23 @@
     return __captured__scope_5_[1](obj);
   };
 
-  var _Aa__95classCallCheck = function (instance, Constructor) {
+  var _Aw__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _BI__95possibleConstructorReturn = function (self, call) {
+  var _Bi__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
     if (call && (__captured__scope_5_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _CT__95assertThisInitialized(self);
+    return _D1__95assertThisInitialized(self);
   };
 
-  var _CT__95assertThisInitialized = function (self) {
+  var _D1__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2464,7 +2611,7 @@
     return self;
   };
 
-  var _BJ__95getPrototypeOf = function (o) {
+  var _Bj__95getPrototypeOf = function (o) {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
     __captured__scope_5_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
@@ -2473,27 +2620,27 @@
     return __captured__scope_5_[3](o);
   };
 
-  var _8r_Weak = function () {
+  var _8y_Weak = function () {
     var __captured__scope_5_ = __scope_0_main[4] || __get_scope_binding_0_get_95scope_95binding(4);
 
-    _Aa__95classCallCheck(this, _8r_Weak);
+    _Aw__95classCallCheck(this, _8y_Weak);
 
-    return _BI__95possibleConstructorReturn(this, __captured__scope_5_[3](_8r_Weak).call(this, null, 'C0'));
+    return _Bi__95possibleConstructorReturn(this, __captured__scope_5_[3](_8y_Weak).call(this, null, 'C0'));
   };
 
-  var _9m_ = function () {
-    return new _8r_Weak();
+  var _9z_ = function () {
+    return new _8y_Weak();
   };
 
-  var _9A_If = function () {
-    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+  var _9J_If = function () {
+    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
 
-    _An__95classCallCheck(this, _9A_If);
+    _BA__95classCallCheck(this, _9J_If);
 
-    return _By__95possibleConstructorReturn(this, __captured__scope_7_[3](_9A_If).call(this, null, "if", "mediumpurple1"));
+    return _CS__95possibleConstructorReturn(this, __captured__scope_8_[3](_9J_If).call(this, null, "if", "mediumpurple1"));
   };
 
-  var _A6_ = function (token, link) {
+  var _AL_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("w")[0];
       token.dataStack.push(_7u_CompData.PROMPT);
@@ -2505,13 +2652,13 @@
         if (token.dataStack[token.dataStack.length - 1][0] == true) {
           var nextLink = this.findLinksOutOf("n")[0];
           token.dataStack.pop();
-          token.rewriteFlag = _80_RewriteFlag.F_IF;
+          token.rewriteFlag = _83_RewriteFlag.F_IF;
           token.forward = true;
           return nextLink;
         } else if (token.dataStack[token.dataStack.length - 1][0] == false) {
           var nextLink = this.findLinksOutOf("e")[0];
           token.dataStack.pop();
-          token.rewriteFlag = _80_RewriteFlag.F_IF;
+          token.rewriteFlag = _83_RewriteFlag.F_IF;
           token.forward = true;
           return nextLink;
         }
@@ -2544,16 +2691,16 @@
     }
   };
 
-  var _A7_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_IF && nextLink.from == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+  var _AM_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_IF && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
 
       if (left instanceof _6p_Promo) {
         var downLink = this.findLinksInto(null)[0];
         var otherLink = this.findLinksOutOf(nextLink.fromPort == "n" ? "e" : "n")[0];
         nextLink.changeFrom(downLink.from, downLink.fromPort);
-        var weak = new _8r_Weak(this.graph.findNodeByKey(otherLink.to).name).addToGroup(this.group);
+        var weak = new _8y_Weak(this.graph.findNodeByKey(otherLink.to).name).addToGroup(this.group);
         otherLink.changeFrom(weak.key, "n");
         this.delete();
         left.group.delete();
@@ -2561,49 +2708,49 @@
 
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _A8_ = function () {
-    return new _9A_If();
+  var _AN_ = function () {
+    return new _9J_If();
   };
 
-  var _Cb__95typeof = function (obj) {
-    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
+  var _DC__95typeof = function (obj) {
+    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_8_[1] = function _typeof(obj) {
+      __captured__scope_9_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_8_[1] = function _typeof(obj) {
+      __captured__scope_9_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_8_[1](obj);
+    return __captured__scope_9_[1](obj);
   };
 
-  var _Ap__95classCallCheck = function (instance, Constructor) {
+  var _BC__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _C0__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
+  var _CU__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
-    if (call && (__captured__scope_8_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_9_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Cc__95assertThisInitialized(self);
+    return _DD__95assertThisInitialized(self);
   };
 
-  var _Cc__95assertThisInitialized = function (self) {
+  var _DD__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2611,34 +2758,34 @@
     return self;
   };
 
-  var _C1__95getPrototypeOf = function (o) {
-    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
+  var _CV__95getPrototypeOf = function (o) {
+    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
-    __captured__scope_8_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    __captured__scope_9_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_8_[3](o);
+    return __captured__scope_9_[3](o);
   };
 
-  var _9D_Recur = function () {
-    var __captured__scope_8_ = __scope_0_main[7] || __get_scope_binding_0_get_95scope_95binding(7);
+  var _9M_Recur = function () {
+    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
-    _Ap__95classCallCheck(this, _9D_Recur);
+    _BC__95classCallCheck(this, _9M_Recur);
 
-    return _C0__95possibleConstructorReturn(this, __captured__scope_8_[3](_9D_Recur).call(this, null, "μ", "mediumpurple1"));
+    return _CU__95possibleConstructorReturn(this, __captured__scope_9_[3](_9M_Recur).call(this, null, "μ", "mediumpurple1"));
   };
 
-  var _A9_ = function (token, link) {
+  var _AO_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
-      token.rewriteFlag = _80_RewriteFlag.F_RECUR;
+      token.rewriteFlag = _83_RewriteFlag.F_RECUR;
       return nextLink;
     }
   };
 
-  var _AA_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_RECUR && nextLink.from == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+  var _AP_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_RECUR && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var wrapper = this.group.copy().addToGroup(this.group);
 
       _75_Term.joinAuxs(this.group.auxs, wrapper.auxs, wrapper.group);
@@ -2656,213 +2803,42 @@
       oldGroup.deleteAndPreserveLink();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _AB_ = function () {
-    return new _9D_Recur();
+  var _AQ_ = function () {
+    return new _9M_Recur();
   };
 
-  var _B3__95typeof = function (obj) {
-    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
+  var _BT__95typeof = function (obj) {
+    var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_F_[1] = function _typeof(obj) {
+      __captured__scope_I_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_F_[1] = function _typeof(obj) {
+      __captured__scope_I_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_F_[1](obj);
+    return __captured__scope_I_[1](obj);
   };
 
-  var _8S__95classCallCheck = function (instance, Constructor) {
+  var _8Z__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _9b__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
+  var _9o__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_I_ = __scope_0_main[17] || __get_scope_binding_0_get_95scope_95binding(17);
 
-    if (call && (__captured__scope_F_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _CF__95assertThisInitialized(self);
-  };
-
-  var _CF__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _6H_Start = function () {
-    _8S__95classCallCheck(this, _6H_Start);
-
-    return _9b__95possibleConstructorReturn(this, _8a_(_6H_Start).call(this, "point", "", "black"));
-  };
-
-  var _6I_ = function (token) {
-    if (token.link == null && token.dataStack[token.dataStack.length - 1] == _7u_CompData.PROMPT) {
-      var nextLink = this.findLinksOutOf(null)[0];
-      token.forward = true;
-      return nextLink;
-    } else return null;
-  };
-
-  var _6J_ = function () {
-    return new _6H_Start();
-  };
-
-  var _CX__95typeof = function (obj) {
-    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_6_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_6_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_6_[1](obj);
-  };
-
-  var _Al__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Bw__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
-
-    if (call && (__captured__scope_6_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _CY__95assertThisInitialized(self);
-  };
-
-  var _CY__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _Bx__95getPrototypeOf = function (o) {
-    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
-
-    __captured__scope_6_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return __captured__scope_6_[3](o);
-  };
-
-  var _97_UnOp = function (text) {
-    var __captured__scope_6_ = __scope_0_main[5] || __get_scope_binding_0_get_95scope_95binding(5);
-
-    var _this;
-
-    _Al__95classCallCheck(this, _97_UnOp);
-
-    _this = _Bw__95possibleConstructorReturn(this, __captured__scope_6_[3](_97_UnOp).call(this, null, text, "mediumpurple1"));
-    _this.subType = null;
-    return _this;
-  };
-
-  var _A2_ = function (token, link) {
-    if (link.to == this.key) {
-      var nextLink = this.findLinksOutOf(null)[0];
-      token.dataStack.push(_7u_CompData.PROMPT);
-      return nextLink;
-    } else if (link.from == this.key) {
-      if (token.dataStack[token.dataStack.length - 2] == _7u_CompData.PROMPT) {
-        var v1 = token.dataStack.pop();
-        token.dataStack.pop();
-        token.dataStack.push([this.unOpApply(this.subType, v1[0]), _7u_CompData.EMPTY]);
-        token.rewriteFlag = _80_RewriteFlag.F_OP;
-        return this.findLinksInto(null)[0];
-      }
-    }
-  };
-
-  var _A3_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_OP && nextLink.to == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
-      var prev = this.graph.findNodeByKey(this.findLinksOutOf(null)[0].to);
-
-      if (prev instanceof _6p_Promo) {
-        var wrapper = _6x_BoxWrapper.create().addToGroup(this.group);
-
-        var newConst = new _6e_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
-        new _6G_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
-        nextLink.changeTo(wrapper.prin.key, "s");
-        prev.group.delete();
-        this.delete();
-      }
-
-      token.rewrite = true;
-      return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
-      token.rewrite = false;
-      return nextLink;
-    }
-  };
-
-  var _A4_ = function (type, v1) {
-    switch (type) {
-      case _Aj_UnOpType.Not:
-        return !v1;
-    }
-  };
-
-  var _A5_ = function () {
-    var newNode = new _97_UnOp(this.text);
-    newNode.subType = this.subType;
-    return newNode;
-  };
-
-  var _Cm__95typeof = function (obj) {
-    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_C_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_C_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_C_[1](obj);
-  };
-
-  var _Ax__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _C9__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
-
-    if (call && (__captured__scope_C_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_I_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
@@ -2877,24 +2853,195 @@
     return self;
   };
 
-  var _CA__95getPrototypeOf = function (o) {
-    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
+  var _6H_Start = function () {
+    _8Z__95classCallCheck(this, _6H_Start);
 
-    __captured__scope_C_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return _9o__95possibleConstructorReturn(this, _8h_(_6H_Start).call(this, "point", "", "black"));
+  };
+
+  var _6I_ = function (token) {
+    if (token.link == null && token.dataStack[token.dataStack.length - 1] == _7u_CompData.PROMPT) {
+      var nextLink = this.findLinksOutOf(null)[0];
+      token.forward = true;
+      return nextLink;
+    } else return null;
+  };
+
+  var _6J_ = function () {
+    return new _6H_Start();
+  };
+
+  var _D8__95typeof = function (obj) {
+    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_7_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_7_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_7_[1](obj);
+  };
+
+  var _B8__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _CQ__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+
+    if (call && (__captured__scope_7_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _D9__95assertThisInitialized(self);
+  };
+
+  var _D9__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _CR__95getPrototypeOf = function (o) {
+    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
+
+    __captured__scope_7_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_C_[3](o);
+    return __captured__scope_7_[3](o);
   };
 
-  var _9P_Delta = function () {
-    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
+  var _9G_UnOp = function (text) {
+    var __captured__scope_7_ = __scope_0_main[6] || __get_scope_binding_0_get_95scope_95binding(6);
 
-    _Ax__95classCallCheck(this, _9P_Delta);
+    var _this;
 
-    return _C9__95possibleConstructorReturn(this, __captured__scope_C_[3](_9P_Delta).call(this, null, "Δ", "indianred1"));
+    _B8__95classCallCheck(this, _9G_UnOp);
+
+    _this = _CQ__95possibleConstructorReturn(this, __captured__scope_7_[3](_9G_UnOp).call(this, null, text, "mediumpurple1"));
+    _this.subType = null;
+    return _this;
   };
 
-  var _AL_ = function (token, link) {
+  var _AH_ = function (token, link) {
+    if (link.to == this.key) {
+      var nextLink = this.findLinksOutOf(null)[0];
+      token.dataStack.push(_7u_CompData.PROMPT);
+      return nextLink;
+    } else if (link.from == this.key) {
+      if (token.dataStack[token.dataStack.length - 2] == _7u_CompData.PROMPT) {
+        var v1 = token.dataStack.pop();
+        token.dataStack.pop();
+        token.dataStack.push([this.unOpApply(this.subType, v1[0]), _7u_CompData.EMPTY]);
+        token.rewriteFlag = _83_RewriteFlag.F_OP;
+        return this.findLinksInto(null)[0];
+      }
+    }
+  };
+
+  var _AI_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_OP && nextLink.to == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
+      var prev = this.graph.findNodeByKey(this.findLinksOutOf(null)[0].to);
+
+      if (prev instanceof _6p_Promo) {
+        var wrapper = _6x_BoxWrapper.create().addToGroup(this.group);
+
+        var newConst = new _6e_Const(token.dataStack[token.dataStack.length - 1][0]).addToGroup(wrapper.box);
+        new _6G_Link(wrapper.prin.key, newConst.key, "n", "s").addToGroup(wrapper);
+        nextLink.changeTo(wrapper.prin.key, "s");
+        prev.group.delete();
+        this.delete();
+      }
+
+      token.rewrite = true;
+      return nextLink;
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
+      token.rewrite = false;
+      return nextLink;
+    }
+  };
+
+  var _AJ_ = function (type, v1) {
+    switch (type) {
+      case _B6_UnOpType.Not:
+        return !v1;
+    }
+  };
+
+  var _AK_ = function () {
+    var newNode = new _9G_UnOp(this.text);
+    newNode.subType = this.subType;
+    return newNode;
+  };
+
+  var _DP__95typeof = function (obj) {
+    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_E_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_E_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_E_[1](obj);
+  };
+
+  var _BM__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Cf__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
+
+    if (call && (__captured__scope_E_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DQ__95assertThisInitialized(self);
+  };
+
+  var _DQ__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Cg__95getPrototypeOf = function (o) {
+    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
+
+    __captured__scope_E_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_E_[3](o);
+  };
+
+  var _9b_Delta = function () {
+    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
+
+    _BM__95classCallCheck(this, _9b_Delta);
+
+    return _Cf__95possibleConstructorReturn(this, __captured__scope_E_[3](_9b_Delta).call(this, null, "Δ", "indianred1"));
+  };
+
+  var _Ad_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
       token.dataStack.push(_7u_CompData.PROMPT);
@@ -2911,22 +3058,22 @@
           var data = token.dataStack.pop();
           token.dataStack.pop();
           token.dataStack.push([_7u_CompData.UNIT, _7u_CompData.EMPTY]);
-          token.rewriteFlag = _80_RewriteFlag.F_DELTA + data[1];
+          token.rewriteFlag = _83_RewriteFlag.F_DELTA + data[1];
           return this.findLinksInto(null)[0];
         }
       }
     }
   };
 
-  var _AM_ = function (token, nextLink) {
-    if (token.rewriteFlag.substring(0, 3) == _80_RewriteFlag.F_DELTA && nextLink.to == this.key) {
+  var _Ae_ = function (token, nextLink) {
+    if (token.rewriteFlag.substring(0, 3) == _83_RewriteFlag.F_DELTA && nextLink.to == this.key) {
       var key = token.rewriteFlag.substring(3, token.rewriteFlag.length);
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
-      var weak1 = new _8r_Weak().addToGroup(this.group);
+      var weak1 = new _8y_Weak().addToGroup(this.group);
       this.findLinksOutOf("w")[0].changeFrom(weak1.key, "n");
       var mod = this.graph.findNodeByKey(key);
-      var weak2 = new _8r_Weak().addToGroup(this.group);
+      var weak2 = new _8y_Weak().addToGroup(this.group);
       mod.findLinksOutOf('e')[0].changeFrom(weak2.key, 'n');
       this.findLinksOutOf("e")[0].changeFrom(mod.key, "e");
 
@@ -2938,49 +3085,49 @@
       this.delete();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _AN_ = function () {
-    return new _9P_Delta();
+  var _Af_ = function () {
+    return new _9b_Delta();
   };
 
-  var _Co__95typeof = function (obj) {
-    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+  var _DR__95typeof = function (obj) {
+    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_D_[1] = function _typeof(obj) {
+      __captured__scope_F_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_D_[1] = function _typeof(obj) {
+      __captured__scope_F_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_D_[1](obj);
+    return __captured__scope_F_[1](obj);
   };
 
-  var _Az__95classCallCheck = function (instance, Constructor) {
+  var _BO__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _CB__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+  var _Ch__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
-    if (call && (__captured__scope_D_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_F_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Cp__95assertThisInitialized(self);
+    return _DS__95assertThisInitialized(self);
   };
 
-  var _Cp__95assertThisInitialized = function (self) {
+  var _DS__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -2988,24 +3135,24 @@
     return self;
   };
 
-  var _CC__95getPrototypeOf = function (o) {
-    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+  var _Ci__95getPrototypeOf = function (o) {
+    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
-    __captured__scope_D_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    __captured__scope_F_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_D_[3](o);
+    return __captured__scope_F_[3](o);
   };
 
-  var _9S_Set = function () {
-    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+  var _9e_Set = function () {
+    var __captured__scope_F_ = __scope_0_main[14] || __get_scope_binding_0_get_95scope_95binding(14);
 
-    _Az__95classCallCheck(this, _9S_Set);
+    _BO__95classCallCheck(this, _9e_Set);
 
-    return _CB__95possibleConstructorReturn(this, __captured__scope_D_[3](_9S_Set).call(this, null, "<<~", "indianred1"));
+    return _Ch__95possibleConstructorReturn(this, __captured__scope_F_[3](_9e_Set).call(this, null, "<<~", "indianred1"));
   };
 
-  var _AO_ = function (token, link) {
+  var _Ag_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf("e")[0];
       token.dataStack.push(_7u_CompData.PROMPT);
@@ -3023,25 +3170,25 @@
           var new_v = token.dataStack.pop();
           token.dataStack.pop();
           token.dataStack.push([_7u_CompData.UNIT, _7u_CompData.EMPTY]);
-          token.rewriteFlag = _80_RewriteFlag.F_DELTA + data[1] + ';' + new_v[0];
+          token.rewriteFlag = _83_RewriteFlag.F_DELTA + data[1] + ';' + new_v[0];
           return this.findLinksInto(null)[0];
         }
       }
     }
   };
 
-  var _AP_ = function (token, nextLink) {
-    if (token.rewriteFlag.substring(0, 3) == _80_RewriteFlag.F_DELTA && nextLink.to == this.key) {
+  var _Ah_ = function (token, nextLink) {
+    if (token.rewriteFlag.substring(0, 3) == _83_RewriteFlag.F_DELTA && nextLink.to == this.key) {
       var string = token.rewriteFlag.substring(3, token.rewriteFlag.length);
       var s = string.split(";");
       var key = s[0];
       var data = s[1];
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
-      var weak1 = new _8r_Weak().addToGroup(this.group);
+      var weak1 = new _8y_Weak().addToGroup(this.group);
       this.findLinksOutOf("w")[0].changeFrom(weak1.key, "n");
       var mod = this.graph.findNodeByKey(key);
-      var weak2 = new _8r_Weak().addToGroup(this.group);
+      var weak2 = new _8y_Weak().addToGroup(this.group);
       mod.findLinksOutOf('e')[0].changeFrom(weak2.key, 'n');
       this.findLinksOutOf("e")[0].changeFrom(mod.key, "e");
       this.graph.findNodeByKey(mod.findLinksOutOf('e')[0].to).name = s[1];
@@ -3054,49 +3201,49 @@
       this.delete();
       token.rewrite = true;
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _AQ_ = function () {
-    return new _9S_Set();
+  var _Ai_ = function () {
+    return new _9e_Set();
   };
 
-  var _Ci__95typeof = function (obj) {
-    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+  var _DL__95typeof = function (obj) {
+    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_A_[1] = function _typeof(obj) {
+      __captured__scope_C_[1] = function _typeof(obj) {
         return typeof obj;
       };
     } else {
-      __captured__scope_A_[1] = function _typeof(obj) {
+      __captured__scope_C_[1] = function _typeof(obj) {
         return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
       };
     }
 
-    return __captured__scope_A_[1](obj);
+    return __captured__scope_C_[1](obj);
   };
 
-  var _At__95classCallCheck = function (instance, Constructor) {
+  var _BI__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _C5__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+  var _Cb__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
-    if (call && (__captured__scope_A_[1](call) === "object" || typeof call === "function")) {
+    if (call && (__captured__scope_C_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Cj__95assertThisInitialized(self);
+    return _DM__95assertThisInitialized(self);
   };
 
-  var _Cj__95assertThisInitialized = function (self) {
+  var _DM__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3104,24 +3251,24 @@
     return self;
   };
 
-  var _C6__95getPrototypeOf = function (o) {
-    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+  var _Cc__95getPrototypeOf = function (o) {
+    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
-    __captured__scope_A_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    __captured__scope_C_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_A_[3](o);
+    return __captured__scope_C_[3](o);
   };
 
-  var _9J_Dep = function () {
-    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+  var _9V_Dep = function () {
+    var __captured__scope_C_ = __scope_0_main[11] || __get_scope_binding_0_get_95scope_95binding(11);
 
-    _At__95classCallCheck(this, _9J_Dep);
+    _BI__95classCallCheck(this, _9V_Dep);
 
-    return _C5__95possibleConstructorReturn(this, __captured__scope_A_[3](_9J_Dep).call(this, null, 'p', "mediumpurple1"));
+    return _Cb__95possibleConstructorReturn(this, __captured__scope_C_[3](_9V_Dep).call(this, null, 'p', "mediumpurple1"));
   };
 
-  var _AG_ = function (token, link) {
+  var _AY_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
       token.dataStack.push(_7u_CompData.PROMPT);
@@ -3131,20 +3278,20 @@
         var data = token.dataStack.pop();
         token.dataStack.pop();
         token.dataStack.push([data[0], _7u_CompData.EMPTY]);
-        token.rewriteFlag = _80_RewriteFlag.F_DEP;
+        token.rewriteFlag = _83_RewriteFlag.F_DEP;
         return this.findLinksInto(null)[0];
       }
     }
   };
 
-  var _AH_ = function (token, nextLink) {
-    if (nextLink.to == this.key && token.rewriteFlag == _80_RewriteFlag.F_DEP) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+  var _AZ_ = function (token, nextLink) {
+    if (nextLink.to == this.key && token.rewriteFlag == _83_RewriteFlag.F_DEP) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var data = token.dataStack[token.dataStack.length - 1];
 
       if (_7t_.isNumber(data[0]) || typeof data[0] === "boolean") {
         var outLink = this.findLinksOutOf(null)[0];
-        var weak = new _8r_Weak(outLink.text).addToGroup(this.group);
+        var weak = new _8y_Weak(outLink.text).addToGroup(this.group);
         outLink.changeFrom(weak.key, "n");
 
         var wrapper = _6x_BoxWrapper.create().addToGroup(this.group);
@@ -3157,17 +3304,271 @@
       }
 
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _AI_ = function () {
-    return new _9J_Dep();
+  var _Aa_ = function () {
+    return new _9V_Dep();
   };
 
-  var _Ck__95typeof = function (obj) {
+  var _DN__95typeof = function (obj) {
+    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_D_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_D_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_D_[1](obj);
+  };
+
+  var _BK__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Cd__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+
+    if (call && (__captured__scope_D_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DO__95assertThisInitialized(self);
+  };
+
+  var _DO__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Ce__95getPrototypeOf = function (o) {
+    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+
+    __captured__scope_D_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_D_[3](o);
+  };
+
+  var _9Y_Deref = function () {
+    var __captured__scope_D_ = __scope_0_main[12] || __get_scope_binding_0_get_95scope_95binding(12);
+
+    _BK__95classCallCheck(this, _9Y_Deref);
+
+    return _Cd__95possibleConstructorReturn(this, __captured__scope_D_[3](_9Y_Deref).call(this, null, "d", "mediumpurple1"));
+  };
+
+  var _Ab_ = function (token, link) {
+    if (link.to == this.key) return this.findLinksOutOf(null)[0];else if (link.from == this.key) return this.findLinksInto(null)[0];
+  };
+
+  var _Ac_ = function () {
+    return new _9Y_Deref();
+  };
+
+  var _Dd__95typeof = function (obj) {
+    var __captured__scope_O_ = __scope_0_main[23] || __get_scope_binding_0_get_95scope_95binding(23);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_O_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_O_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_O_[1](obj);
+  };
+
+  var _DZ__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Db__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_O_ = __scope_0_main[23] || __get_scope_binding_0_get_95scope_95binding(23);
+
+    if (call && (__captured__scope_O_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _De__95assertThisInitialized(self);
+  };
+
+  var _De__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Dc__95getPrototypeOf = function (o) {
+    var __captured__scope_O_ = __scope_0_main[23] || __get_scope_binding_0_get_95scope_95binding(23);
+
+    __captured__scope_O_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_O_[3](o);
+  };
+
+  var _Cy_Mod = function () {
+    var __captured__scope_O_ = __scope_0_main[23] || __get_scope_binding_0_get_95scope_95binding(23);
+
+    var _this;
+
+    _DZ__95classCallCheck(this, _Cy_Mod);
+
+    _this = _Db__95possibleConstructorReturn(this, __captured__scope_O_[3](_Cy_Mod).call(this, null, "M", "indianred1"));
+
+    _this.graph.machine.cells.push(_this.key);
+
+    return _this;
+  };
+
+  var _DG_ = function (token, link) {
+    if (link.to == this.key) {
+      return this.findLinksOutOf("w")[0];
+    } else if (link.from == this.key && link.fromPort == "w") {
+      var data = token.dataStack.pop();
+      token.dataStack.push([data[0], this.key]);
+      return this.findLinksInto(null)[0];
+    } else if (link.from == this.key && link.fromPort == "e") {
+      token.machine.newValues.set(this.key, token.dataStack[token.dataStack.length - 1][0]);
+      token.delete();
+      return null;
+    }
+  };
+
+  var _DH_ = function (data) {
+    var leftLink = this.findLinksOutOf("w")[0];
+
+    if (_7t_.isNumber(data) || typeof data === "boolean") {
+      var value = this.graph.findNodeByKey(leftLink.to);
+      var oldData = value.name;
+      value.text = data;
+      value.name = data;
+      return oldData;
+    }
+  };
+
+  var _DI_ = function () {
+    var mod = new _Cy_Mod();
+    return mod;
+  };
+
+  var _DT__95typeof = function (obj) {
+    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_G_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_G_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_G_[1](obj);
+  };
+
+  var _BQ__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Cj__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
+
+    if (call && (__captured__scope_G_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DU__95assertThisInitialized(self);
+  };
+
+  var _DU__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Ck__95getPrototypeOf = function (o) {
+    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
+
+    __captured__scope_G_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_G_[3](o);
+  };
+
+  var _9h_Prop = function () {
+    var __captured__scope_G_ = __scope_0_main[15] || __get_scope_binding_0_get_95scope_95binding(15);
+
+    _BQ__95classCallCheck(this, _9h_Prop);
+
+    return _Cj__95possibleConstructorReturn(this, __captured__scope_G_[3](_9h_Prop).call(this, null, "s", "indianred1"));
+  };
+
+  var _Aj_ = function (token, link) {
+    if (link.to == this.key) {
+      if (token.dataStack[token.dataStack.length - 1] == _7u_CompData.PROMPT) {
+        token.dataStack.pop();
+        token.dataStack.push(false);
+        token.rewriteFlag = _83_RewriteFlag.F_PROP;
+        token.forward = false;
+        token.machine.startPropagation();
+        return link;
+      }
+    }
+  };
+
+  var _Ak_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_PROP && nextLink.to == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
+      var data = token.machine.hasUpdate;
+      token.dataStack.pop();
+      token.dataStack.push([data, _7u_CompData.EMPTY]);
+
+      var wrapper = _6x_BoxWrapper.create().addToGroup(this.group);
+
+      var con = new _6e_Const(data).addToGroup(wrapper.box);
+      new _6G_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
+      nextLink.changeTo(wrapper.prin.key, "s");
+      this.delete();
+      token.rewrite = true;
+      return nextLink;
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
+      token.rewrite = false;
+      return nextLink;
+    }
+  };
+
+  var _Al_ = function () {
+    return new _9h_Prop();
+  };
+
+  var _DJ__95typeof = function (obj) {
     var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
@@ -3183,23 +3584,23 @@
     return __captured__scope_B_[1](obj);
   };
 
-  var _Av__95classCallCheck = function (instance, Constructor) {
+  var _BG__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
-  var _C7__95possibleConstructorReturn = function (self, call) {
+  var _CY__95possibleConstructorReturn = function (self, call) {
     var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     if (call && (__captured__scope_B_[1](call) === "object" || typeof call === "function")) {
       return call;
     }
 
-    return _Cl__95assertThisInitialized(self);
+    return _DK__95assertThisInitialized(self);
   };
 
-  var _Cl__95assertThisInitialized = function (self) {
+  var _DK__95assertThisInitialized = function (self) {
     if (self === void 0) {
       throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
     }
@@ -3207,268 +3608,14 @@
     return self;
   };
 
-  var _C8__95getPrototypeOf = function (o) {
+  var _Ca__95get = function (target, property, receiver) {
     var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
-
-    __captured__scope_B_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return __captured__scope_B_[3](o);
-  };
-
-  var _9M_Deref = function () {
-    var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
-
-    _Av__95classCallCheck(this, _9M_Deref);
-
-    return _C7__95possibleConstructorReturn(this, __captured__scope_B_[3](_9M_Deref).call(this, null, "d", "mediumpurple1"));
-  };
-
-  var _AJ_ = function (token, link) {
-    if (link.to == this.key) return this.findLinksOutOf(null)[0];else if (link.from == this.key) return this.findLinksInto(null)[0];
-  };
-
-  var _AK_ = function () {
-    return new _9M_Deref();
-  };
-
-  var _Cy__95typeof = function (obj) {
-    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_L_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_L_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_L_[1](obj);
-  };
-
-  var _Cu__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _Cw__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
-
-    if (call && (__captured__scope_L_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Cz__95assertThisInitialized(self);
-  };
-
-  var _Cz__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _Cx__95getPrototypeOf = function (o) {
-    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
-
-    __captured__scope_L_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return __captured__scope_L_[3](o);
-  };
-
-  var _CQ_Mod = function () {
-    var __captured__scope_L_ = __scope_0_main[20] || __get_scope_binding_0_get_95scope_95binding(20);
-
-    var _this;
-
-    _Cu__95classCallCheck(this, _CQ_Mod);
-
-    _this = _Cw__95possibleConstructorReturn(this, __captured__scope_L_[3](_CQ_Mod).call(this, null, "M", "indianred1"));
-
-    _this.graph.machine.cells.push(_this.key);
-
-    return _this;
-  };
-
-  var _Cd_ = function (token, link) {
-    if (link.to == this.key) {
-      return this.findLinksOutOf("w")[0];
-    } else if (link.from == this.key && link.fromPort == "w") {
-      var data = token.dataStack.pop();
-      token.dataStack.push([data[0], this.key]);
-      return this.findLinksInto(null)[0];
-    } else if (link.from == this.key && link.fromPort == "e") {
-      token.machine.newValues.set(this.key, token.dataStack[token.dataStack.length - 1][0]);
-      token.delete();
-      return null;
-    }
-  };
-
-  var _Ce_ = function (data) {
-    var leftLink = this.findLinksOutOf("w")[0];
-
-    if (_7t_.isNumber(data) || typeof data === "boolean") {
-      var value = this.graph.findNodeByKey(leftLink.to);
-      var oldData = value.name;
-      value.text = data;
-      value.name = data;
-      return oldData;
-    }
-  };
-
-  var _Cf_ = function () {
-    var mod = new _CQ_Mod();
-    return mod;
-  };
-
-  var _Cq__95typeof = function (obj) {
-    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_E_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_E_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_E_[1](obj);
-  };
-
-  var _B1__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _CD__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
-
-    if (call && (__captured__scope_E_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Cr__95assertThisInitialized(self);
-  };
-
-  var _Cr__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _CE__95getPrototypeOf = function (o) {
-    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
-
-    __captured__scope_E_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
-      return o.__proto__ || Object.getPrototypeOf(o);
-    };
-    return __captured__scope_E_[3](o);
-  };
-
-  var _9V_Prop = function () {
-    var __captured__scope_E_ = __scope_0_main[13] || __get_scope_binding_0_get_95scope_95binding(13);
-
-    _B1__95classCallCheck(this, _9V_Prop);
-
-    return _CD__95possibleConstructorReturn(this, __captured__scope_E_[3](_9V_Prop).call(this, null, "s", "indianred1"));
-  };
-
-  var _AR_ = function (token, link) {
-    if (link.to == this.key) {
-      if (token.dataStack[token.dataStack.length - 1] == _7u_CompData.PROMPT) {
-        token.dataStack.pop();
-        token.dataStack.push(false);
-        token.rewriteFlag = _80_RewriteFlag.F_PROP;
-        token.forward = false;
-        token.machine.startPropagation();
-        return link;
-      }
-    }
-  };
-
-  var _AS_ = function (token, nextLink) {
-    if (token.rewriteFlag == _80_RewriteFlag.F_PROP && nextLink.to == this.key) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
-      var data = token.machine.hasUpdate;
-      token.dataStack.pop();
-      token.dataStack.push([data, _7u_CompData.EMPTY]);
-
-      var wrapper = _6x_BoxWrapper.create().addToGroup(this.group);
-
-      var con = new _6e_Const(data).addToGroup(wrapper.box);
-      new _6G_Link(wrapper.prin.key, con.key, "n", "s").addToGroup(wrapper);
-      nextLink.changeTo(wrapper.prin.key, "s");
-      this.delete();
-      token.rewrite = true;
-      return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
-      token.rewrite = false;
-      return nextLink;
-    }
-  };
-
-  var _AT_ = function () {
-    return new _9V_Prop();
-  };
-
-  var _Cg__95typeof = function (obj) {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
-
-    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-      __captured__scope_9_[1] = function _typeof(obj) {
-        return typeof obj;
-      };
-    } else {
-      __captured__scope_9_[1] = function _typeof(obj) {
-        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-      };
-    }
-
-    return __captured__scope_9_[1](obj);
-  };
-
-  var _Ar__95classCallCheck = function (instance, Constructor) {
-    if (!(instance instanceof Constructor)) {
-      throw new TypeError("Cannot call a class as a function");
-    }
-  };
-
-  var _C2__95possibleConstructorReturn = function (self, call) {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
-
-    if (call && (__captured__scope_9_[1](call) === "object" || typeof call === "function")) {
-      return call;
-    }
-
-    return _Ch__95assertThisInitialized(self);
-  };
-
-  var _Ch__95assertThisInitialized = function (self) {
-    if (self === void 0) {
-      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
-    }
-
-    return self;
-  };
-
-  var _C4__95get = function (target, property, receiver) {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
 
     if (typeof Reflect !== "undefined" && Reflect.get) {
-      __captured__scope_9_[5] = Reflect.get;
+      __captured__scope_B_[5] = Reflect.get;
     } else {
-      __captured__scope_9_[5] = function _get(target, property, receiver) {
-        var base = _Cv__95superPropBase(target, property);
+      __captured__scope_B_[5] = function _get(target, property, receiver) {
+        var base = _Da__95superPropBase(target, property);
 
         if (!base) return;
         var desc = Object.getOwnPropertyDescriptor(base, property);
@@ -3481,43 +3628,43 @@
       };
     }
 
-    return __captured__scope_9_[5](target, property, receiver || target);
+    return __captured__scope_B_[5](target, property, receiver || target);
   };
 
-  var _Cv__95superPropBase = function (object, property) {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
+  var _Da__95superPropBase = function (object, property) {
+    var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     while (!Object.prototype.hasOwnProperty.call(object, property)) {
-      object = __captured__scope_9_[3](object);
+      object = __captured__scope_B_[3](object);
       if (object === null) break;
     }
 
     return object;
   };
 
-  var _C3__95getPrototypeOf = function (o) {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
+  var _CZ__95getPrototypeOf = function (o) {
+    var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
-    __captured__scope_9_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    __captured__scope_B_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
       return o.__proto__ || Object.getPrototypeOf(o);
     };
-    return __captured__scope_9_[3](o);
+    return __captured__scope_B_[3](o);
   };
 
-  var _9G_Prov = function () {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
+  var _9S_Prov = function () {
+    var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     var _this;
 
-    _Ar__95classCallCheck(this, _9G_Prov);
+    _BG__95classCallCheck(this, _9S_Prov);
 
-    _this = _C2__95possibleConstructorReturn(this, __captured__scope_9_[3](_9G_Prov).call(this, 'diamond', '', "indianred1"));
+    _this = _CY__95possibleConstructorReturn(this, __captured__scope_B_[3](_9S_Prov).call(this, 'diamond', '', "indianred1"));
     _this.width = ".3";
     _this.height = ".3";
     return _this;
   };
 
-  var _AC_ = function (token, link) {
+  var _AU_ = function (token, link) {
     if (link.to == this.key) {
       var nextLink = this.findLinksOutOf(null)[0];
       token.dataStack.push(_7u_CompData.PROMPT);
@@ -3526,18 +3673,18 @@
       var data = token.dataStack.pop();
       token.dataStack.pop();
       token.dataStack.push(data);
-      token.rewriteFlag = _80_RewriteFlag.F_MOD;
+      token.rewriteFlag = _83_RewriteFlag.F_MOD;
       return this.findLinksInto(null)[0];
     }
   };
 
-  var _AD_ = function (token, nextLink) {
-    if (nextLink.to == this.key && token.rewriteFlag == _80_RewriteFlag.F_MOD) {
-      token.rewriteFlag = _80_RewriteFlag.EMPTY;
+  var _AV_ = function (token, nextLink) {
+    if (nextLink.to == this.key && token.rewriteFlag == _83_RewriteFlag.F_MOD) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
       var data = token.dataStack.pop();
 
       if (_7t_.isNumber(data[0]) || typeof data[0] === "boolean") {
-        var mod = new _CQ_Mod().addToGroup(this.group);
+        var mod = new _Cy_Mod().addToGroup(this.group);
         var con = new _6e_Const(data[0]).addToGroup(this.group);
         new _6G_Link(mod.key, con.key, "w", "s").addToGroup(this.group);
         var outLink = this.findLinksOutOf(null)[0];
@@ -3550,14 +3697,14 @@
       }
 
       return nextLink;
-    } else if (token.rewriteFlag == _80_RewriteFlag.EMPTY) {
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
       token.rewrite = false;
       return nextLink;
     }
   };
 
-  var _AE_ = function () {
-    var __captured__scope_9_ = __scope_0_main[8] || __get_scope_binding_0_get_95scope_95binding(8);
+  var _AW_ = function () {
+    var __captured__scope_B_ = __scope_0_main[10] || __get_scope_binding_0_get_95scope_95binding(10);
 
     var inLink = this.findLinksInto(null)[0];
     var outLink = this.findLinksOutOf(null)[0];
@@ -3566,21 +3713,282 @@
       inLink.changeTo(outLink.to, outLink.toPort);
     }
 
-    __captured__scope_9_[5](__captured__scope_9_[3](_9G_Prov.prototype), "delete", this).call(this);
+    __captured__scope_B_[5](__captured__scope_B_[3](_9S_Prov.prototype), "delete", this).call(this);
   };
 
-  var _AF_ = function () {
-    return new _9G_Prov();
+  var _AX_ = function () {
+    return new _9S_Prov();
   };
 
-  var _8t__95classCallCheck = function (instance, Constructor) {
+  var _DE__95typeof = function (obj) {
+    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_A_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_A_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_A_[1](obj);
+  };
+
+  var _BE__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _CW__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+
+    if (call && (__captured__scope_A_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DF__95assertThisInitialized(self);
+  };
+
+  var _DF__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _CX__95getPrototypeOf = function (o) {
+    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+
+    __captured__scope_A_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_A_[3](o);
+  };
+
+  var _9P_Pair = function () {
+    var __captured__scope_A_ = __scope_0_main[9] || __get_scope_binding_0_get_95scope_95binding(9);
+
+    _BE__95classCallCheck(this, _9P_Pair);
+
+    return _CW__95possibleConstructorReturn(this, __captured__scope_A_[3](_9P_Pair).call(this, null, ",", "mediumpurple1"));
+  };
+
+  var _AR_ = function (token, link) {
+    if (link.to == this.key) {
+      var nextLink;
+
+      if (token.dataStack[token.dataStack.length - 1] == _7u_CompData.PR) {
+        token.dataStack.pop();
+        nextLink = this.findLinksOutOf("e")[0];
+      } else if (token.dataStack[token.dataStack.length - 1] == _7u_CompData.PL) {
+        token.dataStack.pop();
+        nextLink = this.findLinksOutOf('w')[0];
+      } else {
+        token.dataStack.push(_7u_CompData.PE);
+        token.dataStack.push(_7u_CompData.PROMPT);
+        nextLink = this.findLinksOutOf("e")[0];
+        ;
+      }
+
+      token.rewriteFlag = _83_RewriteFlag.F_PAIR;
+      return nextLink;
+    } else if (link.from == this.key && link.fromPort == "e") {
+      var nextLink;
+
+      if (token.dataStack[token.dataStack.length - 2] == _7u_CompData.PE) {
+        nextLink = this.findLinksOutOf("w")[0];
+        token.dataStack.push(_7u_CompData.PROMPT);
+        token.forward = true;
+      } else {
+        nextLink = this.findLinksInto("s")[0];
+        token.dataStack.push(_7u_CompData.PR);
+        token.forward = false;
+      }
+
+      return nextLink;
+    } else if (link.from == this.key && link.fromPort == "w") {
+      if (token.dataStack[token.dataStack.length - 3] == _7u_CompData.PE) {
+        var l = token.dataStack.pop();
+        var r = token.dataStack.pop();
+        token.dataStack.pop();
+        token.dataStack.pop();
+        var result = "(" + l[0] + "," + r[0] + ")";
+        token.dataStack.push([result, _7u_CompData.EMPTY]);
+      } else {
+        token.dataStack.push(_7u_CompData.PL);
+      }
+
+      return this.findLinksInto(null)[0];
+      ;
+    }
+  };
+
+  var _AS_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_PAIR && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY;
+      var prev = this.graph.findNodeByKey(this.findLinksInto("s")[0].from);
+
+      if (prev instanceof _7D_Contract) {
+        var prev2 = this.graph.findNodeByKey(token.boxStack[token.boxStack.length - 1].from);
+
+        if (prev2 instanceof _97_PatTuple) {
+          if (token.link.fromPort == "e") {
+            var right = this.graph.findNodeByKey(this.findLinksOutOf("e")[0].to);
+
+            if (right instanceof _6p_Promo) {
+              var link = token.boxStack.pop();
+              var inLinks = prev.findLinksInto(null);
+
+              if (inLinks.length == 1) {// this will not happen as the C-node should have taken care of it
+              } else {
+                var newBoxWrapper = right.group.copy().addToGroup(right.group.group);
+
+                _75_Term.joinAuxs(right.group.auxs, newBoxWrapper.auxs, newBoxWrapper.group);
+
+                var prevLink = prev2.findLinksInto("e")[0];
+                prevLink.changeTo(newBoxWrapper.prin.key, "s");
+                var weak = new _8y_Weak(null).addToGroup(this.group);
+                new _6G_Link(weak.key, prev2.key, "n", "e").addToGroup(this.group);
+              }
+
+              token.rewrite = true;
+              return prevLink;
+            }
+          } else if (token.link.fromPort == "w") {
+            var left = this.graph.findNodeByKey(this.findLinksOutOf("w")[0].to);
+
+            if (left instanceof _6p_Promo) {
+              var link = token.boxStack.pop();
+              var inLinks = prev.findLinksInto(null);
+
+              if (inLinks.length == 1) {// this will not happen as the C-node should have taken care of it
+              } else {
+                var newBoxWrapper = left.group.copy().addToGroup(left.group.group);
+
+                _75_Term.joinAuxs(left.group.auxs, newBoxWrapper.auxs, newBoxWrapper.group);
+
+                var prevLink = prev2.findLinksInto("w")[0];
+                prevLink.changeTo(newBoxWrapper.prin.key, "s");
+                var weak = new _8y_Weak(null).addToGroup(this.group);
+                new _6G_Link(weak.key, prev2.key, "n", "w").addToGroup(this.group);
+              }
+
+              token.rewrite = true;
+              return prevLink;
+            }
+          }
+        }
+      } else if (prev instanceof _97_PatTuple) {
+        this.findLinksOutOf("e")[0].changeFrom(prev.findLinksInto("e")[0].from, prev.findLinksInto("e")[0].fromPort);
+        this.findLinksOutOf("w")[0].changeFrom(prev.findLinksInto("w")[0].from, prev.findLinksInto("w")[0].fromPort);
+        this.delete();
+        prev.delete();
+        token.rewrite = true;
+        return nextLink;
+      }
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
+      token.rewrite = false;
+      return nextLink;
+    }
+  };
+
+  var _AT_ = function () {
+    return new _9P_Pair();
+  };
+
+  var _DV__95typeof = function (obj) {
+    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+      __captured__scope_H_[1] = function _typeof(obj) {
+        return typeof obj;
+      };
+    } else {
+      __captured__scope_H_[1] = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+      };
+    }
+
+    return __captured__scope_H_[1](obj);
+  };
+
+  var _BS__95classCallCheck = function (instance, Constructor) {
+    if (!(instance instanceof Constructor)) {
+      throw new TypeError("Cannot call a class as a function");
+    }
+  };
+
+  var _Cl__95possibleConstructorReturn = function (self, call) {
+    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+
+    if (call && (__captured__scope_H_[1](call) === "object" || typeof call === "function")) {
+      return call;
+    }
+
+    return _DW__95assertThisInitialized(self);
+  };
+
+  var _DW__95assertThisInitialized = function (self) {
+    if (self === void 0) {
+      throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    }
+
+    return self;
+  };
+
+  var _Cm__95getPrototypeOf = function (o) {
+    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+
+    __captured__scope_H_[3] = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+      return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return __captured__scope_H_[3](o);
+  };
+
+  var _9k_GAbs = function () {
+    var __captured__scope_H_ = __scope_0_main[16] || __get_scope_binding_0_get_95scope_95binding(16);
+
+    _BS__95classCallCheck(this, _9k_GAbs);
+
+    return _Cl__95possibleConstructorReturn(this, __captured__scope_H_[3](_9k_GAbs).call(this, null, "abs", "indianred1"));
+  };
+
+  var _Am_ = function (token, link) {
+    if (link.to == this.key && link.toPort == "s") {
+      var nextLink = this.findLinksOutOf("n")[0];
+      token.rewriteFlag = _83_RewriteFlag.F_GABS;
+      return nextLink;
+    }
+  };
+
+  var _An_ = function (token, nextLink) {
+    if (token.rewriteFlag == _83_RewriteFlag.F_GABS && nextLink.from == this.key) {
+      token.rewriteFlag = _83_RewriteFlag.EMPTY; // TODO
+
+      token.rewrite = true;
+      return nextLink;
+    } else if (token.rewriteFlag == _83_RewriteFlag.EMPTY) {
+      token.rewrite = false;
+      return nextLink;
+    }
+  };
+
+  var _Ao_ = function () {
+    return new _9k_GAbs();
+  };
+
+  var _90__95classCallCheck = function (instance, Constructor) {
     if (!(instance instanceof Constructor)) {
       throw new TypeError("Cannot call a class as a function");
     }
   };
 
   var _7a_GC = function (graph) {
-    _8t__95classCallCheck(this, _7a_GC);
+    _90__95classCallCheck(this, _7a_GC);
 
     this.graph = graph;
     this.noMore = false;
@@ -3603,7 +4011,7 @@
     for (var _i = 0; _i < _arr.length; _i++) {
       var node = _arr[_i];
 
-      if (node instanceof _8r_Weak || node instanceof _7D_Contract && node.findLinksInto(null).length == 0) {
+      if (node instanceof _8y_Weak || node instanceof _7D_Contract && node.findLinksInto(null).length == 0) {
         var link = node.findLinksOutOf(null)[0];
         var nextNode = this.graph.findNodeByKey(link.to);
 
@@ -3618,7 +4026,7 @@
   };
 
   var _7Z_ = function (node) {
-    if (node instanceof _7D_Contract && node.findLinksInto(null).length != 0) {} else if (node instanceof _6p_Promo || node instanceof _9D_Recur) {
+    if (node instanceof _7D_Contract && node.findLinksInto(null).length != 0) {} else if (node instanceof _6p_Promo || node instanceof _9M_Recur) {
       var _iteratorNormalCompletion = true;
       var _didIteratorError = false;
       var _iteratorError = undefined;
@@ -3674,7 +4082,7 @@
   };
 
   var _7q_GoIMachine = function () {
-    _9X__95classCallCheck(this, _7q_GoIMachine);
+    _9m__95classCallCheck(this, _7q_GoIMachine);
 
     this.graph = new _7S_Graph(this);
     _7t_.graph = this.graph; // cheating!
@@ -3720,8 +4128,8 @@
   };
 
   var _7h_ = function (source) {
-    var lexer = new _8u_Lexer(source + '\0');
-    var parser = new _8w_Parser(lexer);
+    var lexer = new _91_Lexer(source + '\0');
+    var parser = new _93_Parser(lexer);
     var ast = parser.parse(); // init
 
     this.graph.clear();
@@ -3743,11 +4151,23 @@
   var _7i_ = function (ast, group) {
     var graph = this.graph;
 
-    if (ast instanceof _8y_Identifier) {
+    if (ast instanceof _95_Identifier) {
       var v = new _7K_Var(ast.name).addToGroup(group);
       return new _75_Term(v, [v]);
-    } else if (ast instanceof _8z_Abstraction) {
-      var param = ast.param;
+    } else if (ast instanceof _96_Abstraction) {
+      var params;
+      var paramUsed;
+      var auxNodes;
+
+      if (ast.pattern.type == _8S_PatternType.Id) {
+        params = [ast.pattern.id1];
+        paramUsed = [false];
+        auxNodes = [null];
+      } else if (ast.pattern.type == _8S_PatternType.Tuple) {
+        params = [ast.pattern.id1, ast.pattern.id2];
+        paramUsed = [false, false];
+        auxNodes = [null, null];
+      }
 
       var wrapper = _6x_BoxWrapper.create().addToGroup(group);
 
@@ -3756,47 +4176,55 @@
       new _6G_Link(wrapper.prin.key, abs.key, "n", "s").addToGroup(wrapper);
       new _6G_Link(abs.key, term.prin.key, "e", "s").addToGroup(abs.group);
       var auxs = Array.from(term.auxs);
-      var paramUsed = false;
-      var auxNode;
-      var _iteratorNormalCompletion = true;
-      var _didIteratorError = false;
-      var _iteratorError = undefined;
 
-      try {
-        for (var _iterator = term.auxs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-          var _aux = _step.value;
+      for (var i = 0; i < params.length; i++) {
+        var _iteratorNormalCompletion = true;
+        var _didIteratorError = false;
+        var _iteratorError = undefined;
 
-          if (_aux.name == param) {
-            paramUsed = true;
-            auxNode = _aux;
-            break;
-          }
-        }
-      } catch (err) {
-        _didIteratorError = true;
-        _iteratorError = err;
-      } finally {
         try {
-          if (!_iteratorNormalCompletion && _iterator.return != null) {
-            _iterator.return();
+          for (var _iterator = term.auxs[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+            var _aux = _step.value;
+
+            if (_aux.name == params[i]) {
+              paramUsed[i] = true;
+              auxNodes[i] = _aux;
+              break;
+            }
           }
+        } catch (err) {
+          _didIteratorError = true;
+          _iteratorError = err;
         } finally {
-          if (_didIteratorError) {
-            throw _iteratorError;
+          try {
+            if (!_iteratorNormalCompletion && _iterator.return != null) {
+              _iterator.return();
+            }
+          } finally {
+            if (_didIteratorError) {
+              throw _iteratorError;
+            }
           }
         }
       }
 
-      if (paramUsed) {
-        auxs.splice(auxs.indexOf(auxNode), 1);
-      } else {
-        auxNode = new _8r_Weak(param).addToGroup(abs.group);
+      for (var i = 0; i < params.length; i++) {
+        if (paramUsed[i]) {
+          auxs.splice(auxs.indexOf(auxNodes[i]), 1);
+        } else {
+          auxNodes[i] = new _8y_Weak(params[i]).addToGroup(abs.group);
+        }
       }
 
-      new _6G_Link(auxNode.key, abs.key, "nw", "w", true).addToGroup(abs.group);
+      if (ast.pattern.type == _8S_PatternType.Id) new _6G_Link(auxNodes[0].key, abs.key, "nw", "w", true).addToGroup(abs.group);else if (ast.pattern.type == _8S_PatternType.Tuple) {
+        var pattern = new _97_PatTuple().addToGroup(abs.group);
+        new _6G_Link(auxNodes[0].key, pattern.key, "n", "w").addToGroup(abs.group);
+        new _6G_Link(auxNodes[1].key, pattern.key, "n", "e").addToGroup(abs.group);
+        new _6G_Link(pattern.key, abs.key, "nw", "w", true).addToGroup(abs.group);
+      }
       wrapper.auxs = wrapper.createPaxsOnTopOf(auxs);
       return new _75_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _90_Application) {
+    } else if (ast instanceof _99_Application) {
       var app = new _78_App().addToGroup(group); //lhs
 
       var left = this.toGraph(ast.lhs, group);
@@ -3807,13 +4235,13 @@
       new _6G_Link(app.key, der.key, "w", "s").addToGroup(group);
       new _6G_Link(app.key, right.prin.key, "e", "s").addToGroup(group);
       return new _75_Term(app, _75_Term.joinAuxs(left.auxs, right.auxs, group));
-    } else if (ast instanceof _91_Constant) {
+    } else if (ast instanceof _9A_Constant) {
       var wrapper = _6x_BoxWrapper.create().addToGroup(group);
 
       var constant = new _6e_Const(ast.value).addToGroup(wrapper.box);
       new _6G_Link(wrapper.prin.key, constant.key, "n", "s").addToGroup(wrapper);
       return new _75_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _92_BinaryOp) {
+    } else if (ast instanceof _9B_BinaryOp) {
       var binop = new _6Z_BinOp(ast.name).addToGroup(group);
       binop.subType = ast.type;
       var left = this.toGraph(ast.v1, group);
@@ -3821,14 +4249,14 @@
       new _6G_Link(binop.key, left.prin.key, "w", "s").addToGroup(group);
       new _6G_Link(binop.key, right.prin.key, "e", "s").addToGroup(group);
       return new _75_Term(binop, _75_Term.joinAuxs(left.auxs, right.auxs, group));
-    } else if (ast instanceof _96_UnaryOp) {
-      var unop = new _97_UnOp(ast.name).addToGroup(group);
+    } else if (ast instanceof _9F_UnaryOp) {
+      var unop = new _9G_UnOp(ast.name).addToGroup(group);
       unop.subType = ast.type;
       var box = this.toGraph(ast.v1, group);
       new _6G_Link(unop.key, box.prin.key, "n", "s").addToGroup(group);
       return new _75_Term(unop, box.auxs);
-    } else if (ast instanceof _99_IfThenElse) {
-      var ifnode = new _9A_If().addToGroup(group);
+    } else if (ast instanceof _9I_IfThenElse) {
+      var ifnode = new _9J_If().addToGroup(group);
       var cond = this.toGraph(ast.cond, group);
       var t1 = this.toGraph(ast.t1, group);
       var t2 = this.toGraph(ast.t2, group);
@@ -3836,13 +4264,13 @@
       new _6G_Link(ifnode.key, t1.prin.key, "n", "s").addToGroup(group);
       new _6G_Link(ifnode.key, t2.prin.key, "e", "s").addToGroup(group);
       return new _75_Term(ifnode, _75_Term.joinAuxs(_75_Term.joinAuxs(t1.auxs, t2.auxs, group), cond.auxs, group));
-    } else if (ast instanceof _9C_Recursion) {
+    } else if (ast instanceof _9L_Recursion) {
       var p1 = ast.param; // recur term
 
       var wrapper = _6x_BoxWrapper.create().addToGroup(group);
 
       wrapper.prin.delete();
-      var recur = new _9D_Recur().addToGroup(wrapper);
+      var recur = new _9M_Recur().addToGroup(wrapper);
       wrapper.prin = recur;
       var box = this.toGraph(ast.body, wrapper.box);
       wrapper.auxs = wrapper.createPaxsOnTopOf(box.auxs);
@@ -3863,29 +4291,36 @@
 
       if (p1Used) {// wrapper.auxs.splice(wrapper.auxs.indexOf(auxNode1), 1);
       } else {
-        auxNode1 = new _8r_Weak(p1).addToGroup(wrapper.box);
+        auxNode1 = new _8y_Weak(p1).addToGroup(wrapper.box);
       }
 
       new _6G_Link(auxNode1.key, recur.key, "nw", "w", true).addToGroup(wrapper);
       return new _75_Term(wrapper.prin, wrapper.auxs);
-    } else if (ast instanceof _9F_ProvisionalConstant) {
+    } else if (ast instanceof _9O_Tuple) {
+      var pair = new _9P_Pair().addToGroup(group);
+      var left = this.toGraph(ast.lhs, group);
+      var right = this.toGraph(ast.rhs, group);
+      new _6G_Link(pair.key, left.prin.key, "w", "s").addToGroup(group);
+      new _6G_Link(pair.key, right.prin.key, "e", "s").addToGroup(group);
+      return new _75_Term(pair, _75_Term.joinAuxs(left.auxs, right.auxs, group));
+    } else if (ast instanceof _9R_ProvisionalConstant) {
       var term = this.toGraph(ast.term, group);
-      var prov = new _9G_Prov().addToGroup(group);
+      var prov = new _9S_Prov().addToGroup(group);
       new _6G_Link(prov.key, term.prin.key, "n", "s").addToGroup(group);
       return new _75_Term(prov, term.auxs);
-    } else if (ast instanceof _9I_Deprecation) {
+    } else if (ast instanceof _9U_Deprecation) {
       var term = this.toGraph(ast.term, group);
-      var dep = new _9J_Dep().addToGroup(group);
+      var dep = new _9V_Dep().addToGroup(group);
       new _6G_Link(dep.key, term.prin.key, "n", "s").addToGroup(group);
       return new _75_Term(dep, term.auxs);
-    } else if (ast instanceof _9L_Dereference) {
+    } else if (ast instanceof _9X_Dereference) {
       var term = this.toGraph(ast.term, group);
-      var deref = new _9M_Deref().addToGroup(group);
+      var deref = new _9Y_Deref().addToGroup(group);
       new _6G_Link(deref.key, term.prin.key, "n", "s").addToGroup(group);
       return new _75_Term(deref, term.auxs);
-    } else if (ast instanceof _9O_Change) {
+    } else if (ast instanceof _9a_Change) {
       var param = ast.param;
-      var delta = new _9P_Delta().addToGroup(group);
+      var delta = new _9b_Delta().addToGroup(group);
       var term = this.toGraph(ast.body, group);
       var v = new _7K_Var(param).addToGroup(group);
       new _6G_Link(delta.key, v.key, "w", "s").addToGroup(group);
@@ -3910,9 +4345,9 @@
 
       if (!p1Used) auxs.push(v);
       return new _75_Term(delta, auxs);
-    } else if (ast instanceof _9R_Assign) {
+    } else if (ast instanceof _9d_Assign) {
       var param = ast.param;
-      var setn = new _9S_Set().addToGroup(group);
+      var setn = new _9e_Set().addToGroup(group);
       var term = this.toGraph(ast.body, group);
       var v = new _7K_Var(param).addToGroup(group);
       new _6G_Link(setn.key, v.key, "w", "s").addToGroup(group);
@@ -3937,9 +4372,14 @@
 
       if (!p1Used) auxs.push(v);
       return new _75_Term(setn, auxs);
-    } else if (ast instanceof _9U_Propagation) {
-      var prop = new _9V_Prop().addToGroup(group);
+    } else if (ast instanceof _9g_Propagation) {
+      var prop = new _9h_Prop().addToGroup(group);
       return new _75_Term(prop, []);
+    } else if (ast instanceof _9j_GraphAbstraction) {
+      var abs = new _9k_GAbs().addToGroup(group);
+      var box = this.toGraph(ast.term, group);
+      new _6G_Link(abs.key, box.prin.key, "n", "s").addToGroup(group);
+      return new _75_Term(abs, box.auxs);
     }
   };
 
@@ -3996,17 +4436,17 @@
   };
 
   var _7m_ = function (tokens) {
-    // random	
+    var arr_2 = Array.from(tokens); // random
 
-    /*	
-            var arr = Array.from(new Array(tokens.length),(val,index)=>index+1);	
-            this.shuffle(arr);	
-            for (var i=0; i<arr.length; i++) {	
-            	var token = arr_2[arr[i]-1];	
-            	this.tokenPass(token, flag, dataStack, boxStack, modStack);	
-            }	
+    /*
+            var arr = Array.from(new Array(tokens.length),(val,index)=>index+1);
+            this.shuffle(arr);
+            for (var i=0; i<arr.length; i++) {
+            	var token = arr_2[arr[i]-1];
+            	this.tokenPass(token, flag, dataStack, boxStack, modStack);
+            }
             */
-    var arr_2 = Array.from(tokens); // all progress 1 step
+    // all progress 1 step
 
     for (var i = 0; i < arr_2.length; i++) {
       var token = arr_2[i];
@@ -4016,12 +4456,12 @@
 
   var _7n_ = function () {
     if (!this.isFinished()) {
-      /*	
-                this.count++;	
-                if (this.count == 200) {	
-                	this.count = 0;	
-                	this.gc.collect();	
-                }	
+      /*
+                this.count++;
+                if (this.count == 200) {
+                	this.count = 0;
+                	this.gc.collect();
+                }
                 */
       if (this.evaluating) {
         this.batchPass(this.evalTokens);
@@ -4100,8 +4540,8 @@
 
       return function (source) {
         // create AST of the future abstract arguments
-        var lexer = new _8u_Lexer(source + '\0');
-        var parser = new _8w_Parser(lexer);
+        var lexer = new _91_Lexer(source + '\0');
+        var parser = new _93_Parser(lexer);
         var ast = parser.parse(); // init
 
         machine.token.reset();
@@ -4133,9 +4573,6 @@
         new _6G_Link(start.key, term.prin.key, "n", "s").addToGroup(machine.graph.child);
         machine.deleteVarNode(machine.graph.child);
       };
-    } else if (data[1] !== '-') {
-      // TODO
-      return this;
     } else {
       if (data[0] === '•') {
         // this represents the unit so it doesn't return anything
@@ -4146,7 +4583,7 @@
     }
   };
 
-  var _B2_ = function (err, result) {
+  var _8W_ = function (err, result) {
     if (err) {
       throw err;
     }
@@ -4158,7 +4595,13 @@
     }
   };
 
-  var _7s_autoPlay = function (callback) {
+  var _7s_trampoline = function (res) {
+    while (res && res.fn) {
+      res = res.fn.apply(null, res.args);
+    }
+  };
+
+  var _8V_autoPlay = function (callback) {
     var __captured__scope_2_ = __scope_0_main[1] || __get_scope_binding_0_get_95scope_95binding(1);
 
     __captured__scope_2_[0]++;
@@ -4173,56 +4616,53 @@
 
     if (_3_machine.isFinished()) {
       if (typeof result === 'function') {
-        callback(null, function () {
-          _3_machine.setPlay(false);
+        return {
+          fn: callback,
+          args: [null, function () {
+            _3_machine.setPlay(false);
 
-          _3_machine.setPlaying(false);
+            _3_machine.setPlaying(false); // can only receive one argument at a time so this work
 
-          result(arguments[0]);
 
-          _3_machine.setPlay(true);
+            if (arguments.length !== 0) {
+              result(arguments[0]);
+            }
 
-          _3_machine.setFinished(false);
+            _3_machine.setPlay(true);
 
-          if (!_3_machine.isPlaying()) {
-            _7s_autoPlay(callback);
-          }
-        });
+            _3_machine.setFinished(false);
+
+            if (!_3_machine.isPlaying()) {
+              return _7s_trampoline({
+                fn: _8V_autoPlay,
+                args: [callback]
+              });
+            }
+          }]
+        };
       } else {
-        callback(null, result);
+        return {
+          fn: callback,
+          args: [null, result]
+        };
       }
     } else {
       if (_3_machine.isPlay()) {
-        if (_9Y_.__residual) {
-          // if we're in Prepack, and weve reached its maximum nubmer of calls
-          if (__captured__scope_2_[0] > 125 / 3) {
-            if (__captured__scope_2_[0] > 125) {
-              // set to 0 because up till now Prepack evaluated everything
-              __captured__scope_2_[0] = 0;
+        if (_Ap_.__residual && __captured__scope_2_[0] > 125) {
+          // set to 0 because up till now Prepack evaluated everything
+          __captured__scope_2_[0] = 0;
 
-              _9Y_.__residual("void", function (autoPlay, callback) {
-                autoPlay(callback);
-              }, _7s_autoPlay, callback);
-            } else {
-              setTimeout(function () {
-                _7s_autoPlay(callback);
-              }, 0);
-            }
-          } else {
-            // just call the function as it is
-            _7s_autoPlay(callback);
-          }
+          _Ap_.__residual("void", function (trampoline, autoPlay, callback) {
+            return trampoline({
+              fn: autoPlay,
+              args: [callback]
+            });
+          }, _7s_trampoline, _8V_autoPlay, callback);
         } else {
-          // otherwise, if we've reached the maximum number of calls on the stack
-          if (__captured__scope_2_[0] > 125) {
-            // call the function with a timeout
-            setTimeout(function () {
-              _7s_autoPlay(callback);
-            }, 0);
-          } else {
-            // just call the function as it is
-            _7s_autoPlay(callback);
-          }
+          return {
+            fn: _8V_autoPlay,
+            args: [callback]
+          };
         }
       } else {
         _3_machine.setPlaying(false);
@@ -4230,51 +4670,45 @@
     }
   };
 
-  var _8P_ = function (err, result) {
-    ;
-
-    _B2_(err, result);
-  };
-
-  var _CV_ = function (obj) {
+  var _D6_ = function (obj) {
     return typeof obj;
   };
 
-  var _BC_ = function (obj) {
+  var _Bc_ = function (obj) {
     return typeof obj;
   };
 
-  var _AX_ = function (obj) {
+  var _At_ = function (obj) {
     return typeof obj;
   };
 
-  var _B7_ = function (obj) {
+  var _BX_ = function (obj) {
     return typeof obj;
   };
 
-  var _B9_ = function (obj) {
+  var _BZ_ = function (obj) {
     return typeof obj;
   };
 
-  var _BE_ = function (obj) {
+  var _Be_ = function (obj) {
     return typeof obj;
   };
 
-  var _BH_ = function (obj) {
+  var _Bh_ = function (obj) {
     return typeof obj;
   };
 
-  var _BF_ = function (obj) {
+  var _Bf_ = function (obj) {
     return typeof obj;
   };
 
-  var _AY_ = function (obj) {
+  var _Au_ = function (obj) {
     return typeof obj;
   };
 
   var _7r_ = function (source) {
-    var lexer = new _8u_Lexer(source + '\0');
-    var parser = new _8w_Parser(lexer);
+    var lexer = new _91_Lexer(source + '\0');
+    var parser = new _93_Parser(lexer);
     var ast = parser.parse();
 
     _3_machine.token.reset();
@@ -4316,20 +4750,25 @@
 
     _3_machine.setPlaying(false);
 
-    _7r_(arguments[0]);
+    if (arguments.length !== 0) {
+      _7r_(arguments[0]);
+    }
 
     _3_machine.setPlay(true);
 
     _3_machine.setFinished(false);
 
     if (!_3_machine.isPlaying()) {
-      _7s_autoPlay(_8P_);
+      return _7s_trampoline({
+        fn: _8V_autoPlay,
+        args: [_8W_]
+      });
     }
   };
 
   var __constructor = function () {};
 
-  var _8a_ = _$2_Object_46getPrototypeOf;
+  var _8h_ = _$2_Object_46getPrototypeOf;
 
   var _4_graph = (__constructor.prototype = _5o_, new __constructor());
 
@@ -4529,7 +4968,7 @@
   _5m_.length = 16;
   _4_graph.allLinks = _5m_;
   var _7t_ = {
-    isNumber: _8R_isNumber,
+    isNumber: _8Y_isNumber,
     graph: _4_graph
   };
 
@@ -4547,7 +4986,10 @@
     R: "@",
     UNIT: "\u2022",
     IF0: "if0",
-    IF1: "if1"
+    IF1: "if1",
+    PL: "L",
+    PR: "R",
+    PE: "P"
   };
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6I_, _$4_Object_46defineProperty(_X_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6J_, _$4_Object_46defineProperty(_X_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
@@ -4576,7 +5018,7 @@
 
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6t_Expo, _$4_Object_46defineProperty(_1a_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6u_, _$4_Object_46defineProperty(_1a_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _8b_ = _$7_Reflect_46get;
+  var _8i_ = _$7_Reflect_46get;
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6v_, _$4_Object_46defineProperty(_1a_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6w_, _$4_Object_46defineProperty(_1a_, "deleteAndPreserveOutLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
@@ -4587,7 +5029,7 @@
   _$5_Object_46setPrototypeOf(_6p_Promo, _6t_Expo);
 
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6p_Promo, _$4_Object_46defineProperty(_1Z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _80_RewriteFlag = {
+  var _83_RewriteFlag = {
     EMPTY: "\u25A1",
     F_LAMBDA: "<\u03BB>",
     F_OP: "<$>",
@@ -4598,7 +5040,8 @@
     F_MOD: "<M>",
     F_DEP: "<p>",
     F_DELTA: "<\u0394>",
-    F_PROP: "<s>"
+    F_PROP: "<s>",
+    F_PAIR: "<,>"
   };
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6q_, _$4_Object_46defineProperty(_1Z_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
@@ -4620,7 +5063,7 @@
 
   _$5_Object_46setPrototypeOf(_7D_Contract, _6t_Expo);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8L_, _$4_Object_46defineProperty(_75_Term, "joinAuxs", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8P_, _$4_Object_46defineProperty(_75_Term, "joinAuxs", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
   _$5_Object_46setPrototypeOf(_75_Term, _6j_Group);
 
@@ -4661,6 +5104,15 @@
 
   _$5_Object_46setPrototypeOf(_78_App, _6U_Node);
 
+  var _98_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _97_PatTuple, _$4_Object_46defineProperty(_98_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AE_, _$4_Object_46defineProperty(_98_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AF_, _$4_Object_46defineProperty(_98_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _97_PatTuple.prototype = _98_;
+
+  _$5_Object_46setPrototypeOf(_97_PatTuple, _6U_Node);
+
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6X_, _$4_Object_46defineProperty(_12_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _6Y_, _$4_Object_46defineProperty(_12_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
@@ -4682,7 +5134,7 @@
   var _19_ = (__constructor.prototype = _Y_, new __constructor());
 
   _6Z_BinOp.prototype = _19_;
-  var _8D_BinOpType = {
+  var _8H_BinOpType = {
     And: 0,
     Or: 1,
     Plus: 2,
@@ -4691,8 +5143,8 @@
     Div: 7,
     Lte: 5
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8B_, _$4_Object_46defineProperty(_6Z_BinOp, "createPlus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8C_, _$4_Object_46defineProperty(_6Z_BinOp, "createMult", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8F_, _$4_Object_46defineProperty(_6Z_BinOp, "createPlus", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8G_, _$4_Object_46defineProperty(_6Z_BinOp, "createMult", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
   _$5_Object_46setPrototypeOf(_6Z_BinOp, _6U_Node);
 
@@ -4701,7 +5153,7 @@
 
   _$5_Object_46setPrototypeOf(_6h_Box, _6j_Group);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8K_, _$4_Object_46defineProperty(_6x_BoxWrapper, "create", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8O_, _$4_Object_46defineProperty(_6x_BoxWrapper, "create", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
   _$5_Object_46setPrototypeOf(_6x_BoxWrapper, _75_Term);
 
@@ -5603,32 +6055,32 @@
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7P_, _$4_Object_46defineProperty(_5o_, "findNodeByKey", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7Q_, _$4_Object_46defineProperty(_5o_, "addLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7R_, _$4_Object_46defineProperty(_5o_, "removeLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8M_, _$4_Object_46defineProperty(_7W_MachineToken, "CompData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8N_, _$4_Object_46defineProperty(_7W_MachineToken, "RewriteFlag", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8Q_, _$4_Object_46defineProperty(_7W_MachineToken, "CompData", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8R_, _$4_Object_46defineProperty(_7W_MachineToken, "RewriteFlag", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7T_, _$4_Object_46defineProperty(_5x_, "setLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7U_, _$4_Object_46defineProperty(_5x_, "reset", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7V_, _$4_Object_46defineProperty(_5x_, "delete", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7X_, _$4_Object_46defineProperty(_5z_, "collect", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _8s_ = (__constructor.prototype = _1a_, new __constructor());
+  var _8z_ = (__constructor.prototype = _1a_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8r_Weak, _$4_Object_46defineProperty(_8s_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9m_, _$4_Object_46defineProperty(_8s_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _8r_Weak.prototype = _8s_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _8y_Weak, _$4_Object_46defineProperty(_8z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9z_, _$4_Object_46defineProperty(_8z_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _8y_Weak.prototype = _8z_;
 
-  _$5_Object_46setPrototypeOf(_8r_Weak, _6t_Expo);
+  _$5_Object_46setPrototypeOf(_8y_Weak, _6t_Expo);
 
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7Y_, _$4_Object_46defineProperty(_5z_, "collectInGroup", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _9E_ = (__constructor.prototype = _1a_, new __constructor());
+  var _9N_ = (__constructor.prototype = _1a_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9D_Recur, _$4_Object_46defineProperty(_9E_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A9_, _$4_Object_46defineProperty(_9E_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AA_, _$4_Object_46defineProperty(_9E_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AB_, _$4_Object_46defineProperty(_9E_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9D_Recur.prototype = _9E_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9M_Recur, _$4_Object_46defineProperty(_9N_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AO_, _$4_Object_46defineProperty(_9N_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AP_, _$4_Object_46defineProperty(_9N_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AQ_, _$4_Object_46defineProperty(_9N_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9M_Recur.prototype = _9N_;
 
-  _$5_Object_46setPrototypeOf(_9D_Recur, _6t_Expo);
+  _$5_Object_46setPrototypeOf(_9M_Recur, _6t_Expo);
 
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7Z_, _$4_Object_46defineProperty(_5z_, "collectFromBottom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7b_, _$4_Object_46defineProperty(_65_, "isPlay", $$0_enumerable_58false_44configurable_58true_44writable_58true);
@@ -5637,166 +6089,191 @@
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7e_, _$4_Object_46defineProperty(_65_, "setPlaying", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7f_, _$4_Object_46defineProperty(_65_, "isFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7g_, _$4_Object_46defineProperty(_65_, "setFinished", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9n_, _$4_Object_46defineProperty(_8v_, "_nextChar", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _BK_Token.EOF = "EOF";
-  _BK_Token.LAMBDA = "LAMBDA";
-  _BK_Token.LPAREN = "LPAREN";
-  _BK_Token.RPAREN = "RPAREN";
-  _BK_Token.CLPAREN = "CLPAREN";
-  _BK_Token.CRPAREN = "CRPAREN";
-  _BK_Token.LCID = "LCID";
-  _BK_Token.DOT = "DOT";
-  _BK_Token.COMMA = "COMMA";
-  _BK_Token.APP = "APP";
-  _BK_Token.LET = "LET";
-  _BK_Token.DEFINE = "DEFINE";
-  _BK_Token.IN = "IN";
-  _BK_Token.REC = "REC";
-  _BK_Token.INT = "INT";
-  _BK_Token.TRUE = "TRUE";
-  _BK_Token.FALSE = "FALSE";
-  _BK_Token.NOT = "NOT";
-  _BK_Token.AND = "AND";
-  _BK_Token.OR = "OR";
-  _BK_Token.PLUS = "PLUS";
-  _BK_Token.SUB = "SUB";
-  _BK_Token.MULT = "MULT";
-  _BK_Token.DIV = "DIV";
-  _BK_Token.LTE = "LTE";
-  _BK_Token.IF = "IF";
-  _BK_Token.THEN = "THEN";
-  _BK_Token.ELSE = "ELSE";
-  _BK_Token.SET = "SET";
-  _BK_Token.CHANGE = "CHANGE";
-  _BK_Token.TO = "TO";
-  _BK_Token.PROP = "PROP";
-  _BK_Token.DEP = "DEP";
-  _BK_Token.DEREF = "DEREF";
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9o_, _$4_Object_46defineProperty(_8v_, "_nextToken", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9p_, _$4_Object_46defineProperty(_8v_, "token", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9q_, _$4_Object_46defineProperty(_8v_, "lookahead", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9r_, _$4_Object_46defineProperty(_8v_, "fail", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9s_, _$4_Object_46defineProperty(_8v_, "next", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9t_, _$4_Object_46defineProperty(_8v_, "match", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9u_, _$4_Object_46defineProperty(_8v_, "skip", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9v_, _$4_Object_46defineProperty(_8x_, "parse", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9w_, _$4_Object_46defineProperty(_8x_, "term", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9x_, _$4_Object_46defineProperty(_8x_, "isBinaryOp", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A0_, _$4_Object_46defineProperty(_92_, "_nextChar", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Bk_Token.EOF = "EOF";
+  _Bk_Token.LAMBDA = "LAMBDA";
+  _Bk_Token.LPAREN = "LPAREN";
+  _Bk_Token.RPAREN = "RPAREN";
+  _Bk_Token.CLPAREN = "CLPAREN";
+  _Bk_Token.CRPAREN = "CRPAREN";
+  _Bk_Token.LCID = "LCID";
+  _Bk_Token.DOT = "DOT";
+  _Bk_Token.COMMA = "COMMA";
+  _Bk_Token.APP = "APP";
+  _Bk_Token.LET = "LET";
+  _Bk_Token.DEFINE = "DEFINE";
+  _Bk_Token.IN = "IN";
+  _Bk_Token.REC = "REC";
+  _Bk_Token.INT = "INT";
+  _Bk_Token.TRUE = "TRUE";
+  _Bk_Token.FALSE = "FALSE";
+  _Bk_Token.NOT = "NOT";
+  _Bk_Token.AND = "AND";
+  _Bk_Token.OR = "OR";
+  _Bk_Token.PLUS = "PLUS";
+  _Bk_Token.SUB = "SUB";
+  _Bk_Token.MULT = "MULT";
+  _Bk_Token.DIV = "DIV";
+  _Bk_Token.LTE = "LTE";
+  _Bk_Token.IF = "IF";
+  _Bk_Token.THEN = "THEN";
+  _Bk_Token.ELSE = "ELSE";
+  _Bk_Token.SET = "SET";
+  _Bk_Token.CHANGE = "CHANGE";
+  _Bk_Token.TO = "TO";
+  _Bk_Token.PROP = "PROP";
+  _Bk_Token.DEP = "DEP";
+  _Bk_Token.DEREF = "DEREF";
+  _Bk_Token.ABS = "ABS";
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A1_, _$4_Object_46defineProperty(_92_, "_nextToken", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A2_, _$4_Object_46defineProperty(_92_, "token", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A3_, _$4_Object_46defineProperty(_92_, "lookahead", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A4_, _$4_Object_46defineProperty(_92_, "fail", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A5_, _$4_Object_46defineProperty(_92_, "next", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A6_, _$4_Object_46defineProperty(_92_, "match", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A7_, _$4_Object_46defineProperty(_92_, "skip", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A8_, _$4_Object_46defineProperty(_94_, "parse", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _8S_PatternType = {
+    Id: 0,
+    Tuple: 1
+  };
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A9_, _$4_Object_46defineProperty(_94_, "term", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AA_, _$4_Object_46defineProperty(_94_, "isBinaryOp", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _94_ = (__constructor.prototype = _95_, new __constructor());
+  var _9D_ = (__constructor.prototype = _9E_, new __constructor());
 
-  _96_UnaryOp.prototype = _94_;
+  _9F_UnaryOp.prototype = _9D_;
 
-  _$5_Object_46setPrototypeOf(_96_UnaryOp, _A1_Operation);
+  _$5_Object_46setPrototypeOf(_9F_UnaryOp, _AG_Operation);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _96_UnaryOp, _$4_Object_46defineProperty(_94_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9F_UnaryOp, _$4_Object_46defineProperty(_9D_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  var _93_ = (__constructor.prototype = _94_, new __constructor());
+  var _9C_ = (__constructor.prototype = _9D_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _92_BinaryOp, _$4_Object_46defineProperty(_93_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _92_BinaryOp.prototype = _93_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9B_BinaryOp, _$4_Object_46defineProperty(_9C_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9B_BinaryOp.prototype = _9C_;
 
-  _$5_Object_46setPrototypeOf(_92_BinaryOp, _96_UnaryOp);
+  _$5_Object_46setPrototypeOf(_9B_BinaryOp, _9F_UnaryOp);
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9y_, _$4_Object_46defineProperty(_8x_, "parseBinop", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9z_, _$4_Object_46defineProperty(_8x_, "application", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  var _Aj_UnOpType = {
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AB_, _$4_Object_46defineProperty(_94_, "parseBinop", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AC_, _$4_Object_46defineProperty(_94_, "application", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  var _B6_UnOpType = {
     Not: 0
   };
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A0_, _$4_Object_46defineProperty(_8x_, "atom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AD_, _$4_Object_46defineProperty(_94_, "atom", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7h_, _$4_Object_46defineProperty(_65_, "compile", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-
-  var _98_ = (__constructor.prototype = _Y_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _97_UnOp, _$4_Object_46defineProperty(_98_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A2_, _$4_Object_46defineProperty(_98_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A3_, _$4_Object_46defineProperty(_98_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A4_, _$4_Object_46defineProperty(_98_, "unOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A5_, _$4_Object_46defineProperty(_98_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _97_UnOp.prototype = _98_;
-
-  _$5_Object_46setPrototypeOf(_97_UnOp, _6U_Node);
-
-  var _9B_ = (__constructor.prototype = _Y_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9A_If, _$4_Object_46defineProperty(_9B_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A6_, _$4_Object_46defineProperty(_9B_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A7_, _$4_Object_46defineProperty(_9B_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _A8_, _$4_Object_46defineProperty(_9B_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9A_If.prototype = _9B_;
-
-  _$5_Object_46setPrototypeOf(_9A_If, _6U_Node);
 
   var _9H_ = (__constructor.prototype = _Y_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9G_Prov, _$4_Object_46defineProperty(_9H_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AC_, _$4_Object_46defineProperty(_9H_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9G_UnOp, _$4_Object_46defineProperty(_9H_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AH_, _$4_Object_46defineProperty(_9H_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AI_, _$4_Object_46defineProperty(_9H_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AJ_, _$4_Object_46defineProperty(_9H_, "unOpApply", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AK_, _$4_Object_46defineProperty(_9H_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9G_UnOp.prototype = _9H_;
 
-  var _CR_ = (__constructor.prototype = _Y_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _CQ_Mod, _$4_Object_46defineProperty(_CR_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Cd_, _$4_Object_46defineProperty(_CR_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ce_, _$4_Object_46defineProperty(_CR_, "update", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Cf_, _$4_Object_46defineProperty(_CR_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _CQ_Mod.prototype = _CR_;
-
-  _$5_Object_46setPrototypeOf(_CQ_Mod, _6U_Node);
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AD_, _$4_Object_46defineProperty(_9H_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AE_, _$4_Object_46defineProperty(_9H_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AF_, _$4_Object_46defineProperty(_9H_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9G_Prov.prototype = _9H_;
-
-  _$5_Object_46setPrototypeOf(_9G_Prov, _6U_Node);
+  _$5_Object_46setPrototypeOf(_9G_UnOp, _6U_Node);
 
   var _9K_ = (__constructor.prototype = _Y_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9J_Dep, _$4_Object_46defineProperty(_9K_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AG_, _$4_Object_46defineProperty(_9K_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AH_, _$4_Object_46defineProperty(_9K_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AI_, _$4_Object_46defineProperty(_9K_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9J_Dep.prototype = _9K_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9J_If, _$4_Object_46defineProperty(_9K_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AL_, _$4_Object_46defineProperty(_9K_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AM_, _$4_Object_46defineProperty(_9K_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AN_, _$4_Object_46defineProperty(_9K_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9J_If.prototype = _9K_;
 
-  _$5_Object_46setPrototypeOf(_9J_Dep, _6U_Node);
-
-  var _9N_ = (__constructor.prototype = _Y_, new __constructor());
-
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9M_Deref, _$4_Object_46defineProperty(_9N_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AJ_, _$4_Object_46defineProperty(_9N_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AK_, _$4_Object_46defineProperty(_9N_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9M_Deref.prototype = _9N_;
-
-  _$5_Object_46setPrototypeOf(_9M_Deref, _6U_Node);
+  _$5_Object_46setPrototypeOf(_9J_If, _6U_Node);
 
   var _9Q_ = (__constructor.prototype = _Y_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9P_Delta, _$4_Object_46defineProperty(_9Q_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AL_, _$4_Object_46defineProperty(_9Q_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AM_, _$4_Object_46defineProperty(_9Q_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AN_, _$4_Object_46defineProperty(_9Q_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9P_Delta.prototype = _9Q_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9P_Pair, _$4_Object_46defineProperty(_9Q_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AR_, _$4_Object_46defineProperty(_9Q_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AS_, _$4_Object_46defineProperty(_9Q_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AT_, _$4_Object_46defineProperty(_9Q_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9P_Pair.prototype = _9Q_;
 
-  _$5_Object_46setPrototypeOf(_9P_Delta, _6U_Node);
+  _$5_Object_46setPrototypeOf(_9P_Pair, _6U_Node);
 
   var _9T_ = (__constructor.prototype = _Y_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9S_Set, _$4_Object_46defineProperty(_9T_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AO_, _$4_Object_46defineProperty(_9T_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AP_, _$4_Object_46defineProperty(_9T_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AQ_, _$4_Object_46defineProperty(_9T_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9S_Set.prototype = _9T_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9S_Prov, _$4_Object_46defineProperty(_9T_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AU_, _$4_Object_46defineProperty(_9T_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
 
-  _$5_Object_46setPrototypeOf(_9S_Set, _6U_Node);
+  var _Cz_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Cy_Mod, _$4_Object_46defineProperty(_Cz_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _DG_, _$4_Object_46defineProperty(_Cz_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _DH_, _$4_Object_46defineProperty(_Cz_, "update", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _DI_, _$4_Object_46defineProperty(_Cz_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _Cy_Mod.prototype = _Cz_;
+
+  _$5_Object_46setPrototypeOf(_Cy_Mod, _6U_Node);
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AV_, _$4_Object_46defineProperty(_9T_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AW_, _$4_Object_46defineProperty(_9T_, "deleteAndPreserveInLink", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AX_, _$4_Object_46defineProperty(_9T_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9S_Prov.prototype = _9T_;
+
+  _$5_Object_46setPrototypeOf(_9S_Prov, _6U_Node);
 
   var _9W_ = (__constructor.prototype = _Y_, new __constructor());
 
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9V_Prop, _$4_Object_46defineProperty(_9W_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AR_, _$4_Object_46defineProperty(_9W_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AS_, _$4_Object_46defineProperty(_9W_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AT_, _$4_Object_46defineProperty(_9W_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
-  _9V_Prop.prototype = _9W_;
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9V_Dep, _$4_Object_46defineProperty(_9W_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AY_, _$4_Object_46defineProperty(_9W_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _AZ_, _$4_Object_46defineProperty(_9W_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Aa_, _$4_Object_46defineProperty(_9W_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9V_Dep.prototype = _9W_;
 
-  _$5_Object_46setPrototypeOf(_9V_Prop, _6U_Node);
+  _$5_Object_46setPrototypeOf(_9V_Dep, _6U_Node);
+
+  var _9Z_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9Y_Deref, _$4_Object_46defineProperty(_9Z_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ab_, _$4_Object_46defineProperty(_9Z_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ac_, _$4_Object_46defineProperty(_9Z_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9Y_Deref.prototype = _9Z_;
+
+  _$5_Object_46setPrototypeOf(_9Y_Deref, _6U_Node);
+
+  var _9c_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9b_Delta, _$4_Object_46defineProperty(_9c_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ad_, _$4_Object_46defineProperty(_9c_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ae_, _$4_Object_46defineProperty(_9c_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Af_, _$4_Object_46defineProperty(_9c_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9b_Delta.prototype = _9c_;
+
+  _$5_Object_46setPrototypeOf(_9b_Delta, _6U_Node);
+
+  var _9f_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9e_Set, _$4_Object_46defineProperty(_9f_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ag_, _$4_Object_46defineProperty(_9f_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ah_, _$4_Object_46defineProperty(_9f_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ai_, _$4_Object_46defineProperty(_9f_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9e_Set.prototype = _9f_;
+
+  _$5_Object_46setPrototypeOf(_9e_Set, _6U_Node);
+
+  var _9i_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9h_Prop, _$4_Object_46defineProperty(_9i_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Aj_, _$4_Object_46defineProperty(_9i_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ak_, _$4_Object_46defineProperty(_9i_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Al_, _$4_Object_46defineProperty(_9i_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9h_Prop.prototype = _9i_;
+
+  _$5_Object_46setPrototypeOf(_9h_Prop, _6U_Node);
+
+  var _9l_ = (__constructor.prototype = _Y_, new __constructor());
+
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _9k_GAbs, _$4_Object_46defineProperty(_9l_, "constructor", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Am_, _$4_Object_46defineProperty(_9l_, "transition", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _An_, _$4_Object_46defineProperty(_9l_, "rewrite", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _Ao_, _$4_Object_46defineProperty(_9l_, "copy", $$0_enumerable_58false_44configurable_58true_44writable_58true);
+  _9k_GAbs.prototype = _9l_;
+
+  _$5_Object_46setPrototypeOf(_9k_GAbs, _6U_Node);
 
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7i_, _$4_Object_46defineProperty(_65_, "toGraph", $$0_enumerable_58false_44configurable_58true_44writable_58true);
   $$0_enumerable_58false_44configurable_58true_44writable_58true.value = _7j_, _$4_Object_46defineProperty(_65_, "deleteVarNode", $$0_enumerable_58false_44configurable_58true_44writable_58true);
@@ -5849,7 +6326,6 @@
   _3_machine.finished = true;
   _3_machine.readyEvalTokens = 0;
   _4_graph.machine = _3_machine;
-  var _9Y_ = _$0_global;
-  var _AU_ = console;
+  var _Ap_ = _$0_global;
   module.exports = _2_;
 }).call(global);
