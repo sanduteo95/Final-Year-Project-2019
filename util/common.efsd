@@ -237,7 +237,7 @@ let find_max = λv.
     aux (0 - 1) v    
 in
 
-let mse_datapoint_loss = λfunc. λdatapoint.
+let mse_loss_function = λfunc. λdatapoint.
     let (x , y) = datapoint in
     let error = y - (func x) in
     square error
@@ -436,4 +436,7 @@ let standardize_data = λdata.
         mapi standardize_entry row
     in
     map (λcell. let (x , y) = cell in (standardize_row x , y)) data
+in
+
+let lr_data = cons (2 , 6.5) (cons (2 , 6.5) (cons (2.1 , 10.1) (cons (2.2 , 7.2) (cons (2.2 , 7.6) (cons (2.2 , 7.9) (cons (2.2 , 8.5) (cons (2.2 , 9.1) (cons (2.2 , 9.6) (cons (2.2 , 9.6) (cons (2.2 , 10.7) (cons (2.3 , 9.6) (cons (2.4 , 7.3) (cons (2.4 , 7.9) (cons (2.4 , 7.9) (cons (2.4 , 9.1) (cons (2.4 , 9.3) (cons (2.5 , 7.9) (cons (2.5 , 8.6) (cons (2.5 , 8.8) (cons (2.5 , 8.8) (cons (2.5 , 9.3) (cons (2.5 , 11) (cons (2.5 , 12.7) (cons (2.5 , 12.7) (cons (2.6 , 7.7) (cons (2.6 , 8.3) (cons (2.6 , 9.4) (cons (2.6 , 9.4) (cons (2.6 , 10.5) (cons (2.6 , 11.5) (cons (2.7 , 8) (cons (2.7 , 9) (cons (2.7 , 9.6) (cons (2.7 , 9.6) (cons (2.7 , 9.8) (cons (2.7 , 10.4) (cons (2.7 , 11.1) (cons (2.7 , 12) (cons (2.7 , 12.5) (cons (2.8 , 9.1) (cons (2.8 , 10) (cons (2.8 , 10.2) (cons (2.8 , 11.4) (cons (2.8 , 12) (cons (2.8 , 13.3) (cons (2.8 , 13.5) (cons (2.9 , 9.4) (cons (2.9 , 10.1) (cons (2.9 , 10.6) (cons (2.9 , 11.3) (cons (2.9 , 11.8) (cons (3 , 10) (cons (3 , 10.4) (cons (3 , 10.6) (cons (3 , 11.6) (cons (3 , 12.2) (cons (3 , 12.4) (cons (3 , 12.7) (cons (3 , 13.3) (cons (3 , 13.8) (cons (3.1 , 9.9) (cons (3.1 , 11.5) (cons (3.1 , 12.1) (cons (3.1 , 12.5) (cons (3.1 , 13) (cons (3.1 , 14.3) (cons (3.2 , 11.6) (cons (3.2 , 11.9) (cons (3.2 , 12.3) (cons (3.2 , 13) (cons (3.2 , 13.5) (cons (3.2 , 13.6) (cons (3.3 , 11.5) (cons (3.3 , 12) (cons (3.3 , 14.1) (cons (3.3 , 14.9) (cons (3.3 , 15.4) (cons (3.4 , 11.2) (cons (3.4 , 12.2) (cons (3.4 , 12.4) (cons (3.4 , 12.8) (cons (3.4 , 14.4) (cons (3.5 , 11.7) (cons (3.5 , 12.9) (cons (3.5 , 15.6) (cons (3.5 , 15.7) (cons (3.5 , 17.2) (cons (3.6 , 11.8) (cons (3.6 , 13.3) (cons (3.6 , 14.8) (cons (3.6 , 15) (cons (3.7 , 11) (cons (3.8 , 14.8) (cons (3.8 , 16.8) (cons (3.9 , 14.4) (cons (3.9 , 20.5) nil))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
 in

@@ -56,7 +56,7 @@ case "$MODE" in
         if [[ "$EXT" = "efsd" ]]; then
             LOCATION="$LOCATION -g"
         fi
-        $(node --max-old-space-size=120000 --stack-size=$STACK_SIZE index.js -f $LOCATION -s $STACK > /dev/null)
+        $(node --max-old-space-size=120000 --stack-size=$STACK_SIZE index.js -1 $LOCATION -s $STACK > /dev/null)
         if [[ $FILE == *"read"* ]]; then
             TIME=$(time node --max-old-space-size=$HEAP_SIZE --stack-size=$STACK_SIZE $OUTPUT_LOCATION <<< $INPUT > /dev/null)
         else
