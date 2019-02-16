@@ -21,7 +21,8 @@
     "v1-goi-machine": "webpack --config ./lib/EFSD/UI/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/EFSD/UI/webpack.config.js",
     "v2-goi-machine": "webpack --config ./lib/EFSD/UI/v2/webpack.config.js --display-error-details; node ./lib/EFSD/UI/v2/index.js; webpack --env=v2 --config ./lib/EFSD/UI/webpack.config.js",
     "v3-goi-machine": "node ./lib/EFSD/UI/v3/index.js; webpack --env=v3 --config ./lib/EFSD/UI/webpack.config.js",
-    "term-goi-machine": "webpack --config ./lib/EFSD/term/webpack.config.js --display-error-details"
+    "term-goi-machine": "webpack --config ./lib/EFSD/term/webpack.config.js --display-error-details",
+    "build-prepack": "rm ./lib/prepack/EFSD.min.js; rm ./lib/prepack/toyLambda.min.js; webpack --config ./lib/prepack/webpack.config.js --display-modules"
   },
   "repository": {
     "type": "git",
@@ -47,7 +48,15 @@
     "readline": "^1.3.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-flow": "^7.0.0",
+    "@babel/plugin-transform-flow-strip-types": "^7.0.0",
+    "@babel/plugin-transform-react-display-name": "^7.0.0",
+    "@babel/plugin-transform-react-jsx": "^7.0.0",
     "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
     "babel-loader": "^8.0.4",
     "chai": "^4.2.0",
     "exports-loader": "^0.7.0",

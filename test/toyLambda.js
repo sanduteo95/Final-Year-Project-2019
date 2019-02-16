@@ -79,7 +79,7 @@ describe('test toyLambda', function () {
             if (results[file]) {
                 it(file + ' should pass with ' + results[file], function (done) {
                     const code = fs.readFileSync(path.join(input, '/toyLambda/' + file), 'utf8');
-                    boilerplate.futamuraBoilerplate(code, 125, 0)(`${input}/toyLambda/${file}`)
+                    boilerplate.futamura1Boilerplate(code, 125, 0)(`${input}/toyLambda/${file}`)
                         .then(futamuraResult => {  
                             if (results[file] === 'function') {
                                 const result = require(futamuraResult);

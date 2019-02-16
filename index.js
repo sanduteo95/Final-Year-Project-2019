@@ -11,6 +11,7 @@ const strategyReport = require('./lib/report/strategyReport.js');
 let maxTermCalls = 125;
 let isGoIMachine = false;
 let addClosure = false;
+let closureStrategy = '';
 
 program
     .version('1.0.0')
@@ -19,7 +20,9 @@ program
     .option('-g, --goiMachine', 'Run the program on the GoIMachine for EFSD - otherwise it runs on the oy langauge')
     .option('-p, --runParser <file>', 'Run parser on program in the provided file')
     .option('-i, --runInterpreter <file>', 'Run interpreter on program in the provided file')
-    .option('-f, --runFutamura <file>', 'Apply the first Futamura projection on program in the provided file')
+    .option('-t, --runCompiler <file>', 'Run compiler/translator on program in the provided file')
+    .option('-1, --runFutamura1 <file>', 'Apply the First Futamura projections on program in the provided file')
+    .option('-2, --runFutamura2', 'Apply the First Futamura projections on program in the provided file')
     .option('-c, --addClosure [number]', 'Apply the Google Closure Compiler in strtegy with given number')
     .option('-d, --debug', 'Allow some debug logs')
     .option('-s, --stack [number]', 'Specifiy the number of allowed nested calls (before timeouts are added)')
@@ -43,7 +46,7 @@ if (program.goiMachine) {
     isGoIMachine = false;
 }
 
-if (program.createReport && (program.runParser || program.runInterpreter || program.runFutamura || program.debug || program.stack )) {
+if (program.createReport && (program.runParser || program.runInterpreter || program.runCompiler || program.runFutamura1 || program.runFutamura2 || program.debug || program.stack )) {
     console.error('Incorrect usage. Cannot run benchmarks with -p, -i, -f, -d or -s options.');
     console.error('Correct usage is:');
     console.log('  $ [command] -r [-g]  # Compiler a benchmark report');
@@ -69,7 +72,7 @@ if (program.stack) {
 }
 
 if (program.addClosure) {
-    if (!program.runFutamura && !program.createReport) {
+    if (!program.runFutamura1 && !program.runFutamura2 && !program.createReport) {
         console.error('Incorrect usage. Cannot run the Google Closure Compiler outside of the Futamura Projection or the report.');
         console.error('Correct usage is:');
         console.log('  $ [command] -f <pathToFile> [-c strategy] [-g] [-d] [-s value]');
@@ -77,20 +80,21 @@ if (program.addClosure) {
         return;
     } else {
         addClosure = true;
-        if (program.createReport && !isNaN(program.addClosure) && (program.addClosure === '1' || program.addClosure != true)) {
+        if (!program.runFutamura2 && !program.createReport && !isNaN(program.addClosure) && (program.addClosure === '1' || program.addClosure != true)) {
             closureStrategy = parseInt(program.addClosure);
             if (closureStrategy < 1 || closureStrategy > 5) {
                 console.error('Incorrect usage. Closure strategy option must be a number between 1-5.');
                 console.error('Correct usage is:');
-                console.log('  $ [command] -f <pathToFile> -c 1  # runs Closure');
-                console.log('  $ [command] -f <pathToFile> -c 2  # runs Closure, then Prepack');
-                console.log('  $ [command] -f <pathToFile> -c 3  # runs Prepack, then Closure');
-                console.log('  $ [command] -f <pathToFile> -c 4  # runs Closure, then Prepack, then Closure');
-                console.log('  $ [command] -f <pathToFile> -c 5  # runs Prepack, then Closure, then Prepack');
+                console.log('  $ [command] -1 <pathToFile> -c 1  # runs Closure');
+                console.log('  $ [command] -1 <pathToFile> -c 2  # runs Closure, then Prepack');
+                console.log('  $ [command] -1 <pathToFile> -c 3  # runs Prepack, then Closure');
+                console.log('  $ [command] -1 <pathToFile> -c 4  # runs Closure, then Prepack, then Closure');
+                console.log('  $ [command] -1 <pathToFile> -c 5  # runs Prepack, then Closure, then Prepack');
+                console.log('  $ [command] -2 -c                 # runs Closure on Prepack and the interprereter');
                 return;
             }
         } else {
-            if (!program.createReport) {
+            if (!program.runFutamura2 && !program.createReport) {
                 console.error('Closure strategy option must be provided and be a number between 1-5.');
                 return;
             }
@@ -114,8 +118,18 @@ if (program.runParser) {
         return;
     }
     boilerplate.interpreterBoilerplate(code, maxTermCalls)(fileName);
-} else if (program.runFutamura) {
-    const fileName = program.runFutamura;
+} else if (program.runCompiler) {
+    const fileName = program.runCompiler;
+    if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
+        console.error('The EFSD paradigm only accepts files with extension .efsd.');
+        return;
+    } else if (!isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'lambda') {
+        console.error('The toy lambda calculus only accepts fiels with extension .lambda.');
+        return;
+    }
+    boilerplate.compilerBoilerplate(fileName);
+} else if (program.runFutamura1) {
+    const fileName = program.runFutamura1;
     const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
     if (isGoIMachine && fileName.substring(fileName.lastIndexOf('.') + 1) !== 'efsd') {
         console.error('The EFSD paradigm only accepts files with extension .efsd.');
@@ -124,7 +138,14 @@ if (program.runParser) {
         console.error('The toy lambda calculus only accepts fiels with extension .lambda.');
         return;
     }
-    return boilerplate.futamuraBoilerplate(code, maxTermCalls, addClosure, closureStrategy)(fileName)
+    return boilerplate.futamura1Boilerplate(code, maxTermCalls, addClosure, closureStrategy)(fileName)
+        .then(result => {
+            console.log(result);
+        }).catch(err => {
+            console.error('Failed with: ' + err.message);
+        });
+} else if (program.runFutamura2) {
+    return boilerplate.futamura2Boilerplate(isGoIMachine, addClosure)
         .then(result => {
             console.log(result);
         }).catch(err => {
