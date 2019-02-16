@@ -49,7 +49,7 @@ describe('test EFSD', function () {
                 it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
                     const code = fs.readFileSync(path.join(input, '/EFSD/' + file), 'utf8');
 
-                    boilerplate.futamuraBoilerplate(code, 125, false)(`${input}/EFSD/${file}`)
+                    boilerplate.futamura1Boilerplate(code, 125, false)(`${input}/EFSD/${file}`)
                         .then(futamuraResult => {
                             if (file === 'alt.efsd' || file === 'fir.efsd' || file === 'max.efsd' || file === 'rsum.efsd' || file === 'dfg.efsd' || file === 'link.efsd') {
                                 // cannot test properly without executing the script
