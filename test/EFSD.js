@@ -12,12 +12,17 @@ const output = path.join(__dirname, '../output');
 describe('test EFSD', function () {
     const results = {
         'alt.efsd': 2,
+        'avg3.efsd': 1,
         'basic.efsd': 5,
+        'cellular_automata.efsd': false,
         'dfg.efsd': 4,
         'fir.efsd': 1,
+        'incremental.efsd': 1,
+        'light_control.efsd': false,
         'link.efsd': undefined,
         'max.efsd': 3,
-        'rsum.efsd': 21
+        'rsum.efsd': 21,
+        // 'planets.efsd': false N
     };
 
     describe('test interpret', function () {

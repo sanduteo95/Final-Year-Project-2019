@@ -33,28 +33,6 @@ let tuple_smaller_than = λx. λy.
         ((fstX <= fstY && fstY <= fstX) && (sndX <= sndY && sndX + 1 <= sndY))
 in
 
-let unit = false in
-
-let prev = {0} in
-
-let a = 8121 in
-let c = 28411 in
-
-let getModulus = rec f. λnumber. λdivider.
-	if divider <= number
-	then
-		f (number - divider) divider
-	else number
-in
-
-let generateRandomNumber = λmax.
-	let prevValue = peek prev in
-	let prevValue = getModulus (a * prevValue + c) max in
-	let _ = set prev to {prevValue} in
-	let _ = step in
-	prevValue
-in
-
 let pair = λx.λy.λp. p x y in
 let fst = λp.p (λx.λy.x) in
 let snd = λp.p (λx.λy.y) in
