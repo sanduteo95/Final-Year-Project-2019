@@ -25,7 +25,7 @@
   var _8_ = [,, _9_, _9_];
 
   var _3_ = callback => {
-    const readline = require('readline');
+    let readline = require('readline');
 
     const rl = readline.createInterface({
       input: process.stdin,
@@ -61,7 +61,7 @@
       throw err;
     }
 
-    console.log(result);
+    console.log(result.toString());
     module.exports = result;
   };
 

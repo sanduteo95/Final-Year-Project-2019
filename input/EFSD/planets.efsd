@@ -1,29 +1,18 @@
 let unit = false in
 
-let prev = {0} in
-
-let a = 8121 in
-let c = 28411 in
-
-let getModulus = rec f. λnumber. λdivider.
-	if divider <= number
-	then
-		f (number - divider) divider
-	else number
-in
+let nr = cell 0 in
 
 let generateRandomNumber = λmax.
-	let prevValue = peek prev in
-	let prevValue = getModulus (a * prevValue + c) max in
-	let _ = set prev to {prevValue} in
-	let _ = step in
-	prevValue
-in
-
-let generateRandomFloat = λmax.
-  let value1 = (generateRandomNumber max) / max in
-  let value2 = (generateRandomNumber max) / max in
-  value1/value2 * max/2
+  let old_nr = peek nr in
+  if old_nr <= max
+  then
+   	let _ = set nr to (old_nr + 1) in
+	  let _ = step in
+    peek nr
+  else
+    let _ = set nr to 0 in
+	  let _ = step in
+    peek nr
 in
 
 let planet = λid.λmass.λpos.λspeed. (id , mass , pos , speed) in
@@ -60,8 +49,6 @@ let cons = λh.λt. pair false (pair h t) in
 let head = λz. fst (snd z) in
 let tail = λz. snd (snd z) in
 
-let unit = false in
-
 let iter = λf. λx.
 	let aux = rec g. λx.
 		if isnil x 
@@ -79,18 +66,18 @@ let size_x = 1280 in
 let size_y = 720 in 
 
 let random_speed = λ_.
-  ((generateRandomFloat 0 100) - 50) , ((generateRandomFloat 0 100) - 50) , ((generateRandomFloat 0 100) - 50)
+  ((generateRandomNumber 100) - 50) , (((generateRandomNumber 100) - 50) , ((generateRandomNumber 100) - 50))
 in
 
 let new_pos = λx. λy.
   let max_x_2 = size_x / 2 in
   let max_y_2 = size_y / 2 in
-  (x - max_x_2) , (y - max_y_2) , ((generateRandomFloat 0 200) - 100)
+  (x - max_x_2) , (y - max_y_2) , ((generateRandomNumber 200) - 100)
 in
 
 let random_pos = λ_.
-  let x = ((generateRandomNumber 0 200) - 100) + (size_x) / 2 in
-  let y = ((generateRandomNumber 0 200) - 100) + (size_y) / 2 in
+  let x = ((generateRandomNumber 200) - 100) + (size_x) / 2 in
+  let y = ((generateRandomNumber 200) - 100) + (size_y) / 2 in
   new_pos x y
 in
 
@@ -120,10 +107,10 @@ let new_planet = λn.
   let mass = 1 in 
   let pos = random_pos unit in 
   let speed = random_speed unit in 
-  {planet id mass pos speed}
+  cell (planet id mass pos speed)
 in
 
-let fold = rec g. λf. λacc. λx.
+let foldl = rec g. λf. λacc. λx.
   if isnil x 
   then
     acc
@@ -158,7 +145,7 @@ let compute_pos = λme. λall.
   let speed = get_speed me in
   let (x' , z') = speed in
   let (x' , y') = x' in
-  let fold_all = fold (λfpos. λp. 
+  let fold_all = foldl (λfpos. λp. 
     let (fx , fz) = fpos in
     let (fx , fy) = fx in
     let new_pos = force me (peek p) in
@@ -200,7 +187,7 @@ in
 let n = 10 in 
 let total_step = 100 in
 let all = create_planets n in 
-let sun = {planet 0 30000 (0 , 0 , 0) (0 , 0 , 0)} in
+let sun = cell (planet 0 30000 (0 , 0 , 0) (0 , 0 , 0)) in
 let all = cons sun all in 
 let _ = iter (λp. link p to (compute_pos (peek p) all)) all in
 let _ = for_loop total_step in

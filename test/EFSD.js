@@ -15,14 +15,18 @@ describe('test EFSD', function () {
         'avg3.efsd': 1,
         'basic.efsd': 5,
         'cellular_automata.efsd': false,
+        'confidence_interval.efsd': false,
         'dfg.efsd': 4,
         'fir.efsd': 1,
+        'iir.efsd': 0,
         'incremental.efsd': 1,
         'light_control.efsd': false,
         'link.efsd': undefined,
         'max.efsd': 3,
         'rsum.efsd': 21,
-        // 'planets.efsd': false N
+        'tensor_creation.efsd': '((28,[10,18]),(36,[22,14]))',
+        'weighted_regression.efsd': 7,
+        'planets.efsd': '(((1,1),((-99,-98),-97)),(-44,(-45,-46)))'
     };
 
     describe('test interpret', function () {

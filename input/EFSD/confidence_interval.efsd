@@ -1,0 +1,8 @@
+let x = cell 0 in
+let a = pc 1 in
+let ci = (a * x + (pc 1) , a * x + (pc 2)) in
+let ps = abs ci in
+let (cim , _) = ci in
+let _ = link x to 7 in
+let _ = step in
+cim

@@ -1,3 +1,5 @@
+let unit = false in
+
 let square = λx. x * x in
 
 let pair = λx.λy.λp. p x y in
@@ -10,28 +12,10 @@ let cons = λh.λt. pair false (pair h t) in
 let head = λz. fst (snd z) in
 let tail = λz. snd (snd z) in
 
-let length = λx.
-	let aux = rec g. λacc. λx.
-		if isnil x
-		then 
-			acc
-		else
-			g (acc + 1) (tail x)
-	in aux 0 x
-in
-
-let fold = rec g. λf. λacc. λx.
-  if isnil x 
-  then
-    acc
-  else
-    g f (f acc (head x)) (tail x)
-in
-
 let nSteps = rec f. λn.
     if n <= 0 && 0 <= n
     then 
-        _ 
+        unit 
     else 
         let _ = step in 
         f (n - 1)
@@ -41,63 +25,51 @@ let least_square_loss = λy. λy'.
     square (y - y')
 in
 
-let gradient_descent = rec gradient_descent. λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
-    let calculate_loss = λdata.
-        let len = length data in
-        let calculate_loss' = rec calculate_loss'. λacc. λdata.
-            if isnil data 
-                acc / len
-            else
-                let (x , y) = head data in
-                let _ = set input to x in
-                let _ = nSteps num_layers in 
-                let y' = peek output in
-                calculate_loss' (acc + loss_function y y') (tail data)
-        in
-        calculate_loss' 0 data
-    in
-    let gradient_descent' = rec gradient_descent'. λepochs.
-        if epochs <= 0 && 0 <= epochs
-        then
-            false
-        else
-            let d = 0.001 in
-            let g = λe.
-                let old = calculate_loss data in
-                let _ = setp parameters to (parameters ⊞ (d ⊠ e)) in
-                let new = calculate_loss data in
-                ((old - new) / d) ⊠ e
-            in
-            let updated_parameters = fold (λe. λps. (0 - learning_rate * (g e)) ⊞ ps) parameters in
-            let _ = setp parameters to updated_parameters in
-            gradient_descent' (epochs - 1)
-    in
-    gradient_descent' epochs
+let calculate_loss = λinput. λoutput. λdata. λloss_function. λnum_layers.
+    let calculate_loss' = rec g. λlen. λacc. λinput. λoutput. λdata. λloss_function. λnum_layers.
+      if isnil data 
+      then
+        acc / len
+      else
+        let (x , y) = head data in
+        let _ = set input to x in
+        let _ = nSteps num_layers in
+        let y' = peek output in
+        g (len + 1) (acc + (loss_function y y')) input output (tail data) loss_function num_layers
+     in
+     calculate_loss' 0 0 input output data loss_function num_layers
 in
 
-let linear_regression = λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
-    let _ = gradient_descent input output parameters loss_function data learning_rate epochs num_layers in
-    let calculate_output =  λinput. λoutput. λnum_layers. λvalue.
-        let _ = set input to value in
-        let _ = nSteps num_layers in 
-        peek output
-    in
-    calculate_output input output num_layers
+let gradient_descent = rec f. λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
+    if epochs <= 0 && 0 <= epochs
+    then
+      unit
+    else
+      let d = 0.001 in
+      let g = λe.
+          let old = calculate_loss input output data loss_function num_layers in
+          let _ = setp parameters to (parameters ⊞ (d ⊠ e)) in
+          let new = calculate_loss input output data loss_function num_layers in
+          (((old - new) / d) * learning_rate) ⊠ e
+      in
+      let updated_parameters = fold (λe. λps. (g e) ⊞ ps) parameters in
+      let _ = setp parameters to updated_parameters in
+      f input output parameters loss_function data learning_rate (epochs - 1) num_layers
+in
+
+let data = cons (2 , 6.5) (cons (2 , 6.5) (cons (2.1 , 10.1) (cons (2.2 , 7.2) (cons (2.2 , 7.6) (cons (2.2 , 7.9) (cons (2.2 , 8.5) (cons (2.2 , 9.1) (cons (2.2 , 9.6) (cons (2.2 , 9.6) nil)))))))))
 in
 
 let x = cell 0 in
-let w = pc 1 in
+let w = pc 0 in
 let b = pc 0 in
 
 let y = w * x + b in
 let ps = abs y in 
 
-let dataset = cons (10.0 , 0.0) (cons (12.0 , 1.0) (cons (14.0 , 2.0) (cons (16.0 , 3.0) (cons (18.0 , 4.0) (cons (20.0 , 5.0) nil))))) in
+let learning_rate = 0.0001 in
+let epochs = 3 in
+let num_layers = 1 in
 
-let learning_rate = 0.001 in
-let epochs = 100 in
-let num_layers = 0 in
-
-let f = linear_regression x y ps least_square_loss dataset learning_rate epochs num_layers in
-f 16
-
+let _ = gradient_descent x y ps least_square_loss data learning_rate epochs num_layers in
+ps

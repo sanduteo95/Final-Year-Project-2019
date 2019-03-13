@@ -1,0 +1,54 @@
+let nil = 0 in
+let iir = λx. λffw. λfbw.
+  let forward = rec g. λx. λl.
+    if l <= nil 
+    then 
+      (x, 0)
+    else 
+      let (f, fs) = l in 
+      let (inp, sum) = g x fs in 
+      let s = cell 0 in 
+      let _ = link s to inp in  
+      (s, (f s + sum)) 
+  in 
+  let backward = rec g. λx. λl.
+    if l <= nil 
+    then 
+      (x, (x, nil))
+    else 
+      let (f, fs) = l in 
+      if fs <= nil
+      then 
+        let s = cell 0 in
+        let _ = link s to x in
+        (s, ((x - f s), s))
+      else 
+        let (out, sum) = g x fs in 
+        let (sum, inp) = sum in
+        let s = cell 0 in 
+        let _ = link s to out in  
+        (s, ((sum - f s), inp))
+  in 
+  let (_, out) = forward x ffw in
+  let (_, out) = backward out fbw in 
+  let (out, inp) = out in
+  if inp <= nil 
+  then out
+  else 
+    let _ = link inp to out in out
+in
+
+let test = λx. 
+   let w = λx. x / 3 in 
+   let l = (w, (w, (w, nil))) in 
+   let out = iir x l l in 
+   out
+in 
+
+let inp = cell 0 in 
+let _ = link inp to (deref inp) + 1 in
+let y = test (deref inp) in 
+let _ = step in
+let _ = step in
+let _ = step in
+peek y 
