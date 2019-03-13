@@ -74,13 +74,13 @@ let get_neighbour = λi. λcell_array.
 in
 
 let create_automata = λsize. λinit_array. λtransition.
-	let cell_array = init size (λi. {getNth i init_array}) in
-	iteri (λi. λcell. 
+	let cell_array = init size (λi. cell (getNth i init_array)) in
+	iteri (λi. λcell_elem. 
 		let neighbour = get_neighbour i cell_array in
 		let (a , c) = neighbour in 
 		let (a , b) = a in
-		let _ = link cell to (transition a b c) in
-		cell) cell_array
+		let _ = link cell_elem to (transition a b c) in
+		cell_elem) cell_array
 in
 
 let equal = λa. λb. λc. λcompA. λcompB. λcompC.

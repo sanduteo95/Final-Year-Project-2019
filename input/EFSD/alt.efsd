@@ -1,5 +1,5 @@
 let state_machine = λinit. λtrans. λinp.
-  let state = {init} in
+  let state = cell init in
   let _ = link state to (trans state inp) in
   state
 in

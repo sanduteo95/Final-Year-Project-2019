@@ -1,0 +1,22 @@
+let x = cell 0 in
+let w = pc 1 in
+let b = pc 2 in
+let y = w * x + (pc 3) in
+let z = b + (pc 4) * x in
+let ps1 = abs y in
+let ps2 = abs z in
+
+let update = rec f. λparameters. λepochs.
+  if epochs <= 0 && 0 <= epochs then
+    false
+  else
+    let updated_parameters = fold (λe. λps. e ⊞ ps) parameters in
+    let _ = setp parameters to (updated_parameters ⊞ updated_parameters) in
+    f parameters (epochs - 1)
+in
+
+let _ = link x to 1 in
+let _ = step in
+let _ = update ps1 2 in
+let _ = update ps2 2 in
+((y , ps1), (z , ps2))

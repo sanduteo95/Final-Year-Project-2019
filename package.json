@@ -12,8 +12,8 @@
   },
   "scripts": {
     "test": "npm run test-lambda; npm run test-efsd",
-    "test-lambda": "mocha ./test/toyLambda.js",
-    "test-efsd": "mocha ./test/EFSD.js",
+    "test-lambda": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/toyLambda.js",
+    "test-efsd": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/EFSD.js",
     "create-report": "npm run create-lambda-report; npm run create-efsd-report",
     "create-strategy-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -cr",
     "create-lambda-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r",

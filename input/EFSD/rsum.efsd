@@ -1,11 +1,11 @@
 let signal =  
-  let s = {1} in
+  let s = cell 1 in
   let _ = link s to (deref s) + 1 in
   s
 in
 
 let rsum = λi. 
-  let s = {0} in
+  let s = cell 0 in
   let _ = link s to (deref s) + i in
   s
 in

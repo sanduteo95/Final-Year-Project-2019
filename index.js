@@ -70,7 +70,6 @@ if (program.stack) {
         return;
     }
 }
-
 if (program.addClosure) {
     if (!program.runFutamura1 && !program.runFutamura2 && !program.createReport) {
         console.error('Incorrect usage. Cannot run the Google Closure Compiler outside of the Futamura Projection or the report.');

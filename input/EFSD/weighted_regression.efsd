@@ -1,0 +1,8 @@
+let x = cell 0 in
+let wr = ((pc 1) * x + (pc 0) , (pc 1) * x + (pc 0)) in
+let ps = abs wr in
+let (wrm , _) = wr in
+let _ = link x to 7 in
+let _ = step in
+wrm
+

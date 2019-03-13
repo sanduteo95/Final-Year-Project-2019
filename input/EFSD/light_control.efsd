@@ -1,31 +1,15 @@
 let unit = false in
 
-let prev = {0} in
-
-let a = 8121 in
-let c = 28411 in
-
-let getModulus = rec f. λnumber. λdivider.
-	if divider <= number
-	then
-		f (number - divider) divider
-	else number
-in
-
-let generateRandomNumber = λmax.
-	let prevValue = peek prev in
-	let prevValue = getModulus (a * prevValue + c) max in
-	let _ = set prev to {prevValue} in
-	let _ = step in
-	prevValue
-in
+let bool = cell false in
 
 let generateRandomBool = λ_.
-    generateRandomNumber 100 <= 50
+	let _ = set bool to true in
+	let _ = step in
+    peek bool
 in
 
 let create_transducer = λinit. λinput. λtransition. λoutF.
-	let state = {init} in 
+	let state = cell init in 
 	let _ = link state to (transition state input) in 
  	input , (outF state)
 in
@@ -61,6 +45,6 @@ let transition = λstate. λinput.
 in
 
 let n = 100 in 
-let input = {switchOn} in
+let input = cell switchOn in
 let transducer = create_transducer off input transition (λx.x) in
 run transducer (λx.unit) n
