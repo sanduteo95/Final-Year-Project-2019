@@ -1,0 +1,125 @@
+let unit = false in
+
+let square = λx. x * x in
+
+let sqrt = λn. 
+    let e = 0.0001 in
+    let aux = rec g. λguess. λr.
+        if ~((guess * guess - n) <= e)
+        then
+            let r = n/guess in
+            g ((guess + r)/2) r
+        else 
+            guess
+    in
+    aux (n/2) 0
+in
+
+let absolute = λnumber. 
+  if number <= 0 
+  then
+    0 - number
+  else
+    number
+in
+
+let smaller_than = λx. λy.
+    x <= y && x + 1 <= y
+in
+
+let pair = λx.λy.λp. p x y in
+let fst = λp.p (λx.λy.x) in
+let snd = λp.p (λx.λy.y) in
+
+let nil = pair true true in
+let isnil = fst in
+let cons = λh.λt. pair false (pair h t) in
+let head = λz. fst (snd z) in
+let tail = λz. snd (snd z) in
+
+let length = λx.
+	let aux = rec g. λacc. λx.
+		if isnil x
+		then 
+			acc
+		else
+			g (acc + 1) (tail x)
+	in aux 0 x
+in
+
+let nSteps = rec f. λn.
+    if n <= 0 && 0 <= n
+    then 
+        unit 
+    else 
+        let _ = step in 
+        f (n - 1)
+in
+
+let least_square_loss = λy. λy'.
+    square (y - y')
+in
+
+let calculate_loss = λinput. λoutput. λdata. λloss_function. λnum_layers.
+    let calculate_loss' = rec f. λlen. λacc1. λacc2. λacc3. λinput. λoutput. λdata. λloss_function. λnum_layers.
+        if isnil data 
+        then
+            ((acc1 + acc2) / (2 * len) , acc3)
+        else
+            let (x , y) = head data in
+            let _ = set input to x in
+            let _ = nSteps num_layers in 
+            let (y1 , y2) = output in
+            let y1 = peek y1 in
+            let y2 = peek y2 in
+            let distance = 
+                if acc1 <= 0 && 0 <= acc1 && acc2 <= 0 && 0 <= acc2
+                then
+                    sqrt (absolute ((square y1) - (square y2)))
+                else
+                    acc3
+            in
+            if ((smaller_than y1 y) && (smaller_than y2 y)) || ~(y1 <= y || y2 <= y)
+            then
+                f (len + 1) acc1 acc2 distance input output (tail data) loss_function num_layers
+            else
+                f (len + 1) (acc1 + (loss_function y y1)) (acc2 + (loss_function y y2)) distance input output (tail data) loss_function num_layers
+    in
+    let (avg_mse , distance) = calculate_loss' 0 0 0 0 input output data loss_function num_layers in
+    avg_mse + (square distance)
+in
+
+let gradient_descent = rec f. λinput. λoutput. λparameters. λloss_function. λdata. λlearning_rate. λepochs. λnum_layers.
+    if epochs <= 0 && 0 <= epochs
+    then
+        nSteps num_layers
+    else
+        let d = 0.001 in
+        let g = λe.
+            let old = calculate_loss input output data loss_function num_layers in
+            let _ = setp parameters to (parameters ⊞ (d ⊠ e)) in
+            let new = calculate_loss input output data loss_function num_layers in
+            (((old - new) / d) * learning_rate) ⊠ e
+        in
+        let updated_parameters = fold (λe. λps. (g e) ⊞ ps) parameters in
+        let _ = setp parameters to updated_parameters in
+        f input output parameters loss_function data learning_rate (epochs - 1) num_layers
+in
+
+let data = cons (2 , 6.5) (cons (2 , 6.5) (cons (2.1 , 10.1) (cons (2.2 , 7.2) (cons (2.2 , 7.6) (cons (2.2 , 7.9) (cons (2.2 , 8.5) (cons (2.2 , 9.1) (cons (2.2 , 9.6) (cons (2.2 , 9.6) nil)))))))))
+in
+
+let x = cell 0 in
+let a = pc 1 in
+let m_1 = pc 1 in
+let m_2 = pc 0 in 
+
+let y = a * x + m_1 , a * x + m_2 in
+let ps = abs y in 
+
+let learning_rate = 0.0001 in
+let epochs = 1 in
+let num_layers = 1 in
+
+let _ = gradient_descent x y ps least_square_loss data learning_rate epochs num_layers in
+ps

@@ -27,9 +27,9 @@ else
 fi
 
 # Get the language and extension
-if [[ $FILE == *"efsd"* ]]; then
-    LANGUAGE="EFSD"
-    EXT="efsd"
+if [[ $FILE == *"ssd"* ]]; then
+    LANGUAGE="SSD"
+    EXT="SSD"
 fi
 
 # Only get the real time
@@ -39,7 +39,7 @@ case "$MODE" in
     "-i")
         # Get the location
         LOCATION="input/$LANGUAGE/$FILE"
-        if [[ "$EXT" = "efsd" ]]; then
+        if [[ "$EXT" = "ssd" ]]; then
             LOCATION="$LOCATION -g"
         fi
         if [[ $FILE == *"read"* ]]; then
@@ -53,7 +53,7 @@ case "$MODE" in
         NEW_EXT="js"
         LOCATION="input/$LANGUAGE/$FILE"
         OUTPUT_LOCATION="output/$LANGUAGE/${FILE/$EXT/$NEW_EXT}"
-        if [[ "$EXT" = "efsd" ]]; then
+        if [[ "$EXT" = "ssd" ]]; then
             LOCATION="$LOCATION -g"
         fi
         $(node --max-old-space-size=120000 --stack-size=$STACK_SIZE index.js -1 $LOCATION -s $STACK > /dev/null)
@@ -65,10 +65,10 @@ case "$MODE" in
         ;;
     "-o")
         if [[ $FILE == *"lambda"* ]]; then
-            echo $"The OCaml mode only works on the EFSD."
+            echo $"The OCaml mode only works on the SSD."
             exit 1
         fi
-        FILE=${FILE/.efsd/}
+        FILE=${FILE/.ssd/}
         # if running in Ubuntu/Debian, we cannot use sh
         if [[ "$OSTYPE" == "linux-gnu" ]]; then
             cd ../EFSD; ./build_example.sh $FILE -js
@@ -99,10 +99,10 @@ case "$MODE" in
         ;;
     "-a")
         if [[ $FILE == *"lambda"* ]]; then
-            echo $"The Agda mode only works on the EFSD."
+            echo $"The Agda mode only works on the SSD."
             exit 1
         fi
-        FILE=${FILE/.efsd/}
+        FILE=${FILE/.ssd/}
         # if running in Ubuntu/Debian, we cannot use sh
         if [[ "$OSTYPE" == "linux-gnu" ]]; then
             cd ../itf-impl/Agda; ./build_example.sh $FILE
