@@ -61,7 +61,10 @@
       throw err;
     }
 
-    console.log(result.toString());
+    if (result) {
+      console.log(result.toString());
+    }
+
     module.exports = result;
   };
 

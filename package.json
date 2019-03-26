@@ -1,7 +1,7 @@
 {
   "name": "futamura-js",
   "version": "1.0.0",
-  "description": "Application of the first Futamura Projections on a toy lambda calculus language",
+  "description": "Application of the first Futamura Projections on a Functional Dataflow Language",
   "main": "index.js",
   "directories": {
     "lib": "lib"
@@ -11,18 +11,19 @@
     "futamura-js": "./index.js"
   },
   "scripts": {
-    "test": "npm run test-lambda; npm run test-efsd",
+    "test": "npm run test-lambda; npm run test-ssd; npm run test-cli",
     "test-lambda": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/toyLambda.js",
-    "test-efsd": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/EFSD.js",
-    "create-report": "npm run create-lambda-report; npm run create-efsd-report",
-    "create-strategy-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -cr",
+    "test-ssd": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/SSD.js",
+    "test-cli": "mocha --max-old-space-size=120000 --stack-size=100000 ./test/index.js",
+    "create-report": "npm run create-strategy-report; npm run create-lambda-report; npm run create-ssd-report",
+    "create-strategy-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r -o; rm output/*/cc-*.js; rm output/*/pp-*.js",
     "create-lambda-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r",
-    "create-efsd-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r -g",
-    "v1-goi-machine": "webpack --config ./lib/EFSD/UI/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/EFSD/UI/webpack.config.js",
-    "v2-goi-machine": "webpack --config ./lib/EFSD/UI/v2/webpack.config.js --display-error-details; node ./lib/EFSD/UI/v2/index.js; webpack --env=v2 --config ./lib/EFSD/UI/webpack.config.js",
-    "v3-goi-machine": "node ./lib/EFSD/UI/v3/index.js; webpack --env=v3 --config ./lib/EFSD/UI/webpack.config.js",
-    "term-goi-machine": "webpack --config ./lib/EFSD/term/webpack.config.js --display-error-details",
-    "build-prepack": "rm ./lib/prepack/EFSD.min.js; rm ./lib/prepack/toyLambda.min.js; webpack --config ./lib/prepack/webpack.config.js --display-modules"
+    "create-ssd-report": "caffeinate node --max-old-space-size=120000 --stack-size=100000 index.js -r -g; rm output/SSD/ML/cc-*.js; rm output/SSD/ML/pp-*.js",
+    "v1-goi-machine": "echo \"WARNING: To run this command you need to clone this repo: https://github.com/sanduteo95/EFSD-vis. \"; webpack --config ./lib/SSD/UI/v1/webpack.config.js --display-error-details; webpack --env=v1 --config ./lib/SSD/UI/webpack.config.js",
+    "v2-goi-machine": "echo \"WARNING: To run this command you need to clone this repo: https://github.com/sanduteo95/EFSD-vis. \";webpack --config ./lib/SSD/UI/v2/webpack.config.js --display-error-details; node ./lib/SSD/UI/v2/index.js; webpack --env=v2 --config ./lib/SSD/UI/webpack.config.js",
+    "v3-goi-machine": "echo \"WARNING: To run this command you need to clone this repo: https://github.com/sanduteo95/EFSD-vis. \";node ./lib/SSD/UI/v3/index.js; webpack --env=v3 --config ./lib/SSD/UI/webpack.config.js",
+    "term-goi-machine": "webpack --config ./lib/SSD/term/webpack.config.js --display-error-details",
+    "build-prepack": "rm ./lib/prepack/SSD.min.js; rm ./lib/prepack/toyLambda.min.js; webpack --config ./lib/prepack/webpack.config.js --display-modules"
   },
   "repository": {
     "type": "git",

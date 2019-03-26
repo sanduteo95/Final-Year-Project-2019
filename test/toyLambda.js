@@ -54,7 +54,7 @@ describe('test toyLambda', function () {
                         });
                     } else {
                         const code = fs.readFileSync(path.join(input, '/toyLambda/' + file), 'utf8');
-                        boilerplate.interpreterBoilerplateTest(code, function (err, result) {
+                        boilerplate.interpreterBoilerplateTest(`${input}/toyLambda/${file}`, code, function (err, result) {
                             expect(err).equal(null);
     
                             if (results[file] === 'function') {
@@ -63,7 +63,7 @@ describe('test toyLambda', function () {
                                 expect(result).deep.equal(results[file]);
                             }
                             done();
-                        })(`${input}/toyLambda/${file}`);
+                        }, false);
                     }
                 });
             }
@@ -79,7 +79,7 @@ describe('test toyLambda', function () {
             if (results[file]) {
                 it(file + ' should pass with ' + results[file], function (done) {
                     const code = fs.readFileSync(path.join(input, '/toyLambda/' + file), 'utf8');
-                    boilerplate.futamura1Boilerplate(code, 125, 0)(`${input}/toyLambda/${file}`)
+                    boilerplate.futamura1Boilerplate(`${input}/toyLambda/${file}`, code, 125, 0, false)
                         .then(futamuraResult => {  
                             if (results[file] === 'function') {
                                 const result = require(futamuraResult);
