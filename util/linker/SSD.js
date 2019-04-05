@@ -2,8 +2,22 @@ const futamura = require('../../lib/futamura.js');
 
 const efsdLinkerTestFutamura = () => {
     const lhs = 'let func = λf. λx. f (f x) in func (λx. x + 1)';
-    const rhs = '2';
+    const rhs = '1 + 1';
 
+    // either use the same callback for both
+    const callback = function (err, result) {
+        if (err) {
+            throw err;
+        }
+
+        if (typeof result === 'function') {
+            module.exports = result;
+        } else {
+            console.log(result);
+            module.exports = result;
+        }
+    };
+    // or separate them in order to only see the final result
     const lhsCallback = function (err, result) {
         if (err) {
             throw err;

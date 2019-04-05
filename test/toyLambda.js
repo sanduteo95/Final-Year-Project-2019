@@ -53,7 +53,7 @@ describe('test toyLambda', function () {
                             done();
                         });
                     } else {
-                        boilerplate.interpreterBoilerplateTest(`${input}/toyLambda/${file}`, function (err, result) {
+                        boilerplate.interpreterBoilerplateTest(`input/toyLambda/${file}`, function (err, result) {
                             expect(err).equal(null);
     
                             if (results[file] === 'function') {
@@ -77,7 +77,7 @@ describe('test toyLambda', function () {
         fs.readdirSync(path.join(input, '/toyLambda')).forEach(function (file) {
             if (results[file]) {
                 it(file + ' should pass with ' + results[file], function (done) {
-                    boilerplate.futamura1Boilerplate(`${input}/toyLambda/${file}`, 125, 0)
+                    boilerplate.futamura1Boilerplate(`input/toyLambda/${file}`, 125, 0)
                         .then(futamuraResult => {  
                             if (results[file] === 'function') {
                                 const result = require(futamuraResult);

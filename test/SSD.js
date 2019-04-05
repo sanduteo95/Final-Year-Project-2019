@@ -37,7 +37,7 @@ describe('test SSD', function () {
         fs.readdirSync(path.join(input, '/SSD')).forEach(function (file) {
             if (results[file]) {
                 it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
-                    boilerplate.interpreterBoilerplateTest(`${input}/SSD/${file}`, function (err, result) {
+                    boilerplate.interpreterBoilerplateTest(`input/SSD/${file}`, function (err, result) {
                         expect(err).equal(null);
                         expect(result).equal(results[file]);
                         done();
@@ -47,7 +47,7 @@ describe('test SSD', function () {
         });
     });
     
-    describen('test first futamura projection', function () {
+    describe('test first futamura projection', function () {
         // increase timeout (huge because of fir)
         this.timeout(300000);
 
@@ -55,7 +55,7 @@ describe('test SSD', function () {
         fs.readdirSync(path.join(input, '/SSD')).forEach(function (file) {
             if (results[file]) {
                 it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
-                    boilerplate.futamura1Boilerplate(`${input}/SSD/${file}`, 125, 0)
+                    boilerplate.futamura1Boilerplate(`input/SSD/${file}`, 125, 0)
                         .then(futamuraResult => {
                             if (file === 'alt.ssd' || file === 'fir.ssd' || file === 'max.ssd' || file === 'rsum.ssd' || file === 'dfg.ssd' || file === 'link.ssd') {
                                 // cannot test properly without executing the script
