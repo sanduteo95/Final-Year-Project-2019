@@ -21,61 +21,61 @@ describe('test command line tool', function () {
       if (requireFile.indexOf(option) >= 0) {
         it('should fail without a file', function (done) {
           exec(`node index.js ${option}`, function (err, stdout) {
-              expect(err).not.equal(null);
-              done();
+            expect(err).not.equal(null);
+            done();
           });
         });
 
         it('should fail with a file that does not exist', function (done) {
           exec(`node index.js ${option} ${badInputFile}`, function (err, stdout) {
-              expect(err).not.equal(null);
-              done();
+            expect(err).not.equal(null);
+            done();
           });
         });
-  
+
         it('should succeed with a file that exists', function (done) {
           exec(`node index.js ${option} ${goodInputFile}`, function (err, stdout) {
-              expect(err).equal(null);
-              done();
+            expect(err).equal(null);
+            done();
           });
         });
       } else {
         // test options that do not require a file
         it('should fail with a file', function (done) {
           exec(`node index.js ${option} ${goodInputFile}`, function (err, stdout) {
-              expect(err).not.equal(null);
-              done();
+            expect(err).not.equal(null);
+            done();
           });
         });
 
         // test options that require a value
-        if(requireValue.indexOf(option) >= 0) {
+        if (requireValue.indexOf(option) >= 0) {
           it('should fail without a value', function (done) {
             exec(`node index.js ${option}`, function (err, stdout) {
-                expect(err).not.equal(null);
-                done();
+              expect(err).not.equal(null);
+              done();
             });
           });
 
           it('should succeed with a value', function (done) {
             exec(`node index.js ${option} ${defaultValue}`, function (err, stdout) {
-                expect(err).not.equal(null);
-                done();
+              expect(err).not.equal(null);
+              done();
             });
           });
 
-          if(option === '-o') {
+          if (option === '-o') {
             it('should fail on its own', function (done) {
               exec(`node index.js ${option} 0`, function (err, stdout) {
-                  expect(err).not.equal(null);
-                  done();
+                expect(err).not.equal(null);
+                done();
               });
             });
 
             it('should fail with incorrect option', function (done) {
               exec(`node index.js -p ${goodInputFile} ${option} 0`, function (err, stdout) {
-                  expect(err).not.equal(null);
-                  done();
+                expect(err).not.equal(null);
+                done();
               });
             });
 
@@ -84,55 +84,55 @@ describe('test command line tool', function () {
 
             it('should fail with a 0', function (done) {
               exec(`node index.js -1 ${goodInputFile} ${option} 0`, function (err, stdout) {
-                  expect(err).not.equal(null);
-                  done();
+                expect(err).not.equal(null);
+                done();
               });
             });
 
             allowedValues.forEach(function (allowedValue) {
               it('should succeed with a ' + allowedValue, function (done) {
                 exec(`node index.js -1 ${goodInputFile} ${option} ${allowedValue}`, function (err, stdout) {
-                    expect(err).equal(null);
-                    done();
+                  expect(err).equal(null);
+                  done();
                 });
               });
             });
 
             it('should fail with a 6', function (done) {
               exec(`node index.js -1 ${goodInputFile} ${option} 0`, function (err, stdout) {
-                  expect(err).not.equal(null);
-                  done();
+                expect(err).not.equal(null);
+                done();
               });
             });
           } else {
             if (option === 's') {
               it('should fail on its own', function (done) {
                 exec(`node index.js ${option} 125`, function (err, stdout) {
-                    expect(err).not.equal(null);
-                    done();
+                  expect(err).not.equal(null);
+                  done();
                 });
               });
 
               // this should work with any value but a string
               it('should succeed with a number', function (done) {
                 exec(`node index.js -i ${goodInputFile} ${option} 125`, function (err, stdout) {
-                    expect(err).equal(null);
-                    done();
+                  expect(err).equal(null);
+                  done();
                 });
               });
 
               it('should fail with a string', function (done) {
                 exec(`node index.js -i ${goodInputFile} ${option} test`, function (err, stdout) {
-                    expect(err).not.equal(null);
-                    done();
+                  expect(err).not.equal(null);
+                  done();
                 });
               });
             } else {
               if (option === 'd') {
                 it('should fail on its own', function (done) {
                   exec(`node index.js ${option}`, function (err, stdout) {
-                      expect(err).not.equal(null);
-                      done();
+                    expect(err).not.equal(null);
+                    done();
                   });
                 });
               }
@@ -142,8 +142,8 @@ describe('test command line tool', function () {
           // test options that do not require a value
           it('should fail with a value', function (done) {
             exec(`node index.js ${option} ${defaultValue}`, function (err, stdout) {
-                expect(err).not.equal(null);
-                done();
+              expect(err).not.equal(null);
+              done();
             });
           });
         }
@@ -152,7 +152,7 @@ describe('test command line tool', function () {
         // if it is a main option
         if (mainOptions.indexOf(option) >= 0) {
           // check that it's not used in combination with the other
-          for(let j = 0; j < mainOptions.length; j++) {
+          for (let j = 0; j < mainOptions.length; j++) {
             if (mainOptions[j] !== option) {
               it('should fail with ' + mainOptions[j], function (done) {
                 exec(`node index.js ${option} ${mainOptions[j]}`, function (err, stdout) {
@@ -190,6 +190,6 @@ describe('test command line tool', function () {
           });
         }
       }
-    }); 
+    });
   });
 });

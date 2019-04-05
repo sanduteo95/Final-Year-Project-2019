@@ -26,6 +26,8 @@ printf "\nChecking if Node.js is installed and what version.\n"
 if [[ "$(which node)" != "" ]]; then
     if [[ "$(node -v)" != *"v8"* ]]; then
         printf "You have a different version of Node.js than the one tested with (8.15.0).\nWill keep going since it might work.\n"
+    else
+        printf "You already have the right version of Node.js installed.\n"
     fi
 else
     printf "\nInstalling Node.js...\n"

@@ -3,3 +3,4 @@
 .vscode
 prototyping.js
 log.txt
+util/tensorflow/events.*

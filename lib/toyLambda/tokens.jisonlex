@@ -16,7 +16,7 @@ id                          [A-Za-z0-9]+
 "read"          return 'read';
 "print"         return 'print';
 {digit}+        return 'const';
-{id}              return 'id';
+{id}            return 'id';
 "true"          return 'const';
 "false"         return 'const';
 "+"             return 'plus';
