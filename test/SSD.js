@@ -37,8 +37,7 @@ describe('test SSD', function () {
         fs.readdirSync(path.join(input, '/SSD')).forEach(function (file) {
             if (results[file]) {
                 it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
-                    const code = fs.readFileSync(path.join(input, '/SSD/' + file), 'utf8');
-                    boilerplate.interpreterBoilerplateTest(`${input}/SSD/${file}`, code, function (err, result) {
+                    boilerplate.interpreterBoilerplateTest(`input/SSD/${file}`, function (err, result) {
                         expect(err).equal(null);
                         expect(result).equal(results[file]);
                         done();
@@ -56,9 +55,7 @@ describe('test SSD', function () {
         fs.readdirSync(path.join(input, '/SSD')).forEach(function (file) {
             if (results[file]) {
                 it(file + ' should pass with ' + JSON.stringify(results[file]), function (done) {
-                    const code = fs.readFileSync(path.join(input, '/SSD/' + file), 'utf8');
-
-                    boilerplate.futamura1Boilerplate(`${input}/SSD/${file}`, code, 125, false, undefined, true)
+                    boilerplate.futamura1Boilerplate(`input/SSD/${file}`, 125, 0)
                         .then(futamuraResult => {
                             if (file === 'alt.ssd' || file === 'fir.ssd' || file === 'max.ssd' || file === 'rsum.ssd' || file === 'dfg.ssd' || file === 'link.ssd') {
                                 // cannot test properly without executing the script
