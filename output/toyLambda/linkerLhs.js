@@ -141,9 +141,9 @@
     __captured__scope_1_[2]++;
 
     if (global.__residual && __captured__scope_1_[2] > 125) {
-      global.__residual("void", (trampoline, interpretTermLazy, term, env, addressesToBind, callback, isRhsApplication) => {
+      global.__residual("void", (trampoline, interpretTerm, term, env, addressesToBind, callback, isRhsApplication) => {
         return trampoline({
-          fn: interpretTermLazy,
+          fn: interpretTerm,
           args: [term, env, addressesToBind, callback, isRhsApplication]
         });
       }, _O_, _c_, term, env, addressesToBind, callback, isRhsApplication);

@@ -48,11 +48,11 @@ i.e. `node --max-old-space-size=120000 index.js -<i|f> <pathToFile> [-g]`
 ### How to install
 To use the command line tool, not including the benchmarks, just run `npm run install` in a terminal.
 
-Otherwise, there is a script provided in `./scripts/setup.bash`. Run the following in a terminal:
+Otherwise, there is a script provided in `./scripts/clean-setup.bash`. Run the following in a terminal:
 
 ```
-$ chmod +x ./scripts/setup.bash
-$ ./scripts/setup.bash
+$ chmod +x ./scripts/clean-setup.bash
+$ ./scripts/clean-setup.bash
 ``` 
 
 Or, if that doesn't work, follow the steps below: 
@@ -164,6 +164,7 @@ The available report is:
 |   +-- SSD.js
 |   +-- toyLambda.js
 +-- _util
+|   +-- _tensorflow // contains three TensorFlow implementations
 |   +-- _linker // contains two examples of how a linker would be implemented for the two languages
 |   |   +-- SSD.js
 |   |   +-- toyLambda.js

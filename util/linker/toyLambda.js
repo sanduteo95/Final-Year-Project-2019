@@ -21,11 +21,11 @@ const lambdaLinkerTestFutamura = () => {
         }
         module.exports = result;
     };
-    let outputFileRhs, outputFileLhs
-    return futamura.apply1(parser.parse(lhs), lhsCallback, 'input/toyLambda/linkerLhs.lambda', false)
+    let outputFileRhs, outputFileLhs;
+    return futamura.apply1(parser.parse(lhs), lhsCallback, 'input/toyLambda/linkerLhs.lambda', 125, false, undefined, false)
         .then(response => {
             outputFileLhs = response;
-            return futamura.apply1(parser.parse(rhs), rhsCallback, 'input/toyLambda/linkerRhs.lambda', false);
+            return futamura.apply1(parser.parse(rhs), rhsCallback, 'input/toyLambda/linkerRhs.lambda', 125, false, undefined, false);
         }).then(response => {
             outputFileRhs = response;
             const jsLhs = require(outputFileLhs);

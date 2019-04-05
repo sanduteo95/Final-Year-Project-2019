@@ -88,7 +88,7 @@ if (program.runParser || program.runInterpreter || program.runCompiler || progra
 } else if (program.isGoIMachine || program.runFutamura2 || program.runBenchmarks || program.debug) {
     // check that options with no extra value are "true"
     var value = program.isGoIMachine || program.runFutamura2 || program.runBenchmarks || program.debug;
-    if (value != true) {
+    if (value != true || program.args.length > 0) {
         console.error('Incorrect usage. Provided a file or value when it was not needed. For correct usage run -h or --help.');
         process.exit(1);
     }
