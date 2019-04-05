@@ -22,10 +22,10 @@ const efsdLinkerTestFutamura = () => {
         module.exports = result;
     };
     let outputFileLhs, outputFileRhs;
-    return futamura.apply1(lhs, lhsCallback, 'input/SSD/linkerLhs.ssd', 125, false, undefined, true)
+    return futamura.apply1(lhs, lhsCallback, 125, 0, true, 'output/SSD/linkerLhs.js')
         .then(response => {
             outputFileLhs = response;
-            return futamura.apply1(rhs, rhsCallback, 'input/SSD/linkerRhs.ssd', 125, false, undefined, true);
+            return futamura.apply1(rhs, rhsCallback, 125, 0, true, 'output/SSD/linkerRhs.js');
         }).then(response => {
             outputFileRhs = response;
             const jsLhs = require(outputFileLhs);

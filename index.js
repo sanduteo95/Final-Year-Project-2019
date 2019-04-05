@@ -2,7 +2,6 @@
 
 const program = require('commander');
 const fs = require('fs');
-const path = require('path');
 
 const boilerplate = require('./lib/boilerplate.js');
 
@@ -13,8 +12,7 @@ const strategyReport = require('./lib/report/strategyReport.js');
 let fileName = undefined;
 let maxTermCalls = 125;
 let isGoIMachine = false;
-let addClosure = false;
-let closureStrategy = '';
+let futamuraStrategy = '';
 
 program
     .version('1.0.0')
@@ -135,11 +133,10 @@ if (program.closureOption) {
         console.error('Incorrect usage. Option closure strategy cannot be used in combination with current options. For correct usage run -h or --help.');
         process.exit(1);
     } else {
-        addClosure = true;
         // the value of strategy can only be assigned on the First Futamura Projection
         if (!program.runFutamura2 && !program.runBenchmarks && !isNaN(program.closureOption) && (program.closureOption === '1' || program.closureOption != true)) {
-            closureStrategy = parseInt(program.closureOption);
-            if (closureStrategy < 1 || closureStrategy > 5) {
+            futamuraStrategy = parseInt(program.closureOption);
+            if (futamuraStrategy < 1 || futamuraStrategy > 5) {
                 console.error('Incorrect usage. Provided closure strategy does not exist. For correct usage run -h or --help.');
                 process.exit(1);
             }
@@ -150,24 +147,23 @@ if (program.closureOption) {
             }
         }
     }
+} else {
+    futamuraStrategy = 0;
 }
 
 // check main options
 if (program.runParser) {
-    const code = fs.readFileSync(path.join(__dirname, program.runParser), 'utf8');
-    const result = boilerplate.parserBoilerplate(code);
+    const result = boilerplate.parserBoilerplate(fileName);
     console.log(JSON.stringify(result));
 } 
 else if (program.runInterpreter) {
-    const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
-    boilerplate.interpreterBoilerplate(fileName, code, isGoIMachine);
+    boilerplate.interpreterBoilerplate(fileName);
 } 
 else if (program.runCompiler) {
-    boilerplate.compilerBoilerplate(fileName, maxTermCalls, isGoIMachine);
+    boilerplate.compilerBoilerplate(fileName, maxTermCalls);
 } 
 else if (program.runFutamura1) {
-    const code = fs.readFileSync(path.join(__dirname, fileName), 'utf8');
-    return boilerplate.futamura1Boilerplate(fileName, code, maxTermCalls, addClosure, closureStrategy, isGoIMachine)
+    return boilerplate.futamura1Boilerplate(fileName, maxTermCalls, futamuraStrategy)
         .then(result => {
             console.log(result);
         }).catch(err => {
@@ -176,7 +172,7 @@ else if (program.runFutamura1) {
         });
 } 
 else if (program.runFutamura2) {
-    return boilerplate.futamura2Boilerplate(isGoIMachine, addClosure)
+    return boilerplate.futamura2Boilerplate(futamuraStrategy, isGoIMachine)
         .then(result => {
             console.log(result);
         }).catch(err => {
@@ -184,7 +180,7 @@ else if (program.runFutamura2) {
         });
 } 
 else if (program.runBenchmarks) {
-    if (addClosure) {
+    if (futamuraStrategy !== 0) {
         return strategyReport.runStrategyBenchmarks()
             .catch(err => {
                 console.error('Failed with: ' + err.message);
